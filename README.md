@@ -1,0 +1,1 @@
+# Girls-Frontline-stellaris-MOD

@@ -1,0 +1,9 @@
+namespace = GF_GS
+country_event = {
+	id = GF_GS.01
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		set_built_species = owner_main_species
+	}
+}

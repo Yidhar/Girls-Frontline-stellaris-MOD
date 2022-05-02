@@ -3,3 +3,8 @@ Autonomous_Dolls = {
 	species_max_traits = 8
 	robotic = yes
 }
+Puppet_Dolls ={
+	species_trait_points = 4
+	species_max_traits = 8
+	robotic = yes
+}

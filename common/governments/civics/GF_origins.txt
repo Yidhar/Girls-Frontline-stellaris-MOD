@@ -1,0 +1,9 @@
+origin_GF_dolls = {
+	is_origin = yes
+	possible = {
+		authority = {
+			value = auth_GF_Autonomous_Dolls
+		}
+		
+	}
+}

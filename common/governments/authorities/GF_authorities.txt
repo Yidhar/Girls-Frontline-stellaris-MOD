@@ -1,0 +1,18 @@
+auth_GF_Autonomous_Dolls ={
+	machine_empire = yes
+	has_heir = no
+	uses_mandates = no
+	max_election_candidates = 0
+	election_term_variance = -1
+	has_factions = no
+	has_agendas = yes
+	valid_for_released_vassal = no
+	possible = {
+		species_archetype = {
+			value = Puppet_Dolls
+		}
+	}
+	random_weight = {
+		weight = 0
+	}
+}

@@ -55,3 +55,62 @@ Puppet_Dolls = {
 		}
 	}
 }
+nyto= {
+	archetype = NYTO
+	randomized = yes
+	gender = no
+	use_climate_preference = no
+	portrait_modding = yes	
+	possible = {authority = {value = auth_GF_paradeus}}
+	portraits = {"GFnyto_nyto"}
+	leader_age_min = 5
+	leader_age_max = 50
+	graphical_culture = mammalian_01
+	move_pop_sound_effect = "robot_pops_move"
+	resources = {
+		category = planet_pops
+		upkeep = {
+			energy = 0.2
+			food = 0.1
+			alloys = 0.05
+			GF_nyto_collapse_liquid = 0.1
+		}
+		produces = {
+			physics_research = 0.5
+			society_research = 0.5
+			engineering_research = 0.5
+			
+		}
+		produces = {
+			trigger = {
+				planet = { has_modifier = planet_population_control }
+				owner = { is_ai = no }				
+			}
+			GF_nyto_dark_star_core = 0.01
+		}
+		produces = {
+			trigger = { owner = { is_ai = yes } }
+			GF_nyto_dark_star_core = 0.01
+		}
+	}
+	trait = "trait_GF_nyto_ogas_agreement"
+}
+eild= {
+	archetype = EILD
+	randomized = no
+	gender = no
+	use_climate_preference = no
+	portrait_modding = yes	
+	possible = {always=no}
+	portraits = {"GFnyto_eild"}
+	leader_age_min = 5
+	leader_age_max = 50
+	graphical_culture = humanoid_01
+	move_pop_sound_effect = "robot_pops_move"
+	resources = {
+		category = planet_pops
+		upkeep = {
+			GF_nyto_collapse_liquid = 0.1
+		}
+	}
+}

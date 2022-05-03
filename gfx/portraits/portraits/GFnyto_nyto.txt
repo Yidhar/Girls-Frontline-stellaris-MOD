@@ -1,0 +1,213 @@
+portraits = 
+{
+	#GF_nyto00     = {texturefile = "gfx/models/portraits/GFnyto/Nyto07202055.dds"}
+	GFnyto_nyto_black     = {texturefile = "gfx/models/portraits/GFnyto_nyto/GFnyto_nyto_black.dds"}
+	GFnyto_nyto_white     = {texturefile = "gfx/models/portraits/GFnyto_nyto/GFnyto_nyto_white.dds"}
+
+	GFnyto_nyto_nimogen    = {texturefile = "gfx/models/portraits/GFnyto_nyto/GFnyto_nyto_nimogen.dds"}
+	GFnyto_nyto_silver     = {texturefile = "gfx/models/portraits/GFnyto_nyto/GFnyto_nyto_silver.dds"}
+
+	GFnyto_nyto_deadline     	 = {texturefile = "gfx/models/portraits/GFnyto_nyto/GFnyto_nyto_deadline.dds"}
+	GFnyto_nyto_Isomer_white     = {texturefile = "gfx/models/portraits/GFnyto_nyto/GFnyto_nyto_Isomer_white.dds"}
+	GFnyto_nyto_Isomer_shadow    = {texturefile = "gfx/models/portraits/GFnyto_nyto/GFnyto_nyto_Isomer_shadow.dds"}
+
+	GFnyto_nyto_basic    		 = {texturefile = "gfx/models/portraits/GFnyto_nyto/GFnyto_nyto_basic.dds"}
+	GFnyto_nyto_an_1    		 = {texturefile = "gfx/models/portraits/GFnyto_nyto/GFnyto_nyto_an_1.dds"}
+	GFnyto_nyto_an_2    		 = {texturefile = "gfx/models/portraits/GFnyto_nyto/GFnyto_nyto_an_2.dds"}
+	GFnyto_nyto_an_3    		 = {texturefile = "gfx/models/portraits/GFnyto_nyto/GFnyto_nyto_an_3.dds"}
+	GFnyto_nyto_an_4    		 = {texturefile = "gfx/models/portraits/GFnyto_nyto/GFnyto_nyto_an_4.dds"}
+	GFnyto_nyto_lsomer_basic     = {texturefile = "gfx/models/portraits/GFnyto_nyto/GFnyto_nyto_lsomer_basic.dds"}
+
+	GFnyto_nyto_strelet   		  = {texturefile = "gfx/models/portraits/GFnyto_nyto/GFnyto_nyto_strelet.dds"}
+	GFnyto_nyto_rodelero     	  = {texturefile = "gfx/models/portraits/GFnyto_nyto/GFnyto_nyto_rodelero.dds"}
+	GFnyto_nyto_doppelsoldner     = {texturefile = "gfx/models/portraits/GFnyto_nyto/GFnyto_nyto_doppelsoldner.dds"}
+
+	GFnyto_nyto_disaster= {texturefile = "gfx/models/portraits/GFnyto_nyto/GFnyto_nyto_disaster.dds"}
+
+#	GFnyto_nyto_morridow    		 = {texturefile = "gfx/models/portraits/GFnyto_nyto/GFnyto_nyto_morridow.dds"}
+#	GFnyto_nyto_morridow_casual     = {texturefile = "gfx/models/portraits/GFnyto_nyto/GFnyto_nyto_morridow_casual.dds"}
+
+	GFnyto_Machlian  		 = {texturefile = "gfx/models/portraits/GFnyto_nyto/GFnyto_Machlian.dds"}
+	GFnyto_Machlian_2    = {texturefile = "gfx/models/portraits/GFnyto_nyto/GFnyto_Machlian_2.dds"}
+	
+	GFnyto_Scouter  		 = {texturefile = "gfx/models/portraits/GFnyto_nyto/GFnyto_Scouter.dds"}
+	GFnyto_gunner    = {texturefile = "gfx/models/portraits/GFnyto_nyto/GFnyto_gunner.dds"}
+	
+	GFnyto_nyto_Adeline 		 = {texturefile = "gfx/models/portraits/GFnyto_nyto/GFnyto_nyto_Adeline.dds"}
+	GFnyto_nyto_Eleanor    = {texturefile = "gfx/models/portraits/GFnyto_nyto/GFnyto_nyto_Eleanor.dds"}
+	GFnyto_nyto_Tie = { texturefile= "gfx/models/portraits/GFnyto_nyto/GFnyto_Tie.dds"}
+}
+portrait_groups = {
+	GFnyto_nyto= {
+		default = GFnyto_nyto_deadline 
+			game_setup = {
+				add = {
+					portraits = { 	
+						GFnyto_nyto_black
+						GFnyto_nyto_white
+						GFnyto_nyto_nimogen  
+						GFnyto_nyto_silver
+						GFnyto_nyto_deadline     	
+						GFnyto_nyto_Isomer_white   
+						GFnyto_nyto_Isomer_shadow
+						GFnyto_nyto_basic    
+						GFnyto_nyto_an_1
+						GFnyto_nyto_an_2
+						GFnyto_nyto_an_3
+						GFnyto_nyto_an_4					
+						GFnyto_nyto_lsomer_basic
+#						GFnyto_nyto_morridow
+#						GFnyto_nyto_morridow_casual
+						GFnyto_nyto_strelet
+						GFnyto_nyto_rodelero
+						GFnyto_nyto_doppelsoldner
+						GFnyto_Scouter
+						GFnyto_nyto_Adeline
+						GFnyto_nyto_Eleanor
+						GFnyto_nyto_Tie
+					}
+				}
+			}		
+#species scope
+species = { #generic portrait for a species
+	add = {
+		portraits = {
+			GFnyto_nyto_basic    		
+			GFnyto_nyto_lsomer_basic
+		}
+	}
+}
+#pop scope
+pop = { #for a specific pop
+	add = {
+		portraits = {
+			GFnyto_nyto_basic   
+			GFnyto_nyto_an_1
+			GFnyto_nyto_an_2
+			GFnyto_nyto_an_3
+			GFnyto_nyto_an_4			
+			GFnyto_nyto_lsomer_basic
+			GFnyto_nyto_nimogen  
+			GFnyto_nyto_silver
+		}
+	}
+}
+#leader scope
+leader = { #scientists, generals, admirals, governor
+		add = {
+			trigger = {leader_class = scientist}
+				portraits = {
+					GFnyto_nyto_basic  				
+					GFnyto_nyto_lsomer_basic
+					GFnyto_nyto_nimogen  
+					GFnyto_nyto_silver
+					GFnyto_nyto_deadline     	
+					GFnyto_nyto_Isomer_white   
+					GFnyto_nyto_Isomer_shadow
+					GFnyto_nyto_Adeline
+					GFnyto_nyto_Eleanor
+					GFnyto_nyto_Tie
+					}
+		}
+		add = {
+			trigger = {leader_class = general}
+				portraits = {
+					GFnyto_nyto_basic  				
+					GFnyto_nyto_lsomer_basic
+					GFnyto_nyto_black
+					GFnyto_nyto_white
+					GFnyto_nyto_strelet
+					GFnyto_nyto_rodelero
+					GFnyto_nyto_doppelsoldner
+					GFnyto_Scouter
+					GFnyto_gunner
+					GFnyto_nyto_Adeline
+					GFnyto_nyto_Eleanor
+					GFnyto_nyto_Tie
+					}
+		}
+		add = {
+			trigger = {leader_class = admiral}
+				portraits = {
+					GFnyto_nyto_basic  				
+					GFnyto_nyto_lsomer_basic
+					GFnyto_nyto_black
+					GFnyto_nyto_white
+					GFnyto_nyto_strelet
+					GFnyto_nyto_rodelero
+					GFnyto_nyto_doppelsoldner
+					GFnyto_Scouter
+					GFnyto_gunner
+					GFnyto_nyto_Adeline
+					GFnyto_nyto_Eleanor
+					GFnyto_nyto_Tie
+					}
+		}
+		add = {
+			trigger = {leader_class = governor}
+				portraits = {
+					GFnyto_nyto_basic    				
+					GFnyto_nyto_lsomer_basic
+					GFnyto_nyto_nimogen  
+					GFnyto_nyto_silver
+					GFnyto_nyto_deadline     	
+					GFnyto_nyto_Isomer_white   
+					GFnyto_nyto_Isomer_shadow
+					GFnyto_nyto_Adeline
+					GFnyto_nyto_Eleanor
+					GFnyto_nyto_Tie
+					}
+		}
+		add = {
+			trigger = {leader_class = ruler}
+				portraits = {
+					GFnyto_nyto_basic    		
+					GFnyto_nyto_lsomer_basic
+					GFnyto_nyto_nimogen  
+					GFnyto_nyto_silver
+					GFnyto_nyto_deadline     	
+					GFnyto_nyto_Isomer_white   
+					GFnyto_nyto_Isomer_shadow
+					GFnyto_nyto_Adeline
+					GFnyto_nyto_Eleanor
+					GFnyto_nyto_Tie
+					}
+			}
+		add = {
+			trigger = {leader_class = envoy}
+				portraits = {
+#					GFnyto_nyto_basic 		
+#					GFnyto_nyto_lsomer_basic
+#					GFnyto_nyto_morridow
+#					GFnyto_nyto_morridow_casual
+					GFnyto_Machlian
+					GFnyto_Machlian_2
+					}
+			}		
+
+}
+#leader scope
+ruler = {
+	add = {
+	portraits = {
+		GFnyto_nyto_basic    		
+		GFnyto_nyto_lsomer_basic
+		GFnyto_nyto_nimogen  
+		GFnyto_nyto_silver
+		GFnyto_nyto_deadline     	
+		GFnyto_nyto_Isomer_white   
+		GFnyto_nyto_Isomer_shadow
+		GFnyto_nyto_Tie
+		}
+	}
+}
+upgrader = {
+	add = {
+		portraits = {
+			GFnyto_nyto_basic    		
+			GFnyto_nyto_lsomer_basic
+		}
+	}
+}
+}
+}

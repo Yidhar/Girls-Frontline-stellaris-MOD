@@ -1,0 +1,111 @@
+portraits = 
+{
+	GFnyto_EILD_big     = {texturefile = "gfx/models/portraits/GFnyto_eild/GFnyto_EILD_big.dds"}
+	GFnyto_EILD_middle  = {texturefile = "gfx/models/portraits/GFnyto_eild/GFnyto_EILD_middle.dds"}
+	GFnyto_EILD_small   = {texturefile = "gfx/models/portraits/GFnyto_eild/GFnyto_EILD_small.dds"}
+}
+portrait_groups = {
+	GFnyto_eild= {
+		default = GFnyto_EILD_big 
+			game_setup = {
+				add = {
+					portraits = { 	
+							GFnyto_EILD_big    
+							GFnyto_EILD_middle  
+							GFnyto_EILD_small  
+					}
+				}
+			}		
+#species scope
+species = { #generic portrait for a species
+	add = {
+		portraits = {
+			GFnyto_EILD_big    
+			GFnyto_EILD_middle  
+			GFnyto_EILD_small 
+		}
+	}
+}
+#pop scope
+pop = { #for a specific pop
+	add = {
+		portraits = {
+			GFnyto_EILD_big    
+			GFnyto_EILD_middle  
+			GFnyto_EILD_small 
+		}
+	}
+}
+#leader scope
+leader = { #scientists, generals, admirals, governor
+		add = {
+			trigger = {leader_class = scientist}
+				portraits = {
+					GFnyto_EILD_big    
+					GFnyto_EILD_middle  
+					GFnyto_EILD_small 
+					}
+		}
+		add = {
+			trigger = {leader_class = general}
+				portraits = {
+					GFnyto_EILD_big    
+					GFnyto_EILD_middle  
+					GFnyto_EILD_small 
+					}
+		}
+		add = {
+			trigger = {leader_class = admiral}
+				portraits = {
+					GFnyto_EILD_big    
+					GFnyto_EILD_middle  
+					GFnyto_EILD_small 
+					}
+		}
+		add = {
+			trigger = {leader_class = governor}
+				portraits = {
+					GFnyto_EILD_big    
+					GFnyto_EILD_middle  
+					GFnyto_EILD_small 
+					}
+		}
+		add = {
+			trigger = {leader_class = ruler}
+				portraits = {
+					GFnyto_EILD_big    
+					GFnyto_EILD_middle  
+					GFnyto_EILD_small 
+					}
+			}
+		add = {
+			trigger = {leader_class = envoy}
+				portraits = {
+					GFnyto_EILD_big    
+					GFnyto_EILD_middle  
+					GFnyto_EILD_small 
+					}
+			}		
+
+}
+#leader scope
+ruler = {
+	add = {
+	portraits = {
+		GFnyto_EILD_big    
+		GFnyto_EILD_middle  
+		GFnyto_EILD_small 
+		}
+	}
+}
+upgrader = {
+	add = {
+		portraits = {
+			GFnyto_EILD_big    
+			GFnyto_EILD_middle  
+			GFnyto_EILD_small 
+		}
+	}
+}
+}
+}

@@ -8,3 +8,11 @@ Puppet_Dolls ={
 	species_max_traits = 8
 	robotic = yes
 }
+NYTO= {
+	species_trait_points = 4
+	species_max_traits = 8
+}
+EILD= {
+	species_trait_points = 20
+	species_max_traits = 20
+}

@@ -1,0 +1,3478 @@
+portraits = {
+	Autonomous_Dolls_004 = {
+		texturefile = "gfx/models/portraits/GF_dolls/2_AAT-52.dds"
+	}
+	Autonomous_Dolls_005 = {
+		texturefile = "gfx/models/portraits/GF_dolls/2_Beretta_Model_38.dds"
+	}
+	Autonomous_Dolls_006 = {
+		texturefile = "gfx/models/portraits/GF_dolls/2_BM59.dds"
+	}
+	Autonomous_Dolls_007 = {
+		texturefile = "gfx/models/portraits/GF_dolls/2_Bren_Ten.dds"
+	}
+	Autonomous_Dolls_008 = {
+		texturefile = "gfx/models/portraits/GF_dolls/2_DP28.dds"
+	}
+	Autonomous_Dolls_009 = {
+		texturefile = "gfx/models/portraits/GF_dolls/2_F2000.dds"
+	}
+	Autonomous_Dolls_010 = {
+		texturefile = "gfx/models/portraits/GF_dolls/2_FG42.dds"
+	}
+	Autonomous_Dolls_011 = {
+		texturefile = "gfx/models/portraits/GF_dolls/2_FN-49.dds"
+	}
+	Autonomous_Dolls_012 = {
+		texturefile = "gfx/models/portraits/GF_dolls/2_FNP-9.dds"
+	}
+	Autonomous_Dolls_013 = {
+		texturefile = "gfx/models/portraits/GF_dolls/2_G3.dds"
+	}
+	Autonomous_Dolls_014 = {
+		texturefile = "gfx/models/portraits/GF_dolls/2_G43.dds"
+	}
+	Autonomous_Dolls_015 = {
+		texturefile = "gfx/models/portraits/GF_dolls/2_Galil.dds"
+	}
+	Autonomous_Dolls_016 = {
+		texturefile = "gfx/models/portraits/GF_dolls/2_IDW.dds"
+	}
+	Autonomous_Dolls_017 = {
+		texturefile = "gfx/models/portraits/GF_dolls/2_L85A1.dds"
+	}
+	Autonomous_Dolls_018 = {
+		texturefile = "gfx/models/portraits/GF_dolls/2_LWMMG.dds"
+	}
+	Autonomous_Dolls_019 = {
+		texturefile = "gfx/models/portraits/GF_dolls/2_M3.dds"
+	}
+	Autonomous_Dolls_020 = {
+		texturefile = "gfx/models/portraits/GF_dolls/2_m45.dds"
+	}
+	Autonomous_Dolls_021 = {
+		texturefile = "gfx/models/portraits/GF_dolls/2_M1911.dds"
+	}
+	Autonomous_Dolls_022 = {
+		texturefile = "gfx/models/portraits/GF_dolls/2_MG34.dds"
+	}
+	Autonomous_Dolls_023 = {
+		texturefile = "gfx/models/portraits/GF_dolls/2_MP40.dds"
+	}
+	Autonomous_Dolls_024 = {
+		texturefile = "gfx/models/portraits/GF_dolls/2_MP-446.dds"
+	}
+	Autonomous_Dolls_025 = {
+		texturefile = "gfx/models/portraits/GF_dolls/2_Nagant_Revolver.dds"
+	}
+	Autonomous_Dolls_026 = {
+		texturefile = "gfx/models/portraits/GF_dolls/2_P38.dds"
+	}
+	Autonomous_Dolls_027 = {
+		texturefile = "gfx/models/portraits/GF_dolls/2_PP-2000.dds"
+	}
+	Autonomous_Dolls_028 = {
+		texturefile = "gfx/models/portraits/GF_dolls/2_PPK.dds"
+	}
+	Autonomous_Dolls_029 = {
+		texturefile = "gfx/models/portraits/GF_dolls/2_PPSh-41.dds"
+	}
+	Autonomous_Dolls_030 = {
+		texturefile = "gfx/models/portraits/GF_dolls/2_SIG-510.dds"
+	}
+	Autonomous_Dolls_031 = {
+		texturefile = "gfx/models/portraits/GF_dolls/2_Simonov.dds"
+	}
+	Autonomous_Dolls_032 = {
+		texturefile = "gfx/models/portraits/GF_dolls/2_Spectre_M4.dds"
+	}
+	Autonomous_Dolls_033 = {
+		texturefile = "gfx/models/portraits/GF_dolls/2_SVT-38.dds"
+	}
+	Autonomous_Dolls_034 = {
+		texturefile = "gfx/models/portraits/GF_dolls/2_Type_63.dds"
+	}
+	Autonomous_Dolls_035 = {
+		texturefile = "gfx/models/portraits/GF_dolls/2_Type_64.dds"
+	}
+	Autonomous_Dolls_036 = {
+		texturefile = "gfx/models/portraits/GF_dolls/2_USP_Compact.dds"
+	}
+	Autonomous_Dolls_037 = {
+		texturefile = "gfx/models/portraits/GF_dolls/3_6P62.dds"
+	}
+	Autonomous_Dolls_038 = {
+		texturefile = "gfx/models/portraits/GF_dolls/3_AK-47.dds"
+	}
+	Autonomous_Dolls_039 = {
+		texturefile = "gfx/models/portraits/GF_dolls/3_AR70.dds"
+	}
+	Autonomous_Dolls_040 = {
+		texturefile = "gfx/models/portraits/GF_dolls/3_ARX-160.dds"
+	}
+	Autonomous_Dolls_041 = {
+		texturefile = "gfx/models/portraits/GF_dolls/3_ASh-12.7.dds"
+	}
+	Autonomous_Dolls_042 = {
+		texturefile = "gfx/models/portraits/GF_dolls/3_Astra_Revolver.dds"
+	}
+	Autonomous_Dolls_043 = {
+		texturefile = "gfx/models/portraits/GF_dolls/3_Bren.dds"
+	}
+	Autonomous_Dolls_044 = {
+		texturefile = "gfx/models/portraits/GF_dolls/3_C96.dds"
+	}
+	Autonomous_Dolls_045 = {
+		texturefile = "gfx/models/portraits/GF_dolls/3_CZ52.dds"
+	}
+	Autonomous_Dolls_046 = {
+		texturefile = "gfx/models/portraits/GF_dolls/3_CZ-805.dds"
+	}
+	Autonomous_Dolls_047 = {
+		texturefile = "gfx/models/portraits/GF_dolls/3_EVO_3.dds"
+	}
+	Autonomous_Dolls_048 = {
+		texturefile = "gfx/models/portraits/GF_dolls/3_F1.dds"
+	}
+	Autonomous_Dolls_049 = {
+		texturefile = "gfx/models/portraits/GF_dolls/3_FMG-9.dds"
+	}
+	Autonomous_Dolls_050 = {
+		texturefile = "gfx/models/portraits/GF_dolls/3_FNC.dds"
+	}
+	Autonomous_Dolls_051 = {
+		texturefile = "gfx/models/portraits/GF_dolls/3_Gepard_M1.dds"
+	}
+	Autonomous_Dolls_052 = {
+		texturefile = "gfx/models/portraits/GF_dolls/3_Glock_17.dds"
+	}
+	Autonomous_Dolls_053 = {
+		texturefile = "gfx/models/portraits/GF_dolls/3_GSh-18.dds"
+	}
+	Autonomous_Dolls_054 = {
+		texturefile = "gfx/models/portraits/GF_dolls/3_Hanyang_Type_88.dds"
+	}
+	Autonomous_Dolls_055 = {
+		texturefile = "gfx/models/portraits/GF_dolls/3_HK23.dds"
+	}
+	Autonomous_Dolls_056 = {
+		texturefile = "gfx/models/portraits/GF_dolls/3_HK45.dds"
+	}
+	Autonomous_Dolls_057 = {
+		texturefile = "gfx/models/portraits/GF_dolls/3_KS-23.dds"
+	}
+	Autonomous_Dolls_058 = {
+		texturefile = "gfx/models/portraits/GF_dolls/3_M1_Garand.dds"
+	}
+	Autonomous_Dolls_059 = {
+		texturefile = "gfx/models/portraits/GF_dolls/3_M1A1.dds"
+	}
+	Autonomous_Dolls_060 = {
+		texturefile = "gfx/models/portraits/GF_dolls/3_M9.dds"
+	}
+	Autonomous_Dolls_061 = {
+		texturefile = "gfx/models/portraits/GF_dolls/3_M12.dds"
+	}
+	Autonomous_Dolls_062 = {
+		texturefile = "gfx/models/portraits/GF_dolls/3_M14.dds"
+	}
+	Autonomous_Dolls_063 = {
+		texturefile = "gfx/models/portraits/GF_dolls/3_M21.dds"
+	}
+	Autonomous_Dolls_064 = {
+		texturefile = "gfx/models/portraits/GF_dolls/3_M249_SAW.dds"
+	}
+	Autonomous_Dolls_065 = {
+		texturefile = "gfx/models/portraits/GF_dolls/3_M500.dds"
+	}
+	Autonomous_Dolls_066 = {
+		texturefile = "gfx/models/portraits/GF_dolls/3_M1897.dds"
+	}
+	Autonomous_Dolls_067 = {
+		texturefile = "gfx/models/portraits/GF_dolls/3_M1919A4.dds"
+	}
+	Autonomous_Dolls_068 = {
+		texturefile = "gfx/models/portraits/GF_dolls/3_MAC-10.dds"
+	}
+	Autonomous_Dolls_069 = {
+		texturefile = "gfx/models/portraits/GF_dolls/3_Makarov.dds"
+	}
+	Autonomous_Dolls_070 = {
+		texturefile = "gfx/models/portraits/GF_dolls/3_MG42.dds"
+	}
+	Autonomous_Dolls_071 = {
+		texturefile = "gfx/models/portraits/GF_dolls/3_Micro_Uzi.dds"
+	}
+	Autonomous_Dolls_072 = {
+		texturefile = "gfx/models/portraits/GF_dolls/3_Model_L.dds"
+	}
+	Autonomous_Dolls_073 = {
+		texturefile = "gfx/models/portraits/GF_dolls/3_MP-443.dds"
+	}
+	Autonomous_Dolls_074 = {
+		texturefile = "gfx/models/portraits/GF_dolls/3_MP-448.dds"
+	}
+	Autonomous_Dolls_075 = {
+		texturefile = "gfx/models/portraits/GF_dolls/3_MT-9.dds"
+	}
+	Autonomous_Dolls_076 = {
+		texturefile = "gfx/models/portraits/GF_dolls/3_NS2000.dds"
+	}
+	Autonomous_Dolls_077 = {
+		texturefile = "gfx/models/portraits/GF_dolls/3_OBR.dds"
+	}
+	Autonomous_Dolls_078 = {
+		texturefile = "gfx/models/portraits/GF_dolls/3_OTs-12.dds"
+	}
+	Autonomous_Dolls_079 = {
+		texturefile = "gfx/models/portraits/GF_dolls/3_OTs-39.dds"
+	}
+	Autonomous_Dolls_080 = {
+		texturefile = "gfx/models/portraits/GF_dolls/3_OTs-44.dds"
+	}
+	Autonomous_Dolls_081 = {
+		texturefile = "gfx/models/portraits/GF_dolls/3_P08.dds"
+	}
+	Autonomous_Dolls_082 = {
+		texturefile = "gfx/models/portraits/GF_dolls/3_P99.dds"
+	}
+	Autonomous_Dolls_083 = {
+		texturefile = "gfx/models/portraits/GF_dolls/3_P226.dds"
+	}
+	Autonomous_Dolls_084 = {
+		texturefile = "gfx/models/portraits/GF_dolls/3_PPS-43.dds"
+	}
+	Autonomous_Dolls_085 = {
+		texturefile = "gfx/models/portraits/GF_dolls/3_PSM.dds"
+	}
+	Autonomous_Dolls_086 = {
+		texturefile = "gfx/models/portraits/GF_dolls/3_RMB-93.dds"
+	}
+	Autonomous_Dolls_087 = {
+		texturefile = "gfx/models/portraits/GF_dolls/3_RPD.dds"
+	}
+	Autonomous_Dolls_088 = {
+		texturefile = "gfx/models/portraits/GF_dolls/3_RT-20.dds"
+	}
+	Autonomous_Dolls_089 = {
+		texturefile = "gfx/models/portraits/GF_dolls/3_SCW.dds"
+	}
+	Autonomous_Dolls_090 = {
+		texturefile = "gfx/models/portraits/GF_dolls/3_Serdyukov.dds"
+	}
+	Autonomous_Dolls_091 = {
+		texturefile = "gfx/models/portraits/GF_dolls/3_Skorpion.dds"
+	}
+	Autonomous_Dolls_092 = {
+		texturefile = "gfx/models/portraits/GF_dolls/3_SM-1.dds"
+	}
+	Autonomous_Dolls_093 = {
+		texturefile = "gfx/models/portraits/GF_dolls/3_SSG_69.dds"
+	}
+	Autonomous_Dolls_094 = {
+		texturefile = "gfx/models/portraits/GF_dolls/3_Sten_MkII.dds"
+	}
+	Autonomous_Dolls_095 = {
+		texturefile = "gfx/models/portraits/GF_dolls/3_StG44.dds"
+	}
+	Autonomous_Dolls_096 = {
+		texturefile = "gfx/models/portraits/GF_dolls/3_Super_SASS.dds"
+	}
+	Autonomous_Dolls_097 = {
+		texturefile = "gfx/models/portraits/GF_dolls/3_SV-98.dds"
+	}
+	Autonomous_Dolls_098 = {
+		texturefile = "gfx/models/portraits/GF_dolls/3_T65.dds"
+	}
+	Autonomous_Dolls_099 = {
+		texturefile = "gfx/models/portraits/GF_dolls/3_T77.dds"
+	}
+	Autonomous_Dolls_100 = {
+		texturefile = "gfx/models/portraits/GF_dolls/3_TMP.dds"
+	}
+	Autonomous_Dolls_101 = {
+		texturefile = "gfx/models/portraits/GF_dolls/3_Tokarev.dds"
+	}
+	Autonomous_Dolls_102 = {
+		texturefile = "gfx/models/portraits/GF_dolls/3_Type_03.dds"
+	}
+	Autonomous_Dolls_103 = {
+		texturefile = "gfx/models/portraits/GF_dolls/3_Type_56.dds"
+	}
+	Autonomous_Dolls_104 = {
+		texturefile = "gfx/models/portraits/GF_dolls/3_Type_59.dds"
+	}
+	Autonomous_Dolls_105 = {
+		texturefile = "gfx/models/portraits/GF_dolls/3_Type_62.dds"
+	}
+	Autonomous_Dolls_106 = {
+		texturefile = "gfx/models/portraits/GF_dolls/3_Type_81_Carbine.dds"
+	}
+	Autonomous_Dolls_107 = {
+		texturefile = "gfx/models/portraits/GF_dolls/3_Type_92.dds"
+	}
+	Autonomous_Dolls_108 = {
+		texturefile = "gfx/models/portraits/GF_dolls/3_wz.29.dds"
+	}
+	Autonomous_Dolls_109 = {
+		texturefile = "gfx/models/portraits/GF_dolls/3_Z-62.dds"
+	}
+	Autonomous_Dolls_110 = {
+		texturefile = "gfx/models/portraits/GF_dolls/4_9A-91.dds"
+	}
+	Autonomous_Dolls_111 = {
+		texturefile = "gfx/models/portraits/GF_dolls/4_A-91.dds"
+	}
+	Autonomous_Dolls_112 = {
+		texturefile = "gfx/models/portraits/GF_dolls/4_AEK-999.dds"
+	}
+	Autonomous_Dolls_113 = {
+		texturefile = "gfx/models/portraits/GF_dolls/4_Ak_5.dds"
+	}
+	Autonomous_Dolls_114 = {
+		texturefile = "gfx/models/portraits/GF_dolls/4_Ameli.dds"
+	}
+	Autonomous_Dolls_115 = {
+		texturefile = "gfx/models/portraits/GF_dolls/4_AS_Val.dds"
+	}
+	Autonomous_Dolls_116 = {
+		texturefile = "gfx/models/portraits/GF_dolls/4_Bren_Mod.dds"
+	}
+	Autonomous_Dolls_117 = {
+		texturefile = "gfx/models/portraits/GF_dolls/4_Colt_Revolver.dds"
+	}
+	Autonomous_Dolls_118 = {
+		texturefile = "gfx/models/portraits/GF_dolls/4_Cx4_Storm.dds"
+	}
+	Autonomous_Dolls_119 = {
+		texturefile = "gfx/models/portraits/GF_dolls/4_CZ2000.dds"
+	}
+	Autonomous_Dolls_120 = {
+		texturefile = "gfx/models/portraits/GF_dolls/4_FAMAS.dds"
+	}
+	Autonomous_Dolls_121 = {
+		texturefile = "gfx/models/portraits/GF_dolls/4_FN-49_costume.dds"
+	}
+	Autonomous_Dolls_122 = {
+		texturefile = "gfx/models/portraits/GF_dolls/4_G3_costume.dds"
+	}
+	Autonomous_Dolls_123 = {
+		texturefile = "gfx/models/portraits/GF_dolls/4_G28.dds"
+	}
+	Autonomous_Dolls_124 = {
+		texturefile = "gfx/models/portraits/GF_dolls/4_G36.dds"
+	}
+	Autonomous_Dolls_125 = {
+		texturefile = "gfx/models/portraits/GF_dolls/4_Honey_Badger.dds"
+	}
+	Autonomous_Dolls_126 = {
+		texturefile = "gfx/models/portraits/GF_dolls/4_IDW_costume.dds"
+	}
+	Autonomous_Dolls_127 = {
+		texturefile = "gfx/models/portraits/GF_dolls/4_Jericho.dds"
+	}
+	Autonomous_Dolls_128 = {
+		texturefile = "gfx/models/portraits/GF_dolls/4_K5.dds"
+	}
+	Autonomous_Dolls_129 = {
+		texturefile = "gfx/models/portraits/GF_dolls/4_K31.dds"
+	}
+	Autonomous_Dolls_130 = {
+		texturefile = "gfx/models/portraits/GF_dolls/4_KLIN.dds"
+	}
+	Autonomous_Dolls_131 = {
+		texturefile = "gfx/models/portraits/GF_dolls/4_LWMMG_costume.dds"
+	}
+	Autonomous_Dolls_132 = {
+		texturefile = "gfx/models/portraits/GF_dolls/4_M4_SOPMOD_II.dds"
+	}
+	Autonomous_Dolls_133 = {
+		texturefile = "gfx/models/portraits/GF_dolls/4_M4A1.dds"
+	}
+	Autonomous_Dolls_134 = {
+		texturefile = "gfx/models/portraits/GF_dolls/4_M14_costume.dds"
+	}
+	Autonomous_Dolls_135 = {
+		texturefile = "gfx/models/portraits/GF_dolls/4_M16A1.dds"
+	}
+	Autonomous_Dolls_136 = {
+		texturefile = "gfx/models/portraits/GF_dolls/4_M37.dds"
+	}
+	Autonomous_Dolls_137 = {
+		texturefile = "gfx/models/portraits/GF_dolls/4_M60.dds"
+	}
+	Autonomous_Dolls_138 = {
+		texturefile = "gfx/models/portraits/GF_dolls/4_M590.dds"
+	}
+	Autonomous_Dolls_139 = {
+		texturefile = "gfx/models/portraits/GF_dolls/4_M1014.dds"
+	}
+	Autonomous_Dolls_140 = {
+		texturefile = "gfx/models/portraits/GF_dolls/4_M1911_costume.dds"
+	}
+	Autonomous_Dolls_141 = {
+		texturefile = "gfx/models/portraits/GF_dolls/4_M1918.dds"
+	}
+	Autonomous_Dolls_142 = {
+		texturefile = "gfx/models/portraits/GF_dolls/4_MG3.dds"
+	}
+	Autonomous_Dolls_143 = {
+		texturefile = "gfx/models/portraits/GF_dolls/4_Mk_12.dds"
+	}
+	Autonomous_Dolls_144 = {
+		texturefile = "gfx/models/portraits/GF_dolls/4_Mk23.dds"
+	}
+	Autonomous_Dolls_145 = {
+		texturefile = "gfx/models/portraits/GF_dolls/4_Mk46.dds"
+	}
+	Autonomous_Dolls_146 = {
+		texturefile = "gfx/models/portraits/GF_dolls/4_Mk48.dds"
+	}
+	Autonomous_Dolls_147 = {
+		texturefile = "gfx/models/portraits/GF_dolls/4_Mosin-Nagant.dds"
+	}
+	Autonomous_Dolls_148 = {
+		texturefile = "gfx/models/portraits/GF_dolls/4_MP5.dds"
+	}
+	Autonomous_Dolls_149 = {
+		texturefile = "gfx/models/portraits/GF_dolls/4_MP-446_costume.dds"
+	}
+	Autonomous_Dolls_150 = {
+		texturefile = "gfx/models/portraits/GF_dolls/4_Nagant_Revolver_costume.dds"
+	}
+	Autonomous_Dolls_151 = {
+		texturefile = "gfx/models/portraits/GF_dolls/4_P7.dds"
+	}
+	Autonomous_Dolls_152 = {
+		texturefile = "gfx/models/portraits/GF_dolls/4_PK.dds"
+	}
+	Autonomous_Dolls_153 = {
+		texturefile = "gfx/models/portraits/GF_dolls/4_PP-19.dds"
+	}
+	Autonomous_Dolls_154 = {
+		texturefile = "gfx/models/portraits/GF_dolls/4_PP-19-01.dds"
+	}
+	Autonomous_Dolls_155 = {
+		texturefile = "gfx/models/portraits/GF_dolls/4_PP-90.dds"
+	}
+	Autonomous_Dolls_156 = {
+		texturefile = "gfx/models/portraits/GF_dolls/4_PSG-1.dds"
+	}
+	Autonomous_Dolls_157 = {
+		texturefile = "gfx/models/portraits/GF_dolls/4_PTRD.dds"
+	}
+	Autonomous_Dolls_158 = {
+		texturefile = "gfx/models/portraits/GF_dolls/4_PzB_39.dds"
+	}
+	Autonomous_Dolls_159 = {
+		texturefile = "gfx/models/portraits/GF_dolls/4_Ribeyrolles.dds"
+	}
+	Autonomous_Dolls_160 = {
+		texturefile = "gfx/models/portraits/GF_dolls/4_SAR_21.dds"
+	}
+	Autonomous_Dolls_161 = {
+		texturefile = "gfx/models/portraits/GF_dolls/4_Shipka.dds"
+	}
+	Autonomous_Dolls_162 = {
+		texturefile = "gfx/models/portraits/GF_dolls/4_SPAS-12.dds"
+	}
+	Autonomous_Dolls_163 = {
+		texturefile = "gfx/models/portraits/GF_dolls/4_Spitfire.dds"
+	}
+	Autonomous_Dolls_164 = {
+		texturefile = "gfx/models/portraits/GF_dolls/4_SPP-1.dds"
+	}
+	Autonomous_Dolls_165 = {
+		texturefile = "gfx/models/portraits/GF_dolls/4_SPR_A3G.dds"
+	}
+	Autonomous_Dolls_166 = {
+		texturefile = "gfx/models/portraits/GF_dolls/4_Springfield.dds"
+	}
+	Autonomous_Dolls_167 = {
+		texturefile = "gfx/models/portraits/GF_dolls/4_ST_AR-15.dds"
+	}
+	Autonomous_Dolls_168 = {
+		texturefile = "gfx/models/portraits/GF_dolls/4_Stechkin.dds"
+	}
+	Autonomous_Dolls_169 = {
+		texturefile = "gfx/models/portraits/GF_dolls/4_Sten_MkII_costume.dds"
+	}
+	Autonomous_Dolls_170 = {
+		texturefile = "gfx/models/portraits/GF_dolls/4_Super-Shorty.dds"
+	}
+	Autonomous_Dolls_171 = {
+		texturefile = "gfx/models/portraits/GF_dolls/4_SV-98_costume.dds"
+	}
+	Autonomous_Dolls_172 = {
+		texturefile = "gfx/models/portraits/GF_dolls/4_SVD.dds"
+	}
+	Autonomous_Dolls_173 = {
+		texturefile = "gfx/models/portraits/GF_dolls/4_T-5000.dds"
+	}
+	Autonomous_Dolls_174 = {
+		texturefile = "gfx/models/portraits/GF_dolls/4_TAR-21.dds"
+	}
+	Autonomous_Dolls_175 = {
+		texturefile = "gfx/models/portraits/GF_dolls/4_Thunder.dds"
+	}
+	Autonomous_Dolls_176 = {
+		texturefile = "gfx/models/portraits/GF_dolls/4_Type_56-1.dds"
+	}
+	Autonomous_Dolls_177 = {
+		texturefile = "gfx/models/portraits/GF_dolls/4_Type_64_costume.dds"
+	}
+	Autonomous_Dolls_178 = {
+		texturefile = "gfx/models/portraits/GF_dolls/4_Type_80.dds"
+	}
+	Autonomous_Dolls_179 = {
+		texturefile = "gfx/models/portraits/GF_dolls/4_Type_97_Shotgun.dds"
+	}
+	Autonomous_Dolls_180 = {
+		texturefile = "gfx/models/portraits/GF_dolls/4_UMP9.dds"
+	}
+	Autonomous_Dolls_181 = {
+		texturefile = "gfx/models/portraits/GF_dolls/4_UMP40.dds"
+	}
+	Autonomous_Dolls_182 = {
+		texturefile = "gfx/models/portraits/GF_dolls/4_UMP45.dds"
+	}
+	Autonomous_Dolls_183 = {
+		texturefile = "gfx/models/portraits/GF_dolls/4_USAS-12.dds"
+	}
+	Autonomous_Dolls_184 = {
+		texturefile = "gfx/models/portraits/GF_dolls/4_XM3.dds"
+	}
+	Autonomous_Dolls_185 = {
+		texturefile = "gfx/models/portraits/GF_dolls/4_XM8.dds"
+	}
+	Autonomous_Dolls_186 = {
+		texturefile = "gfx/models/portraits/GF_dolls/5_AA-12.dds"
+	}
+	Autonomous_Dolls_187 = {
+		texturefile = "gfx/models/portraits/GF_dolls/5_AK-12.dds"
+	}
+	Autonomous_Dolls_188 = {
+		texturefile = "gfx/models/portraits/GF_dolls/5_AK-74U.dds"
+	}
+	Autonomous_Dolls_189 = {
+		texturefile = "gfx/models/portraits/GF_dolls/5_AN-94.dds"
+	}
+	Autonomous_Dolls_190 = {
+		texturefile = "gfx/models/portraits/GF_dolls/5_ART556.dds"
+	}
+	Autonomous_Dolls_191 = {
+		texturefile = "gfx/models/portraits/GF_dolls/5_AUG.dds"
+	}
+	Autonomous_Dolls_192 = {
+		texturefile = "gfx/models/portraits/GF_dolls/5_Carcano_M1891.dds"
+	}
+	Autonomous_Dolls_193 = {
+		texturefile = "gfx/models/portraits/GF_dolls/5_Carcano_M9138.dds"
+	}
+	Autonomous_Dolls_194 = {
+		texturefile = "gfx/models/portraits/GF_dolls/5_C-MS.dds"
+	}
+	Autonomous_Dolls_195 = {
+		texturefile = "gfx/models/portraits/GF_dolls/5_Colt_Revolver_costume.dds"
+	}
+	Autonomous_Dolls_196 = {
+		texturefile = "gfx/models/portraits/GF_dolls/5_Contender.dds"
+	}
+	Autonomous_Dolls_197 = {
+		texturefile = "gfx/models/portraits/GF_dolls/5_CZ75.dds"
+	}
+	Autonomous_Dolls_198 = {
+		texturefile = "gfx/models/portraits/GF_dolls/5_DSR-50.dds"
+	}
+	Autonomous_Dolls_199 = {
+		texturefile = "gfx/models/portraits/GF_dolls/5_FAL.dds"
+	}
+	Autonomous_Dolls_200 = {
+		texturefile = "gfx/models/portraits/GF_dolls/5_Five-seveN.dds"
+	}
+	Autonomous_Dolls_201 = {
+		texturefile = "gfx/models/portraits/GF_dolls/5_FP-6.dds"
+	}
+	Autonomous_Dolls_202 = {
+		texturefile = "gfx/models/portraits/GF_dolls/5_G11.dds"
+	}
+	Autonomous_Dolls_203 = {
+		texturefile = "gfx/models/portraits/GF_dolls/5_G36_costume.dds"
+	}
+	Autonomous_Dolls_204 = {
+		texturefile = "gfx/models/portraits/GF_dolls/5_G41.dds"
+	}
+	Autonomous_Dolls_205 = {
+		texturefile = "gfx/models/portraits/GF_dolls/5_Grizzly_MkV.dds"
+	}
+	Autonomous_Dolls_206 = {
+		texturefile = "gfx/models/portraits/GF_dolls/5_HK21.dds"
+	}
+	Autonomous_Dolls_207 = {
+		texturefile = "gfx/models/portraits/GF_dolls/5_HK416.dds"
+	}
+	Autonomous_Dolls_208 = {
+		texturefile = "gfx/models/portraits/GF_dolls/5_Howa_Type_64.dds"
+	}
+	Autonomous_Dolls_209 = {
+		texturefile = "gfx/models/portraits/GF_dolls/5_IWS_2000.dds"
+	}
+	Autonomous_Dolls_210 = {
+		texturefile = "gfx/models/portraits/GF_dolls/5_JS_9.dds"
+	}
+	Autonomous_Dolls_211 = {
+		texturefile = "gfx/models/portraits/GF_dolls/5_JS05.dds"
+	}
+	Autonomous_Dolls_212 = {
+		texturefile = "gfx/models/portraits/GF_dolls/5_K2.dds"
+	}
+	Autonomous_Dolls_213 = {
+		texturefile = "gfx/models/portraits/GF_dolls/5_K11.dds"
+	}
+	Autonomous_Dolls_214 = {
+		texturefile = "gfx/models/portraits/GF_dolls/5_KSG.dds"
+	}
+	Autonomous_Dolls_215 = {
+		texturefile = "gfx/models/portraits/GF_dolls/5_Lee-Enfield.dds"
+	}
+	Autonomous_Dolls_216 = {
+		texturefile = "gfx/models/portraits/GF_dolls/5_M4_SOPMOD_II_costume.dds"
+	}
+	Autonomous_Dolls_217 = {
+		texturefile = "gfx/models/portraits/GF_dolls/5_M4A1_costume.dds"
+	}
+	Autonomous_Dolls_218 = {
+		texturefile = "gfx/models/portraits/GF_dolls/5_M82A1.dds"
+	}
+	Autonomous_Dolls_219 = {
+		texturefile = "gfx/models/portraits/GF_dolls/5_M99.dds"
+	}
+	Autonomous_Dolls_220 = {
+		texturefile = "gfx/models/portraits/GF_dolls/5_M870.dds"
+	}
+	Autonomous_Dolls_221 = {
+		texturefile = "gfx/models/portraits/GF_dolls/5_M950A.dds"
+	}
+	Autonomous_Dolls_222 = {
+		texturefile = "gfx/models/portraits/GF_dolls/5_M1887.dds"
+	}
+	Autonomous_Dolls_223 = {
+		texturefile = "gfx/models/portraits/GF_dolls/5_M1918_costume.dds"
+	}
+	Autonomous_Dolls_224 = {
+		texturefile = "gfx/models/portraits/GF_dolls/5_MDR.dds"
+	}
+	Autonomous_Dolls_225 = {
+		texturefile = "gfx/models/portraits/GF_dolls/5_MG4.dds"
+	}
+	Autonomous_Dolls_226 = {
+		texturefile = "gfx/models/portraits/GF_dolls/5_MG5.dds"
+	}
+	Autonomous_Dolls_227 = {
+		texturefile = "gfx/models/portraits/GF_dolls/5_Mosin-Nagant_costume.dds"
+	}
+	Autonomous_Dolls_228 = {
+		texturefile = "gfx/models/portraits/GF_dolls/5_MP7.dds"
+	}
+	Autonomous_Dolls_229 = {
+		texturefile = "gfx/models/portraits/GF_dolls/5_Negev.dds"
+	}
+	Autonomous_Dolls_230 = {
+		texturefile = "gfx/models/portraits/GF_dolls/5_NZ75.dds"
+	}
+	Autonomous_Dolls_231 = {
+		texturefile = "gfx/models/portraits/GF_dolls/5_OTs-14.dds"
+	}
+	Autonomous_Dolls_232 = {
+		texturefile = "gfx/models/portraits/GF_dolls/5_P90.dds"
+	}
+	Autonomous_Dolls_233 = {
+		texturefile = "gfx/models/portraits/GF_dolls/5_PKP.dds"
+	}
+	Autonomous_Dolls_234 = {
+		texturefile = "gfx/models/portraits/GF_dolls/5_PM-06.dds"
+	}
+	Autonomous_Dolls_235 = {
+		texturefile = "gfx/models/portraits/GF_dolls/5_Px4_Storm.dds"
+	}
+	Autonomous_Dolls_236 = {
+		texturefile = "gfx/models/portraits/GF_dolls/5_Python.dds"
+	}
+	Autonomous_Dolls_237 = {
+		texturefile = "gfx/models/portraits/GF_dolls/5_RFB.dds"
+	}
+	Autonomous_Dolls_238 = {
+		texturefile = "gfx/models/portraits/GF_dolls/5_RO635.dds"
+	}
+	Autonomous_Dolls_239 = {
+		texturefile = "gfx/models/portraits/GF_dolls/5_S.A.T.8.dds"
+	}
+	Autonomous_Dolls_240 = {
+		texturefile = "gfx/models/portraits/GF_dolls/5_Saiga-12.dds"
+	}
+	Autonomous_Dolls_241 = {
+		texturefile = "gfx/models/portraits/GF_dolls/5_SR-3MP.dds"
+	}
+	Autonomous_Dolls_242 = {
+		texturefile = "gfx/models/portraits/GF_dolls/5_SRS.dds"
+	}
+	Autonomous_Dolls_243 = {
+		texturefile = "gfx/models/portraits/GF_dolls/5_ST_AR-15_costume.dds"
+	}
+	Autonomous_Dolls_244 = {
+		texturefile = "gfx/models/portraits/GF_dolls/5_Suomi.dds"
+	}
+	Autonomous_Dolls_245 = {
+		texturefile = "gfx/models/portraits/GF_dolls/5_T91.dds"
+	}
+	Autonomous_Dolls_246 = {
+		texturefile = "gfx/models/portraits/GF_dolls/5_TAC-50.dds"
+	}
+	Autonomous_Dolls_247 = {
+		texturefile = "gfx/models/portraits/GF_dolls/5_Thompson.dds"
+	}
+	Autonomous_Dolls_248 = {
+		texturefile = "gfx/models/portraits/GF_dolls/5_Type_79.dds"
+	}
+	Autonomous_Dolls_249 = {
+		texturefile = "gfx/models/portraits/GF_dolls/5_Type_88.dds"
+	}
+	Autonomous_Dolls_250 = {
+		texturefile = "gfx/models/portraits/GF_dolls/5_Type_95.dds"
+	}
+	Autonomous_Dolls_251 = {
+		texturefile = "gfx/models/portraits/GF_dolls/5_Type_97.dds"
+	}
+	Autonomous_Dolls_252 = {
+		texturefile = "gfx/models/portraits/GF_dolls/5_Type_100.dds"
+	}
+	Autonomous_Dolls_253 = {
+		texturefile = "gfx/models/portraits/GF_dolls/5_UMP45_costume.dds"
+	}
+	Autonomous_Dolls_254 = {
+		texturefile = "gfx/models/portraits/GF_dolls/5_Vector.dds"
+	}
+	Autonomous_Dolls_255 = {
+		texturefile = "gfx/models/portraits/GF_dolls/5_WA2000.dds"
+	}
+	Autonomous_Dolls_256 = {
+		texturefile = "gfx/models/portraits/GF_dolls/5_Welrod_MkII.dds"
+	}
+	Autonomous_Dolls_257 = {
+		texturefile = "gfx/models/portraits/GF_dolls/5_Zas_M21.dds"
+	}
+	Autonomous_Dolls_258 = {
+		texturefile = "gfx/models/portraits/GF_dolls/F_air_attack.dds"
+	}
+	Autonomous_Dolls_259 = {
+		texturefile = "gfx/models/portraits/GF_dolls/F_airborne.dds"
+	}
+	Autonomous_Dolls_260 = {
+		texturefile = "gfx/models/portraits/GF_dolls/F_armor.dds"
+	}
+	Autonomous_Dolls_261 = {
+		texturefile = "gfx/models/portraits/GF_dolls/F_bombard.dds"
+	}
+	Autonomous_Dolls_262 = {
+		texturefile = "gfx/models/portraits/GF_dolls/F_command.dds"
+	}
+	Autonomous_Dolls_263 = {
+		texturefile = "gfx/models/portraits/GF_dolls/F_cooking.dds"
+	}
+	Autonomous_Dolls_264 = {
+		texturefile = "gfx/models/portraits/GF_dolls/F_crit.dds"
+	}
+	Autonomous_Dolls_265 = {
+		texturefile = "gfx/models/portraits/GF_dolls/F_defense.dds"
+	}
+	Autonomous_Dolls_266 = {
+		texturefile = "gfx/models/portraits/GF_dolls/F_fighting.dds"
+	}
+	Autonomous_Dolls_267 = {
+		texturefile = "gfx/models/portraits/GF_dolls/F_fortress.dds"
+	}
+	Autonomous_Dolls_268 = {
+		texturefile = "gfx/models/portraits/GF_dolls/F_golden.dds"
+	}
+	Autonomous_Dolls_269 = {
+		texturefile = "gfx/models/portraits/GF_dolls/F_illumine.dds"
+	}
+	Autonomous_Dolls_270 = {
+		texturefile = "gfx/models/portraits/GF_dolls/F_Landmines.dds"
+	}
+	Autonomous_Dolls_271 = {
+		texturefile = "gfx/models/portraits/GF_dolls/F_petard.dds"
+	}
+	Autonomous_Dolls_272 = {
+		texturefile = "gfx/models/portraits/GF_dolls/F_position.dds"
+	}
+	Autonomous_Dolls_273 = {
+		texturefile = "gfx/models/portraits/GF_dolls/F_reinforce.dds"
+	}
+	Autonomous_Dolls_274 = {
+		texturefile = "gfx/models/portraits/GF_dolls/F_rescue.dds"
+	}
+	Autonomous_Dolls_275 = {
+		texturefile = "gfx/models/portraits/GF_dolls/F_shield.dds"
+	}
+	Autonomous_Dolls_276 = {
+		texturefile = "gfx/models/portraits/GF_dolls/F_sniper.dds"
+	}
+	Autonomous_Dolls_277 = {
+		texturefile = "gfx/models/portraits/GF_dolls/F_target.dds"
+	}
+	Autonomous_Dolls_278 = {
+		texturefile = "gfx/models/portraits/GF_dolls/F_Persica.dds"
+	}
+	Autonomous_Dolls_279 = {
+		texturefile = "gfx/models/portraits/GF_dolls/F_Lyco.dds"
+	}
+	Autonomous_Dolls_280 = {
+		texturefile = "gfx/models/portraits/GF_dolls/3_TEC-9.dds"
+	}
+	Autonomous_Dolls_281 = {
+		texturefile = "gfx/models/portraits/GF_dolls/5_X95.dds"
+	}
+	Autonomous_Dolls_282 = {
+		texturefile = "gfx/models/portraits/GF_dolls/5_HS2000.dds"
+	}
+	Autonomous_Dolls_283 = {
+		texturefile = "gfx/models/portraits/GF_dolls/3_Steyr_Scout.dds"
+	}
+	Autonomous_Dolls_284 = {
+		texturefile = "gfx/models/portraits/GF_dolls/4_KSVK.dds"
+	}
+	Autonomous_Dolls_285 = {
+		texturefile = "gfx/models/portraits/GF_dolls/5_Lewis_Gun.dds"
+	}
+	Autonomous_Dolls_286 = {
+		texturefile = "gfx/models/portraits/GF_dolls/5_P22.dds"
+	}
+	Autonomous_Dolls_287 = {
+		texturefile = "gfx/models/portraits/GF_dolls/4_UKM-2000.dds"
+	}
+	Autonomous_Dolls_288 = {
+		texturefile = "gfx/models/portraits/GF_dolls/3_Falcon.dds"
+	}
+	Autonomous_Dolls_289 = {
+		texturefile = "gfx/models/portraits/GF_dolls/5_M200.dds"
+	}
+	Autonomous_Dolls_290 = {
+		texturefile = "gfx/models/portraits/GF_dolls/3_Magal.dds"
+	}
+	Autonomous_Dolls_291 = {
+		texturefile = "gfx/models/portraits/GF_dolls/5_PM-9.dds"
+	}
+	Autonomous_Dolls_292 = {
+		texturefile = "gfx/models/portraits/GF_dolls/3_HK33.dds"
+	}
+	Autonomous_Dolls_293 = {
+		texturefile = "gfx/models/portraits/GF_dolls/3_KGP-9.dds"
+	}
+	Autonomous_Dolls_294 = {
+		texturefile = "gfx/models/portraits/GF_dolls/4_Chauchat.dds"
+	}
+	Autonomous_Dolls_295 = {
+		texturefile = "gfx/models/portraits/GF_dolls/4_EM-2.dds"
+	}
+	Autonomous_Dolls_296 = {
+		texturefile = "gfx/models/portraits/GF_dolls/5_K7.dds"
+	}
+	Autonomous_Dolls_297 = {
+		texturefile = "gfx/models/portraits/GF_dolls/5_MG36.dds"
+	}
+	Autonomous_Dolls_298 = {
+		texturefile = "gfx/models/portraits/GF_dolls/5_PA-15.dds"
+	}
+	Autonomous_Dolls_299 = {
+		texturefile = "gfx/models/portraits/GF_dolls/5_QBU-88.dds"
+	}
+	Autonomous_Dolls_300 = {
+		texturefile = "gfx/models/portraits/GF_dolls/5_R93.dds"
+	}
+	Autonomous_Dolls_301 = {
+		texturefile = "gfx/models/portraits/GF_dolls/4_Micro_Uzi_MOD.dds"
+	}
+	Autonomous_Dolls_302 = {
+		texturefile = "gfx/models/portraits/GF_dolls/4_StG44_MOD.dds"
+	}
+	Autonomous_Dolls_303 = {
+		texturefile = "gfx/models/portraits/GF_dolls/5_AS_Val_MOD.dds"
+	}
+	Autonomous_Dolls_304 = {
+		texturefile = "gfx/models/portraits/GF_dolls/F_Deele.dds"
+	}
+	Autonomous_Dolls_305 = {
+		texturefile = "gfx/models/portraits/GF_dolls/F_Sheele.dds"
+	}
+	Autonomous_Dolls_306 = {
+		texturefile = "gfx/models/portraits/GF_dolls/4_UMP45-Young.dds"
+	}
+	Autonomous_Dolls_307 = {
+		texturefile = "gfx/models/portraits/GF_dolls/F_Nian.dds"
+	}
+	Autonomous_Dolls_308 = {
+		texturefile = "gfx/models/portraits/GF_dolls/3_MP41.dds"
+	}
+	Autonomous_Dolls_309 = {
+		texturefile = "gfx/models/portraits/GF_dolls/5_Kar98k.dds"
+	}
+	Autonomous_Dolls_310 = {
+		texturefile = "gfx/models/portraits/GF_dolls/3_T-CMS.dds"
+	}
+	Autonomous_Dolls_311 = {
+		texturefile = "gfx/models/portraits/GF_dolls/4_P30.dds"
+	}
+	Autonomous_Dolls_312 = {
+		texturefile = "gfx/models/portraits/GF_dolls/4_Type_4.dds"
+	}
+	Autonomous_Dolls_313 = {
+		texturefile = "gfx/models/portraits/GF_dolls/3_K3.dds"
+	}
+	Autonomous_Dolls_314 = {
+		texturefile = "gfx/models/portraits/GF_dolls/5_ADS.dds"
+	}
+	Autonomous_Dolls_315 = {
+		texturefile = "gfx/models/portraits/GF_dolls/4_M1895_CB.dds"
+	}
+	Autonomous_Dolls_316 = {
+		texturefile = "gfx/models/portraits/GF_dolls/4_SSG_3000.dds"
+	}
+	Autonomous_Dolls_317 = {
+		texturefile = "gfx/models/portraits/GF_dolls/5_ACR.dds"
+	}
+	Autonomous_Dolls_318 = {
+		texturefile = "gfx/models/portraits/GF_dolls/5_Desert_Eagle.dds"
+	}
+	Autonomous_Dolls_319 = {
+		texturefile = "gfx/models/portraits/GF_dolls/5_Kord.dds"
+	}
+	Autonomous_Dolls_320 = {
+		texturefile = "gfx/models/portraits/GF_dolls/4_Hanyang_Type_88_costume2.dds"
+	}
+	Autonomous_Dolls_321 = {
+		texturefile = "gfx/models/portraits/GF_dolls/5_MP5_costume5.dds"
+	}
+	Autonomous_Dolls_322 = {
+		texturefile = "gfx/models/portraits/GF_dolls/5_UMP9_costume4.dds"
+	}
+	Autonomous_Dolls_323 = {
+		texturefile = "gfx/models/portraits/GF_dolls/6_HK416_costume3.dds"
+	}
+	Autonomous_Dolls_324 = {
+		texturefile = "gfx/models/portraits/GF_dolls/3_VP70.dds"
+	}
+	Autonomous_Dolls_325 = {
+		texturefile = "gfx/models/portraits/GF_dolls/3_Six12.dds"
+	}
+	Autonomous_Dolls_326 = {
+		texturefile = "gfx/models/portraits/GF_dolls/F_Barrier_Fairy.dds"
+	}
+	Autonomous_Dolls_327 = {
+		texturefile = "gfx/models/portraits/GF_dolls/F_Beach_Fairy.dds"
+	}
+	Autonomous_Dolls_328 = {
+		texturefile = "gfx/models/portraits/GF_dolls/F_Combo_Fairy.dds"
+	}
+	Autonomous_Dolls_329 = {
+		texturefile = "gfx/models/portraits/GF_dolls/F_Twin_Fairy.dds"
+	}
+	Autonomous_Dolls_330 = {
+		texturefile = "gfx/models/portraits/GF_dolls/3_INSAS.dds"
+	}
+	Autonomous_Dolls_331 = {
+		texturefile = "gfx/models/portraits/GF_dolls/4_Liberator.dds"
+	}
+	Autonomous_Dolls_332 = {
+		texturefile = "gfx/models/portraits/GF_dolls/5_CAWS.dds"
+	}
+	Autonomous_Dolls_333 = {
+		texturefile = "gfx/models/portraits/GF_dolls/5_DP-12.dds"
+	}
+	Autonomous_Dolls_334 = {
+		texturefile = "gfx/models/portraits/GF_dolls/3_Zas_M76.dds"
+	}
+	Autonomous_Dolls_335 = {
+		texturefile = "gfx/models/portraits/GF_dolls/4_Beretta_Model_38_mod.dds"
+	}
+	Autonomous_Dolls_336 = {
+		texturefile = "gfx/models/portraits/GF_dolls/4_C96_mod.dds"
+	}
+	Autonomous_Dolls_337 = {
+		texturefile = "gfx/models/portraits/GF_dolls/5_Stechkin_mod.dds"
+	}
+	Autonomous_Dolls_338 = {
+		texturefile = "gfx/models/portraits/GF_dolls/6_NTW-20_mod.dds"
+	}
+	Autonomous_Dolls_339 = {
+		texturefile = "gfx/models/portraits/GF_dolls/3_43M.dds"
+	}
+	Autonomous_Dolls_340 = {
+		texturefile = "gfx/models/portraits/GF_dolls/4_CR-21.dds"
+	}
+	Autonomous_Dolls_341 = {
+		texturefile = "gfx/models/portraits/GF_dolls/4_KAC-PDW.dds"
+	}
+	Autonomous_Dolls_342 = {
+		texturefile = "gfx/models/portraits/GF_dolls/4_MAT-49.dds"
+	}
+	Autonomous_Dolls_343 = {
+		texturefile = "gfx/models/portraits/GF_dolls/5_C-93.dds"
+	}
+	Autonomous_Dolls_344 = {
+		texturefile = "gfx/models/portraits/GF_dolls/5_R5.dds"
+	}
+	Autonomous_Dolls_345 = {
+		texturefile = "gfx/models/portraits/GF_dolls/5_SIG-556.dds"
+	}
+	Autonomous_Dolls_346 = {
+		texturefile = "gfx/models/portraits/GF_dolls/5_Howa_Type_89.dds"
+	}
+	Autonomous_Dolls_347 = {
+		texturefile = "gfx/models/portraits/GF_dolls/4_CF05.dds"
+	}
+	Autonomous_Dolls_348 = {
+		texturefile = "gfx/models/portraits/GF_dolls/4_M82.dds"
+	}
+	Autonomous_Dolls_349 = {
+		texturefile = "gfx/models/portraits/GF_dolls/5_AK-15.dds"
+	}
+	Autonomous_Dolls_350 = {
+		texturefile = "gfx/models/portraits/GF_dolls/5_RPK-16.dds"
+	}
+	Autonomous_Dolls_351 = {
+		texturefile = "gfx/models/portraits/GF_dolls/5_SL8.dds"
+	}
+	Autonomous_Dolls_352 = {
+		texturefile = "gfx/models/portraits/GF_dolls/5_Webley.dds"
+	}
+	Autonomous_Dolls_353 = {
+		texturefile = "gfx/models/portraits/GF_dolls/3_Vepr.dds"
+	}
+	Autonomous_Dolls_354 = {
+		texturefile = "gfx/models/portraits/GF_dolls/3_HS10.dds"
+	}
+	Autonomous_Dolls_355 = {
+		texturefile = "gfx/models/portraits/GF_dolls/3_CAR.dds"
+	}
+	Autonomous_Dolls_356 = {
+		texturefile = "gfx/models/portraits/GF_dolls/4_M500_MOD3.dds"
+	}
+	Autonomous_Dolls_357 = {
+		texturefile = "gfx/models/portraits/GF_dolls/4_GSh-18_mod.dds"
+	}
+	Autonomous_Dolls_358 = {
+		texturefile = "gfx/models/portraits/GF_dolls/5_KSVK_mod.dds"
+	}
+	Autonomous_Dolls_359 = {
+		texturefile = "gfx/models/portraits/GF_dolls/6_M950A_mod.dds"
+	}
+	Autonomous_Dolls_360 = {
+		texturefile = "gfx/models/portraits/GF_dolls/3_MAS-38.dds"
+	}
+	Autonomous_Dolls_361 = {
+		texturefile = "gfx/models/portraits/GF_dolls/4_SAF.dds"
+	}
+	Autonomous_Dolls_362 = {
+		texturefile = "gfx/models/portraits/GF_dolls/4_Tabuk.dds"
+	}
+	Autonomous_Dolls_363 = {
+		texturefile = "gfx/models/portraits/GF_dolls/5_AK-Alfa.dds"
+	}
+	Autonomous_Dolls_364 = {
+		texturefile = "gfx/models/portraits/GF_dolls/5_HP-35.dds"
+	}
+	Autonomous_Dolls_365 = {
+		texturefile = "gfx/models/portraits/GF_dolls/5_ZB-26.dds"
+	}
+	Autonomous_Dolls_366 = {
+		texturefile = "gfx/models/portraits/GF_dolls/4_Defender.dds"
+	}
+	Autonomous_Dolls_367 = {
+		texturefile = "gfx/models/portraits/GF_dolls/3_C14.dds"
+	}
+	Autonomous_Dolls_368 = {
+		texturefile = "gfx/models/portraits/GF_dolls/3_WKp.dds"
+	}
+	Autonomous_Dolls_369 = {
+		texturefile = "gfx/models/portraits/GF_dolls/3_StG-940.dds"
+	}
+	Autonomous_Dolls_370 = {
+		texturefile = "gfx/models/portraits/GF_dolls/4_Rex_Zero_1.dds"
+	}
+	Autonomous_Dolls_371 = {
+		texturefile = "gfx/models/portraits/GF_dolls/5_Lusa.dds"
+	}
+	Autonomous_Dolls_372 = {
+		texturefile = "gfx/models/portraits/GF_dolls/5_Steyr_ACR.dds"
+	}
+	Autonomous_Dolls_373 = {
+		texturefile = "gfx/models/portraits/GF_dolls/5_VSK-94.dds"
+	}
+	Autonomous_Dolls_374 = {
+		texturefile = "gfx/models/portraits/GF_dolls/4_Mondragon.dds"
+	}
+	Autonomous_Dolls_375 = {
+		texturefile = "gfx/models/portraits/GF_dolls/4_PM1910.dds"
+	}
+	Autonomous_Dolls_376 = {
+		texturefile = "gfx/models/portraits/GF_dolls/4_Super_SASS_mod.dds"
+	}
+	Autonomous_Dolls_377 = {
+		texturefile = "gfx/models/portraits/GF_dolls/5_AUG_Para.dds"
+	}
+	Autonomous_Dolls_378 = {
+		texturefile = "gfx/models/portraits/GF_dolls/5_General_Liu.dds"
+	}
+	Autonomous_Dolls_379 = {
+		texturefile = "gfx/models/portraits/GF_dolls/5_Type_97_Shotgun_mod.dds"
+	}
+	Autonomous_Dolls_380 = {
+		texturefile = "gfx/models/portraits/GF_dolls/5_VHS.dds"
+	}
+	Autonomous_Dolls_381 = {
+		texturefile = "gfx/models/portraits/GF_dolls/6_G11_mod.dds"
+	}
+	Autonomous_Dolls_382 = {
+		texturefile = "gfx/models/portraits/GF_dolls/6_RO635_mod.dds"
+	}
+	Autonomous_Dolls_383 = {
+		texturefile = "gfx/models/portraits/GF_dolls/3_TS12.dds"
+	}
+	Autonomous_Dolls_384 = {
+		texturefile = "gfx/models/portraits/GF_dolls/3_GM6_Lynx.dds"
+	}
+	Autonomous_Dolls_385 = {
+		texturefile = "gfx/models/portraits/GF_dolls/3_QSB-91.dds"
+	}
+	Autonomous_Dolls_386 = {
+		texturefile = "gfx/models/portraits/GF_dolls/4_HK512.dds"
+	}
+	Autonomous_Dolls_387 = {
+		texturefile = "gfx/models/portraits/GF_dolls/4_V-PM5.dds"
+	}
+	Autonomous_Dolls_388 = {
+		texturefile = "gfx/models/portraits/GF_dolls/5_LTLX_7000.dds"
+	}
+	Autonomous_Dolls_389 = {
+		texturefile = "gfx/models/portraits/GF_dolls/5_M6_ASW.dds"
+	}
+	Autonomous_Dolls_390 = {
+		texturefile = "gfx/models/portraits/GF_dolls/3_SUB-2000.dds"
+	}
+	Autonomous_Dolls_391 = {
+		texturefile = "gfx/models/portraits/GF_dolls/5_Agent_416.dds"
+	}
+	Autonomous_Dolls_392 = {
+		texturefile = "gfx/models/portraits/GF_dolls/5_Agent_Vector.dds"
+	}
+	Autonomous_Dolls_393 = {
+		texturefile = "gfx/models/portraits/GF_dolls/4_AR-57.dds"
+	}
+	Autonomous_Dolls_394 = {
+		texturefile = "gfx/models/portraits/GF_dolls/4_FX-05.dds"
+	}
+	Autonomous_Dolls_395 = {
+		texturefile = "gfx/models/portraits/GF_dolls/4_Galil_mod.dds"
+	}
+	Autonomous_Dolls_396 = {
+		texturefile = "gfx/models/portraits/GF_dolls/4_M1897_mod.dds"
+	}
+	Autonomous_Dolls_397 = {
+		texturefile = "gfx/models/portraits/GF_dolls/5_PP-19_mod.dds"
+	}
+	Autonomous_Dolls_398 = {
+		texturefile = "gfx/models/portraits/GF_dolls/5_SVCh.dds"
+	}
+	Autonomous_Dolls_399 = {
+		texturefile = "gfx/models/portraits/GF_dolls/4_Derringer.dds"
+	}
+	Autonomous_Dolls_400 = {
+		texturefile = "gfx/models/portraits/GF_dolls/4_F1_mod.dds"
+	}
+	Autonomous_Dolls_401 = {
+		texturefile = "gfx/models/portraits/GF_dolls/4_Fedorov.dds"
+	}
+	Autonomous_Dolls_402 = {
+		texturefile = "gfx/models/portraits/GF_dolls/4_Type_56_mod.dds"
+	}
+	Autonomous_Dolls_403 = {
+		texturefile = "gfx/models/portraits/GF_dolls/5_Kolibri.dds"
+	}
+	Autonomous_Dolls_404 = {
+		texturefile = "gfx/models/portraits/GF_dolls/5_Savage_99.dds"
+	}
+	Autonomous_Dolls_405 = {
+		texturefile = "gfx/models/portraits/GF_dolls/5_Type_80_mod.dds"
+	}
+	Autonomous_Dolls_406 = {
+		texturefile = "gfx/models/portraits/GF_dolls/5_VP1915.dds"
+	}
+	Autonomous_Dolls_407 = {
+		texturefile = "gfx/models/portraits/GF_dolls/6_Welrod_MkII_mod.dds"
+	}
+	Autonomous_Dolls_408 = {
+		texturefile = "gfx/models/portraits/GF_dolls/F_Cheer_Fairy_3.dds"
+	}
+	Autonomous_Dolls_409 = {
+		texturefile = "gfx/models/portraits/GF_dolls/F_Sand_Dance_Fairy_3.dds"
+	}
+	Autonomous_Dolls_410 = {
+		texturefile = "gfx/models/portraits/GF_dolls/4_PPD-40.dds"
+	}
+	Autonomous_Dolls_411 = {
+		texturefile = "gfx/models/portraits/GF_dolls/5_De_Lisle.dds"
+	}
+	Autonomous_Dolls_412 = {
+		texturefile = "gfx/models/portraits/GF_dolls/5_RPK-203.dds"
+	}
+	Autonomous_Dolls_413 = {
+		texturefile = "gfx/models/portraits/GF_dolls/5_SIG_MCX.dds"
+	}
+	Autonomous_Dolls_414 = {
+		texturefile = "gfx/models/portraits/GF_dolls/4_Makarov_MOD.dds"
+	}
+	Autonomous_Dolls_415 = {
+		texturefile = "gfx/models/portraits/GF_dolls/4_RMB-93_MOD.dds"
+	}
+	Autonomous_Dolls_416 = {
+		texturefile = "gfx/models/portraits/GF_dolls/5_TKB-408.dds"
+	}
+	Autonomous_Dolls_417 = {
+		texturefile = "gfx/models/portraits/GF_dolls/5_XM3_MOD.dds"
+	}
+	Autonomous_Dolls_418 = {
+		texturefile = "gfx/models/portraits/GF_dolls/6_MG4_MOD.dds"
+	}
+	Autonomous_Dolls_419 = {
+		texturefile = "gfx/models/portraits/GF_dolls/4_AK-74M.dds"
+	}
+	Autonomous_Dolls_420 = {
+		texturefile = "gfx/models/portraits/GF_dolls/4_APC556.dds"
+	}
+	Autonomous_Dolls_421 = {
+		texturefile = "gfx/models/portraits/GF_dolls/4_CZ_100.dds"
+	}
+	Autonomous_Dolls_422 = {
+		texturefile = "gfx/models/portraits/GF_dolls/4_FARA_83.dds"
+	}
+	Autonomous_Dolls_423 = {
+		texturefile = "gfx/models/portraits/GF_dolls/4_Gepard_M1_mod.dds"
+	}
+	Autonomous_Dolls_424 = {
+		texturefile = "gfx/models/portraits/GF_dolls/4_MAG-7.dds"
+	}
+	Autonomous_Dolls_425 = {
+		texturefile = "gfx/models/portraits/GF_dolls/4_MP-443_mod.dds"
+	}
+	Autonomous_Dolls_426 = {
+		texturefile = "gfx/models/portraits/GF_dolls/4_Supernova.dds"
+	}
+	Autonomous_Dolls_427 = {
+		texturefile = "gfx/models/portraits/GF_dolls/5_FO-12.dds"
+	}
+	Autonomous_Dolls_428 = {
+		texturefile = "gfx/models/portraits/GF_dolls/5_HS.50.dds"
+	}
+	Autonomous_Dolls_429 = {
+		texturefile = "gfx/models/portraits/GF_dolls/5_KH2002.dds"
+	}
+	Autonomous_Dolls_430 = {
+		texturefile = "gfx/models/portraits/GF_dolls/5_M26-MASS.dds"
+	}
+	Autonomous_Dolls_431 = {
+		texturefile = "gfx/models/portraits/GF_dolls/5_MG338.dds"
+	}
+	Autonomous_Dolls_432 = {
+		texturefile = "gfx/models/portraits/GF_dolls/5_Ribeyrolles_mod.dds"
+	}
+	Autonomous_Dolls_433 = {
+		texturefile = "gfx/models/portraits/GF_dolls/5_SP9.dds"
+	}
+	Autonomous_Dolls_434 = {
+		texturefile = "gfx/models/portraits/GF_dolls/5_SR-2.dds"
+	}
+	Autonomous_Dolls_435 = {
+		texturefile = "gfx/models/portraits/GF_dolls/6_G36C_mod.dds"
+	}
+}
+
+portrait_groups = {
+	Autonomous_Dolls = {
+		default = Autonomous_Dolls_004
+		game_setup = {
+			add = {
+				portraits = {					
+					Autonomous_Dolls_004
+					Autonomous_Dolls_005
+					Autonomous_Dolls_006
+					Autonomous_Dolls_007
+					Autonomous_Dolls_008
+					Autonomous_Dolls_009
+					Autonomous_Dolls_010
+					Autonomous_Dolls_011
+					Autonomous_Dolls_012
+					Autonomous_Dolls_013
+					Autonomous_Dolls_014
+					Autonomous_Dolls_015
+					Autonomous_Dolls_016
+					Autonomous_Dolls_017
+					Autonomous_Dolls_018
+					Autonomous_Dolls_019
+					Autonomous_Dolls_020
+					Autonomous_Dolls_021
+					Autonomous_Dolls_022
+					Autonomous_Dolls_023
+					Autonomous_Dolls_024
+					Autonomous_Dolls_025
+					Autonomous_Dolls_026
+					Autonomous_Dolls_027
+					Autonomous_Dolls_028
+					Autonomous_Dolls_029
+					Autonomous_Dolls_030
+					Autonomous_Dolls_031
+					Autonomous_Dolls_032
+					Autonomous_Dolls_033
+					Autonomous_Dolls_034
+					Autonomous_Dolls_035
+					Autonomous_Dolls_036
+					Autonomous_Dolls_037
+					Autonomous_Dolls_038
+					Autonomous_Dolls_039
+					Autonomous_Dolls_040
+					Autonomous_Dolls_041
+					Autonomous_Dolls_042
+					Autonomous_Dolls_043
+					Autonomous_Dolls_044
+					Autonomous_Dolls_045
+					Autonomous_Dolls_046
+					Autonomous_Dolls_047
+					Autonomous_Dolls_048
+					Autonomous_Dolls_049
+					Autonomous_Dolls_050
+					Autonomous_Dolls_051
+					Autonomous_Dolls_052
+					Autonomous_Dolls_053
+					Autonomous_Dolls_054
+					Autonomous_Dolls_055
+					Autonomous_Dolls_056
+					Autonomous_Dolls_057
+					Autonomous_Dolls_058
+					Autonomous_Dolls_059
+					Autonomous_Dolls_060
+					Autonomous_Dolls_061
+					Autonomous_Dolls_062
+					Autonomous_Dolls_063
+					Autonomous_Dolls_064
+					Autonomous_Dolls_065
+					Autonomous_Dolls_066
+					Autonomous_Dolls_067
+					Autonomous_Dolls_068
+					Autonomous_Dolls_069
+					Autonomous_Dolls_070
+					Autonomous_Dolls_071
+					Autonomous_Dolls_072
+					Autonomous_Dolls_073
+					Autonomous_Dolls_074
+					Autonomous_Dolls_075
+					Autonomous_Dolls_076
+					Autonomous_Dolls_077
+					Autonomous_Dolls_078
+					Autonomous_Dolls_079
+					Autonomous_Dolls_080
+					Autonomous_Dolls_081
+					Autonomous_Dolls_082
+					Autonomous_Dolls_083
+					Autonomous_Dolls_084
+					Autonomous_Dolls_085
+					Autonomous_Dolls_086
+					Autonomous_Dolls_087
+					Autonomous_Dolls_088
+					Autonomous_Dolls_089
+					Autonomous_Dolls_090
+					Autonomous_Dolls_091
+					Autonomous_Dolls_092
+					Autonomous_Dolls_093
+					Autonomous_Dolls_094
+					Autonomous_Dolls_095
+					Autonomous_Dolls_096
+					Autonomous_Dolls_097
+					Autonomous_Dolls_098
+					Autonomous_Dolls_099
+					Autonomous_Dolls_100
+					Autonomous_Dolls_101
+					Autonomous_Dolls_102
+					Autonomous_Dolls_103
+					Autonomous_Dolls_104
+					Autonomous_Dolls_105
+					Autonomous_Dolls_106
+					Autonomous_Dolls_107
+					Autonomous_Dolls_108
+					Autonomous_Dolls_109
+					Autonomous_Dolls_110
+					Autonomous_Dolls_111
+					Autonomous_Dolls_112
+					Autonomous_Dolls_113
+					Autonomous_Dolls_114
+					Autonomous_Dolls_115
+					Autonomous_Dolls_116
+					Autonomous_Dolls_117
+					Autonomous_Dolls_118
+					Autonomous_Dolls_119
+					Autonomous_Dolls_120
+					Autonomous_Dolls_121
+					Autonomous_Dolls_122
+					Autonomous_Dolls_123
+					Autonomous_Dolls_124
+					Autonomous_Dolls_125
+					Autonomous_Dolls_126
+					Autonomous_Dolls_127
+					Autonomous_Dolls_128
+					Autonomous_Dolls_129
+					Autonomous_Dolls_130
+					Autonomous_Dolls_131
+					Autonomous_Dolls_132
+					Autonomous_Dolls_133
+					Autonomous_Dolls_134
+					Autonomous_Dolls_135
+					Autonomous_Dolls_136
+					Autonomous_Dolls_137
+					Autonomous_Dolls_138
+					Autonomous_Dolls_139
+					Autonomous_Dolls_140
+					Autonomous_Dolls_141
+					Autonomous_Dolls_142
+					Autonomous_Dolls_143
+					Autonomous_Dolls_144
+					Autonomous_Dolls_145
+					Autonomous_Dolls_146
+					Autonomous_Dolls_147
+					Autonomous_Dolls_148
+					Autonomous_Dolls_149
+					Autonomous_Dolls_150
+					Autonomous_Dolls_151
+					Autonomous_Dolls_152
+					Autonomous_Dolls_153
+					Autonomous_Dolls_154
+					Autonomous_Dolls_155
+					Autonomous_Dolls_156
+					Autonomous_Dolls_157
+					Autonomous_Dolls_158
+					Autonomous_Dolls_159
+					Autonomous_Dolls_160
+					Autonomous_Dolls_161
+					Autonomous_Dolls_162
+					Autonomous_Dolls_163
+					Autonomous_Dolls_164
+					Autonomous_Dolls_165
+					Autonomous_Dolls_166
+					Autonomous_Dolls_167
+					Autonomous_Dolls_168
+					Autonomous_Dolls_169
+					Autonomous_Dolls_170
+					Autonomous_Dolls_171
+					Autonomous_Dolls_172
+					Autonomous_Dolls_173
+					Autonomous_Dolls_174
+					Autonomous_Dolls_175
+					Autonomous_Dolls_176
+					Autonomous_Dolls_177
+					Autonomous_Dolls_178
+					Autonomous_Dolls_179
+					Autonomous_Dolls_180
+					Autonomous_Dolls_181
+					Autonomous_Dolls_182
+					Autonomous_Dolls_183
+					Autonomous_Dolls_184
+					Autonomous_Dolls_185
+					Autonomous_Dolls_186
+					Autonomous_Dolls_187
+					Autonomous_Dolls_188
+					Autonomous_Dolls_189
+					Autonomous_Dolls_190
+					Autonomous_Dolls_191
+					Autonomous_Dolls_192
+					Autonomous_Dolls_193
+					Autonomous_Dolls_194
+					Autonomous_Dolls_195
+					Autonomous_Dolls_196
+					Autonomous_Dolls_197
+					Autonomous_Dolls_198
+					Autonomous_Dolls_199
+					Autonomous_Dolls_200
+					Autonomous_Dolls_201
+					Autonomous_Dolls_202
+					Autonomous_Dolls_203
+					Autonomous_Dolls_204
+					Autonomous_Dolls_205
+					Autonomous_Dolls_206
+					Autonomous_Dolls_207
+					Autonomous_Dolls_208
+					Autonomous_Dolls_209
+					Autonomous_Dolls_210
+					Autonomous_Dolls_211
+					Autonomous_Dolls_212
+					Autonomous_Dolls_213
+					Autonomous_Dolls_214
+					Autonomous_Dolls_215
+					Autonomous_Dolls_216
+					Autonomous_Dolls_217
+					Autonomous_Dolls_218
+					Autonomous_Dolls_219
+					Autonomous_Dolls_220
+					Autonomous_Dolls_221
+					Autonomous_Dolls_222
+					Autonomous_Dolls_223
+					Autonomous_Dolls_224
+					Autonomous_Dolls_225
+					Autonomous_Dolls_226
+					Autonomous_Dolls_227
+					Autonomous_Dolls_228
+					Autonomous_Dolls_229
+					Autonomous_Dolls_230
+					Autonomous_Dolls_231
+					Autonomous_Dolls_232
+					Autonomous_Dolls_233
+					Autonomous_Dolls_234
+					Autonomous_Dolls_235
+					Autonomous_Dolls_236
+					Autonomous_Dolls_237
+					Autonomous_Dolls_238
+					Autonomous_Dolls_239
+					Autonomous_Dolls_240
+					Autonomous_Dolls_241
+					Autonomous_Dolls_242
+					Autonomous_Dolls_243
+					Autonomous_Dolls_244
+					Autonomous_Dolls_245
+					Autonomous_Dolls_246
+					Autonomous_Dolls_247
+					Autonomous_Dolls_248
+					Autonomous_Dolls_249
+					Autonomous_Dolls_250
+					Autonomous_Dolls_251
+					Autonomous_Dolls_252
+					Autonomous_Dolls_253
+					Autonomous_Dolls_254
+					Autonomous_Dolls_255
+					Autonomous_Dolls_256
+					Autonomous_Dolls_257
+					Autonomous_Dolls_258
+					Autonomous_Dolls_259
+					Autonomous_Dolls_260
+					Autonomous_Dolls_261
+					Autonomous_Dolls_262
+					Autonomous_Dolls_263
+					Autonomous_Dolls_264
+					Autonomous_Dolls_265
+					Autonomous_Dolls_266
+					Autonomous_Dolls_267
+					Autonomous_Dolls_268
+					Autonomous_Dolls_269
+					Autonomous_Dolls_270
+					Autonomous_Dolls_271
+					Autonomous_Dolls_272
+					Autonomous_Dolls_273
+					Autonomous_Dolls_274
+					Autonomous_Dolls_275
+					Autonomous_Dolls_276
+					Autonomous_Dolls_277
+					Autonomous_Dolls_278
+					Autonomous_Dolls_279
+					Autonomous_Dolls_280
+					Autonomous_Dolls_281
+					Autonomous_Dolls_282
+					Autonomous_Dolls_283
+					Autonomous_Dolls_284
+					Autonomous_Dolls_285
+					Autonomous_Dolls_286
+					Autonomous_Dolls_287
+					Autonomous_Dolls_288
+					Autonomous_Dolls_289
+					Autonomous_Dolls_290
+					Autonomous_Dolls_291
+					Autonomous_Dolls_292
+					Autonomous_Dolls_293
+					Autonomous_Dolls_294
+					Autonomous_Dolls_295
+					Autonomous_Dolls_296
+					Autonomous_Dolls_297
+					Autonomous_Dolls_298
+					Autonomous_Dolls_299
+					Autonomous_Dolls_300
+					Autonomous_Dolls_301
+					Autonomous_Dolls_302
+					Autonomous_Dolls_303
+					Autonomous_Dolls_304
+					Autonomous_Dolls_305
+					Autonomous_Dolls_306
+					Autonomous_Dolls_307
+					Autonomous_Dolls_308
+					Autonomous_Dolls_309
+					Autonomous_Dolls_310
+					Autonomous_Dolls_311
+					Autonomous_Dolls_312
+					Autonomous_Dolls_313
+					Autonomous_Dolls_314
+					Autonomous_Dolls_315
+					Autonomous_Dolls_316
+					Autonomous_Dolls_317
+					Autonomous_Dolls_318
+					Autonomous_Dolls_319
+					Autonomous_Dolls_320
+					Autonomous_Dolls_321
+					Autonomous_Dolls_322
+					Autonomous_Dolls_323
+					Autonomous_Dolls_324
+					Autonomous_Dolls_325
+					Autonomous_Dolls_326
+					Autonomous_Dolls_327
+					Autonomous_Dolls_328
+					Autonomous_Dolls_329
+					Autonomous_Dolls_330
+					Autonomous_Dolls_331
+					Autonomous_Dolls_332
+					Autonomous_Dolls_333
+					Autonomous_Dolls_334
+					Autonomous_Dolls_335
+					Autonomous_Dolls_336
+					Autonomous_Dolls_337
+					Autonomous_Dolls_338
+					Autonomous_Dolls_339
+					Autonomous_Dolls_340
+					Autonomous_Dolls_341
+					Autonomous_Dolls_342
+					Autonomous_Dolls_343
+					Autonomous_Dolls_344
+					Autonomous_Dolls_345
+					Autonomous_Dolls_346
+					Autonomous_Dolls_347
+					Autonomous_Dolls_348
+					Autonomous_Dolls_349
+					Autonomous_Dolls_350
+					Autonomous_Dolls_351
+					Autonomous_Dolls_352
+					Autonomous_Dolls_353
+					Autonomous_Dolls_354
+					Autonomous_Dolls_355
+					Autonomous_Dolls_356
+					Autonomous_Dolls_357
+					Autonomous_Dolls_358
+					Autonomous_Dolls_359
+					Autonomous_Dolls_360
+					Autonomous_Dolls_361
+					Autonomous_Dolls_362
+					Autonomous_Dolls_363
+					Autonomous_Dolls_364
+					Autonomous_Dolls_365
+					Autonomous_Dolls_366
+					Autonomous_Dolls_367
+					Autonomous_Dolls_368
+					Autonomous_Dolls_369
+					Autonomous_Dolls_370
+					Autonomous_Dolls_371
+					Autonomous_Dolls_372
+					Autonomous_Dolls_373
+					Autonomous_Dolls_374
+					Autonomous_Dolls_375
+					Autonomous_Dolls_376
+					Autonomous_Dolls_377
+					Autonomous_Dolls_378
+					Autonomous_Dolls_379
+					Autonomous_Dolls_380
+					Autonomous_Dolls_381
+					Autonomous_Dolls_382
+					Autonomous_Dolls_383
+					Autonomous_Dolls_384
+					Autonomous_Dolls_385
+					Autonomous_Dolls_386
+					Autonomous_Dolls_387
+					Autonomous_Dolls_388
+					Autonomous_Dolls_389
+					Autonomous_Dolls_390
+					Autonomous_Dolls_391
+					Autonomous_Dolls_392
+					Autonomous_Dolls_393
+					Autonomous_Dolls_394
+					Autonomous_Dolls_395
+					Autonomous_Dolls_396
+					Autonomous_Dolls_397
+					Autonomous_Dolls_398
+					Autonomous_Dolls_399
+					Autonomous_Dolls_400
+					Autonomous_Dolls_401
+					Autonomous_Dolls_402
+					Autonomous_Dolls_403
+					Autonomous_Dolls_404
+					Autonomous_Dolls_405
+					Autonomous_Dolls_406
+					Autonomous_Dolls_407
+					Autonomous_Dolls_408
+					Autonomous_Dolls_409
+					Autonomous_Dolls_410
+					Autonomous_Dolls_411
+					Autonomous_Dolls_412
+					Autonomous_Dolls_413
+					Autonomous_Dolls_414
+					Autonomous_Dolls_415
+					Autonomous_Dolls_416
+					Autonomous_Dolls_417
+					Autonomous_Dolls_418
+					Autonomous_Dolls_419
+					Autonomous_Dolls_420
+					Autonomous_Dolls_421
+					Autonomous_Dolls_422
+					Autonomous_Dolls_423
+					Autonomous_Dolls_424
+					Autonomous_Dolls_425
+					Autonomous_Dolls_426
+					Autonomous_Dolls_427
+					Autonomous_Dolls_428
+					Autonomous_Dolls_429
+					Autonomous_Dolls_430
+					Autonomous_Dolls_431
+					Autonomous_Dolls_432
+					Autonomous_Dolls_433
+					Autonomous_Dolls_434
+					Autonomous_Dolls_435
+				}
+			}
+		}
+		#species scope
+		species = {
+			#generic portrait for a species
+			add = {
+				portraits = {
+					Autonomous_Dolls_004
+					Autonomous_Dolls_005
+					Autonomous_Dolls_006
+					Autonomous_Dolls_007
+					Autonomous_Dolls_008
+					Autonomous_Dolls_009
+					Autonomous_Dolls_010
+					Autonomous_Dolls_011
+					Autonomous_Dolls_012
+					Autonomous_Dolls_013
+					Autonomous_Dolls_014
+					Autonomous_Dolls_015
+					Autonomous_Dolls_016
+					Autonomous_Dolls_017
+					Autonomous_Dolls_018
+					Autonomous_Dolls_019
+					Autonomous_Dolls_020
+					Autonomous_Dolls_021
+					Autonomous_Dolls_022
+					Autonomous_Dolls_023
+					Autonomous_Dolls_024
+					Autonomous_Dolls_025
+					Autonomous_Dolls_026
+					Autonomous_Dolls_027
+					Autonomous_Dolls_028
+					Autonomous_Dolls_029
+					Autonomous_Dolls_030
+					Autonomous_Dolls_031
+					Autonomous_Dolls_032
+					Autonomous_Dolls_033
+					Autonomous_Dolls_034
+					Autonomous_Dolls_035
+					Autonomous_Dolls_036
+					Autonomous_Dolls_037
+					Autonomous_Dolls_038
+					Autonomous_Dolls_039
+					Autonomous_Dolls_040
+					Autonomous_Dolls_041
+					Autonomous_Dolls_042
+					Autonomous_Dolls_043
+					Autonomous_Dolls_044
+					Autonomous_Dolls_045
+					Autonomous_Dolls_046
+					Autonomous_Dolls_047
+					Autonomous_Dolls_048
+					Autonomous_Dolls_049
+					Autonomous_Dolls_050
+					Autonomous_Dolls_051
+					Autonomous_Dolls_052
+					Autonomous_Dolls_053
+					Autonomous_Dolls_054
+					Autonomous_Dolls_055
+					Autonomous_Dolls_056
+					Autonomous_Dolls_057
+					Autonomous_Dolls_058
+					Autonomous_Dolls_059
+					Autonomous_Dolls_060
+					Autonomous_Dolls_061
+					Autonomous_Dolls_062
+					Autonomous_Dolls_063
+					Autonomous_Dolls_064
+					Autonomous_Dolls_065
+					Autonomous_Dolls_066
+					Autonomous_Dolls_067
+					Autonomous_Dolls_068
+					Autonomous_Dolls_069
+					Autonomous_Dolls_070
+					Autonomous_Dolls_071
+					Autonomous_Dolls_072
+					Autonomous_Dolls_073
+					Autonomous_Dolls_074
+					Autonomous_Dolls_075
+					Autonomous_Dolls_076
+					Autonomous_Dolls_077
+					Autonomous_Dolls_078
+					Autonomous_Dolls_079
+					Autonomous_Dolls_080
+					Autonomous_Dolls_081
+					Autonomous_Dolls_082
+					Autonomous_Dolls_083
+					Autonomous_Dolls_084
+					Autonomous_Dolls_085
+					Autonomous_Dolls_086
+					Autonomous_Dolls_087
+					Autonomous_Dolls_088
+					Autonomous_Dolls_089
+					Autonomous_Dolls_090
+					Autonomous_Dolls_091
+					Autonomous_Dolls_092
+					Autonomous_Dolls_093
+					Autonomous_Dolls_094
+					Autonomous_Dolls_095
+					Autonomous_Dolls_096
+					Autonomous_Dolls_097
+					Autonomous_Dolls_098
+					Autonomous_Dolls_099
+					Autonomous_Dolls_100
+					Autonomous_Dolls_101
+					Autonomous_Dolls_102
+					Autonomous_Dolls_103
+					Autonomous_Dolls_104
+					Autonomous_Dolls_105
+					Autonomous_Dolls_106
+					Autonomous_Dolls_107
+					Autonomous_Dolls_108
+					Autonomous_Dolls_109
+					Autonomous_Dolls_110
+					Autonomous_Dolls_111
+					Autonomous_Dolls_112
+					Autonomous_Dolls_113
+					Autonomous_Dolls_114
+					Autonomous_Dolls_115
+					Autonomous_Dolls_116
+					Autonomous_Dolls_117
+					Autonomous_Dolls_118
+					Autonomous_Dolls_119
+					Autonomous_Dolls_120
+					Autonomous_Dolls_121
+					Autonomous_Dolls_122
+					Autonomous_Dolls_123
+					Autonomous_Dolls_124
+					Autonomous_Dolls_125
+					Autonomous_Dolls_126
+					Autonomous_Dolls_127
+					Autonomous_Dolls_128
+					Autonomous_Dolls_129
+					Autonomous_Dolls_130
+					Autonomous_Dolls_131
+					Autonomous_Dolls_132
+					Autonomous_Dolls_133
+					Autonomous_Dolls_134
+					Autonomous_Dolls_135
+					Autonomous_Dolls_136
+					Autonomous_Dolls_137
+					Autonomous_Dolls_138
+					Autonomous_Dolls_139
+					Autonomous_Dolls_140
+					Autonomous_Dolls_141
+					Autonomous_Dolls_142
+					Autonomous_Dolls_143
+					Autonomous_Dolls_144
+					Autonomous_Dolls_145
+					Autonomous_Dolls_146
+					Autonomous_Dolls_147
+					Autonomous_Dolls_148
+					Autonomous_Dolls_149
+					Autonomous_Dolls_150
+					Autonomous_Dolls_151
+					Autonomous_Dolls_152
+					Autonomous_Dolls_153
+					Autonomous_Dolls_154
+					Autonomous_Dolls_155
+					Autonomous_Dolls_156
+					Autonomous_Dolls_157
+					Autonomous_Dolls_158
+					Autonomous_Dolls_159
+					Autonomous_Dolls_160
+					Autonomous_Dolls_161
+					Autonomous_Dolls_162
+					Autonomous_Dolls_163
+					Autonomous_Dolls_164
+					Autonomous_Dolls_165
+					Autonomous_Dolls_166
+					Autonomous_Dolls_167
+					Autonomous_Dolls_168
+					Autonomous_Dolls_169
+					Autonomous_Dolls_170
+					Autonomous_Dolls_171
+					Autonomous_Dolls_172
+					Autonomous_Dolls_173
+					Autonomous_Dolls_174
+					Autonomous_Dolls_175
+					Autonomous_Dolls_176
+					Autonomous_Dolls_177
+					Autonomous_Dolls_178
+					Autonomous_Dolls_179
+					Autonomous_Dolls_180
+					Autonomous_Dolls_181
+					Autonomous_Dolls_182
+					Autonomous_Dolls_183
+					Autonomous_Dolls_184
+					Autonomous_Dolls_185
+					Autonomous_Dolls_186
+					Autonomous_Dolls_187
+					Autonomous_Dolls_188
+					Autonomous_Dolls_189
+					Autonomous_Dolls_190
+					Autonomous_Dolls_191
+					Autonomous_Dolls_192
+					Autonomous_Dolls_193
+					Autonomous_Dolls_194
+					Autonomous_Dolls_195
+					Autonomous_Dolls_196
+					Autonomous_Dolls_197
+					Autonomous_Dolls_198
+					Autonomous_Dolls_199
+					Autonomous_Dolls_200
+					Autonomous_Dolls_201
+					Autonomous_Dolls_202
+					Autonomous_Dolls_203
+					Autonomous_Dolls_204
+					Autonomous_Dolls_205
+					Autonomous_Dolls_206
+					Autonomous_Dolls_207
+					Autonomous_Dolls_208
+					Autonomous_Dolls_209
+					Autonomous_Dolls_210
+					Autonomous_Dolls_211
+					Autonomous_Dolls_212
+					Autonomous_Dolls_213
+					Autonomous_Dolls_214
+					Autonomous_Dolls_215
+					Autonomous_Dolls_216
+					Autonomous_Dolls_217
+					Autonomous_Dolls_218
+					Autonomous_Dolls_219
+					Autonomous_Dolls_220
+					Autonomous_Dolls_221
+					Autonomous_Dolls_222
+					Autonomous_Dolls_223
+					Autonomous_Dolls_224
+					Autonomous_Dolls_225
+					Autonomous_Dolls_226
+					Autonomous_Dolls_227
+					Autonomous_Dolls_228
+					Autonomous_Dolls_229
+					Autonomous_Dolls_230
+					Autonomous_Dolls_231
+					Autonomous_Dolls_232
+					Autonomous_Dolls_233
+					Autonomous_Dolls_234
+					Autonomous_Dolls_235
+					Autonomous_Dolls_236
+					Autonomous_Dolls_237
+					Autonomous_Dolls_238
+					Autonomous_Dolls_239
+					Autonomous_Dolls_240
+					Autonomous_Dolls_241
+					Autonomous_Dolls_242
+					Autonomous_Dolls_243
+					Autonomous_Dolls_244
+					Autonomous_Dolls_245
+					Autonomous_Dolls_246
+					Autonomous_Dolls_247
+					Autonomous_Dolls_248
+					Autonomous_Dolls_249
+					Autonomous_Dolls_250
+					Autonomous_Dolls_251
+					Autonomous_Dolls_252
+					Autonomous_Dolls_253
+					Autonomous_Dolls_254
+					Autonomous_Dolls_255
+					Autonomous_Dolls_256
+					Autonomous_Dolls_257
+					Autonomous_Dolls_258
+					Autonomous_Dolls_259
+					Autonomous_Dolls_260
+					Autonomous_Dolls_261
+					Autonomous_Dolls_262
+					Autonomous_Dolls_263
+					Autonomous_Dolls_264
+					Autonomous_Dolls_265
+					Autonomous_Dolls_266
+					Autonomous_Dolls_267
+					Autonomous_Dolls_268
+					Autonomous_Dolls_269
+					Autonomous_Dolls_270
+					Autonomous_Dolls_271
+					Autonomous_Dolls_272
+					Autonomous_Dolls_273
+					Autonomous_Dolls_274
+					Autonomous_Dolls_275
+					Autonomous_Dolls_276
+					Autonomous_Dolls_277
+					Autonomous_Dolls_278
+					Autonomous_Dolls_279
+					Autonomous_Dolls_280
+					Autonomous_Dolls_281
+					Autonomous_Dolls_282
+					Autonomous_Dolls_283
+					Autonomous_Dolls_284
+					Autonomous_Dolls_285
+					Autonomous_Dolls_286
+					Autonomous_Dolls_287
+					Autonomous_Dolls_288
+					Autonomous_Dolls_289
+					Autonomous_Dolls_290
+					Autonomous_Dolls_291
+					Autonomous_Dolls_292
+					Autonomous_Dolls_293
+					Autonomous_Dolls_294
+					Autonomous_Dolls_295
+					Autonomous_Dolls_296
+					Autonomous_Dolls_297
+					Autonomous_Dolls_298
+					Autonomous_Dolls_299
+					Autonomous_Dolls_300
+					Autonomous_Dolls_301
+					Autonomous_Dolls_302
+					Autonomous_Dolls_303
+					Autonomous_Dolls_304
+					Autonomous_Dolls_305
+					Autonomous_Dolls_306
+					Autonomous_Dolls_307
+					Autonomous_Dolls_308
+					Autonomous_Dolls_309
+					Autonomous_Dolls_310
+					Autonomous_Dolls_311
+					Autonomous_Dolls_312
+					Autonomous_Dolls_313
+					Autonomous_Dolls_314
+					Autonomous_Dolls_315
+					Autonomous_Dolls_316
+					Autonomous_Dolls_317
+					Autonomous_Dolls_318
+					Autonomous_Dolls_319
+					Autonomous_Dolls_320
+					Autonomous_Dolls_321
+					Autonomous_Dolls_322
+					Autonomous_Dolls_323
+					Autonomous_Dolls_324
+					Autonomous_Dolls_325
+					Autonomous_Dolls_326
+					Autonomous_Dolls_327
+					Autonomous_Dolls_328
+					Autonomous_Dolls_329
+					Autonomous_Dolls_330
+					Autonomous_Dolls_331
+					Autonomous_Dolls_332
+					Autonomous_Dolls_333
+					Autonomous_Dolls_334
+					Autonomous_Dolls_335
+					Autonomous_Dolls_336
+					Autonomous_Dolls_337
+					Autonomous_Dolls_338
+					Autonomous_Dolls_339
+					Autonomous_Dolls_340
+					Autonomous_Dolls_341
+					Autonomous_Dolls_342
+					Autonomous_Dolls_343
+					Autonomous_Dolls_344
+					Autonomous_Dolls_345
+					Autonomous_Dolls_346
+					Autonomous_Dolls_347
+					Autonomous_Dolls_348
+					Autonomous_Dolls_349
+					Autonomous_Dolls_350
+					Autonomous_Dolls_351
+					Autonomous_Dolls_352
+					Autonomous_Dolls_353
+					Autonomous_Dolls_354
+					Autonomous_Dolls_355
+					Autonomous_Dolls_356
+					Autonomous_Dolls_357
+					Autonomous_Dolls_358
+					Autonomous_Dolls_359
+					Autonomous_Dolls_360
+					Autonomous_Dolls_361
+					Autonomous_Dolls_362
+					Autonomous_Dolls_363
+					Autonomous_Dolls_364
+					Autonomous_Dolls_365
+					Autonomous_Dolls_366
+					Autonomous_Dolls_367
+					Autonomous_Dolls_368
+					Autonomous_Dolls_369
+					Autonomous_Dolls_370
+					Autonomous_Dolls_371
+					Autonomous_Dolls_372
+					Autonomous_Dolls_373
+					Autonomous_Dolls_374
+					Autonomous_Dolls_375
+					Autonomous_Dolls_376
+					Autonomous_Dolls_377
+					Autonomous_Dolls_378
+					Autonomous_Dolls_379
+					Autonomous_Dolls_380
+					Autonomous_Dolls_381
+					Autonomous_Dolls_382
+					Autonomous_Dolls_383
+					Autonomous_Dolls_384
+					Autonomous_Dolls_385
+					Autonomous_Dolls_386
+					Autonomous_Dolls_387
+					Autonomous_Dolls_388
+					Autonomous_Dolls_389
+					Autonomous_Dolls_390
+					Autonomous_Dolls_391
+					Autonomous_Dolls_392
+					Autonomous_Dolls_393
+					Autonomous_Dolls_394
+					Autonomous_Dolls_395
+					Autonomous_Dolls_396
+					Autonomous_Dolls_397
+					Autonomous_Dolls_398
+					Autonomous_Dolls_399
+					Autonomous_Dolls_400
+					Autonomous_Dolls_401
+					Autonomous_Dolls_402
+					Autonomous_Dolls_403
+					Autonomous_Dolls_404
+					Autonomous_Dolls_405
+					Autonomous_Dolls_406
+					Autonomous_Dolls_407
+					Autonomous_Dolls_408
+					Autonomous_Dolls_409
+					Autonomous_Dolls_410
+					Autonomous_Dolls_411
+					Autonomous_Dolls_412
+					Autonomous_Dolls_413
+					Autonomous_Dolls_414
+					Autonomous_Dolls_415
+					Autonomous_Dolls_416
+					Autonomous_Dolls_417
+					Autonomous_Dolls_418
+					Autonomous_Dolls_419
+					Autonomous_Dolls_420
+					Autonomous_Dolls_421
+					Autonomous_Dolls_422
+					Autonomous_Dolls_423
+					Autonomous_Dolls_424
+					Autonomous_Dolls_425
+					Autonomous_Dolls_426
+					Autonomous_Dolls_427
+					Autonomous_Dolls_428
+					Autonomous_Dolls_429
+					Autonomous_Dolls_430
+					Autonomous_Dolls_431
+					Autonomous_Dolls_432
+					Autonomous_Dolls_433
+					Autonomous_Dolls_434
+					Autonomous_Dolls_435
+				}
+			}
+		}
+		#pop scope
+		pop = {
+			#for a specific pop
+			add = {
+				portraits = {
+					Autonomous_Dolls_004
+					Autonomous_Dolls_005
+					Autonomous_Dolls_006
+					Autonomous_Dolls_007
+					Autonomous_Dolls_008
+					Autonomous_Dolls_009
+					Autonomous_Dolls_010
+					Autonomous_Dolls_011
+					Autonomous_Dolls_012
+					Autonomous_Dolls_013
+					Autonomous_Dolls_014
+					Autonomous_Dolls_015
+					Autonomous_Dolls_016
+					Autonomous_Dolls_017
+					Autonomous_Dolls_018
+					Autonomous_Dolls_019
+					Autonomous_Dolls_020
+					Autonomous_Dolls_021
+					Autonomous_Dolls_022
+					Autonomous_Dolls_023
+					Autonomous_Dolls_024
+					Autonomous_Dolls_025
+					Autonomous_Dolls_026
+					Autonomous_Dolls_027
+					Autonomous_Dolls_028
+					Autonomous_Dolls_029
+					Autonomous_Dolls_030
+					Autonomous_Dolls_031
+					Autonomous_Dolls_032
+					Autonomous_Dolls_033
+					Autonomous_Dolls_034
+					Autonomous_Dolls_035
+					Autonomous_Dolls_036
+					Autonomous_Dolls_037
+					Autonomous_Dolls_038
+					Autonomous_Dolls_039
+					Autonomous_Dolls_040
+					Autonomous_Dolls_041
+					Autonomous_Dolls_042
+					Autonomous_Dolls_043
+					Autonomous_Dolls_044
+					Autonomous_Dolls_045
+					Autonomous_Dolls_046
+					Autonomous_Dolls_047
+					Autonomous_Dolls_048
+					Autonomous_Dolls_049
+					Autonomous_Dolls_050
+					Autonomous_Dolls_051
+					Autonomous_Dolls_052
+					Autonomous_Dolls_053
+					Autonomous_Dolls_054
+					Autonomous_Dolls_055
+					Autonomous_Dolls_056
+					Autonomous_Dolls_057
+					Autonomous_Dolls_058
+					Autonomous_Dolls_059
+					Autonomous_Dolls_060
+					Autonomous_Dolls_061
+					Autonomous_Dolls_062
+					Autonomous_Dolls_063
+					Autonomous_Dolls_064
+					Autonomous_Dolls_065
+					Autonomous_Dolls_066
+					Autonomous_Dolls_067
+					Autonomous_Dolls_068
+					Autonomous_Dolls_069
+					Autonomous_Dolls_070
+					Autonomous_Dolls_071
+					Autonomous_Dolls_072
+					Autonomous_Dolls_073
+					Autonomous_Dolls_074
+					Autonomous_Dolls_075
+					Autonomous_Dolls_076
+					Autonomous_Dolls_077
+					Autonomous_Dolls_078
+					Autonomous_Dolls_079
+					Autonomous_Dolls_080
+					Autonomous_Dolls_081
+					Autonomous_Dolls_082
+					Autonomous_Dolls_083
+					Autonomous_Dolls_084
+					Autonomous_Dolls_085
+					Autonomous_Dolls_086
+					Autonomous_Dolls_087
+					Autonomous_Dolls_088
+					Autonomous_Dolls_089
+					Autonomous_Dolls_090
+					Autonomous_Dolls_091
+					Autonomous_Dolls_092
+					Autonomous_Dolls_093
+					Autonomous_Dolls_094
+					Autonomous_Dolls_095
+					Autonomous_Dolls_096
+					Autonomous_Dolls_097
+					Autonomous_Dolls_098
+					Autonomous_Dolls_099
+					Autonomous_Dolls_100
+					Autonomous_Dolls_101
+					Autonomous_Dolls_102
+					Autonomous_Dolls_103
+					Autonomous_Dolls_104
+					Autonomous_Dolls_105
+					Autonomous_Dolls_106
+					Autonomous_Dolls_107
+					Autonomous_Dolls_108
+					Autonomous_Dolls_109
+					Autonomous_Dolls_280
+					Autonomous_Dolls_283
+					Autonomous_Dolls_288
+					Autonomous_Dolls_290
+					Autonomous_Dolls_292
+					Autonomous_Dolls_293
+					Autonomous_Dolls_308
+					Autonomous_Dolls_310
+					Autonomous_Dolls_313
+					Autonomous_Dolls_324
+					Autonomous_Dolls_325
+					Autonomous_Dolls_330
+					Autonomous_Dolls_334
+					Autonomous_Dolls_339
+					Autonomous_Dolls_353
+					Autonomous_Dolls_354
+					Autonomous_Dolls_355
+					Autonomous_Dolls_360
+					Autonomous_Dolls_367
+					Autonomous_Dolls_368
+					Autonomous_Dolls_369
+					Autonomous_Dolls_383
+					Autonomous_Dolls_384
+					Autonomous_Dolls_385
+					Autonomous_Dolls_390
+				}
+			}
+		}
+		#leader scope
+		leader = {
+			#scientists, generals, admirals, governor
+			add = {
+				trigger = {
+					leader_class = scientist
+				}
+				portraits = {
+					Autonomous_Dolls_258
+					Autonomous_Dolls_259
+					Autonomous_Dolls_260
+					Autonomous_Dolls_261
+					Autonomous_Dolls_262
+					Autonomous_Dolls_263
+					Autonomous_Dolls_264
+					Autonomous_Dolls_265
+					Autonomous_Dolls_266
+					Autonomous_Dolls_267
+					Autonomous_Dolls_268
+					Autonomous_Dolls_269
+					Autonomous_Dolls_270
+					Autonomous_Dolls_271
+					Autonomous_Dolls_272
+					Autonomous_Dolls_273
+					Autonomous_Dolls_274
+					Autonomous_Dolls_275
+					Autonomous_Dolls_276
+					Autonomous_Dolls_277
+					Autonomous_Dolls_278
+					Autonomous_Dolls_279
+					Autonomous_Dolls_304
+					Autonomous_Dolls_305
+					Autonomous_Dolls_307
+					Autonomous_Dolls_326
+					Autonomous_Dolls_327
+					Autonomous_Dolls_328
+					Autonomous_Dolls_329
+					Autonomous_Dolls_408
+					Autonomous_Dolls_409
+				}
+			}
+			add = {
+				trigger = {
+					leader_class = general
+				}
+				portraits = {
+					Autonomous_Dolls_110
+					Autonomous_Dolls_111
+					Autonomous_Dolls_112
+					Autonomous_Dolls_113
+					Autonomous_Dolls_114
+					Autonomous_Dolls_115
+					Autonomous_Dolls_116
+					Autonomous_Dolls_117
+					Autonomous_Dolls_118
+					Autonomous_Dolls_119
+					Autonomous_Dolls_120
+					Autonomous_Dolls_121
+					Autonomous_Dolls_122
+					Autonomous_Dolls_123
+					Autonomous_Dolls_124
+					Autonomous_Dolls_125
+					Autonomous_Dolls_126
+					Autonomous_Dolls_127
+					Autonomous_Dolls_128
+					Autonomous_Dolls_129
+					Autonomous_Dolls_130
+					Autonomous_Dolls_131
+					Autonomous_Dolls_132
+					Autonomous_Dolls_133
+					Autonomous_Dolls_134
+					Autonomous_Dolls_135
+					Autonomous_Dolls_136
+					Autonomous_Dolls_137
+					Autonomous_Dolls_138
+					Autonomous_Dolls_139
+					Autonomous_Dolls_140
+					Autonomous_Dolls_141
+					Autonomous_Dolls_142
+					Autonomous_Dolls_143
+					Autonomous_Dolls_144
+					Autonomous_Dolls_145
+					Autonomous_Dolls_146
+					Autonomous_Dolls_147
+					Autonomous_Dolls_148
+					Autonomous_Dolls_149
+					Autonomous_Dolls_150
+					Autonomous_Dolls_151
+					Autonomous_Dolls_152
+					Autonomous_Dolls_153
+					Autonomous_Dolls_154
+					Autonomous_Dolls_155
+					Autonomous_Dolls_156
+					Autonomous_Dolls_157
+					Autonomous_Dolls_158
+					Autonomous_Dolls_159
+					Autonomous_Dolls_160
+					Autonomous_Dolls_161
+					Autonomous_Dolls_162
+					Autonomous_Dolls_163
+					Autonomous_Dolls_164
+					Autonomous_Dolls_165
+					Autonomous_Dolls_166
+					Autonomous_Dolls_167
+					Autonomous_Dolls_168
+					Autonomous_Dolls_169
+					Autonomous_Dolls_170
+					Autonomous_Dolls_171
+					Autonomous_Dolls_172
+					Autonomous_Dolls_173
+					Autonomous_Dolls_174
+					Autonomous_Dolls_175
+					Autonomous_Dolls_176
+					Autonomous_Dolls_177
+					Autonomous_Dolls_178
+					Autonomous_Dolls_179
+					Autonomous_Dolls_180
+					Autonomous_Dolls_181
+					Autonomous_Dolls_182
+					Autonomous_Dolls_183
+					Autonomous_Dolls_184
+					Autonomous_Dolls_185
+					Autonomous_Dolls_284
+					Autonomous_Dolls_287
+					Autonomous_Dolls_294
+					Autonomous_Dolls_295
+					Autonomous_Dolls_301
+					Autonomous_Dolls_302
+					Autonomous_Dolls_306
+					Autonomous_Dolls_311
+					Autonomous_Dolls_312
+					Autonomous_Dolls_315
+					Autonomous_Dolls_316
+					Autonomous_Dolls_320
+					Autonomous_Dolls_331
+					Autonomous_Dolls_335
+					Autonomous_Dolls_336
+					Autonomous_Dolls_340
+					Autonomous_Dolls_341
+					Autonomous_Dolls_342
+					Autonomous_Dolls_347
+					Autonomous_Dolls_348
+					Autonomous_Dolls_356
+					Autonomous_Dolls_357
+					Autonomous_Dolls_361
+					Autonomous_Dolls_362
+					Autonomous_Dolls_366
+					Autonomous_Dolls_370
+					Autonomous_Dolls_374
+					Autonomous_Dolls_375
+					Autonomous_Dolls_376
+					Autonomous_Dolls_386
+					Autonomous_Dolls_387
+					Autonomous_Dolls_393
+					Autonomous_Dolls_394
+					Autonomous_Dolls_395
+					Autonomous_Dolls_396
+					Autonomous_Dolls_399
+					Autonomous_Dolls_400
+					Autonomous_Dolls_401
+					Autonomous_Dolls_402
+					Autonomous_Dolls_410
+					Autonomous_Dolls_414
+					Autonomous_Dolls_415
+					Autonomous_Dolls_419
+					Autonomous_Dolls_420
+					Autonomous_Dolls_421
+					Autonomous_Dolls_422
+					Autonomous_Dolls_423
+					Autonomous_Dolls_424
+					Autonomous_Dolls_425
+					Autonomous_Dolls_426
+				}
+			}
+			add = {
+				trigger = {
+					leader_class = admiral
+				}
+				portraits = {
+					Autonomous_Dolls_186
+					Autonomous_Dolls_187
+					Autonomous_Dolls_188
+					Autonomous_Dolls_189
+					Autonomous_Dolls_190
+					Autonomous_Dolls_191
+					Autonomous_Dolls_192
+					Autonomous_Dolls_193
+					Autonomous_Dolls_194
+					Autonomous_Dolls_195
+					Autonomous_Dolls_196
+					Autonomous_Dolls_197
+					Autonomous_Dolls_198
+					Autonomous_Dolls_199
+					Autonomous_Dolls_200
+					Autonomous_Dolls_201
+					Autonomous_Dolls_202
+					Autonomous_Dolls_203
+					Autonomous_Dolls_204
+					Autonomous_Dolls_205
+					Autonomous_Dolls_206
+					Autonomous_Dolls_207
+					Autonomous_Dolls_208
+					Autonomous_Dolls_209
+					Autonomous_Dolls_210
+					Autonomous_Dolls_211
+					Autonomous_Dolls_212
+					Autonomous_Dolls_213
+					Autonomous_Dolls_214
+					Autonomous_Dolls_215
+					Autonomous_Dolls_216
+					Autonomous_Dolls_217
+					Autonomous_Dolls_218
+					Autonomous_Dolls_219
+					Autonomous_Dolls_220
+					Autonomous_Dolls_221
+					Autonomous_Dolls_222
+					Autonomous_Dolls_223
+					Autonomous_Dolls_224
+					Autonomous_Dolls_225
+					Autonomous_Dolls_226
+					Autonomous_Dolls_227
+					Autonomous_Dolls_228
+					Autonomous_Dolls_229
+					Autonomous_Dolls_230
+					Autonomous_Dolls_231
+					Autonomous_Dolls_232
+					Autonomous_Dolls_233
+					Autonomous_Dolls_234
+					Autonomous_Dolls_235
+					Autonomous_Dolls_236
+					Autonomous_Dolls_237
+					Autonomous_Dolls_238
+					Autonomous_Dolls_239
+					Autonomous_Dolls_240
+					Autonomous_Dolls_241
+					Autonomous_Dolls_242
+					Autonomous_Dolls_243
+					Autonomous_Dolls_244
+					Autonomous_Dolls_245
+					Autonomous_Dolls_246
+					Autonomous_Dolls_247
+					Autonomous_Dolls_248
+					Autonomous_Dolls_249
+					Autonomous_Dolls_250
+					Autonomous_Dolls_251
+					Autonomous_Dolls_252
+					Autonomous_Dolls_253
+					Autonomous_Dolls_254
+					Autonomous_Dolls_255
+					Autonomous_Dolls_256
+					Autonomous_Dolls_257
+					Autonomous_Dolls_281
+					Autonomous_Dolls_282
+					Autonomous_Dolls_285
+					Autonomous_Dolls_286
+					Autonomous_Dolls_289
+					Autonomous_Dolls_291
+					Autonomous_Dolls_296
+					Autonomous_Dolls_297
+					Autonomous_Dolls_298
+					Autonomous_Dolls_299
+					Autonomous_Dolls_300
+					Autonomous_Dolls_303
+					Autonomous_Dolls_309
+					Autonomous_Dolls_314
+					Autonomous_Dolls_317
+					Autonomous_Dolls_318
+					Autonomous_Dolls_319
+					Autonomous_Dolls_321
+					Autonomous_Dolls_322
+					Autonomous_Dolls_323
+					Autonomous_Dolls_332
+					Autonomous_Dolls_333
+					Autonomous_Dolls_337
+					Autonomous_Dolls_338
+					Autonomous_Dolls_343
+					Autonomous_Dolls_344
+					Autonomous_Dolls_345
+					Autonomous_Dolls_346
+					Autonomous_Dolls_349
+					Autonomous_Dolls_350
+					Autonomous_Dolls_351
+					Autonomous_Dolls_352
+					Autonomous_Dolls_358
+					Autonomous_Dolls_359
+					Autonomous_Dolls_363
+					Autonomous_Dolls_364
+					Autonomous_Dolls_365
+					Autonomous_Dolls_371
+					Autonomous_Dolls_372
+					Autonomous_Dolls_373
+					Autonomous_Dolls_377
+					Autonomous_Dolls_378
+					Autonomous_Dolls_379
+					Autonomous_Dolls_380
+					Autonomous_Dolls_381
+					Autonomous_Dolls_382
+					Autonomous_Dolls_388
+					Autonomous_Dolls_389
+					Autonomous_Dolls_391
+					Autonomous_Dolls_392
+					Autonomous_Dolls_397
+					Autonomous_Dolls_398
+					Autonomous_Dolls_403
+					Autonomous_Dolls_404
+					Autonomous_Dolls_405
+					Autonomous_Dolls_406
+					Autonomous_Dolls_407
+					Autonomous_Dolls_411
+					Autonomous_Dolls_412
+					Autonomous_Dolls_413
+					Autonomous_Dolls_416
+					Autonomous_Dolls_417
+					Autonomous_Dolls_418
+					Autonomous_Dolls_427
+					Autonomous_Dolls_428
+					Autonomous_Dolls_429
+					Autonomous_Dolls_430
+					Autonomous_Dolls_431
+					Autonomous_Dolls_432
+					Autonomous_Dolls_433
+					Autonomous_Dolls_434
+					Autonomous_Dolls_435
+				}
+			}
+			add = {
+				trigger = {
+					leader_class = governor
+				}
+				portraits = {
+					Autonomous_Dolls_110
+					Autonomous_Dolls_111
+					Autonomous_Dolls_112
+					Autonomous_Dolls_113
+					Autonomous_Dolls_114
+					Autonomous_Dolls_115
+					Autonomous_Dolls_116
+					Autonomous_Dolls_117
+					Autonomous_Dolls_118
+					Autonomous_Dolls_119
+					Autonomous_Dolls_120
+					Autonomous_Dolls_121
+					Autonomous_Dolls_122
+					Autonomous_Dolls_123
+					Autonomous_Dolls_124
+					Autonomous_Dolls_125
+					Autonomous_Dolls_126
+					Autonomous_Dolls_127
+					Autonomous_Dolls_128
+					Autonomous_Dolls_129
+					Autonomous_Dolls_130
+					Autonomous_Dolls_131
+					Autonomous_Dolls_132
+					Autonomous_Dolls_133
+					Autonomous_Dolls_134
+					Autonomous_Dolls_135
+					Autonomous_Dolls_136
+					Autonomous_Dolls_137
+					Autonomous_Dolls_138
+					Autonomous_Dolls_139
+					Autonomous_Dolls_140
+					Autonomous_Dolls_141
+					Autonomous_Dolls_142
+					Autonomous_Dolls_143
+					Autonomous_Dolls_144
+					Autonomous_Dolls_145
+					Autonomous_Dolls_146
+					Autonomous_Dolls_147
+					Autonomous_Dolls_148
+					Autonomous_Dolls_149
+					Autonomous_Dolls_150
+					Autonomous_Dolls_151
+					Autonomous_Dolls_152
+					Autonomous_Dolls_153
+					Autonomous_Dolls_154
+					Autonomous_Dolls_155
+					Autonomous_Dolls_156
+					Autonomous_Dolls_157
+					Autonomous_Dolls_158
+					Autonomous_Dolls_159
+					Autonomous_Dolls_160
+					Autonomous_Dolls_161
+					Autonomous_Dolls_162
+					Autonomous_Dolls_163
+					Autonomous_Dolls_164
+					Autonomous_Dolls_165
+					Autonomous_Dolls_166
+					Autonomous_Dolls_167
+					Autonomous_Dolls_168
+					Autonomous_Dolls_169
+					Autonomous_Dolls_170
+					Autonomous_Dolls_171
+					Autonomous_Dolls_172
+					Autonomous_Dolls_173
+					Autonomous_Dolls_174
+					Autonomous_Dolls_175
+					Autonomous_Dolls_176
+					Autonomous_Dolls_177
+					Autonomous_Dolls_178
+					Autonomous_Dolls_179
+					Autonomous_Dolls_180
+					Autonomous_Dolls_181
+					Autonomous_Dolls_182
+					Autonomous_Dolls_183
+					Autonomous_Dolls_184
+					Autonomous_Dolls_185
+					Autonomous_Dolls_186
+					Autonomous_Dolls_187
+					Autonomous_Dolls_188
+					Autonomous_Dolls_189
+					Autonomous_Dolls_190
+					Autonomous_Dolls_191
+					Autonomous_Dolls_192
+					Autonomous_Dolls_193
+					Autonomous_Dolls_194
+					Autonomous_Dolls_195
+					Autonomous_Dolls_196
+					Autonomous_Dolls_197
+					Autonomous_Dolls_198
+					Autonomous_Dolls_199
+					Autonomous_Dolls_200
+					Autonomous_Dolls_201
+					Autonomous_Dolls_202
+					Autonomous_Dolls_203
+					Autonomous_Dolls_204
+					Autonomous_Dolls_205
+					Autonomous_Dolls_206
+					Autonomous_Dolls_207
+					Autonomous_Dolls_208
+					Autonomous_Dolls_209
+					Autonomous_Dolls_210
+					Autonomous_Dolls_211
+					Autonomous_Dolls_212
+					Autonomous_Dolls_213
+					Autonomous_Dolls_214
+					Autonomous_Dolls_215
+					Autonomous_Dolls_216
+					Autonomous_Dolls_217
+					Autonomous_Dolls_218
+					Autonomous_Dolls_219
+					Autonomous_Dolls_220
+					Autonomous_Dolls_221
+					Autonomous_Dolls_222
+					Autonomous_Dolls_223
+					Autonomous_Dolls_224
+					Autonomous_Dolls_225
+					Autonomous_Dolls_226
+					Autonomous_Dolls_227
+					Autonomous_Dolls_228
+					Autonomous_Dolls_229
+					Autonomous_Dolls_230
+					Autonomous_Dolls_231
+					Autonomous_Dolls_232
+					Autonomous_Dolls_233
+					Autonomous_Dolls_234
+					Autonomous_Dolls_235
+					Autonomous_Dolls_236
+					Autonomous_Dolls_237
+					Autonomous_Dolls_238
+					Autonomous_Dolls_239
+					Autonomous_Dolls_240
+					Autonomous_Dolls_241
+					Autonomous_Dolls_242
+					Autonomous_Dolls_243
+					Autonomous_Dolls_244
+					Autonomous_Dolls_245
+					Autonomous_Dolls_246
+					Autonomous_Dolls_247
+					Autonomous_Dolls_248
+					Autonomous_Dolls_249
+					Autonomous_Dolls_250
+					Autonomous_Dolls_251
+					Autonomous_Dolls_252
+					Autonomous_Dolls_253
+					Autonomous_Dolls_254
+					Autonomous_Dolls_255
+					Autonomous_Dolls_256
+					Autonomous_Dolls_257
+					Autonomous_Dolls_281
+					Autonomous_Dolls_282
+					Autonomous_Dolls_284
+					Autonomous_Dolls_285
+					Autonomous_Dolls_286
+					Autonomous_Dolls_287
+					Autonomous_Dolls_289
+					Autonomous_Dolls_291
+					Autonomous_Dolls_294
+					Autonomous_Dolls_295
+					Autonomous_Dolls_296
+					Autonomous_Dolls_297
+					Autonomous_Dolls_298
+					Autonomous_Dolls_299
+					Autonomous_Dolls_300
+					Autonomous_Dolls_301
+					Autonomous_Dolls_302
+					Autonomous_Dolls_303
+					Autonomous_Dolls_306
+					Autonomous_Dolls_309
+					Autonomous_Dolls_311
+					Autonomous_Dolls_312
+					Autonomous_Dolls_314
+					Autonomous_Dolls_315
+					Autonomous_Dolls_316
+					Autonomous_Dolls_317
+					Autonomous_Dolls_318
+					Autonomous_Dolls_319
+					Autonomous_Dolls_320
+					Autonomous_Dolls_321
+					Autonomous_Dolls_322
+					Autonomous_Dolls_323
+					Autonomous_Dolls_331
+					Autonomous_Dolls_332
+					Autonomous_Dolls_333
+					Autonomous_Dolls_335
+					Autonomous_Dolls_336
+					Autonomous_Dolls_337
+					Autonomous_Dolls_338
+					Autonomous_Dolls_340
+					Autonomous_Dolls_341
+					Autonomous_Dolls_342
+					Autonomous_Dolls_343
+					Autonomous_Dolls_344
+					Autonomous_Dolls_345
+					Autonomous_Dolls_346
+					Autonomous_Dolls_347
+					Autonomous_Dolls_348
+					Autonomous_Dolls_349
+					Autonomous_Dolls_350
+					Autonomous_Dolls_351
+					Autonomous_Dolls_352
+					Autonomous_Dolls_356
+					Autonomous_Dolls_357
+					Autonomous_Dolls_358
+					Autonomous_Dolls_359
+					Autonomous_Dolls_361
+					Autonomous_Dolls_362
+					Autonomous_Dolls_363
+					Autonomous_Dolls_364
+					Autonomous_Dolls_365
+					Autonomous_Dolls_366
+					Autonomous_Dolls_370
+					Autonomous_Dolls_371
+					Autonomous_Dolls_372
+					Autonomous_Dolls_373
+					Autonomous_Dolls_374
+					Autonomous_Dolls_375
+					Autonomous_Dolls_376
+					Autonomous_Dolls_377
+					Autonomous_Dolls_378
+					Autonomous_Dolls_379
+					Autonomous_Dolls_380
+					Autonomous_Dolls_381
+					Autonomous_Dolls_382
+					Autonomous_Dolls_386
+					Autonomous_Dolls_387
+					Autonomous_Dolls_388
+					Autonomous_Dolls_389
+					Autonomous_Dolls_391
+					Autonomous_Dolls_392
+					Autonomous_Dolls_393
+					Autonomous_Dolls_394
+					Autonomous_Dolls_395
+					Autonomous_Dolls_396
+					Autonomous_Dolls_397
+					Autonomous_Dolls_398
+					Autonomous_Dolls_399
+					Autonomous_Dolls_400
+					Autonomous_Dolls_401
+					Autonomous_Dolls_402
+					Autonomous_Dolls_403
+					Autonomous_Dolls_404
+					Autonomous_Dolls_405
+					Autonomous_Dolls_406
+					Autonomous_Dolls_407
+					Autonomous_Dolls_410
+					Autonomous_Dolls_411
+					Autonomous_Dolls_412
+					Autonomous_Dolls_413
+					Autonomous_Dolls_414
+					Autonomous_Dolls_415
+					Autonomous_Dolls_416
+					Autonomous_Dolls_417
+					Autonomous_Dolls_418
+					Autonomous_Dolls_419
+					Autonomous_Dolls_420
+					Autonomous_Dolls_421
+					Autonomous_Dolls_422
+					Autonomous_Dolls_423
+					Autonomous_Dolls_424
+					Autonomous_Dolls_425
+					Autonomous_Dolls_426
+					Autonomous_Dolls_427
+					Autonomous_Dolls_428
+					Autonomous_Dolls_429
+					Autonomous_Dolls_430
+					Autonomous_Dolls_431
+					Autonomous_Dolls_432
+					Autonomous_Dolls_433
+					Autonomous_Dolls_434
+					Autonomous_Dolls_435
+				}
+			}
+			add = {
+				trigger = {
+					leader_class = ruler
+				}
+				portraits = {
+					Autonomous_Dolls_110
+					Autonomous_Dolls_111
+					Autonomous_Dolls_112
+					Autonomous_Dolls_113
+					Autonomous_Dolls_114
+					Autonomous_Dolls_115
+					Autonomous_Dolls_116
+					Autonomous_Dolls_117
+					Autonomous_Dolls_118
+					Autonomous_Dolls_119
+					Autonomous_Dolls_120
+					Autonomous_Dolls_121
+					Autonomous_Dolls_122
+					Autonomous_Dolls_123
+					Autonomous_Dolls_124
+					Autonomous_Dolls_125
+					Autonomous_Dolls_126
+					Autonomous_Dolls_127
+					Autonomous_Dolls_128
+					Autonomous_Dolls_129
+					Autonomous_Dolls_130
+					Autonomous_Dolls_131
+					Autonomous_Dolls_132
+					Autonomous_Dolls_133
+					Autonomous_Dolls_134
+					Autonomous_Dolls_135
+					Autonomous_Dolls_136
+					Autonomous_Dolls_137
+					Autonomous_Dolls_138
+					Autonomous_Dolls_139
+					Autonomous_Dolls_140
+					Autonomous_Dolls_141
+					Autonomous_Dolls_142
+					Autonomous_Dolls_143
+					Autonomous_Dolls_144
+					Autonomous_Dolls_145
+					Autonomous_Dolls_146
+					Autonomous_Dolls_147
+					Autonomous_Dolls_148
+					Autonomous_Dolls_149
+					Autonomous_Dolls_150
+					Autonomous_Dolls_151
+					Autonomous_Dolls_152
+					Autonomous_Dolls_153
+					Autonomous_Dolls_154
+					Autonomous_Dolls_155
+					Autonomous_Dolls_156
+					Autonomous_Dolls_157
+					Autonomous_Dolls_158
+					Autonomous_Dolls_159
+					Autonomous_Dolls_160
+					Autonomous_Dolls_161
+					Autonomous_Dolls_162
+					Autonomous_Dolls_163
+					Autonomous_Dolls_164
+					Autonomous_Dolls_165
+					Autonomous_Dolls_166
+					Autonomous_Dolls_167
+					Autonomous_Dolls_168
+					Autonomous_Dolls_169
+					Autonomous_Dolls_170
+					Autonomous_Dolls_171
+					Autonomous_Dolls_172
+					Autonomous_Dolls_173
+					Autonomous_Dolls_174
+					Autonomous_Dolls_175
+					Autonomous_Dolls_176
+					Autonomous_Dolls_177
+					Autonomous_Dolls_178
+					Autonomous_Dolls_179
+					Autonomous_Dolls_180
+					Autonomous_Dolls_181
+					Autonomous_Dolls_182
+					Autonomous_Dolls_183
+					Autonomous_Dolls_184
+					Autonomous_Dolls_185
+					Autonomous_Dolls_186
+					Autonomous_Dolls_187
+					Autonomous_Dolls_188
+					Autonomous_Dolls_189
+					Autonomous_Dolls_190
+					Autonomous_Dolls_191
+					Autonomous_Dolls_192
+					Autonomous_Dolls_193
+					Autonomous_Dolls_194
+					Autonomous_Dolls_195
+					Autonomous_Dolls_196
+					Autonomous_Dolls_197
+					Autonomous_Dolls_198
+					Autonomous_Dolls_199
+					Autonomous_Dolls_200
+					Autonomous_Dolls_201
+					Autonomous_Dolls_202
+					Autonomous_Dolls_203
+					Autonomous_Dolls_204
+					Autonomous_Dolls_205
+					Autonomous_Dolls_206
+					Autonomous_Dolls_207
+					Autonomous_Dolls_208
+					Autonomous_Dolls_209
+					Autonomous_Dolls_210
+					Autonomous_Dolls_211
+					Autonomous_Dolls_212
+					Autonomous_Dolls_213
+					Autonomous_Dolls_214
+					Autonomous_Dolls_215
+					Autonomous_Dolls_216
+					Autonomous_Dolls_217
+					Autonomous_Dolls_218
+					Autonomous_Dolls_219
+					Autonomous_Dolls_220
+					Autonomous_Dolls_221
+					Autonomous_Dolls_222
+					Autonomous_Dolls_223
+					Autonomous_Dolls_224
+					Autonomous_Dolls_225
+					Autonomous_Dolls_226
+					Autonomous_Dolls_227
+					Autonomous_Dolls_228
+					Autonomous_Dolls_229
+					Autonomous_Dolls_230
+					Autonomous_Dolls_231
+					Autonomous_Dolls_232
+					Autonomous_Dolls_233
+					Autonomous_Dolls_234
+					Autonomous_Dolls_235
+					Autonomous_Dolls_236
+					Autonomous_Dolls_237
+					Autonomous_Dolls_238
+					Autonomous_Dolls_239
+					Autonomous_Dolls_240
+					Autonomous_Dolls_241
+					Autonomous_Dolls_242
+					Autonomous_Dolls_243
+					Autonomous_Dolls_244
+					Autonomous_Dolls_245
+					Autonomous_Dolls_246
+					Autonomous_Dolls_247
+					Autonomous_Dolls_248
+					Autonomous_Dolls_249
+					Autonomous_Dolls_250
+					Autonomous_Dolls_251
+					Autonomous_Dolls_252
+					Autonomous_Dolls_253
+					Autonomous_Dolls_254
+					Autonomous_Dolls_255
+					Autonomous_Dolls_256
+					Autonomous_Dolls_257
+					Autonomous_Dolls_281
+					Autonomous_Dolls_282
+					Autonomous_Dolls_284
+					Autonomous_Dolls_285
+					Autonomous_Dolls_286
+					Autonomous_Dolls_287
+					Autonomous_Dolls_289
+					Autonomous_Dolls_291
+					Autonomous_Dolls_294
+					Autonomous_Dolls_295
+					Autonomous_Dolls_296
+					Autonomous_Dolls_297
+					Autonomous_Dolls_298
+					Autonomous_Dolls_299
+					Autonomous_Dolls_300
+					Autonomous_Dolls_301
+					Autonomous_Dolls_302
+					Autonomous_Dolls_303
+					Autonomous_Dolls_306
+					Autonomous_Dolls_309
+					Autonomous_Dolls_311
+					Autonomous_Dolls_312
+					Autonomous_Dolls_314
+					Autonomous_Dolls_315
+					Autonomous_Dolls_316
+					Autonomous_Dolls_317
+					Autonomous_Dolls_318
+					Autonomous_Dolls_319
+					Autonomous_Dolls_320
+					Autonomous_Dolls_321
+					Autonomous_Dolls_322
+					Autonomous_Dolls_323
+					Autonomous_Dolls_331
+					Autonomous_Dolls_332
+					Autonomous_Dolls_333
+					Autonomous_Dolls_335
+					Autonomous_Dolls_336
+					Autonomous_Dolls_337
+					Autonomous_Dolls_338
+					Autonomous_Dolls_340
+					Autonomous_Dolls_341
+					Autonomous_Dolls_342
+					Autonomous_Dolls_343
+					Autonomous_Dolls_344
+					Autonomous_Dolls_345
+					Autonomous_Dolls_346
+					Autonomous_Dolls_347
+					Autonomous_Dolls_348
+					Autonomous_Dolls_349
+					Autonomous_Dolls_350
+					Autonomous_Dolls_351
+					Autonomous_Dolls_352
+					Autonomous_Dolls_356
+					Autonomous_Dolls_357
+					Autonomous_Dolls_358
+					Autonomous_Dolls_359
+					Autonomous_Dolls_361
+					Autonomous_Dolls_362
+					Autonomous_Dolls_363
+					Autonomous_Dolls_364
+					Autonomous_Dolls_365
+					Autonomous_Dolls_366
+					Autonomous_Dolls_370
+					Autonomous_Dolls_371
+					Autonomous_Dolls_372
+					Autonomous_Dolls_373
+					Autonomous_Dolls_374
+					Autonomous_Dolls_375
+					Autonomous_Dolls_376
+					Autonomous_Dolls_377
+					Autonomous_Dolls_378
+					Autonomous_Dolls_379
+					Autonomous_Dolls_380
+					Autonomous_Dolls_381
+					Autonomous_Dolls_382
+					Autonomous_Dolls_386
+					Autonomous_Dolls_387
+					Autonomous_Dolls_388
+					Autonomous_Dolls_389
+					Autonomous_Dolls_391
+					Autonomous_Dolls_392
+					Autonomous_Dolls_393
+					Autonomous_Dolls_394
+					Autonomous_Dolls_395
+					Autonomous_Dolls_396
+					Autonomous_Dolls_397
+					Autonomous_Dolls_398
+					Autonomous_Dolls_399
+					Autonomous_Dolls_400
+					Autonomous_Dolls_401
+					Autonomous_Dolls_402
+					Autonomous_Dolls_403
+					Autonomous_Dolls_404
+					Autonomous_Dolls_405
+					Autonomous_Dolls_406
+					Autonomous_Dolls_407
+					Autonomous_Dolls_410
+					Autonomous_Dolls_411
+					Autonomous_Dolls_412
+					Autonomous_Dolls_413
+					Autonomous_Dolls_414
+					Autonomous_Dolls_415
+					Autonomous_Dolls_416
+					Autonomous_Dolls_417
+					Autonomous_Dolls_418
+					Autonomous_Dolls_419
+					Autonomous_Dolls_420
+					Autonomous_Dolls_421
+					Autonomous_Dolls_422
+					Autonomous_Dolls_423
+					Autonomous_Dolls_424
+					Autonomous_Dolls_425
+					Autonomous_Dolls_426
+					Autonomous_Dolls_427
+					Autonomous_Dolls_428
+					Autonomous_Dolls_429
+					Autonomous_Dolls_430
+					Autonomous_Dolls_431
+					Autonomous_Dolls_432
+					Autonomous_Dolls_433
+					Autonomous_Dolls_434
+					Autonomous_Dolls_435
+				}
+			}
+		}
+		#leader scope
+		ruler = {
+			add = {
+				portraits = {
+					Autonomous_Dolls_110
+					Autonomous_Dolls_111
+					Autonomous_Dolls_112
+					Autonomous_Dolls_113
+					Autonomous_Dolls_114
+					Autonomous_Dolls_115
+					Autonomous_Dolls_116
+					Autonomous_Dolls_117
+					Autonomous_Dolls_118
+					Autonomous_Dolls_119
+					Autonomous_Dolls_120
+					Autonomous_Dolls_121
+					Autonomous_Dolls_122
+					Autonomous_Dolls_123
+					Autonomous_Dolls_124
+					Autonomous_Dolls_125
+					Autonomous_Dolls_126
+					Autonomous_Dolls_127
+					Autonomous_Dolls_128
+					Autonomous_Dolls_129
+					Autonomous_Dolls_130
+					Autonomous_Dolls_131
+					Autonomous_Dolls_132
+					Autonomous_Dolls_133
+					Autonomous_Dolls_134
+					Autonomous_Dolls_135
+					Autonomous_Dolls_136
+					Autonomous_Dolls_137
+					Autonomous_Dolls_138
+					Autonomous_Dolls_139
+					Autonomous_Dolls_140
+					Autonomous_Dolls_141
+					Autonomous_Dolls_142
+					Autonomous_Dolls_143
+					Autonomous_Dolls_144
+					Autonomous_Dolls_145
+					Autonomous_Dolls_146
+					Autonomous_Dolls_147
+					Autonomous_Dolls_148
+					Autonomous_Dolls_149
+					Autonomous_Dolls_150
+					Autonomous_Dolls_151
+					Autonomous_Dolls_152
+					Autonomous_Dolls_153
+					Autonomous_Dolls_154
+					Autonomous_Dolls_155
+					Autonomous_Dolls_156
+					Autonomous_Dolls_157
+					Autonomous_Dolls_158
+					Autonomous_Dolls_159
+					Autonomous_Dolls_160
+					Autonomous_Dolls_161
+					Autonomous_Dolls_162
+					Autonomous_Dolls_163
+					Autonomous_Dolls_164
+					Autonomous_Dolls_165
+					Autonomous_Dolls_166
+					Autonomous_Dolls_167
+					Autonomous_Dolls_168
+					Autonomous_Dolls_169
+					Autonomous_Dolls_170
+					Autonomous_Dolls_171
+					Autonomous_Dolls_172
+					Autonomous_Dolls_173
+					Autonomous_Dolls_174
+					Autonomous_Dolls_175
+					Autonomous_Dolls_176
+					Autonomous_Dolls_177
+					Autonomous_Dolls_178
+					Autonomous_Dolls_179
+					Autonomous_Dolls_180
+					Autonomous_Dolls_181
+					Autonomous_Dolls_182
+					Autonomous_Dolls_183
+					Autonomous_Dolls_184
+					Autonomous_Dolls_185
+					Autonomous_Dolls_186
+					Autonomous_Dolls_187
+					Autonomous_Dolls_188
+					Autonomous_Dolls_189
+					Autonomous_Dolls_190
+					Autonomous_Dolls_191
+					Autonomous_Dolls_192
+					Autonomous_Dolls_193
+					Autonomous_Dolls_194
+					Autonomous_Dolls_195
+					Autonomous_Dolls_196
+					Autonomous_Dolls_197
+					Autonomous_Dolls_198
+					Autonomous_Dolls_199
+					Autonomous_Dolls_200
+					Autonomous_Dolls_201
+					Autonomous_Dolls_202
+					Autonomous_Dolls_203
+					Autonomous_Dolls_204
+					Autonomous_Dolls_205
+					Autonomous_Dolls_206
+					Autonomous_Dolls_207
+					Autonomous_Dolls_208
+					Autonomous_Dolls_209
+					Autonomous_Dolls_210
+					Autonomous_Dolls_211
+					Autonomous_Dolls_212
+					Autonomous_Dolls_213
+					Autonomous_Dolls_214
+					Autonomous_Dolls_215
+					Autonomous_Dolls_216
+					Autonomous_Dolls_217
+					Autonomous_Dolls_218
+					Autonomous_Dolls_219
+					Autonomous_Dolls_220
+					Autonomous_Dolls_221
+					Autonomous_Dolls_222
+					Autonomous_Dolls_223
+					Autonomous_Dolls_224
+					Autonomous_Dolls_225
+					Autonomous_Dolls_226
+					Autonomous_Dolls_227
+					Autonomous_Dolls_228
+					Autonomous_Dolls_229
+					Autonomous_Dolls_230
+					Autonomous_Dolls_231
+					Autonomous_Dolls_232
+					Autonomous_Dolls_233
+					Autonomous_Dolls_234
+					Autonomous_Dolls_235
+					Autonomous_Dolls_236
+					Autonomous_Dolls_237
+					Autonomous_Dolls_238
+					Autonomous_Dolls_239
+					Autonomous_Dolls_240
+					Autonomous_Dolls_241
+					Autonomous_Dolls_242
+					Autonomous_Dolls_243
+					Autonomous_Dolls_244
+					Autonomous_Dolls_245
+					Autonomous_Dolls_246
+					Autonomous_Dolls_247
+					Autonomous_Dolls_248
+					Autonomous_Dolls_249
+					Autonomous_Dolls_250
+					Autonomous_Dolls_251
+					Autonomous_Dolls_252
+					Autonomous_Dolls_253
+					Autonomous_Dolls_254
+					Autonomous_Dolls_255
+					Autonomous_Dolls_256
+					Autonomous_Dolls_257
+					Autonomous_Dolls_281
+					Autonomous_Dolls_282
+					Autonomous_Dolls_284
+					Autonomous_Dolls_285
+					Autonomous_Dolls_286
+					Autonomous_Dolls_287
+					Autonomous_Dolls_289
+					Autonomous_Dolls_291
+					Autonomous_Dolls_294
+					Autonomous_Dolls_295
+					Autonomous_Dolls_296
+					Autonomous_Dolls_297
+					Autonomous_Dolls_298
+					Autonomous_Dolls_299
+					Autonomous_Dolls_300
+					Autonomous_Dolls_301
+					Autonomous_Dolls_302
+					Autonomous_Dolls_303
+					Autonomous_Dolls_306
+					Autonomous_Dolls_309
+					Autonomous_Dolls_311
+					Autonomous_Dolls_312
+					Autonomous_Dolls_314
+					Autonomous_Dolls_315
+					Autonomous_Dolls_316
+					Autonomous_Dolls_317
+					Autonomous_Dolls_318
+					Autonomous_Dolls_319
+					Autonomous_Dolls_320
+					Autonomous_Dolls_321
+					Autonomous_Dolls_322
+					Autonomous_Dolls_323
+					Autonomous_Dolls_331
+					Autonomous_Dolls_332
+					Autonomous_Dolls_333
+					Autonomous_Dolls_335
+					Autonomous_Dolls_336
+					Autonomous_Dolls_337
+					Autonomous_Dolls_338
+					Autonomous_Dolls_340
+					Autonomous_Dolls_341
+					Autonomous_Dolls_342
+					Autonomous_Dolls_343
+					Autonomous_Dolls_344
+					Autonomous_Dolls_345
+					Autonomous_Dolls_346
+					Autonomous_Dolls_347
+					Autonomous_Dolls_348
+					Autonomous_Dolls_349
+					Autonomous_Dolls_350
+					Autonomous_Dolls_351
+					Autonomous_Dolls_352
+					Autonomous_Dolls_356
+					Autonomous_Dolls_357
+					Autonomous_Dolls_358
+					Autonomous_Dolls_359
+					Autonomous_Dolls_361
+					Autonomous_Dolls_362
+					Autonomous_Dolls_363
+					Autonomous_Dolls_364
+					Autonomous_Dolls_365
+					Autonomous_Dolls_366
+					Autonomous_Dolls_370
+					Autonomous_Dolls_371
+					Autonomous_Dolls_372
+					Autonomous_Dolls_373
+					Autonomous_Dolls_374
+					Autonomous_Dolls_375
+					Autonomous_Dolls_376
+					Autonomous_Dolls_377
+					Autonomous_Dolls_378
+					Autonomous_Dolls_379
+					Autonomous_Dolls_380
+					Autonomous_Dolls_381
+					Autonomous_Dolls_382
+					Autonomous_Dolls_386
+					Autonomous_Dolls_387
+					Autonomous_Dolls_388
+					Autonomous_Dolls_389
+					Autonomous_Dolls_391
+					Autonomous_Dolls_392
+					Autonomous_Dolls_393
+					Autonomous_Dolls_394
+					Autonomous_Dolls_395
+					Autonomous_Dolls_396
+					Autonomous_Dolls_397
+					Autonomous_Dolls_398
+					Autonomous_Dolls_399
+					Autonomous_Dolls_400
+					Autonomous_Dolls_401
+					Autonomous_Dolls_402
+					Autonomous_Dolls_403
+					Autonomous_Dolls_404
+					Autonomous_Dolls_405
+					Autonomous_Dolls_406
+					Autonomous_Dolls_407
+					Autonomous_Dolls_410
+					Autonomous_Dolls_411
+					Autonomous_Dolls_412
+					Autonomous_Dolls_413
+					Autonomous_Dolls_414
+					Autonomous_Dolls_415
+					Autonomous_Dolls_416
+					Autonomous_Dolls_417
+					Autonomous_Dolls_418
+					Autonomous_Dolls_419
+					Autonomous_Dolls_420
+					Autonomous_Dolls_421
+					Autonomous_Dolls_422
+					Autonomous_Dolls_423
+					Autonomous_Dolls_424
+					Autonomous_Dolls_425
+					Autonomous_Dolls_426
+					Autonomous_Dolls_427
+					Autonomous_Dolls_428
+					Autonomous_Dolls_429
+					Autonomous_Dolls_430
+					Autonomous_Dolls_431
+					Autonomous_Dolls_432
+					Autonomous_Dolls_433
+					Autonomous_Dolls_434
+					Autonomous_Dolls_435
+				}
+			}
+		}
+	}
+}

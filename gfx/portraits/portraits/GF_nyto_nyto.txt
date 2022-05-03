@@ -1,5 +1,4 @@
-portraits = 
-{
+portraits = {
 	#GF_nyto00     = {texturefile = "gfx/models/portraits/GFnyto/Nyto07202055.dds"}
 	GFnyto_nyto_black     = {texturefile = "gfx/models/portraits/GFnyto_nyto/GFnyto_nyto_black.dds"}
 	GFnyto_nyto_white     = {texturefile = "gfx/models/portraits/GFnyto_nyto/GFnyto_nyto_white.dds"}
@@ -56,8 +55,8 @@ portrait_groups = {
 						GFnyto_nyto_an_3
 						GFnyto_nyto_an_4					
 						GFnyto_nyto_lsomer_basic
-#						GFnyto_nyto_morridow
-#						GFnyto_nyto_morridow_casual
+						#GFnyto_nyto_morridow
+						#GFnyto_nyto_morridow_casual
 						GFnyto_nyto_strelet
 						GFnyto_nyto_rodelero
 						GFnyto_nyto_doppelsoldner

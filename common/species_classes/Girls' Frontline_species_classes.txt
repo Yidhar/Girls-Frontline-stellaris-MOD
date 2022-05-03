@@ -7,7 +7,7 @@ Autonomous_Dolls = {
 	leader_age_min = -1
 	graphical_culture = mammalian_01
 	move_pop_sound_effect = "robot_pops_move"
-	custom_portraits = {portraits = {"GFnyto_nyto"}}
+	custom_portraits = {portraits = {"Autonomous_Dolls"}}
 	resources = {
 		category = planet_pops
 		upkeep = {
@@ -21,18 +21,20 @@ Autonomous_Dolls = {
 			engineering_research = 1
 		}
 	}
+	playable = {
+		
+	}
 }
 Puppet_Dolls = {
 	archetype = Puppet_Dolls
 	randomized = no
 	gender = no
-
 	use_climate_preference = no
 	leader_age_min = -1
 	leader_age_min = -1
 	graphical_culture = mammalian_01
 	move_pop_sound_effect = "robot_pops_move"
-	custom_portraits = {portraits = {"GFnyto_nyto"}}
+	custom_portraits = {portraits = {"Autonomous_Dolls"}}
 	resources = {
 		category = planet_pops
 		upkeep = {
@@ -53,6 +55,9 @@ Puppet_Dolls = {
 		civics = {
 			#value = 
 		}
+	}
+	playable = {
+		always = no
 	}
 }
 nyto= {
@@ -112,5 +117,8 @@ eild= {
 		upkeep = {
 			GF_nyto_collapse_liquid = 0.1
 		}
+	}
+	playable = {
+		always = no
 	}
 }

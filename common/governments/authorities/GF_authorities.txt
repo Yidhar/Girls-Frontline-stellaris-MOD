@@ -9,7 +9,7 @@ auth_GF_Autonomous_Dolls ={
 	valid_for_released_vassal = no
 	possible = {
 		species_archetype = {
-			value = Puppet_Dolls
+			value = Autonomous_Dolls
 		}
 	}
 	random_weight = {

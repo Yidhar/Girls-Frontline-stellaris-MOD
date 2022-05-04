@@ -763,70 +763,7 @@ portraits = {
 	}
 	Autonomous_Dolls_258 = {
 		texturefile = "gfx/models/portraits/GF_dolls/F_air_attack.dds"
-	}
-	Autonomous_Dolls_259 = {
-		texturefile = "gfx/models/portraits/GF_dolls/F_airborne.dds"
-	}
-	Autonomous_Dolls_260 = {
-		texturefile = "gfx/models/portraits/GF_dolls/F_armor.dds"
-	}
-	Autonomous_Dolls_261 = {
-		texturefile = "gfx/models/portraits/GF_dolls/F_bombard.dds"
-	}
-	Autonomous_Dolls_262 = {
-		texturefile = "gfx/models/portraits/GF_dolls/F_command.dds"
-	}
-	Autonomous_Dolls_263 = {
-		texturefile = "gfx/models/portraits/GF_dolls/F_cooking.dds"
-	}
-	Autonomous_Dolls_264 = {
-		texturefile = "gfx/models/portraits/GF_dolls/F_crit.dds"
-	}
-	Autonomous_Dolls_265 = {
-		texturefile = "gfx/models/portraits/GF_dolls/F_defense.dds"
-	}
-	Autonomous_Dolls_266 = {
-		texturefile = "gfx/models/portraits/GF_dolls/F_fighting.dds"
-	}
-	Autonomous_Dolls_267 = {
-		texturefile = "gfx/models/portraits/GF_dolls/F_fortress.dds"
-	}
-	Autonomous_Dolls_268 = {
-		texturefile = "gfx/models/portraits/GF_dolls/F_golden.dds"
-	}
-	Autonomous_Dolls_269 = {
-		texturefile = "gfx/models/portraits/GF_dolls/F_illumine.dds"
-	}
-	Autonomous_Dolls_270 = {
-		texturefile = "gfx/models/portraits/GF_dolls/F_Landmines.dds"
-	}
-	Autonomous_Dolls_271 = {
-		texturefile = "gfx/models/portraits/GF_dolls/F_petard.dds"
-	}
-	Autonomous_Dolls_272 = {
-		texturefile = "gfx/models/portraits/GF_dolls/F_position.dds"
-	}
-	Autonomous_Dolls_273 = {
-		texturefile = "gfx/models/portraits/GF_dolls/F_reinforce.dds"
-	}
-	Autonomous_Dolls_274 = {
-		texturefile = "gfx/models/portraits/GF_dolls/F_rescue.dds"
-	}
-	Autonomous_Dolls_275 = {
-		texturefile = "gfx/models/portraits/GF_dolls/F_shield.dds"
-	}
-	Autonomous_Dolls_276 = {
-		texturefile = "gfx/models/portraits/GF_dolls/F_sniper.dds"
-	}
-	Autonomous_Dolls_277 = {
-		texturefile = "gfx/models/portraits/GF_dolls/F_target.dds"
-	}
-	Autonomous_Dolls_278 = {
-		texturefile = "gfx/models/portraits/GF_dolls/F_Persica.dds"
-	}
-	Autonomous_Dolls_279 = {
-		texturefile = "gfx/models/portraits/GF_dolls/F_Lyco.dds"
-	}
+	}	
 	Autonomous_Dolls_280 = {
 		texturefile = "gfx/models/portraits/GF_dolls/3_TEC-9.dds"
 	}
@@ -1558,27 +1495,6 @@ portrait_groups = {
 					Autonomous_Dolls_256
 					Autonomous_Dolls_257
 					Autonomous_Dolls_258
-					Autonomous_Dolls_259
-					Autonomous_Dolls_260
-					Autonomous_Dolls_261
-					Autonomous_Dolls_262
-					Autonomous_Dolls_263
-					Autonomous_Dolls_264
-					Autonomous_Dolls_265
-					Autonomous_Dolls_266
-					Autonomous_Dolls_267
-					Autonomous_Dolls_268
-					Autonomous_Dolls_269
-					Autonomous_Dolls_270
-					Autonomous_Dolls_271
-					Autonomous_Dolls_272
-					Autonomous_Dolls_273
-					Autonomous_Dolls_274
-					Autonomous_Dolls_275
-					Autonomous_Dolls_276
-					Autonomous_Dolls_277
-					Autonomous_Dolls_278
-					Autonomous_Dolls_279
 					Autonomous_Dolls_280
 					Autonomous_Dolls_281
 					Autonomous_Dolls_282
@@ -1998,27 +1914,6 @@ portrait_groups = {
 					Autonomous_Dolls_256
 					Autonomous_Dolls_257
 					Autonomous_Dolls_258
-					Autonomous_Dolls_259
-					Autonomous_Dolls_260
-					Autonomous_Dolls_261
-					Autonomous_Dolls_262
-					Autonomous_Dolls_263
-					Autonomous_Dolls_264
-					Autonomous_Dolls_265
-					Autonomous_Dolls_266
-					Autonomous_Dolls_267
-					Autonomous_Dolls_268
-					Autonomous_Dolls_269
-					Autonomous_Dolls_270
-					Autonomous_Dolls_271
-					Autonomous_Dolls_272
-					Autonomous_Dolls_273
-					Autonomous_Dolls_274
-					Autonomous_Dolls_275
-					Autonomous_Dolls_276
-					Autonomous_Dolls_277
-					Autonomous_Dolls_278
-					Autonomous_Dolls_279
 					Autonomous_Dolls_280
 					Autonomous_Dolls_281
 					Autonomous_Dolls_282
@@ -2326,27 +2221,6 @@ portrait_groups = {
 				}
 				portraits = {
 					Autonomous_Dolls_258
-					Autonomous_Dolls_259
-					Autonomous_Dolls_260
-					Autonomous_Dolls_261
-					Autonomous_Dolls_262
-					Autonomous_Dolls_263
-					Autonomous_Dolls_264
-					Autonomous_Dolls_265
-					Autonomous_Dolls_266
-					Autonomous_Dolls_267
-					Autonomous_Dolls_268
-					Autonomous_Dolls_269
-					Autonomous_Dolls_270
-					Autonomous_Dolls_271
-					Autonomous_Dolls_272
-					Autonomous_Dolls_273
-					Autonomous_Dolls_274
-					Autonomous_Dolls_275
-					Autonomous_Dolls_276
-					Autonomous_Dolls_277
-					Autonomous_Dolls_278
-					Autonomous_Dolls_279
 					Autonomous_Dolls_304
 					Autonomous_Dolls_305
 					Autonomous_Dolls_307

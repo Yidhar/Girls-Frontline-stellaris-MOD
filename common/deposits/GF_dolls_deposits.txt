@@ -1,0 +1,9 @@
+GF_dolls_build ={
+	is_for_colonizable = yes
+	# icon = d_GFnyto_ancient_land_zone
+	category = deposit_cat_rare	
+	planet_modifier = {
+		planet_pop_assembly_add = 5
+	}
+	drop_weight = {weight = 0}
+}

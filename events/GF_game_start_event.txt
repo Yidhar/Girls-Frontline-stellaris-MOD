@@ -1,9 +1,52 @@
 namespace = GF_GS
-country_event = {
+planet_event = {
 	id = GF_GS.01
 	hide_window = yes
 	is_triggered_only = yes
+	trigger = {
+		owner = {
+			has_authority = auth_GF_Autonomous_Dolls
+		}
+	}
 	immediate = {
-		set_built_species = owner_main_species
+		owner_main_species = {
+			set_species_flag = community_mod_rules_trigger
+			set_species_flag = community_can_generate_leader_from_species_false
+			set_species_flag = community_can_species_procreate_false
+		}
+		create_species = {
+			class = Puppet_Dolls
+			traits = {
+				trait = trait_Puppet_Dolls
+			}
+			effect = {
+				set_species_homeworld = root
+				set_species_flag = community_mod_rules_trigger
+				set_species_flag = community_can_generate_leader_from_species_false
+				set_species_flag = community_can_species_procreate_false		
+				save_global_event_target_as = Puppet_Dolls			
+			}
+		}		
+		while = {
+			count = 10
+			create_pop = {
+				species = last_created_species
+			}
+		}
+		add_deposit = GF_dolls_build
+		owner = {
+			set_built_species = last_created_species
+		}		
+	}
+}
+country_event = {
+	id = GF_GS.02
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		has_authority = auth_GF_Autonomous_Dolls
+	}
+	immediate = {
+		event_target:Puppet_Dolls = { set_citizenship_type = { type = citizenship_limited country = root } }
 	}
 }

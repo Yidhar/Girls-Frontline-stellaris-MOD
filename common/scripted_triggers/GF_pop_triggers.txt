@@ -1,0 +1,6 @@
+is_robotic_species = {
+	species = {
+		is_robotic = yes
+		is_archetype = Puppet_Dolls
+	}
+}

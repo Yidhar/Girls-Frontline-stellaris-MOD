@@ -3,8 +3,8 @@ Autonomous_Dolls = {
 	randomized = no
 	gender = no
 	use_climate_preference = no
-	leader_age_min = -1
-	leader_age_min = -1
+	leader_age_min = 0
+	leader_age_min = 4
 	graphical_culture = mammalian_01
 	move_pop_sound_effect = "robot_pops_move"
 	custom_portraits = {portraits = {"Autonomous_Dolls"}}

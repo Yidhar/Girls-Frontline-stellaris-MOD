@@ -6,4 +6,7 @@ origin_GF_dolls = {
 		}
 		
 	}
+	traits = {
+		trait = trait_GF_Autonomous_Dolls
+	}
 }

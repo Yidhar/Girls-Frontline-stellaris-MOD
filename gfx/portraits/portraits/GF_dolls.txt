@@ -761,9 +761,6 @@ portraits = {
 	Autonomous_Dolls_257 = {
 		texturefile = "gfx/models/portraits/GF_dolls/5_Zas_M21.dds"
 	}
-	Autonomous_Dolls_258 = {
-		texturefile = "gfx/models/portraits/GF_dolls/F_air_attack.dds"
-	}	
 	Autonomous_Dolls_280 = {
 		texturefile = "gfx/models/portraits/GF_dolls/3_TEC-9.dds"
 	}
@@ -836,18 +833,10 @@ portraits = {
 	Autonomous_Dolls_303 = {
 		texturefile = "gfx/models/portraits/GF_dolls/5_AS_Val_MOD.dds"
 	}
-	Autonomous_Dolls_304 = {
-		texturefile = "gfx/models/portraits/GF_dolls/F_Deele.dds"
-	}
-	Autonomous_Dolls_305 = {
-		texturefile = "gfx/models/portraits/GF_dolls/F_Sheele.dds"
-	}
 	Autonomous_Dolls_306 = {
 		texturefile = "gfx/models/portraits/GF_dolls/4_UMP45-Young.dds"
 	}
-	Autonomous_Dolls_307 = {
-		texturefile = "gfx/models/portraits/GF_dolls/F_Nian.dds"
-	}
+
 	Autonomous_Dolls_308 = {
 		texturefile = "gfx/models/portraits/GF_dolls/3_MP41.dds"
 	}
@@ -901,18 +890,6 @@ portraits = {
 	}
 	Autonomous_Dolls_325 = {
 		texturefile = "gfx/models/portraits/GF_dolls/3_Six12.dds"
-	}
-	Autonomous_Dolls_326 = {
-		texturefile = "gfx/models/portraits/GF_dolls/F_Barrier_Fairy.dds"
-	}
-	Autonomous_Dolls_327 = {
-		texturefile = "gfx/models/portraits/GF_dolls/F_Beach_Fairy.dds"
-	}
-	Autonomous_Dolls_328 = {
-		texturefile = "gfx/models/portraits/GF_dolls/F_Combo_Fairy.dds"
-	}
-	Autonomous_Dolls_329 = {
-		texturefile = "gfx/models/portraits/GF_dolls/F_Twin_Fairy.dds"
 	}
 	Autonomous_Dolls_330 = {
 		texturefile = "gfx/models/portraits/GF_dolls/3_INSAS.dds"
@@ -1148,12 +1125,6 @@ portraits = {
 	Autonomous_Dolls_407 = {
 		texturefile = "gfx/models/portraits/GF_dolls/6_Welrod_MkII_mod.dds"
 	}
-	Autonomous_Dolls_408 = {
-		texturefile = "gfx/models/portraits/GF_dolls/F_Cheer_Fairy_3.dds"
-	}
-	Autonomous_Dolls_409 = {
-		texturefile = "gfx/models/portraits/GF_dolls/F_Sand_Dance_Fairy_3.dds"
-	}
 	Autonomous_Dolls_410 = {
 		texturefile = "gfx/models/portraits/GF_dolls/4_PPD-40.dds"
 	}
@@ -1239,7 +1210,7 @@ portrait_groups = {
 		default = Autonomous_Dolls_004
 		game_setup = {
 			add = {
-				portraits = {					
+				portraits = {
 					Autonomous_Dolls_004
 					Autonomous_Dolls_005
 					Autonomous_Dolls_006
@@ -1494,7 +1465,6 @@ portrait_groups = {
 					Autonomous_Dolls_255
 					Autonomous_Dolls_256
 					Autonomous_Dolls_257
-					Autonomous_Dolls_258
 					Autonomous_Dolls_280
 					Autonomous_Dolls_281
 					Autonomous_Dolls_282
@@ -1519,10 +1489,9 @@ portrait_groups = {
 					Autonomous_Dolls_301
 					Autonomous_Dolls_302
 					Autonomous_Dolls_303
-					Autonomous_Dolls_304
 					Autonomous_Dolls_305
 					Autonomous_Dolls_306
-					Autonomous_Dolls_307
+					
 					Autonomous_Dolls_308
 					Autonomous_Dolls_309
 					Autonomous_Dolls_310
@@ -1541,10 +1510,10 @@ portrait_groups = {
 					Autonomous_Dolls_323
 					Autonomous_Dolls_324
 					Autonomous_Dolls_325
-					Autonomous_Dolls_326
-					Autonomous_Dolls_327
-					Autonomous_Dolls_328
-					Autonomous_Dolls_329
+					
+					
+					
+					
 					Autonomous_Dolls_330
 					Autonomous_Dolls_331
 					Autonomous_Dolls_332
@@ -1623,8 +1592,6 @@ portrait_groups = {
 					Autonomous_Dolls_405
 					Autonomous_Dolls_406
 					Autonomous_Dolls_407
-					Autonomous_Dolls_408
-					Autonomous_Dolls_409
 					Autonomous_Dolls_410
 					Autonomous_Dolls_411
 					Autonomous_Dolls_412
@@ -1913,7 +1880,6 @@ portrait_groups = {
 					Autonomous_Dolls_255
 					Autonomous_Dolls_256
 					Autonomous_Dolls_257
-					Autonomous_Dolls_258
 					Autonomous_Dolls_280
 					Autonomous_Dolls_281
 					Autonomous_Dolls_282
@@ -1938,10 +1904,9 @@ portrait_groups = {
 					Autonomous_Dolls_301
 					Autonomous_Dolls_302
 					Autonomous_Dolls_303
-					Autonomous_Dolls_304
 					Autonomous_Dolls_305
 					Autonomous_Dolls_306
-					Autonomous_Dolls_307
+					
 					Autonomous_Dolls_308
 					Autonomous_Dolls_309
 					Autonomous_Dolls_310
@@ -1960,10 +1925,10 @@ portrait_groups = {
 					Autonomous_Dolls_323
 					Autonomous_Dolls_324
 					Autonomous_Dolls_325
-					Autonomous_Dolls_326
-					Autonomous_Dolls_327
-					Autonomous_Dolls_328
-					Autonomous_Dolls_329
+					
+					
+					
+					
 					Autonomous_Dolls_330
 					Autonomous_Dolls_331
 					Autonomous_Dolls_332
@@ -2042,8 +2007,6 @@ portrait_groups = {
 					Autonomous_Dolls_405
 					Autonomous_Dolls_406
 					Autonomous_Dolls_407
-					Autonomous_Dolls_408
-					Autonomous_Dolls_409
 					Autonomous_Dolls_410
 					Autonomous_Dolls_411
 					Autonomous_Dolls_412
@@ -2220,16 +2183,132 @@ portrait_groups = {
 					leader_class = scientist
 				}
 				portraits = {
-					Autonomous_Dolls_258
-					Autonomous_Dolls_304
-					Autonomous_Dolls_305
-					Autonomous_Dolls_307
-					Autonomous_Dolls_326
-					Autonomous_Dolls_327
-					Autonomous_Dolls_328
-					Autonomous_Dolls_329
-					Autonomous_Dolls_408
-					Autonomous_Dolls_409
+					Autonomous_Dolls_110
+					Autonomous_Dolls_111
+					Autonomous_Dolls_112
+					Autonomous_Dolls_113
+					Autonomous_Dolls_114
+					Autonomous_Dolls_115
+					Autonomous_Dolls_116
+					Autonomous_Dolls_117
+					Autonomous_Dolls_118
+					Autonomous_Dolls_119
+					Autonomous_Dolls_120
+					Autonomous_Dolls_121
+					Autonomous_Dolls_122
+					Autonomous_Dolls_123
+					Autonomous_Dolls_124
+					Autonomous_Dolls_125
+					Autonomous_Dolls_126
+					Autonomous_Dolls_127
+					Autonomous_Dolls_128
+					Autonomous_Dolls_129
+					Autonomous_Dolls_130
+					Autonomous_Dolls_131
+					Autonomous_Dolls_132
+					Autonomous_Dolls_133
+					Autonomous_Dolls_134
+					Autonomous_Dolls_135
+					Autonomous_Dolls_136
+					Autonomous_Dolls_137
+					Autonomous_Dolls_138
+					Autonomous_Dolls_139
+					Autonomous_Dolls_140
+					Autonomous_Dolls_141
+					Autonomous_Dolls_142
+					Autonomous_Dolls_143
+					Autonomous_Dolls_144
+					Autonomous_Dolls_145
+					Autonomous_Dolls_146
+					Autonomous_Dolls_147
+					Autonomous_Dolls_148
+					Autonomous_Dolls_149
+					Autonomous_Dolls_150
+					Autonomous_Dolls_151
+					Autonomous_Dolls_152
+					Autonomous_Dolls_153
+					Autonomous_Dolls_154
+					Autonomous_Dolls_155
+					Autonomous_Dolls_156
+					Autonomous_Dolls_157
+					Autonomous_Dolls_158
+					Autonomous_Dolls_159
+					Autonomous_Dolls_160
+					Autonomous_Dolls_161
+					Autonomous_Dolls_162
+					Autonomous_Dolls_163
+					Autonomous_Dolls_164
+					Autonomous_Dolls_165
+					Autonomous_Dolls_166
+					Autonomous_Dolls_167
+					Autonomous_Dolls_168
+					Autonomous_Dolls_169
+					Autonomous_Dolls_170
+					Autonomous_Dolls_171
+					Autonomous_Dolls_172
+					Autonomous_Dolls_173
+					Autonomous_Dolls_174
+					Autonomous_Dolls_175
+					Autonomous_Dolls_176
+					Autonomous_Dolls_177
+					Autonomous_Dolls_178
+					Autonomous_Dolls_179
+					Autonomous_Dolls_180
+					Autonomous_Dolls_181
+					Autonomous_Dolls_182
+					Autonomous_Dolls_183
+					Autonomous_Dolls_184
+					Autonomous_Dolls_185
+					Autonomous_Dolls_284
+					Autonomous_Dolls_287
+					Autonomous_Dolls_294
+					Autonomous_Dolls_295
+					Autonomous_Dolls_301
+					Autonomous_Dolls_302
+					Autonomous_Dolls_306
+					Autonomous_Dolls_311
+					Autonomous_Dolls_312
+					Autonomous_Dolls_315
+					Autonomous_Dolls_316
+					Autonomous_Dolls_320
+					Autonomous_Dolls_331
+					Autonomous_Dolls_335
+					Autonomous_Dolls_336
+					Autonomous_Dolls_340
+					Autonomous_Dolls_341
+					Autonomous_Dolls_342
+					Autonomous_Dolls_347
+					Autonomous_Dolls_348
+					Autonomous_Dolls_356
+					Autonomous_Dolls_357
+					Autonomous_Dolls_361
+					Autonomous_Dolls_362
+					Autonomous_Dolls_366
+					Autonomous_Dolls_370
+					Autonomous_Dolls_374
+					Autonomous_Dolls_375
+					Autonomous_Dolls_376
+					Autonomous_Dolls_386
+					Autonomous_Dolls_387
+					Autonomous_Dolls_393
+					Autonomous_Dolls_394
+					Autonomous_Dolls_395
+					Autonomous_Dolls_396
+					Autonomous_Dolls_399
+					Autonomous_Dolls_400
+					Autonomous_Dolls_401
+					Autonomous_Dolls_402
+					Autonomous_Dolls_410
+					Autonomous_Dolls_414
+					Autonomous_Dolls_415
+					Autonomous_Dolls_419
+					Autonomous_Dolls_420
+					Autonomous_Dolls_421
+					Autonomous_Dolls_422
+					Autonomous_Dolls_423
+					Autonomous_Dolls_424
+					Autonomous_Dolls_425
+					Autonomous_Dolls_426					  																				
 				}
 			}
 			add = {
@@ -3075,6 +3154,112 @@ portrait_groups = {
 		ruler = {
 			add = {
 				portraits = {
+					Autonomous_Dolls_004
+					Autonomous_Dolls_005
+					Autonomous_Dolls_006
+					Autonomous_Dolls_007
+					Autonomous_Dolls_008
+					Autonomous_Dolls_009
+					Autonomous_Dolls_010
+					Autonomous_Dolls_011
+					Autonomous_Dolls_012
+					Autonomous_Dolls_013
+					Autonomous_Dolls_014
+					Autonomous_Dolls_015
+					Autonomous_Dolls_016
+					Autonomous_Dolls_017
+					Autonomous_Dolls_018
+					Autonomous_Dolls_019
+					Autonomous_Dolls_020
+					Autonomous_Dolls_021
+					Autonomous_Dolls_022
+					Autonomous_Dolls_023
+					Autonomous_Dolls_024
+					Autonomous_Dolls_025
+					Autonomous_Dolls_026
+					Autonomous_Dolls_027
+					Autonomous_Dolls_028
+					Autonomous_Dolls_029
+					Autonomous_Dolls_030
+					Autonomous_Dolls_031
+					Autonomous_Dolls_032
+					Autonomous_Dolls_033
+					Autonomous_Dolls_034
+					Autonomous_Dolls_035
+					Autonomous_Dolls_036
+					Autonomous_Dolls_037
+					Autonomous_Dolls_038
+					Autonomous_Dolls_039
+					Autonomous_Dolls_040
+					Autonomous_Dolls_041
+					Autonomous_Dolls_042
+					Autonomous_Dolls_043
+					Autonomous_Dolls_044
+					Autonomous_Dolls_045
+					Autonomous_Dolls_046
+					Autonomous_Dolls_047
+					Autonomous_Dolls_048
+					Autonomous_Dolls_049
+					Autonomous_Dolls_050
+					Autonomous_Dolls_051
+					Autonomous_Dolls_052
+					Autonomous_Dolls_053
+					Autonomous_Dolls_054
+					Autonomous_Dolls_055
+					Autonomous_Dolls_056
+					Autonomous_Dolls_057
+					Autonomous_Dolls_058
+					Autonomous_Dolls_059
+					Autonomous_Dolls_060
+					Autonomous_Dolls_061
+					Autonomous_Dolls_062
+					Autonomous_Dolls_063
+					Autonomous_Dolls_064
+					Autonomous_Dolls_065
+					Autonomous_Dolls_066
+					Autonomous_Dolls_067
+					Autonomous_Dolls_068
+					Autonomous_Dolls_069
+					Autonomous_Dolls_070
+					Autonomous_Dolls_071
+					Autonomous_Dolls_072
+					Autonomous_Dolls_073
+					Autonomous_Dolls_074
+					Autonomous_Dolls_075
+					Autonomous_Dolls_076
+					Autonomous_Dolls_077
+					Autonomous_Dolls_078
+					Autonomous_Dolls_079
+					Autonomous_Dolls_080
+					Autonomous_Dolls_081
+					Autonomous_Dolls_082
+					Autonomous_Dolls_083
+					Autonomous_Dolls_084
+					Autonomous_Dolls_085
+					Autonomous_Dolls_086
+					Autonomous_Dolls_087
+					Autonomous_Dolls_088
+					Autonomous_Dolls_089
+					Autonomous_Dolls_090
+					Autonomous_Dolls_091
+					Autonomous_Dolls_092
+					Autonomous_Dolls_093
+					Autonomous_Dolls_094
+					Autonomous_Dolls_095
+					Autonomous_Dolls_096
+					Autonomous_Dolls_097
+					Autonomous_Dolls_098
+					Autonomous_Dolls_099
+					Autonomous_Dolls_100
+					Autonomous_Dolls_101
+					Autonomous_Dolls_102
+					Autonomous_Dolls_103
+					Autonomous_Dolls_104
+					Autonomous_Dolls_105
+					Autonomous_Dolls_106
+					Autonomous_Dolls_107
+					Autonomous_Dolls_108
+					Autonomous_Dolls_109
 					Autonomous_Dolls_110
 					Autonomous_Dolls_111
 					Autonomous_Dolls_112
@@ -3223,14 +3408,20 @@ portrait_groups = {
 					Autonomous_Dolls_255
 					Autonomous_Dolls_256
 					Autonomous_Dolls_257
+					Autonomous_Dolls_280
 					Autonomous_Dolls_281
 					Autonomous_Dolls_282
+					Autonomous_Dolls_283
 					Autonomous_Dolls_284
 					Autonomous_Dolls_285
 					Autonomous_Dolls_286
 					Autonomous_Dolls_287
+					Autonomous_Dolls_288
 					Autonomous_Dolls_289
+					Autonomous_Dolls_290
 					Autonomous_Dolls_291
+					Autonomous_Dolls_292
+					Autonomous_Dolls_293
 					Autonomous_Dolls_294
 					Autonomous_Dolls_295
 					Autonomous_Dolls_296
@@ -3241,10 +3432,15 @@ portrait_groups = {
 					Autonomous_Dolls_301
 					Autonomous_Dolls_302
 					Autonomous_Dolls_303
+					Autonomous_Dolls_305
 					Autonomous_Dolls_306
+					
+					Autonomous_Dolls_308
 					Autonomous_Dolls_309
+					Autonomous_Dolls_310
 					Autonomous_Dolls_311
 					Autonomous_Dolls_312
+					Autonomous_Dolls_313
 					Autonomous_Dolls_314
 					Autonomous_Dolls_315
 					Autonomous_Dolls_316
@@ -3255,13 +3451,22 @@ portrait_groups = {
 					Autonomous_Dolls_321
 					Autonomous_Dolls_322
 					Autonomous_Dolls_323
+					Autonomous_Dolls_324
+					Autonomous_Dolls_325
+					
+					
+					
+					
+					Autonomous_Dolls_330
 					Autonomous_Dolls_331
 					Autonomous_Dolls_332
 					Autonomous_Dolls_333
+					Autonomous_Dolls_334
 					Autonomous_Dolls_335
 					Autonomous_Dolls_336
 					Autonomous_Dolls_337
 					Autonomous_Dolls_338
+					Autonomous_Dolls_339
 					Autonomous_Dolls_340
 					Autonomous_Dolls_341
 					Autonomous_Dolls_342
@@ -3275,16 +3480,23 @@ portrait_groups = {
 					Autonomous_Dolls_350
 					Autonomous_Dolls_351
 					Autonomous_Dolls_352
+					Autonomous_Dolls_353
+					Autonomous_Dolls_354
+					Autonomous_Dolls_355
 					Autonomous_Dolls_356
 					Autonomous_Dolls_357
 					Autonomous_Dolls_358
 					Autonomous_Dolls_359
+					Autonomous_Dolls_360
 					Autonomous_Dolls_361
 					Autonomous_Dolls_362
 					Autonomous_Dolls_363
 					Autonomous_Dolls_364
 					Autonomous_Dolls_365
 					Autonomous_Dolls_366
+					Autonomous_Dolls_367
+					Autonomous_Dolls_368
+					Autonomous_Dolls_369
 					Autonomous_Dolls_370
 					Autonomous_Dolls_371
 					Autonomous_Dolls_372
@@ -3298,10 +3510,14 @@ portrait_groups = {
 					Autonomous_Dolls_380
 					Autonomous_Dolls_381
 					Autonomous_Dolls_382
+					Autonomous_Dolls_383
+					Autonomous_Dolls_384
+					Autonomous_Dolls_385
 					Autonomous_Dolls_386
 					Autonomous_Dolls_387
 					Autonomous_Dolls_388
 					Autonomous_Dolls_389
+					Autonomous_Dolls_390
 					Autonomous_Dolls_391
 					Autonomous_Dolls_392
 					Autonomous_Dolls_393

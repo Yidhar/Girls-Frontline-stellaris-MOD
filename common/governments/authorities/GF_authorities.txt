@@ -12,6 +12,10 @@ auth_GF_Autonomous_Dolls ={
 			value = Autonomous_Dolls
 		}
 	}
+	country_modifier = {
+		leader_cost_empire_size_mult = 9999
+		leader_age = -100
+	}
 	random_weight = {
 		weight = 0
 	}

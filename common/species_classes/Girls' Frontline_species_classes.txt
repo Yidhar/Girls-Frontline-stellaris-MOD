@@ -21,9 +21,6 @@ Autonomous_Dolls = {
 			engineering_research = 1
 		}
 	}
-	playable = {
-		
-	}
 }
 Puppet_Dolls = {
 	archetype = Puppet_Dolls

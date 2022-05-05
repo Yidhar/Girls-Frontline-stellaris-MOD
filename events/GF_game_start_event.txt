@@ -12,7 +12,7 @@ planet_event = {
 		owner_main_species = {
 			set_species_flag = community_mod_rules_trigger
 			set_species_flag = community_can_generate_leader_from_species_false
-			set_species_flag = community_can_species_procreate_false
+			set_species_flag = community_can_species_procreate_false			
 		}
 		create_species = {
 			class = Puppet_Dolls
@@ -47,6 +47,7 @@ country_event = {
 		has_authority = auth_GF_Autonomous_Dolls
 	}
 	immediate = {
+		owner_main_species = { save_global_event_target_as = Autonomous_Dolls_species_target }		
 		event_target:Puppet_Dolls = { set_citizenship_type = { type = citizenship_limited country = root } }
 	}
 }

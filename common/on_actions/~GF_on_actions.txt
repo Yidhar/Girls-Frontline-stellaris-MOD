@@ -17,6 +17,6 @@ on_game_start_country = {
 # this = country
 on_yearly_pulse_country = {
 	events = {
-		
+		GF_global_evt.0
 	}
 }

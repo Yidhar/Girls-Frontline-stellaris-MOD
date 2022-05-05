@@ -1,0 +1,61 @@
+namespace = GF_global_evt
+country_event = { #通用年检事件延迟
+	id = GF_global_evt.1
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		if = {
+			limit = {
+				any_owned_species = { is_species_class = Puppet_Dolls }
+				any_owned_species = { is_species_class = Autonomous_Dolls }
+			}
+			random_owned_species = {
+				limit = {
+					is_species_class = Autonomous_Dolls
+				}
+				save_global_event_target_as = Autonomous_Dolls_species_target
+			}
+			country_event = { #延迟5天 错开月初
+				id = GF_global_evt.1
+				days = 5 
+			}
+		}
+	}
+}
+
+
+country_event = {
+	id = GF_global_evt.1
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		every_owned_planet = {
+			limit = {
+				any_owned_pop = {
+					is_species_class = Puppet_Dolls
+				}
+			}
+			planet_event = {
+				id = GF_global_evt.2
+				days = 5
+			}
+		}
+	}
+}
+
+planet_event = {
+	id = GF_global_evt.2
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		every_owned_pop = {
+			limit = {
+				is_species_class = Puppet_Dolls
+			}
+			random = {
+				chance = 0.1
+				change_species = event_target:Autonomous_Dolls_species_target
+			}
+		}
+	}
+}

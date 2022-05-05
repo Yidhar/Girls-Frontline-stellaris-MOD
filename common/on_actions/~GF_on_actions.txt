@@ -13,3 +13,10 @@ on_game_start_country = {
 		GF_GS.02
 	}
 }
+
+# this = country
+on_yearly_pulse_country = {
+	events = {
+		
+	}
+}

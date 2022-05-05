@@ -1490,8 +1490,7 @@ portrait_groups = {
 					Autonomous_Dolls_302
 					Autonomous_Dolls_303
 					Autonomous_Dolls_305
-					Autonomous_Dolls_306
-					
+					Autonomous_Dolls_306					
 					Autonomous_Dolls_308
 					Autonomous_Dolls_309
 					Autonomous_Dolls_310
@@ -1509,11 +1508,7 @@ portrait_groups = {
 					Autonomous_Dolls_322
 					Autonomous_Dolls_323
 					Autonomous_Dolls_324
-					Autonomous_Dolls_325
-					
-					
-					
-					
+					Autonomous_Dolls_325																			
 					Autonomous_Dolls_330
 					Autonomous_Dolls_331
 					Autonomous_Dolls_332
@@ -1618,6 +1613,125 @@ portrait_groups = {
 					Autonomous_Dolls_433
 					Autonomous_Dolls_434
 					Autonomous_Dolls_435
+					GF_nc_000
+					GF_nc_001
+					GF_nc_002
+					GF_nc_003
+					GF_nc_004
+					GF_nc_005
+					GF_nc_006
+					GF_nc_007
+					GF_nc_008
+					GF_nc_009
+					GF_nc_010
+					GF_nc_011
+					GF_nc_012
+					GF_nc_013
+					GF_nc_014
+					GF_nc_015
+					GF_nc_016
+					GF_nc_017
+					GF_nc_018
+					GF_nc_019
+					GF_nc_020
+					GF_nc_021
+					GF_nc_022
+					GF_nc_023
+					GF_nc_024
+					GF_nc_025
+					GF_nc_026
+					GF_nc_027
+					GF_nc_028
+					GF_nc_029
+					GF_nc_030
+					GF_nc_031
+					GF_nc_032
+					GF_nc_033
+					GF_nc_034
+					GF_nc_035
+					GF_nc_036
+					GF_nc_037
+					GF_nc_038
+					GF_nc_039
+					GF_nc_040
+					GF_nc_041
+					GF_nc_042
+					GF_nc_043
+					GF_nc_044
+					GF_nc_045
+					GF_nc_046
+					GF_nc_047
+					GF_nc_048
+					GF_nc_049
+					GF_nc_050
+					GF_nc_051
+					GF_nc_052
+					GF_nc_053
+					GF_nc_054
+					GF_nc_055
+					GF_nc_056
+					GF_nc_057
+					GF_nc_058
+					GF_nc_059
+					GF_nc_060
+					GF_nc_061
+					GF_nc_062
+					GF_nc_063
+					GF_nc_064
+					GF_nc_065
+					GF_nc_066
+					GF_nc_067
+					GF_nc_068
+					GF_nc_069
+					GF_nc_070
+					GF_nc_071
+					GF_nc_072
+					GF_nc_073
+					GF_nc_074
+					GF_nc_075
+					GF_nc_076
+					GF_nc_077
+					GF_nc_078
+					GF_nc_079
+					GF_nc_080
+					GF_nc_081
+					GF_nc_082
+					GF_nc_083
+					GF_nc_084
+					GF_nc_085
+					GF_nc_086
+					GF_nc_087
+					GF_nc_088
+					GF_nc_089
+					GF_nc_090
+					GF_nc_091
+					GF_nc_092
+					GF_nc_093
+					GF_nc_094
+					GF_nc_095
+					GF_nc_096
+					GF_nc_097
+					GF_nc_098
+					GF_nc_099
+					GF_nc_100
+					GF_nc_101
+					GF_nc_102
+					GF_nc_103
+					GF_nc_104
+					GF_nc_105
+					GF_nc_106
+					GF_nc_107
+					GF_nc_108
+					GF_nc_109
+					GF_nc_110
+					GF_nc_111
+					GF_nc_112
+					GF_nc_113
+					GF_nc_114
+					GF_nc_115
+					GF_nc_116
+					GF_nc_117
+					GF_nc_118
 				}
 			}
 		}
@@ -1905,8 +2019,7 @@ portrait_groups = {
 					Autonomous_Dolls_302
 					Autonomous_Dolls_303
 					Autonomous_Dolls_305
-					Autonomous_Dolls_306
-					
+					Autonomous_Dolls_306					
 					Autonomous_Dolls_308
 					Autonomous_Dolls_309
 					Autonomous_Dolls_310
@@ -1924,11 +2037,7 @@ portrait_groups = {
 					Autonomous_Dolls_322
 					Autonomous_Dolls_323
 					Autonomous_Dolls_324
-					Autonomous_Dolls_325
-					
-					
-					
-					
+					Autonomous_Dolls_325																				
 					Autonomous_Dolls_330
 					Autonomous_Dolls_331
 					Autonomous_Dolls_332
@@ -2033,6 +2142,125 @@ portrait_groups = {
 					Autonomous_Dolls_433
 					Autonomous_Dolls_434
 					Autonomous_Dolls_435
+					GF_nc_000
+					GF_nc_001
+					GF_nc_002
+					GF_nc_003
+					GF_nc_004
+					GF_nc_005
+					GF_nc_006
+					GF_nc_007
+					GF_nc_008
+					GF_nc_009
+					GF_nc_010
+					GF_nc_011
+					GF_nc_012
+					GF_nc_013
+					GF_nc_014
+					GF_nc_015
+					GF_nc_016
+					GF_nc_017
+					GF_nc_018
+					GF_nc_019
+					GF_nc_020
+					GF_nc_021
+					GF_nc_022
+					GF_nc_023
+					GF_nc_024
+					GF_nc_025
+					GF_nc_026
+					GF_nc_027
+					GF_nc_028
+					GF_nc_029
+					GF_nc_030
+					GF_nc_031
+					GF_nc_032
+					GF_nc_033
+					GF_nc_034
+					GF_nc_035
+					GF_nc_036
+					GF_nc_037
+					GF_nc_038
+					GF_nc_039
+					GF_nc_040
+					GF_nc_041
+					GF_nc_042
+					GF_nc_043
+					GF_nc_044
+					GF_nc_045
+					GF_nc_046
+					GF_nc_047
+					GF_nc_048
+					GF_nc_049
+					GF_nc_050
+					GF_nc_051
+					GF_nc_052
+					GF_nc_053
+					GF_nc_054
+					GF_nc_055
+					GF_nc_056
+					GF_nc_057
+					GF_nc_058
+					GF_nc_059
+					GF_nc_060
+					GF_nc_061
+					GF_nc_062
+					GF_nc_063
+					GF_nc_064
+					GF_nc_065
+					GF_nc_066
+					GF_nc_067
+					GF_nc_068
+					GF_nc_069
+					GF_nc_070
+					GF_nc_071
+					GF_nc_072
+					GF_nc_073
+					GF_nc_074
+					GF_nc_075
+					GF_nc_076
+					GF_nc_077
+					GF_nc_078
+					GF_nc_079
+					GF_nc_080
+					GF_nc_081
+					GF_nc_082
+					GF_nc_083
+					GF_nc_084
+					GF_nc_085
+					GF_nc_086
+					GF_nc_087
+					GF_nc_088
+					GF_nc_089
+					GF_nc_090
+					GF_nc_091
+					GF_nc_092
+					GF_nc_093
+					GF_nc_094
+					GF_nc_095
+					GF_nc_096
+					GF_nc_097
+					GF_nc_098
+					GF_nc_099
+					GF_nc_100
+					GF_nc_101
+					GF_nc_102
+					GF_nc_103
+					GF_nc_104
+					GF_nc_105
+					GF_nc_106
+					GF_nc_107
+					GF_nc_108
+					GF_nc_109
+					GF_nc_110
+					GF_nc_111
+					GF_nc_112
+					GF_nc_113
+					GF_nc_114
+					GF_nc_115
+					GF_nc_116
+					GF_nc_117
+					GF_nc_118
 				}
 			}
 		}
@@ -2172,6 +2400,125 @@ portrait_groups = {
 					Autonomous_Dolls_384
 					Autonomous_Dolls_385
 					Autonomous_Dolls_390
+					GF_nc_000
+					GF_nc_001
+					GF_nc_002
+					GF_nc_003
+					GF_nc_004
+					GF_nc_005
+					GF_nc_006
+					GF_nc_007
+					GF_nc_008
+					GF_nc_009
+					GF_nc_010
+					GF_nc_011
+					GF_nc_012
+					GF_nc_013
+					GF_nc_014
+					GF_nc_015
+					GF_nc_016
+					GF_nc_017
+					GF_nc_018
+					GF_nc_019
+					GF_nc_020
+					GF_nc_021
+					GF_nc_022
+					GF_nc_023
+					GF_nc_024
+					GF_nc_025
+					GF_nc_026
+					GF_nc_027
+					GF_nc_028
+					GF_nc_029
+					GF_nc_030
+					GF_nc_031
+					GF_nc_032
+					GF_nc_033
+					GF_nc_034
+					GF_nc_035
+					GF_nc_036
+					GF_nc_037
+					GF_nc_038
+					GF_nc_039
+					GF_nc_040
+					GF_nc_041
+					GF_nc_042
+					GF_nc_043
+					GF_nc_044
+					GF_nc_045
+					GF_nc_046
+					GF_nc_047
+					GF_nc_048
+					GF_nc_049
+					GF_nc_050
+					GF_nc_051
+					GF_nc_052
+					GF_nc_053
+					GF_nc_054
+					GF_nc_055
+					GF_nc_056
+					GF_nc_057
+					GF_nc_058
+					GF_nc_059
+					GF_nc_060
+					GF_nc_061
+					GF_nc_062
+					GF_nc_063
+					GF_nc_064
+					GF_nc_065
+					GF_nc_066
+					GF_nc_067
+					GF_nc_068
+					GF_nc_069
+					GF_nc_070
+					GF_nc_071
+					GF_nc_072
+					GF_nc_073
+					GF_nc_074
+					GF_nc_075
+					GF_nc_076
+					GF_nc_077
+					GF_nc_078
+					GF_nc_079
+					GF_nc_080
+					GF_nc_081
+					GF_nc_082
+					GF_nc_083
+					GF_nc_084
+					GF_nc_085
+					GF_nc_086
+					GF_nc_087
+					GF_nc_088
+					GF_nc_089
+					GF_nc_090
+					GF_nc_091
+					GF_nc_092
+					GF_nc_093
+					GF_nc_094
+					GF_nc_095
+					GF_nc_096
+					GF_nc_097
+					GF_nc_098
+					GF_nc_099
+					GF_nc_100
+					GF_nc_101
+					GF_nc_102
+					GF_nc_103
+					GF_nc_104
+					GF_nc_105
+					GF_nc_106
+					GF_nc_107
+					GF_nc_108
+					GF_nc_109
+					GF_nc_110
+					GF_nc_111
+					GF_nc_112
+					GF_nc_113
+					GF_nc_114
+					GF_nc_115
+					GF_nc_116
+					GF_nc_117
+					GF_nc_118
 				}
 			}
 		}
@@ -2308,7 +2655,126 @@ portrait_groups = {
 					Autonomous_Dolls_423
 					Autonomous_Dolls_424
 					Autonomous_Dolls_425
-					Autonomous_Dolls_426					  																				
+					Autonomous_Dolls_426	
+					GF_nc_000
+					GF_nc_001
+					GF_nc_002
+					GF_nc_003
+					GF_nc_004
+					GF_nc_005
+					GF_nc_006
+					GF_nc_007
+					GF_nc_008
+					GF_nc_009
+					GF_nc_010
+					GF_nc_011
+					GF_nc_012
+					GF_nc_013
+					GF_nc_014
+					GF_nc_015
+					GF_nc_016
+					GF_nc_017
+					GF_nc_018
+					GF_nc_019
+					GF_nc_020
+					GF_nc_021
+					GF_nc_022
+					GF_nc_023
+					GF_nc_024
+					GF_nc_025
+					GF_nc_026
+					GF_nc_027
+					GF_nc_028
+					GF_nc_029
+					GF_nc_030
+					GF_nc_031
+					GF_nc_032
+					GF_nc_033
+					GF_nc_034
+					GF_nc_035
+					GF_nc_036
+					GF_nc_037
+					GF_nc_038
+					GF_nc_039
+					GF_nc_040
+					GF_nc_041
+					GF_nc_042
+					GF_nc_043
+					GF_nc_044
+					GF_nc_045
+					GF_nc_046
+					GF_nc_047
+					GF_nc_048
+					GF_nc_049
+					GF_nc_050
+					GF_nc_051
+					GF_nc_052
+					GF_nc_053
+					GF_nc_054
+					GF_nc_055
+					GF_nc_056
+					GF_nc_057
+					GF_nc_058
+					GF_nc_059
+					GF_nc_060
+					GF_nc_061
+					GF_nc_062
+					GF_nc_063
+					GF_nc_064
+					GF_nc_065
+					GF_nc_066
+					GF_nc_067
+					GF_nc_068
+					GF_nc_069
+					GF_nc_070
+					GF_nc_071
+					GF_nc_072
+					GF_nc_073
+					GF_nc_074
+					GF_nc_075
+					GF_nc_076
+					GF_nc_077
+					GF_nc_078
+					GF_nc_079
+					GF_nc_080
+					GF_nc_081
+					GF_nc_082
+					GF_nc_083
+					GF_nc_084
+					GF_nc_085
+					GF_nc_086
+					GF_nc_087
+					GF_nc_088
+					GF_nc_089
+					GF_nc_090
+					GF_nc_091
+					GF_nc_092
+					GF_nc_093
+					GF_nc_094
+					GF_nc_095
+					GF_nc_096
+					GF_nc_097
+					GF_nc_098
+					GF_nc_099
+					GF_nc_100
+					GF_nc_101
+					GF_nc_102
+					GF_nc_103
+					GF_nc_104
+					GF_nc_105
+					GF_nc_106
+					GF_nc_107
+					GF_nc_108
+					GF_nc_109
+					GF_nc_110
+					GF_nc_111
+					GF_nc_112
+					GF_nc_113
+					GF_nc_114
+					GF_nc_115
+					GF_nc_116
+					GF_nc_117
+					GF_nc_118				  																				
 				}
 			}
 			add = {
@@ -2442,6 +2908,125 @@ portrait_groups = {
 					Autonomous_Dolls_424
 					Autonomous_Dolls_425
 					Autonomous_Dolls_426
+					GF_nc_000
+					GF_nc_001
+					GF_nc_002
+					GF_nc_003
+					GF_nc_004
+					GF_nc_005
+					GF_nc_006
+					GF_nc_007
+					GF_nc_008
+					GF_nc_009
+					GF_nc_010
+					GF_nc_011
+					GF_nc_012
+					GF_nc_013
+					GF_nc_014
+					GF_nc_015
+					GF_nc_016
+					GF_nc_017
+					GF_nc_018
+					GF_nc_019
+					GF_nc_020
+					GF_nc_021
+					GF_nc_022
+					GF_nc_023
+					GF_nc_024
+					GF_nc_025
+					GF_nc_026
+					GF_nc_027
+					GF_nc_028
+					GF_nc_029
+					GF_nc_030
+					GF_nc_031
+					GF_nc_032
+					GF_nc_033
+					GF_nc_034
+					GF_nc_035
+					GF_nc_036
+					GF_nc_037
+					GF_nc_038
+					GF_nc_039
+					GF_nc_040
+					GF_nc_041
+					GF_nc_042
+					GF_nc_043
+					GF_nc_044
+					GF_nc_045
+					GF_nc_046
+					GF_nc_047
+					GF_nc_048
+					GF_nc_049
+					GF_nc_050
+					GF_nc_051
+					GF_nc_052
+					GF_nc_053
+					GF_nc_054
+					GF_nc_055
+					GF_nc_056
+					GF_nc_057
+					GF_nc_058
+					GF_nc_059
+					GF_nc_060
+					GF_nc_061
+					GF_nc_062
+					GF_nc_063
+					GF_nc_064
+					GF_nc_065
+					GF_nc_066
+					GF_nc_067
+					GF_nc_068
+					GF_nc_069
+					GF_nc_070
+					GF_nc_071
+					GF_nc_072
+					GF_nc_073
+					GF_nc_074
+					GF_nc_075
+					GF_nc_076
+					GF_nc_077
+					GF_nc_078
+					GF_nc_079
+					GF_nc_080
+					GF_nc_081
+					GF_nc_082
+					GF_nc_083
+					GF_nc_084
+					GF_nc_085
+					GF_nc_086
+					GF_nc_087
+					GF_nc_088
+					GF_nc_089
+					GF_nc_090
+					GF_nc_091
+					GF_nc_092
+					GF_nc_093
+					GF_nc_094
+					GF_nc_095
+					GF_nc_096
+					GF_nc_097
+					GF_nc_098
+					GF_nc_099
+					GF_nc_100
+					GF_nc_101
+					GF_nc_102
+					GF_nc_103
+					GF_nc_104
+					GF_nc_105
+					GF_nc_106
+					GF_nc_107
+					GF_nc_108
+					GF_nc_109
+					GF_nc_110
+					GF_nc_111
+					GF_nc_112
+					GF_nc_113
+					GF_nc_114
+					GF_nc_115
+					GF_nc_116
+					GF_nc_117
+					GF_nc_118
 				}
 			}
 			add = {
@@ -2593,6 +3178,125 @@ portrait_groups = {
 					Autonomous_Dolls_433
 					Autonomous_Dolls_434
 					Autonomous_Dolls_435
+					GF_nc_000
+					GF_nc_001
+					GF_nc_002
+					GF_nc_003
+					GF_nc_004
+					GF_nc_005
+					GF_nc_006
+					GF_nc_007
+					GF_nc_008
+					GF_nc_009
+					GF_nc_010
+					GF_nc_011
+					GF_nc_012
+					GF_nc_013
+					GF_nc_014
+					GF_nc_015
+					GF_nc_016
+					GF_nc_017
+					GF_nc_018
+					GF_nc_019
+					GF_nc_020
+					GF_nc_021
+					GF_nc_022
+					GF_nc_023
+					GF_nc_024
+					GF_nc_025
+					GF_nc_026
+					GF_nc_027
+					GF_nc_028
+					GF_nc_029
+					GF_nc_030
+					GF_nc_031
+					GF_nc_032
+					GF_nc_033
+					GF_nc_034
+					GF_nc_035
+					GF_nc_036
+					GF_nc_037
+					GF_nc_038
+					GF_nc_039
+					GF_nc_040
+					GF_nc_041
+					GF_nc_042
+					GF_nc_043
+					GF_nc_044
+					GF_nc_045
+					GF_nc_046
+					GF_nc_047
+					GF_nc_048
+					GF_nc_049
+					GF_nc_050
+					GF_nc_051
+					GF_nc_052
+					GF_nc_053
+					GF_nc_054
+					GF_nc_055
+					GF_nc_056
+					GF_nc_057
+					GF_nc_058
+					GF_nc_059
+					GF_nc_060
+					GF_nc_061
+					GF_nc_062
+					GF_nc_063
+					GF_nc_064
+					GF_nc_065
+					GF_nc_066
+					GF_nc_067
+					GF_nc_068
+					GF_nc_069
+					GF_nc_070
+					GF_nc_071
+					GF_nc_072
+					GF_nc_073
+					GF_nc_074
+					GF_nc_075
+					GF_nc_076
+					GF_nc_077
+					GF_nc_078
+					GF_nc_079
+					GF_nc_080
+					GF_nc_081
+					GF_nc_082
+					GF_nc_083
+					GF_nc_084
+					GF_nc_085
+					GF_nc_086
+					GF_nc_087
+					GF_nc_088
+					GF_nc_089
+					GF_nc_090
+					GF_nc_091
+					GF_nc_092
+					GF_nc_093
+					GF_nc_094
+					GF_nc_095
+					GF_nc_096
+					GF_nc_097
+					GF_nc_098
+					GF_nc_099
+					GF_nc_100
+					GF_nc_101
+					GF_nc_102
+					GF_nc_103
+					GF_nc_104
+					GF_nc_105
+					GF_nc_106
+					GF_nc_107
+					GF_nc_108
+					GF_nc_109
+					GF_nc_110
+					GF_nc_111
+					GF_nc_112
+					GF_nc_113
+					GF_nc_114
+					GF_nc_115
+					GF_nc_116
+					GF_nc_117
+					GF_nc_118
 				}
 			}
 			add = {
@@ -2870,6 +3574,125 @@ portrait_groups = {
 					Autonomous_Dolls_433
 					Autonomous_Dolls_434
 					Autonomous_Dolls_435
+					GF_nc_000
+					GF_nc_001
+					GF_nc_002
+					GF_nc_003
+					GF_nc_004
+					GF_nc_005
+					GF_nc_006
+					GF_nc_007
+					GF_nc_008
+					GF_nc_009
+					GF_nc_010
+					GF_nc_011
+					GF_nc_012
+					GF_nc_013
+					GF_nc_014
+					GF_nc_015
+					GF_nc_016
+					GF_nc_017
+					GF_nc_018
+					GF_nc_019
+					GF_nc_020
+					GF_nc_021
+					GF_nc_022
+					GF_nc_023
+					GF_nc_024
+					GF_nc_025
+					GF_nc_026
+					GF_nc_027
+					GF_nc_028
+					GF_nc_029
+					GF_nc_030
+					GF_nc_031
+					GF_nc_032
+					GF_nc_033
+					GF_nc_034
+					GF_nc_035
+					GF_nc_036
+					GF_nc_037
+					GF_nc_038
+					GF_nc_039
+					GF_nc_040
+					GF_nc_041
+					GF_nc_042
+					GF_nc_043
+					GF_nc_044
+					GF_nc_045
+					GF_nc_046
+					GF_nc_047
+					GF_nc_048
+					GF_nc_049
+					GF_nc_050
+					GF_nc_051
+					GF_nc_052
+					GF_nc_053
+					GF_nc_054
+					GF_nc_055
+					GF_nc_056
+					GF_nc_057
+					GF_nc_058
+					GF_nc_059
+					GF_nc_060
+					GF_nc_061
+					GF_nc_062
+					GF_nc_063
+					GF_nc_064
+					GF_nc_065
+					GF_nc_066
+					GF_nc_067
+					GF_nc_068
+					GF_nc_069
+					GF_nc_070
+					GF_nc_071
+					GF_nc_072
+					GF_nc_073
+					GF_nc_074
+					GF_nc_075
+					GF_nc_076
+					GF_nc_077
+					GF_nc_078
+					GF_nc_079
+					GF_nc_080
+					GF_nc_081
+					GF_nc_082
+					GF_nc_083
+					GF_nc_084
+					GF_nc_085
+					GF_nc_086
+					GF_nc_087
+					GF_nc_088
+					GF_nc_089
+					GF_nc_090
+					GF_nc_091
+					GF_nc_092
+					GF_nc_093
+					GF_nc_094
+					GF_nc_095
+					GF_nc_096
+					GF_nc_097
+					GF_nc_098
+					GF_nc_099
+					GF_nc_100
+					GF_nc_101
+					GF_nc_102
+					GF_nc_103
+					GF_nc_104
+					GF_nc_105
+					GF_nc_106
+					GF_nc_107
+					GF_nc_108
+					GF_nc_109
+					GF_nc_110
+					GF_nc_111
+					GF_nc_112
+					GF_nc_113
+					GF_nc_114
+					GF_nc_115
+					GF_nc_116
+					GF_nc_117
+					GF_nc_118
 				}
 			}
 			add = {
@@ -3147,6 +3970,125 @@ portrait_groups = {
 					Autonomous_Dolls_433
 					Autonomous_Dolls_434
 					Autonomous_Dolls_435
+					GF_nc_000
+					GF_nc_001
+					GF_nc_002
+					GF_nc_003
+					GF_nc_004
+					GF_nc_005
+					GF_nc_006
+					GF_nc_007
+					GF_nc_008
+					GF_nc_009
+					GF_nc_010
+					GF_nc_011
+					GF_nc_012
+					GF_nc_013
+					GF_nc_014
+					GF_nc_015
+					GF_nc_016
+					GF_nc_017
+					GF_nc_018
+					GF_nc_019
+					GF_nc_020
+					GF_nc_021
+					GF_nc_022
+					GF_nc_023
+					GF_nc_024
+					GF_nc_025
+					GF_nc_026
+					GF_nc_027
+					GF_nc_028
+					GF_nc_029
+					GF_nc_030
+					GF_nc_031
+					GF_nc_032
+					GF_nc_033
+					GF_nc_034
+					GF_nc_035
+					GF_nc_036
+					GF_nc_037
+					GF_nc_038
+					GF_nc_039
+					GF_nc_040
+					GF_nc_041
+					GF_nc_042
+					GF_nc_043
+					GF_nc_044
+					GF_nc_045
+					GF_nc_046
+					GF_nc_047
+					GF_nc_048
+					GF_nc_049
+					GF_nc_050
+					GF_nc_051
+					GF_nc_052
+					GF_nc_053
+					GF_nc_054
+					GF_nc_055
+					GF_nc_056
+					GF_nc_057
+					GF_nc_058
+					GF_nc_059
+					GF_nc_060
+					GF_nc_061
+					GF_nc_062
+					GF_nc_063
+					GF_nc_064
+					GF_nc_065
+					GF_nc_066
+					GF_nc_067
+					GF_nc_068
+					GF_nc_069
+					GF_nc_070
+					GF_nc_071
+					GF_nc_072
+					GF_nc_073
+					GF_nc_074
+					GF_nc_075
+					GF_nc_076
+					GF_nc_077
+					GF_nc_078
+					GF_nc_079
+					GF_nc_080
+					GF_nc_081
+					GF_nc_082
+					GF_nc_083
+					GF_nc_084
+					GF_nc_085
+					GF_nc_086
+					GF_nc_087
+					GF_nc_088
+					GF_nc_089
+					GF_nc_090
+					GF_nc_091
+					GF_nc_092
+					GF_nc_093
+					GF_nc_094
+					GF_nc_095
+					GF_nc_096
+					GF_nc_097
+					GF_nc_098
+					GF_nc_099
+					GF_nc_100
+					GF_nc_101
+					GF_nc_102
+					GF_nc_103
+					GF_nc_104
+					GF_nc_105
+					GF_nc_106
+					GF_nc_107
+					GF_nc_108
+					GF_nc_109
+					GF_nc_110
+					GF_nc_111
+					GF_nc_112
+					GF_nc_113
+					GF_nc_114
+					GF_nc_115
+					GF_nc_116
+					GF_nc_117
+					GF_nc_118
 				}
 			}
 		}
@@ -3433,8 +4375,7 @@ portrait_groups = {
 					Autonomous_Dolls_302
 					Autonomous_Dolls_303
 					Autonomous_Dolls_305
-					Autonomous_Dolls_306
-					
+					Autonomous_Dolls_306				
 					Autonomous_Dolls_308
 					Autonomous_Dolls_309
 					Autonomous_Dolls_310
@@ -3452,11 +4393,7 @@ portrait_groups = {
 					Autonomous_Dolls_322
 					Autonomous_Dolls_323
 					Autonomous_Dolls_324
-					Autonomous_Dolls_325
-					
-					
-					
-					
+					Autonomous_Dolls_325																				
 					Autonomous_Dolls_330
 					Autonomous_Dolls_331
 					Autonomous_Dolls_332
@@ -3561,6 +4498,125 @@ portrait_groups = {
 					Autonomous_Dolls_433
 					Autonomous_Dolls_434
 					Autonomous_Dolls_435
+					GF_nc_000
+					GF_nc_001
+					GF_nc_002
+					GF_nc_003
+					GF_nc_004
+					GF_nc_005
+					GF_nc_006
+					GF_nc_007
+					GF_nc_008
+					GF_nc_009
+					GF_nc_010
+					GF_nc_011
+					GF_nc_012
+					GF_nc_013
+					GF_nc_014
+					GF_nc_015
+					GF_nc_016
+					GF_nc_017
+					GF_nc_018
+					GF_nc_019
+					GF_nc_020
+					GF_nc_021
+					GF_nc_022
+					GF_nc_023
+					GF_nc_024
+					GF_nc_025
+					GF_nc_026
+					GF_nc_027
+					GF_nc_028
+					GF_nc_029
+					GF_nc_030
+					GF_nc_031
+					GF_nc_032
+					GF_nc_033
+					GF_nc_034
+					GF_nc_035
+					GF_nc_036
+					GF_nc_037
+					GF_nc_038
+					GF_nc_039
+					GF_nc_040
+					GF_nc_041
+					GF_nc_042
+					GF_nc_043
+					GF_nc_044
+					GF_nc_045
+					GF_nc_046
+					GF_nc_047
+					GF_nc_048
+					GF_nc_049
+					GF_nc_050
+					GF_nc_051
+					GF_nc_052
+					GF_nc_053
+					GF_nc_054
+					GF_nc_055
+					GF_nc_056
+					GF_nc_057
+					GF_nc_058
+					GF_nc_059
+					GF_nc_060
+					GF_nc_061
+					GF_nc_062
+					GF_nc_063
+					GF_nc_064
+					GF_nc_065
+					GF_nc_066
+					GF_nc_067
+					GF_nc_068
+					GF_nc_069
+					GF_nc_070
+					GF_nc_071
+					GF_nc_072
+					GF_nc_073
+					GF_nc_074
+					GF_nc_075
+					GF_nc_076
+					GF_nc_077
+					GF_nc_078
+					GF_nc_079
+					GF_nc_080
+					GF_nc_081
+					GF_nc_082
+					GF_nc_083
+					GF_nc_084
+					GF_nc_085
+					GF_nc_086
+					GF_nc_087
+					GF_nc_088
+					GF_nc_089
+					GF_nc_090
+					GF_nc_091
+					GF_nc_092
+					GF_nc_093
+					GF_nc_094
+					GF_nc_095
+					GF_nc_096
+					GF_nc_097
+					GF_nc_098
+					GF_nc_099
+					GF_nc_100
+					GF_nc_101
+					GF_nc_102
+					GF_nc_103
+					GF_nc_104
+					GF_nc_105
+					GF_nc_106
+					GF_nc_107
+					GF_nc_108
+					GF_nc_109
+					GF_nc_110
+					GF_nc_111
+					GF_nc_112
+					GF_nc_113
+					GF_nc_114
+					GF_nc_115
+					GF_nc_116
+					GF_nc_117
+					GF_nc_118
 				}
 			}
 		}

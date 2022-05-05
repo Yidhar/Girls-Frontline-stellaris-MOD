@@ -12,7 +12,8 @@ planet_event = {
 		owner_main_species = {
 			set_species_flag = community_mod_rules_trigger
 			set_species_flag = community_can_generate_leader_from_species_false
-			set_species_flag = community_can_species_procreate_false			
+			set_species_flag = community_can_species_procreate_false		
+			set_species_flag = community_can_species_be_assembled_false	
 		}
 		create_species = {
 			class = Puppet_Dolls

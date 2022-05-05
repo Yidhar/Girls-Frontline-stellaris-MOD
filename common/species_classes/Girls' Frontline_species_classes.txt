@@ -49,12 +49,12 @@ Puppet_Dolls = {
 		species_class = {
 			value = Autonomous_Dolls
 		}
-		civics = {
-			#value = 
-		}
 	}
 	playable = {
 		always = no
+	}
+	modifier = {
+		pop_cat_worker_political_power = -9999
 	}
 }
 nyto= {

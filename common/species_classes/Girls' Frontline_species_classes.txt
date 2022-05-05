@@ -4,7 +4,7 @@ Autonomous_Dolls = {
 	gender = no
 	use_climate_preference = no
 	leader_age_min = 0
-	leader_age_min = 4
+	leader_age_max  = 4
 	graphical_culture = mammalian_01
 	move_pop_sound_effect = "robot_pops_move"
 	custom_portraits = {portraits = {"Autonomous_Dolls"}}
@@ -27,8 +27,8 @@ Puppet_Dolls = {
 	randomized = no
 	gender = no
 	use_climate_preference = no
-	leader_age_min = -1
-	leader_age_min = -1
+	leader_age_min = 0
+	leader_age_max = 4
 	graphical_culture = mammalian_01
 	move_pop_sound_effect = "robot_pops_move"
 	custom_portraits = {portraits = {"Autonomous_Dolls"}}
@@ -57,7 +57,7 @@ Puppet_Dolls = {
 		pop_cat_worker_political_power = -9999
 	}
 }
-nyto= {
+NYTO= {
 	archetype = NYTO
 	randomized = yes
 	gender = no
@@ -97,7 +97,7 @@ nyto= {
 	}
 	trait = "trait_GF_nyto_ogas_agreement"
 }
-eild= {
+EILD= {
 	archetype = EILD
 	randomized = no
 	gender = no

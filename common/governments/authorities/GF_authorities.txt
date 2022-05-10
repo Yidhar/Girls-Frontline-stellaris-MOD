@@ -19,4 +19,7 @@ auth_GF_Autonomous_Dolls ={
 	random_weight = {
 		weight = 0
 	}
+	country_modifier = {
+		starbase_shipyard_capacity_add = -9999
+	}
 }

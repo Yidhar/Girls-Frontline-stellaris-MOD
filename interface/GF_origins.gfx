@@ -1,0 +1,7 @@
+spriteTypes = {
+	spriteType = {
+		name = "the_beginning_of_hope"
+		alwaysTransparent = yes
+		textureFile = "gfx/interface/event_pictures/origins/the_beginning_of_hope.dds"
+	}
+}

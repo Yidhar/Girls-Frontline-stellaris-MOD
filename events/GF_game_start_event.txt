@@ -36,7 +36,7 @@ planet_event = {
 		}
 		add_deposit = GF_dolls_build
 		owner = {
-			set_built_species = last_created_species
+			set_built_species = last_created_species			
 		}		
 	}
 }

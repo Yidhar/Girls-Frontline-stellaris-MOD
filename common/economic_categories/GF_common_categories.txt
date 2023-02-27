@@ -1,0 +1,84 @@
+GF_planet_dormancy = {
+	use_for_ai_budget = yes
+	parent = planet_jobs
+	generate_mult_modifiers = {
+		upkeep
+		produces
+	}
+
+	generate_add_modifiers = {
+		produces
+	}
+}
+
+GF_planet_jobs_pop_assemblers = {
+	parent = planet_pop_assemblers
+	# generate_add_modifiers = {
+	# 	produces
+	# }
+	generate_mult_modifiers = {
+		produces
+		upkeep
+	}
+}
+
+GF_ship_collapse_weapons = {
+	parent = ship_components
+	generate_mult_modifiers = {
+		upkeep
+	}
+}
+
+GF_ship_collapse_armors = {
+	parent = ship_components
+	generate_mult_modifiers = {
+		upkeep
+	}
+}
+
+GF_ship_collapse_utilities = {
+	parent = ship_components
+	generate_mult_modifiers = {
+		upkeep
+	}
+}
+
+GF_ship_computers = {
+	parent = ship_components
+}
+
+GF_planet_jobs_doll_programmers = {
+	parent = planet_jobs_productive
+	generate_mult_modifiers = {
+		upkeep
+		produces
+	}
+}
+
+GF_planet_collapser = {
+	icon = "job_GF_collapser"
+	parent = planet_jobs_productive
+	generate_mult_modifiers = {
+		produces
+		upkeep
+	}
+	generate_add_modifiers = {
+		produces
+		upkeep
+	}
+	modifier_category = pop
+}
+
+GF_planet_reverse_collapser = {
+	icon = "job_GF_reverse_collapser_industry"
+	parent = planet_jobs_productive
+	generate_mult_modifiers = {
+		produces
+		upkeep
+	}
+	generate_add_modifiers = {
+		produces
+		upkeep
+	}
+	modifier_category = pop
+}

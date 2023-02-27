@@ -1,0 +1,132 @@
+GF_purge = {
+	category = purge
+	is_capped_by_modifier = no
+	clothes_texture_index = 2
+
+	ignores_sapience = yes
+
+	possible = {
+		exists = owner
+		has_trait = GF_trait_doll
+		has_citizenship_type = { type = citizenship_GF_doll_purge }
+		# OR = {
+		# 	has_citizenship_type = { type = citizenship_purge_machine }
+		# 	has_citizenship_type = { type = citizenship_purge }
+		# 	has_pop_flag = event_purge
+		# }
+	}
+
+	resources = {
+		category = planet_jobs
+		produces = {
+			trigger = {
+				exists = owner
+				owner = { has_valid_civic = civic_fanatic_purifiers }
+			}
+			unity = 2
+		}
+		produces = {
+			trigger = {
+				exists = owner
+				owner = { has_valid_civic = civic_hive_devouring_swarm }
+			}
+			engineering_research = 2
+		}
+
+		produces = {
+			trigger = {
+				OR = {
+					has_purge_type = { type = purge_processing }
+					has_purge_type = { type = purge_GF_dismantle }
+				}
+			}
+			alloys = 3
+		}
+		produces = {
+			trigger = {
+				planet = { has_active_building = building_foundry_2 }
+				OR = {
+					has_purge_type = { type = purge_processing }
+					has_purge_type = { type = purge_GF_dismantle }
+				}
+			}
+			alloys = 1
+		}
+		produces = {
+			trigger = {
+				planet = { has_active_building = building_foundry_3 }
+				OR = {
+					has_purge_type = { type = purge_processing }
+					has_purge_type = { type = purge_GF_dismantle }
+				}
+			}
+			alloys = 2
+		}
+
+		produces = {
+			trigger = {
+				has_purge_type = { type = purge_matrix }
+			}
+			energy = 6
+		}
+		produces = {
+			trigger = {
+				planet = { has_active_building = building_energy_grid }
+				has_purge_type = { type = purge_matrix }
+			}
+			energy = 1
+		}
+		produces = {
+			trigger = {
+				planet = { has_active_building = building_energy_nexus }
+				has_purge_type = { type = purge_matrix }
+			}
+			energy = 2
+		}
+
+		produces = {
+			trigger = {
+				has_purge_type = { type = purge_labor_camps }
+			}
+			food = 3
+			minerals = 3
+		}
+		produces = {
+			trigger = {
+				planet = { has_active_building = building_food_processing_facility }
+				has_purge_type = { type = purge_labor_camps }
+			}
+			food = 1
+		}
+		produces = {
+			trigger = {
+				planet = { has_active_building = building_food_processing_center }
+				has_purge_type = { type = purge_labor_camps }
+			}
+			food = 2
+		}
+		produces = {
+			trigger = {
+				planet = { has_active_building = building_mineral_purification_plant }
+				has_purge_type = { type = purge_labor_camps }
+			}
+			minerals = 1
+		}
+		produces = {
+			trigger = {
+				planet = { has_active_building = building_mineral_purification_hub }
+				has_purge_type = { type = purge_labor_camps }
+			}
+			minerals = 2
+		}
+	}
+
+	weight = {
+		weight = 0
+		modifier = {
+			set = 100000
+			has_trait = GF_trait_doll
+			has_citizenship_type = { type = citizenship_GF_doll_purge }
+		}
+	}
+}

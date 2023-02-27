@@ -1,0 +1,44 @@
+﻿l_simp_chinese:
+#################################
+ decision_GF_doll_sercurity_on:0 "激活人形安保协议"
+ decision_GF_doll_sercurity_on_desc:0 "§W$job_GF_guard_doll_effect_desc$§!\n\n当前星球陷入骚乱或外敌入侵时，政府将接管所有人形权限，开放相关暴力行为许可，传输基本战斗知识，分配武器，命令她们协助当地防卫。"
+ decision_GF_doll_sercurity_off:0 "结束人形安保协议"
+ decision_GF_doll_sercurity_off_desc:0 "星球当前已恢复正常，政府将收回人形的暴力行为许可，并将她们重新分配回各自工作岗位，继续原先的生产任务。"
+ decision_GF_doll_storage_on:0 "开启人形待机模式"
+ decision_GF_doll_storage_on_desc:0 "允许星球上当前无任务的人形进入人形维护仓中休眠待机，与人形正常的运行状态相比，这将节省大部分的维护费用。\n\n§H提示：配合星球法令云计算协议可以使休眠人形在低消耗的情况下产出科研点。§!"
+ decision_GF_doll_storage_off:0 "激活待机人形"
+ decision_GF_doll_storage_off_desc:0 "将待机状态的人形全部激活，对她们分配新的任务。"
+ decision_GF_doll_cloud_computing_on:0 "开启云计算协议"
+ decision_GF_doll_cloud_computing_on_desc:0 "该协议允许我们接入那些正在休眠待机中的人形，连接其心智云图并利用这些闲置算力辅助我们的科研活动。"
+ decision_GF_doll_cloud_computing_off:0 "中止云计算协议"
+ decision_GF_doll_cloud_computing_off_desc:0 "云计算协议中止。"
+ decision_GF_auto_colony_on:0 "开启自动化遥控殖民协议"
+ decision_GF_auto_colony_on_desc:0 "该协议旨在允许我们派遣人形殖民一些当前并不适宜我们居住的星球。启动该协议后，人形将基于内置自律程序并在远程控制命令的指挥下开展一些诸如建设、资源采集、环境改造等复杂的殖民活动。"
+ decision_GF_auto_colony_on_effect_tooltip:0 "将殖民地规划类型设置为§Y$col_GF_auto_colony$§!\n将首都建筑替换为§Y$building_GF_auto_colony_capital$§!"
+ decision_GF_auto_colony_on_effect_not_automation_tooltip:0 "\n§R注意：§!该§Y自动化§!与§Y$PLANET_AUTOMATION_TITLE$§!§R无关§!"
+ decision_GF_auto_colony_off:0 "关闭自动化遥控殖民协议"
+ decision_GF_auto_colony_off_desc:0 "经过人形先遣队的不断建设与改造后，原本目标星球不适宜的环境已能满足我们的生存需要，我们将终止人形的自动化殖民协议并亲自殖民这个星球，向着星空的探索与扩张迈出胜利一步。"
+ decision_GF_auto_colony_off_effect_tooltip:0 "移除§Y$col_GF_auto_colony$§!规划类型\n移除§Y$building_GF_auto_colony_capital$§!"
+
+
+ decision_GF_rebuild_purify_wall:0 "重建隔离墙"
+ decision_GF_rebuild_purify_wall_desc:0 "没有隔离墙的保护，E.L.I.D感染者集群将会对城市构成极大的威胁。"
+ decision_GF_rebuild_purify_wall_requirements:0 "E.L.I.D感染者已经不再具有威胁，我们没必要建设隔离墙。"
+ decision_GF_rebuild_purify_wall_tooltip:0 "§G减少§!E.L.I.D感染者对城市的§R威胁度§!"
+
+ decision_GF_eliminate_all_elid:0 "清理剩余E.L.I.D感染者"
+ decision_GF_eliminate_all_elid_desc:0 "在清除所有污染区后，具有较大规模的E.L.I.D感染者集群已经完全被消灭，然而漏网之鱼仍然存在，为了城市建设的安全，我们可以组织军队进行一场全面的清扫，以绝后患。"
+ decision_GF_eliminate_all_elid_effects:0 "将会消灭所有剩余的E.L.I.D感染者，将它们的威胁降至0。"
+
+
+ decision_GF_construct_railway_line:0 "现代化铁路网络建设"
+ decision_GF_construct_railway_line_desc:0 "一个遍布全球的现代化铁路网络能够有效地将分布在全球各处的经济中心和工业中心连接起来，高效地统合全球的经贸和货物往来。"
+ decision_GF_construct_railway_line_effects:0 "添加地块§Y$d_GF_railway_hub$§!\n    效果：$MOD_TRADE_VALUE_ADD$: §G+25%§!，$MOD_PLANET_BUILDING_BUILD_SPEED_MULT$: §G+5%§!\n    维护费：£energy£§Y0.12§!  £alloys£§Y0.06§!\n允许$decision_GF_deploy_armored_train$"
+ decision_GF_construct_railway_line_fail_tooltip_1:0 "£trigger_no£ §Y[planet.GetName]§!上最多只能建设§H1个§!大型铁路网络"
+ decision_GF_construct_railway_line_fail_tooltip_2:0 "£trigger_no£ §Y[planet.GetName]§!上最多只能建设§H2个§!大型铁路网络"
+ GF_require_yellow_zone_cleared:0 "£trigger_no£ 需要先清理§Y$d_GF_yellow_zone$§!"
+
+ decision_GF_deploy_armored_train:0 "部署§H$GF_army_defensive_armored_train$§!"
+ decision_GF_deploy_armored_train_desc:0 "在铁路沿线部署装甲铁路车辆以巩固在铁路网络发达地区的防御能力。"
+ decision_GF_deploy_armored_train_effects:0 "部署一辆§H$GF_army_defensive_armored_train$§!，每月维护费：£energy£§Y2§!  £alloys£§Y1§!\n当前在§Y[planet.GetName]§!最多可以部署§H[planet.v_GF_armored_train_capacity]辆§!$GF_army_defensive_armored_train$"
+ decision_GF_deploy_armored_train_fail_tooltip:0 "£trigger_no£ §Y[planet.GetName]§!上的铁路网络最多只能支持§H[planet.v_GF_armored_train_capacity]辆§!$GF_army_defensive_armored_train$"

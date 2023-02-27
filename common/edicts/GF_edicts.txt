@@ -1,0 +1,212 @@
+GF_02_training = {
+	length = 4800
+	icon = "GFX_edict_type_time"
+	resources = {
+		category = campaigns
+		cost = {
+			energy = 1000
+		}
+	}
+
+	modifier = {
+		
+		species_leader_exp_gain = 0.30
+	}
+	potential = { has_authority = GF_auth_commonwealth }
+	
+	ai_weight = {
+		weight = @EdictLowPrio
+	}
+}
+#########################
+GF_doll_reprogram = {
+	length = 0
+	icon = "GFX_situation_log_ai"
+	resources = {
+		category = edicts
+		cost = { unity = 1000 }
+		cost = {
+			energy = 1000
+			multiplier = value:GF_count_robotic_leader_with_vanilla_negative_traits
+		}
+	}
+
+	allow = {
+		custom_tooltip = {
+			fail_text = GF_require_any_doll_leader_has_vanilla_negative_traits
+			count_owned_leader = {
+				limit = {
+					species = { is_robotic = yes }
+					GF_leader_has_vanilla_negative_traits = yes
+				}
+				count > 0
+			}
+		}
+		NOT = { has_modifier = GF_edict_doll_reprogram_cooldown }
+	}
+
+	potential = {
+		has_authority = GF_auth_commonwealth
+		has_technology = GF_tech_mind_upgrade_2
+	}
+	effect = {
+		custom_tooltip = GF_doll_reprogram_effect
+		hidden_effect = {
+			add_modifier = {
+				modifier = GF_edict_doll_reprogram_cooldown
+				years = 1
+			}
+			country_event = { id = GF_doll_leader.100 }
+		}
+	}
+
+	ai_weight = {
+		weight = 0
+		modifier = {
+			add = @EdictHighPrio
+			count_owned_leader = {
+				limit = { GF_leader_has_vanilla_negative_traits = yes }
+				count > 0
+			}
+		}
+	}
+
+	prerequisites = { "GF_tech_mind_upgrade_2" }
+}
+#########################
+GF_robot_modding = {
+	length = 0
+	icon = "GFX_GF_edict_type_robot"
+	resources = {
+		category = campaigns
+		cost = {
+			unity = 1000
+			energy = 1000
+			alloys = 1000
+		}
+	}
+
+	potential = { has_authority = GF_auth_commonwealth }
+
+	allow = {
+		custom_tooltip = {
+			fail_text = GF_edict_robot_modding_require_non_doll_robot
+			any_owned_pop = { GF_is_non_doll_robot_pop = yes }
+		}
+		custom_tooltip = {
+			fail_text = GF_edict_robot_modding_is_ongoing
+			NOT = { has_special_project = SP_GF_ROBOT_MODDING }
+		}
+	}
+
+	effect = {
+		custom_tooltip = GF_robot_modding_effect
+		hidden_effect = {
+			enable_special_project = {
+				name = SP_GF_ROBOT_MODDING
+			}
+		}
+	}
+	
+	ai_weight = {
+		weight = 0
+	}
+}
+
+################
+GF_relocate_relic_site = {
+	icon = "GFX_edict_type_time"
+	length = 0
+
+	potential = {
+		has_authority = GF_auth_commonwealth
+		NOT = {
+			has_country_flag = flag_GF_collapse_relic_surveyed
+		}
+		has_country_flag = flag_GF_foreign_relic_site_acknowledged
+	}
+	
+	effect = {
+		if = {
+			limit = {
+				NOT = {
+					any_system = { any_system_planet = { has_planet_flag = flag_p_GF_has_collapse_relic_site_1 } }
+				}
+			}
+			home_planet = {
+				solar_system = {
+					random_system = {
+						limit = {
+							distance = {
+								source = owner.home_planet.solar_system
+								max_jumps = 4
+								min_jumps = 1
+							}
+						}
+						GF_create_collapse_relic_site = {
+							NO_P_FLAG_1 = flag_p_GF_has_collapse_relic_site_2
+							NO_P_FLAG_2 = flag_p_GF_has_collapse_relic_site_3
+			
+							P_FLAG = flag_p_GF_has_collapse_relic_site_1
+							SITE = GF_collapse_relic_site_1
+						}
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					any_system = { any_system_planet = { has_planet_flag = flag_p_GF_has_collapse_relic_site_2 } } 
+				}
+			}
+			home_planet = {
+				solar_system = {
+					random_system = {
+						limit = {
+							distance = {
+								source = owner.home_planet.solar_system
+								max_jumps = 4
+								min_jumps = 1
+							}
+						}
+						GF_create_collapse_relic_site = {
+							NO_P_FLAG_1 = flag_p_GF_has_collapse_relic_site_1
+							NO_P_FLAG_2 = flag_p_GF_has_collapse_relic_site_3
+			
+							P_FLAG = flag_p_GF_has_collapse_relic_site_2
+							SITE = GF_collapse_relic_site_2
+						}
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					any_system = { any_system_planet = { has_planet_flag = flag_p_GF_has_collapse_relic_site_3 } }
+				}
+			}
+			home_planet = {
+				solar_system = {
+					random_system = {
+						limit = {
+							distance = {
+								source = owner.home_planet.solar_system
+								max_jumps = 4
+								min_jumps = 1
+							}
+						}
+						GF_create_collapse_relic_site = {
+							NO_P_FLAG_1 = flag_p_GF_has_collapse_relic_site_1
+							NO_P_FLAG_2 = flag_p_GF_has_collapse_relic_site_2
+			
+							P_FLAG = flag_p_GF_has_collapse_relic_site_3
+							SITE = GF_collapse_relic_site_3
+						}
+					}
+				}
+			}
+		}
+	}
+}

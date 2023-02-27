@@ -1,0 +1,309 @@
+########## GF_policy
+
+GF_doll_right_policy = {
+	potential = { GF_potential_trigger_advanced = yes }
+
+	option = {
+		name = "GF_doll_right_policy_full"
+		modifier = {
+			GF_ANDROID_pop_happiness = 0.15
+		}
+		valid = {
+			custom_tooltip = {
+				fail_text = GF_require_no_xenophobe_and_fxxk_you_paradox
+				NOR = {
+					has_ethic = ethic_fanatic_xenophobe
+					has_ethic = ethic_xenophobe
+				}
+			}
+			has_technology = GF_tech_mind_upgrade_2
+		}
+		policy_flags = { GF_doll_right_full ai_full_rights }
+
+		on_enabled = {
+			hidden_effect = {
+				every_owned_species = {
+					limit = { has_trait = GF_trait_doll }
+					set_military_service_type = {
+						type = military_service_full
+						country = root
+						cooldown = no
+					}
+				}
+			}
+		}
+
+		AI_weight = {
+			weight = 10
+			modifier = {
+				factor = 0.2
+				OR = {
+					has_ethic = ethic_authoritarian
+					has_ethic = ethic_fanatic_authoritarian
+				}
+			}
+		}
+	}
+	option = {
+		name = "GF_doll_right_policy_limited"
+		valid = {
+		    has_technology = GF_tech_mind_upgrade_1
+		}
+		modifier = {
+			GF_ANDROID_pop_happiness = 0.05
+		}
+		policy_flags = { GF_doll_right_limited ai_full_rights }
+
+		on_enabled = {
+			hidden_effect = {
+				every_owned_species = {
+					limit = { has_trait = GF_trait_doll }
+					set_military_service_type = {
+						type = military_service_full
+						country = root
+						cooldown = no
+					}
+				}
+			}
+		}
+
+		AI_weight = {
+			weight = 8
+			modifier = {
+				factor = 0.5
+				OR = {
+					has_ethic = ethic_authoritarian
+					has_ethic = ethic_fanatic_authoritarian
+				}
+			}
+		}
+	}
+	option = {
+		name = "GF_doll_right_policy_servitude"
+
+		policy_flags = { GF_doll_right_servitude ai_servitude }
+
+		on_enabled = {
+			hidden_effect = {
+				every_owned_species = {
+					limit = { has_trait = GF_trait_doll }
+					set_military_service_type = {
+						type = military_service_limited
+						country = root
+						cooldown = no
+					}
+				}
+			}
+		}
+
+		AI_weight = { weight = 1 }
+	}
+	option = {
+		name = "GF_doll_right_policy_low"
+
+		modifier = {
+			GF_ANDROID_pop_happiness = -0.10
+		}
+		policy_flags = { GF_doll_right_low ai_servitude }
+
+		on_enabled = {
+			hidden_effect = {
+				every_owned_species = {
+					limit = { has_trait = GF_trait_doll }
+					set_military_service_type = {
+						type = military_service_limited
+						country = root
+						cooldown = no
+					}
+				}
+			}
+		}
+
+		AI_weight = { weight = 0 }
+	}
+}
+
+GF_doll_work_policy = {
+	potential = { GF_potential_trigger_advanced = yes }
+
+	option = {
+		name = "GF_doll_work_policy_free"
+		potential = {
+			has_policy_flag = GF_doll_right_full
+		}
+
+		modifier = {
+			GF_ANDROID_pop_happiness = 0.10
+		}
+
+		policy_flags = { GF_doll_work_policy_free }
+		AI_weight = { weight = 1 }
+	}
+
+	option = {
+		name = "GF_doll_work_policy_high"
+		valid = {
+			custom_tooltip = {
+				fail_text = GF_doll_work_policy_doll_has_full_right
+				NOT = { has_policy_flag = GF_doll_right_full }
+			}
+			has_policy_flag = GF_doll_right_limited
+			has_technology = GF_tech_mind_upgrade_2
+		}
+
+		modifier = {
+			GF_ANDROID_pop_happiness = 0.05
+		}
+
+		policy_flags = { GF_doll_work_policy_high }
+		AI_weight = {
+			weight = 10
+			modifier = {
+				factor = 0
+				OR = {
+					has_ethic = ethic_authoritarian
+					has_ethic = ethic_fanatic_authoritarian
+				}
+			}
+		}
+	}
+	option = {
+		name = "GF_doll_work_policy_middle"
+
+		valid = {
+			custom_tooltip = {
+				fail_text = GF_doll_work_policy_doll_has_full_right
+				NOT = { has_policy_flag = GF_doll_right_full }
+			}
+			has_technology = GF_tech_mind_upgrade_1
+			OR = {
+				has_policy_flag = GF_doll_right_limited
+				has_policy_flag = GF_doll_right_servitude
+			}
+		}
+
+		modifier = {
+			GF_ANDROID_pop_happiness = -0.05
+		}
+
+		policy_flags = { GF_doll_work_policy_middle }
+		AI_weight = {
+			weight = 0
+			modifier = {
+				set = 8
+				is_ai = yes
+				years_passed > 5
+			}
+		}
+	}
+	option = {
+		name = "GF_doll_work_policy_low"
+
+		valid = {
+			custom_tooltip = {
+				fail_text = GF_doll_work_policy_doll_has_full_right
+				NOT = { has_policy_flag = GF_doll_right_full }
+			}
+		}
+
+		modifier = {
+			GF_ANDROID_pop_happiness = -0.10
+		}
+
+		policy_flags = { GF_doll_work_policy_low }
+		AI_weight = { weight = 2 }
+	}
+}
+
+GF_run_mode_policy = {
+	potential = { GF_potential_trigger_advanced = yes }
+
+	option = {
+		name = "GF_run_mode_policy_normal"
+		valid = { NOT = { has_policy_flag = GF_doll_right_low } }
+
+		modifier = {
+			GF_ANDROID_pop_happiness = 0.05
+		}
+
+		policy_flags = { GF_run_mode_policy_normal }
+
+		AI_weight = {
+			weight = 1
+			modifier = {
+				factor = 0
+				OR = {
+					has_ethic = ethic_authoritarian
+					has_ethic = ethic_fanatic_authoritarian
+				}
+			}
+		}
+	}
+
+	option = {
+		name = "GF_run_mode_policy_energy"
+
+		modifier = {
+			GF_ANDROID_pop_happiness = -0.05
+		}
+		
+		policy_flags = { GF_run_mode_policy_energy }
+		valid = {
+			NOT = { has_policy_flag = GF_doll_right_full }
+		}
+
+		AI_weight = { weight = 5 }
+	}
+	option = {
+		name = "GF_run_mode_policy_no_food"
+		valid = { NOT = { has_policy_flag = GF_doll_right_full } }
+
+		modifier = {
+			GF_ANDROID_pop_happiness = -0.10
+		}
+		
+		policy_flags = { GF_run_mode_policy_no_food }
+
+		AI_weight = { weight = 0 }
+	}
+	option = {
+		name = "GF_run_mode_policy_overload"
+		valid = { NOT = { has_policy_flag = GF_doll_right_full } }
+
+		modifier = {
+			GF_ANDROID_pop_happiness = -0.15
+		}
+		
+		policy_flags = { GF_run_mode_policy_overload }
+
+		AI_weight = { weight = 0 }
+	}
+}
+
+GF_collapse_upkeep_policy = {
+	potential = {
+		has_technology = GF_tech_collapse_plant_1
+	}
+
+	option = {
+		name = GF_collapse_upkeep_policy_mineral
+		policy_flags = { GF_collapse_upkeep_policy_mineral }
+		AI_weight = {
+			weight = 5
+		}
+	}
+	option = {
+		name = GF_collapse_upkeep_policy_mixed
+		policy_flags = { GF_collapse_upkeep_policy_mixed }
+		AI_weight = {
+			weight = 1
+		}
+	}
+	option = {
+		name = GF_collapse_upkeep_policy_food
+		policy_flags = { GF_collapse_upkeep_policy_food }
+		AI_weight = {
+			weight = 1
+		}
+	}
+}

@@ -1,0 +1,443 @@
+###坍塌科技
+GF_tech_observe_reflection = {
+	area = physics
+	category = { particles }
+	tier = 1
+	cost = @tier1cost1
+	prerequisites = { "tech_basic_science_lab_1" }
+	weight = @tier1weight1
+
+	# unlocks upgraded labs
+	potential = {
+		has_authority = GF_auth_commonwealth
+	}
+	modifier = {
+		all_technology_research_speed = 0.05
+	}
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+	}
+
+	gateway = GF_tech_gateway_collapse_tech
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+	}
+}
+GF_tech_mass_rebuild_function = {
+	area = physics
+	category = { particles }
+	tier = 2
+	cost = @tier2cost3
+	prerequisites = { "GF_tech_observe_reflection" }
+	weight = @tier2weight3
+
+	# unlocks upgraded labs
+	potential = {
+		has_authority = GF_auth_commonwealth
+	}
+	modifier = {
+		all_technology_research_speed = 0.05
+	}
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+	}
+	gateway = GF_tech_gateway_collapse_tech
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+	}
+}
+GF_tech_collapse = {
+	is_rare = yes
+	area = physics
+	category = { particles }
+	tier = 3
+	cost = @tier2cost3
+	prerequisites = { "GF_tech_mass_rebuild_function" }
+	weight = @tier2weight3
+
+	# unlocks upgraded labs
+	potential = {
+		has_authority = GF_auth_commonwealth
+	}
+	modifier = {
+		all_technology_research_speed = 0.05
+	}
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+	}
+	gateway = GF_tech_gateway_collapse_tech
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+	}
+}
+GF_tech_reverse_collapse = {
+	area = physics
+	category = { particles }
+	tier = 4
+	cost = @tier4cost2
+	prerequisites = { "GF_tech_collapse" }
+	weight = @tier4weight2
+
+	# unlocks upgraded labs
+	potential = {
+		has_authority = GF_auth_commonwealth
+	}
+	modifier = {
+		all_technology_research_speed = 0.05
+	}
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+	}
+	gateway = GF_tech_gateway_collapse_tech
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+	}
+}
+
+########
+
+GF_tech_collapse_power_core = {
+	# 坍塌反应能源
+	area = physics
+	category = { particles }
+	tier = 4
+	cost   = @tier5cost1
+	weight = @tier5weight1
+	ai_update_type = all
+	potential = {
+		has_authority = GF_auth_commonwealth
+	}
+	is_reverse_engineerable = no
+	is_rare = yes
+
+	prerequisites = {
+		"tech_zero_point_power"
+		"GF_tech_collapsetech_weaponize"
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+	}
+
+	prereqfor_desc = {
+		hide_prereq_for_desc = component
+		custom = {
+			title = "TECH_UNLOCK_GF_COLLAPSE_POWER_CORE_TITLE"
+			desc = "TECH_UNLOCK_GF_COLLAPSE_POWER_CORE_DESC"
+		}
+	}
+
+}
+
+GF_tech_collapse_jump_drive = {
+	# 坍塌跃迁引擎
+	area = physics
+	category = { particles }
+	tier = 4
+	cost   = @tier5cost2
+	weight = @tier5weight2
+	ai_update_type = all
+	potential = {
+		has_authority = GF_auth_commonwealth
+	}
+	is_reverse_engineerable = no
+	is_rare = yes
+	is_dangerous = yes
+
+	prerequisites = {
+		"tech_jump_drive_1"
+		"GF_tech_collapsetech_weaponize"
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+	}
+
+	prereqfor_desc = {
+		component = {
+			title = "TECH_UNLOCK_GF_COLLAPSE_JUMP_DRIVE_TITLE"
+			desc = "TECH_UNLOCK_GF_COLLAPSE_JUMP_DRIVE_DESC"
+		}
+	}
+
+}
+
+GF_tech_collapse_relic_tech = {
+	# 遗迹技术
+	# 需要挖完所有的遗迹坟
+	area = physics
+	category = { particles }
+	tier = 5
+	cost   = @tier5cost3
+	weight = 0
+
+	is_rare = yes
+	is_dangerous = yes
+
+	potential = {
+		has_authority = GF_auth_commonwealth
+		has_country_flag = flag_GF_collapse_relic_surveyed
+	}
+
+	gateway = GF_tech_gateway_collapse_relic_tech
+
+	prerequisites = {
+		"GF_tech_collapse"
+		"GF_tech_reverse_collapse"
+	}
+
+	weight_modifier = {
+		factor = 0
+	}
+
+	modifier = {
+		all_technology_research_speed = 0.10
+	}
+}
+
+GF_tech_collapse_energy_lance = {
+	area = physics
+	category = { particles }
+	tier = 5
+
+	cost = @tier5cost3
+	weight = @tier5weight3
+	is_rare = yes
+
+	potential = {
+		has_authority = GF_auth_commonwealth
+		has_country_flag = flag_GF_collapse_relic_surveyed
+	}
+
+	prerequisites = {
+		"GF_tech_collapsetech_weaponize"
+		"GF_tech_collapse_relic_tech"
+		"tech_energy_lance_2"
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+	}
+}
+
+GF_tech_collapse_ending_flash = {
+	area = physics
+	category = { particles }
+	tier = 5
+
+	cost = @tier5cost3
+	weight = @tier5weight3
+	is_rare = yes
+
+	potential = {
+		has_authority = GF_auth_commonwealth
+		has_country_flag = flag_GF_collapse_relic_surveyed
+		has_country_flag = colossus_project
+	}
+
+	prerequisites = {
+		"GF_tech_collapse_energy_lance"
+		"tech_colossus"
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+	}
+}
+
+GF_tech_combat_ogas_computers = {
+	area = physics
+	tier = 5
+	cost = 54000
+	category = { computing }
+	ai_update_type = military
+	is_rare = yes
+	
+	prerequisites = {
+		"GF_tech_collapse_relic_tech"
+	}
+	weight = 0
+	weight_modifier = {
+		factor = 0
+	}
+
+	# unlocks ogas combat computers
+
+	potential = {
+		AND = {
+			has_authority = GF_auth_commonwealth
+			has_country_flag = flag_GF_first_zion_comm_completed
+		}
+	}
+}
+
+GF_tech_miniaturized_collapse_lance = {
+	area = physics
+	tier = 5
+	cost = 50000
+	category = { particles }
+	ai_update_type = military
+	is_rare = yes
+	
+	prerequisites = {
+		"GF_tech_collapse_energy_lance"
+		"GF_tech_collapse_relic_tech"
+	}
+
+	weight = 0
+	weight_modifier = {
+		factor = 0
+	}
+
+	potential = {
+		has_authority = GF_auth_commonwealth
+	}
+}
+
+
+GF_tech_collapse_slingshot_protocal = {
+	area = physics
+	tier = 5
+	cost = 50000
+	category = { particles }
+	ai_update_type = military
+	is_rare = yes
+	
+	prerequisites = {
+		"GF_tech_collapse_jump_drive"
+		"GF_tech_collapse_relic_tech"
+		"tech_quantum_catapult"
+	}
+
+	weight = 0
+	weight_modifier = {
+		factor = 0
+	}
+
+	potential = {
+		has_authority = GF_auth_commonwealth
+	}
+
+	modifier = {
+		country_mia_time_mult = -0.20
+		catapult_spread_mult = 0.75
+		catapult_range_mult  = 0.50
+		ship_jumpdrive_cooldown_mult = -0.25
+	}
+}

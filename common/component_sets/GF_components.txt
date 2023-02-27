@@ -1,0 +1,59 @@
+component_set = {
+	key = "GF_COLLAPSE_ARMOR"
+	icon = "GFX_GF_collapse_armor"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "GF_COLLAPSE_LANCE"
+	icon = "GFX_GF_collapse_energy_lance"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "GF_COLLAPSE_LANCE_TITAN"
+	icon = "GFX_GF_collapse_energy_lance"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "GF_COLLAPSE_ENDING_FLASH"
+	icon = "GFX_GF_collpase_ending_flash"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "MINIATURIZED_GF_COLLAPSE_LANCE"
+	icon = "GFX_GF_miniaturized_collapse_lance"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "GF_COLLAPSE_ARTILLERY"
+	icon = GFX_GF_collapse_artillery
+	icon_frame = 1
+}
+
+component_set = {
+	key = "GF_COLLAPSE_CANNON"
+	icon = GFX_GF_collapse_cannon
+	icon_frame = 1
+}
+
+component_set = {
+	key = "GF_COLLAPSE_MASS_ACCELERATOR"
+	icon = GFX_GF_collapse_mass_accelerator
+	icon_frame = 1
+}
+
+component_set = {
+	key = "GF_COLLAPSE_MISSILE"
+	icon = GFX_GF_collapse_missile
+	icon_frame = 1
+}
+
+component_set = {
+	key = "GF_COLLAPSE_TORPEDO"
+	icon = GFX_GF_collapse_torpedo
+	icon_frame = 1
+}

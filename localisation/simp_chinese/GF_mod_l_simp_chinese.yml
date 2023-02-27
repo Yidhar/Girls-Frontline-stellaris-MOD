@@ -1,0 +1,98 @@
+﻿l_simp_chinese:
+ GIRLF:0 "少女前线"
+############ overwrite
+ mod_megastructures_produces_mult:0 "巨型结构产出"
+ mod_megastructures_upkeep_mult:0 "巨型结构维护费"
+ mod_megastructures_cost_mult:0 "巨型结构花费"
+
+############ economics
+ GF_ship_collapse_weapons:0 "坍塌武器"
+ GF_ship_collapse_armors:0 "坍塌装甲"
+ GF_ship_collapse_utilities:0 "坍塌组件"
+ GF_ship_computers:0 "OGAS作战电脑"
+
+ mod_GF_ship_collapse_armors_upkeep_mult:0 "$GF_ship_collapse_armors$维护费"
+ mod_GF_ship_collapse_utilities_upkeep_mult:0 "$GF_ship_collapse_utilities$维护费"
+ mod_GF_ship_collapse_weapons_upkeep_mult:0 "$GF_ship_collapse_weapons$维护费"
+ mod_GF_ship_collapse_armors_alloys_upkeep_mult:0 "$GF_ship_collapse_armors$ £alloys£ 合金维护费"
+ mod_GF_ship_collapse_utilities_alloys_upkeep_mult:0 "$GF_ship_collapse_utilities$ £alloys£ 合金维护费"
+ mod_GF_ship_collapse_weapons_alloys_upkeep_mult:0 "$GF_ship_collapse_weapons$ £alloys£ 合金维护费"
+ mod_GF_ship_collapse_armors_energy_upkeep_mult:0 "$GF_ship_collapse_armors$ £energy£ 能量币维护费"
+ mod_GF_ship_collapse_utilities_energy_upkeep_mult:0 "$GF_ship_collapse_utilities$ £energy£ 能量币维护费"
+ mod_GF_ship_collapse_weapons_energy_upkeep_mult:0 "$GF_ship_collapse_weapons$ £energy£ 能量币维护费"
+
+ GF_planet_jobs_doll_programmers:0 "云图技术员"
+ mod_GF_planet_jobs_doll_programmers_produces_mult:0 "$GF_planet_jobs_doll_programmers$产出"
+ mod_GF_planet_jobs_doll_programmers_upkeep_mult:0 "$GF_planet_jobs_doll_programmers$维护费"
+
+
+ mod_job_GF_collapser_add:0 "坍塌反应技师岗位"
+ mod_job_GF_reverse_collapser_refinery_add:0 "逆向坍塌精炼技师岗位"
+ mod_job_GF_reverse_collapser_industry_add:0 "逆向坍塌工业技师岗位"
+ mod_job_GF_reverse_collapser_research_add:0 "逆向坍塌研究员岗位"
+
+ GF_planet_collapser:0 "坍塌反应技师岗位"
+ GF_planet_reverse_collapser:0 "逆向坍塌技师岗位"
+ GF_planet_reverse_collapser_produces_mult:0 "$GF_planet_reverse_collapser$产出"
+
+############
+ mod_planet_pops_robotics_consumer_goods_upkeep_mult:0 "机械人口$consumer_goods$ £consumer_goods£ 维护费"
+ mod_planet_pops_robotics_food_upkeep_mult:0 "机械人口$food$ £food£ 维护费"
+ mod_pop_category_workers_food_upkeep_add:0 "劳工人口$food$ £food£ 维护费"
+ mod_pop_category_specialists_food_upkeep_add:0 "专家人口$food$ £food£ 维护费"
+ mod_pop_category_rulers_food_upkeep_add:0 "统治者人口$food$ £food£ 维护费"
+
+ GF_doll_upkeep:0 "人形人口维护费"
+ GF_doll_consumer_goods_upkeep:0 "人形人口$consumer_goods$ £consumer_goods£ 维护费"
+ GF_doll_food_upkeep:0 "人形人口$food$ £food£ 维护费"
+ mod_GF_planet_dormancy_upkeep_mult:0 "人形休眠舱位维护费"
+ mod_country_base_gf_core_chip_produces_add:0 "基础每月核心芯片"
+ mod_country_gf_core_chip_produces_mult:0 "每月核心芯片"
+ mod_GF_ANDROID_species_trait_points_add:0 "人形机体升级点数"
+ mod_GF_ANDROID_species_trait_picks_add:0 "人形机体升级上限"
+ mod_GF_ANDROID_pop_happiness:0 "人形幸福度"
+############
+ mod_job_GF_assemble_mechanic_add:0 "人形技师岗位"
+ mod_job_GF_programmer_add:0 "心智云图编辑员岗位"
+ mod_job_GF_liaison_add:0 "联络员岗位"
+ mod_job_GF_dormancy_doll_add:0 "人形休眠舱位"
+ mod_job_GF_URNC_secretary_add:0 "书记岗位"
+ mod_job_GF_AU_consultant_add:0 "顾问岗位"
+ mod_job_GF_GK_commander_add:0 "指挥官岗位"
+ mod_job_GF_URNC_commissioner_add:0 "人民委员岗位"
+ mod_job_GF_AU_director_add:0 "理事岗位"
+ mod_job_GF_GK_officer_add:0 "代行官岗位"
+############
+ mod_job_GF_guard_doll_add:0 "警用人形岗位"
+ mod_job_GF_guard_doll_per_pop:0 "每$VALUE$个人口提供§G+1§!个$job_GF_guard_doll$岗位"
+ mod_job_GF_guard_doll_per_pop_short:0 "\n每$VALUE$ £pop£ §G+1§! £job_GF_guard_doll£\n"
+ mod_job_GF_command_doll_add:0 "指挥人形岗位"
+ mod_job_GF_command_doll_per_pop:0 "每$VALUE$个人口提供§G+1§!个$job_GF_command_doll$岗位"
+ mod_job_GF_command_doll_per_pop_short:0 "\n每$VALUE$ £pop£ §G+1§! £job_GF_command_doll£"
+ mod_job_GF_assemble_doll_add:0 "组装人形岗位"
+ mod_job_GF_assemble_doll_per_pop:0 "每$VALUE$个人口提供§G+1§!个$job_GF_assemble_doll$岗位"
+ mod_job_GF_assemble_doll_per_pop_short:0 "\n每$VALUE$ £pop£ §G+1§! £job_GF_assemble_doll£"
+ mod_job_GF_maintain_doll_add:0 "维护人形岗位"
+ mod_job_GF_maintain_doll_per_pop:0 "每$VALUE$个人口提供§G+1§!个$job_GF_maintain_doll$岗位"
+ mod_job_GF_maintain_doll_per_pop_short:0 "\n每$VALUE$ £pop£ §G+1§! £job_GF_maintain_doll£"
+
+#####
+ mod_GF_planet_jobs_pop_assemblers_produces_add:0 "$GF_planet_jobs_pop_assemblers$产出"
+ mod_GF_planet_jobs_pop_assemblers_produces_mult:0 "$GF_planet_jobs_pop_assemblers$产出"
+ mod_GF_planet_jobs_pop_assemblers_upkeep_mult:0 "$GF_planet_jobs_pop_assemblers$维护费"
+
+#####
+ mod_weapon_type_GF_collapsed_weapon_damage_mult:0 "坍塌武器伤害"
+ mod_weapon_type_GF_collapsed_weapon_fire_rate_mult:0 "坍塌武器攻击速度"
+#  mod_weapon_type_GF_collapsed_speed_mult:0 "" # no use
+
+#####
+ mod_GF_OGAS_threads_add:0 "OGAS可用线程数"
+
+ mod_GF_doll_produces_mult:0 "$GF_ANDROID$产出"
+ mod_GF_doll_assembly_speed_mult:0 "$GF_ANDROID$组装速度"
+
+ mod_job_GF_assemble_doll_weight_mult:0 "$job_GF_assemble_doll$岗位权重"
+
+#####
+ mod_district_GF_assembly_max:0 "$district_GF_assembly$最大建造数量"

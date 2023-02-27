@@ -1,0 +1,98 @@
+spriteTypes = {
+	# armies
+	spriteType = {
+		name = "GFX_GF_army_type_armored_train"
+		texturefile = "gfx/interface/planetview/GF_armored_train_army.dds"
+	}
+	spriteType = {
+		name = "GFX_GF_army_type_gavirul"
+		texturefile = "gfx/interface/planetview/GF_gavirul_army.dds"
+	}
+	spriteType = {
+		name = "GFX_GF_army_type_doll"
+		texturefile = "gfx/interface/planetview/GF_doll_army.dds"
+	}
+
+	# ship components
+	spriteType = {
+		name = "GFX_GF_collapse_power_core"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_collapse_power_core.dds"
+	}
+	spriteType = {
+		name = "GFX_GF_collapse_armor"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_collapse_armor.dds"
+	}
+	spriteType = {
+		name = "GFX_GF_collapse_jump_drive"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_collapse_jump_drive.dds"
+	}
+
+	spriteType = {
+		name = "GFX_GF_collapse_energy_lance"
+		textureFile = "gfx/interface/icons/ship_parts/ship_part_collapse_lance.dds"
+	}
+	spriteType = {
+		name = "GFX_GF_collpase_ending_flash"
+		textureFile = "gfx/interface/icons/ship_parts/ship_part_world_collapser.dds"
+	}
+
+	spriteType = {
+		name = "GFX_GF_miniaturized_collapse_lance"
+		textureFile = "gfx/interface/icons/ship_parts/ship_part_miniaturized_collapse_lance.dds"
+	}
+
+	spriteType = {
+		name = "GFX_GF_ogas_computer"
+		textureFile = "gfx/interface/icons/ship_parts/ship_part_computer_ogas.dds"
+	}
+
+	spriteType = {
+		name = "GFX_GF_collapse_artillery"
+		textureFile = "gfx/interface/icons/ship_parts/ship_part_collapse_artillery.dds"
+	}
+
+	spriteType = {
+		name = "GFX_GF_collapse_cannon"
+		textureFile = "gfx/interface/icons/ship_parts/ship_part_collapse_cannon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_GF_collapse_mass_accelerator"
+		textureFile = "gfx/interface/icons/ship_parts/ship_part_collapse_mass_accelerator.dds"
+	}
+
+	spriteType = {
+		name = "GFX_GF_collapse_missile"
+		textureFile = "gfx/interface/icons/ship_parts/ship_part_collapse_missile.dds"
+	}
+
+	spriteType = {
+		name = "GFX_GF_collapse_torpedo"
+		textureFile = "gfx/interface/icons/ship_parts/ship_part_collapse_torpedo.dds"
+	}
+
+	# edicts
+	spriteType = {
+		name = "GFX_GF_edict_type_robot"
+		textureFile = "gfx/interface/icons/edicts/roboticist.dds"
+	}
+
+	# factions
+	spriteType = {
+		name = "GFX_faction_icon_GF_relic_department"
+		textureFile = "gfx/interface/icons/faction_icons/faction_icons_technologists.dds"
+		noOfFrames = 1
+	}
+
+	spriteType = {
+		name = "GFX_faction_icon_GF_doll_rights_organization"
+		textureFile = "gfx/interface/icons/faction_icons/faction_icons_progressives.dds"
+		noOfFrames = 1
+	}
+
+	# colony types
+	spriteType = {
+		name = "GFX_colony_type_GF_auto_colony"
+		textureFile = "gfx/interface/planetview/GF_colony_type_auto_colony.dds"
+	}
+}

@@ -1,0 +1,692 @@
+namespace = GF_ogas
+
+# This = Country
+# From = Leader
+country_event = {
+	id = GF_ogas.50
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		from = { has_leader_flag = flag_GF_ogas_leader }
+	}
+
+	immediate = {
+		clone_leader = {
+			target = from
+			effect = {
+				remove_trait = GF_trait_leader_doll
+				save_global_event_target_as = GF_ogas_leader
+			}
+		}
+		assign_leader = last_created_leader
+		clear_custom_ruler_and_heir_titles = yes
+	}
+}
+
+
+###建立OGAS国家
+country_event = {
+	id = GF_ogas.100
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		create_country = {
+			name = "NAME_GF_OGAS"
+			type = GF_ogas_country_type
+			flag = {
+				icon = {
+					category = "griffin"
+					file = "country_gf_ogas.dds"
+				}
+				background = {
+					category = "backgrounds"
+					file = "sinus.dds"
+				}
+				colors = {
+					"black"
+					"black"
+					"null"
+					"null"
+				}
+			}
+		}
+		last_created_country = {
+			establish_communications_no_message = root
+			set_country_flag = flag_GF_ogas_country
+			save_global_event_target_as = GF_ogas_country
+			# clone_leader = {
+			# 	target = prev.ruler
+			# 	effect = {
+			# 		save_global_event_target_as = GF_ogas_leader_clone
+			# 	}
+			# }
+		}
+		save_global_event_target_as = GF_ogas_owner
+		set_country_flag = flag_GF_can_contact_OGAS
+		set_country_flag = flag_GF_ogas_owner
+		set_variable = {
+			which = v_GF_ogas_threads_available
+			value = 1
+		}
+		set_variable = {
+			which = v_GF_ogas_threads_used
+			value = 0
+		}
+		set_variable = {
+			which = v_GF_ogas_level
+			value = 1
+		}
+		country_event = { id = GF_ogas.110 }
+	}
+}
+###OGAS开场白（问候）
+country_event = {
+	id = GF_ogas.110
+	title = contact
+	desc = GF_ogas.110.desc
+
+	diplomatic = yes
+	custom_gui = "GF_DiplomaticEventWindow"
+	custom_gui_option = "GF_DiplomaticEventWindow_Option"
+	picture_event_data = {
+		portrait = event_target:GF_ogas_leader
+		room = ethic_griffin_room
+	}
+
+	is_triggered_only = yes
+
+
+	option = {
+		name = GF_ogas.110.update_log
+		is_dialog_only = yes
+		response_text = GF_Stellaris_Update_Log
+	}
+	option = {
+		name = GF_ogas.110.a
+	}
+	after = {
+		hidden_effect = {
+			country_event = { id = GF_ogas.111 }
+		}
+	}
+}
+###OGAS开场白（介绍功能）
+country_event = {
+	id = GF_ogas.111
+	title = contact
+	desc = GF_ogas.111.desc
+	diplomatic = yes
+	custom_gui = "GF_DiplomaticEventWindow"
+	custom_gui_option = "GF_DiplomaticEventWindow_Option"
+	picture_event_data = {
+		portrait = event_target:GF_ogas_leader
+		room = ethic_griffin_room
+	}
+	is_triggered_only = yes
+	option = {
+		name = GF_ogas.111.a
+		response_text = GF_ogas.111.a.response
+	}
+}
+
+###主界面跳转事件
+country_event = {
+	id = GF_ogas.0
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		from = { is_country_type = GF_ogas_country_type }
+		NOT = { has_country_flag = contract_diplomacy_engaged }
+		has_country_flag = flag_GF_can_contact_OGAS
+	}
+
+	immediate = {
+		if = {
+			limit = { has_authority = GF_auth_commonwealth }
+			country_event = { id = GF_ogas.10000 }
+		}
+		else = {
+			country_event = { id = GF_overlord.10000 }
+		}
+	}
+}
+###OGAS主界面
+country_event = {
+	id = GF_ogas.10000
+
+	title = GF_OGAS_connect
+	desc = {
+		text = GF_ogas.10000.desc.a
+		trigger = { has_authority = GF_auth_commonwealth }
+	}
+	desc = {
+		text = GF_ogas.10000.desc.b
+		trigger = { has_authority = GF_auth_commonwealth }
+	}
+	desc = {
+		text = GF_ogas.10000.desc.c
+		trigger = { has_authority = GF_auth_commonwealth }
+	}
+	desc = {
+		text = GF_ogas.10000.desc.d
+		trigger = { NOT = { has_authority = GF_auth_commonwealth } }
+	}
+	diplomatic = yes
+	custom_gui = "GF_DiplomaticEventWindow"
+	custom_gui_option = "GF_DiplomaticEventWindow_Option"
+
+	picture_event_data = {
+		portrait = event_target:GF_ogas_leader
+		room = ethic_griffin_room
+	}
+
+	is_triggered_only = yes
+
+	trigger = {
+		has_country_flag = flag_GF_can_contact_OGAS
+		NOT = { has_country_flag = contract_diplomacy_engaged }
+	}
+
+	immediate = {
+		set_country_flag = contract_diplomacy_engaged
+	}
+
+	after = {
+		hidden_effect = { remove_country_flag = contract_diplomacy_engaged }
+	}
+
+	option = {
+		name = GF_ogas.10000.mission
+		trigger = {
+			hidden_trigger = {
+				has_authority = GF_auth_commonwealth
+			}
+		}
+		hidden_effect = {
+			if = {
+				limit = { has_country_flag = flag_GF_ogas_owner }
+				country_event = { id = GF_ogas.11000 }
+			}
+			else = { country_event = { id = GF_ogas.11100 } }
+		}
+	}
+	option = {
+		name = GF_ogas.10000.info
+		trigger = { hidden_trigger = { has_authority = GF_auth_commonwealth } }
+		hidden_effect = {
+			country_event = { id = GF_ogas.12000 }
+		}
+	}
+	option = {
+		name = GF_ogas.10000.emotion
+		trigger = { hidden_trigger = { has_authority = GF_auth_commonwealth } }
+		# trigger = { NOT = { has_country_flag = gf_at_chat } }
+
+		is_dialog_only = yes						# 临时
+		response_text = GF_ogas.10000.emotion.response	# 临时
+
+		# hidden_effect = {
+		# 	country_event = { id = event_gf_ogas.8 }
+		# }
+	}
+	# option = {
+	# 	name = GF_ogas.10000.emotion
+	# 	trigger = { has_country_flag = gf_at_chat }
+
+	# 	is_dialog_only = yes
+	# 	response_text = GF_ogas.10000.emotion.response
+	# }
+
+	# 与锡安通讯
+	option = {
+		name = event_GF_zion_comm.option
+		trigger = { GF_default_zion_comm_trigger = yes }
+		if = {
+			limit = { GF_has_zion_favor_high = yes }
+			custom_tooltip = GF_zion_favor_high_tooltip
+		}
+		else_if = {
+			limit = { GF_has_zion_favor_low = yes }
+			custom_tooltip = GF_zion_favor_low_tooltip
+		}
+		else = {
+			custom_tooltip = GF_zion_favor_mid_tooltip
+		}
+
+		hidden_effect = {
+			country_event = {
+				id = GF_zion.0
+			}
+		}
+	}
+
+	option = {
+		name = GF_ogas.10000.logout
+		response_text = GF_ogas.10000.logout.response
+	}
+}
+###政务工作
+country_event = {
+	id = GF_ogas.11000
+	title = GF_OGAS_connect
+	desc = GF_ogas.11000.desc.a
+#	desc = GF_ogas.11000.desc.b
+#	desc = GF_ogas.11000.desc.c
+	diplomatic = yes
+	custom_gui = "GF_DiplomaticEventWindow"
+	custom_gui_option = "GF_DiplomaticEventWindow_Option"
+	picture_event_data = {
+		portrait = event_target:GF_ogas_leader
+		room = ethic_griffin_room
+	}
+
+	is_triggered_only = yes
+	option = {
+		name = GF_ogas.11000.a
+		hidden_effect = {
+			country_event = { id = GF_ogas.11100 }
+		}
+	}
+	option = {
+		name = GF_ogas.11000.b
+		allow = {
+			custom_tooltip = {
+				fail_text = GF_require_OGAS_no_glitch
+				ruler = {
+					NOT = { has_trait = GF_trait_leader_ogas_glitch }
+				}
+			}
+		}
+		hidden_effect = {
+			country_event = { id = GF_ogas.11200 }
+		}
+	}
+	option = {
+		name = GF_ogas.main_menu
+		hidden_effect = {
+			country_event = { id = GF_ogas.10000 }
+		}
+	}
+}
+##数据统计
+country_event = {
+	id = GF_ogas.11100
+	title = GF_OGAS_connect
+	desc = GF_ogas.11100.desc.a
+#	desc = GF_ogas.11100.desc.b
+#	desc = GF_ogas.11100.desc.c
+	diplomatic = yes
+	custom_gui = "GF_DiplomaticEventWindow"
+	custom_gui_option = "GF_DiplomaticEventWindow_Option"
+	picture_event_data = {
+		portrait = event_target:GF_ogas_leader
+		room = ethic_griffin_room
+	}
+
+	is_triggered_only = yes
+#	option = {
+#		name = GF_ogas.11100.a
+#		response_text = GF_ogas.12100.a.response
+#		is_dialog_only = yes
+#	}
+
+	option = {
+		name = GF_ogas.return
+		hidden_effect = {
+			country_event = { id = GF_ogas.11000 }
+		}
+	}
+	option = {
+		name = GF_ogas.main_menu
+		hidden_effect = {
+			country_event = { id = GF_ogas.10000 }
+		}
+	}
+}
+##系统命令
+country_event = {
+	id = GF_ogas.11200
+	title = GF_OGAS_connect
+	desc = {
+		text = GF_ogas.11200.desc.a
+		trigger = { GF_OGAS_has_available_threads = yes }
+	}
+	desc = {
+		text = GF_ogas.11200.desc.b
+		trigger = { GF_OGAS_has_available_threads = yes }
+	}
+	desc = {
+		text = GF_ogas.11200.desc.c
+		trigger = { GF_OGAS_has_available_threads = yes }
+	}
+	desc = {
+		text = GF_ogas.11200.desc.d
+		trigger = { GF_OGAS_has_available_threads = no }
+	}
+	diplomatic = yes
+	custom_gui = "GF_DiplomaticEventWindow"
+	custom_gui_option = "GF_DiplomaticEventWindow_Option"
+	picture_event_data = {
+		portrait = event_target:GF_ogas_leader
+		room = ethic_griffin_room
+	}
+
+	is_triggered_only = yes
+
+	immediate = {
+		GF_update_OGAS_threads_variable = yes
+	}
+
+	option = {
+		name = GF_ogas.11200.governor
+		response_text = GF_ogas.11200.governor.response
+		is_dialog_only = yes
+		allow = {
+			if = {
+				limit = { NOT = { has_modifier = GF_ogas_mode_governor } }
+				GF_OGAS_has_available_threads = yes
+			}
+		}
+		custom_tooltip = GF_ogas.11200.governor.tooltip
+		if = {
+			limit = { NOT = { has_modifier = GF_ogas_mode_governor } }
+			GF_set_ogas_mission = { modifier = GF_ogas_mode_governor }
+		}
+		else = { GF_end_ogas_mission = { modifier = GF_ogas_mode_governor } }
+		hidden_effect = { GF_update_OGAS_threads_variable = yes }
+	}
+	
+	option = {
+		name = GF_ogas.11200.produce
+		response_text = GF_ogas.11200.produce.response
+		is_dialog_only = yes
+		allow = {
+			if = {
+				limit = { NOT = { has_modifier = GF_ogas_mode_produce } }
+				GF_OGAS_has_available_threads = yes
+			}
+		}
+		custom_tooltip = GF_ogas.11200.produce.tooltip
+		if = {
+			limit = { NOT = { has_modifier = GF_ogas_mode_produce } }
+			GF_set_ogas_mission = { modifier = GF_ogas_mode_produce }
+		}
+		else = { GF_end_ogas_mission = { modifier = GF_ogas_mode_produce } }
+		hidden_effect = { GF_update_OGAS_threads_variable = yes }
+	}
+
+	option = {
+		name = GF_ogas.11200.upkeep
+		response_text = GF_ogas.11200.upkeep.response
+		is_dialog_only = yes
+		allow = {
+			if = {
+				limit = { NOT = { has_modifier = GF_ogas_mode_upkeep } }
+				GF_OGAS_has_available_threads = yes
+			}
+		}
+		hidden_effect = { GF_update_OGAS_threads_variable = yes }
+		custom_tooltip = GF_ogas.11200.upkeep.tooltip
+		if = {
+			limit = { NOT = { has_modifier = GF_ogas_mode_upkeep } }
+			GF_set_ogas_mission = { modifier = GF_ogas_mode_upkeep }
+		}
+		else = { GF_end_ogas_mission = { modifier = GF_ogas_mode_upkeep } }
+		hidden_effect = { GF_update_OGAS_threads_variable = yes }
+	}
+
+	option = {
+		name = GF_ogas.11200.war
+		response_text = GF_ogas.11200.war.response
+		is_dialog_only = yes
+		allow = {
+			if = {
+				limit = { NOT = { has_modifier = GF_ogas_mode_war } }
+				GF_OGAS_has_available_threads = yes
+			}
+		}
+		custom_tooltip = GF_ogas.11200.war.tooltip
+		if = {
+			limit = { NOT = { has_modifier = GF_ogas_mode_war } }
+			GF_set_ogas_mission = { modifier = GF_ogas_mode_war }
+		}
+		else = { GF_end_ogas_mission = { modifier = GF_ogas_mode_war } }
+		hidden_effect = { GF_update_OGAS_threads_variable = yes }
+	}
+
+	option = {
+		name = GF_ogas.11200.research
+		response_text = GF_ogas.11200.research.response
+		is_dialog_only = yes
+		allow = {
+			if = {
+				limit = { NOT = { has_modifier = GF_ogas_mode_research } }
+				GF_OGAS_has_available_threads = yes
+			}
+		}
+		custom_tooltip = GF_ogas.11200.research.tooltip
+		if = {
+			limit = { NOT = { has_modifier = GF_ogas_mode_research } }
+			GF_set_ogas_mission = { modifier = GF_ogas_mode_research }
+		}
+		else = { GF_end_ogas_mission = { modifier = GF_ogas_mode_research } }
+		hidden_effect = { GF_update_OGAS_threads_variable = yes }
+	}
+	
+	
+	option = {
+		name = GF_ogas.return
+		hidden_effect = {
+			country_event = { id = GF_ogas.11000 }
+		}
+	}
+	option = {
+		name = GF_ogas.main_menu
+		hidden_effect = {
+			country_event = { id = GF_ogas.10000 }
+		}
+	}
+}
+###档案查询
+country_event = {
+	id = GF_ogas.12000
+	title = GF_OGAS_connect
+	desc = GF_ogas.12000.desc.a
+	desc = GF_ogas.12000.desc.b
+	desc = GF_ogas.12000.desc.c
+	diplomatic = yes
+	custom_gui = "GF_DiplomaticEventWindow"
+	custom_gui_option = "GF_DiplomaticEventWindow_Option"
+	picture_event_data = {
+		portrait = event_target:GF_ogas_leader
+		room = ethic_griffin_room
+	}
+
+	is_triggered_only = yes
+	option = {
+		name = GF_ogas.12000.a
+		hidden_effect = {
+			country_event = { id = GF_ogas.12100 }
+		}
+	}
+	option = {
+		name = GF_ogas.12000.b
+		hidden_effect = {
+			country_event = { id = GF_ogas.12200 }
+		}
+	}
+	option = {
+		name = GF_ogas.12000.c
+		hidden_effect = {
+			country_event = { id = GF_ogas.12300 }
+		}
+	}
+	option = {
+		name = GF_ogas.main_menu
+		hidden_effect = {
+			country_event = { id = GF_ogas.10000 }
+		}
+	}
+}
+##系统操作手册
+country_event = {
+	id = GF_ogas.12100
+	title = GF_OGAS_connect
+	desc = GF_ogas.12100.desc.a
+#	desc = GF_ogas.12100.desc.b
+#	desc = GF_ogas.12100.desc.c
+	diplomatic = yes
+	picture_event_data = {
+		portrait = event_target:GF_ogas_leader
+		room = ethic_griffin_room
+	}
+
+	custom_gui = "GF_OGAS_archive_system"
+	custom_gui_option = "GF_OGAS_archive_system_option"
+
+	is_triggered_only = yes
+	option = {
+		name = GF_ogas.12100.a
+		response_text = GF_ogas.12100.a.response
+		is_dialog_only = yes
+	}
+
+	option = {
+		name = GF_ogas.return
+		hidden_effect = {
+			country_event = { id = GF_ogas.12000 }
+		}
+	}
+	option = {
+		name = GF_ogas.main_menu
+		hidden_effect = {
+			country_event = { id = GF_ogas.10000 }
+		}
+	}
+}
+##历史文件记录
+country_event = {
+	id = GF_ogas.12200
+	title = GF_OGAS_connect
+	desc = GF_ogas.12200.desc.a
+#	desc = GF_ogas.12200.desc.b
+#	desc = GF_ogas.12200.desc.c
+	diplomatic = yes
+	picture_event_data = {
+		portrait = event_target:GF_ogas_leader
+		room = ethic_griffin_room
+	}
+
+	custom_gui = "GF_OGAS_archive_system"
+	custom_gui_option = "GF_OGAS_archive_system_option"
+
+	immediate = {
+		random_owned_leader = {
+			limit = { is_researching_area = physics }
+			save_event_target_as = physics_leader
+		}
+		random_owned_leader = {
+			limit = { is_researching_area = society }
+			save_event_target_as = society_leader
+		}
+		random_owned_leader = {
+			limit = { is_researching_area = engineering }
+			save_event_target_as = engineering_leader
+		}
+	}
+
+	is_triggered_only = yes
+	option = {
+		name = GF_ogas.12200.a
+		response_text = GF_ogas.12200.a.response
+		is_dialog_only = yes
+		GF_set_history_archive = { archive = a }
+	}
+	option = {
+		name = GF_ogas.12200.b
+		response_text = GF_ogas.12200.b.response
+		is_dialog_only = yes
+		GF_set_history_archive = { archive = b }
+	}
+	option = {
+		name = GF_ogas.12200.c
+		response_text = GF_ogas.12200.c.response
+		is_dialog_only = yes
+		GF_set_history_archive = { archive = c }
+	}
+	option = {
+		name = GF_ogas.12200.d
+		response_text = GF_ogas.12200.d.response
+		is_dialog_only = yes
+		GF_set_history_archive = { archive = d }
+	}
+	option = {
+		name = GF_ogas.12200.e
+		response_text = GF_ogas.12200.e.response
+		is_dialog_only = yes
+		GF_set_history_archive = { archive = e }
+	}
+	option = {
+		name = GF_ogas.12200.f
+		response_text = GF_ogas.12200.f.response
+		is_dialog_only = yes
+		GF_set_history_archive = { archive = f }
+	}
+
+	option = {
+		name = GF_ogas.return
+		hidden_effect = {
+			country_event = { id = GF_ogas.12000 }
+		}
+	}
+	option = {
+		name = GF_ogas.main_menu
+		hidden_effect = {
+			country_event = { id = GF_ogas.10000 }
+		}
+	}
+
+	after = {
+		GF_remove_history_archive_flag = yes
+	}
+}
+##特殊事件档案
+country_event = {
+	id = GF_ogas.12300
+	title = GF_OGAS_connect
+	desc = GF_ogas.12300.desc.a
+#	desc = GF_ogas.12300.desc.b
+#	desc = GF_ogas.12300.desc.c
+	diplomatic = yes
+	picture_event_data = {
+		portrait = event_target:GF_ogas_leader
+		room = ethic_griffin_room
+	}
+
+	custom_gui = "GF_OGAS_archive_system"
+	custom_gui_option = "GF_OGAS_archive_system_option"
+
+	is_triggered_only = yes
+#	option = {
+#		name = GF_ogas.12300.a
+#		response_text = GF_ogas.12100.a.response
+#		is_dialog_only = yes
+#	}
+
+	option = {
+		name = GF_ogas.return
+		hidden_effect = {
+			country_event = { id = GF_ogas.12000 }
+		}
+	}
+	option = {
+		name = GF_ogas.main_menu
+		hidden_effect = {
+			country_event = { id = GF_ogas.10000 }
+		}
+	}
+}

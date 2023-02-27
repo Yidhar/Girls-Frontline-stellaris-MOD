@@ -1,0 +1,199 @@
+entity = {
+	name = "GF_collapse_lance_hit_entity"
+	cull_radius = 1.0
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 2 looping = no
+		start_event = { particle = "GF_collapse_lance_hit_effect" keep_particle = yes sound = { soundeffect = tachyon_lance_hit } }
+		start_event = { trigger_once = yes sound = { soundeffect = "distance_tachyon_lance_hit" } }
+	}
+	state = { name = "stop" state_time = 0.5 looping = no }
+}
+
+entity = {
+	name = "GF_collapse_lance_shield_hit_entity"
+	cull_radius = 1.0
+	
+	default_state = "idle"
+	state = { name = "idle" 
+		start_event = { particle = "GF_collapse_lance_hit_effect" sound = { soundeffect = shield_hit } }
+		start_event = { particle = "projectile_large_shield_hit_effect" }
+		start_event = { trigger_once = yes sound = { soundeffect = "distance_shield_hit" } } 
+	}
+	state = { name = "stop" state_time = 0.5 looping = no }
+}
+
+entity = {
+	name = "titan_GF_collapse_lance_hit_entity"
+	cull_radius = 1.0
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 2 looping = no
+		start_event = { particle = "titan_GF_collapse_lance_hit_effect" keep_particle = yes sound = { soundeffect = "perdition_beam_hit" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "distance_perdition_beam_hit" } }
+	}
+	state = { name = "stop" state_time = 0.5 looping = no }
+}
+
+entity = {
+	name = "titan_GF_collapse_lance_shield_hit_entity"
+	cull_radius = 1.0
+	
+	default_state = "idle"
+	state = { name = "idle" 
+		start_event = { particle = "titan_GF_collapse_lance_hit_effect" sound = { soundeffect = "shield_hit" } }
+		start_event = { particle = "titan_laser_shield_hit_effect" }
+		start_event = { trigger_once = yes sound = { soundeffect = "distance_shield_hit" } } 
+	}
+	state = { name = "stop" state_time = 0.5 looping = no }
+}
+
+
+
+entity = {
+	name = "GF_collapse_lance_muzzle_entity"
+	cull_radius = 1.0
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 0.8 looping = no
+		event = { time = 0 particle = "GF_collapse_lance_muzzle_particle" keep_particle = yes sound = { soundeffect = tachyon_lance_fire } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_tachyon_lance_fire" } }
+	}
+}
+
+entity = {
+	name = "GF_collapse_lance_windup_entity"
+	
+	default_state = "attack"
+	get_state_from_parent = no
+	state = {
+		name = "attack" looping = yes state_time = 0.8
+		event = { trigger_once = yes sound = { soundeffect = "tachyon_lance_windup" } }
+		
+		event = { time = 0.0 use_parent_nodes = yes node = xl_windup_8 particle = "GF_collapse_lance_windup_effect" }
+		event = { time = 0.0 use_parent_nodes = yes node = xl_windup_7 particle = "GF_collapse_lance_windup_effect" }
+		event = { time = 0.2 use_parent_nodes = yes node = xl_windup_6 particle = "GF_collapse_lance_windup_effect" }
+		event = { time = 0.2 use_parent_nodes = yes node = xl_windup_5 particle = "GF_collapse_lance_windup_effect" }
+		event = { time = 0.4 use_parent_nodes = yes node = xl_windup_4 particle = "GF_collapse_lance_windup_effect" }
+		event = { time = 0.4 use_parent_nodes = yes node = xl_windup_3 particle = "GF_collapse_lance_windup_effect" }
+		event = { time = 0.6 use_parent_nodes = yes node = xl_windup_2 particle = "GF_collapse_lance_windup_effect" }
+		event = { time = 0.6 use_parent_nodes = yes node = xl_windup_1 particle = "GF_collapse_lance_windup_effect" }
+		
+		event = { time = 0.0 use_parent_nodes = yes node = xl_gun_01 particle = "GF_collapse_lance_muzzle_windup_effect" trigger_once = yes keep_particle = yes }
+	}
+}
+
+entity = {
+	name = "GF_collapse_lance_turret_windup_entity"
+	
+	default_state = "attack"
+	get_state_from_parent = no
+	state = {
+		name = "attack" looping = yes state_time = 0.8
+		event = { trigger_once = yes sound = { soundeffect = "tachyon_lance_windup" } }
+		
+		event = { time = 0.0 use_parent_nodes = yes node = turret_muzzle_01 particle = "GF_collapse_lance_muzzle_windup_effect" trigger_once = yes keep_particle = yes }
+	}
+}
+
+### 坍塌液导弹
+entity = {
+	name = "GF_small_collapse_missile_hit_entity"
+	cull_radius = 1.0
+	
+	state = { name = "explode_med_hp" state_time = 0.8 looping = no
+		event = { time = 0.0 particle = "GF_small_collapse_missile_hit_effect" sound = { soundeffect = missile_hit } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_missile_hit" } }
+	}
+	default_state = "explode_med_hp"
+}
+
+### 坍塌液鱼雷
+entity = {
+	name = "GF_collapse_torpedo_hit_entity"
+	cull_radius = 1.0
+	
+	state = { name = "explode_med_hp" state_time = 0.8 looping = no
+		event = { time = 0.0 particle = "GF_collapse_torpedo_hit_effect" sound = { soundeffect = torpedo_hit } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_torpedo_hit" } }
+	}
+	default_state = "explode_med_hp"
+}
+
+### 坍塌液机炮
+entity = {
+	name = "GF_collapse_cannon_small_hit_entity"
+	cull_radius = 1.0
+	
+	state = { name = "explode_med_hp" state_time = 1.5 looping = no
+		event = { time = 0.0 particle = "GF_collapse_cannon_small_hit_effect" sound = { soundeffect = auto_cannon_hit_small } }
+		
+		event = { sound = { soundeffect = "distance_auto_cannon_hit_small" } }
+	}
+	state = { name = "explode_med_shield" state_time = 0.8 looping = no
+		event = { trigger_once = yes sound = { soundeffect = "distance_auto_cannon_hit_small" } }
+	}
+	default_state = "explode_med_hp"
+}
+
+entity = {
+	name = "GF_collapse_cannon_medium_hit_entity"
+	cull_radius = 1.0
+	
+	state = { name = "explode_med_hp" state_time = 1.5 looping = no
+		event = { time = 0.0 particle = "GF_collapse_cannon_medium_hit_effect" sound = { soundeffect = auto_cannon_hit_medium } }
+		event = { sound = { soundeffect = "distance_auto_cannon_hit_medium" } }
+	}
+	state = { name = "explode_med_shield" state_time = 0.8 looping = no
+		event = { time = 0.0 particle = "medium_hit_effect_shield" }
+	}
+	default_state = "explode_med_hp"
+}
+
+entity = {
+	name = "GF_collapse_cannon_large_hit_entity"
+	cull_radius = 1.0
+	
+	state = { name = "explode_med_hp" state_time = 1.5 looping = no
+		event = { time = 0.0 particle = "GF_collapse_cannon_large_hit_effect" sound = { soundeffect = auto_cannon_hit_large } }
+		
+		event = { sound = { soundeffect = "distance_auto_cannon_hit_large" } }
+	}
+	state = { name = "explode_med_shield" state_time = 0.8 looping = no
+		event = { time = 0.0 particle = "medium_hit_effect_shield" }
+	}
+	default_state = "explode_med_hp"
+}
+
+entity = {
+	name = "GF_collapse_cannon_small_muzzle_entity"
+	cull_radius = 1.0
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 7 looping = no
+		event = { time = 0 particle = "GF_collapse_cannon_small_muzzle_particle" keep_particle = yes sound = { soundeffect = auto_cannon_fire_small} }
+		event = { trigger_once = yes sound = { soundeffect = "distance_auto_cannon_fire_small" } }
+	}
+}
+
+entity = {
+	name = "GF_collapse_cannon_medium_muzzle_entity"
+	cull_radius = 1.0
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 7 looping = no
+		event = { time = 0 particle = "GF_collapse_cannon_medium_muzzle_particle" keep_particle = yes sound = { soundeffect = auto_cannon_fire_medium} }
+		event = { trigger_once = yes sound = { soundeffect = "distance_auto_cannon_fire_medium" } }
+	}
+}
+
+entity = {
+	name = "GF_collapse_cannon_large_muzzle_entity"
+	cull_radius = 1.0
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 7 looping = no
+		event = { time = 0 particle = "GF_collapse_cannon_large_muzzle_particle" keep_particle = yes sound = { soundeffect = auto_cannon_fire_large} }
+		event = { trigger_once = yes sound = { soundeffect = "distance_auto_cannon_fire_large" } }
+	}
+}

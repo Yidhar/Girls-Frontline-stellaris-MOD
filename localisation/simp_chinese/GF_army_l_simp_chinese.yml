@@ -1,0 +1,36 @@
+﻿l_simp_chinese:
+#################################
+ GF_army_defensive_auto_doll:0 "自律人形"
+ GF_army_defensive_auto_doll_plural:0 "自律人形"
+ GF_army_defensive_auto_doll_desc:0 "当地临时征作军用的仿生自律人形，云图才从齐纳网络下载基本武器使用方法，装备较简陋。"
+ GF_army_arm_doll:0 "武装人形"
+ GF_army_arm_doll_plural:0 "武装人形"
+ GF_army_arm_doll_desc:0 "在普通仿生自律人形基础上进行了部分军事化改装的人形，装载了火控核心，机体强度也得到增强，存储了基本战术技能，可以执行攻击性任务。"
+ GF_army_tactical_doll:0 "军用战术人形"
+ GF_army_tactical_doll_plural:0 "军用战术人形"
+ GF_army_tactical_doll_desc:0 "自设计之初便作为军用的特制人形，在普通人形基础上大幅度提升了作战效能，她们使用了高强度合金作为机体骨架，安装了更强动力的能源核心与更先进的火控核心，机体内置防护装甲与纳米机器修复装置，使用的军用级心智云图相比民用版本提升了系统的运算速度与存储空余，从而留有大量心智空间装载专业的战术技能与战斗技巧。这些特点让她们一被制造出来就是完美的战争机器，是给敌人带来恐惧的女武神。"
+ GF_army_occupation_doll:0 "防暴人形"
+ GF_army_occupation_doll_plural:0 "防暴人形"
+ GF_army_occupation_doll_desc:0 "负责在敌对占领区镇压当地暴乱、维持占领区治安的人形部队，主要装备为防爆盾与防暴枪。"
+
+ GF_army_gavirul:0 "三女神实验克隆体"
+ GF_army_gavirul_desc:0 "三女神实验克隆体是对三女神计划产物诺耶露、洁芙缇、露尼西亚基因片段小批量克隆生产出来的超级战士，作为人体与坍塌技术融合的产物，可以使用坍塌技术实现如皮肤硬化、自我修复、瞬间移动等看似超能力的战斗方式。当然，多次克隆的过程会导致原基因不可避免的衰变，使得个体使用坍塌技术的能力大幅度降低，因而难以实现大规模克隆生产。"
+
+# elid armies
+ GF_army_elid_1:0 "量产 E.L.I.D-Infected"
+ GF_army_elid_1_desc:0 "曾经是受坍塌辐射污染的军方人类士兵。这些感染者在坍塌液的强化下，力量和速度有着可怕的威胁。\n\n利用克隆技术可以快速生产这样的感染者，让它们为我们所用。"
+
+ GF_army_elid_2:0 "头目 E.L.I.D-Infected"
+ GF_army_elid_2_desc:0 "曾经是遭受坍塌辐射的严重污染，身体发生变异的军方人类士兵。ELID感染者会随感染事件和辐射强度而逐渐出现内脏，表皮硬化的症状，所以这些重度感染者的皮肤十分坚硬难以被伤害，性格比其他感染者更狂暴，破坏力也更加恐怖。\n\n利用克隆技术可以快速生产这样的感染者，让它们为我们所用。"
+
+
+ GF_army_hostile_elid:0 "E.L.I.D感染者"
+ GF_army_hostile_elid_desc:0 "曾经是受坍塌辐射污染的军方人类士兵。这些感染者在坍塌液的强化下，力量和速度有着可怕的威胁。"
+
+ GF_army_hostile_elid_boss:0 "E.L.I.D感染者头目"
+ GF_army_hostile_elid_boss_desc:0 "曾经是遭受坍塌辐射的严重污染，身体发生变异的军方人类士兵。ELID感染者会随感染事件和辐射强度而逐渐出现内脏，表皮硬化的症状，所以这些重度感染者的皮肤十分坚硬难以被伤害，性格比其他感染者更狂暴，破坏力也更加恐怖。"
+
+##
+ GF_army_defensive_armored_train:0 "装甲列车"
+ GF_army_defensive_armored_train_desc:0 "一种在铁路沿线对部队进行火力支援和独立作战的装甲铁路车辆，其行动受制于铁路线路，但在铁路网络发达的地区中进行防御作战时有得天独厚的优势。"
+ 

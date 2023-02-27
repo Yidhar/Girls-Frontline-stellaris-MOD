@@ -1,0 +1,77 @@
+# This = Planet
+on_blocker_cleared = {
+	events = {
+		# GF_relic.1000
+		GF_elid.2001	# 隔离墙
+		GF_elid.2100	# 黑区
+		GF_elid.2200	# 红区
+		GF_elid.2300	# 黄区
+	}
+}
+
+# A country has increased the level of a tech, use last_increased_tech trigger to check tech and level.
+# This = Country
+on_tech_increased = {
+	events = {
+		GF_alaya.0	# “遗迹技术”研究完成
+	}
+}
+
+# this/root = planet that have been fired upon
+# from = fleet that fired
+on_destroy_planet_with_PLANET_KILLER_GF_COLLAPSE_ENDING_FLASH = {
+	events = {
+		crisis.5015
+		planet_destruction.600
+		
+		GF_ending_flash.100
+	}
+}
+
+# Planet has taken damage from orbital bombardment - Damage is applied daily
+# This = Planet
+# From = Bombarder
+on_planet_bombarded = {
+	events = {
+		GF_bombardment.1200	# 向轰炸目标添加污染区
+		GF_bombardment.1310 # 居住站
+	}
+}
+
+# Planet has reached 0 pops from orbital bombardment
+# This = Planet
+# From = Bombarder
+on_planet_zero_pops = {
+	events = {
+		GF_bombardment.1100	# 轰炸目标概率变为坍塌死寂星球
+		GF_bombardment.1300 # 轰炸目标为居住站
+	}
+}
+
+# Triggers country_event for the defender upon victory
+# Root = country, planet owner
+# From = country, attack leader
+# FromFrom = planet
+on_planet_defenders_win = {
+	events = {
+		GF_elid.1010 # 周期性ELID进攻：玩家胜利
+
+		GF_elid.2110 # 清理黑区：玩家胜利
+		GF_elid.2210 # 清理红区：玩家胜利
+		GF_elid.2310 # 清理黄区：玩家胜利
+	}
+}
+
+# Triggers country_event for the defender upon defeat
+# This = country, planet owner
+# From = country, attack leader
+# FromFrom = planet
+on_planet_defenders_lose = {
+	events = {
+		GF_elid.1020 # 周期性ELID进攻：玩家失败
+
+		GF_elid.2120 # 清理黑区：玩家失败
+		GF_elid.2220 # 清理红区：玩家失败
+		GF_elid.2320 # 清理黄区：玩家失败
+	}
+}

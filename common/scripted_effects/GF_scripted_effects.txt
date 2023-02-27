@@ -1,0 +1,562 @@
+# required scope: system
+GF_create_collapse_relic_site = {
+	random_system_planet = {
+		limit = {
+			is_a_planet = yes
+			NOR = {	#以下条件均不能满足
+				is_planet_class = pc_cybrex							# 环形世界
+				is_planet_class = pc_shattered						# 破碎星球
+				is_planet_class = pc_broken							# 残破星球
+				is_planet_class = pc_egg_cracked					# 破碎星球
+				is_planet_class = pc_crystal_asteroid				# 晶态小行星
+				is_planet_class = pc_gas_giant						# 气态巨行星
+				is_planet_class = pc_asteroid						# 小行星
+				is_planet_class = pc_ice_asteroid					# 冰晶小行星
+				is_planet_class = pc_rare_crystal_asteroid			# 晶态小行星
+				is_planet_class = pc_hive							# 蜂巢星球
+				is_planet_class = pc_machine						# 机械星球
+				is_planet_class = pc_shielded						# 屏障星球
+				is_planet_class = pc_ai								# 人工智能星球
+				is_planet_class = pc_infested						# 孵化星球
+				is_planet_class = pc_ringworld_habitable			# 环形世界
+				is_planet_class = pc_ringworld_habitable_damaged	# 破损的环形世界
+				is_planet_class = pc_habitat						# 轨道居住站
+				is_planet_class = pc_shrouded						# 虚境星球
+				has_modifier = holy_planet							# 圣地
+				exists = archaeological_site		# 存在考古点
+
+				has_planet_flag = $NO_P_FLAG_1$		# 不能有标识1
+				has_planet_flag = $NO_P_FLAG_2$		# 不能有标识2
+			}
+			solar_system = {
+				OR = {
+					NOT = { exists = owner }
+					owner = { has_origin = GF_origin_commonwealth }
+				}
+			}
+		}
+		set_planet_flag = $P_FLAG$
+		create_archaeological_site = $SITE$
+	}
+	set_star_flag = flag_s_GF_has_collapse_relic_site_in_system
+}
+
+# required scope: planet
+GF_create_black_zone_deposit = {
+	if = {
+		limit = { planet_size > 20 }
+		while = {
+			count = 3
+			add_deposit = d_GF_black_zone_extra
+			add_deposit = d_GF_red_zone_extra
+		}
+		random = {
+			chance = 25
+			while = {
+				count = 2
+				add_deposit = d_GF_black_zone_extra
+			}
+		}
+		random = {
+			chance = 50
+			while = {
+				count = 2
+				add_deposit = d_GF_black_zone_extra
+			}
+		}
+		random = {
+			chance = 75
+			while = {
+				count = 3
+				add_deposit = d_GF_red_zone_extra
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			planet_size >= 15
+			planet_size <= 20
+		}
+		while = {
+			count = 2
+			add_deposit = d_GF_black_zone_extra
+		}
+		add_deposit = d_GF_red_zone_extra
+		random = {
+			chance = 25
+			while = {
+				count = 2
+				add_deposit = d_GF_black_zone_extra
+			}
+		}
+		random = {
+			chance = 50
+			while = {
+				count = 1
+				add_deposit = d_GF_black_zone_extra
+			}
+		}
+		random = {
+			chance = 75
+			while = {
+				count = 3
+				add_deposit = d_GF_red_zone_extra
+			}
+		}
+	}
+	else = {
+		while = {
+			count = 2
+			add_deposit = d_GF_black_zone_extra
+			add_deposit = d_GF_red_zone_extra
+		}
+		random = {
+			chance = 50
+			add_deposit = d_GF_black_zone_extra
+		}
+		random = {
+			chance = 75
+			while = {
+				count = 2
+				add_deposit = d_GF_red_zone_extra
+			}
+		}
+	}
+}
+
+# scope = country, 导出国家的$RES$月收入和库存，并将储存月收入的变量限制在$MIN$以上
+GF_get_monthly_income_and_stockpile = {
+	export_resource_income_to_variable = {
+		resource = $RES$
+		variable = v_GF_monthly_$RES$_income
+	}
+	export_resource_stockpile_to_variable = {
+		resource = $RES$
+		variable = v_GF_$RES$_stockpile
+	}
+	if = {
+		limit = {
+			check_variable = {
+				which = v_GF_monthly_$RES$_income
+				value < $MIN$
+			}
+		}
+		set_variable = {
+			which = v_GF_monthly_$RES$_income
+			value = $MIN$
+		}
+	}
+}
+
+# scope = country, 花费$TIER$ * $RES$月收入的$RES$资源，最高为@GF_zion_project_cost_max (1M)
+GF_zion_project_cost = {
+	if = {
+		limit = {
+			check_variable_arithmetic = {
+				which = v_GF_monthly_$RES$_income
+				multiply = $TIER$
+				value >= @GF_zion_project_cost_max
+			}
+		}
+		add_resource = {
+			$RES$ = -1
+			mult = @GF_zion_project_cost_max
+		}
+	}
+	else = {
+		add_resource = {
+			$RES$ = @\[ -1 * $TIER$ ]
+			mult = v_GF_monthly_$RES$_income
+		}
+	}
+}
+
+# scope = country
+GF_enable_zion_project = {
+	if = {
+		limit = { NOT = { has_event_chain = GF_secrets_of_zion_event_chain } }
+		begin_event_chain = {
+			event_chain = GF_secrets_of_zion_event_chain
+			target = this
+		}
+	}
+	enable_special_project = {
+		name = $PROJECT$
+		owner = root
+	}
+}
+
+# scope = country, 检测项目，结束“锡安的秘密”事件链
+GF_end_zion_secrets_event_chain = {
+	if = {
+		limit = {
+			has_event_chain = GF_secrets_of_zion_event_chain
+			NOR = {
+				has_special_project = SP_GF_ZION_ELID_ARMY_PROJECT
+				has_special_project = SP_GF_ZION_MINI_COLLAPSE_WEAPON_PROJECT
+				has_special_project = SP_GF_ZION_COLLAPSE_SLINGSHOT_PROJECT
+				has_special_project = SP_GF_ZION_ORB_MAINFRAME_ALPHA_PROJECT
+			}
+		}
+		end_event_chain = GF_secrets_of_zion_event_chain
+	}
+}
+
+@GF_zion_favor_upper_limit = 200
+
+# scope = country, 提升锡安的评价，最高为@GF_zion_favor_upper_limit
+GF_increase_zion_favor = {
+	custom_tooltip_with_params = {
+		description = GF_increase_zion_favor_tooltip
+		description_parameters = {
+			"VALUE" = @\[ | $VALUE$ | ]
+		}
+	}
+	hidden_effect = {
+		change_variable = {
+			which = v_GF_zion_favor
+			value = @\[ | $VALUE$ | ]
+		}
+		if = {
+			limit = {
+				check_variable = {
+					which = v_GF_zion_favor
+					value >= @GF_zion_favor_upper_limit
+				}
+			}
+			set_variable = {
+				which = v_GF_zion_favor
+				value = @GF_zion_favor_upper_limit
+			}
+		}
+	}
+}
+
+# scope = country, 降低锡安的评价
+GF_decrease_zion_favor = {
+	custom_tooltip_with_params = {
+		description = GF_decrease_zion_favor_tooltip
+		description_parameters = {
+			"VALUE" = @\[ -1 * | $VALUE$ | ]
+		}
+	}
+	hidden_effect = {
+		change_variable = {
+			which = v_GF_zion_favor
+			value = @\[ -1 * | $VALUE$ | ]
+		}
+	}
+}
+
+# scope = country
+GF_set_zion_deep_dive_cooldown = {
+	custom_tooltip = GF_add_zion_deep_dive_cooldown_tooltip_5
+	GF_set_zion_deep_dive_cooldown_no_notification = yes
+	hidden_effect = {
+		country_event = {
+			id = GF_zion_project.34000
+			days = 1800
+		}
+	}
+}
+
+# scope = country
+GF_set_zion_deep_dive_cooldown_no_notification = {
+	hidden_effect = {
+		add_modifier = {
+			modifier = GF_zion_deep_dive_cooldown
+			years = 5
+		}
+	}
+}
+
+
+# scope = planet
+GF_construct_railway_line_effect = {
+	add_deposit = d_GF_railway_hub
+	hidden_effect = {
+		if = {
+			limit = { NOT = { is_variable_set = v_GF_armored_train_capacity } }
+			set_variable = {
+				which = v_GF_armored_train_capacity
+				value = 1
+			}
+		}
+		change_variable = {
+			which = v_GF_armored_train_capacity
+			value = 1
+		}
+	}
+}
+
+
+# scope = country
+GF_convert_to_OGAS_subnet = {
+	optimize_memory
+	# 附庸特化：OGAS子网
+	save_event_target_as = GF_vassal_subnet
+	# create_country = {
+	# 	type = faction
+	# 	effect = {
+	# 		copy_ethos_and_authority = event_target:GF_vassal_subnet
+	# 	}
+	# }
+
+	store_country_backup_data = {
+		flag = yes
+		room = yes
+		name = yes
+		ethics = yes
+		government = yes
+	}
+	
+	change_government = {
+		authority = GF_auth_OGAS_subnet
+		civics = random
+	}
+	add_intel = { amount = 100 who = from }
+	random_galaxy_species = {
+		limit = { has_species_flag = flag_GF_doll_species_@from }
+		save_event_target_as = GF_doll_species
+	}
+	ruler = {
+		exile_leader_as = GF_OGAS_subnet_previous_ruler
+	}
+	clone_leader = {
+		target = event_target:GF_ogas_leader
+		effect = {
+			set_leader_flag = GF_OGAS_subnet_leader_@event_target:GF_vassal_subnet
+			save_event_target_as = GF_ogas_leader_subnet
+			remove_trait = GF_trait_leader_doll
+			remove_trait = GF_trait_leader_ogas_2
+			remove_trait = GF_trait_leader_ogas
+			add_trait = GF_trait_leader_ogas_subnet_core
+		}
+	}
+	assign_leader = event_target:GF_ogas_leader_subnet
+	country_event = {
+		id = GF_overlord.1000
+		days = 30
+	}
+	# 添加基础资源
+	add_resource = {
+		energy = 100
+		minerals = 100
+		food = 100
+		alloys = 100
+		consumer_goods = 100
+		gf_core_chip = 100
+		
+		unity = 1000
+	}
+	every_owned_planet = {
+		# 添加42lab
+		if = {
+			limit = {
+				free_building_slots > 0
+				NOR = {
+					has_building = building_GF_42lab_1
+					has_building = building_GF_42lab_2
+					has_building = building_GF_42lab_3
+				}
+			}
+			add_building = building_GF_42lab_1
+		}
+		# 移除原版机器人组装建筑并替换为少前的
+		while = {
+			limit = { has_building = building_robot_assembly_plant }
+			remove_building = building_robot_assembly_plant
+			add_building = building_GF_doll_factory
+		}
+		while = {
+			limit = { has_building = building_robot_assembly_plant }
+			remove_building = building_machine_assembly_plant
+			add_building = building_GF_doll_factory
+		}
+		if = {
+			limit = {
+				free_building_slots > 0
+				NOT = { has_building = building_GF_doll_factory }
+			}
+			add_building = building_GF_doll_factory
+		}
+		if = {
+			limit = {
+				NOT = {
+					any_owned_pop = { is_same_species_class = event_target:GF_doll_species }
+				}
+			}
+			create_pop = { species = event_target:GF_doll_species }
+		}
+	}
+	give_technology = { tech = GF_tech_doll_assemble }
+	set_built_species = event_target:GF_doll_species
+}
+
+GF_deactivate_OGAS_subnet = {
+	optimize_memory
+	# change_government = {
+	# 	authority = random
+	# 	civics = random
+	# }
+	save_event_target_as = GF_vassal_subnet
+	restore_country_backup_data = yes
+	if = {
+		limit = { ruler = { has_leader_flag = GF_OGAS_subnet_leader_@event_target:GF_vassal_subnet } }
+		kill_leader = {
+			type = ruler
+			show_notification = yes
+		}
+		set_leader = GF_OGAS_subnet_previous_ruler
+	}
+	remove_country_flag = flag_GF_commonwealth_vassal_OGAS_subnet_2
+	remove_country_flag = flag_GF_commonwealth_vassal_OGAS_subnet_3
+}
+
+@GF_OGAS_mission_duration = 3600
+
+# scope = country
+GF_set_ogas_mission = {
+	if = {
+		limit = { has_country_flag = flag_GF_ogas_owner }
+		add_modifier = {
+			modifier = $modifier$
+			multiplier = v_GF_ogas_level
+		}
+		hidden_effect = {
+			change_variable = {
+				which = v_GF_ogas_threads_used
+				value = 1
+			}
+		}
+	}
+	else = {
+		add_modifier = {
+			modifier = $modifier$
+			days = @GF_OGAS_mission_duration
+		}
+		hidden_effect = {
+			set_timed_country_flag = {
+				flag = GF_ogas_work_mode
+				days = @GF_OGAS_mission_duration
+			}
+			country_event = {
+				id = GF_overlord.11001
+				days = @GF_OGAS_mission_duration
+			}
+		}
+	}
+}
+
+# scope = country
+GF_end_ogas_mission = {
+	if = {
+		limit = { has_modifier = $modifier$ }
+		remove_modifier = $modifier$
+		if = {
+			limit = { has_country_flag = flag_GF_ogas_owner }
+			hidden_effect = {
+				change_variable = {
+					which = v_GF_ogas_threads_used
+					value = -1
+				}
+			}
+		}
+	}
+}
+
+# scope = country
+GF_remove_all_ogas_mission_modifier = {
+	if = {
+		limit = { has_modifier = GF_ogas_mode_governor }
+		remove_modifier = GF_ogas_mode_governor
+	}
+	if = {
+		limit = { has_modifier = GF_ogas_mode_produce }
+		remove_modifier = GF_ogas_mode_produce
+	}
+	if = {
+		limit = { has_modifier = GF_ogas_mode_upkeep }
+		remove_modifier = GF_ogas_mode_upkeep
+	}
+	if = {
+		limit = { has_modifier = GF_ogas_mode_war }
+		remove_modifier = GF_ogas_mode_war
+	}
+	if = {
+		limit = { has_modifier = GF_ogas_mode_research }
+		remove_modifier = GF_ogas_mode_research
+	}
+	hidden_effect = {
+		if = {
+			limit = { has_country_flag = flag_GF_ogas_owner }
+			set_variable = {
+				which = v_GF_ogas_threads_used
+				value = 0
+			}
+		}
+	}
+}
+
+# scope = GF country
+GF_change_ogas_threads = {
+	if = {
+		limit = { has_authority = GF_auth_commonwealth }
+		change_variable = {
+			which = v_GF_ogas_threads_available
+			value = $value$
+		}
+		if = {	# 可用线程最大为 5
+			limit = {
+				check_variable = {
+					which = v_GF_ogas_threads_available
+					value > 5
+				}
+			}
+			set_variable = {
+				which = v_GF_ogas_threads_available
+				value = 5
+			}
+		}
+		if = {	# 可用线程最小为 1
+			limit = {
+				check_variable = {
+					which = v_GF_ogas_threads_available
+					value <= 0
+				}
+			}
+			set_variable = {
+				which = v_GF_ogas_threads_available
+				value = 1
+			}
+		}
+	}
+}
+
+# scope = GF country
+GF_update_OGAS_threads_variable = {
+	if = {
+		limit = { has_authority = GF_auth_commonwealth }
+		export_modifier_to_variable = {
+			modifier = GF_OGAS_threads_add
+			variable = v_GF_ogas_threads_available
+		}
+	}
+}
+
+# scope = any
+GF_change_ogas_level = {
+	event_target:GF_ogas_owner = {
+		change_variable = {
+			which = v_GF_ogas_level
+			value = $value$
+		}
+	}
+}
+
+# scope = country
+GF_clear_core_chip_deficit_flags = {
+	remove_country_flag = flag_GF_deficit_core_chip_approach_programmer_subsidies
+	remove_country_flag = flag_GF_deficit_core_chip_approach_dismantle_doll
+	remove_country_flag = flag_GF_deficit_core_chip_approach_assimilate_doll
+}

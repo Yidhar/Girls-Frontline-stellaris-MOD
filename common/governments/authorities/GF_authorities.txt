@@ -1,25 +1,69 @@
-auth_GF_Autonomous_Dolls ={
-	machine_empire = yes
+GF_auth_commonwealth = {
 	has_heir = no
-	uses_mandates = no
-	max_election_candidates = 0
-	election_term_variance = -1
-	has_factions = no
-	has_agendas = yes
+	has_factions = yes
+	can_reform = no
+	election_type = none
+	has_agendas = no
 	valid_for_released_vassal = no
 	possible = {
-		species_archetype = {
-			value = Autonomous_Dolls
+		ethics = {
+			NOR = {
+				value = ethic_gestalt_consciousness
+				value = ethic_spiritualist
+				value = ethic_fanatic_spiritualist
+			}
+		}
+		civics = {
+			OR = {
+				value = GF_civic_URNC
+				value = GF_civic_AU
+				value = GF_civic_GK
+			}
 		}
 	}
-	country_modifier = {
-		leader_cost_empire_size_mult = 9999
-		leader_age = -100
-	}
+	icon = "gfx/interface/icons/governments/GF_auth_commonwealth.dds"
 	random_weight = {
-		weight = 0
+		base = 0
 	}
 	country_modifier = {
-		starbase_shipyard_capacity_add = -9999
+		country_admin_cap_add = 50
+		planet_pops_robotics_upkeep_mult = -0.05
+	}
+	tags = {
+		GF_AUTH_TAG_RULED_BY_OGAS
+	}
+}
+
+GF_auth_OGAS_subnet = {
+	has_heir = no
+	has_factions = no
+	can_reform = no
+	election_type = none
+	has_agendas = no
+	valid_for_released_vassal = yes
+
+	playable = {
+		has_country_flag = flag_GF_commonwealth_vassal
+	}
+	possible = {
+		ethics = {
+			NOR = {
+				value = ethic_spiritualist
+				value = ethic_fanatic_spiritualist
+			}
+		}
+	}
+
+	icon = "gfx/interface/icons/governments/GF_auth_OGAS_subnet.dds"
+	random_weight = {
+		base = 0
+	}
+	country_modifier = {
+		country_admin_cap_add = 50
+		planet_pops_robotics_upkeep_mult = -0.05
+	}
+
+	tags = {
+		GF_AUTH_TAG_VASSAL_OF_OGAS
 	}
 }

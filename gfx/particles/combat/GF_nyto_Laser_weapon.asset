@@ -1,0 +1,62 @@
+particle={
+	name="GF_nyto_Laser_weapon"
+	subsystem={
+		name="laser_point"
+		max_amount=5
+		slave_particles=0
+		sort="depth"
+		emitter_type="point"
+		invert=no
+		trail=no
+		spritesheet_animation=no
+		spritesheet_animation_loop=1.000000
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/waepons-1.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			alpha=255
+		}
+		position={
+		}
+		duration=-1
+		velocity_yaw=0
+		velocity=4
+		life=1
+		emission=5
+		size=3,size_ani
+		rotation_speed=500
+	}
+	animation={
+		name="size_ani"
+		start=0
+		duration=1
+		repeat=no
+		minValue=0
+		maxValue=1
+		curve={
+			0 1 1 0 
+		}
+		op="MUL"
+		time="life_abs"
+	}
+	force={
+		type="planar"
+		name="force0"
+		position={
+			0 0 0 
+		}
+		direction={
+			0 1 0 
+		}
+		local_force=yes
+		yaw=0
+		division=16
+		amount=5
+	}
+}

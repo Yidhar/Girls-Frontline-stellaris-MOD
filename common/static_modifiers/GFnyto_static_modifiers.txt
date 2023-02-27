@@ -1,0 +1,278 @@
+#EILD进攻
+GFnyto_eild_attack= {
+	icon = "gfx/interface/icons/planet_modifiers/GFnyto_eild_attack.dds"
+	icon_frame = 3
+	pop_environment_tolerance=-0.1
+}
+#花期开放
+GFnyto_flower_period= {
+	icon = "gfx/interface/icons/planet_modifiers/GFnyto_flower_period.dds"
+	icon_frame = 3
+	planet_jobs_produces_mult = -0.4
+	pop_environment_tolerance=-0.1
+	planet_amenities_mult = -0.05
+}
+#击退EILD
+GFnyto_eild_attack_end= {
+	icon = "gfx/interface/icons/planet_modifiers/pm_archaeology.dds"
+	icon_frame = 1
+	pop_happiness = 0.2
+}
+nyto_cooldown= { #冷却
+	icon = "gfx/interface/icons/planet_modifiers/pm_dangerous_wildlife.dds"
+	icon_frame = 2
+}
+#坍缩液匮乏
+GF_nyto_collapse_liquid_deficit= {
+	planet_stability_add=-200
+	country_produces_mult = -0.25
+}
+
+#停止涅托人口增长
+GFnyto_planet_stop_pop_increase= {
+	icon = "gfx/interface/icons/planet_modifiers/GFnyto_planet_stop_pop_increase.dds"
+	icon_frame = 1
+}
+#遗迹署
+GFnyto_set_up_heritage_department={
+	icon = "gfx/interface/icons/modifiers/GFnyto_set_up_heritage_department.dds"
+	icon_frame = 1
+	ship_archaeological_site_excavation_speed_mult = 0.5
+	ship_archaeological_site_clues_add = 5
+}
+#虚识
+GFnyto_gestalt={
+	icon = "gfx/interface/icons/modifiers/GFnyto_gestalt.dds"
+	icon_frame = 1
+	all_technology_research_speed=0.5
+	planet_jobs_produces_mult = 0.2
+	country_government_civic_points_add = 1
+	empire_size_pops_mult = -0.3
+}
+#行星轨道防御
+GFnyto_planetary_defense_ready= {
+	icon = "gfx/interface/icons/planet_modifiers/GFnyto_planetary_defense_ready.dds"
+	icon_frame = 1
+}
+#坍缩液星球
+GFnyto_PC= {
+	icon = "gfx/interface/icons/planet_modifiers/GFnyto_PC.dds"
+	planet_non_artificial_max_districts_add = 3
+	planet_jobs_produces_mult = 0.1
+	pop_growth_speed = 0.1
+	icon_frame = 1
+}
+#坍缩液堆
+GFnyto_PC_ancient= {
+	icon = "gfx/interface/icons/planet_modifiers/GFnyto_PC.dds"
+	planet_non_artificial_max_districts_add = 30
+	planet_jobs_produces_mult = 1
+	planet_building_build_speed_mult = 1
+	pop_growth_speed = 1
+	icon_frame = 1
+}
+#毁坏的坍缩堆
+GFnyto_PC_damage= {
+	icon = "gfx/interface/icons/planet_modifiers/GFnyto_PC.dds"
+	icon_frame = 1
+	planet_jobs_produces_mult = 0.15
+}
+#疏散
+GFnyto_evacuate= {
+	icon = "gfx/interface/icons/planet_modifiers/GFnyto_evacuate.dds"
+	pop_resettlement_cost_mult = -10
+	icon_frame = 1
+}
+#看见天使
+GFnyto_crisis_see_angel= {
+	icon = "gfx/interface/icons/modifiers/GFnyto_crisis_see_angel.dds"
+	pop_growth_speed = -100
+	pop_assembly_speed = -100
+	planet_pops_upkeep_mult = -0.9
+	pop_resettlement_cost_mult = 10
+	icon_frame = 1
+}
+#贸易封锁
+gfnyto_trade_blockade={
+	icon = "gfx/interface/icons/planet_modifiers/gfnyto_trade_blockade.dds"
+	planet_pops_upkeep_mult = 10
+	planet_jobs_upkeep_mult = 10
+	planet_jobs_produces_mult = -10
+	icon_frame = 3
+}
+#母舰开幕雷击
+gfnyto_ship_start_buff ={
+	ship_shield_add = 100000000
+	ship_hull_add = 50000000
+	ship_weapon_range_mult = 1
+	weapon_type_energy_weapon_fire_rate_mult = 100	
+}
+#进场debuff
+gfnyto_ship_start_debuff ={
+	ship_weapon_damage = -1 #舰船武器伤害
+	ship_disengage_chance_reduction = 9999 #亚光速减少
+	ship_shield_mult = -1
+	ship_armor_penetration_mult = -1
+	ship_shield_penetration_mult = -1
+	ship_hull_damage_mult = -1
+	ship_base_speed_mult = -11 #亚空间航速
+}
+gfnyto_portal_buff={
+	planet_jobs_produces_mult = 1
+	planet_decision_enact_speed_mult = 0.1
+	custom_tooltip = "gfnyto_portal_buff.desc"
+	icon = "gfx/interface/icons/planet_modifiers/gfnyto_portal_buff.dds"
+	icon_frame = 1
+}
+gfnyto_light_weapons ={
+	weapon_type_light_weapon_fire_rate_mult = 0.55
+	weapon_type_light_weapon_damage_mult = 0.55
+}
+gfnyto_h_weapons = {
+	ship_evasion_mult = -0.3
+	ship_tracking_add = -10
+	ship_accuracy_mult = -0.2
+}
+gfnyto_h_weapons2 ={
+	weapon_type_keto_weapon_damage_mult = 0.22
+}
+gfnyto_ms_weapons2={
+	ship_tracking_add =  10
+	ship_accuracy_mult = 0.2
+}
+gfnyto_ms_weapons1={
+	weapon_type_nytowith_weapon_damage_mult = 0.05
+	weapon_type_nytowith_weapon_fire_rate_mult = 0.05
+}
+gfnyto_hudun={
+	ship_shield_penetration_mult = -1
+}
+gfnyto_hudun_kinetic = {
+	weapon_type_kinetic_weapon_damage_mult = -1
+}
+gfnyto_hudun_explosive ={
+	weapon_type_explosive_weapon_damage_mult = 1
+}
+gfnyto_x_weapon2_fire_rate_modifer={	
+	weapon_type_Akso_weapon_fire_rate_mult = 1.5
+}
+gfnyto_x_weapon2_weapon_damage_modifer={
+	weapon_type_Akso_weapon_damage_mult = 1.5
+}
+gfnyto_LsScepter_damage_modifer={
+	weapon_type_LsScepter_weapon_damage_mult = -1000
+	weapon_type_LsScepter_weapon_fire_rate_mult = -1000
+}
+gfnyto_shield_system_sheil_debuff ={
+	weapon_type_kinetic_weapon_damage_mult = -1
+}
+gf_nyto_commind_weapon_buff ={
+	force_disparity_fire_rate_mult = 5
+}
+#缺少训练密钥
+GF_nyto_training_key_deficit ={
+	planet_jobs_physics_research_produces_mult = -0.7
+	planet_jobs_society_research_produces_mult = -0.7
+	planet_jobs_physics_research_upkeep_mult = -0.7
+	planet_jobs_GF_nyto_collapse_liquid_produces_mult = -0.6
+}
+#火控核心匮乏
+GF_nyto_new_fire_control_unit_deficit ={
+	ship_weapon_damage = -0.5
+	ship_fire_rate_mult = -0.5
+	army_damage_mult = -0.25
+}
+#ELIDLV
+GF_nyto_Elid_level ={
+	army_damage_mult = 0.05
+	army_health = 0.05
+}
+GF_nyto_Elid_level2 ={
+	army_damage_mult = 0.25
+	army_health = 0.25
+}
+GF_nyto_forward_base ={
+	icon = "gfx/interface/icons/modifiers/GFnyto_gestalt.dds"
+	country_base_alloys_produces_add = 20
+	ship_sensor_range_add = 3
+	ship_speed_mult = 0.5	
+}
+#额外护盾
+GF_nyoto_shield_ship ={
+	ship_shield_add = 87600
+	
+}
+#护盾恢复
+GF_nyto_shield_ship_regen ={
+	ship_shield_regen_add_static = 87600
+}
+#沉默
+GF_nyto_p_weapon_system={
+	ship_accuracy_mult = -999999
+	ship_tracking_add = -99999999
+	ship_weapon_damage = -999999999999
+}
+#ai保护
+GF_nyto_ai_rbq ={
+	country_base_GF_nyto_collapse_liquid_produces_add = 1000
+}
+#坍塌辐射污染
+GF_nyto_Radiation ={	
+	icon = "gfx/interface/icons/planet_modifiers/GF_nyto_Radiation.dds"
+	pop_environment_tolerance=-0.01
+}
+GF_nyto_Radiation2 ={	
+	icon = "gfx/interface/icons/planet_modifiers/GF_nyto_Radiation.dds"
+	pop_environment_tolerance=-0.002
+}
+#圣歌风琴
+GF_nyto_l_weapon2_soon ={
+	weapon_type_son_weapon_fire_rate_mult = 0.1	
+}
+#终末辉光
+GF_nyto_T_weapon2_damgabuff = {
+	weapon_type_prism_weapon_damage_mult = 1	
+}
+# GF_nyto_beacon_count_buff ={
+# 	weapon_type_beacon_weapon_damage_mult = 10000
+# }
+# GF_nyto_aoe_weapon={
+# 	weapon_type_aoe_weapon_damage_mult = 999999999999999999
+# 	weapon_type_aoe_weapon_fire_rate_mult = 999999999999999999
+# }
+#双蛇仗
+GF_nyto_missle_1_buff ={
+	weapon_type_fireworks_weapon_fire_rate_mult = 999999999999999999
+}
+GF_nyto_missle_1_debuff ={
+	weapon_type_fireworks_weapon_fire_rate_mult = -1
+}
+#恐慌
+GF_nyto_end_years ={
+	ship_weapon_damage = -0.5
+	ship_fire_rate_mult = 0.1
+}
+#游行
+GF_nyto_oper_pop ={
+	icon = "gfx/interface/icons/planet_modifiers/pm_alien_propaganda.dds"
+	icon_frame = 3
+	planet_jobs_upkeep_mult = -0.5
+	planet_jobs_produces_mult = -0.5
+}
+#火炮
+GF_nyto_t_weapon = {
+	weapon_type_kinetic_weapon_damage_mult = 0.1
+	weapon_type_kinetic_weapon_fire_rate_mult = 0.1
+}
+#献祭
+GF_nyto_kill_tanhua ={
+	country_produces_mult = 0.5
+	hide_from_country_list = yes
+	country_minerals_produces_mult = 0.3
+}
+#
+GF_nyto_static_pop ={
+	pop_growth_speed = -99999
+	planet_pop_assembly_add = 1
+	hide_from_country_list = yes
+}

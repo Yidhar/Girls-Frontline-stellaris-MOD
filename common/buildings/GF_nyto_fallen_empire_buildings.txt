@@ -1,0 +1,274 @@
+#电离净化塔
+building_GFnyto_affluence_center = {
+	base_buildtime = @b2_time
+	can_build = yes
+	can_demolish = yes
+	potential = {
+		owner = {
+			OR = {
+				has_authority = auth_GF_paradeus
+				has_country_flag = has_nyto_technology
+			}		
+		}
+	}
+	category = manufacturing
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @b3_minerals
+		}
+		produces = {
+			trigger ={
+				check_variable = {
+					which = GFnyto_plante_wrlv
+					value < 100
+				}
+			}
+			GF_nyto_collapse_liquid = 1
+			multiplier = planet.GFnyto_plante_wrlv
+		}
+		produces = {
+			trigger = {
+				check_variable = {
+					which = GFnyto_plante_wrlv
+					value > 100
+				}
+			}
+			GF_nyto_collapse_liquid = 100
+		}
+		produces = {
+			trigger = {
+				check_variable = {
+					which = GFnyto_plante_wrlv
+					value > 100
+				}
+			}
+			GF_nyto_collapse_liquid = 0.05
+			multiplier = planet.GFnyto_plante_wrlv
+		}
+		upkeep = {
+			energy = 0.5
+			multiplier = planet.GFnyto_plante_wrlv
+		}
+	}
+	planet_modifier = {
+		pop_environment_tolerance = 0.05
+	}
+}
+
+#诺亚反应堆
+building_GFnyto_class_4_singularity = {
+	base_buildtime = @b2_time
+	can_build = yes
+	can_demolish = yes
+	potential = {
+		owner = {
+			has_authority = auth_GF_paradeus
+		}
+	}
+	category = resource
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @b4_minerals
+			alloys = 100
+		}
+		upkeep = {
+			minerals = 50
+			alloys = 10
+			GF_nyto_collapse_liquid = 5
+		}
+		upkeep = {
+			trigger = {
+				is_variable_set = GFnyto_plante_wrlv
+			}
+			energy = 0.1
+		}
+	}
+	planet_modifier = {
+		job_GFnyto_phase_technician_add = 3
+	}
+	triggered_planet_modifier = {
+		potential = {
+			check_variable = {
+				which = GFnyto_plante_wrlv
+				value < 500
+			}
+		}
+		job_GFnyto_phase_technician_add = 3
+	}
+	prerequisites = {
+		"tech_GF_nyto_storage_of_ancient_technology"
+	}
+	ai_weight = {
+		base = 10
+		modifier = {
+			factor = 10
+			owner = {
+				has_monthly_income = {
+					resource = energy
+					value < 1000
+				}
+			}
+		}
+	}
+}
+
+#Емеля-М 控制总线
+building_GFnyto_nano_forge = {
+	base_buildtime = @b2_time
+	base_cap_amount = 1
+	can_build = yes
+	can_demolish = yes
+	potential = {
+		owner = {
+			has_authority = auth_GF_paradeus
+		}
+	}
+	base_cap_amount = 1
+	category = manufacturing
+	resources = {
+		cost = {
+			GF_nyto_collapse_liquid = 100
+			minerals = 500
+		}
+		category = planet_buildings
+		upkeep = {
+			minerals = 50
+			energy = 10
+			GF_nyto_collapse_liquid = 10
+		}
+	}
+	country_modifier = {
+		tradition_cost_empire_size_mult = -0.4
+		tech_cost_empire_size_mult = -0.4
+		country_starbase_capacity_add = 10
+		starbases_upkeep_mult = -0.1
+	}
+	prerequisites = {
+		"tech_GF_nyto_storage_of_ancient_technology"
+	}
+	ai_resource_production = {
+		trigger = { 
+			always = yes
+		}
+		energy = 100
+		alloys = 100
+		minerals = 100
+		rare_crystals = 100
+		exotic_gases = 100
+		volatile_motes = 100
+		GF_nyto_training_key = 100
+		GF_nyto_new_fire_control_unit = 100
+	}
+	exempt_from_ai_planet_specialization = yes
+}
+
+#Сетунь Ω 计算机中枢
+building_GFnyto_fe_dome = {
+	base_buildtime = @b2_time
+	can_build = yes
+	potential = {
+		owner = {
+			has_authority = auth_GF_paradeus
+		}
+		is_capital = yes
+	}
+	category = amenity
+	base_cap_amount = 1
+	country_modifier = {
+		all_technology_research_speed = 1
+		country_naval_cap_mult = 2
+	}
+	triggered_planet_modifier = {
+		potential = {
+			has_building = building_GFnyto_nano_forge
+		}
+		planet_jobs_physics_research_produces_mult = 0.5
+		planet_jobs_society_research_produces_mult = 0.5
+		planet_jobs_engineering_research_produces_mult = 0.5
+	}
+	triggered_desc = {
+		trigger = {
+			has_building = building_GFnyto_nano_forge
+		}
+		text = building_GFnyto_fe_dome2
+	}
+	triggered_desc = {
+		trigger = {
+			NOT = {
+				has_building = building_GFnyto_nano_forge
+			}
+		}
+		text = building_GFnyto_fe_dome1
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @b2_minerals
+			GF_nyto_collapse_liquid = 200
+		}
+		upkeep = {
+			energy = 50
+			GF_nyto_collapse_liquid = 10
+		}
+	}
+	prerequisites = {
+		"tech_GF_nyto_storage_of_ancient_technology"
+	}
+	ai_weight = {
+		weight = 999
+	}
+	ai_resource_production = {
+		trigger = { 
+			always = yes
+		}
+		energy = 100
+		alloys = 100
+		minerals = 100
+		rare_crystals = 100
+		exotic_gases = 100
+		volatile_motes = 100
+		GF_nyto_training_key = 100
+		GF_nyto_new_fire_control_unit = 100
+	}
+	exempt_from_ai_planet_specialization = yes
+}
+
+#轨道堡垒
+building_GFnyto_fe_stronghold = {
+	base_buildtime = @b2_time
+	can_build = yes
+	potential = {
+		owner = {
+			has_authority = auth_GF_paradeus
+		}
+	}
+	category = army
+	planet_modifier = {
+		job_GFnyto_white_knight_add = 5
+		planet_orbital_bombardment_damage = -0.3
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @b2_minerals
+			GF_nyto_dark_star_core = 5
+		}
+		upkeep = {
+			energy = 10
+		}
+	}
+	army_modifier = {
+		army_damage_mult = 0.2
+	}
+	prerequisites = {
+		"tech_GF_nyto_storage_of_ancient_technology"
+	}
+	ai_resource_production = {
+		trigger = { 
+			always = yes
+		}
+		unity = 9999999
+	}
+}

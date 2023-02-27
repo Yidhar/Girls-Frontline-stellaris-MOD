@@ -1,0 +1,11 @@
+entity = {
+	name = Gf_nyto_criss_battel_ship_entity
+	pdxmesh = Gf_nyto_criss_battel_ship
+	scale = 1
+}
+
+entity = {
+	name = Gf_nyto_criss_Dreadnought_entity
+	pdxmesh = Gf_nyto_criss_Dreadnought
+	scale = 1
+}

@@ -1,0 +1,63 @@
+"NYTO01"={
+	name = "EMPIRE_DESIGN_nyto"
+	adjective = "PRESCRIPTED_adjective_nyto"
+	ship_prefix="PRESCRIPTED_ship_prefix_humans1"
+	spawn_enabled = yes
+	ignore_portrait_duplication = yes
+	species={
+		class="nyto"
+		portrait="GFnyto_nyto"
+		name="nyto"
+		plural="nyto_plural"
+		adjective="PRESCRIPTED_adjective_nyto"
+		name_list="GFNYTO01"
+		trait="trait_GF_nyto_ogas_agreement"
+		trait="trait_GF_nyto_collapse_radiation_adaptation"
+		trait="trait_GF_nyto_the_last_light"
+		trait="trait_GF_nyto_cell_regeneration"
+	}
+	authority="auth_GF_paradeus"
+	government="gov_civic_GF_nyto_starsea_crusade"
+	planet_name="nyto_planet"
+	planet_class="pc_continental"
+	system_name="nyto_system"
+	initializer=""
+	graphical_culture="mammalian_01"
+	city_graphical_culture="mammalian_01"
+	empire_flag={
+		icon={
+			category="GFnyto"
+			file="flag_GFnyto_flags.dds"
+		}
+		background={
+			category="backgrounds"
+			file="00_solid.dds"
+		}
+		colors={
+			"grey"
+			"black"
+			"black"
+			"null"
+		}
+	}
+	ruler={
+		gender=female
+		name="失格异构体"
+		portrait="GFnyto_nyto_Isomer_shadow"
+		texture=0
+		hair=0
+		clothes=0
+		leader_class="ruler"
+	}
+	spawn_as_fallen=no
+	ignore_portrait_duplication=no
+	room="scrappy_room"
+	spawn_enabled=yes
+	ethic="ethic_fanatic_authoritarian"
+	ethic="ethic_militarist"
+	civics={
+		"civic_GF_nyto_special_operations_command"
+		"civic_GF_nyoto_armor_train"
+	}
+	origin="origin_GF_nyto_the_last_light"
+}

@@ -1,0 +1,33 @@
+#海军陆战队
+tech_GF_nyto_marine_corps = {
+	icon = tech_GF_nyto_marine_corps
+	cost = 30000
+	area = society
+	category = { military_theory }
+	tier = 3
+	is_rare = yes
+	prerequisites = { "tech_GF_nyto_Inverse_collapse_2" }
+	weight = 0
+	potential = {
+		has_authority = auth_GF_paradeus
+		has_ascension_perk = ap_GF_nyto_resurrection
+		always = no
+	}	
+	ai_weight = {factor = 3}
+}
+#坍缩液轰炸
+tech_GF_nyto_collapse_stability_bomb = {
+	icon = tech_GF_nyto_collapse_stability
+	cost = 4000
+	area = society
+	tier = 3
+	is_rare = yes
+	category = { military_theory }	
+	prerequisites = { "tech_GF_nyto_collapse_stability" }
+	weight = 80
+	modifier = {planet_jobs_GF_nyto_collapse_liquid_produces_mult = 1}
+	potential = {
+		has_authority = auth_GF_paradeus
+	}		
+	ai_weight = {weight = 100}
+}

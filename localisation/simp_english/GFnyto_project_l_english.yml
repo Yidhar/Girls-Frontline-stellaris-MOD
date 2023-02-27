@@ -1,0 +1,29 @@
+﻿l_english:
+#################################
+GFnyto_defense_eild_attack_project:0 "Ancient Quarantine Walls Overhaul"
+GFnyto_defense_eild_attack_project_DESC:0 "Even though these tall, thick walls are capable of stopping ELID-infected from invading our cities, it is after all a legacy left by the humans more than 600 years ago. There is a need for a major rennovation to maintain our advantage in the warfare against ELID."
+GFnyto_find_close_ruin_project:0 "Find a way to shut down ruins"
+GFnyto_find_close_ruin_project_DESC:0 "By researching newly discovered small ruins to try and find a way to shut off the others."
+GFnyto_close_ruin_project:0 "Shut down the ruin"
+GFnyto_close_ruin_project_DESC:0 "Send in an assualt team deep into ground zero to shut off ruins leaking collapsation liquid. "
+
+study_GF_nyto_eild_army_project:0 "ELID Infected brain wave study"
+study_GF_nyto_eild_army_project_DESC:0 "According to newest findings in ELID Infected research lab, ELID-infected and their high aggression may be connected by their special brain waves. By researching ELID-infected brain waves, we might find a way to calm the ELID-infected down."
+defense_colony_GF_nyto_eild_attack_project:0 "Cleaning Colony pollution sources"
+defense_colony_GF_nyto_eild_attack_project_DESC:0 "Because we used higher concentration collapse fluid for bombardment, cleaning the pollutiion will be more troublesome."
+
+GF_NYTO_PARADEUS_COLONY_1:0 "Establish Heritage Department"
+GF_NYTO_PARADEUS_COLONY_1_DESC:0 "The data about the ruin clusters left by the human era is precious, we should consider the scientists' proposals. Fund and establish a department specialized in ruin site excavations and archaeology studies. To discover our and the precursor's secrets, and to also make sure that events of Tunguska and Beilan Island will never happen again. To pay tribute to the greatest precursors of human civilization, we shall name the new department “Heritage Department”, Morituri te salutant."
+
+GF_NYTO_PARADEUS_COLONY_2:0 "Return to Nordhausen"
+GF_NYTO_PARADEUS_COLONY_2_DESC:0 "Thanks to our scientists' decypher of the underground research work in Izhevsk, our engineering thinks we might have found to crucial clue to the ruin signal. Our team returned to Ruin one--Nordhausen Ruin, by analyzing the analog system and the discovered thesis《Automation control principle under Ruin gravity mechanics》, our engineers believes that the ruin signal needs an outside input, perhaps when we are listening in on the ruins, it is doing the same."
+
+GF_NYTO_PARADEUS_COLONY_3:0 "Repair Сетунь"
+GF_NYTO_PARADEUS_COLONY_3_DESC:0 "Сетунь is a trinary computer made by the former USSR, it and Табашал-β deployed together to form a “Sea Star” node, according to the records, trinary computers have a special role towards the ruin's facilities, in the USSR ruin weapon development, the first deployed Сетунь caused facilities that has been dismantled from Ruin one to resonate with it, under the drive of the trinary computer, the ruin facilities began to self-repair, and consumed nearby resources in an unknown way. With the end of the Cold war these facilities are left here, and never activated again even to the end of humanity. "
+
+
+GF_NYTO_PARADEUS_COLONY_5:0 "OGAS"
+GF_NYTO_PARADEUS_COLONY_5_DESC:0 "Control system being very similar to the ogas we use is one of the very few good news we have, the first OGAS comes from 90lab laboratory, from the two geniuses of the former human era, Lycoris and Persicaria, their contribution to android automation system and the Conscious Core are invaluable. Former human era T-Dolls either from IOP/SANGVIS FERRI, their base protocols involves more or less with OGAS, and we Nytos are also from the bioengineering technology from ruin anaylsis. Human and Steel merged bodies carrying OGAS base protocols, having second degree web level space.It can be said that our bodies are essentially a bio-conscious core. With some compatibility patches, we may yet be able to patch into the ruin system, exploring its secrets. "
+
+GF_NYTO_PARADEUS_COLONY_6:0 "OGAS Consciousness"
+GF_NYTO_PARADEUS_COLONY_6_DESC:0 "OGAS Consciousness slowly births with the operation of OGAS systems, bbut requires the host to have a very large conscious space capacity and computing power to support it, if not enough capacity then it will be aborted at stage one, unable to continue, if entered stage two yet the host computing power is unabel to support an OGAS Consciousness, then their midn will burn down. And our brain inhibitors, aside from controlling conscious mental picture, can possibly still be responsible for inhibiting OGAS consciousness from birthing. We need to research and find a way to remove them without affecting ourselves. "

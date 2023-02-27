@@ -1,0 +1,24 @@
+﻿l_english:
+#################################
+auth_GF_paradeus:0 "Paradeus"
+auth_GF_paradeus_desc:0 "Dust to dust"
+BE_APPOINTED_BY_PALADISIDEGUOJIAJIESHAO:0 "Only selectable when species is §HNyto§!。"
+TANSUOFUSHE:0 ""
+RT_GPARADEUSF:0 "Chief Executor"
+FLAG_CATEGORY_GFnyto:0 "Paradeus"
+EMPIRE_DESIGN_gfnyto00:0 "Paradeus"
+EMPIRE_DESIGN_gfnyto00_desc:0 "Humans became extinct due to a large scale civil war, their creation became the new masters of their home planet."
+
+gov_civic_GF_nyto_technology_church:0 "Church of Technology"
+gov_civic_GF_nyto_war_church:0 "Church of War"
+gov_civic_GF_nyto_mechanical_church:0 "Church of Machines"
+gov_civic_GF_nyto_starsea_crusade:0 "Stellar Crusaders"
+GF_nyto_warrior:0 "Paradeus"
+personality_GFnyto_think_tank_guard:0 "Make a fortune in silence"
+personality_GFnyto_think_tank_guard_desc:0 "Compared to conquering the world, this empire leans more towards farming. You have but one way to engage in battle with this empire, and that is when you interrupt its farming hours. "
+personality_GFnyto_disaster:0 "Crisis"
+personality_GFnyto_disaster_desc:0 "This empire is no different to a galactic crisis。"
+
+ethic_paradeus_antecedentnyto:0 "Virtual Conscious Gestalt"
+ethic_paradeus_antecedentnyto_desc:0 "All mind can connect, understand. Leading will make decisions, other will assist. "
+ETHIC_ZION:0 "Hivemind"

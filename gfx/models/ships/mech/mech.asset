@@ -1,0 +1,24 @@
+entity = {
+	name = "mech_entity"
+	pdxmesh = "mech_mesh"
+
+	default_state = "idle"
+	scale = 0.3
+
+	state = { name = "idle"
+		start_event = {trigger_once = yes sound = { soundeffect = "amb_battleship_hum" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_battleship_bass" } }
+	}
+	state = {
+		name = "moving"
+		event = { trigger_once = yes sound = { soundeffect = "moving_out_battleship" } }
+	}
+	state = {
+		name = "death"
+		event = { time = 0 node = "target_locator_01" particle = "avian_01_large_ship_explosion_particle" }
+		event = { time = 0 node = "target_locator_02" particle = "avian_01_large_ship_explosion_particle" }
+		event = { time = 0 node = "target_locator_03" particle = "ship_burn_particle" }
+		event = { time = 1.0 node = "explosion_locator_01" particle = "avian_01_large_ship_explosion_particle" }
+		event = { time = 1.0 node = "explosion_locator_01" particle = "ship_burn_particle" }
+	}
+}

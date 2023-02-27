@@ -1,0 +1,50 @@
+﻿l_english:
+decision_pc_GF_nyto_embers_gloomy_project:0 "Bloomed Awakening"
+decision_pc_GF_nyto_embers_gloomy_project_effects:1 "Construct a Collapse Reactor framework around a §YDimmened Ashes World§!. Every upgrade to the collapse reactor will add planet size, and a chance to choose a new type of district. "
+decision_pc_GF_nyto_embers_gloomy_project_effects_short:2 "Construct a Collapse Reactor framework around a §YDimmened Ashes World§!. Every upgrade to the collapse reactor will add planet size, and a chance to choose a new type of district. "
+decision_pc_GF_nyto_embers_gloomy_project_requirements:0 "Need to first Terraform planet to §YDimmened Ashes World§!, then can the decision be chosen."
+decision_pc_GF_nyto_embers_gloomy_project_desc:1 "The huge station above the planet will turn the entire planet into a Collapse Reactor."
+
+decision_pc_GF_nyto_devil_furnace_project:0 "Conquerer Hell"
+decision_pc_GF_nyto_devil_furnace_project_effects:1 "Construct a Collapse Reactor framework around a §YDevil's Furnance World§!. Every upgrade to the collapse reactor will add planet size, and a chance to choose a new type of district. "
+decision_pc_GF_nyto_devil_furnace_project_effects_short:2 "Construct a Collapse Reactor framework around a §YDevil's Furnance World§!. Every upgrade to the collape reactor will add planet size, and a chance to choose a new type of district. "
+decision_pc_GF_nyto_devil_furnace_project_requirements:0 "Need to first Terraform planet to §YDevil's Furnance World§!, then can the decision be chosen."
+decision_pc_GF_nyto_devil_furnace_project_desc:1 "The huge station above the planet will turn the entire planet into a Collapse Reactor."
+
+decision_GFnyto_planetary_defense:0 "Planetary Orbital Defense"
+decision_GFnyto_planetary_defense_effects:1 "Adds Planetary Orbital Defense system and Planetary Surface defense system."
+decision_GFnyto_planetary_defense_effects_short:2 "Adds Planetary Orbital Defense system and Planetary Surface defense system."
+decision_GFnyto_planetary_defense_desc:1 "Enemy Fleets parking on the orbit of this planet will continuously take damage."
+
+decision_GFnyto_enact_population_control:0 "Enable Population Controls"
+decision_GFnyto_enact_population_control_effects:1 "Stops pop growth, at the same time produce strategic resource §YDark Star Core§! £GF_nyto_dark_star_core£"
+decision_GFnyto_enact_population_control_effects_short:2 "Stops pop growth, at the same time produce strategic resource §YDark Star Core§! £GF_nyto_dark_star_core£"
+decision_GFnyto_enact_population_control_desc:0 "New Nyto Consciouses will not be loaded into bodies but instead into Dark star cores."
+
+decision_GFnyto_end_population_control:0 "Continue pop growth "
+decision_GFnyto_end_population_control_effects:1 "Resumes pop growth, no longer produces strategic resource §YDark Star Core§! £GF_nyto_dark_star_core£"
+decision_GFnyto_end_population_control_effects_short:2 "Resumes pop growth, no longer produces strategic resource §YDark Star Core§! £GF_nyto_dark_star_core£"
+decision_GFnyto_end_population_control_desc:0 "Resumes Nyto pop growth, no longer produces strategic resource §YDark Star Core§! £GF_nyto_dark_star_core£"
+
+decision_GFnyto_pop_load:0 "Conscious Load in"
+decision_GFnyto_pop_load_desc:1 "Load stored Nyto consciousnesses into bodies "
+
+decision_GFnyto_boom:0 "Reactor overload"
+decision_GFnyto_boom_effects:1 "360days later this solar system and the megastructures, fleets within its range will be§Rdestroyed§!"
+decision_GFnyto_boom_effects_short:2 "360days later this solar system and the megastructures, fleets within its range will be§Rdestroyed§!"
+decision_GFnyto_boom_desc:1 "Overload the Collapse reactor to blow up this system."
+
+decision_GFnyto_boom_effect:0 "§RDestroy all stars planets fleet and megastructures in this system§!"
+decision_GFnyto_pop_load_effect:0 "Add 10 pop of Nytos to this planet"
+
+ decision_GFnyto_yaosai:0 "Project:Fortification"
+ decision_GFnyto_yaosai_desc:0 "Construct a Permanent Steel Fortress Planet"
+decision_GFnyto_yaosai_desc1:0 "By decision will allow construction of Permanent Fortresses, making our cities Steel Strongholds"
+
+decision_GFnyto_EILD_hunting:0 "EILD Hunting"
+decision_GFnyto_EILD_hunting_desc:0 "The best defense is never a good one, we will assault them with force. "
+
+decision_GFnyto_autopops:0 "Targeted pop immigration:Receive"
+decision_GFnyto_autopops_desc:0 "Receive pops being trasnferred from other planets"
+decision_GFnyto_autopops_2:0 "Targeted pop immigration:Send"
+decision_GFnyto_autopops_2_desc:0 "Abandon this colony and transfer all pop"

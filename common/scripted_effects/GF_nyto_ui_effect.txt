@@ -1,0 +1,10 @@
+remove_ui_opt ={
+	remove_country_flag = GF_nyto_opt01
+	remove_country_flag = GF_nyto_opt02
+	remove_country_flag = GF_nyto_opt03
+	remove_country_flag = GF_nyto_opt04
+	remove_country_flag = user_GF_nyto_opt01
+	remove_country_flag = user_GF_nyto_opt02
+	remove_country_flag = user_GF_nyto_opt03
+	remove_country_flag = user_GF_nyto_opt04
+}

@@ -1,0 +1,109 @@
+particle={
+	name="GF_nyto_baclround"
+	subsystem={
+		name="Surface_fire"
+		max_amount=2000
+		slave_particles=0
+		sort="depth"
+		emitter_type="box"
+		invert=no
+		trail=no
+		local_space=no
+		billboard=yes
+		hide=no
+		texture={
+			file="gfx/particles/fire03_des.dds"
+			x=1
+			y=1
+			shader="ParticleAdditive"
+		}
+		color={
+			x=150
+			y=20
+			z=20
+			alpha=255,fade_in_out
+		}
+		position={
+			x=0
+			y=0
+			z=0
+		}
+		start=0
+		duration=-1
+		emitter_yaw={ 0 0 }
+		emitter_pitch={ 0 0 }
+		velocity_pitch={ 0 45 }
+		velocity_yaw={ 0 90 }
+		velocity=-20
+		life={ 4 2 }
+		emission=700
+		size={ 0.24,size_grow 0.16 }
+		rotation_speed={ 180 1000 }
+	}
+	animation={
+		name="fade_in_out"
+		start=0
+		duration=1
+		repeat=yes
+		minValue=0
+		maxValue=1
+		curve={
+			0 0 0.4 1 1 0 
+		}
+		op="MUL"
+		time="life"
+	}
+	animation={
+		name="size_grow"
+		start=0
+		duration=1
+		repeat=no
+		minValue=1
+		maxValue=3
+		curve={
+			0 0 1 1 
+		}
+		op="MUL"
+		time="life"
+	}
+	animation={
+		name="fade_in_out_flairs"
+		start=0
+		duration=1
+		repeat=yes
+		minValue=0
+		maxValue=1
+		curve={
+			0 0 0.4 1 0.7 0.3 1 0 
+		}
+		op="MUL"
+		time="life"
+	}
+	animation={
+		name="size_grow_flairs"
+		start=0
+		duration=1
+		repeat=no
+		minValue=1
+		maxValue=2.5
+		curve={
+			0 0 1 1 
+		}
+		op="MUL"
+		time="life"
+	}
+	force={
+		type="planar"
+		name="force0"
+		position={
+			0 0 0 
+		}
+		direction={
+			0 1 0 
+		}
+		local_force=yes
+		yaw=0
+		division=16
+		amount=5
+	}
+}

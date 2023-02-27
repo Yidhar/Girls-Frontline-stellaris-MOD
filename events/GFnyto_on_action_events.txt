@@ -1,0 +1,215 @@
+namespace = gfnytoaction
+#坍缩液轨道抛射
+planet_event = {
+	id = gfnytoaction.1
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {		
+		has_orbital_bombardment_stance = gfnyto_collapse_liquid
+		from = {
+			OR = {
+				is_country_type = default
+				is_country_type = fallen_empire
+				is_country_type = awakened_fallen_empire
+			}
+		}
+		habitable_planet = yes
+	}	
+	immediate = {
+		set_update_modifiers_batch = begin
+		if = {
+			limit = { 
+				planet_devastation >= 95
+			}
+			owner = {
+				add_static_war_exhaustion = {
+					attacker = from
+					location = root
+					value_for_planet_destruction = 0.5
+				}
+				country_event = { id = gfnytoaction.2 }
+			}
+			from = { country_event = { id = gfnytoaction.3 } }
+			change_pc = pc_GF_nyto_embers_gloomy
+			remove_all_buildings = yes
+			reroll_deposits = yes
+			remove_modifier = "natural_beauty"
+			remove_modifier = "atmospheric_aphrodisiac"
+			remove_modifier = "atmospheric_hallucinogen"
+			remove_modifier = "lush_planet"
+			remove_modifier = "dangerous_wildlife"
+			set_planet_flag = gfnyto_collapse_liquid_nuked
+			set_planet_flag = armageddon_nuked
+			every_owned_pop={kill_pop=yes}
+
+		}
+		set_update_modifiers_batch = end
+	}
+}
+country_event = {
+	id = gfnytoaction.2
+	title = "action.82.name"
+	picture = GFX_evt_nuclear_explosion
+	desc = gfnytoaction.82.desc
+	show_sound = event_super_explosion
+	location = from
+	is_triggered_only = yes
+	option = {
+		name = action.82.a
+		custom_tooltip = bombed_to_tomb_world
+		if = {
+			limit = { NOT = { has_ethic = ethic_gestalt_consciousness } }
+			add_modifier = {
+				modifier = colossus_victim
+				days = 10800 # 30 years
+			}
+		}
+	}
+}
+country_event = {
+	id = gfnytoaction.3
+	title = "action.82.name"
+	picture = GFX_evt_nuclear_explosion
+	desc = gfnytoaction.4.desc
+	show_sound = event_super_explosion
+	location = from
+	is_triggered_only = yes
+	option = {
+		name = EXCELLENT
+		custom_tooltip = bombed_to_tomb_world
+		hidden_effect ={
+			if = {
+				limit = { 
+					has_ascension_perk = ap_become_the_crisis
+				}
+				add_resource ={ 
+					menace = 350
+				}
+			}
+		}
+	}
+}
+#行星轨道防御系统
+planet_event = {
+	id = gfnytoaction.4
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		OR = {
+			has_deposit = d_GFnyto_planetary_orbit_defense_zone
+			has_planet_flag = has_GFnyto_planetary_defense
+		}
+	}	
+	immediate = {
+		every_fleet_in_orbit = {
+			every_controlled_ship = {
+				reduce_hp_percent = 0.5
+			}			
+			owner = {
+				country_event = {
+					id = gfnytoaction.6					
+				}
+			}			
+		}		
+	}
+}
+country_event = {
+	id = gfnytoaction.6
+	title = "gfnytoaction.6.name"
+	desc = "gfnytoaction.6.desc"
+	fire_only_once = yes
+	picture = GFX_evt_GFnyto_defense_eild_attack_project_complete
+	show_sound = event_space_battle
+	location = from
+	is_triggered_only = yes
+	option = {name = UNDERSTOOD}
+}
+#海军陆战队刷出
+planet_event = {
+	id = gfnytoaction.10
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		has_orbital_bombardment_stance = gfnyto_marine_corps
+	#		fromfrom = {has_component = tech_GF_nyto_marine_corps}
+	#		from = {has_component = tech_GF_nyto_marine_corps}
+		from = {
+			OR = {
+				is_country_type = default
+				is_country_type = fallen_empire
+				is_country_type = awakened_fallen_empire
+			}
+		}
+		habitable_planet = yes
+	}	
+	immediate = {
+		create_army = {
+			name = "海军陆战队"
+			owner = FROM
+			species = FROM
+			type = "GF_nyto_marine_corps"
+		}
+		create_army = {
+			name = "海军陆战队"
+			owner = FROM
+			species = FROM
+			type = "GF_nyto_marine_corps"
+		}
+		create_army = {
+			name = "海军陆战队"
+			owner = FROM
+			species = FROM
+			type = "GF_nyto_marine_corps"
+		}
+		create_army = {
+			name = "海军陆战队"
+			owner = FROM
+			species = FROM
+			type = "GF_nyto_marine_corps"
+		}
+	}
+}
+#贸易封锁
+planet_event = {
+	id = gfnytoaction.20
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		has_orbital_bombardment_stance = gfnyto_trade_blockade
+	}	
+	immediate = {	
+		add_modifier = {
+			modifier = gfnyto_trade_blockade
+			days = 1
+		}
+	}
+}
+#海军陆战队刷撤退
+country_event = {
+	id = gfnytoaction.11
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		FromFrom = {
+			habitable_planet = yes
+			has_ground_combat = no
+		}
+	}
+	immediate = {FromFrom = {planet_event = {id = gfnytoaction.12}}}
+}
+#海军陆战队刷撤退(行星)
+planet_event = {
+	id = gfnytoaction.12
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		habitable_planet = yes
+		has_ground_combat = no
+	}
+	immediate = {
+		every_planet_army = {
+			limit = {army_type = GF_nyto_marine_corps}
+			remove_army = yes
+		}
+	}
+}

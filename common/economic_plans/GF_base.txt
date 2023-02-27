@@ -1,0 +1,185 @@
+# Base AI economic plans
+
+@GF_enegry_target = 200
+@GF_min_target =100
+@GF_max_target =200
+@GF_rare_resource_target = 10
+@GF_scaling_research_target = 200
+@GF_scaling_research_target2 = 200
+@GF_base_science = 300
+
+GFnyto_basic_economy_plan = {
+	potential = {
+		or = {
+			is_cg_country = yes				
+			has_authority = auth_GF_paradeus					
+		}				
+	}
+	#一产
+	income = {
+		energy = 100
+		minerals = 100
+		food = 50
+	}
+
+	#基础科研目标
+	subplan = {
+		set_name = "base science organics"
+		potential = {
+			has_monthly_income = { resource = consumer_goods value > @GF_min_target }
+		}
+		income = {
+			physics_research = @GF_scaling_research_target
+			society_research = @GF_scaling_research_target
+			engineering_research = @GF_scaling_research_target
+		}
+	}	
+
+	#基础消费品目标
+	subplan = {
+		set_name = "base consumer goods"
+		potential = {
+			resource_income_compare = { resource = energy value > @GF_min_target }
+			resource_income_compare = {  resource = minerals value > @GF_min_target }
+			resource_income_compare = { resource = consumer_goods value < @GF_min_target }
+		}
+		income = {
+			consumer_goods = @GF_min_target
+		}
+	}
+	#人口 无修改
+	subplan = {
+		set_name = "base pops"
+		potential = {
+			always = yes			
+		}
+		pops = 9000
+	}	
+
+	#基础合金需求
+	subplan = {
+		set_name = "base alloys"
+		potential = { 
+			OR = {
+				resource_income_compare = {  resource = alloys value < @GF_min_target }
+				resource_income_compare ={ resource = minerals value > @GF_max_target }
+			}			
+		}
+		income = {
+			alloys = @GF_max_target
+		}
+	}
+
+	#### SCALING SUBPLANS HERE ####
+	# Values in the scaling subplans are added to the base plan each time the AI reaches the target
+	# If base alloys = 10 and the AI reaches +12 per month, and it says alloys = 20 in the scaling subplan, the next target becomes alloys = 30
+	# All scaling subplans are cumulative
+
+	#通用科研递增
+	subplan = {
+		scaling = yes
+		set_name = "general scaling"
+		potential = {
+			OR = {
+				has_monthly_income = { resource = physics_research value > @GF_scaling_research_target }			
+				has_monthly_income = { resource = society_research value > @GF_scaling_research_target }	
+				has_monthly_income = { resource = engineering_research value > @GF_scaling_research_target }	
+			}		
+		}
+
+		income = {
+			energy = @GF_enegry_target
+			minerals = @GF_max_target
+			food = @GF_min_target
+			physics_research = @GF_scaling_research_target2
+			society_research = @GF_scaling_research_target2
+			engineering_research = @GF_scaling_research_target2
+			unity = @GF_max_target
+		}
+	}
+
+	#通用消费品目标递增
+	subplan = {
+		scaling = yes
+		set_name = "general CG scaling"
+		potential = {
+			resource_income_compare = { resource = energy value > @GF_max_target }			
+			resource_income_compare = { resource = minerals value > @GF_max_target }	
+			resource_income_compare = { resource = alloys value > @GF_max_target }		
+		}
+		income = {
+			consumer_goods = @GF_min_target
+		}
+	}	
+
+	#通用合金目标递增
+	subplan ={
+		scaling = yes
+		set_name = "general alloys scaling"
+		potential = {
+			resource_income_compare = { resource = energy value > @GF_max_target }			
+			resource_income_compare = { resource = minerals value > @GF_max_target }			
+		}
+		income = {
+			energy = 400
+			alloys = @GF_max_target
+		}
+	}
+
+
+	#科研大于10k是追加全资源目标防止摆烂
+	subplan ={
+		scaling = yes
+		set_name = "append alloys scaling"
+		potential ={
+			has_monthly_income = { resource = physics_research value > 10000 }	
+			has_monthly_income = { resource = society_research value > 10000 }
+			has_monthly_income = { resource = engineering_research value > 10000 }	
+		}
+		income = {
+			alloys = 1000000
+			energy = 1000000
+			minerals = 1000000
+			food = 10000
+			consumer_goods = 1000000
+		}
+
+	}
+
+	#合金收入>500 但是科研低于3k时 增加额外 科研目标
+	subplan ={
+		scaling = yes
+		set_name = "append science scaling"
+		potential ={
+			resource_income_compare = { resource = alloys value > 500 }		
+		}
+		income = {
+			physics_research = 1000
+			society_research = 1000
+			engineering_research = 1000
+		}
+	}
+
+
+
+	# Optional subplans don't need to be fulfilled for the other scaling subplans to become active
+	#稀有资源
+	subplan = {
+		optional = yes
+		set_name = "Rare resources"
+		potential = {		
+			resource_income_compare = { resource = minerals value > @GF_max_target }	
+		}
+		income = {
+			exotic_gases = @GF_rare_resource_target
+			volatile_motes = @GF_rare_resource_target
+			rare_crystals = @GF_rare_resource_target
+		}
+	}
+
+	empire_size = 1.1 #admin cap is fine with being 10% over limit
+
+	ai_weight = {
+		weight = 200
+	}
+}

@@ -1,0 +1,29 @@
+objectTypes = {
+	pdxmesh = {
+		name = "GF_nyto_02_cruiser_mesh"
+		file = "gfx/models/ships/GF_nyto_02/GF_nyto_02_cruiser.mesh"
+		scale = 1.0
+
+		meshsettings = {
+			name = "S_04Cruiser_mod_lod_0_01Shape"
+			index = 0
+			texture_diffuse = "GF_nyto_02_cruiser_d.dds"
+			texture_normal = "GF_nyto_02_cruiser_n.dds"
+			texture_specular = "GF_nyto_02_cruiser_s.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "S_04Cruiser_mod_lod_0_02Shape"
+			index = 0
+			texture_diffuse = "GF_nyto_02_cruiser_d2.dds"
+			texture_normal = "GF_nyto_02_cruiser_n2.dds"
+			texture_specular = "GF_nyto_02_cruiser_s2.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+	pdxmesh ={
+		name = "GF_nyto_02_cruiser_locator_mesh"
+		file = "gfx/models/ships/GF_nyto_02/GF_nyto_02_cruiser_locator.mesh"
+	}
+}

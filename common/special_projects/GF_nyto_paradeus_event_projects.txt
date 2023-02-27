@@ -1,0 +1,127 @@
+#成立遗迹署
+special_project = {
+	key = "GF_NYTO_PARADEUS_COLONY_1"
+	event_chain = "GFnyto_paradeus_pioneer_chain"
+	cost = 2000
+	tech_department = society_technology
+	picture = GFX_evt_nyto_unknown_civilization_202055_1_1
+	event_scope = planet_event
+	on_start = {
+		add_resource = {
+			energy = -1000
+		}
+	}
+	on_success = {		
+		planet_event = {
+			id = gfnytorelics.1
+		}
+	}
+	on_fail = {
+	}
+}
+
+#重返诺德豪森
+special_project = {
+	key = "GF_NYTO_PARADEUS_COLONY_2"
+	event_chain = "GFnyto_paradeus_pioneer_chain"
+	cost = 10000
+	tech_department = physics_technology
+	picture = GFX_evt_nyto_unknown_civilization_202055_2_1
+	event_scope = planet_event
+	on_success = {
+		planet_event = {
+			id = gfnytorelics.2
+		}
+	}
+	on_fail = {
+	}
+}
+
+#修复Сетунь
+special_project = {
+	key = "GF_NYTO_PARADEUS_COLONY_3"
+	event_chain = "GFnyto_paradeus_pioneer_chain"
+	cost = 10000
+	tech_department = engineering_technology
+	picture = GFX_evt_nyto_unknown_civilization_202055_3_1
+	event_scope = planet_event
+	on_success = {
+		planet_event = {
+			id = gfnytorelics.3
+		}
+	}
+	on_fail = {
+	}
+}
+
+#OGAS
+special_project = {
+	key = "GF_NYTO_PARADEUS_COLONY_5"
+	event_chain = "GFnyto_paradeus_pioneer_chain"
+	cost = 10000
+	tech_department = engineering_technology
+	picture = GFX_evt_nyto_unknown_civilization_202055_5_1
+	event_scope = planet_event
+	on_success = {
+		planet_event = {
+			id = gfnytorelics.5
+		}
+	}
+	on_fail = {
+	}
+}
+
+#摘除脑抑制器
+special_project = {
+	key = "GF_NYTO_PARADEUS_COLONY_6"
+	event_chain = "GFnyto_paradeus_pioneer_chain"
+	days_to_research = 360
+	picture = GFX_evt_nyto_unknown_civilization_202055_6_1
+	event_scope = planet_event
+	on_success = {
+		planet_event = {
+			id = gfnytorelics.6
+		}
+	}
+	on_fail = {
+	}
+}
+
+
+#破解信号
+special_project ={
+	key = GF_nyto_dc_evt_01
+	cost = 10000
+	picture = GFX_evt_GF_dc_nyto_10
+	tech_department = engineering_technology
+	event_scope = country_event
+	on_success = {
+		country_event = {
+			id = gfnytoparadeusancrel.4003
+		}
+	}
+}
+
+#未知星域
+special_project ={
+	key = GF_nyto_dc_evt_02
+	event_scope = country_event
+	picture = GFX_evt_GF_dc_nyto_9
+	location = yes
+	timelimit = -1
+	on_success = {
+		
+	}
+}
+
+special_project = {
+	key = GF_nyto_dc_evt_03
+	days_to_research = 1800
+	event_scope = country_event
+	picture = GFX_evt_GF_dc_nyto_14
+	on_success = {
+		country_event = {
+			id = gfnytoparadeusancrel.410
+		}
+	}
+}

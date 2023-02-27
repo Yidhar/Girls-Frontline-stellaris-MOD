@@ -1,0 +1,298 @@
+#浮动附加装甲
+component_set = {
+	key = "GFnyto_body_armor_1"
+	icon = "GFX_ship_part_GFnyto_body_armor1"
+	icon_frame = 1	
+}
+component_set = {
+	key = "GFnyto_body_armor_2"
+	icon = "GFX_ship_part_GFnyto_body_armor2"
+	icon_frame = 1	
+}
+component_set = {
+	key = "GFnyto_body_armor_3"
+	icon = "GFX_ship_part_GFnyto_body_armor3"
+	icon_frame = 1	
+}
+#力场盾
+component_set = {
+	key = "GFnyto_force_shield_1"
+	icon = "GFX_ship_part_GFnyto_force_shield1"
+	icon_frame = 1	
+}
+component_set = {
+	key = "GFnyto_force_shield_2"
+	icon = "GFX_ship_part_GFnyto_force_shield2"
+	icon_frame = 1	
+}
+component_set = {
+	key = "GFnyto_force_shield_3"
+	icon = "GFX_ship_part_GFnyto_force_shield3"
+	icon_frame = 1	
+}
+component_set = {
+	key = "GFnyto_force_shield_1_dc"
+	icon = "GFX_ship_part_GFnyto_force_shield1"
+	icon_frame = 1	
+}
+component_set = {
+	key = "GFnyto_force_shield_2_dc"
+	icon = "GFX_ship_part_GFnyto_force_shield2"
+	icon_frame = 1	
+}
+component_set = {
+	key = "GFnyto_force_shield_3_dc"
+	icon = "GFX_ship_part_GFnyto_force_shield3"
+	icon_frame = 1	
+}
+#H武器
+component_set = {
+	key = "GFnyto_accelerating_coil1"
+	icon = "GFX_ship_part_GFnyto_accelerating_coil"
+	icon_frame = 1	
+}
+component_set = {
+	key = "GFnyto_accelerating_coil2"
+	icon = "GFX_ship_part_GFnyto_accelerating_coi2"
+	icon_frame = 1	
+}
+#W武器
+component_set = {
+	key = "GFnyto_accelerating_coil3"
+	icon = "GFX_ship_part_GFnyto_accelerating_coil"
+	icon_frame = 1	
+}
+#电脑
+component_set = {
+	key = "GFnyto_additional_arithmetic_module1"
+	icon = "GFX_ship_part_GFnyto_additional_arithmetic_module1"
+	icon_frame = 1	
+}
+component_set = {
+	key = "GFnyto_additional_arithmetic_module2"
+	icon = "GFX_ship_part_GFnyto_additional_arithmetic_module2"
+	icon_frame = 1	
+}
+component_set = {
+	key = "GFnyto_additional_arithmetic_module3"
+	icon = "GFX_ship_part_GFnyto_additional_arithmetic_module3"
+	icon_frame = 1	
+}
+#移动城市1
+component_set = {
+	key = "GF_nyto_mobile_city_energy"
+	icon = "GFX_ship_part_GFnyto_mobile_city_energy"
+	icon_frame = 1	
+}
+component_set = {
+	key = "GF_nyto_mobile_city_minerals"
+	icon = "GFX_ship_part_GFnyto_mobile_city_minerals"
+	icon_frame = 1	
+}
+component_set = {
+	key = "GF_nyto_mobile_city_food"
+	icon = "GFX_ship_part_GFnyto_mobile_city_food"
+	icon_frame = 1	
+}
+#移动城市2
+component_set = {
+	key = "GF_nyto_mobile_city_alloys"
+	icon = "GFX_ship_part_GFnyto_mobile_city_alloys"
+	icon_frame = 1	
+}
+component_set = {
+	key = "GF_nyto_mobile_city_consumer_goods"
+	icon = "GFX_ship_part_GFnyto_mobile_city_consumer_goods"
+	icon_frame = 1	
+}
+component_set = {
+	key = "GF_nyto_mobile_city_research"
+	icon = "GFX_ship_part_GFnyto_mobile_city_research"
+	icon_frame = 1	
+}
+
+#穿甲弹
+component_set = {
+	key = "GF_nyto_armor_piercing_bullet"
+	icon = "GFX_ship_part_GFnyto_armor_piercing_bullet"
+	icon_frame = 1	
+}
+#高爆弹
+component_set = {
+	key = "GF_nyto_high_explosive_bomb"
+	icon = "GFX_ship_part_GFnyto_high_explosive_bomb"
+	icon_frame = 1	
+}
+#空投仓
+component_set = {
+	key = "GF_nyto_marine_corps"
+	icon = "GFX_ship_part_GFnyto_marine_corps"
+	icon_frame = 1	
+}
+#伤害控制小组
+component_set = {
+	key = "GF_nyto_injury_control_team"
+	icon = "GFX_ship_part_GFnyto_injury_control_team"
+	icon_frame = 1	
+}
+#侦察机
+component_set = {
+	key = "GF_nyto_reconnaissance_aircraft"
+	icon = "GFX_ship_part_GFnyto_reconnaissance_aircraft"
+	icon_frame = 1	
+}
+component_set = {
+	key = "GF_Nyto_T_weapon1"
+	icon = GFX_ship_part_T_weapons1
+	icon_frame = 1
+}
+component_set = {
+	key = "GF_Nyto_T_weapon2"
+	icon = GFX_ship_part_T_weapons2
+	icon_frame = 1
+}
+component_set = {
+	key = GF_Nyto_x_weapon1
+	icon = GFX_ship_part_x_weapons1
+	icon_frame = 1
+}
+component_set = {
+	key = GF_Nyto_x_weapon2
+	icon = GFX_ship_part_x_weapons2
+	icon_frame = 1
+}
+component_set = {
+	key = GF_Nyto_l_weapon1
+	icon = GFX_ship_part_l_weapons1
+	icon_frame = 1
+}
+component_set = {
+	key = GF_Nyto_l_weapon2
+	icon = GFX_ship_part_l_weapons2
+	icon_frame = 1
+}
+component_set = {
+	key = GF_Nyto_ms_weapon1
+	icon = GFX_ship_part_m_weapons1
+	icon_frame = 1
+}
+component_set = {
+	key = GF_Nyto_ms_weapon2
+	icon = GFX_ship_part_m_weapons2
+	icon_frame = 1
+}
+component_set = {
+	key = GF_Nyto_g_weapon1
+	icon = GFX_ship_part_g_weapons1
+	icon_frame = 1
+}
+component_set = {
+	key = GF_Nyto_g_weapon2
+	icon = GFX_ship_part_g_weapons2
+	icon_frame = 1
+}
+component_set = {
+	key = GF_Nyto_h_weapon1
+	icon = GFX_ship_part_h_weapons1
+	icon_frame = 1
+}
+component_set = {
+	key = GF_Nyto_h_weapon2
+	icon = GFX_ship_part_h_weapons2
+	icon_frame = 1
+}
+component_set = {
+	key = GF_Nyto_p_weapon1
+	icon = GFX_ship_part_p_weapons1
+	icon_frame = 1
+}
+component_set = {
+	key = GF_Nyto_p_weapon2
+	icon = GFX_ship_part_p_weapons2
+	icon_frame = 1
+}
+component_set = {
+	key = GF_nyto_Electronic_Warfare_sop
+	icon = GFX_nyto_Electronic_Warfare
+	icon_frame = 1
+}
+component_set = {
+	key = GF_nyto_weapon_beacon_sop
+	icon = GFX_nyto_weapon_beacon_sop
+	icon_frame = 1
+}
+component_set = {
+	key = "GF_Nyto_T_weapon1_dc"
+	icon = GFX_ship_part_T_weapons1
+	icon_frame = 1
+}
+component_set = {
+	key = "GF_Nyto_T_weapon2_dc"
+	icon = GFX_ship_part_T_weapons2
+	icon_frame = 1
+}
+component_set = {
+	key = "GF_Nyto_x_weapon1_dc"
+	icon = GFX_ship_part_x_weapons1
+	icon_frame = 1
+}
+component_set = {
+	key = "GF_Nyto_x_weapon2_dc"
+	icon = GFX_ship_part_x_weapons2
+	icon_frame = 1
+}
+component_set = {
+	key = "GF_Nyto_l_weapon1_dc"
+	icon = GFX_ship_part_l_weapons1
+	icon_frame = 1
+}
+component_set = {
+	key = GF_Nyto_l_weapon2_dc
+	icon = GFX_ship_part_l_weapons2
+	icon_frame = 1
+}
+component_set = {
+	key = GF_Nyto_ms_weapon1_dc
+	icon = GFX_ship_part_m_weapons1
+	icon_frame = 1
+}
+component_set = {
+	key = GF_Nyto_ms_weapon2_dc
+	icon = GFX_ship_part_m_weapons2
+	icon_frame = 1
+}
+component_set = {
+	key = GF_Nyto_g_weapon1_dc
+	icon = GFX_ship_part_g_weapons1
+	icon_frame = 1
+}
+component_set = {
+	key = GF_Nyto_g_weapon2_dc
+	icon = GFX_ship_part_g_weapons2
+	icon_frame = 1
+}
+component_set = {
+	key = GF_Nyto_h_weapon1_dc
+	icon = GFX_ship_part_h_weapons1
+	icon_frame = 1
+}
+component_set = {
+	key = GF_Nyto_h_weapon2_dc
+	icon = GFX_ship_part_h_weapons2
+	icon_frame = 1
+}
+component_set = {
+	key = GF_Nyto_p_weapon1_dc
+	icon = GFX_ship_part_p_weapons1
+	icon_frame = 1
+}
+component_set = {
+	key = GF_Nyto_p_weapon2_dc
+	icon = GFX_ship_part_p_weapons2
+	icon_frame = 1
+}
+component_set = {
+	key = GF_nyto_fool_weapon
+	icon = GFX_GF_nyto_fool_weapon
+	icon_frame = 1
+}

@@ -1,0 +1,22 @@
+objectTypes = {
+	pdxmesh = {
+		name = "cube_shiled_mesh"
+		file = "gfx/models/ships/cube/cube_shiled.mesh"
+		scale = 1.0
+		animation = {
+			id = idle1
+			type = cube_shiled_idle
+		}
+		animation = {
+			id = idle2
+			type = cube_shiled_idle2
+		}
+		meshsettings = {
+			name = "pasted__pCubeShape3"
+			index = 0
+			texture_diffuse = "cube_d.dds"
+			texture_normal = "cube_n.dds"
+			shader = "PdxMeshAlphaAdditive"
+		}
+	}
+}

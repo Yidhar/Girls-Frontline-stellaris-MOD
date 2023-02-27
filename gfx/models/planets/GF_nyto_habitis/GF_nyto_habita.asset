@@ -1,0 +1,35 @@
+entity = {
+	name = "GF_nyto_habita_entity2"
+	pdxmesh = "GF_nyto_habita_mesh"
+	default_state = idle
+	scale = 3
+	state = { name = idle
+	}
+	state = { name = "death" animation = "death" looping = no
+		event = { time = 0.0 node = "explosion_1" particle = "ship_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_small" } }
+		event = { time = 0.5 node = "explosion_2" particle = "ship_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_small" } }
+		event = { time = 1.5 node = "explosion_3" particle = "ship_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_small" } }
+		event = { time = 2.0 node = "explosion_4" particle = "ship_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_small" } }
+		event = { time = 3.0 node = "explosion_5" particle = "ship_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_small" } }
+		event = { time = 4.0 node = "explosion_6" particle = "ship_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_small" } }
+		event = { time = 0.0 node = "explosion_7" particle = "ship_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_small" } }
+		event = { time = 0.5 node = "explosion_8" particle = "ship_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_small" } }
+		event = { time = 1.5 node = "explosion_9" particle = "ship_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_small" } }
+		event = { time = 2.0 node = "explosion_10" particle = "ship_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_small" } }
+		event = { time = 3.0 node = "explosion_11" particle = "ship_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_small" } }
+		event = { time = 4.0 node = "explosion_12" particle = "ship_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_small" } }
+	}
+}
+
+entity = {
+	name = "GF_nyto_habita_entity"
+	locator = {
+		name = entity_effect
+		position = {
+			0 20 0
+		}
+	}
+	attach = {
+		entity_effect = GF_nyto_habita_entity2
+	}
+}

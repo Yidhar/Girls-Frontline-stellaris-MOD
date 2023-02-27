@@ -1,0 +1,16 @@
+entity = {
+	name = "black_entity"
+	pdxmesh = "black_mesh"
+	default_state = "idle"
+	state = {  name = "idle" animation = "idle1"  animation_speed = 1.0 looping = no next_state = "idle2" }
+	state = {  name = "idle2" animation = "idle2"  animation_speed = 1.0 looping = no next_state = "idle" }
+
+}
+animation = {
+	name = "black_idle1_animation"
+	file = "black_idle1.anim"
+}
+animation = {
+	name = "black_idle2_animation"
+	file = "black_idle2.anim"
+}

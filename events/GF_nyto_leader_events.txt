@@ -1,0 +1,312 @@
+namespace = GFnyto_leader
+#领袖抽奖
+country_event = {
+	id = GFnyto_leader.1
+	title = "GFnyto_leader.1.name"
+	desc = {
+		text = GFnyto_leader.1.desc.a
+		trigger = {
+			has_country_flag = GFnyto_leader_Yegor
+		}
+	}
+	desc = {
+		text = GFnyto_leader.1.desc.b
+		trigger = {
+			has_country_flag = GFnyto_leader_Dandelion
+		}
+	}
+	desc = {
+		text = GFnyto_leader.1.desc.c
+		trigger = {
+			has_country_flag = GFnyto_leader_Lycoris
+		}
+	}
+	picture = {
+		picture = GFX_evt_GFnyto_leader_Yegor
+		trigger = {
+			has_country_flag = GFnyto_leader_Yegor
+		}
+	}
+	picture = {
+		picture = GFX_evt_GFnyto_leader_Dandelion
+		trigger = {
+			has_country_flag = GFnyto_leader_Dandelion
+		}
+	}
+	picture = {
+		picture = GFX_evt_GFnyto_leader_Lycoris
+		trigger = {
+			has_country_flag = GFnyto_leader_Lycoris
+		}
+	}
+	show_sound = event_engineered_evolution
+	hide_window = no
+	is_triggered_only = yes
+	immediate = {
+		random_list = {
+			33 = {
+				set_country_flag = GFnyto_leader_Yegor
+			}
+			33 = {
+				set_country_flag = GFnyto_leader_Dandelion
+			}
+			33 = {
+				set_country_flag = GFnyto_leader_Lycoris
+			}
+		}
+	}
+	option = {
+		name = "GFnyto_leader.1.a"
+		trigger = {
+			has_country_flag = GFnyto_leader_Yegor
+		}
+		hidden_effect = {
+			set_country_flag = GFnyto_leader_Yegor_general
+		}
+	}
+	option = {
+		name = "GFnyto_leader.1.b"
+		trigger = {
+			has_country_flag = GFnyto_leader_Yegor
+		}
+		hidden_effect = {
+			set_country_flag = GFnyto_leader_Yegor_admiral
+		}
+	}
+	option = {
+		name = "GFnyto_leader.1.c"
+		trigger = {
+			has_country_flag = GFnyto_leader_Yegor
+		}
+		hidden_effect = {
+			set_country_flag = GFnyto_leader_Yegor_ruler
+		}
+	}
+	option = {
+		name = "GFnyto_leader.1.d"
+		trigger = {
+			has_country_flag = GFnyto_leader_Dandelion
+		}
+	}
+	option = {
+		name = "GFnyto_leader.1.e"
+		trigger = {
+			has_country_flag = GFnyto_leader_Lycoris
+		}
+		hidden_effect = {
+			set_country_flag = GFnyto_leader_Lycoris_scientist
+		}
+	}
+	option = {
+		name = "GFnyto_leader.1.f"
+		trigger = {
+			has_country_flag = GFnyto_leader_Lycoris
+		}
+		hidden_effect = {
+			set_country_flag = GFnyto_leader_Lycoris_ruler
+		}
+	}
+	after = {
+		hidden_effect = {
+			creat_nyto_leader = yes
+		}
+	}
+}
+
+#领袖换装
+country_event = {
+	id = GFnyto_leader.2
+	title = "GFnyto_leader.2.name"
+	desc = {
+		text = GFnyto_leader.2.desc.a
+		trigger = {
+			has_country_flag = GFnyto_leader_Yegor
+		}
+	}
+	desc = {
+		text = GFnyto_leader.2.desc.b
+		trigger = {
+			has_country_flag = GFnyto_leader_Dandelion
+		}
+	}
+	desc = {
+		text = GFnyto_leader.2.desc.c
+		trigger = {
+			has_country_flag = GFnyto_leader_Lycoris
+		}
+	}
+	picture = {
+		picture = GFX_evt_GFnyto_leader2_Yegor
+		trigger = {
+			has_country_flag = GFnyto_leader_Yegor
+		}
+	}
+	picture = {
+		picture = GFX_evt_GFnyto_leader2_Dandelion
+		trigger = {
+			has_country_flag = GFnyto_leader_Dandelion
+		}
+	}
+	picture = {
+		picture = GFX_evt_GFnyto_leader2_Lycoris
+		trigger = {
+			has_country_flag = GFnyto_leader_Lycoris
+		}
+	}
+	show_sound = event_engineered_evolution
+	hide_window = no
+	is_triggered_only = yes
+	option = {
+		name = "GFnyto_leader.2.a"
+		trigger = {
+			OR = {
+				has_country_flag = GFnyto_leader_Yegor_admiral
+				has_country_flag = GFnyto_leader_Yegor_ruler
+			}
+		}
+		hidden_effect = {
+			remove_country_flag = GFnyto_leader_Yegor_admiral
+			remove_country_flag = GFnyto_leader_Yegor_ruler
+			set_country_flag = GFnyto_leader_Yegor_general
+			event_target:GFnyto_leader_Yegor = {
+				kill_leader = {
+					show_notification = no
+				}
+			}
+			clear_global_event_target = GFnyto_leader_Yegor
+		}
+	}
+	option = {
+		name = "GFnyto_leader.2.b"
+		trigger = {
+			OR = {
+				has_country_flag = GFnyto_leader_Yegor_general
+				has_country_flag = GFnyto_leader_Yegor_ruler
+			}
+		}
+		hidden_effect = {
+			remove_country_flag = GFnyto_leader_Yegor_general
+			remove_country_flag = GFnyto_leader_Yegor_ruler
+			set_country_flag = GFnyto_leader_Yegor_admiral
+			event_target:GFnyto_leader_Yegor = {
+				kill_leader = {
+					show_notification = no
+				}
+			}
+			clear_global_event_target = GFnyto_leader_Yegor
+		}
+	}
+	option = {
+		name = "GFnyto_leader.2.c"
+		trigger = {
+			OR = {
+				has_country_flag = GFnyto_leader_Yegor_general
+				has_country_flag = GFnyto_leader_Yegor_admiral
+			}
+		}
+		hidden_effect = {
+			remove_country_flag = GFnyto_leader_Yegor_general
+			remove_country_flag = GFnyto_leader_Yegor_admiral
+			set_country_flag = GFnyto_leader_Yegor_ruler
+			event_target:GFnyto_leader_Yegor = {
+				kill_leader = {
+					show_notification = no
+				}
+			}
+			clear_global_event_target = GFnyto_leader_Yegor
+		}
+	}
+	option = {
+		name = "GFnyto_leader.2.d"
+		trigger = {
+			OR = {
+				has_country_flag = GFnyto_leader_Dandelion002
+				has_country_flag = GFnyto_leader_Dandelion003
+			}
+		}
+		hidden_effect = {
+			remove_country_flag = GFnyto_leader_Dandelion002
+			remove_country_flag = GFnyto_leader_Dandelion003
+			set_country_flag = GFnyto_leader_Dandelion001
+			event_target:GFnyto_leader_Dandelion = {
+				change_leader_portrait = Dandelion001
+			}
+		}
+	}
+	option = {
+		name = "GFnyto_leader.2.e"
+		trigger = {
+			OR = {
+				has_country_flag = GFnyto_leader_Dandelion001
+				has_country_flag = GFnyto_leader_Dandelion003
+			}
+		}
+		hidden_effect = {
+			remove_country_flag = GFnyto_leader_Dandelion001
+			remove_country_flag = GFnyto_leader_Dandelion003
+			set_country_flag = GFnyto_leader_Dandelion002
+			event_target:GFnyto_leader_Dandelion = {
+				change_leader_portrait = Dandelion002
+			}
+		}
+	}
+	option = {
+		name = "GFnyto_leader.2.f"
+		trigger = {
+			OR = {
+				has_country_flag = GFnyto_leader_Dandelion001
+				has_country_flag = GFnyto_leader_Dandelion002
+			}
+		}
+		hidden_effect = {
+			remove_country_flag = GFnyto_leader_Dandelion001
+			remove_country_flag = GFnyto_leader_Dandelion002
+			set_country_flag = GFnyto_leader_Dandelion003
+			event_target:GFnyto_leader_Dandelion = {
+				change_leader_portrait = Dandelion003
+			}
+		}
+	}
+	option = {
+		name = "GFnyto_leader.2.g"
+		trigger = {
+			has_country_flag = GFnyto_leader_Lycoris_ruler
+		}
+		hidden_effect = {
+			remove_country_flag = GFnyto_leader_Lycoris_ruler
+			set_country_flag = GFnyto_leader_Lycoris_scientist
+			event_target:GFnyto_leader_Lycoris = {
+				kill_leader = {
+					show_notification = no
+				}
+			}
+			clear_global_event_target = GFnyto_leader_Lycoris
+		}
+	}
+	option = {
+		name = "GFnyto_leader.2.h"
+		trigger = {
+			has_country_flag = GFnyto_leader_Lycoris_scientist
+		}
+		hidden_effect = {
+			remove_country_flag = GFnyto_leader_Lycoris_scientist
+			set_country_flag = GFnyto_leader_Lycoris_ruler
+			event_target:GFnyto_leader_Lycoris = {
+				kill_leader = {
+					show_notification = no
+				}
+			}
+			clear_global_event_target = GFnyto_leader_Lycoris
+		}
+	}
+	after = {
+		if = {
+			limit = {
+				NOT = {
+					has_country_flag = GFnyto_leader_Dandelion
+				}
+			}
+			creat_nyto_leader = yes
+		}
+	}
+}

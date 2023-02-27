@@ -1,0 +1,443 @@
+#春天唤醒额外一次区划选择
+decision_pc_GF_nyto_embers_gloomy_project = {
+	owned_planets_only = yes
+	icon = decision_pc_GF_nyto_embers_gloomy_project
+	enactment_time = 720
+	resources = {
+		category = decisions
+		cost = {
+			trigger = {
+				owner = {
+					is_ai = no
+				}
+			}
+			GF_nyto_collapse_liquid = 100
+			influence = 50
+			alloys = 1000
+		}
+	}
+	potential = {
+		is_planet_class = pc_GF_nyto_embers_gloomy
+		habitable_structure = no
+		exists = owner
+		owner = {
+			has_technology = tech_climate_restoration
+			NOT = {
+				has_civic = civic_GF_nyto_heart_of_suffering
+			}
+		}
+		NOT = {
+			has_planet_flag = GFnyto_Spring_wakes_up
+		}
+		
+	}
+	effect = {
+		custom_tooltip = decision_pc_GF_nyto_embers_gloomy_project_effects
+		hidden_effect = {
+			add_district = district_GF_nyto_pc_toxic_house
+			add_district = district_GF_nyto_pc_toxic_alloy
+			add_district = district_GF_nyto_pc_toxic_energy
+			change_planet_size = 10
+			save_event_target_as = set_pc_GF_nyto_embers_gloomy
+			add_deposit = d_GFnyto_black_zone
+			set_planet_entity = {
+				entity = "GFnyto_planet03_entity"
+			}
+			set_planet_flag = GFnyto_Spring_wakes_up
+		}
+	}
+	ai_weight = {
+		weight = 100
+		modifier = {
+			always = yes
+		}
+	}
+}
+
+#恶魔熔炉星球
+decision_pc_GF_nyto_devil_furnace_project = {
+	owned_planets_only = yes
+	icon = decision_pc_GF_nyto_devil_furnace_project
+	enactment_time = 720
+	resources = {
+		category = decisions
+		cost = {
+			GF_nyto_collapse_liquid = 10000
+		}
+	}
+	allow = {
+		NOT = {
+			has_planet_flag = pc_GF_nyto_done
+		}
+	}
+	potential = {
+		is_planet_class = pc_GF_nyto_embers_gloomy
+		habitable_structure = no
+		exists = owner
+		owner = {
+			has_ascension_perk = ap_GF_nyto_conquer_hell
+		}
+	}
+	effect = {
+		change_pc = pc_GF_nyto_devil_furnace
+		hidden_effect = {
+			set_planet_entity = {
+				entity = "devil_furnace_planet"
+				graphical_culture = owner
+			}
+		}
+	}
+	ai_weight = {
+		weight = 5
+	}
+}
+
+#建立行星轨道防御系统
+decision_GFnyto_planetary_defense = {
+	owned_planets_only = yes
+	icon = decision_GFnyto_planetary_defense
+	enactment_time = 360
+	resources = {
+		category = decisions
+		cost = {
+			GF_nyto_collapse_liquid = 10
+			alloys = 100
+		}
+	}
+	potential = {
+		NOT = {
+			has_modifier = GFnyto_planetary_defense_ready
+		}
+		owner = {
+			has_authority = auth_GF_paradeus
+		}
+		habitable_structure = no
+		exists = owner
+	}
+	effect = {
+		custom_tooltip = decision_GFnyto_planetary_defense_effects
+		add_deposit = d_GFnyto_planetary_orbit_defense_zone
+		add_deposit = d_GFnyto_planetary_surface_defense_zone
+		add_modifier = {
+			modifier = GFnyto_planetary_defense_ready
+		}
+		set_planet_flag = has_GFnyto_planetary_defense
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+# #心智载入
+# decision_GFnyto_pop_load = {
+# 	enactment_time = 180
+# 	owned_planets_only = yes
+# 	sound = event_administrative_work
+# 	icon = decision_GFnyto_pop_load
+# 	resources = {
+# 		category = decisions
+# 		cost = {
+# 			GF_nyto_dark_star_core = 10
+# 		}
+# 		cost = {
+# 			trigger = {
+# 				owner = {
+# 					is_ai = no
+# 				}
+# 			}
+# 			alloys = 200
+# 			minerals = 500
+# 		}
+# 	}
+# 	potential = {
+# 		owner = {
+# 			has_authority = auth_GF_paradeus
+# 			NOT = {
+# 				has_civic = civic_GF_nyto_Vengeance_Crusade
+# 			}
+# 			is_ai = yes
+# 		}
+# 	}
+# 	effect = {
+# 		custom_tooltip = decision_GFnyto_pop_load_effect
+# 		hidden_effect = {
+# 			if = {
+# 				limit = {
+# 					owner = {
+# 						is_ai = no
+# 					}
+# 				}
+# 				while = {
+# 					count = 10
+# 					create_pop = {
+# 						species = owner_main_species
+# 						ethos = root.owner
+# 					}
+# 				}
+# 			}
+# 			if = {
+# 				limit = {
+# 					owner = {
+# 						is_ai = yes
+# 					}
+# 				}
+# 				while = {
+# 					count = 5
+# 					create_pop = {
+# 						species = owner_main_species
+# 						ethos = root.owner
+# 					}
+# 				}
+# 			}
+
+# 		}
+# 	}
+# 	ai_weight = {
+# 		weight = 20
+# 		modifier = {
+# 			always = yes
+# 			has_planet_flag = PR_flg_plnt_ASCENDED
+# 		}
+# 		modifier = {
+# 			factor = 2.5
+# 			free_jobs >= 0
+# 		}
+# 		modifier = {
+# 			factor = 0
+# 			num_unemployed > 1
+# 		}
+# 		modifier = {
+# 			factor = 1
+# 			owner = {
+# 				has_country_flag = PR_flg_cntr_ASCENDED
+# 			}
+# 		}
+# 	}
+# }
+
+#坍缩堆超载
+decision_GFnyto_boom = {
+	enactment_time = 360
+	owned_planets_only = yes
+	icon = decision_GFnyto_boom
+	potential = {
+		owner = {
+			has_authority = auth_GF_paradeus
+		}
+		solar_system = {
+			has_megastructure = GFnyto_megastructure_collapse_reactor_restored
+		}		
+	}
+	effect = {
+		custom_tooltip = decision_GFnyto_boom_effect
+		hidden_effect = {
+			solar_system = {
+				set_star_class = sc_black_hole
+				every_system_planet = {
+					limit = {
+						NOT = {
+							is_planet = star
+						}
+					}
+					change_pc = pc_broken
+					destroy_colony = yes
+				}
+				every_fleet_in_system = {
+					destroy_fleet = fleet
+				}
+				every_system_megastructure = {
+					remove_megastructure = this
+				}
+			}
+		}
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#要塞化
+decision_GFnyto_yaosai = {
+	enactment_time = 720
+	owned_planets_only = yes
+	icon = decision_GFnyto_planetary_defense
+	potential = {
+		owner = {
+			has_authority = auth_GF_paradeus
+		}
+		OR = {
+			NOT = {
+				has_planet_flag = GF_nyto_yaosai
+			}
+			owner = {
+				has_civic = civic_GF_nyoto_armor_train
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = decision_GFnyto_yaosai_desc1
+		set_planet_flag = GF_nyto_yaosai
+		create_army = {
+			name = "永固要塞"
+			owner = root
+			type = GF_nyto_yaosai
+		}
+	}
+	resources = {
+		category = decisions
+		cost = {
+			unity = 500
+			influence = 50
+		}
+	}
+}
+
+#EILD狩猎
+decision_GFnyto_EILD_hunting = {
+	enactment_time = 30
+	owned_planets_only = yes
+	icon = decision_GFnyto_EILD_hunting
+	potential = {
+		has_planet_flag = GF_nyto_eild_attack_begin
+		check_variable = {
+			which = GFnyto_Eild_level
+			value > 5
+		}
+	}
+	effect = {
+		planet_event = {
+			id = GFnytoeild.54
+		}
+	}
+	resources = {
+		category = decisions
+		cost = {
+			unity = 200
+		}
+	}
+}
+
+#停止人口组装
+decision_GFnyto_enact_population_control = {
+	owned_planets_only = yes
+	sound = event_administrative_work
+	icon = decision_politics
+
+	resources = {
+		category = decisions
+		cost = {
+			unity = 250
+		}
+	}
+
+	potential = {
+		owner = {
+			NOT = { has_policy_flag = population_controls_not_allowed }
+			is_regular_empire = yes
+		}
+		NOT = { has_modifier = planet_population_control }
+	}
+
+	effect = {
+		add_modifier = { modifier = "planet_population_control" days = -1 }
+		IF = {
+			limit = {
+				has_modifier = planet_food_boost
+			}
+			remove_modifier = planet_food_boost
+		}
+	}
+
+	ai_weight = {
+		weight = 0
+		modifier = { # don't enable if you have free housing and no city districts left to build
+			factor = 0
+			OR = {
+				free_housing > 0
+				num_free_districts = {
+					type = any
+					value > 0
+				}
+				has_building_construction = yes #Added since they're probably building housing
+			}
+		}
+	}
+}
+#恢复人口组装
+decision_GFnyto_end_population_control ={
+	owned_planets_only = yes
+	sound = event_administrative_work
+	icon = decision_politics
+
+	resources = {
+		category = decisions
+	}
+
+	potential = {
+		has_modifier = planet_population_control
+	}
+
+	effect = {
+		remove_modifier = "planet_population_control"
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#定向人口迁徙 接收
+decision_GFnyto_autopops = {
+	owned_planets_only = yes
+	sound = event_administrative_work
+	icon = decision_politics
+	resources = {
+		category = decisions
+		cost = {
+			unity = 250
+		}
+	}
+	potential = {
+		owner = { has_authority = auth_GF_paradeus }
+		NOT = { has_planet_flag =gfnyto_select_thi_planet }
+	}
+	effect = { 
+		if = {
+			limit = { exists = event_target:GFnyto_select_planet }
+			event_target:GFnyto_select_planet = {
+				remove_planet_flag = gfnyto_select_thi_planet
+			}
+		}
+		set_planet_flag = gfnyto_select_thi_planet
+		save_global_event_target_as = GFnyto_select_planet
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+
+#定向人口迁徙 输送
+decision_GFnyto_autopops_2 ={
+	owned_planets_only = yes
+	sound = event_administrative_work
+	icon = decision_politics
+	resources = {
+		category = decisions
+		cost = {
+			unity = 250
+		}
+	}
+	potential = {
+		owner = { has_authority = auth_GF_paradeus }
+		exists = event_target:GFnyto_select_planet
+		num_pops < 100
+	}
+	effect = {
+		every_owned_pop = {
+			resettle_pop = {
+				pop = this
+				planet = event_target:GFnyto_select_planet
+			}
+		}
+	}
+}

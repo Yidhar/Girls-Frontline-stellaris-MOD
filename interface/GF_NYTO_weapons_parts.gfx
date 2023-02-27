@@ -1,0 +1,220 @@
+
+spriteTypes = {	
+	#浮动附加装甲
+	spriteType = {
+		name = "GFX_ship_part_GFnyto_body_armor1"
+		texturefile = "gfx/interface/icons/ship_parts/GFX_ship_part_GFnyto_body_armor1.dds"
+	}
+	spriteType = {
+		name = "GFX_ship_part_GFnyto_body_armor2"
+		texturefile = "gfx/interface/icons/ship_parts/GFX_ship_part_GFnyto_body_armor2.dds"
+	}
+	spriteType = {
+		name = "GFX_ship_part_GFnyto_body_armor3"
+		texturefile = "gfx/interface/icons/ship_parts/GFX_ship_part_GFnyto_body_armor3.dds"
+	}
+	#力场盾
+	spriteType = {
+		name = "GFX_ship_part_GFnyto_force_shield1"
+		texturefile = "gfx/interface/icons/ship_parts/GFX_ship_part_GFnyto_force_shield1.dds"
+	}
+	spriteType = {
+		name = "GFX_ship_part_GFnyto_force_shield2"
+		texturefile = "gfx/interface/icons/ship_parts/GFX_ship_part_GFnyto_force_shield2.dds"
+	}
+	spriteType = {
+		name = "GFX_ship_part_GFnyto_force_shield3"
+		texturefile = "gfx/interface/icons/ship_parts/GFX_ship_part_GFnyto_force_shield3.dds"
+	}
+	#H武器
+	spriteType = {
+		name = "GFX_ship_part_GFnyto_accelerating_coil"
+		texturefile = "gfx/interface/icons/ship_parts/GFX_ship_part_GFnyto_accelerating_coil.dds"
+	}
+	spriteType = {
+		name = "GFX_ship_part_GFnyto_accelerating_coi2"
+		texturefile = "gfx/interface/icons/ship_parts/GFX_ship_part_GFnyto_accelerating_coi2.dds"
+	}
+	#电脑
+	spriteType = {
+		name = "GFX_ship_part_GFnyto_additional_arithmetic_module1"
+		texturefile = "gfx/interface/icons/ship_parts/computers/GFX_ship_part_GFnyto_additional_arithmetic_module1.dds"
+	}
+	spriteType = {
+		name = "GFX_ship_part_GFnyto_additional_arithmetic_module2"
+		texturefile = "gfx/interface/icons/ship_parts/computers/GFX_ship_part_GFnyto_additional_arithmetic_module2.dds"
+	}
+	spriteType = {
+		name = "GFX_ship_part_GFnyto_additional_arithmetic_module3"
+		texturefile = "gfx/interface/icons/ship_parts/computers/GFX_ship_part_GFnyto_additional_arithmetic_module3.dds"
+	}
+	spriteType = {
+		name = "GFX_ship_part_GFnyto_power_lv1"
+		texturefile = "gfx/interface/icons/ship_parts/GFnyto_power_lv1.dds"
+	}
+	spriteType = {
+		name = "GFX_ship_part_GFnyto_power_lv2"
+		texturefile = "gfx/interface/icons/ship_parts/GFnyto_power_lv2.dds"
+	}
+	spriteType = {
+		name = "GFX_ship_part_GFnyto_power_lv3"
+		texturefile = "gfx/interface/icons/ship_parts/GFnyto_power_lv3.dds"
+	}
+	#穿梭引擎
+	spriteType = {
+		name = "GFX_ship_part_GFnyto_shuttle_engine"
+		texturefile = "gfx/interface/icons/ship_parts/GFX_ship_part_GFnyto_shuttle_engine.dds"
+	}
+	#空投仓
+	spriteType = {
+		name = "GFX_ship_part_GFnyto_marine_corps"
+		texturefile = "gfx/interface/icons/ship_parts/GFX_ship_part_GFnyto_marine_corps.dds"
+	}
+	#侦察机
+	spriteType = {
+		name = "GFX_ship_part_GFnyto_reconnaissance_aircraft"
+		texturefile = "gfx/interface/icons/ship_parts/GFX_ship_part_GFnyto_reconnaissance_aircraft.dds"
+	}
+	#穿甲弹
+	spriteType = {
+		name = "GFX_ship_part_GFnyto_armor_piercing_bullet"
+		texturefile = "gfx/interface/icons/ship_parts/GFnyto_armor_piercing_bullet.dds"
+	}
+	#高爆弹
+	spriteType = {
+		name = "GFX_ship_part_GFnyto_high_explosive_bomb"
+		texturefile = "gfx/interface/icons/ship_parts/GFX_ship_part_GFnyto_high_explosive_bomb.dds"
+	}
+	#伤害控制小组
+	spriteType = {
+		name = "GFX_ship_part_GFnyto_injury_control_team"
+		texturefile = "gfx/interface/icons/ship_parts/GFX_ship_part_GFnyto_injury_control_team.dds"
+	}
+	#深空之眼
+	frameAnimatedSpriteType ={
+		name = "GFX_ship_part_GFnyto_Deep_space"
+		textureFile = "gfx/interface/icons/ship_parts/GF_nyto_Deep_space.dds"
+		noOfFrames = 43
+		transParencecheck = no
+		animation_rate_fps = 30
+		looping = yes
+		play_on_show = yes
+		alwaystransparent =yes	
+	}
+	frameAnimatedSpriteType = {	
+		name = "GFX_bright_poetry"
+		texturefile = "gfx/interface/icons/ship_parts/GF_nyto_bright_poetry.dds"
+		noOfFrames = 43
+		transParencecheck = no
+		animation_rate_fps = 30
+		looping = yes
+		play_on_show = yes
+		alwaystransparent =yes	
+	}
+	frameAnimatedSpriteType = {	
+		name = "GFX_light_thruster"
+		texturefile = "gfx/interface/icons/ship_parts/GF_nyto_light_thruster.dds"
+		noOfFrames = 43
+		transParencecheck = no
+		animation_rate_fps = 30
+		looping = yes
+		play_on_show = yes
+		alwaystransparent =yes	
+	}
+	frameAnimatedSpriteType = {	
+		name = "GFX_GFnyto_Beacon"
+		texturefile = "gfx/interface/icons/ship_parts/GF_nyto_Beacon.dds"
+		noOfFrames = 43
+		transParencecheck = no
+		animation_rate_fps = 30
+		looping = yes
+		play_on_show = yes
+		alwaystransparent =yes	
+	}
+	frameAnimatedSpriteType = {	
+		name = "GFX_GFnyto_godenergy"
+		texturefile = "gfx/interface/icons/ship_parts/GF_nyto_godenergy.dds"
+		noOfFrames = 43
+		transParencecheck = no
+		animation_rate_fps = 30
+		looping = yes
+		play_on_show = yes
+		alwaystransparent =yes	
+	}
+	spriteType={
+		name = "GFX_ship_part_T_weapons1"
+		textureFile = "gfx/interface/icons/ship_parts/暂时没用的/TB.dds"
+	}
+	spriteType={
+		name = "GFX_ship_part_T_weapons2"
+		textureFile = "gfx/interface/icons/ship_parts/暂时没用的/TG.dds"
+	}
+	spriteType = {
+		name = GFX_ship_part_x_weapons1
+		textureFile = "gfx/interface/icons/ship_parts/暂时没用的/XB.dds"
+	}
+	spriteType={
+		name = GFX_ship_part_x_weapons2
+		textureFile = "gfx/interface/icons/ship_parts/暂时没用的/XG.dds"
+	}
+	spriteType={
+		name = GFX_ship_part_l_weapons1
+		textureFile = "gfx/interface/icons/ship_parts/暂时没用的/LB.dds"
+	}
+	spriteType={
+		name = GFX_ship_part_l_weapons2
+		textureFile = "gfx/interface/icons/ship_parts/暂时没用的/LG.dds"
+	}
+	spriteType={
+		name = GFX_ship_part_m_weapons1
+		textureFile = "gfx/interface/icons/ship_parts/暂时没用的/MB.dds"
+	}
+	spriteType={
+		name = GFX_ship_part_m_weapons2
+		textureFile = "gfx/interface/icons/ship_parts/暂时没用的/MG.dds"
+	}
+	spriteType={
+		name = GFX_ship_part_s_weapons1
+		textureFile = "gfx/interface/icons/ship_parts/暂时没用的/SB.dds"
+	}
+	spriteType={
+		name = GFX_ship_part_s_weapons2
+		textureFile = "gfx/interface/icons/ship_parts/暂时没用的/SG.dds"
+	}
+	spriteType={
+		name = GFX_ship_part_g_weapons1
+		textureFile = "gfx/interface/icons/ship_parts/暂时没用的/GG.dds"
+	}
+	spriteType={
+		name = GFX_ship_part_g_weapons2
+		textureFile = "gfx/interface/icons/ship_parts/暂时没用的/GB.dds"
+	}
+	spriteType={
+		name = GFX_ship_part_h_weapons1
+		textureFile = "gfx/interface/icons/ship_parts/暂时没用的/HB.dds"
+	}
+	spriteType={
+		name = GFX_ship_part_h_weapons2
+		textureFile = "gfx/interface/icons/ship_parts/暂时没用的/HG.dds"
+	}
+	spriteType={
+		name = GFX_ship_part_p_weapons1
+		textureFile = "gfx/interface/icons/ship_parts/暂时没用的/PY.dds"
+	}
+	spriteType={
+		name = GFX_ship_part_p_weapons2
+		textureFile = "gfx/interface/icons/ship_parts/暂时没用的/PP.dds"
+	}
+	spriteType = {
+		name = GFX_nyto_Electronic_Warfare
+		textureFile = "gfx/interface/icons/ship_parts/GF_nyto_Electronic_Warfare.dds"
+	}
+	spriteType = {
+		name = GFX_nyto_weapon_beacon_sop
+		textureFile = "gfx/interface/icons/ship_parts/GF_nyto_weapon_Beacon.dds"
+	}
+	spriteType ={
+		name = GFX_GF_nyto_fool_weapon
+		textureFile = "gfx/interface/icons/ship_parts/GFnyto_fool_weapon.dds"
+	}
+}

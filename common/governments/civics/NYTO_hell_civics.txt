@@ -1,0 +1,59 @@
+###天灾国策###
+#看见天使
+civic_GF_nyto_see_angel= {
+	icon="gfx/interface/icons/governments/civics/civic_GF_nyto_see_angel.dds"
+	potential = {authority = {value =auth_GF_paradeus}}
+	possible = {species = {value=nyto}}
+	pickable_at_start=no
+	modification= no
+	modifier={
+		country_megastructure_build_cap_add = 10
+#@		all_technology_research_speed = 1
+	}
+	description = "GF_nyto_see_angel"
+	random_weight = {base = 0}
+}
+#饥荒
+civic_GF_nyto_famine= {
+	icon="gfx/interface/icons/governments/civics/GF_nyto_famine.dds"
+	potential = {authority = {value =auth_GF_paradeus}}
+	possible = {species = {value=nyto}}
+	pickable_at_start=no
+	modification= no
+	modifier={}
+#	description = "civic_GF_nyto_famine"
+	random_weight = {base = 0}
+}
+#战争
+civic_GF_nyto_war= {
+	icon="gfx/interface/icons/governments/civics/GF_nyto_war.dds"
+	potential = {authority = {value =auth_GF_paradeus}}
+	possible = {species = {value=nyto}}
+	pickable_at_start=no
+	modification= no
+	modifier={}
+#	description = "civic_GF_nyto_war"
+	random_weight = {base = 0}
+}
+#瘟疫
+civic_GF_nyto_plague= {
+	icon="gfx/interface/icons/governments/civics/GF_nyto_plague.dds"
+	potential = {authority = {value =auth_GF_paradeus}}
+	possible = {species = {value=nyto}}
+	pickable_at_start=no
+	modification= no
+	modifier={}
+#	description = "civic_GF_nyto_plague"
+	random_weight = {base = 0}
+}
+#死亡
+civic_GF_nyto_death= {
+	icon="gfx/interface/icons/governments/civics/GF_nyto_death.dds"
+	potential = {authority = {value =auth_GF_paradeus}}
+	possible = {species = {value=nyto}}
+	pickable_at_start=no
+	modification= no
+	modifier={}
+#	description = "civic_GF_nyto_death"
+	random_weight = {base = 0}
+}

@@ -1,0 +1,24 @@
+objectTypes = {
+	pdxmesh = {
+		name = "GF_nyto_01_battleship_mesh"
+		file = "gfx/models/ships/GF_nyto_01/GF_nyto_01_battleship.mesh"
+		scale = 1.0
+
+		meshsettings = {
+			name = "S_SS_Mod_E_03_lv4:S_SS_Mod_E_03_lv4_0Shape"
+			index = 0
+			texture_diffuse = "S_SS_Tex_E_03_d.dds"
+			texture_normal = "S_SS_Tex_E_03_n.dds"
+			texture_specular = "S_SS_Tex_E_03_s.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+}
+objectTypes = {
+	pdxmesh = {
+		name = "GF_nyto_01_battleship_locator_mesh"
+		file = "gfx/models/ships/GF_nyto_01/GF_nyto_01_battleship_locator.mesh"
+		scale = 1.2
+	}
+}
+

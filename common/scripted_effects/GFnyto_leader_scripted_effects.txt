@@ -1,0 +1,197 @@
+creat_nyto_leader = {
+	switch = {
+		trigger = has_country_flag
+		GFnyto_leader_Yegor_general = {
+			create_leader = {
+				class = general
+				species = owner_species
+				name = "叶戈尔"
+				gender = male
+				immortal = yes
+				event_leader = yes
+				skill = 10
+				set_age = 40
+				traits = {
+					trait = leader_trait_Yegor_general1
+					trait = leader_trait_Yegor_general2
+				}
+				effect = {
+					change_leader_portrait = Yegor
+					save_global_event_target_as = GFnyto_leader_Yegor
+				}
+			}
+		}
+		GFnyto_leader_Yegor_admiral = {
+			create_leader = {
+				class = admiral
+				species = owner_species
+				name = "叶戈尔"
+				gender = male
+				immortal = yes
+				event_leader = yes
+				skill = 10
+				set_age = 40
+				traits = {
+					trait = leader_trait_Yegor_admiral1
+					trait = leader_trait_Yegor_admiral2
+				}
+				effect = {
+					change_leader_portrait = Yegor
+					save_global_event_target_as = GFnyto_leader_Yegor
+				}
+			}
+		}
+		GFnyto_leader_Yegor_ruler = {
+			create_leader = {
+				class = ruler
+				species = owner_species
+				name = "叶戈尔"
+				gender = male
+				immortal = yes
+				event_leader = no
+				skill = 10
+				set_age = 40
+				traits = {
+					trait = leader_trait_Yegor_ruler1
+					trait = leader_trait_Yegor_ruler2
+				}
+				effect = {
+					change_leader_portrait = Yegor
+					save_global_event_target_as = GFnyto_leader_Yegor
+				}
+			}
+		}
+		GFnyto_leader_Dandelion = {
+			create_leader = {
+				class = ruler
+				species = owner_species
+				name = "丹德莱"
+				gender = female
+				immortal = yes
+				event_leader = no
+				skill = 10
+				set_age = 14
+				traits = {
+					trait = leader_trait_Dandelion_ruler1
+					trait = leader_trait_Dandelion_ruler2
+				}
+				effect = {
+					change_leader_portrait = Dandelion001
+					owner = {
+						set_country_flag = GFnyto_leader_Dandelion001
+					}
+					save_global_event_target_as = GFnyto_leader_Dandelion
+				}
+			}
+		}
+		GFnyto_leader_Lycoris_scientist = {
+			create_leader = {
+				class = scientist
+				species = owner_species
+				name = "莱柯瑞斯"
+				gender = male
+				immortal = yes
+				event_leader = yes
+				skill = 10
+				set_age = 30
+				traits = {
+					trait = leader_trait_Lycoris_scientist1
+					trait = leader_trait_Lycoris_scientist2
+				}
+				effect = {
+					change_leader_portrait = Lycoris
+					save_global_event_target_as = GFnyto_leader_Lycoris
+				}
+			}
+		}
+		GFnyto_leader_Lycoris_ruler = {
+			create_leader = {
+				class = ruler
+				species = owner_species
+				name = "莱柯瑞斯"
+				gender = male
+				immortal = yes
+				event_leader = no
+				skill = 10
+				set_age = 30
+				traits = {
+					trait = leader_trait_Lycoris_ruler1
+					trait = leader_trait_Lycoris_ruler2
+				}
+				effect = {
+					change_leader_portrait = Lycoris
+					save_global_event_target_as = GFnyto_leader_Lycoris
+				}
+			}
+		}
+	}
+}
+
+random_6_leader = {
+	random_owned_leader = {
+		limit = {
+			NOT = {
+				has_leader_flag = GFnyot_leader_select
+			}
+			has_skill < 10
+			leader_class = $leader_class$
+		}
+		set_leader_flag = GFnyot_leader_select
+		save_global_event_target_as = GFnyot_leader_select_1
+	}
+	random_owned_leader = {
+		limit = {
+			NOT = {
+				has_leader_flag = GFnyot_leader_select
+			}
+			has_skill < 10
+			leader_class = $leader_class$
+		}
+		set_leader_flag = GFnyot_leader_select
+		save_global_event_target_as = GFnyot_leader_select_2
+	}
+	random_owned_leader = {
+		limit = {
+			NOT = {
+				has_leader_flag = GFnyot_leader_select
+			}
+			has_skill < 10
+			leader_class = $leader_class$
+		}
+		set_leader_flag = GFnyot_leader_select
+		save_global_event_target_as = GFnyot_leader_select_3
+	}
+	random_owned_leader = {
+		limit = {
+			NOT = {
+				has_leader_flag = GFnyot_leader_select
+			}
+			has_skill < 10
+			leader_class = $leader_class$
+		}
+		set_leader_flag = GFnyot_leader_select
+		save_global_event_target_as = GFnyot_leader_select_4
+	}
+	random_owned_leader = {
+		limit = {
+			NOT = {
+				has_leader_flag = GFnyot_leader_select
+			}
+			has_skill < 10
+			leader_class = $leader_class$
+		}
+		set_leader_flag = GFnyot_leader_select
+		save_global_event_target_as = GFnyot_leader_select_5
+	}
+	random_owned_leader = {
+		limit = {
+			NOT = {
+				has_leader_flag = GFnyot_leader_select
+			}
+			has_skill < 10
+			leader_class = $leader_class$
+		}
+		set_leader_flag = GFnyot_leader_select
+		save_global_event_target_as = GFnyot_leader_select_6
+	}
+}

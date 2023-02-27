@@ -1,0 +1,255 @@
+empire_init_capital_planet = {
+	events = {
+	}
+}
+on_game_start_country = {
+	events = {
+	GFnytostart.0
+	GFnytostart.1
+	GFnytostart.2
+	# GFnytostart.100
+	# GFnytostart.1000
+	GFnytostart.110
+	}
+}
+on_planet_zero_pops = {
+	events = {
+	}
+}
+on_planet_bombarded = {
+	events = {
+		gfnytoaction.1
+		gfnytoaction.4
+		gfnytoaction.10
+		gfnytoaction.20
+	}
+}
+on_colonized = {
+	events = {
+		GFnytoeild.10
+	}
+}
+on_yearly_pulse = {
+	events = {
+		gfnytoparadeusancrel.4001
+	}
+}
+on_yearly_pulse_country = {
+	events = {
+		GFnyto_global.9999
+		GFnyto_global.20
+	}
+}
+on_five_year_pulse = {
+	events = {
+
+	}
+}
+on_destroy_planet_with_tech_GFnyto_accelerating_coil3= {
+	events = {
+		GFnytoplanet_destruction.1
+	}
+}
+on_entering_system_fleet = {
+	events = {
+		
+	}
+}
+on_leader_spawned = {
+	events = {
+		GFnyto_global.10
+		GFnyto_global.11
+		GFnyto_global.12
+	}
+}
+on_planet_occupied = {
+	events = {
+	}
+}
+on_colony_1_year_old = {
+	events = {
+	}
+}
+on_mid_game_pulse_country = {
+	events = {
+		GFnyto_war_theory.1
+	}
+}
+###涅托灾飞###
+# This = owner of ship 1 (combatant)
+# From = owner of ship 2 (destroyed)
+# FromFrom = ship 1
+# FromFromFrom = ship 2
+on_ship_destroyed_perp = {
+	events = {
+		GFnytocrisis.4#摧毁舰船
+		gf_nyto_weapons.1
+		gf_nyto_weapons.10001
+	}
+}
+on_planet_attackers_win = {
+	events = {
+		gfnytoaction.11
+		GFnytocrisis.2#行星沦陷
+		GFnytocrisis.3#行星占领
+	}
+}
+#This = destroyed country
+#From = optional, destroyer (country)
+on_country_destroyed = {
+	events = {
+		GFnytobloodywar.3
+		GFnytocrisis.1#毁灭国家
+		GFnyto_ascension_perk.130
+	}
+}
+on_starbase_destroyed = {
+	events = {
+	}
+}
+on_colony_destroyed = {
+	events = {
+	}
+}
+on_monthly_pulse_country = {
+	events = {
+		GFnytocrisis.8#每月固定减少
+	}
+}
+on_tech_increased ={ #科研完成触发器
+	events = {
+		GFnyto_ascension_perk.999
+	}
+}
+# This = owner of fleet 1
+# From = owner of fleet 2
+# FromFrom = fleet 1
+# FromFromFrom = fleet 2
+on_entering_battle ={ #舰队交站触发器
+	events = {
+		GFnyto_ascension_perk.666
+		gf_nyto_weapons.0		
+	}
+}
+# This = owner of fleet 1 (winner)
+# From = owner of fleet 2 (loser)
+# FromFrom = fleet 1
+# FromFromFrom = fleet 2
+on_space_battle_won = { #胜利触发器
+	events = {
+		
+	}
+}
+
+
+#Fired whenever a new owner is set for a planet, and the planet was aggressively conquered
+#Fired in ADDITION to on_planet_transfer
+#From = Country scope (new owner)
+#This = Planet scope
+on_planet_conquer={
+	events = {
+		GFnyto_war_theory.2		
+		GFnyto_war_theory.3
+	}
+}
+# Triggers country_event for the attacker upon defeat
+# This = country, attack leader
+# From = country, planet owner
+# FromFrom = planet
+on_planet_defenders_lose = {
+	events = {
+		GFnytoeild.45
+		GFnytoeild.46
+	}
+}
+
+# Triggers country_event for the defender upon victory
+# Root = country, planet owner
+# From = country, attack leader
+# FromFrom = planet
+on_planet_defenders_win ={
+	events = {
+		GFnytoeild.441
+		GFnytoeild.58
+	}
+}
+
+#An army has been killed in ground combat
+# This = owner
+# From = army
+# FromFrom = opponent
+# FromFromFrom = planet
+on_army_killed_in_combat ={
+	events = {
+		GFnytoeild.5	
+	}
+}
+
+
+#Fired whenever a new owner is set for a planet,
+#be it after a war or through a trade
+#From = Country scope (new owner)
+#This = Planet scope
+on_planet_transfer ={
+	events = {
+		GFnyto_global.4
+		GFnyto_global.15
+	}
+}
+
+# Executed when a megastructure has a new owner
+# this = new owner
+# from = megastructure
+# fromfrom = old owner (if existing)
+on_megastructure_change_owner = {
+	events = {
+		# gf_nyto_weapons.14
+	}
+}
+
+# Executed when a megastructure is rendered ownerless
+# this = solar system containing megastructure
+# from = megastructure
+# fromfrom = old owner (if existing)
+on_megastructure_ownerless = {
+	events = {
+		# gf_nyto_weapons.15
+	}
+}
+
+# From = system
+# FromFrom = country (previous owner)
+# This = country (new owner)
+on_system_gained = {
+	events = {
+		GFnyto_global.17
+	}
+}
+
+# A ship has been built
+# Root = Ship
+# From = Planet
+on_ship_built = {
+	events = {
+		GFnyto_global.19
+	}
+}
+
+# Triggers event when each country first sends a ship into the system (once per country)
+# Scope = Ship
+# From = System
+# FromFrom = Country
+on_entering_system_first_time = {
+	events = {
+		gfnytoparadeusancrel.4005
+	}
+}
+
+# A ship is done surveying the last unsurveyed planet in a system
+# Scope = ship
+# From = system
+on_system_survey_ship = {
+	events = {
+		gfnytoparadeusancrel.4006
+	}
+}

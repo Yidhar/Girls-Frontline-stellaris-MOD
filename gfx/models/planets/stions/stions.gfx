@@ -1,0 +1,63 @@
+objectTypes = {
+	pdxmesh = {
+		name = "stions_mesh"
+		file = "gfx/models/planets/stions/stions.mesh"
+		scale = 1.0
+
+		meshsettings = {
+			name = "GangutStation_set1_0Shape"
+			index = 0
+			texture_diffuse = "stationSet01_albedo.dds"
+			texture_normal = "stationSet01_normal.dds"
+			texture_specular = "stationSet01_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "GangutStation_set3_0Shape"
+			index = 0
+			texture_diffuse = "StationSet03_albedo.dds"
+			texture_normal = "StationSet03_normal.dds"
+			texture_specular = "StationSet03_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "GangutStation_set2_0Shape"
+			index = 0
+			texture_diffuse = "StationSet02_albedo.dds"
+			texture_normal = "StationSet02_normal.dds"
+			texture_specular = "StationSet02_spec.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+}
+objectTypes = { 
+	pdxmesh = {
+		name = "station_frame_mesh"
+		file = "gfx/models/planets/stions/station_frame.mesh"
+		scale = 1.0
+	}
+}
+
+objectTypes = { #护盾层
+	pdxmesh = {
+		name = "station_shield_mesh"
+		file = "gfx/models/planets/stions/station_shield.mesh"
+		scale = 1.0
+
+		meshsettings = {
+			name = "shieldShape"
+			index = 0
+			texture_diffuse = "station_shield.dds"
+			shader = "PdxMeshAlphaAdditiveAnimateUV"
+		}
+	}
+}
+objectTypes ={ #定位器
+	pdxmesh = {
+		name = "station_locator_mesh"
+		file = "gfx/models/planets/stions/stions_locator.mesh"
+		scale = 1.0
+	}
+}

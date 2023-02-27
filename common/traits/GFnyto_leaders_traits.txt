@@ -1,0 +1,396 @@
+###上将###
+#OGAS_1
+leader_admiral_trait_GF_nyto_ogas_agreement = {
+	cost = 0
+	requires_traits={trait_GF_nyto_ogas_agreement}
+	icon="gfx/interface/icons/traits/nyto/trait_GF_nyto_ogas_agreement_plus.dds"
+	modifier = {
+		ship_fire_rate_mult = 0.2
+		ship_evasion_mult = 0.2
+	}
+	leader_trait = { admiral }
+	leader_class = { admiral }
+	leader_potential_add = {from = { has_authority = auth_GF_paradeus }}
+	opposites = {"leader_admiral_trait_GF_nyto_ogas_agreement"}
+}
+#心识领域
+leader_admiral_trait_GF_nyto_noussphere={
+	cost = 0
+	randomized = no
+	requires_traits={trait_GF_nyto_noussphere}
+	icon = "gfx/interface/icons/traits/nyto/trait_GF_nyto_noussphere.dds"
+	modifier = {
+		ship_fire_rate_mult = 0.3
+		ship_evasion_mult = 0.3
+	}
+	leader_trait = { admiral }
+	leader_class = { admiral }
+	leader_potential_add = {from = { has_authority = auth_GF_paradeus }}
+	opposites = {"leader_admiral_trait_GF_nyto_ogas_agreement"}
+}
+#OGAS_2
+leader_admiral_trait_GF_nyto_ogas_agreement_plus= {
+	cost = 0
+	randomized = no
+	requires_traits={trait_GF_nyto_ogas_agreement_plus}
+	icon="gfx/interface/icons/traits/nyto/trait_GF_nyto_OGAS_system.dds"	
+	modifier = {
+		ship_fire_rate_mult = 0.4
+		ship_evasion_mult = 0.4
+	}
+	leader_trait = { admiral }
+	leader_class = { admiral }
+	leader_potential_add = {from = { has_authority = auth_GF_paradeus }}
+	opposites = {"leader_admiral_trait_GF_nyto_ogas_agreement_plus"}
+}
+###将军###
+#OGAS_1
+leader_general_trait_GF_nyto_ogas_agreement= {
+	cost = 0
+	requires_traits={trait_GF_nyto_ogas_agreement}
+	icon = "gfx/interface/icons/traits/nyto/trait_GF_nyto_ogas_agreement_plus.dds"
+	modifier = {
+		army_attack_morale_mult = 0.2
+		army_morale = 0.2
+		army_attack_damage_mult = 0.2
+	}
+	leader_trait = { general }
+	leader_class = { general }
+	leader_potential_add = {from = { has_authority = auth_GF_paradeus }}
+	opposites = {"leader_general_trait_GF_nyto_ogas_agreement_plus"}
+}
+leader_general_trait_GF_nyto_noussphere={
+	cost = 0
+	randomized = no
+	requires_traits={trait_GF_nyto_noussphere}
+	icon = "gfx/interface/icons/traits/nyto/trait_GF_nyto_noussphere.dds"
+	modifier = {
+		army_attack_morale_mult = 0.3
+		army_morale = 0.3
+		army_attack_damage_mult = 0.3
+	}
+	leader_trait = { general }
+	leader_class = { general }
+	leader_potential_add = {from = { has_authority = auth_GF_paradeus }}
+	opposites = {"leader_admiral_trait_GF_nyto_ogas_agreement"}
+}
+#OGAS_2
+leader_general_trait_GF_nyto_ogas_agreement_plus= {
+	cost = 0
+	randomized = no
+	requires_traits={trait_GF_nyto_ogas_agreement_plus}
+	icon="gfx/interface/icons/traits/nyto/trait_GF_nyto_OGAS_system.dds"
+	modifier = {
+		army_attack_morale_mult = 0.4
+		army_morale = 0.4
+		army_attack_damage_mult = 0.4
+	}
+	leader_trait = { general }
+	leader_class = { general }
+	leader_potential_add = {from = { has_authority = auth_GF_paradeus }}
+	opposites = {"leader_general_trait_GF_nyto_ogas_agreement"}
+}
+###科学家###
+#OGAS_1
+leader_scientist_trait_GF_nyto_ogas_agreement= {
+	cost = 0
+	requires_traits={trait_GF_nyto_ogas_agreement}
+	icon = "gfx/interface/icons/traits/nyto/trait_GF_nyto_ogas_agreement_plus.dds"
+	modifier = {
+		all_technology_research_speed = 0.1
+		science_ship_survey_speed = 0.2
+		ship_anomaly_research_speed_mult = 0.2
+	}
+	leader_trait = { scientist }
+	leader_class = { scientist }
+	leader_potential_add = {from = { has_authority = auth_GF_paradeus }}
+	opposites = {"leader_scientist_trait_GF_nyto_ogas_agreement_plus"}
+}
+leader_scientist_trait_GF_nyto_noussphere={
+	cost = 0
+	randomized = no
+	requires_traits={ trait_GF_nyto_noussphere }
+	icon = "gfx/interface/icons/traits/nyto/trait_GF_nyto_noussphere.dds"
+	modifier = {
+		all_technology_research_speed = 0.2
+		science_ship_survey_speed = 0.3
+		ship_anomaly_research_speed_mult = 0.3
+	}
+	leader_trait = { scientist }
+	leader_class = { scientist }
+	leader_potential_add = {from = { has_authority = auth_GF_paradeus }}
+	opposites = {"leader_admiral_trait_GF_nyto_ogas_agreement"}
+}
+#OGAS_2
+leader_scientist_trait_GF_nyto_ogas_agreement_plus= {
+	cost = 0
+	randomized = no
+	requires_traits={trait_GF_nyto_ogas_agreement_plus} #拥有哪个特质的人口可以生成带有这个特质的领袖 
+	icon="gfx/interface/icons/traits/nyto/trait_GF_nyto_OGAS_system.dds"
+	modifier = {
+		all_technology_research_speed = 0.2
+		science_ship_survey_speed = 0.4
+		ship_anomaly_research_speed_mult = 0.4
+	}
+	leader_trait = { scientist }
+	leader_class = { scientist }
+	leader_potential_add = {from = { has_authority = auth_GF_paradeus }}
+	opposites = {"leader_scientist_trait_GF_nyto_ogas_agreement"} #互斥
+}
+###总督###
+#OGAS_1
+leader_governor_trait_GF_nyto_ogas_agreement= {
+	cost = 0
+	requires_traits={ trait_GF_nyto_ogas_agreement } #拥有哪个特质的人口可以生成带有这个特质的领袖 
+	icon="gfx/interface/icons/traits/nyto/trait_GF_nyto_ogas_agreement_plus.dds"
+	modifier = {
+		planet_crime_add = -20
+		planet_jobs_produces_mult = 0.1
+		planet_building_build_speed_mult = 0.2
+	}
+	leader_trait = { governor }
+	leader_class = { governor }
+	leader_potential_add = {from = { has_authority = auth_GF_paradeus }}
+	opposites = {"leader_governor_trait_GF_nyto_ogas_agreement_plus"}
+}
+
+leader_governor_trait_GF_nyto_noussphere={
+	cost = 0
+	randomized = no
+	requires_traits={trait_GF_nyto_noussphere}
+	icon = "gfx/interface/icons/traits/nyto/trait_GF_nyto_noussphere.dds"
+	modifier = {
+		planet_crime_add = -50
+		planet_jobs_produces_mult = 0.1
+		planet_building_build_speed_mult = 0.4
+	}
+	leader_trait = { governor }
+	leader_class = { governor }
+	leader_potential_add = {from = { has_authority = auth_GF_paradeus }}
+	opposites = {"leader_admiral_trait_GF_nyto_ogas_agreement"}
+}
+
+#OGAS_2
+leader_governor_trait_GF_nyto_ogas_agreement_plus= {
+	cost = 0
+	randomized = no
+	requires_traits={trait_GF_nyto_ogas_agreement_plus} #拥有哪个特质的人口可以生成带有这个特质的领袖 
+	icon="gfx/interface/icons/traits/nyto/trait_GF_nyto_OGAS_system.dds"
+	modifier = {
+		planet_crime_add = -40
+		planet_jobs_produces_mult = 0.2
+		planet_building_build_speed_mult = 0.4
+	}
+	leader_trait = { governor }
+	leader_class = { governor }
+	leader_potential_add = {from = { has_authority = auth_GF_paradeus }}
+	opposites = {"leader_governor_trait_GF_nyto_ogas_agreement"}
+}
+
+
+
+#通用
+#OGAS_1
+leader_trait_GF_nyto_ogas_agreement = {
+	cost = 0
+	randomized = no
+	requires_traits={trait_GF_nyto_ogas_agreement}
+	icon = "gfx/interface/icons/traits/nyto/trait_GF_nyto_ogas_agreement_plus.dds"
+	modifier = {planet_jobs_produces_mult = 0.1   }
+	leader_trait = { ruler }
+	leader_class = { ruler }
+	leader_potential_add = {from = { has_authority = auth_GF_paradeus }}
+	opposites = {"leader_trait_GF_nyto_ogas_agreement_plus"}
+}
+leader_trait_GF_nyto_noussphere={
+	cost = 0
+	randomized = no
+	requires_traits={trait_GF_nyto_noussphere}
+	icon = "gfx/interface/icons/traits/nyto/trait_GF_nyto_noussphere.dds"
+	modifier = {planet_jobs_produces_mult = 0.15   }
+	leader_trait = { ruler }
+	leader_class = { ruler }
+	leader_potential_add = {from = { has_authority = auth_GF_paradeus }}
+	opposites = {"leader_admiral_trait_GF_nyto_ogas_agreement"}
+}
+#OGAS_2
+leader_trait_GF_nyto_ogas_agreement_plus= {
+	cost = 0
+	randomized = no
+	requires_traits={trait_GF_nyto_ogas_agreement_plus}
+	icon="gfx/interface/icons/traits/nyto/trait_GF_nyto_OGAS_system.dds"
+	modifier = {planet_jobs_produces_mult = 0.2}
+	leader_trait = { ruler }
+	leader_class = { ruler }
+	leader_potential_add = {from = { has_authority = auth_GF_paradeus }}
+	opposites = {"leader_trait_GF_nyto_ogas_agreement"}
+}
+
+#特殊leader特质
+leader_trait_Yegor_general1 = {
+	cost = 0
+	randomized = no
+	icon = "gfx/interface/icons/traits/nyto/leader_trait_Yegor_general1.dds"
+	modifier = {
+	}
+	leader_trait = {
+		general
+	}
+	leader_class = {
+		general
+	}
+}
+
+leader_trait_Yegor_general2 = {
+	cost = 0
+	randomized = no
+	icon = "gfx/interface/icons/traits/nyto/leader_trait_Yegor_general2.dds"
+	modifier = {
+	}
+	leader_trait = {
+		general
+	}
+	leader_class = {
+		general
+	}
+}
+
+leader_trait_Yegor_admiral1 = {
+	cost = 0
+	randomized = no
+	icon = "gfx/interface/icons/traits/nyto/leader_trait_Yegor_admiral1.dds"
+	modifier = {
+	}
+	leader_trait = {
+		admiral
+	}
+	leader_class = {
+		admiral
+	}
+}
+
+leader_trait_Yegor_admiral2 = {
+	cost = 0
+	randomized = no
+	icon = "gfx/interface/icons/traits/nyto/leader_trait_Yegor_admiral2.dds"
+	modifier = {
+	}
+	leader_trait = {
+		admiral
+	}
+	leader_class = {
+		admiral
+	}
+}
+
+leader_trait_Yegor_ruler1 = {
+	cost = 0
+	randomized = no
+	icon = "gfx/interface/icons/traits/nyto/leader_trait_Yegor_ruler1.dds"
+	modifier = {
+	}
+	leader_trait = {
+		ruler
+	}
+	leader_class = {
+		ruler
+	}
+}
+
+leader_trait_Yegor_ruler2 = {
+	cost = 0
+	randomized = no
+	icon = "gfx/interface/icons/traits/nyto/leader_trait_Yegor_ruler2.dds"
+	modifier = {
+	}
+	leader_trait = {
+		ruler
+	}
+	leader_class = {
+		ruler
+	}
+}
+
+leader_trait_Dandelion_ruler1 = {
+	cost = 0
+	randomized = no
+	icon = "gfx/interface/icons/traits/nyto/leader_trait_Dandelion_ruler1.dds"
+	modifier = {
+	}
+	leader_trait = {
+		ruler
+	}
+	leader_class = {
+		ruler
+	}
+}
+
+leader_trait_Dandelion_ruler2 = {
+	cost = 0
+	randomized = no
+	icon = "gfx/interface/icons/traits/nyto/leader_trait_Dandelion_ruler2.dds"
+	modifier = {
+	}
+	leader_trait = {
+		ruler
+	}
+	leader_class = {
+		ruler
+	}
+}
+
+leader_trait_Lycoris_scientist1 = {
+	cost = 0
+	randomized = no
+	icon = "gfx/interface/icons/traits/nyto/leader_trait_Lycoris_scientist1.dds"
+	modifier = {
+	}
+	leader_trait = {
+		scientist
+	}
+	leader_class = {
+		scientist
+	}
+}
+
+leader_trait_Lycoris_scientist2 = {
+	cost = 0
+	randomized = no
+	icon = "gfx/interface/icons/traits/nyto/leader_trait_Lycoris_scientist2.dds"
+	modifier = {
+	}
+	leader_trait = {
+		scientist
+	}
+	leader_class = {
+		scientist
+	}
+}
+
+leader_trait_Lycoris_ruler1 = {
+	cost = 0
+	randomized = no
+	icon = "gfx/interface/icons/traits/nyto/leader_trait_Lycoris_ruler1.dds"
+	modifier = {
+	}
+	leader_trait = {
+		ruler
+	}
+	leader_class = {
+		ruler
+	}
+}
+
+leader_trait_Lycoris_ruler2 = {
+	cost = 0
+	randomized = no
+	icon = "gfx/interface/icons/traits/nyto/leader_trait_Lycoris_ruler2.dds"
+	modifier = {
+	}
+	leader_trait = {
+		ruler
+	}
+	leader_class = {
+		ruler
+	}
+}

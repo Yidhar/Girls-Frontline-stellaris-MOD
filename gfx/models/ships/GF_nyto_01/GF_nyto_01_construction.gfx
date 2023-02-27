@@ -1,0 +1,16 @@
+objectTypes = {
+	pdxmesh = {
+		name = "GF_nyto_01_construction_mesh"
+		file = "gfx/models/ships/GF_nyto_01/GF_nyto_01_construction.mesh"
+		scale = 1.0
+
+		meshsettings = {
+			name = "S_SS_Mod_E_02Shape"
+			index = 0
+			texture_diffuse = "S_SS_Tex_E_02_d.dds"
+			texture_normal = "S_SS_Tex_E_02_n.dds"
+			texture_specular = "S_SS_Tex_E_02_s.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+}

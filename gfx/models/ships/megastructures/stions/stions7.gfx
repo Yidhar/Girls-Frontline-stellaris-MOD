@@ -1,0 +1,79 @@
+objectTypes = {
+	pdxmesh = {
+		name = "stions7_mesh"
+		file = "gfx/models/ships/megastructures/stions/stions7.mesh"
+		scale = 1.0
+		animation = { id = "idle"			type = "stions7_idle_animation" }
+		meshsettings = {
+			name = "bld01_0_0|bld01_0_0Shape"
+			index = 0
+			texture_diffuse = "uf_star_shipyard_d.dds"
+			texture_normal = "uf_star_shipyard_n.dds"
+			texture_specular = "uf_star_shipyard_R.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "bld01_0_1|bld01_0_0Shape"
+			index = 0
+			texture_diffuse = "uf_star_shipyard_d.dds"
+			texture_normal = "uf_star_shipyard_n.dds"
+			texture_specular = "uf_star_shipyard_R.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "bld01_0_2|bld01_0_0Shape"
+			index = 0
+			texture_diffuse = "uf_star_shipyard_d.dds"
+			texture_normal = "uf_star_shipyard_n.dds"
+			texture_specular = "uf_star_shipyard_R.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "bld01_0_3|bld01_0_0Shape"
+			index = 0
+			texture_diffuse = "uf_star_shipyard_d.dds"
+			texture_normal = "uf_star_shipyard_n.dds"
+			texture_specular = "uf_star_shipyard_R.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "bld01_0_4|bld01_0_0Shape"
+			index = 0
+			texture_diffuse = "uf_star_shipyard_d.dds"
+			texture_normal = "uf_star_shipyard_n.dds"
+			texture_specular = "uf_star_shipyard_R.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "bld01_0_5|bld01_0_0Shape"
+			index = 0
+			texture_diffuse = "uf_star_shipyard_d.dds"
+			texture_normal = "uf_star_shipyard_n.dds"
+			texture_specular = "uf_star_shipyard_R.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "bld01_0_6|bld01_0_0Shape"
+			index = 0
+			texture_diffuse = "uf_star_shipyard_d.dds"
+			texture_normal = "uf_star_shipyard_n.dds"
+			texture_specular = "uf_star_shipyard_R.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "bld01_0_7|bld01_0_0Shape"
+			index = 0
+			texture_diffuse = "uf_star_shipyard_d.dds"
+			texture_normal = "uf_star_shipyard_n.dds"
+			texture_specular = "uf_star_shipyard_R.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+}

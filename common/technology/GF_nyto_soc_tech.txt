@@ -1,0 +1,82 @@
+#EILD军团
+tech_GF_nyto_EILD_brain_wave = {
+	icon = tech_GF_nyto_EILD_brain_wave
+	cost = 50000
+	area = society
+	category = { biology }
+	tier = 5
+	is_rare = yes
+	weight = 5
+	potential = {has_authority = auth_GF_paradeus}
+	ai_weight = {factor = 0}
+	
+}
+# 战争修女
+tech_GF_nyto_war_nuns = {
+	icon = tech_GF_nyto_war_nuns
+	cost = 30000
+	area = society
+	category = { biology }
+	tier = 3
+	is_rare = yes
+	prerequisites = { "tech_GF_nyto_biomechanics" }
+	weight = 5
+	potential = {has_authority = auth_GF_paradeus}	
+	ai_weight = {factor = 3}
+}
+# Biomechanics巨型战体
+tech_GF_nyto_biomechanics = {
+	icon = tech_GF_nyto_biomechanics
+	cost = 20000
+	area = society
+	category = { biology }
+	tier = 2
+	is_rare = no
+	prerequisites = { "tech_GF_nyto_robomodding_points_2" }
+	weight = 5
+	potential = {has_authority = auth_GF_paradeus}	
+	ai_weight = {factor = 3}
+}
+# Adaptive Combat Algorithms机械战甲
+tech_GF_nyto_adaptive_combat_algorithms = {
+	icon = tech_GF_nyto_adaptive_combat_algorithms
+	cost = 10000
+	area = society
+	tier = 1
+	is_rare = no
+	category = { biology }	
+	prerequisites = { "tech_GF_nyto_robomodding_points_1" }
+	weight = 5
+	potential = {has_authority = auth_GF_paradeus}
+	ai_weight = {factor = 3}
+}
+#Gene Tailoring基因裁剪
+@tech_gene_tailoring_POINTS = 1
+tech_GF_nyto_gene_tailoring = {
+	icon = tech_gene_tailoring
+	cost = 10000
+	area = society
+	tier = 1
+	is_rare = yes
+	category = { biology }
+	prerequisites = { "tech_GF_nyto_robomodding_points_1" }
+	weight = 5
+	modifier = {NYTO_species_trait_points_add = 3}
+	potential = {has_authority = auth_GF_paradeus}
+	ai_weight = {factor = 3}
+}
+#Targeted Gene Expressions基因定向表达
+@tech_gene_expressions_POINTS = 1
+tech_GF_nyto_gene_expressions = {
+	icon = tech_gene_expressions
+	cost = 20000
+	area = society
+	category = { biology }
+	tier = 2
+	is_rare = yes
+	prerequisites = { "tech_GF_nyto_robomodding_points_2" }
+	weight = 5
+	modifier = {NYTO_species_trait_points_add = 3}
+	potential = {has_authority = auth_GF_paradeus}
+	ai_weight = {factor = 3}
+}

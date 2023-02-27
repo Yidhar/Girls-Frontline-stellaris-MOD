@@ -1,0 +1,15 @@
+objectTypes = {
+	pdxmesh = {
+		name = "GF_nyto_01_science_mesh"
+		file = "gfx/models/ships/GF_nyto_01/GF_nyto_01_science.mesh"
+		scale = 1
+		meshsettings = {
+			name = "S_SS_Mod_E_01Shape"
+			index = 0
+			texture_diffuse = "S_SS_Tex_E_01_d.dds"
+			texture_normal = "S_SS_Tex_E_01_n.dds"
+			texture_specular = "S_SS_Tex_E_01_s.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+}

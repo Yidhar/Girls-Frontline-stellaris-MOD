@@ -1,0 +1,13 @@
+﻿l_english:
+pc_GF_nyto_embers_gloomy:0 "Dimmed Ashes"
+pc_GF_nyto_embers_gloomy_desc:0 "Rocky planet with harsh weather, atmosphere contains  thick clouds of collapse particles and collapsation storms, radiation brought by these is very deadly to both organisms and electronics. High local radiation makes it hard for most organisms to survive, apart from limited strains of mutated aggregated organisms. "
+pc_GF_nyto_devil_furnace:0 "Devil's Furnance"
+pc_GF_nyto_devil_furnace_desc:0 "Rocky planet with harsh weather, atmosphere contains  thick clouds of collapse particles and frequent collapsation storms, bringing overdose of radiation deadly to both organisms and electronics. High local radiation makes it hard for most organisms to survive, apart from limited strains of mutated aggregated organisms. "
+pc_GFnyto_portal_star:0 "Josiah's Sanctuary"
+pc_GFnyto_portal_star_desc:0 "Earth is empty chaos. Surface of abyss stays dark. Spirit of God operates on the water surface.The earth also was corrupt before God, and the earth was filled with violence. And God saw that the wickedness of man [was] great in the earth, and [that] every imagination of the thoughts of his heart [was] only evil continually. And, behold, I, even I, do bring a flood of waters upon the earth, to destroy all flesh, wherein [is] the breath of life, from under heaven; [and] every thing that [is] in the earth shall die. Dark days awaits, God in all his mercy and wisdom moves Josiah to eternal confort."
+mod_pc_GF_nyto_embers_gloomy_habitability:0 "Dimmed Ashes Planet Preference"
+mod_pc_GF_nyto_devil_furnace_habitability:0 "Devil's Furnance Planet Preference"
+ GF_nyto_Radiation:0 "Collapse Radiation Fallout"
+ GF_nyto_Radiation2:0 "$GF_nyto_Radiation$"
+GF_nyto_Radiation_desc:0 "§W This planet has suffered heavy Collapse Radiation.\n Current Pollution level:§!§R[planet.GFnyto_plante_wrlv]§!%\n Epiphyllum Growers will provide high amount of pollution during flowering period, and all Collapse fluid related jobs will also provide small does of radiation pollution"
+GF_nyto_Radiation2_desc:0 "$GF_nyto_Radiation_desc$"

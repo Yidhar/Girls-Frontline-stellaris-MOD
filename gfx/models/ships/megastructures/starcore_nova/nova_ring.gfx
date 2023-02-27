@@ -1,0 +1,16 @@
+objectTypes = {
+	pdxmesh = {
+		name = "nova_ring_mesh"
+		file = "gfx/models/ships/megastructures/starcore_nova/nova_ring.mesh"
+		scale = 1.0
+		animation = { id = "idle1"			type = "nova_ring_idle1_animation" }
+		meshsettings = {
+			name = "XYShape"
+			index = 0
+			texture_diffuse = "B_RelicCore_d_tex_lod_1.dds"
+			texture_normal = "B_RelicCore_n_tex_lod_1.dds"
+			texture_specular = "B_RelicCore_s_tex_lod_1.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+}

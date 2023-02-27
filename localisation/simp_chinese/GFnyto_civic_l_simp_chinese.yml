@@ -1,0 +1,51 @@
+﻿l_simp_chinese:
+
+civic_GF_nyto_90wish:0 "90wish"
+civic_GF_nyto_90wish_desc:0 "隶属于国防部的科研组织,通常情况下其他国家禁止的实验项目在90wish都是被允许进行的。允许建造具有§PX§!槽的护卫舰."
+#civic_GF_nyto_90wish_text:0 ""
+
+civic_GF_nyto_forward_base:0 "星河远征"
+civic_GF_nyto_forward_base_desc:0 "长夜终尽!摆脱母星恶劣的环境后,我们最重要的事情就是找到新的殖民地！\n每次新征服一个星球时 获得5年限时建筑 前进营地\n开局时获得为期5年的“远征”国家修正"
+#civic_GF_nyto_forward_base_text:0 "允许在非§G余烬黯然星球§!和非§R恶魔熔炉星球§!建造建筑§Y前进基地§!,增加专家职业§Y开拓者§!。"
+
+civic_GF_nyto_phase_technician:0 "相位技师"
+civic_GF_nyto_phase_technician_desc:0 "将§G余烬黯然星球§!和非§R恶魔熔炉星球§!的£job£§Y技工§!替换为£job£§Y相位技师§!。§Y相位技师§!可以产出更多的§Y能量币§!£energy£和§Y工程学点数§!£engineering£。"
+#civic_GF_nyto_phase_technician_text:0 "将§G余烬黯然星球§!和非§R恶魔熔炉星球§!的§Y技工§!替换为§Y相位技师§!。"
+
+civic_GF_nyto_special_operations_command:0 "特战司"
+civic_GF_nyto_special_operations_command_desc:0 "每个人生来就是为了战斗的胜利.每一场失败都没有人是无辜的\n允许人口生成£job£§Y白骑士§!陆军。"
+civic_GF_nyto_special_operations_command_text:0 ""
+
+civic_GF_nyto_technology_minister:0 "科技牧师"
+civic_GF_nyto_technology_minister_desc:0 "将§G余烬黯然星球§!和非§R恶魔熔炉星球§!的£job£§Y科研人员§!替换为£job£§Y科技牧师§!。§Y科技牧师§!可以产出更多的§Y物理学点数§!£physics£§Y生物学点数§!£society£§Y工程学点数§!£engineering£和§Y凝聚力§!£unity£§Y舒适度§!£amenities£。""
+
+civic_GF_nyto_see_angel:0 "看见天使"
+civic_GF_nyto_see_angel_desc:0 "§R我盲目地大发雷霆,剪去大姐的羽翼,砍下三妹的头颅。大姐把我砍成两段,害我只剩下双腿。她全身残破不堪,在我消失后仍持续守护着我们的秘密。§!"
+civic_GF_nyto_war:0 "战争"
+civic_GF_nyto_war_desc:0 "§R所有国家舰船射速-50%§!"
+civic_GF_nyto_famine:0 "饥荒"
+civic_GF_nyto_famine_desc:0 "§R所有国家食物产出-50%§!"
+civic_GF_nyto_plague:0 "瘟疫"
+civic_GF_nyto_plague_desc:0 "§R所有国家迁入增速-50%§!"
+civic_GF_nyto_death:0 "死亡"
+civic_GF_nyto_death_desc:0 "§R所有国家人口增速-50%§!"
+GF_nyto_see_angel:0 "§R饥荒§! 人口停止增长 \n§R战争§! 和平不能维持 \n§R瘟疫§! 人口不能迁移 \n§R死亡§! 人口自动死亡"
+
+ civic_GF_nyoto_armor_train:0 "永恒国度"
+civic_GF_nyoto_armor_train_desc:0 "人是没有安全感的生物,无论什么样的钢铁防线在这无边宇宙中都显得过于渺小\n§R允许无限制建造永固要塞§!"
+mod_armies_energy_upkeep_mult:0 "陆军$energy$维护费用:"
+
+ civic_Gf_nyto_tanhua_pluse:0 "昙花共生"
+ civic_Gf_nyto_tanhua_pluse_desc:0 "妖艳的花朵在人们的身上肆意绽放\n昙花种植区将额外提供1$job_GFnyto_Epiphyllum_job$"
+
+civic_GF_nyto_reup:0 "高效回收"
+civic_GF_nyto_reup_desc:0 "我们必须利用好我们手头上的每一份资源,才有可能迎来曙光\n§R成功防御ELID入侵将获得额外资源§!"
+mod_planet_jobs_consumer_goods_upkeep_mult:0 "岗位$consumer_goods$维护费用:"
+
+civic_GF_nyto_heart_of_suffering:0 "苦难之心"
+civic_GF_nyto_heart_of_suffering_desc:0 "轻声呼唤我的名字吧,用泉水来把我饮饱吧,你那无垠的,难言的心是否会回应呢"
+civic_GF_nyto_heart_of_suffering_modif:0 "开局直接获得ELID人口并不再触发ELID入侵事件,每次征服新的星球时会将半数人口转换为ELID。\n若携带星河远征国策将在开局时替换为复仇远征\n§R将无法使用春天唤醒决议§!"
+
+civic_GF_nyto_Vengeance_Crusade:0 "复仇远征"
+civic_GF_nyto_Vengeance_Crusade_desc:0 "愿神明终于一日能宽恕我,愿我能相称于这顶王冠"
+civic_GF_nyto_Vengeance_Crusade_modif:0 "§R前进营地将不再有时限,并且额外提供些许buff\n不允许任何人口生长\n初始解锁坍塌液抛射与贸易封锁轰炸类型§!"

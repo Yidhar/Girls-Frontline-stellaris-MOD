@@ -1,0 +1,35 @@
+objectTypes = {
+	pdxmesh = {
+		name = "GF_nyto_02_battleship_mesh"
+		file = "gfx/models/ships/GF_nyto_02/GF_nyto_02_battleship.mesh"
+		scale = 1
+		meshsettings = {
+			name = "S_04Battleship_mod_lod_0_01Shape"
+			index = 0
+			texture_diffuse = "GF_nyto_02_battleship_d.dds"
+			texture_normal = "GF_nyto_02_battleship_n.dds"
+			texture_specular = "GF_nyto_02_battleship_s.dds"
+			shader = "PdxMeshShip"
+		}
+		meshsettings = {
+			name = "S_04Battleship_mod_lod_0_02Shape"
+			index = 0
+			texture_diffuse = "GF_nyto_02_battleship_d2.dds"
+			texture_normal = "GF_nyto_02_battleship_n2.dds"
+			texture_specular = "GF_nyto_02_battleship_s2.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+	pdxmesh = {
+		name = "GF_nyto_02_battleship_locator_mesh"
+		file = "gfx/models/ships/GF_nyto_02/GF_nyto_02_battleship_locator.mesh"
+	}
+	pdxmesh ={
+		name = "GF_nyto_02_battleship_pluse_mesh"
+		file = "gfx/models/ships/GF_nyto_02/GF_nyto_02_battleship_pluse.mesh"
+	}
+	pdxmesh = {
+		name = "GF_nyto_02_battleship_pluse_locator_mesh"
+		file = "gfx/models/ships/GF_nyto_02/GF_nyto_02_battleship_pluse_locator.mesh"
+	}
+}

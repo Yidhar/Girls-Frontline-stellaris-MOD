@@ -1,0 +1,81 @@
+objectTypes={
+	pdxparticle ={
+		name = GFnyto_w_hit
+		type = GFnyto_neutron_planet_laser_hit_effect
+	}
+	pdxparticle ={
+		name = GFnyto_w_muzzle
+		type = GFnyto_neutron_planet_muzzle_windup_effect
+	}
+	pdxparticle ={
+		name = GFnyto_w_windup
+		type = GFnyto_neutron_planet_muzzle_windup_effect
+	}	
+	pdxparticle = {
+		name = "GF_nyto_T_weapon_hit_effect"
+		type = "GF_nyto_T_weapon_file"		
+		scale = 20
+	}
+	pdxparticle = {
+		name = "GF_nyto_T_weapon_shield_hit_effect"
+		type = "projectile_shield_hit_effect"
+		
+		scale = 20
+	}
+	pdxparticle = {
+		name = "GF_nyto_T_weapon_idle_particle"
+		type = "neutron_torpedoes_idle_file"
+		
+		scale = 30.0
+	}
+	pdxparticle = {
+		name = "GF_nyto_sm2_weapon_idle_particle"
+		type = "neutron_torpedoes_idle_file"
+		
+		scale = 1.0
+	}
+	pdxparticle = {
+		name = "GF_nyto_sm2_weapon_muzzle_particle"
+		type = "GF_nyto_T_weapon_file"
+		
+		scale = 10
+	}
+	pdxparticle = {
+		name = "GF_nyto_sm_weapon_hit_effect"
+		type = "neutron_torpedoes_hit_effect"
+		
+		scale = 1
+	}
+	pdxparticle = {
+		name = "GF_nyto_sm_weapon_shield_hit_effect"
+		type = "projectile_shield_hit_effect"
+		
+		scale = 5
+	}
+	pdxparticle = {
+		name = "GFnyto_fe02_titan_laser_hit_effect"
+		type = "fe02_titan_laser_hit_effect"
+		
+		scale = 0.6
+	}
+	pdxparticle ={
+		name = "weapon_beacon_effect"
+		type = "weapon_beacon_effect"
+		scale = 5
+	}
+	pdxparticle ={
+		name = "weapon_beacon_fire_effect"
+		type = "weapon_beacon_fire_effect"
+		scale = 15
+	}
+	pdxparticle ={
+		name = GF_nyto_Laser_weapon
+		type = GF_nyto_Laser_weapon
+		scale = 1.0
+	}
+	pdxparticle ={
+		name = GF_nyto_G_weapon
+		type = GF_nyto_G_weapon
+		scale = 1.0
+	}
+}

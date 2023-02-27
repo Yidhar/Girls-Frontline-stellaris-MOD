@@ -1,0 +1,230 @@
+GF_nyto_elid_attack = {
+	if = {
+		limit = {
+			is_scope_type = planet
+		}
+		if = {
+			limit = {
+				has_modifier = GFnyto_flower_period
+			}
+			change_variable = {
+				which = GFnyto_Eild_level
+				value = 5
+			}
+		}
+		if = {
+			#单位是否压缩
+			limit = {
+				check_variable = {
+					#否
+					which = GFnyto_Eild_level
+					value < 50
+				}
+			}
+			while = {
+				count = GFnyto_Eild_level
+				random_list = {
+					50 = {
+						create_army = {
+							name = "EILD"
+							owner = event_target:EILD_country
+							species = event_target:ELID_species
+							type = "GF_nyto_eild_army_1"
+						}
+						modifier = {
+							divide = GFnyto_Eild_level
+						}
+					}
+					50 = {
+						create_army = {
+							name = "EILD"
+							owner = event_target:EILD_country
+							species = event_target:ELID_species
+							type = "GF_nyto_eild_army_2"
+						}
+						modifier = {
+							subtract = GFnyto_Eild_level
+						}
+					}
+					1 = {
+						create_army = {
+							name = "EILD"
+							owner = event_target:EILD_country
+							species = event_target:ELID_species
+							type = "GF_nyto_eild_army_3"
+						}
+						modifier = {
+							mult = GFnyto_Eild_level
+						}
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					#否
+					which = GFnyto_Eild_level
+					value >= 50
+				}
+				check_variable = {
+					#否
+					which = GFnyto_Eild_level
+					value < 100
+				}
+			}
+			set_variable = {
+				which = GFnyto_Eild_level_rar
+				value = GFnyto_Eild_level
+			}
+			multiply_variable = {
+				which = GFnyto_Eild_level_rar
+				value = 0.25
+			}
+			if = {
+				limit = {
+					check_variable = {
+						#否
+						which = GFnyto_Eild_level
+						value >= 100
+					}
+					no_scope = {
+						years_passed > 30
+					}
+				}
+				event_target:EILD_country = {
+					add_modifier = {
+						modifier = GF_nyto_Elid_level2
+						multiplier = prev.GFnyto_Eild_level_rar
+					}
+				}
+			}
+			event_target:EILD_country = {
+				add_modifier = {
+					modifier = GF_nyto_Elid_level
+					multiplier = prev.GFnyto_Eild_level_rar
+				}
+			}
+			while = {
+				count = GFnyto_Eild_level_rar
+				create_army = {
+					name = "EILD"
+					owner = event_target:EILD_country
+					species = event_target:ELID_species
+					type = "GF_nyto_eild_army_3"
+				}
+			}
+		}
+		# if = {
+		# 	limit = { 
+		# 		check_variable = { #elid boss
+		# 			which = GFnyto_Eild_level
+		# 			value > 50
+		# 		}
+		# 	}
+		# 	random = {
+		# 		chance = 10
+		# 	}
+		# }
+	}
+}
+
+GFnyto_planet_wrlv_numpy = {
+	#污染初始化
+	set_variable = {
+		which = GFnyto_plante_wrlv_contaminate
+		value = 0
+	}
+	#净化初始
+	set_variable = {
+		which = GFnyto_plante_wrlv_cleanse
+		value = 0
+	}
+	#######污染	
+	###岗位
+	change_variable = {
+		which = GFnyto_plante_wrlv_contaminate
+		value = collapse_particle_zip_num
+	}
+	change_variable = {
+		which = GFnyto_plante_wrlv_contaminate
+		value = collapse_particle_rar_num
+	}
+	change_variable = {
+		which = GFnyto_plante_wrlv_contaminate
+		value = Epiphyllum_job_num
+	}
+	change_variable = {
+		which = GFnyto_plante_wrlv_contaminate
+		value = GFnyto_collapse_particle_researcher_num
+	}
+	###区划
+	change_variable = {
+		which = GFnyto_plante_wrlv_contaminate
+		value = district_GF_nyto_pc_toxic_alloy_num
+	}
+	change_variable = {
+		which = GFnyto_plante_wrlv_contaminate
+		value = district_GF_nyto_pc_toxic_energy_num
+	}
+	change_variable = {
+		which = GFnyto_plante_wrlv_contaminate
+		value = district_GF_nyto_pc_toxic_leisure_num
+	}
+	change_variable = {
+		which = GFnyto_plante_wrlv_contaminate
+		value = district_GF_nyto_pc_toxic_science_num
+	}
+	######净化	
+	change_variable = {
+		which = GFnyto_plante_wrlv_cleanse
+		value = affluence_center_purify
+	}
+	change_variable = {
+		which = GFnyto_plante_wrlv_cleanse
+		value = Recoil_decay_barrier_center_purify
+	}
+	######结算
+	change_variable = {
+		which = GFnyto_plante_wrlv
+		value = GFnyto_plante_wrlv_contaminate
+	}
+	subtract_variable = {
+		which = GFnyto_plante_wrlv
+		value = GFnyto_plante_wrlv_cleanse
+	}
+	if = {
+		limit = {
+			not = {
+				is_planet_class = pc_GFnytp_habitis
+				is_planet_class = pc_GF_nyto_devil_furnace
+				is_planet_class = pc_GF_nyto_embers_gloomy
+			}
+		}
+		subtract_variable = {
+			which = GFnyto_plante_wrlv
+			value = planet_size_cleanse
+		}
+	}
+	#设置最大值
+	if = {
+		limit = { check_variable = { which = GFnyto_plante_wrlv value > 1000 } }
+		set_variable = {
+			which = GFnyto_plante_wrlv
+			value = 1000
+		}
+	}
+	#设置最小值
+	if = {
+		limit = {
+			check_variable = {
+				which = GFnyto_plante_wrlv
+				value < 0
+			}
+		}
+		set_variable = {
+			which = GFnyto_plante_wrlv
+			value = 0
+		}
+	}
+}

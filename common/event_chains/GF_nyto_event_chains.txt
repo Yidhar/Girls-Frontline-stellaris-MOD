@@ -1,0 +1,25 @@
+GFnyto_eild_attack_chain = {
+	icon = "gfx/interface/icons/situation_log/situation_log_alert.dds"
+	picture = GFX_evt_GFnyto_eild_collapse_biosphere
+}
+GFnyto_colony_eild_attack_chain = {
+	icon = "gfx/interface/icons/situation_log/situation_log_alert.dds"
+	picture = GFX_evt_GFnyto_eild_collapse_biosphere
+}
+GFnyto_paradeus_pioneer_chain = {
+	icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
+	picture = GFX_evt_nyto_unknown_civilization_202055
+}
+GFnyto_data_mining_chain ={
+	icon = "gfx/interface/icons/situation_log/situation_log_alert.dds"
+	picture = GFX_evt_GFnyto_lost_contact
+}
+#涅托灾飞
+GFnyto_crisis_chain = {
+	icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
+	picture = GFX_evt_GFnyto_conquer_hell
+	counter = {
+		GFnyto_empire_maintenance = {
+		}
+	}
+}

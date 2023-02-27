@@ -1,0 +1,116 @@
+
+#穿甲弹
+utility_component_template = {
+	key = "tech_GF_nyto_armor_piercing_bullet"
+	size = aux
+	icon = "GFX_ship_part_GFnyto_armor_piercing_bullet"
+	icon_frame = 1
+	power = -10
+	modifier = {
+		ship_armor_penetration_mult = 0.3
+	}	
+	component_set = "GF_nyto_armor_piercing_bullet"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 100
+			GF_nyto_collapse_liquid=1
+		}		
+	}
+	prerequisites = {"tech_GF_nyto_armor_piercing_bullet"}
+	ai_weight = {
+		weight = 50
+	}
+}
+#高爆弹
+utility_component_template = {
+	key = "tech_GF_nyto_high_explosive_bomb"
+	size = aux
+	icon = "GFX_ship_part_GFnyto_high_explosive_bomb"
+	icon_frame = 1
+	power = -10
+	modifier = {ship_hull_damage_mult = 0.4}	
+	component_set = "GF_nyto_high_explosive_bomb"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 100
+			GF_nyto_collapse_liquid=1
+		}		
+	}
+	prerequisites = {"tech_GF_nyto_high_explosive_bomb"}
+	ai_weight = {
+		weight = 50
+	}
+}
+#空投仓
+utility_component_template = {
+	key = "tech_GF_nyto_marine_corps"
+	size = aux
+	icon = "GFX_ship_part_GFnyto_marine_corps"
+	icon_frame = 1
+	power = -10
+	modifier = {ship_hull_add = 1000}	
+	component_set = "GF_nyto_marine_corps"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 100
+			GF_nyto_collapse_liquid=1
+		}		
+	}
+	prerequisites = {"tech_GF_nyto_marine_corps"}
+}
+#伤害控制小组
+utility_component_template = {
+	key = "tech_GF_nyto_injury_control_team"
+	size = aux
+	icon = "GFX_ship_part_GFnyto_injury_control_team"
+	icon_frame = 1
+	power = -10
+	modifier = {
+		ship_hull_regen_add_perc = 1
+		ship_shield_regen_add_perc = 1
+		ship_armor_regen_add_perc = 1
+	}	
+	component_set = "GF_nyto_injury_control_team"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 10
+			GF_nyto_collapse_liquid=100
+		}		
+	}
+	prerequisites = {"tech_GF_nyto_injury_control_team"}
+}
+#侦察机
+utility_component_template = {
+	key = "tech_GF_nyto_reconnaissance_aircraft"
+	size = aux
+	icon = "GFX_ship_part_GFnyto_reconnaissance_aircraft"
+	icon_frame = 1
+	power = -10
+	modifier = {
+		ship_weapon_range_mult = 0.1
+		ship_sensor_range_add = 1
+		ship_tracking_add = 15
+	}	
+	component_set = "GF_nyto_reconnaissance_aircraft"
+	resources = {
+		category = ship_components
+		cost = {
+			trigger = {
+				owner = {
+					is_ai = no
+				}				
+			}
+			alloys = 100
+			GF_nyto_new_fire_control_unit =1
+			GF_nyto_collapse_liquid=1
+		}		
+	}
+	prerequisites = {"tech_GFnyto_war_theory_b1"}
+	ai_weight = {
+		weight = 100
+	}
+}

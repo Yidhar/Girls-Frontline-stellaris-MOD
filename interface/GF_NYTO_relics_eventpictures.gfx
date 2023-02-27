@@ -1,0 +1,221 @@
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_evt_nyto_unknown_civilization_202055"
+		texturefile = "gfx/event_pictures/evt_nyto_unknown_civilization_202055.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_nyto_unknown_civilization_202055_1"
+		texturefile = "gfx/event_pictures/evt_nyto_unknown_civilization_202055_1.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_nyto_unknown_civilization_202055_2"
+		texturefile = "gfx/event_pictures/evt_nyto_unknown_civilization_202055_2.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_nyto_unknown_civilization_202055_3"
+		texturefile = "gfx/event_pictures/evt_nyto_unknown_civilization_202055_3.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_nyto_unknown_civilization_202055_4"
+		texturefile = "gfx/event_pictures/evt_nyto_unknown_civilization_202055_4.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_nyto_unknown_civilization_202055_5"
+		texturefile = "gfx/event_pictures/evt_nyto_unknown_civilization_202055_5.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_nyto_unknown_civilization_202055_6"
+		texturefile = "gfx/event_pictures/evt_nyto_unknown_civilization_202055_6.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+}
+#特殊项目图片
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_evt_nyto_unknown_civilization_202055_1_1"
+		texturefile = "gfx/event_pictures/evt_nyto_unknown_civilization_202055_1_1.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_nyto_unknown_civilization_202055_2_1"
+		texturefile = "gfx/event_pictures/evt_nyto_unknown_civilization_202055_2_1.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_nyto_unknown_civilization_202055_3_1"
+		texturefile = "gfx/event_pictures/evt_nyto_unknown_civilization_202055_3_1.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_nyto_unknown_civilization_202055_4_1"
+		texturefile = "gfx/event_pictures/evt_nyto_unknown_civilization_202055_4_1.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_nyto_unknown_civilization_202055_5_1"
+		texturefile = "gfx/event_pictures/evt_nyto_unknown_civilization_202055_5_1.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_nyto_unknown_civilization_202055_6_1"
+		texturefile = "gfx/event_pictures/evt_nyto_unknown_civilization_202055_6_1.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_nyto_unknown_civilization_202055_end"
+		texturefile = "gfx/event_pictures/evt_nyto_unknown_civilization_202055_end.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_GF_nyto_end_years"
+		textureFile = "gfx/event_pictures/evt_GFnyto_end_yeards_1.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_GF_nyto_end_years_2"
+		textureFile = "gfx/event_pictures/evt_GFnyto_end_yeards_2.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_GF_nyto_end_years_3"
+		textureFile = "gfx/event_pictures/evt_GFnyto_end_yeards_3.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_GF_nyto_end_years_4"
+		textureFile = "gfx/event_pictures/evt_GFnyto_end_yeards_4.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_GF_nyto_end_years_5"
+		textureFile = "gfx/event_pictures/evt_GFnyto_end_yeards_5.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_GF_nyto_end_years_6"
+		textureFile = "gfx/event_pictures/evt_GFnyto_end_yeards_6.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_GF_nyto_end_years_7"
+		textureFile = "gfx/event_pictures/evt_GFnyto_end_yeards_7.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_GF_dc_nyto_1"
+		textureFile = "gfx/event_pictures/evt_dc_nyto_01.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_GF_dc_nyto_2"
+		textureFile = "gfx/event_pictures/evt_dc_nyto_02.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_GF_dc_nyto_3"
+		textureFile = "gfx/event_pictures/evt_dc_nyto_03.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_GF_dc_nyto_4"
+		textureFile = "gfx/event_pictures/evt_dc_nyto_04.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_GF_dc_nyto_5"
+		textureFile = "gfx/event_pictures/evt_dc_nyto_05.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_GF_dc_nyto_6"
+		textureFile = "gfx/event_pictures/evt_dc_nyto_06.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_GF_dc_nyto_7"
+		textureFile = "gfx/event_pictures/evt_dc_nyto_07.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_GF_dc_nyto_8"
+		textureFile = "gfx/event_pictures/evt_dc_nyto_08.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_GF_dc_nyto_9"
+		textureFile = "gfx/event_pictures/evt_dc_nyto_09.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_GF_dc_nyto_10"
+		textureFile = "gfx/event_pictures/evt_dc_nyto_010.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_GF_dc_nyto_11"
+		textureFile = "gfx/event_pictures/evt_dc_nyto_011.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_GF_dc_nyto_12"
+		textureFile = "gfx/event_pictures/evt_dc_nyto_012.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_GF_dc_nyto_13"
+		textureFile = "gfx/event_pictures/evt_dc_nyto_013.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_GF_dc_nyto_14"
+		textureFile = "gfx/event_pictures/evt_dc_nyto_014.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_GF_dc_nyto_15"
+		textureFile = "gfx/event_pictures/evt_dc_nyto_015.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+}

@@ -1,0 +1,145 @@
+#EILD事件链开始
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_evt_GFnyto_eild_collapse_biosphere"
+		texturefile = "gfx/event_pictures/evt_GFnyto_eild_collapse_biosphere.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+}
+#修复隔离墙
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_evt_GFnyto_defense_eild_attack_project"
+		texturefile = "gfx/event_pictures/evt_GFnyto_defense_eild_attack_project.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+}
+#修复隔离墙完成
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_evt_GFnyto_defense_eild_attack_project_complete"
+		texturefile = "gfx/event_pictures/evt_GFnyto_defense_eild_attack_project_complete.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+}
+#eild入侵
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_evt_GFnyto_eild_attack_begin"
+		texturefile = "gfx/event_pictures/evt_GFnyto_eild_attack_begin.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+}
+spriteTypes = {
+	frameAnimatedSpriteType = {	
+		name = "GFX_evt_GFnyto_Elid_attack_lose"
+		texturefile = "gfx/event_pictures/evt_GFnyto_Elid_attack_lose.dds"
+		noOfFrames = 27
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		transParencecheck = no
+		animation_rate_fps = 5
+		looping = no
+		play_on_show = yes
+		alwaystransparent =yes	
+	}	
+	frameAnimatedSpriteType = {	
+		name = "GFX_evt_GFnyto_Elid_attack_lose2"
+		texturefile = "gfx/event_pictures/evt_GFnyto_Elid_attack_lose2.dds"
+		noOfFrames = 32
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		transParencecheck = no
+		animation_rate_fps = 10
+		looping = no
+		play_on_show = yes
+		alwaystransparent =yes	
+	}	
+}
+#研究关停方法
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_evt_GFnyto_find_close_ruin_project"
+		texturefile = "gfx/event_pictures/evt_GFnyto_find_close_ruin_project.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+}
+#关停遗迹
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_evt_GFnyto_close_ruin_project"
+		texturefile = "gfx/event_pictures/evt_GFnyto_close_ruin_project.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+}
+#进攻结束
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_evt_GFnyto_eild_attack_end"
+		texturefile = "gfx/event_pictures/evt_GFnyto_eild_attack_end.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+}
+#花期
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_evt_GFnyto_flower_period"
+		texturefile = "gfx/event_pictures/evt_GFnyto_flower_period.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+}
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_evt_nyto_eild_army"
+		texturefile = "gfx/event_pictures/evt_nyto_eild_army.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+}
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_evt_colony_nyto_eild_attack_end"
+		texturefile = "gfx/event_pictures/evt_colony_nyto_eild_attack_end.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+}
+#巨构建筑图片
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_GFnyto_megastructure_collapse_reactor"
+		texturefile = "gfx/interface/planetview/GFnyto_megastructure_collapse_reactor.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_GFnyto_megastructure_habitat"
+		textureFile = "gfx/interface/planetview/GFnyto_habitat_02.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+}
+#学说
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_GFnyto_war_theory"
+		texturefile = "gfx/event_pictures/evt_GFnyto_war_theory.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+}
+#土豆服务器
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_evt_GFnyto_potato_server"
+		texturefile = "gfx/event_pictures/evt_GFnyto_potato_server.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+}

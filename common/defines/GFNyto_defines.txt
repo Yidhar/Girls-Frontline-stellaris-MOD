@@ -1,0 +1,4 @@
+NGameplay ={
+	PLANET_COMBAT_WIDTH_FROM_SIZE			= 1 # Extra combat width per tile
+	REINFORCE_MIA_TIME_MULT = 0  #即时增援
+}

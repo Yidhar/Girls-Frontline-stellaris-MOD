@@ -1,0 +1,47 @@
+#特殊项目,人造神明
+spriteTypes = {
+	spriteType = {
+		name = "GFX_evt_GFnyto_god_created_by_us_project"
+		texturefile = "gfx/event_pictures/evt_GFnyto_god_created_by_us_project.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+	#抽领袖的图片
+	spriteType = {
+		name = "GFX_evt_GFnyto_leader_Yegor"
+		texturefile = "gfx/event_pictures/evt_GFnyto_leader_Yegor.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_GFnyto_leader_Dandelion"
+		texturefile = "gfx/event_pictures/evt_GFnyto_leader_Dandelion.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_GFnyto_leader_Lycoris"
+		texturefile = "gfx/event_pictures/evt_GFnyto_leader_Lycoris.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+	#领袖换装的图片
+	spriteType = {
+		name = "GFX_evt_GFnyto_leader2_Yegor"
+		texturefile = "gfx/event_pictures/evt_GFnyto_leader2_Yegor.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_GFnyto_leader2_Dandelion"
+		texturefile = "gfx/event_pictures/evt_GFnyto_leader2_Dandelion.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_GFnyto_leader2_Lycoris"
+		texturefile = "gfx/event_pictures/evt_GFnyto_leader2_Lycoris.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+}

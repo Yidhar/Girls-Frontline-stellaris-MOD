@@ -1,0 +1,136 @@
+particle={
+	name="nyto_black_hole_file"
+	subsystem={
+		name="dust_smoke"
+		max_amount=100
+		slave_particles=0
+		emitter_type="sphere"
+		sphere_emitter_radius={ 20 0.2 }
+		sphere_emitter_yaw={ 0 180 }
+		sphere_emitter_pitch={ 0 0 }
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=yes
+		hide=no
+		texture={
+			file="gfx/particles/cloud.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=240
+			y=220
+			z=200
+			alpha=25,flash_fade
+		}
+		position={
+			x=0
+			y=0.2
+			z=0
+		}
+		start=0
+		duration=-1
+		emitter_yaw={ 0 0 }
+		emitter_pitch={ 0 0 }
+		velocity_pitch={ 0 0 }
+		velocity_yaw={ 0 0 }
+		velocity={ 0 0 }
+		life={ 8 0 }
+		emission=50
+		size={ 20 0 }
+		particle_yaw={ 0 0 }
+		particle_pitch={ 90 0 }
+		rotation={ 0 180 }
+		rotation_speed={ 10 0 }
+		force=point,orbit
+	}
+	subsystem={
+		name="rocks"
+		max_amount=400
+		slave_particles=0
+		emitter_type="sphere"
+		sphere_emitter_radius={ 18 4 }
+		sphere_emitter_yaw={ 0 180 }
+		sphere_emitter_pitch={ 0 0 }
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=yes
+		hide=no
+		texture={
+			file="gfx/particles/rain.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=240
+			y=220
+			z=200
+			alpha=50,flash_fade
+		}
+		position={
+			x=0
+			y=-0.2
+			z=0
+		}
+		start=0
+		duration=-1
+		emitter_yaw={ 0 0 }
+		emitter_pitch={ 0 0 }
+		velocity_pitch={ 0 0 }
+		velocity_yaw={ 0 0 }
+		velocity={ 0 0 }
+		life={ 8 0 }
+		emission=50
+		size={ 5 1 }
+		particle_yaw={ 0 10 }
+		particle_pitch={ 90 10 }
+		rotation={ 0 180 }
+		rotation_speed={ 5 0 }
+		force=orbit,point
+	}
+	animation={
+		name="flash_fade"
+		start=0
+		duration=1
+		repeat=no
+		minValue=0
+		maxValue=1
+		curve={
+			0 0 0.2 1 0.6 1 1 0 
+		}
+		op="MUL"
+		time="life"
+	}
+	force={
+		type="point"
+		name="point"
+		position={
+			0 0 0 
+		}
+		direction={
+			0 1 0 
+		}
+		local_force=yes
+		yaw=0
+		division=16
+		amount=-0.1
+	}
+	force={
+		type="spin"
+		name="orbit"
+		position={
+			0 0 0 
+		}
+		direction={
+			0 1 0 
+		}
+		local_force=yes
+		yaw=0
+		division=16
+		amount=0.075
+	}
+}

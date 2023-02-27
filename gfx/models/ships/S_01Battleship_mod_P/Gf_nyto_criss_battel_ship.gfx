@@ -1,0 +1,12 @@
+objectTypes = {
+	pdxmesh = {
+		name = "Gf_nyto_criss_battel_ship"
+		file = "gfx/models/ships/S_01Battleship_mod_P/Nyto_battleships_spirate.mesh"
+		scale = 1.0
+	}
+	pdxmesh = {
+		name = "Gf_nyto_criss_Dreadnought"
+		file = "gfx/models/ships/S_01Dreadnought_mod_P/Nyto_dreadnought_spirate_carrier.mesh"
+		scale = 1.0
+	}
+}

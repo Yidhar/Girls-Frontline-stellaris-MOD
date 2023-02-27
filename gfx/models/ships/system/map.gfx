@@ -1,0 +1,2383 @@
+objectTypes = {
+	pdxmesh = {
+		name = "map_mesh"
+		file = "gfx/models/ships/system/map.mesh"
+		scale = 1.0
+
+		meshsettings = {
+			name = "Mesh_LOD0Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD1Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD2Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD3Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD4Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD5Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD6Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD7Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD8Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD9Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD10Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD11Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD12Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD13Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD14Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD15Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD0_ncl1_4Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD16Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD17Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD18Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD19Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD20Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD21Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD22Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD23Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD24Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD25Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD26Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD27Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD28Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD0_ncl1_5Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD29Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD30Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD31Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD32Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD33Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD34Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD35Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD36Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD37Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD38Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD39Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD40Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD41Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD42Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD43Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD44Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD45Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD46Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD47Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD48Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD49Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD50Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD51Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD52Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD53Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD54Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD55Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD56Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD57Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD58Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD59Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD60Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD61Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD62Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD63Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD64Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD65Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD66Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD67Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD68Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD69Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD70Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD71Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD72Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD73Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD74Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD75Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD76Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD77Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD78Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD79Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD80Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD81Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD82Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD83Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD84Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD85Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD86Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD87Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD88Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD89Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD90Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD91Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD92Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD93Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD94Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD95Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD96Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD97Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD98Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD99Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD100Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD101Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD102Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD103Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD104Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD105Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD106Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD107Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD108Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD109Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD110Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD111Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD112Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD113Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD114Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD115Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD116Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD117Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD118Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD119Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD120Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD121Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD122Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD123Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD124Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD125Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD126Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD127Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD128Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD129Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD130Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD131Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD132Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD133Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD134Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD135Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD136Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD137Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD138Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD139Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD140Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD141Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD142Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD143Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD144Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD145Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD146Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD147Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD148Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD149Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD150Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD151Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD152Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD153Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD154Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD155Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD156Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD157Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD158Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD159Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD160Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD161Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD162Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD163Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD164Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD165Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD166Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD167Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD168Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD169Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD170Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD171Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD172Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD173Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD174Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD175Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD176Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD177Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD178Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD179Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD180Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD181Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD182Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD183Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD184Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD185Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD186Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD187Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD188Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD189Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD190Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD191Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD192Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD193Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD194Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD195Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD196Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD197Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD198Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD199Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD200Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD201Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD202Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD203Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD204Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD205Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD206Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD207Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD208Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD209Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD210Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD211Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD212Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD213Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD214Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD215Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD216Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD217Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD218Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD219Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD220Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD221Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD222Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD223Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD224Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD225Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD226Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD227Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD228Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD229Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD230Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD231Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD232Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD233Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD234Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD235Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD236Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD237Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD238Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD239Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD240Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD241Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD242Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD243Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD244Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD245Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD246Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD247Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD248Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD249Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD250Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD251Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD252Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD253Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD254Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD255Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD256Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD257Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD258Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD259Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD260Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD261Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD262Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD263Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD264Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD265Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD266Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD267Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD268Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD269Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD270Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD271Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD272Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD273Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD274Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD275Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD276Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD277Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD278Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD279Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD280Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD281Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD282Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD283Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD284Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD285Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD286Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD287Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD288Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD289Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD290Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD291Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD292Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD293Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Mesh_LOD294Shape"
+			index = 0
+			texture_diffuse = "common_floor_top_albedo.dds"
+			texture_normal = "common_floor_top_normal.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+}

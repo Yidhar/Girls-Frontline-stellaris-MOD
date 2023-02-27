@@ -1,0 +1,11 @@
+objectTypes = {
+	pdxmesh = {
+		name = "GF_Nyto_railgun_tracer_round_mesh"
+		file = "gfx/models/combat_items/tracer_round.mesh"
+		scale = 1.0
+		
+		meshsettings = {
+		texture_diffuse = "GF_Nyto_tracer_round_railgun.dds"
+		}	
+	}
+}

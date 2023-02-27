@@ -1,0 +1,31 @@
+@gaiaCost = 7500
+@gaiaTime = 3600
+@machineCost = 10000
+@machineTime = 7200
+@hiveCost = 10000
+@hiveTime = 7200
+# terraform_link = {
+# 	to = "pc_GF_nyto_devil_furnace"
+# 	from = "pc_nuked"	
+# 	energy = 10000
+# 	duration = 3600
+# 	condition = {has_technology = "tech_climate_restoration"}	
+# 	potential = {
+# #		owner = {  
+# #			has_authority = auth_GF_paradeus 
+# #			has_ascension_perk = ap_GF_nyto_conquer_hell
+# #		}
+# 		always = no
+# 	}
+# 	ai_weight = {
+# 		weight = 2
+# 		modifier = {
+# 			factor = 0
+# 			OR = {
+# 				is_mechanical_empire = yes
+# 				is_cyborg_empire = yes
+# 				has_authority = auth_machine_intelligence
+# 			}
+# 		}
+# 	}
+# }

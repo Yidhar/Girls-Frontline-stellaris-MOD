@@ -1,0 +1,255 @@
+namespace = GFnytocrisis
+###加分项
+#毁灭国家
+country_event = {
+	id = GFnytocrisis.1
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		from = {
+			has_ascension_perk = ap_GF_nyto_conquer_hell
+		}
+		from = {
+			owner = {
+				has_ascension_perk = ap_GF_nyto_conquer_hell
+			}
+		}
+	}
+	immediate = {
+		every_country = {
+			limit = { has_event_chain = "GFnyto_crisis_chain" }
+			add_event_chain_counter = {
+				event_chain = "GFnyto_crisis_chain"
+				counter = "GFnyto_empire_maintenance"
+				amount = 500
+			}
+			change_variable = {
+				which = "GFnyto_empire_maintenance"
+				value = 500
+			}
+		}
+	}
+}
+#沦陷行星
+country_event = {
+	id = GFnytocrisis.2
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		from = {
+			has_ascension_perk = ap_GF_nyto_conquer_hell
+		}
+		from = {
+			owner = {
+				has_ascension_perk = ap_GF_nyto_conquer_hell
+			}
+		}
+	}
+	immediate = {
+		every_country = {
+			limit = { has_event_chain = "GFnyto_crisis_chain" }
+			add_event_chain_counter = {
+				event_chain = "GFnyto_crisis_chain"
+				counter = "GFnyto_empire_maintenance"
+				amount = -200
+			}
+			subtract_variable = {
+				which = "GFnyto_empire_maintenance"
+				value = 200
+			}
+		}
+	}
+}
+#占领行星
+country_event = {
+	id = GFnytocrisis.3
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		this = {
+			has_ascension_perk = ap_GF_nyto_conquer_hell
+		}
+		this = {
+			owner = {
+				has_ascension_perk = ap_GF_nyto_conquer_hell
+			}
+		}
+	}
+	immediate = {
+		every_country = {
+			limit = { has_event_chain = "GFnyto_crisis_chain" }
+			add_event_chain_counter = {
+				event_chain = "GFnyto_crisis_chain"
+				counter = "GFnyto_empire_maintenance"
+				amount = 100
+			}
+			change_variable = {
+				which = "GFnyto_empire_maintenance"
+				value = 100
+			}
+		}
+	}
+}
+#摧毁舰船
+country_event = {
+	id = GFnytocrisis.4
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {owner = {has_ascension_perk = ap_GF_nyto_conquer_hell}}
+	immediate = {
+		every_country = {
+			limit = { has_event_chain = "GFnyto_crisis_chain" }
+			add_event_chain_counter = {
+				event_chain = "GFnyto_crisis_chain"
+				counter = "GFnyto_empire_maintenance"
+				amount = 5
+			}
+			change_variable = {
+				which = "GFnyto_empire_maintenance"
+				value = 5
+			}
+		}
+	}
+}
+#摧毁行星
+planet_event = {
+	id = GFnytocrisis.5
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		this = {
+			owner = {
+				has_ascension_perk = ap_GF_nyto_conquer_hell
+			}
+		}
+	}
+	immediate = {
+		every_country = {
+			limit = { has_event_chain = "GFnyto_crisis_chain" }
+			add_event_chain_counter = {
+				event_chain = "GFnyto_crisis_chain"
+				counter = "GFnyto_empire_maintenance"
+				amount = 500
+			}
+			change_variable = {
+				which = "GFnyto_empire_maintenance"
+				value = 500
+			}
+		}
+	}
+}
+planet_event = {
+	id = GFnytocrisis.6
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		from = {
+			has_ascension_perk = ap_GF_nyto_conquer_hell
+		}
+		from = {
+			owner = {
+				has_ascension_perk = ap_GF_nyto_conquer_hell
+			}
+		}
+	}
+	immediate = {
+		every_country = {
+			limit = { has_event_chain = "GFnyto_crisis_chain" }
+			add_event_chain_counter = {
+				event_chain = "GFnyto_crisis_chain"
+				counter = "GFnyto_empire_maintenance"
+				amount = -200
+			}
+			subtract_variable = {
+				which = "GFnyto_empire_maintenance"
+				value = 200
+			}
+		}
+	}
+}
+#摧毁恒星基地
+starbase_event = {
+	id = GFnytocrisis.7
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {from = {owner = {has_ascension_perk = ap_GF_nyto_conquer_hell}}}
+	immediate = {
+		every_country = {
+			limit = { has_event_chain = "GFnyto_crisis_chain" }
+			add_event_chain_counter = {
+				event_chain = "GFnyto_crisis_chain"
+				counter = "GFnyto_empire_maintenance"
+				amount = 5
+			}
+			change_variable = {
+				which = "GFnyto_empire_maintenance"
+				value = 5
+			}
+		}
+	}
+}
+#每月结算1
+country_event = {
+	id = GFnytocrisis.8
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {owner = {has_ascension_perk = ap_GF_nyto_conquer_hell}}
+	immediate = {
+		every_country = {
+			limit = { has_event_chain = "GFnyto_crisis_chain" }
+			add_event_chain_counter = {
+				event_chain = "GFnyto_crisis_chain"
+				counter = "GFnyto_empire_maintenance"
+				amount = -10				
+			}
+			subtract_variable = {
+				which = "GFnyto_empire_maintenance"
+				value = 10
+			}
+			hidden_effect = {country_event = {id = GFnytocrisis.9}}
+		}
+	}
+}
+#自鲨
+country_event = {
+	id = GFnytocrisis.9
+	title = "GFnytocrisis.4.name"
+	desc = "GFnytocrisis.4.desc"
+	picture = GFX_evt_GFnyto_bad_ending_1
+	show_sound = event_evolution_mastery
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		owner = {has_ascension_perk = ap_GF_nyto_conquer_hell}
+		check_variable = {
+			which = "GFnyto_empire_maintenance"
+			value < 0
+		}
+	}
+	option = {
+		name = GFnytocrisis.4.a
+		destroy_country = yes
+	}
+}
+#每年人口结算,每年杀死3个涅托人口
+country_event = {
+	id = GFnytocrisis.12
+	hide_window = yes
+	trigger = {owner = {has_ascension_perk = ap_GF_nyto_conquer_hell}}
+	mean_time_to_happen = {years = 1}
+	immediate = {
+		every_owned_planet = {
+			limit = {
+				num_pops > 0
+			}
+			while = {
+				count = 3
+				random_owned_pop = {
+					limit = {is_exact_same_species = root}
+					kill_pop = yes
+				}
+			}
+		}
+	}
+}
+

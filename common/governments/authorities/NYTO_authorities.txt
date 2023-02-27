@@ -1,0 +1,36 @@
+auth_GF_paradeus = {
+	machine_empire = yes #是否是机械帝国
+	has_heir = no #继承人
+	uses_mandates= no #是否使用承诺
+	max_election_candidates=4 #最大候选人槽位
+	election_term_years=10 #选举年限
+	election_term_variance=5 #选举年限的上下浮动区间
+	can_have_emergency_elections=yes #能否重新选举 
+	emergency_election_cost=50 #重新选举的影响力花费 
+	election_type = none #选举类型,目前有“无”、“民主”、“寡头”三个类型
+	#election_type=democratic #选举类型,目前有“无”、“民主”、“寡头”三个类型
+    has_factions = yes #派系
+    can_reform = no #改革政府
+	localization_postfix = GF_paradeus #本地化前缀
+	has_agendas = yes #议程
+	valid_for_released_vassal = yes #能否放出这样政体的附庸
+	possible = {
+		species_archetype = {
+			value = NYTO
+		}
+	}
+	icon = "gfx/interface/icons/governments/GF_paradeus.dds"
+	random_weight = {modifier = {factor = 0}}
+	country_modifier = {
+		pop_demotion_time_mult = -1
+		planet_stability_add = 50
+		planet_max_buildings_add = 4
+		num_tech_alternatives_add = 3
+		planet_pops_consumer_goods_upkeep_mult = -0.2	
+	}
+	
+	traits = {
+		trait = trait_GF_nyto_collapse_radiation_adaptation
+	}
+	tags={BE_APPOINTED_BY_PALADISIDEGUOJIAJIESHAO}
+}

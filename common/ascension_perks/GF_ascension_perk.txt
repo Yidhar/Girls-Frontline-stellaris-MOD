@@ -1,0 +1,166 @@
+#复活
+ap_GF_nyto_resurrection= {
+	on_enabled = {
+		custom_tooltip = "ap_GF_nyto_resurrection_text"
+		hidden_effect = {country_event = { id = GFnyto_ascension_perk.1 }}
+	}
+	modifier = {}
+	potential = {
+		has_origin =origin_GF_nyto_the_last_light
+		has_ascension_perk = ap_GF_nyto_noussphere
+		NOT = {has_ascension_perk = ap_GF_nyto_resurrection}
+	}	
+	possible = {
+		custom_tooltip = {
+			fail_text = "Failed_to_complete_the_capital_ruins"
+			has_country_flag = GFnyto_has_done_zion_event_chain
+			has_ascension_perk = ap_GF_nyto_noussphere
+		}
+	}
+	
+	on_enabled = {
+		hidden_effect = {
+			if = {
+				limit = { is_ai = no }
+				country_event = {
+					id = GFnyto_ascension_perk.3
+				}
+			}
+			if = {
+				limit = { is_ai = yes }
+				give_technology = {
+					tech = "tech_GF_nyto_Deep_space"
+				}
+				give_technology = {
+					tech = tech_GF_nyto_light_thruster
+				}
+				give_technology = {
+					tech = tech_GF_nyto_Beacon
+				}
+				give_technology = {
+					tech = tech_GF_nyto_bright_poetry
+				}
+				give_technology = {
+					tech = tech_GF_nyto_godenergy
+				}			
+			}	
+		}	
+	}
+	ai_weight = {factor = 500}
+}
+###天灾飞升###
+#征服地狱
+ap_GF_nyto_conquer_hell= {
+	on_enabled = {
+		custom_tooltip = "ap_GF_nyto_conquer_hell_text"
+		hidden_effect = {country_event = { id = GFnyto_ascension_perk.2 }}
+	}
+	modifier = {
+		starbase_shipyard_build_speed_mult = 2		
+		# ship_shield_penetration_mult = 0.3 #护盾穿透
+		# ship_armor_penetration_mult= 0.3 #护甲穿透
+		ship_weapon_damage = 0.5
+		ship_tracking_add=1 #追踪	
+		ship_orbital_bombardment_mult = 0.5	
+		country_war_exhaustion_mult = -1	
+	}
+	potential = {
+		has_ascension_perk = ap_GF_nyto_resurrection
+		NOT = { has_ascension_perk = ap_GF_nyto_imba }
+		NOT = {has_ascension_perk = ap_GF_nyto_conquer_hell}
+		NOT = {any_playable_country = {has_ascension_perk = ap_GF_nyto_conquer_hell}}
+	}	
+	ai_weight = {factor = 0}
+}
+#锡安降临
+ap_GF_nyto_imba = {
+	potential = {
+		has_ascension_perk = ap_GF_nyto_resurrection
+		NOT = {
+			has_ascension_perk = ap_GF_nyto_imba
+		    has_ascension_perk = ap_GF_nyto_conquer_hell
+		}
+	}
+	possible = {
+		OR = {
+			custom_tooltip = {
+				fail_text = "ap_GF_nyto_imba_limit"
+				has_country_flag = GF_nyto_complete_research			
+			}	
+			hidden_trigger = {
+				is_ai = yes
+			}			
+		}			
+	}
+	modifier = {
+		country_megastructure_build_cap_add = 5
+		megastructure_build_speed_add = 2.5
+		building_time_mult = -0.7
+		planet_amenities_mult = 1
+		planet_decision_enact_speed_mult = 1
+	}
+	ai_weight = {
+		factor = 0
+	}
+	on_enabled = {
+		# country_event = {
+		# 	id = GFnyto_ascension_perk.669
+		# }
+	}
+}
+
+#noussphere领域
+ap_GF_nyto_noussphere ={
+	potential={
+		has_authority = auth_GF_paradeus
+		NOT = {
+			has_ascension_perk = ap_GF_nyto_noussphere
+		}		
+	}	
+	modifier = {
+		NYTO_species_trait_points_add = 5
+	}
+	possible = {
+		custom_tooltip ={
+			fail_text = "需要完成未知文明遗迹群发掘"
+			OR = {			
+				has_country_flag = GFnyto_has_ap_GF_nyto_noussphere
+				is_ai = yes
+			}
+		}
+		
+	}
+	on_enabled = {
+		custom_tooltip = "ap_GF_nyto_noussphere_desc2"
+		hidden_effect = {
+			country_event = {
+				id = GFnyto_ascension_perk.777
+			}
+		}
+	}
+	ai_weight = {
+		factor = 500
+	}
+}
+
+# #OGAS意识解放
+# ap_GF_nyto_OGAS={
+# 	#添加特质 OGAS意识
+# 	#添加虚识格式塔修正
+# 	#人造神明前置
+# }
+
+# #未卜先知的人造神明
+# ap_GF_nyto_Goods ={
+# 	# 需要前置项目意识融合
+# 	# 需要前置事件链OGAS意志
+# 	# 启动一个特殊项目 人造神明
+# 	# kill 20个拥有特质：心识扩展 的人口
+# 	# 随机事件活动 特殊统治者  丹德莱 或 指挥官 
+
+# 	#丹德莱拥有特质  |未卜先知的人造神明|心识图景领域|OGAS意识| 作为统治者时 提供100%科研提速  降低100%犯罪度| 增加100%稳定度| 星球建设建筑速度+20%| 行政容量+100%|
+# 	#指挥官拥有特质  |未卜先知的人造神明|屑指|传奇指挥官|最后的幸存者|  作为统治者时 海军容量 +125%| 提供国家影响力收入+2|指挥上限 +50%| 亚光速 +25%|舰船武器伤害增加 25%| 幸福度-10%|
+
+# 	#作为起死回骸前置
+
+# }

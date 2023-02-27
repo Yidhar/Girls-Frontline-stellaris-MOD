@@ -1,0 +1,65 @@
+﻿l_simp_chinese:
+
+################################特殊项目##############################
+GFnyto_god_created_by_us:0 "人造神明"
+GFnyto_god_created_by_us_desc:0 ""
+
+##################################法令################################
+edict_GF_nyto_leader_change:0 "领袖换装"
+edict_GF_nyto_leader_change_desc:0 "领袖换装"
+
+##################################事件################################
+GFnyto_leader.1.name:0 ""
+GFnyto_leader.1.desc.a:0 "叶戈尔"
+GFnyto_leader.1.desc.b:0 "丹德莱"
+GFnyto_leader.1.desc.c:0 "莱柯瑞斯"
+GFnyto_leader.1.a:0 "叶戈尔_陆军将领"
+GFnyto_leader.1.b:0 "叶戈尔_舰队司令"
+GFnyto_leader.1.c:0 "叶戈尔_统治者"
+GFnyto_leader.1.d:0 "丹德莱_统治者"
+GFnyto_leader.1.e:0 "莱柯瑞斯_科学家"
+GFnyto_leader.1.f:0 "莱柯瑞斯_统治者"
+
+GFnyto_leader.2.name:0 ""
+GFnyto_leader.2.desc.a:0 "叶戈尔"
+GFnyto_leader.2.desc.b:0 "丹德莱"
+GFnyto_leader.2.desc.c:0 "莱柯瑞斯"
+GFnyto_leader.2.a:0 "叶戈尔_陆军将领"
+GFnyto_leader.2.b:0 "叶戈尔_舰队司令"
+GFnyto_leader.2.c:0 "叶戈尔_统治者"
+GFnyto_leader.2.d:0 "丹德莱_穿这件"
+GFnyto_leader.2.e:0 "丹德莱_穿这件"
+GFnyto_leader.2.f:0 "丹德莱_穿这件"
+GFnyto_leader.2.g:0 "莱柯瑞斯_科学家"
+GFnyto_leader.2.h:0 "莱柯瑞斯_统治者"
+
+##################################特质################################
+leader_trait_Yegor_general1:0 "叶戈尔_陆军将领1"
+leader_trait_Yegor_general1_desc:0 "叶戈尔_陆军将领1"
+leader_trait_Yegor_general2:0 "叶戈尔_陆军将领2"
+leader_trait_Yegor_general2_desc:0 "叶戈尔_陆军将领2"
+
+leader_trait_Yegor_admiral1:0 "叶戈尔_舰队司令1"
+leader_trait_Yegor_admiral1_desc:0 "叶戈尔_舰队司令1"
+leader_trait_Yegor_admiral2:0 "叶戈尔_舰队司令2"
+leader_trait_Yegor_admiral2_desc:0 "叶戈尔_舰队司令2"
+
+leader_trait_Yegor_ruler1:0 "叶戈尔_统治者1"
+leader_trait_Yegor_ruler1_desc:0 "叶戈尔_统治者1"
+leader_trait_Yegor_ruler2:0 "叶戈尔_统治者2"
+leader_trait_Yegor_ruler2_desc:0 "叶戈尔_统治者2"
+
+leader_trait_Dandelion_ruler1:0 "丹德莱_统治者1"
+leader_trait_Dandelion_ruler1_desc:0 "丹德莱_统治者1"
+leader_trait_Dandelion_ruler2:0 "丹德莱_统治者2"
+leader_trait_Dandelion_ruler2_desc:0 "丹德莱_统治者2"
+
+leader_trait_Lycoris_scientist1:0 "莱柯瑞斯_科学家1"
+leader_trait_Lycoris_scientist1_desc:0 "莱柯瑞斯_科学家1"
+leader_trait_Lycoris_scientist2:0 "莱柯瑞斯_科学家2"
+leader_trait_Lycoris_scientist2_desc:0 "莱柯瑞斯_科学家2"
+
+leader_trait_Lycoris_ruler1:0 "莱柯瑞斯_统治者1"
+leader_trait_Lycoris_ruler1_desc:0 "莱柯瑞斯_统治者1"
+leader_trait_Lycoris_ruler2:0 "莱柯瑞斯_统治者2"
+leader_trait_Lycoris_ruler2_desc:0 "莱柯瑞斯_统治者2"

@@ -1,0 +1,29 @@
+﻿l_simp_chinese:
+#################################
+GFnyto_defense_eild_attack_project:0 "整修古代隔离墙"
+GFnyto_defense_eild_attack_project_DESC:0 "虽然这些高大厚重的墙壁能够阻挡ELID-infected侵袭我们在地表的城市,但毕竟也是距今600多年前的人类文明留下的遗产,有必要进行一次大型修缮工作来让我们重新获得对ELID作战的优势。"
+GFnyto_find_close_ruin_project:0 "寻找关闭遗迹的方法"
+GFnyto_find_close_ruin_project_DESC:0 "通过对新发现的小型遗迹进行研究或许能找到关停其他遗迹的方法。"
+GFnyto_close_ruin_project:0 "关停遗迹"
+GFnyto_close_ruin_project_DESC:0 "派遣突击小队深入原爆点关闭正在泄露坍缩液的遗迹。"
+
+study_GF_nyto_eild_army_project:0 "ELID感染者脑电波研究"
+study_GF_nyto_eild_army_project_DESC:0 "根据ELID感染者研究基地最新的发现,ELID-infected的高攻击性可能与它们独特的脑电波有关。通过研究ELID-infected脑电波,或许能够找到安抚ELID-infected的方法。"
+defense_colony_GF_nyto_eild_attack_project:0 "清理殖民地污染源"
+defense_colony_GF_nyto_eild_attack_project_DESC:0 "由于我们使用了浓度更高的坍缩液进行轰炸,清理起殖民地的污染源会更加地麻烦。"
+
+GF_NYTO_PARADEUS_COLONY_1:0 "成立遗迹部门"
+GF_NYTO_PARADEUS_COLONY_1_DESC:0 "人类纪元留下的遗迹群资料是宝贵的,我们确实应当考虑科学家们的提议。拨款成立一个独立的负责遗迹考古发掘工作的部门。为了探寻自身与前文明的秘密。也为了未来不在发生通古斯和北兰岛一样的事件。为了致敬前人类文明最伟大的遗迹部门,我们觉得将我们的新部门命名为 “遗迹署”,向先驱者致敬。"
+
+GF_NYTO_PARADEUS_COLONY_2:0 "重返诺德豪森"
+GF_NYTO_PARADEUS_COLONY_2_DESC:0 "得益于我们的科学家在伊热夫斯克地下的研究解读,我们的工程师认为也许找到了遗迹信号的关键线索。我们的团队回到第一遗迹-诺德豪森遗迹中,通过对模拟系统以及所发现的原先论文《遗迹量子引力机制下的自动控制原理》的解读。我们的工程师们认为遗迹的信号是需要外界的输入的,也许在我们监听遗迹的同时,遗迹也在监听我们也说不定。"
+
+GF_NYTO_PARADEUS_COLONY_3:0 "修复Сетунь"
+GF_NYTO_PARADEUS_COLONY_3_DESC:0 "Сетунь是前苏联时期的第一台三进制计算器,他与塔巴沙尔-β部署在一起组成了一个“海星”节点,根据档案记载.三进制计算机对于遗迹设施有着特殊的作用,在前苏联的遗迹武器开发中,首次部署在这里的Сетунь引起了从第一遗迹中拆除过来的设施共鸣。在三进制计算机的驱动下,遗迹设施开始了自我修复,并以一种不明方式吞噬了周边的物资。随着冷战的结束这些遗迹设施就被废弃在了这里,经过漫长的岁月,直至人类灭亡,机魂消散也没有被再次启动过。"
+
+
+GF_NYTO_PARADEUS_COLONY_5:0 "OGAS"
+GF_NYTO_PARADEUS_COLONY_5_DESC:0 "控制系统与我们所使用ogas几乎同源是为数不多的好消息,最初的ogas来源于90lab实验室,由前人类时代的两名天才,莱科瑞斯和帕斯卡莉亚。二人对仿生人形的自动控制系统也就是心智核心有着不可磨灭的贡献。前人类时代的所有人形不论是否来自IOP/铁血工作,其底层协议都或多或少与OGAS有所牵连,而我们涅托也正是来自对遗迹技术解析的生物工程技术。人类和钢铁融合的躯体搭载着ogas底层协议,拥有心识图景的二级网络平层空间。可以说我们的大脑就是一块生物版的心智核心。也许稍作适配,我们也能接入遗迹系统,探索其中的秘密。"
+
+GF_NYTO_PARADEUS_COLONY_6:0 "OGAS意识体"
+GF_NYTO_PARADEUS_COLONY_6_DESC:0 "OGAS意识体会随着OGAS系统的运行缓慢诞生,但是需要宿主极大的心智空间容量和运算速度的支持,如果容量不足则会在第一阶段就胎死腹中,无法继续,如果进入到第二阶段但是宿主的运算速度不足以支持OGAS意识体的存在,则会心智烧毁。而我们一直所佩戴的脑抑制器,除了控制心识图景以外,可能还承担着抑制OGAS意识的诞生这一功能。我们需要研究如何在不影响自身的情况下摘除脑抑制器"

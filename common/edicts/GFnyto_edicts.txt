@@ -1,0 +1,147 @@
+GFnyto_training_key = {
+	length = 0
+	icon = GFX_edict_fund
+	show_tech_unlock_if = {
+		has_technology = tech_GF_nyto_algorithm
+	}
+	potential = {
+		has_authority = auth_GF_paradeus
+		has_technology = tech_GF_nyto_algorithm
+	}
+	effect = {
+		country_event = {
+			id = GFnyto_global.21
+		}
+	}
+}
+
+# GFnyto_rbq = {
+# 	length = -1
+# 	unity_cost_mult = 1
+# 	resources = {
+# 		category = edicts
+# 		upkeep = {
+# 			unity = 0
+# 		}
+# 	}
+# 	icon = GFX_edict_fund
+# 	show_tech_unlock_if = {
+# 		always = yes
+# 	}
+# 	potential = {
+# 		has_authority = auth_GF_paradeus
+# 	}
+# 	effect = {
+# 		# owner = {
+# 		# 	set_country_flag = GFnyto_rbq
+# 		# }
+# 	}
+# }
+
+#领袖换装
+GF_nyto_leader_change = {
+	icon = "GFX_edict_type_time"
+	length = 0
+	potential = {
+		OR = {
+			has_country_flag = GFnyto_leader_Yegor
+			has_country_flag = GFnyto_leader_Dandelion
+			has_country_flag = GFnyto_leader_Lycoris
+		}
+	}
+	resources = {
+		category = rare_edicts
+	}
+	effect = {
+		hidden_effect = {
+			country_event = {
+				id = GFnyto_leader.2
+			}
+		}
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#自动居住站
+GF_nyto_auto_habitat = {
+	icon = "GFX_edict_type_time"
+	length = -1	
+	resources = {
+		category = edicts
+		upkeep = {
+			trigger = {
+				is_ai = no
+			}
+			alloys = 50
+			multiplier = value:Gf_nyto_habitat_cost
+		}
+	}
+	potential = {
+		OR = {
+			AND = {
+				is_ai = no
+				has_authority = auth_GF_paradeus
+				has_technology = tech_habitat_1
+			}
+			AND = {
+				is_ai = yes
+				has_authority = auth_GF_paradeus
+				has_technology = tech_habitat_1
+				num_owned_planets < 50 	
+			}
+		}		
+	}
+	effect = {
+		random_system_within_border = {
+			every_system_planet = {
+				limit = {
+					NOT = {
+						has_anomaly = yes
+					}
+					NOR = {
+						has_planet_flag = megastructure
+						has_planet_flag = has_megastructure
+						solar_system = {
+							has_star_flag = ring_world_built
+						}
+						is_planet_class = pc_ringworld_habitable
+						is_planet_class = pc_ringworld_habitable_damaged
+						is_planet_class = pc_ringworld_tech
+						is_planet_class = pc_ringworld_tech_damaged
+						is_planet_class = pc_ringworld_seam
+						is_planet_class = pc_ringworld_seam_damaged
+						is_planet_class = pc_habitat
+					}
+					NOR = {
+						is_asteroid = yes
+						is_moon = yes
+					}
+					is_star = no
+				}
+				save_event_target_as = give_this_planet
+				solar_system = {
+					spawn_megastructure = {
+						type = GFnyto_habitat_01
+						owner = root
+						planet = event_target:give_this_planet
+						coords_from = event_target:give_this_planet
+					}
+				}
+				set_planet_flag = has_megastructure
+			}
+		}
+		if = {
+			limit = { is_ai = yes }
+			set_country_flag = has_GF_nyto_auto_habitat
+		}
+	}
+	ai_weight = {
+		weight = 0
+		modifier = {
+			factor = 0 
+			has_country_flag = has_GF_nyto_auto_habitat
+		}
+	}
+}

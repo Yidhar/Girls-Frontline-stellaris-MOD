@@ -1,0 +1,277 @@
+###机动偷家
+#战场救火队
+tech_GFnyto_war_theory_a1 = {
+	icon = tech_GFnyto_war_theory_a1
+	cost = 10000
+	area = society
+	tier = 1
+	is_rare = no
+	category = { military_theory }	
+	prerequisites = { "tech_GF_nyto_EILD_brain_wave" }
+	weight = 5
+	modifier = {
+		army_health = 1
+	}
+	prereqfor_desc = {
+		custom = {
+			title = "解锁轨道轰炸类型：两栖进攻"
+			desc = "4支海军陆战队从舰队出发登陆至目标行星。"
+		}
+	}
+	potential = {has_authority = auth_GF_paradeus}		
+	ai_weight = {weight = 5}
+}
+#后发制人
+tech_GFnyto_war_theory_a2 = {
+	icon = tech_GFnyto_war_theory_a2
+	cost = 30000
+	area = society
+	tier = 3
+	is_rare = no
+	category = { military_theory }	
+	prerequisites = { "tech_GFnyto_war_theory_a1" }
+	weight = 5
+	modifier = {
+		ship_base_speed_mult = 1
+	}
+	potential = {has_authority = auth_GF_paradeus}		
+	ai_weight = {weight = 5}
+}
+#现代闪电战
+tech_GFnyto_war_theory_a3 = {
+	icon = tech_GFnyto_war_theory_a3
+	cost = 45000
+	area = society
+	tier = 5
+	is_rare = yes
+	category = { military_theory }	
+	prerequisites = { "tech_GF_nyto_Inverse_collapse_2" }
+	weight = 40
+	modifier = {
+		ship_ftl_jumpdrive_range_mult=1
+	}
+	potential = {has_authority = auth_GF_paradeus}		
+	ai_weight = {weight = 5}
+}
+###优势射程
+#前线观测
+tech_GFnyto_war_theory_b1 = {
+	icon = tech_GFnyto_war_theory_b1
+	cost = 10000
+	area = society
+	tier = 1
+	is_rare = no
+	category = { military_theory }	
+	prerequisites = { "tech_GF_nyto_EILD_brain_wave" }
+	weight = 80
+	modifier = {
+		ship_weapon_range_mult = 0.3
+	}
+	potential = {has_authority = auth_GF_paradeus}		
+	ai_weight = {weight = 5}
+}
+#前沿重火力
+tech_GFnyto_war_theory_b2 = {
+	icon = tech_GFnyto_war_theory_b2
+	cost = 30000
+	area = society
+	tier = 3
+	is_rare = no
+	category = { military_theory }	
+	prerequisites = { "tech_GFnyto_war_theory_b1" }
+	weight = 75
+	modifier = {
+		ship_weapon_damage = 0.3
+	}
+	potential = {has_authority = auth_GF_paradeus}		
+	ai_weight = {weight = 5}
+}
+#威慑行动
+tech_GFnyto_war_theory_b3 = {
+	icon = tech_GFnyto_war_theory_b3
+	cost = 50000
+	area = society
+	tier = 60
+	is_rare = yes
+	category = { military_theory }	
+	prerequisites = { "tech_GFnyto_war_theory_b2" }
+	weight = 5
+	modifier = {
+		ship_fire_rate_mult = 0.5
+	}
+	potential = {has_authority = auth_GF_paradeus}		
+	ai_weight = {weight = 5}
+}
+###决战兵器
+#多兵种协调作战
+tech_GFnyto_war_theory_c1 = {
+	icon = tech_GFnyto_war_theory_c1
+	cost = 10000
+	area = society
+	tier = 1
+	is_rare = no
+	category = { military_theory }	
+	prerequisites = { "tech_GF_nyto_EILD_brain_wave" }
+	weight = 5
+	modifier = {
+		ship_armor_mult = 1
+	}
+	prereqfor_desc = {
+		custom = {
+			title = "解锁移动城市区段类型：机械巨兽"
+			desc = "移动城市可以安装20个X槽位的武器,代价是不能安装资源生产类部件。"
+		}
+	}
+	potential = {has_authority = auth_GF_paradeus}		
+	ai_weight = {weight = 5}
+}
+#强袭突破
+tech_GFnyto_war_theory_c2 = {
+	icon = tech_GFnyto_war_theory_c2
+	cost = 30000
+	area = society
+	tier = 3
+	is_rare = no
+	category = { military_theory }	
+	prerequisites = { "tech_GFnyto_war_theory_c1" }
+	weight = 5
+	modifier = {
+		ship_shield_mult = 1
+	}
+	potential = {has_authority = auth_GF_paradeus}		
+	ai_weight = {weight = 5}
+}
+#集中计划
+tech_GFnyto_war_theory_c3 = {
+	icon = tech_GFnyto_war_theory_c3
+	cost = 50000
+	area = society
+	tier = 5
+	is_rare = yes
+	category = { military_theory }	
+	prerequisites = { "tech_GFnyto_war_theory_c2" }
+	weight = 5
+	modifier = {
+		ship_hull_mult = 1
+	}
+	potential = {has_authority = auth_GF_paradeus}		
+	ai_weight = {weight = 5}
+}
+###舰海突击
+#机械化洪流
+# tech_GFnyto_war_theory_d1 = {
+# 	icon = tech_GFnyto_war_theory_d1
+# 	cost = 10000
+# 	area = society
+# 	tier = 1
+# 	is_rare = no
+# 	category = { military_theory }	
+# 	prerequisites = { "tech_GF_nyto_EILD_brain_wave" }
+# 	weight = 5
+# 	modifier = {
+# 		starbase_shipyard_build_speed_mult = 1
+# 	}
+# 	prereqfor_desc = {
+# 		custom = {
+# 			title = "解锁护卫舰区段类型：装甲猎人"
+# 			desc = "护卫舰可以安装1个X槽位的武器。"
+# 		}
+# 	}
+# 	potential = {has_authority = auth_GF_paradeus}		
+# 	ai_weight = {weight = 5}
+# }
+#优先突破
+tech_GFnyto_war_theory_d2 = {
+	icon = tech_GFnyto_war_theory_d2
+	cost = 30000
+	area = society
+	tier = 3
+	is_rare = no
+	category = { military_theory }	
+	prerequisites = { "tech_GFnyto_war_theory_d1" }
+	weight = 5
+	modifier = {
+		country_command_limit_mult = 1
+	}
+	potential = {has_authority = auth_GF_paradeus}		
+	ai_weight = {weight = 5}
+}
+#持久攻势
+tech_GFnyto_war_theory_d3 = {
+	icon = tech_GFnyto_war_theory_d3
+	cost = 50000
+	area = society
+	tier = 5
+	is_rare = yes
+	category = { military_theory }	
+	prerequisites = { "tech_GFnyto_war_theory_d2" }
+	weight = 5
+	modifier = {
+		ship_hull_regen_add_perc = 1
+	}
+	potential = {has_authority = auth_GF_paradeus}		
+	ai_weight = {weight = 5}
+}
+###海军
+#大作战舰队
+tech_GFnyto_war_theory_e1 = {
+	icon = tech_GFnyto_war_theory_e1
+	cost = 10000
+	area = society
+	tier = 1
+	is_rare = no
+	category = { military_theory }	
+	prerequisites = { "tech_GF_nyto_EILD_brain_wave" }
+	weight = 5
+	modifier = {
+		ships_upkeep_mult = -0.5
+		country_naval_cap_mult = 1
+	}
+	potential = {has_authority = auth_GF_paradeus}		
+	ai_weight = {weight = 5}
+}
+#联合突袭行动
+tech_GFnyto_war_theory_e2 = {
+	icon = tech_GFnyto_war_theory_e2
+	cost = 30000
+	area = society
+	tier = 3
+	is_rare = no
+	category = { military_theory }	
+	prerequisites = { "tech_GFnyto_war_theory_e1" }
+	weight = 5
+	modifier = {
+		ship_disengage_chance_mult = 1
+	}
+	prereqfor_desc = {
+		custom = {
+			title = "解锁轨道轰炸类型：贸易封锁"
+			desc = "使目标行星人口、岗位维护费大大增加。"
+		}
+	}
+	potential = {has_authority = auth_GF_paradeus}		
+	ai_weight = {weight = 5}
+}
+#航母战斗群
+tech_GFnyto_war_theory_e3 = {
+	icon = tech_GFnyto_war_theory_e3
+	cost = 50000
+	area = society
+	tier = 5
+	is_rare = yes
+	category = { military_theory }	
+	prerequisites = { "tech_GFnyto_war_theory_e2" }
+	weight = 5
+	modifier = {
+		weapon_type_strike_craft_weapon_damage_mult = 1
+		weapon_type_strike_craft_weapon_fire_rate_mult = 1
+	}
+	prereqfor_desc = {
+		custom = {
+			title = "解锁泰坦区段类型：空母核心、空母舰尾"
+			desc = "泰坦核心区段和泰坦舰尾区段可以安装h槽位的武器,而且浮游炮只能安装在泰坦。"
+		}
+	}
+	potential = {has_authority = auth_GF_paradeus}		
+	ai_weight = {weight = 5}
+}

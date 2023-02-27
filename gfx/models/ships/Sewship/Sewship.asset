@@ -1,0 +1,53 @@
+entity = {
+	name = "Sewship_entity"
+	pdxmesh = "Sewship_mesh"
+	default_state = "idle"
+	scale = 0.5
+
+	state = {
+		name = "idle"
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_battleship_hum" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_battleship_bass" } }
+		
+	}
+	state = {
+		name = "moving"
+		event = { trigger_once = yes sound = { soundeffect = "moving_out_battleship" } }
+	}
+
+
+	state = {
+		name = "death"
+		event = { time = 0 node = "target_locator_01" particle = "avian_01_large_ship_explosion_particle" }
+		event = { time = 0 node = "target_locator_02" particle = "avian_01_large_ship_explosion_particle" }
+		event = { time = 0 node = "target_locator_03" particle = "ship_burn_particle" }
+		event = { time = 1.0 node = "explosion_locator_01" particle = "avian_01_large_ship_explosion_particle" }
+		event = { time = 1.0 node = "explosion_locator_01" particle = "ship_burn_particle" }
+	}
+	attach = {
+		explosion_locator_01 = "Sewship_gun_entity"
+	}
+	
+}
+entity = {
+	name = "Sewship_gun_entity"
+	pdxmesh = black_hole_new_mesh
+	scale = 0.15
+	default_state = "idle"
+	state = { name = "idle" state_time = 0
+		event = { time = 0 particle = "black_hole_particle" trigger_once = yes keep_particle = yes }
+		event = { trigger_once = yes sound = { soundeffect = "blackhole_hum_idle" } }
+	    event = { time = 0.0 node = "planet" particle = "m_class_star_particle"  keep_particle = no trigger_once = yes sound = { soundeffect = "amb_star_fusion" } }
+		event = { trigger_once = yes sound = { soundeffect = "space_ambient" } }  
+		event = { trigger_once = yes sound = { soundeffect = "falling_star" } }
+		event = { trigger_once = yes sound = { soundeffect = "space_ambient_layer_02" } }
+	}
+	locator = { name = "planet" }
+	attach = { "planet" = "black_hole_rings_entity" }
+	attach = { "planet" = "black_hole_grav_lens_entity" }
+	attach = { "planet" = "black_hole_grav_animation_entity" }
+	game_data = {
+		size = 1.0
+		bloom_factor = 5
+	}
+}

@@ -1,0 +1,254 @@
+namespace = gfnytorelics
+#遗迹署
+planet_event = {
+	id = gfnytorelics.1
+	title = "gfnytorelics.1.name"
+	desc = "gfnytorelics.1.desc"
+	picture = GFX_evt_nyto_unknown_civilization_202055_1_1
+	show_sound = event_radio_chatter
+	location = from
+	is_triggered_only = yes
+	immediate = {
+		solar_system.space_owner = {
+			change_variable = {
+				which = GFnyto_heritage_department_build_count
+				value = 1
+			}
+		}
+	}
+	option = {
+		name = "gfnytorelics.1.a"
+		custom_tooltip = txt_gfnytorelics1_a
+		hidden_effect ={
+			solar_system.space_owner= {
+				add_modifier = {
+					modifier = GFnyto_set_up_heritage_department
+				}
+				home_planet = {
+					add_deposit = d_GFnyto_ancient_ruins_zone
+					archaeological_site = {
+						set_site_progress_locked = no
+					}
+				}
+			}
+		}
+	}
+}
+
+#信号反馈
+planet_event = {
+	id = gfnytorelics.2
+	title = "gfnytorelics.2.name"
+	desc = "gfnytorelics.2.desc"
+	picture = GFX_evt_nyto_unknown_civilization_202055_2_1
+	show_sound = event_whispering
+	location = from
+	is_triggered_only = yes
+	option = {
+		name = "gfnytorelics.2.a"
+		custom_tooltip = txt_gfnytorelics2_a
+		hidden_effect ={
+			solar_system.space_owner= {
+				home_planet = {
+					archaeological_site = {
+						set_site_progress_locked = no
+					}
+				}
+			}
+		}
+	}
+}
+
+#节点启动
+planet_event = {
+	id = gfnytorelics.3
+	title = "gfnytorelics.3.name"
+	desc = "gfnytorelics.3.desc"
+	picture = GFX_evt_nyto_unknown_civilization_202055_3_1
+	show_sound = event_think_tank_build_complete
+	location = from
+	is_triggered_only = yes
+	option = {
+		name = "gfnytorelics.3.a"
+		custom_tooltip = txt_gfnytorelics3_a
+		hidden_effect ={
+			solar_system.space_owner= {
+				home_planet = { archaeological_site = { set_site_progress_locked = no } }
+				add_tech_progress = { tech = tech_GF_nyto_storage_of_ancient_technology progress = 0.1 }
+			}
+		}		
+	}
+}
+
+#链接失败
+planet_event = {
+	id = gfnytorelics.5
+	title = "gfnytorelics.5.name"
+	desc = "gfnytorelics.5.desc"
+	picture = GFX_evt_nyto_unknown_civilization_202055_5_1
+	show_sound = event_whispering
+	location = from
+	is_triggered_only = yes
+	option = {
+		name = "gfnytorelics.5.a"
+		custom_tooltip = txt_gfnytorelics5_a
+		hidden_effect ={
+			solar_system.space_owner= {
+				home_planet = {
+					archaeological_site = {
+						set_site_progress_locked = no
+					}
+				}
+			}		
+		}
+	}
+}
+
+#摘除脑抑制器
+planet_event = {
+	id = gfnytorelics.6
+	title = "gfnytorelics.6.name"
+	desc = "gfnytorelics.6.desc"
+	picture = GFX_evt_nyto_unknown_civilization_202055_end
+	show_sound = GF_nyto_relics_end_sound
+	location = from
+	is_triggered_only = yes
+	option = {
+		name = "gfnytorelics.6.a"
+		custom_tooltip = txt_gfnytorelics6_a
+		hidden_effect = {
+			solar_system.space_owner= {
+				set_country_flag = GFnyto_has_done_zion_event_chain
+				set_country_flag = GFnyto_has_ap_GF_nyto_noussphere
+				hidden_effect = {
+					country_event = {
+						id = gfnytorelics.7
+						days = 1800					#5年后
+					}
+				}
+			}		
+		}
+		
+	}
+}
+
+#添加OGAS
+country_event = {
+	id = gfnytorelics.7
+	title = "gfnytorelics.7.name"
+	desc = "gfnytorelics.7.desc"
+	picture = GFX_evt_mining_station
+	location = from
+	is_triggered_only = yes
+	immediate = {
+		add_modifier = {
+			modifier = GFnyto_gestalt
+		}
+		add_tech_progress = {
+			tech = tech_GF_nyto_robomodding_points_1
+			progress = 0.1
+		}
+		every_owned_pop = {
+			limit = {
+				is_same_species = root
+				OR = {
+					has_trait = trait_GF_nyto_ogas_agreement
+					has_trait = trait_GF_nyto_noussphere
+				}
+			}
+			modify_species = {
+				species = this
+				remove_trait = trait_GF_nyto_ogas_agreement
+				add_trait = trait_GF_nyto_ogas_agreement_plus
+				effect = {
+					save_event_target_as = agreement_plus_specoes
+				}
+			}
+		}
+		change_dominant_species = {
+			species = event_target:agreement_plus_specoes
+			change_all = yes
+		}
+		every_owned_leader = {
+			limit = {
+				is_same_species = root
+			}
+			if = {
+				limit = {
+					leader_class = admiral
+				}
+				add_trait = leader_admiral_trait_GF_nyto_ogas_agreement_plus
+				add_ruler_trait = leader_trait_GF_nyto_ogas_agreement_plus
+			}
+			if = {
+				limit = {
+					leader_class = general
+				}
+				add_trait = leader_general_trait_GF_nyto_ogas_agreement_plus
+				add_ruler_trait = leader_trait_GF_nyto_ogas_agreement_plus
+			}
+			if = {
+				limit = {
+					leader_class = governor
+				}
+				add_trait = leader_governor_trait_GF_nyto_ogas_agreement_plus
+				add_ruler_trait = leader_trait_GF_nyto_ogas_agreement_plus
+			}
+			if = {
+				limit = {
+					leader_class = scientist
+				}
+				add_trait = leader_scientist_trait_GF_nyto_ogas_agreement_plus
+				add_ruler_trait = leader_trait_GF_nyto_ogas_agreement_plus
+			}
+			if = {
+				limit = {
+					leader_class = ruler
+				}
+				add_trait = leader_trait_GF_nyto_ogas_agreement_plus
+				add_ruler_trait = leader_trait_GF_nyto_ogas_agreement_plus
+			}
+		}
+		every_pool_leader = {
+			limit = {
+				is_same_species = root
+			}
+			if = {
+				limit = {
+					leader_class = admiral
+				}
+				add_trait = leader_admiral_trait_GF_nyto_ogas_agreement_plus
+				add_ruler_trait = leader_trait_GF_nyto_ogas_agreement_plus
+			}
+			if = {
+				limit = {
+					leader_class = general
+				}
+				add_trait = leader_general_trait_GF_nyto_ogas_agreement_plus
+				add_ruler_trait = leader_trait_GF_nyto_ogas_agreement_plus
+			}
+			if = {
+				limit = {
+					leader_class = governor
+				}
+				remove_trait = leader_governor_trait_GF_nyto_ogas_agreement
+				add_trait = leader_governor_trait_GF_nyto_ogas_agreement_plus
+			}
+			if = {
+				limit = {
+					leader_class = scientist
+				}
+				add_trait = leader_scientist_trait_GF_nyto_ogas_agreement_plus
+				add_ruler_trait = leader_trait_GF_nyto_ogas_agreement_plus
+			}
+			if = {
+				limit = {
+					leader_class = ruler
+				}
+				remove_trait = leader_trait_GF_nyto_ogas_agreement
+				add_trait = leader_trait_GF_nyto_ogas_agreement_plus
+				add_ruler_trait = leader_trait_GF_nyto_ogas_agreement_plus
+			}
+		}
+	}
+}

@@ -1,0 +1,16 @@
+objectTypes = {
+	pdxmesh = {
+		name = "GF_nyto_01_point_defence_mesh"
+		file = "gfx/models/ships/GF_nyto_01/GF_nyto_01_point_defence.mesh"
+		scale = 1.0
+
+		meshsettings = {
+			name = "W_Gun_04_gunShape"
+			index = 0
+			texture_diffuse = "W_B_T3_lod_0_02.dds"
+			texture_normal = "W_N_T3_lod_0_02.dds"
+			texture_specular = "W_S_T3_lod_0_02.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+}

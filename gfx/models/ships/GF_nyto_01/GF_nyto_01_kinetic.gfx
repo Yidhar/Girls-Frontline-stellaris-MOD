@@ -1,0 +1,16 @@
+objectTypes = {
+	pdxmesh = {
+		name = "GF_nyto_01_kinetic_mesh"
+		file = "gfx/models/ships/GF_nyto_01/GF_nyto_01_kinetic.mesh"
+		scale = 1.0
+
+		meshsettings = {
+			name = "g_1Shape"
+			index = 0
+			texture_diffuse = "W_Gun_03_d_tex_lod_0.dds"
+			texture_normal = "W_Gun_03_n_tex_lod_0.dds"
+			texture_specular = "W_Gun_03_s_tex_lod_0.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+}

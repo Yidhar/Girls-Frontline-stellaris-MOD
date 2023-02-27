@@ -1,0 +1,12 @@
+#正常
+part = {
+	location = 0
+	localization = "GFNYTO_START_SCREEN_1"
+	trigger = {has_origin = origin_GF_nyto_the_last_light}
+}
+#天灾
+part = {
+	location = 0
+	localization = "GFNYTO_START_SCREEN_2"
+	trigger = {has_origin = origin_GF_nyto_the_beginning_of_exile}
+}

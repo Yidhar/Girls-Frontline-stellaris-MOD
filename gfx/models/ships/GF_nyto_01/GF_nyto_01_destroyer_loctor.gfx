@@ -1,0 +1,7 @@
+objectTypes = {
+	pdxmesh = {
+		name = "GF_nyto_01_destroyer_loctor_mesh"
+		file = "gfx/models/ships/GF_nyto_01/GF_nyto_01_destroyer_loctor.mesh"
+		scale = 1
+	}
+}

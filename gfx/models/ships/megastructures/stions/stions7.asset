@@ -1,0 +1,15 @@
+entity = {
+	name = "stions7_entity"
+	pdxmesh = "stions7_mesh"
+	default_state = "idle"
+	scale = 50
+	state = { name = "idle" animation = "idle"  animation_speed = 1.0 looping = no next_state = "idle" 
+	event = { time = 0  node = root particle = "galaxy_particle"  keep_particle = no  }
+	event = { time = 0 node = root particle = nyto_black_hole_particle  keep_particle = no 	}	
+	}	
+}
+
+animation = {
+	name = "stions7_idle_animation"
+	file = "stions7_idle.anim"
+}

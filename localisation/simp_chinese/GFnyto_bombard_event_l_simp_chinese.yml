@@ -1,0 +1,18 @@
+﻿l_simp_chinese:
+gfnytoaction.6.name:0 "轰炸舰队遭到行星地表反击"
+gfnytoaction.6.desc:0 "我们位于§Y[From.GetName]§!轨道上执行轰炸任务的舰队遭到地表防御系统的反击。个别舰船被击中,造成少量人员伤亡。敌人正在尝试攻击并击落停留在§Y[From.GetName]§!轨道上的我方舰船。"
+
+gfnytoaction.3.name:0 "[From.GetName]被轰炸"
+gfnytoaction.3.desc:0 "一支§H[From.From.GetName]§!的舰队屠杀了§H[From.GetName]§!的居民！在一场毫不留情的大规模坍缩液轨道轰炸后,[From.GetPlanetMoon]已经变成了一片充满辐射的废土,几乎无法支持生命。"
+gfnytoaction.4.a:0 "这场暴行必须被血偿！"
+gfnytoaction.4.desc:0 "我们的军团报告称已完成对§H[From.GetName]§!的轰炸,现在的[From.GetPlanetMoon]对我们来说是环境绝佳的宜居星球。"
+
+bombardment_gfnyto_collapse_liquid:0 "坍缩液轨道轰炸"
+bombardment_gfnyto_collapse_liquid_desc:0 "对§Y星球§!造成§R巨大§!的伤害\n对§Y陆军§!造成§R巨大§!的伤害\n对§Y人口§!造成§R巨大§!的伤害\n星球破坏度大于§Y95%§!时会讲星球转变为余烬黯然星球类型"
+bombardment_gfnyto_marine_corps:0 "两栖进攻"
+bombardment_gfnyto_marine_corps_desc:0 "能够在目标星球上产生4支海军陆战队。"
+bombardment_gfnyto_trade_blockade:0 "贸易封锁"
+bombardment_gfnyto_trade_blockade_desc:0 "被轰炸的星球上岗位、人口维护费大幅增加"
+
+gfnyto_trade_blockade:0 "贸易封锁"
+gfnyto_trade_blockade_desc:0 "被轰炸的星球上岗位、人口维护费大幅增加"

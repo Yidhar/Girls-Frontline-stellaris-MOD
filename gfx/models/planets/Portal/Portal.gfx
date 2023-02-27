@@ -1,0 +1,16 @@
+objectTypes = {
+	pdxmesh = {
+		name = "Portal_mesh"
+		file = "gfx/models/planets/Portal/Portal.mesh"
+		scale = 1.0
+
+		meshsettings = {
+			name = "Portal_2_0Shape"
+			index = 0
+			texture_diffuse = "Portal.dds"
+			texture_normal = "Portal_NORM.dds"
+			texture_specular = "Portal_space.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+}

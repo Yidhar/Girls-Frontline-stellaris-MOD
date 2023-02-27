@@ -1,0 +1,43 @@
+objectTypes = {
+	pdxmesh = {
+		name = "homeship_mesh"
+		file = "gfx/models/ships/homeship/homeship.mesh"
+		scale = 1.0
+
+		meshsettings = {
+			name = "galaxy_hd_hold_504_0Shape"
+			index = 0
+			texture_diffuse = "galaxy_hd_hold_504_d.dds"
+			texture_normal = "galaxy_hd_hold_504_n.dds"
+			texture_specular = "galaxy_hd_hold_504_s.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "galaxy_hd_hold_505_0Shape"
+			index = 0
+			texture_diffuse = "galaxy_hd_hold_505_d.dds"
+			texture_normal = "galaxy_hd_hold_505_n.dds"
+			texture_specular = "galaxy_hd_hold_505_s.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "galaxy_hd_hold_506_0Shape"
+			index = 0
+			texture_diffuse = "galaxy_hd_hold_506_d.dds"
+			texture_normal = "galaxy_hd_hold_506_n.dds"
+			texture_specular = "galaxy_hd_hold_506_s.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "polySurfaceShape22"
+			index = 0
+			texture_diffuse = "galaxy_hd_hold_502_d.dds"
+			texture_normal = "galaxy_hd_hold_502_n.dds"
+			texture_specular = "galaxy_hd_hold_502_s.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+}

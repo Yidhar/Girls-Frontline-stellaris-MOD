@@ -1,0 +1,326 @@
+#创造之柱   居住 行政 
+district_GF_nyto_pc_portal_house = {
+	base_buildtime = 1800
+	is_capped_by_modifier = no
+	potential = {
+		is_planet_class = pc_GFnyto_portal_star
+	}
+	show_on_uncolonized = {
+		uses_district_set = GF_nyto_embers_portal_world
+	}
+	conversion_ratio = 1
+	convert_to = {
+		district_city
+		district_nexus
+		district_hive
+	}
+	resources = {
+		category = planet_districts
+		cost = {
+			GF_nyto_collapse_liquid = 500
+		}
+		upkeep = {
+			GF_nyto_collapse_liquid = 10
+		}
+	}
+	planet_modifier = {
+		planet_housing_add = 500
+		planet_max_buildings_add = 1
+		planet_amenities_add = 200
+		planet_max_districts_add = 1
+	}
+	ai_weight = {
+		weight = 1
+		modifier = {
+			weight = 1000
+			free_housing < 10
+		}
+	}
+}
+
+#狄克拉海   科研
+district_GF_nyto_pc_portal_science = {
+	base_buildtime = 1800
+	is_capped_by_modifier = no
+	show_on_uncolonized = {
+		uses_district_set = GF_nyto_embers_portal_world
+	}
+	potential = {
+		is_planet_class = pc_GFnyto_portal_star
+	}
+	conversion_ratio = 1
+	convert_to = {
+		district_city
+		district_nexus
+		district_hive
+	}
+	resources = {
+		category = planet_districts
+		cost = {
+			GF_nyto_collapse_liquid = 500
+		}
+		upkeep = {
+			GF_nyto_collapse_liquid = 10
+		}
+	}
+	planet_modifier = {
+		planet_max_buildings_add = 1
+		job_GFnyto_technology_minister_add = 20
+		planet_max_districts_add = 1
+	}
+	ai_weight = {
+		weight = 0
+		modifier = {
+			weight = 1000
+			owner = {
+				has_monthly_income = {
+					resource = consumer_goods
+					value > 10
+				}
+			}
+		}
+	}
+}
+
+#何西亚之门  矿+消费
+district_GF_nyto_pc_portal_mineral = {
+	base_buildtime = 1800
+	is_capped_by_modifier = no
+	show_on_uncolonized = {
+		uses_district_set = GF_nyto_embers_portal_world
+	}
+	potential = {
+		is_planet_class = pc_GFnyto_portal_star
+	}
+	conversion_ratio = 1
+	convert_to = {
+		district_city
+		district_nexus
+		district_hive
+	}
+	resources = {
+		category = planet_districts
+		cost = {
+			GF_nyto_collapse_liquid = 500
+		}
+		upkeep = {
+			GF_nyto_collapse_liquid = 10
+		}
+	}
+	planet_modifier = {
+		job_miner_add = 10
+		job_artisan_add = 5
+		job_farmer_add = 5
+		planet_max_buildings_add = 1
+		planet_max_districts_add = 1
+	}
+	triggered_planet_modifier = {
+		potential = {
+			planet = {
+				is_planet_class = pc_GFnyto_portal_star
+			}
+		}
+		modifier = {
+			planet_stability_add = 10
+		}
+	}
+	ai_weight = {
+		weight = 0
+		modifier = {
+			weight = 1000
+			owner = {
+				has_monthly_income = {
+					resource = consumer_goods
+					value > 10
+				}
+			}
+		}
+	}
+}
+
+#以赛亚铸造所   合金+活体金属+纳米机器人
+district_GF_nyto_pc_portal_alloy = {
+	base_buildtime = 1800
+	is_capped_by_modifier = no
+	show_on_uncolonized = {
+		uses_district_set = GF_nyto_embers_portal_world
+	}
+	potential = {
+		is_planet_class = pc_GFnyto_portal_star
+	}
+	conversion_ratio = 1
+	convert_to = {
+		district_city
+		district_nexus
+		district_hive
+	}
+	resources = {
+		category = planet_districts
+		cost = {
+			GF_nyto_collapse_liquid = 500
+		}
+		upkeep = {
+			GF_nyto_collapse_liquid = 10
+		}
+	}
+	planet_modifier = {
+		job_foundry_add = 10
+		planet_max_buildings_add = 1
+	}
+	triggered_planet_modifier = {
+		modifier = {
+			planet_metallurgists_sr_living_metal_produces_add = 0.2
+			planet_metallurgists_nanites_produces_add = 0.2
+			planet_max_districts_add = 1
+		}
+	}
+	ai_weight = {
+		weight = 0
+		modifier = {
+			weight = 1000
+			owner = {
+				has_monthly_income = {
+					resource = consumer_goods
+					value > 10
+				}
+			}
+		}
+	}
+}
+
+#约沙法舰队港区  舰容+陆军岗位+舰队维护
+district_GF_nyto_pc_portal_ship = {
+	base_buildtime = 1800
+	is_capped_by_modifier = no
+	show_on_uncolonized = {
+		uses_district_set = GF_nyto_embers_portal_world
+	}
+	potential = {
+		is_planet_class = pc_GFnyto_portal_star
+	}
+	conversion_ratio = 1
+	convert_to = {
+		district_city
+		district_nexus
+		district_hive
+	}
+	resources = {
+		category = planet_districts
+		cost = {
+			GF_nyto_collapse_liquid = 500
+		}
+		upkeep = {
+			GF_nyto_collapse_liquid = 10
+		}
+	}
+	planet_modifier = {
+		job_soldier_add = 10
+		job_GFnyto_white_knight_add = 5
+		planet_max_districts_add = 1
+	}
+	triggered_planet_modifier = {
+		ship_orbit_upkeep_mult = -0.01
+	}
+	ai_weight = {
+		weight = 0
+		modifier = {
+			weight = 1000
+			owner = {
+				has_monthly_income = {
+					resource = consumer_goods
+					value > 10
+				}
+			}
+		}
+	}
+}
+
+#俄巴底亚精炼区 易爆粒子+ 天然气+水晶
+district_GF_nyto_pc_portal_refine = {
+	base_buildtime = 1800
+	is_capped_by_modifier = no
+	show_on_uncolonized = {
+		uses_district_set = GF_nyto_embers_portal_world
+	}
+	potential = {
+		is_planet_class = pc_GFnyto_portal_star
+	}
+	conversion_ratio = 1
+	convert_to = {
+		district_city
+		district_nexus
+		district_hive
+	}
+	resources = {
+		category = planet_districts
+		cost = {
+			GF_nyto_collapse_liquid = 500
+		}
+		upkeep = {
+			GF_nyto_collapse_liquid = 10
+		}
+	}
+	planet_modifier = {
+		job_chemist_add = 5
+		job_gas_refiner_add = 5
+		job_translucer_add = 5
+		planet_max_districts_add = 1
+		planet_max_buildings_add = 1
+	}
+	ai_weight = {
+		weight = 0
+		modifier = {
+			weight = 1000
+			owner = {
+				has_monthly_income = {
+					resource = consumer_goods
+					value > 10
+				}
+			}
+		}
+	}
+}
+
+#亚伯反应堆中心  坍缩液 + 暗物质+ 超星内核 
+district_GF_nyto_pc_portal_energy = {
+	base_buildtime = 1800
+	is_capped_by_modifier = no
+	show_on_uncolonized = {
+		uses_district_set = GF_nyto_embers_portal_world
+	}
+	potential = {
+		is_planet_class = pc_GFnyto_portal_star
+	}
+	conversion_ratio = 1
+	convert_to = {
+		district_city
+		district_nexus
+		district_hive
+	}
+	resources = {
+		category = planet_districts
+		cost = {
+			GF_nyto_collapse_liquid = 500
+		}
+		upkeep = {
+			GF_nyto_collapse_liquid = 10
+		}
+	}
+	planet_modifier = {
+		planet_max_districts_add = 1
+		job_GFnyto_phase_technician_add = 5
+		planet_max_buildings_add = 1
+	}
+	ai_weight = {
+		weight = 0
+		modifier = {
+			weight = 1000
+			owner = {
+				has_monthly_income = {
+					resource = consumer_goods
+					value > 10
+				}
+			}
+		}
+	}
+}

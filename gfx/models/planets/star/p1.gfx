@@ -1,0 +1,115 @@
+objectTypes = {
+	pdxmesh = {
+		name = "p1_mesh"
+		file = "gfx/models/planets/star/p1.mesh"
+		scale = 1.0
+		animation = { id = "idle1"			type = "p1_idle1_animation" }
+		meshsettings = {
+			name = "base_004_star_inside_0Shape"
+			index = 0
+			texture_diffuse = "e_diff.dds"
+			texture_normal = "o_norm.dds"
+			texture_specular = "o_spec.dds"
+			shader = "PdxMeshExtraDimensionalShip"
+		}
+
+		meshsettings = {
+			name = "base_004_base_under_0Shape"
+			index = 0
+			texture_diffuse = "b_diff.dds"
+			texture_normal = "o_norm.dds"
+			texture_specular = "o_spec.dds"
+			shader = "PdxMeshExtraDimensionalShip"
+		}
+
+		meshsettings = {
+			name = "base_004_metal_0Shape"
+			index = 0
+			texture_diffuse = "d_diff.dds"
+			texture_normal = "o_norm.dds"
+			texture_specular = "o_spec.dds"
+			shader = "PdxMeshExtraDimensionalShip"
+		}
+
+		meshsettings = {
+			name = "base_004_christal_0Shape"
+			index = 0
+			texture_diffuse = "c_diff.dds"
+			texture_normal = "o_norm.dds"
+			texture_specular = "o_spec.dds"
+			shader = "PdxMeshExtraDimensionalShip"
+		}
+
+		meshsettings = {
+			name = "base_004_base_0Shape"
+			index = 0
+			texture_diffuse = "a_diff.dds"
+			texture_normal = "o_norm.dds"
+			texture_specular = "o_spec.dds"
+			shader = "PdxMeshExtraDimensionalShip"
+		}
+
+		meshsettings = {
+			name = "base_star_inside_0Shape"
+			index = 0
+			texture_diffuse = "e_diff.dds"
+			texture_normal = "o_norm.dds"
+			texture_specular = "o_spec.dds"
+			shader = "PdxMeshExtraDimensionalShip"
+		}
+
+		meshsettings = {
+			name = "base_base_under_0Shape"
+			index = 0
+			texture_diffuse = "b_diff.dds"
+			texture_normal = "o_norm.dds"
+			texture_specular = "o_spec.dds"
+			shader = "PdxMeshExtraDimensionalShip"
+		}
+
+		meshsettings = {
+			name = "base_metal_0Shape"
+			index = 0
+			texture_diffuse = "d_diff.dds"
+			texture_normal = "o_norm.dds"
+			texture_specular = "o_spec.dds"
+			shader = "PdxMeshExtraDimensionalShip"
+		}
+
+		meshsettings = {
+			name = "base_christal_0Shape"
+			index = 0
+			texture_diffuse = "c_diff.dds"
+			texture_normal = "o_norm.dds"
+			texture_specular = "o_spec.dds"
+			shader = "PdxMeshExtraDimensionalShip"
+		}
+
+		meshsettings = {
+			name = "base_base_0Shape"
+			index = 0
+			texture_diffuse = "a_diff.dds"
+			texture_normal = "o_norm.dds"
+			texture_specular = "o_spec.dds"
+			shader = "PdxMeshExtraDimensionalShip"
+		}
+
+		meshsettings = {
+			name = "Cube_Material_003_0Shape"
+			index = 0
+			texture_diffuse = "f_diff.dds"
+			texture_normal = "o_norm.dds"
+			texture_specular = "o_spec.dds"
+			shader = "PdxMeshExtraDimensionalShip"
+		}
+
+		meshsettings = {
+			name = "Cube_base_0Shape"
+			index = 0
+			texture_diffuse = "a_diff.dds"
+			texture_normal = "o_norm.dds"
+			texture_specular = "o_spec.dds"
+			shader = "PdxMeshExtraDimensionalShip"
+		}
+	}
+}

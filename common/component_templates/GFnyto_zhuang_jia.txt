@@ -1,0 +1,269 @@
+#浮动附加装甲
+#LV1
+utility_component_template = {
+	key = "GFnyto_body_armor_L_1"
+	size = large
+	#	size_restriction = {cruiser titan}
+	icon = "GFX_ship_part_GFnyto_body_armor1"
+	icon_frame = 1
+	power = 0
+	modifier = {
+		ship_armor_add = 1140
+		#		ship_base_speed_mult = 0.3
+	}
+	component_set = "GFnyto_body_armor_1"
+	resources = {
+		category = ship_components
+		cost = {
+			
+			alloys = 112
+			GF_nyto_collapse_liquid = 11.2
+		}
+		upkeep = {
+			
+			GF_nyto_collapse_liquid = 0.224
+		}
+	}
+	prerequisites = {
+		"tech_GFnyto_body_armor1"
+	}
+	upgrades_to = GFnyto_body_armor_L_2
+}
+
+#LV2
+utility_component_template = {
+	key = "GFnyto_body_armor_L_2"
+	size = large
+	#	size_restriction = {cruiser titan}
+	icon = "GFX_ship_part_GFnyto_body_armor2"
+	icon_frame = 1
+	power = 0
+	modifier = {
+		ship_armor_add = 1860
+		#		ship_base_speed_mult = 0.6
+	}
+	component_set = "GFnyto_body_armor_2"
+	resources = {
+		category = ship_components
+		cost = {
+			
+			alloys = 172
+			GF_nyto_collapse_liquid = 17.2
+		}
+		upkeep = {
+			
+			GF_nyto_collapse_liquid = 0.342
+		}
+	}
+	prerequisites = {
+		"tech_GFnyto_body_armor2"
+	}
+	upgrades_to = GFnyto_body_armor_L_3
+}
+
+#LV3
+utility_component_template = {
+	key = "GFnyto_body_armor_L_3"
+	size = large
+	#	size_restriction = {cruiser titan}
+	icon = "GFX_ship_part_GFnyto_body_armor3"
+	icon_frame = 1
+	power = 0
+	modifier = {
+		ship_armor_add = 2820
+		#		ship_base_speed_mult = 0.9
+	}
+	component_set = "GFnyto_body_armor_3"
+	resources = {
+		category = ship_components
+		cost = {
+			
+			alloys = 248
+			GF_nyto_collapse_liquid = 24.8
+		}
+		upkeep = {
+			
+			GF_nyto_collapse_liquid = 0.496
+		}
+	}
+	prerequisites = {
+		"tech_GFnyto_body_armor3"
+	}
+}
+
+#浮动附加装甲 M
+#LV1
+utility_component_template = {
+	key = "GFnyto_body_armor_M_1"
+	size = medium
+	icon = "GFX_ship_part_GFnyto_body_armor1"
+	icon_frame = 1
+	power = 0
+	modifier = {
+		ship_armor_add = 485
+		#		ship_base_speed_mult = 0.2
+	}
+	component_set = "GFnyto_body_armor_1"
+	resources = {
+		category = ship_components
+		cost = {
+			
+			alloys = 56
+			GF_nyto_collapse_liquid = 5.6
+		}
+		upkeep = {
+			
+			GF_nyto_collapse_liquid = 0.112
+		}
+	}
+	prerequisites = {
+		"tech_GFnyto_body_armor1"
+	}
+	upgrades_to = GFnyto_body_armor_M_2
+}
+
+#LV2
+utility_component_template = {
+	key = "GFnyto_body_armor_M_2"
+	size = medium
+	icon = "GFX_ship_part_GFnyto_body_armor2"
+	icon_frame = 1
+	power = 0
+	modifier = {
+		ship_armor_add = 815
+		#		ship_base_speed_mult = 0.5
+	}
+	component_set = "GFnyto_body_armor_2"
+	resources = {
+		category = ship_components
+		cost = {
+			
+			alloys = 86
+			GF_nyto_collapse_liquid = 8.6
+		}
+		upkeep = {
+			
+			GF_nyto_collapse_liquid = 0.172
+		}
+	}
+	prerequisites = {
+		"tech_GFnyto_body_armor2"
+	}
+	upgrades_to = GFnyto_body_armor_M_3
+}
+
+#LV3
+utility_component_template = {
+	key = "GFnyto_body_armor_M_3"
+	size = medium
+	icon = "GFX_ship_part_GFnyto_body_armor3"
+	icon_frame = 1
+	power = 0
+	modifier = {
+		ship_armor_add = 1265
+		#		ship_base_speed_mult = 0.8
+	}
+	component_set = "GFnyto_body_armor_3"
+	resources = {
+		category = ship_components
+		cost = {
+			
+			alloys = 124
+			GF_nyto_collapse_liquid = 12.4
+		}
+		upkeep = {
+			
+			GF_nyto_collapse_liquid = 0.248
+		}
+	}
+	prerequisites = {
+		"tech_GFnyto_body_armor3"
+	}
+}
+
+#浮动附加装甲 S
+#LV1
+utility_component_template = {
+	key = "GFnyto_body_armor_S_1"
+	size = small
+	icon = "GFX_ship_part_GFnyto_body_armor1"
+	icon_frame = 1
+	power = 0
+	modifier = {
+		ship_armor_add = 190
+	}
+	component_set = "GFnyto_body_armor_1"
+	resources = {
+		category = ship_components
+		cost = {
+			
+			alloys = 28
+			GF_nyto_collapse_liquid = 2.8
+		}
+		upkeep = {
+			
+			GF_nyto_collapse_liquid = 0.056
+		}
+	}
+	prerequisites = {
+		"tech_GFnyto_body_armor1"
+	}
+	upgrades_to = GFnyto_body_armor_S_2
+}
+
+#LV2
+utility_component_template = {
+	key = "GFnyto_body_armor_S_2"
+	size = small
+	icon = "GFX_ship_part_GFnyto_body_armor2"
+	icon_frame = 1
+	power = 0
+	modifier = {
+		ship_armor_add = 310
+	}
+	component_set = "GFnyto_body_armor_2"
+	resources = {
+		category = ship_components
+		cost = {
+			
+			alloys = 43
+			GF_nyto_collapse_liquid = 4.3
+		}
+		upkeep = {
+			
+			GF_nyto_collapse_liquid = 0.086
+		}
+	}
+	prerequisites = {
+		"tech_GFnyto_body_armor2"
+	}
+	upgrades_to = GFnyto_body_armor_S_3
+}
+
+#LV3
+utility_component_template = {
+	key = "GFnyto_body_armor_S_3"
+	size = small
+	icon = "GFX_ship_part_GFnyto_body_armor3"
+	icon_frame = 1
+	power = 0
+	modifier = {
+		ship_armor_add = 470
+	}
+	component_set = "GFnyto_body_armor_3"
+	resources = {
+		category = ship_components
+		cost = {
+			
+			alloys = 62
+			GF_nyto_collapse_liquid = 6.2
+		}
+		upkeep = {
+			
+			GF_nyto_collapse_liquid = 0.124
+		}
+	}
+	prerequisites = {
+		"tech_GFnyto_body_armor3"
+	}
+}

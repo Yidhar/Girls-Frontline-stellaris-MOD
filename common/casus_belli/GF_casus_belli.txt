@@ -1,0 +1,12 @@
+cb_GFnyto_assimilation = {
+	show_in_diplomacy = yes 
+	show_notification = yes
+	potential = {owner={has_origin = origin_GF_nyto_the_last_light}}
+	is_valid = {always = yes}
+}
+cb_GFnyto_bloody_war= {
+	show_in_diplomacy = yes 
+	show_notification = yes
+	potential = {owner={has_origin = origin_GF_nyto_the_beginning_of_exile}}
+	is_valid = {always = yes}
+}

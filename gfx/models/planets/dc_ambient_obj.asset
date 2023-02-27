@@ -1,0 +1,16 @@
+entity = { 
+	name = "GF_star_explosion_entity"
+	pdxmesh = "system_plane_collision_mesh"
+	
+	default_state = "explode"
+	state = { name = "explode" state_time = 30 looping = no 
+		event = { time = 0.0 	particle = "GF_star_explosion_1_file"  keep_particle = yes trigger_once = no }
+		event = { time = 0.0 	particle = "star_explosion_2_effect"  keep_particle = yes trigger_once = no }
+		event = { time = 0.0 	particle = "star_explosion_shockwave_effect"  keep_particle = yes trigger_once = no }
+		event = { trigger_once = yes sound = { soundeffect = "sfx_star_eater_weapon_hit" } }	
+		event = { trigger_once = yes sound = { soundeffect = "sfx_star_eater_weapon_hit_distance" } }
+	
+	}
+
+	scale = 15
+}

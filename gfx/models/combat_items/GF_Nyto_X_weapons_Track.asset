@@ -1,0 +1,218 @@
+entity = {
+	name = "GF_Nyto_X_Track_entity"
+	pdxmesh = "GF_Nyto_railgun_tracer_round_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle"
+		event = { time = 0.0 node = "planet" particle = "g_class_star_particle"  keep_particle = no trigger_once = yes sound = { soundeffect = "amb_star_fusion" } }
+		event = { trigger_once = yes sound = { soundeffect = "space_ambient" } }
+		event = { trigger_once = yes sound = { soundeffect = "falling_star" } }
+		event = { trigger_once = yes sound = { soundeffect = "space_ambient_layer_02" } }
+	 }
+	scale = 32
+	
+}
+#####HIT#########
+entity = {
+	name = "GF_Nyto_X_Track_hit_entity"
+	cull_radius = 1.0
+	
+	state = { name = "explode_med_hp" state_time = 5.0 looping = no
+		event = { time = 0.0 particle = "adv_kinetic_artillery_hit_effect" sound = { soundeffect = adv_kinectic_hit } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_adv_kinectic_hit" } }
+	}
+	default_state = "explode_med_hp"
+	scale = 1
+}
+########shield##########
+entity = {
+	name = "GF_Nyto_X_Track_shield_hit_entity"
+	cull_radius = 20
+	
+	state = { name = "explode_med_hp" state_time = 5 looping = no
+		event = { time = 0.0 particle = "adv_kinetic_artillery_hit_effect" }
+		event = { time = 0.0 particle = "projectile_medium_shield_hit_effect" }
+		event = { trigger_once = yes sound = { soundeffect = "distance_shield_hit" } } 
+	}
+	default_state = "explode_med_hp"
+	scale = 20
+}
+#######muzzle#######
+entity = {
+	name = "GF_Nyto_X_Track_muzzle_entity"
+	cull_radius = 1.0
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 7 looping = no
+	#	event = { time = 0 particle = adv_kinetic_artillery_muzzle_particle keep_particle = yes  sound = { soundeffect = adv_kinectic_fire } }
+		event = { time = 0 particle = maomao keep_particle = yes  sound = { soundeffect = adv_kinectic_fire } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_adv_kinectic_fire" } }
+	}
+}
+
+#####粒子炮#######
+###################
+entity = {
+	name = "GF_nyto_T_weapon_hit_hp_entity"
+	cull_radius = 1
+	
+	state = { name = "explode_med_hp" state_time = 0 looping = no
+		event = { time = 0.0 particle = "GF_nyto_T_weapon_hit_effect" sound = { soundeffect = energy_torpedo_hit } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_energy_torpedo_hit" } } 
+	}
+	default_state = "explode_med_hp"
+}
+
+entity = {
+	name = "GF_nyto_T_weapon_shield_hit_entity"
+	cull_radius = 1
+	
+	state = { name = "explode_med_hp" state_time = 0 looping = no
+		event = { time = 0.0 particle = "GF_nyto_T_weapon_hit_effect" }		
+		event = { trigger_once = yes sound = { soundeffect = "distance_shield_hit" } } 
+	}
+	default_state = "explode_med_hp"
+}
+
+entity = {
+	name = "GF_nyto_T_weapon_muzzle_entity"
+	cull_radius = 1
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 7.0 looping = no
+		event = { time = 0 particle = "titan_laser_muzzle_particle" keep_particle = yes }
+		
+		event = { trigger_once = yes  sound = { soundeffect = titan_laser_fire_01 } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_titan_laser_fire_01" } }
+		
+		event = { trigger_once = yes sound = { soundeffect = "titan_laser_fire_02" } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_titan_laser_fire_02" } }
+		
+		event = { trigger_once = yes sound = { soundeffect = "titan_laser_fire_03" } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_titan_laser_fire_03" } }
+	}
+
+}
+
+entity = {
+	name = "GF_nyto_T_weapon_entity"
+	cull_radius = 1
+	
+	default_state = idle
+	state = { name = "idle"
+	}
+}
+
+entity = {
+	name = "GF_nyto_sm2_weapon_entity"
+	cull_radius = 1
+	
+	default_state = idle
+	state = { name = "idle"
+		event = { time = 0 particle = "GF_nyto_sm2_weapon_idle_particle" keep_particle = yes }		
+	}
+}
+
+entity = {
+	name = "GF_nyto_sm2_weapon_muzzle_entity"
+	cull_radius = 1
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 7 looping = no
+		event = { time = 0 particle = "GF_nyto_sm2_weapon_muzzle_particle" keep_particle = yes sound = { soundeffect = energy_torpedo_fire } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_energy_torpedo_fire" } } 
+	}
+
+}
+
+entity = {
+	name = "GF_nyto_sm_weapon_hit_hp_entity"
+	cull_radius = 1
+	
+	state = { name = "explode_med_hp" state_time = 5 looping = no
+		event = { time = 0.0 particle = "GF_nyto_sm_weapon_hit_effect" sound = { soundeffect = energy_torpedo_hit } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_energy_torpedo_hit" } } 
+	}
+	default_state = "explode_med_hp"
+}
+
+entity = {
+	name = "GF_nyto_sm_weapon_shield_hit_entity"
+	cull_radius = 1
+	
+	state = { name = "explode_med_hp" state_time = 5 looping = no
+		event = { time = 0.0 particle = "neutron_torpedoes_hit_effect" }
+		event = { time = 0.0 particle = "GF_nyto_sm_weapon_shield_hit_effect" sound = { soundeffect = shield_hit } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_shield_hit" } } 
+	}
+	default_state = "explode_med_hp"
+}
+
+entity = {
+	name = "GF_nyto_titan_laser2_hit_entity"
+	cull_radius = 1.0
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 2 looping = no
+		start_event = { particle = "GFnyto_fe02_titan_laser_hit_effect" keep_particle = yes sound = { soundeffect = titan_laser_hit } }
+		#start_event = { trigger_once = yes sound = { soundeffect = "distance_tachyon_lance_hit" } }
+	}
+	state = { name = "stop" state_time = 0.5 looping = no }
+}
+
+#信标
+entity = {
+	name = Electronic_hit
+	default_state = idle
+	state = { name = "idle"  looping = no
+		event = { time = 0.0 particle = "weapon_beacon_effect"  }
+	}
+}
+
+#导弹
+entity = {
+	name = "GF_torpedo_03_large_entity"
+	#pdxmesh = "arthropoid_01_missile_mesh"
+	
+	default_state = idle
+	state = { name = "idle" animation = "idle"
+		event = { time = 0 node = exhaust particle = "GF_nyto_G_weapon" keep_particle = yes }
+		event = { time = 0 node = exhaust particle = "large_torpedo_idle_particle" keep_particle = yes }
+		event = { time = 0 node = exhaust particle = "large_torpedo_03_idle_flame_particle" keep_particle = yes }
+		event = { time = 0 node = exhaust particle = "large_torpedo_idle_particle" keep_particle = yes }
+		event = { time = 0 node = exhaust particle = "large_torpedo_03_idle_flame_particle" keep_particle = yes }
+		event = { time = 0 node = exhaust particle = "large_torpedo_idle_particle" keep_particle = yes }
+		event = { time = 0 node = exhaust particle = "large_torpedo_03_idle_flame_particle" keep_particle = yes }
+		event = { time = 0 node = exhaust particle = "large_torpedo_idle_particle" keep_particle = yes }
+		event = { time = 0 node = exhaust particle = "large_torpedo_03_idle_flame_particle" keep_particle = yes }
+		event = { time = 0 node = exhaust particle = "large_torpedo_idle_particle" keep_particle = yes }
+		event = { time = 0 node = exhaust particle = "large_torpedo_03_idle_flame_particle" keep_particle = yes }
+	}
+	scale = 2
+}
+
+entity = {
+	name = "GF_nyto_aoe_entity"
+	default_state = idle
+	state = { name = "idle"
+		event = {
+			time =  0 node = root particle = GF_star_explosion_3_file keep_particle = no sound = {
+				soundeffect = GF_nyto_Elid_attack_lose
+			}
+		}
+	}
+	scale = 10
+}
+
+#激光
+entity = {
+	name = GF_nyto_Laser_weapon_muzzle_entity
+	default_state = idle
+	state = {
+		name = idle state_time = 5.0 looping = no
+		event = { time = 0 particle = "GF_nyto_Laser_weapon" keep_particle = yes  }
+		event = { time = 0 particle = "GF_nyto_Laser_weapon" keep_particle = yes  }
+		event = { time = 0 particle = "GF_nyto_Laser_weapon" keep_particle = yes  }
+		event = { time = 0 particle = "GF_nyto_Laser_weapon" keep_particle = yes  }
+	}
+}

@@ -1,0 +1,19 @@
+entity = {
+	name = "Lv4_stions_entity"
+	pdxmesh = "Lv4_stions_mesh"
+
+	scale = 10.0
+	default_state = idle
+
+	state = {
+		name = "idle"		
+			event = { time = 0  node = locator1 particle = "galaxy_particle"  keep_particle = yes  }
+			event = {  time = 0 node = locator1 particle = nyto_black_hole_particle  keep_particle = yes 	}		
+		}
+	attach = {
+		locator1 = nyto_a_star_class_star_entity		
+	}
+	attach = {
+		locator1 = pulsar_outbursts_entity
+	}
+}

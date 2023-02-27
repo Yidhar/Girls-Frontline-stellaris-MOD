@@ -1,0 +1,24 @@
+﻿l_simp_chinese:
+#################################
+auth_GF_paradeus:0 "帕拉蒂斯"
+auth_GF_paradeus_desc:0 "Paradise is there, behind that door, in the next\n帕拉蒂斯是一种阶级森严的政体,上级拥有对下级的绝对支配,高等级的涅托可以毫无后果的摘下低级涅托的头颅。这是一个残酷又高效的国家政体."
+BE_APPOINTED_BY_PALADISIDEGUOJIAJIESHAO:0 "过去逐渐远离，未来正在接近吗?"
+TANSUOFUSHE:0 ""
+RT_GPARADEUSF:0 "首席执政官"
+FLAG_CATEGORY_GFnyto:0 "帕拉蒂斯"
+EMPIRE_DESIGN_gfnyto00:0 "帕拉蒂斯"
+EMPIRE_DESIGN_gfnyto00_desc:0 "人类灭绝于一场大规模的内战,他们的造物成为了母星的新主人。"
+
+gov_civic_GF_nyto_technology_church:0 "科技教会"
+gov_civic_GF_nyto_war_church:0 "战争教会"
+gov_civic_GF_nyto_mechanical_church:0 "机械教会"
+gov_civic_GF_nyto_starsea_crusade:0 "星海十字军"
+GF_nyto_warrior:0 "帕拉蒂斯"
+personality_GFnyto_think_tank_guard:0 "闷声发大财"
+personality_GFnyto_think_tank_guard_desc:0 "比起征服世界,这个帝国更喜欢种田。你只有一种情况会和这个帝国兵戎相见,那就是你打扰它种田的时候。"
+personality_GFnyto_disaster:0 "天灾"
+personality_GFnyto_disaster_desc:0 "这个帝国与天灾无异。"
+
+ethic_paradeus_antecedentnyto:0 "虚识格式塔"
+ethic_paradeus_antecedentnyto_desc:0 "所有的意志能够共通思维,相互理解,主导意志进行决策,其他意志进行辅助。"
+ETHIC_ZION:0 "集群思维"

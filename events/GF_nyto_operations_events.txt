@@ -1,0 +1,260 @@
+namespace = GF_nyto_operation
+espionage_operation_event = {
+	id = GF_nyto_operation.01
+	title = GF_nyto_operation.01.name
+	desc = GF_nyto_operation.01.desc
+	espionage_operation = yes
+	picture = GFX_evt_spy_network
+	show_sound = event_default
+	is_triggered_only = yes
+	immediate = {
+		target = {
+			random_owned_pop = {
+				limit = {
+					NOT = {
+						has_pop_flag = operation_nyto_pop
+					}
+				}
+				set_pop_flag = operation_nyto_pop
+				root.owner = {
+					create_message = {
+						type = EVENT_MESSAGE_TYPE
+						localization = operation_nyto_pop_message
+						days = 5
+						target = prev.planet
+					}
+				}
+			}
+			random = {
+				chance = 0
+				random_owned_leader = {
+					set_leader_flag = operation_nyto_leader
+					root.owner = {
+						create_message = {
+							type = EVENT_MESSAGE_TYPE
+							localization = operation_nyto_pop_message3
+							days = 5
+							target = prev
+						}
+					}
+				}
+				
+			}
+		}
+	}
+}
+
+espionage_operation_event = {
+	id = GF_nyto_operation.02
+	title = GF_nyto_operation.02.name
+	desc = GF_nyto_operation.02.desc
+	espionage_operation = yes
+	picture = GFX_evt_spy_network
+	show_sound = event_default
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = ACKNOWLEDGED
+	}
+}
+
+espionage_operation_event = {
+	id = GF_nyto_operation.03
+	title = GF_nyto_operation.03.name
+	desc = GF_nyto_operation.03.desc
+	espionage_operation = yes
+	picture = GFX_evt_spy_network
+	show_sound = event_default
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = ACKNOWLEDGED
+	}
+}
+
+espionage_operation_event = {
+	id = GF_nyto_operation.04
+	title = GF_nyto_operation.04.name
+	desc = GF_nyto_operation.04.desc
+	espionage_operation = yes
+	picture = GFX_evt_spy_network
+	show_sound = event_default
+	is_triggered_only = yes
+	immediate = {
+		#创建暴乱or游行
+		target = {
+			#每个渗透人口有20%概率触发游行 10%触发暴乱			
+			every_owned_planet = {
+				limit = {
+					any_owned_pop = {
+						has_pop_flag = operation_nyto_pop
+					}
+				}
+				export_trigger_value_to_variable = {
+					trigger = count_owned_pop
+					variable = operation_nyto_pop_nums
+					parameters = {
+						limit = {
+							has_pop_flag = operation_nyto_pop
+						}
+					}
+				}
+				random_list = {
+					20 = {
+						#游行
+						modifier = {
+							add = operation_nyto_pop_nums
+						}
+					}
+					10 = {
+						#游行
+						modifier = {
+							add = operation_nyto_pop_nums
+						}
+						if = {
+							limit = {
+								has_ground_combat = no
+							}
+							PREVPREVPREV.owner = {
+								create_message = {
+									type = PLANET_REVOLT
+									localization = operation_nyto_pop_message_2
+									days = 5
+									target = prev
+								}
+							}
+						}
+						planet_event = {
+							id = GF_nyto_operation.40001
+						}
+					}
+					70 = {
+						#无事发生的空选项
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = ACKNOWLEDGED
+	}
+}
+
+#暴乱
+planet_event = {
+	id = GF_nyto_operation.40001
+	title = GF_nyto_operation.40001.name
+	desc = GF_nyto_operation.40001.desc
+	picture = GFX_evt_burning_settlement
+	is_triggered_only = yes
+	trigger = {
+	}
+	immediate = {
+		set_planet_flag = retrovirus_armies
+		random_owned_pop = {
+			limit = {
+				has_modifier = erratic_behavior
+			}
+			species = {
+				save_event_target_as = infected_species
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					exists = event_target:enraged_colonists_country
+				}
+			}
+			create_country = {
+				name = "NAME_Enraged_Colonists"
+				type = faction
+				auto_delete = yes
+				flag = {
+					background = {
+						category = "backgrounds"
+						file = "00_solid.dds"
+					}
+					colors = {
+						"red"
+						"red"
+						"null"
+						"null"
+					}
+				}
+				effect = {
+					establish_communications_no_message = root.owner
+					establish_contact = {
+						who = root.owner
+						location = root.solar_system
+					}
+				}
+			}
+			last_created_country = {
+				save_global_event_target_as = enraged_colonists_country
+			}
+		}
+		while = {
+			count = planet.operation_nyto_pop_nums
+			create_army = {
+				name = "NAME_Enraged_Colonists"
+				owner = event_target:enraged_colonists_country
+				species = event_target:infected_species
+				type = "enraged_army"
+			}
+			create_army = {
+				name = "NAME_Enraged_Colonists"
+				owner = event_target:enraged_colonists_country
+				species = event_target:infected_species
+				type = "enraged_army"
+			}
+			create_army = {
+				name = "NAME_Enraged_Colonists"
+				owner = event_target:enraged_colonists_country
+				species = event_target:infected_species
+				type = "enraged_army"
+			}
+		}
+	}
+	option = {
+		name = GF_nyto_operation.40001.a
+	}
+}
+
+#游行
+planet_event = {
+	id = GF_nyto_operation.40002
+	title = GF_nyto_operation.40002.name
+	desc = GF_nyto_operation.40002.desc
+	picture = GFX_evt_grand_speech #a name of a picture to display
+	is_triggered_only = yes 
+	immediate = {
+		add_modifier = {
+			modifier = GF_nyto_oper_pop
+			months = 1
+			time_multiplier = planet.operation_nyto_pop_nums
+		}
+	}
+	option = {
+		name = GF_nyto_operation.40002.a
+	}
+}
+
+
+#获得领袖时发送通知
+leader_event = {
+	id = GF_nyto_operation.40003
+	title = GF_nyto_operation.40003.name
+	desc = GF_nyto_operation.40003.desc
+	is_triggered_only = yes
+	diplomatic = yes
+	picture_event_data = {
+		portrait = this
+		room = from
+	}
+	
+}
+
+
+#渗透领袖被解雇时克隆并转移归属

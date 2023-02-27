@@ -1,0 +1,1113 @@
+#lv1 坍塌反应堆 护卫
+utility_component_template = {
+	key = "GFnyto_power_lv1"
+	size = small
+	icon = "GFX_ship_part_GFnyto_power_lv1"
+	icon_frame = 1
+	power = 100
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 14
+			GF_nyto_collapse_liquid = 2
+		}
+		upkeep = {			
+			GF_nyto_collapse_liquid = 0.2
+		}
+	}
+	prerequisites = {
+		"tech_GFnyto_power_lv1"
+	}
+	component_set = "power_core"
+	size_restriction = { corvette }
+	class_restriction = {
+		shipclass_military
+		shipclass_constructor
+		shipclass_colonizer
+		shipclass_science_ship
+		shipclass_transport
+		shipclass_military_special
+		shipclass_starbase
+		shipclass_military_station
+	}
+	ai_weight = {
+		weight = 100
+	}
+	upgrades_to = GFnyto_power_lv2
+}
+
+#驱逐 
+utility_component_template = {
+	key = "GFnyto_power_lv1_2"
+	size = small
+	icon = "GFX_ship_part_GFnyto_power_lv1"
+	icon_frame = 1
+	power = 200
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 28
+			GF_nyto_collapse_liquid = 4
+		}
+		upkeep = {
+			
+			GF_nyto_collapse_liquid = 0.4
+		}
+	}
+	prerequisites = {
+		"tech_GFnyto_power_lv1"
+	}
+	component_set = "power_core"
+	size_restriction = { destroyer }
+	class_restriction = {
+		shipclass_military
+		shipclass_constructor
+		shipclass_colonizer
+		shipclass_science_ship
+		shipclass_transport
+		shipclass_military_special
+		shipclass_starbase
+		shipclass_military_station
+	}
+	ai_weight = {
+		weight = 100
+	}
+	upgrades_to = GFnyto_power_lv2
+}
+#巡洋
+utility_component_template = {
+	key = "GFnyto_power_lv1_3"
+	size = small
+	icon = "GFX_ship_part_GFnyto_power_lv1"
+	icon_frame = 1
+	power = 350
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 50
+			GF_nyto_collapse_liquid = 5
+		}
+		upkeep = {
+			
+			GF_nyto_collapse_liquid = 0.5
+		}
+	}
+	prerequisites = {
+		"tech_GFnyto_power_lv1"
+	}
+	component_set = "power_core"
+	size_restriction = { cruiser }
+	class_restriction = {
+		shipclass_military
+		shipclass_constructor
+		shipclass_colonizer
+		shipclass_science_ship
+		shipclass_transport
+		shipclass_military_special
+		shipclass_starbase
+		shipclass_military_station
+	}
+	ai_weight = {
+		weight = 100
+	}
+	upgrades_to = GFnyto_power_lv2
+}
+
+#战列
+utility_component_template = {
+	key = "GFnyto_power_lv1_4"
+	size = small
+	icon = "GFX_ship_part_GFnyto_power_lv1"
+	icon_frame = 1
+	power = 800
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 115
+			GF_nyto_collapse_liquid = 15
+		}
+		upkeep = {
+			
+			GF_nyto_collapse_liquid = 1.5
+		}
+	}
+	prerequisites = {
+		"tech_GFnyto_power_lv1"
+	}
+	component_set = "power_core"
+	size_restriction = { battleship }
+	class_restriction = {
+		shipclass_military
+		shipclass_constructor
+		shipclass_colonizer
+		shipclass_science_ship
+		shipclass_transport
+		shipclass_military_special
+		shipclass_starbase
+		shipclass_military_station
+	}
+	ai_weight = {
+		weight = 100
+	}
+	upgrades_to = GFnyto_power_lv2
+}
+#泰坦
+utility_component_template = {
+	key = "GFnyto_power_lv1_5"
+	size = small
+	icon = "GFX_ship_part_GFnyto_power_lv1"
+	icon_frame = 1
+	power = 1500
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 215
+			GF_nyto_collapse_liquid = 25
+		}
+		upkeep = {
+			
+			GF_nyto_collapse_liquid = 5
+		}
+	}
+	prerequisites = {
+		"tech_GFnyto_power_lv1"
+	}
+	component_set = "power_core"
+	size_restriction = { titan GFnyto_Command_ship GFnyto_shiled_ship GF_nyto_super_battelship GFnyto_mobile_city }
+	class_restriction = {
+		shipclass_military
+		shipclass_constructor
+		shipclass_colonizer
+		shipclass_science_ship
+		shipclass_transport
+		shipclass_military_special
+		shipclass_starbase
+		shipclass_military_station
+	}
+	ai_weight = {
+		weight = 100
+	}
+	upgrades_to = GFnyto_power_lv2
+}
+
+
+
+#lv2  逆向衰变反应堆
+utility_component_template = {
+	key = "GFnyto_power_lv2"
+	size = small
+	icon = "GFX_ship_part_GFnyto_power_lv2"
+	icon_frame = 1
+	power = 500
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 100
+			GF_nyto_collapse_liquid = 10
+		}
+		upkeep = {		
+			GF_nyto_collapse_liquid = 1
+		}
+	}
+	prerequisites = {
+		"tech_GFnyto_power_lv2"
+	}
+	component_set = "power_core"
+	size_restriction = { corvette }
+	#	upgrades_to = "BATTLESHIP_DARK_MATTER_REACTOR"
+	class_restriction = {
+		shipclass_military
+		shipclass_constructor
+		shipclass_colonizer
+		shipclass_science_ship
+		shipclass_transport
+		shipclass_military_special
+		shipclass_starbase
+		shipclass_military_station
+	}
+	ai_weight = {
+		weight = 500
+	}
+	upgrades_to = GF_nyto_godenergy
+}
+utility_component_template = {
+	key = "GFnyto_power_lv2_1"
+	size = small
+	icon = "GFX_ship_part_GFnyto_power_lv2"
+	icon_frame = 1
+	power = 800
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 160
+			GF_nyto_collapse_liquid = 15
+		}
+		upkeep = {			
+			GF_nyto_collapse_liquid = 1.5
+		}
+	}
+	prerequisites = {
+		"tech_GFnyto_power_lv2"
+	}
+	component_set = "power_core"
+	size_restriction = { destroyer }
+	#	upgrades_to = "BATTLESHIP_DARK_MATTER_REACTOR"
+	class_restriction = {
+		shipclass_military
+		shipclass_constructor
+		shipclass_colonizer
+		shipclass_science_ship
+		shipclass_transport
+		shipclass_military_special
+		shipclass_starbase
+		shipclass_military_station
+	}
+	ai_weight = {
+		weight = 500
+	}
+	upgrades_to = GF_nyto_godenergy
+}
+utility_component_template = {
+	key = "GFnyto_power_lv2_2"
+	size = small
+	icon = "GFX_ship_part_GFnyto_power_lv2"
+	icon_frame = 1
+	power = 1300
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 260
+			GF_nyto_collapse_liquid = 26
+		}
+		upkeep = {
+			
+			GF_nyto_collapse_liquid = 2.6
+		}
+	}
+	prerequisites = {
+		"tech_GFnyto_power_lv2"
+	}
+	component_set = "power_core"
+	size_restriction = { cruiser }
+	#	upgrades_to = "BATTLESHIP_DARK_MATTER_REACTOR"
+	class_restriction = {
+		shipclass_military
+		shipclass_constructor
+		shipclass_colonizer
+		shipclass_science_ship
+		shipclass_transport
+		shipclass_military_special
+		shipclass_starbase
+		shipclass_military_station
+	}
+	ai_weight = {
+		weight = 500
+	}
+	upgrades_to = GF_nyto_godenergy
+}
+utility_component_template = {
+	key = "GFnyto_power_lv2_3"
+	size = small
+	icon = "GFX_ship_part_GFnyto_power_lv2"
+	icon_frame = 1
+	power = 2800
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 400
+			GF_nyto_collapse_liquid = 56
+		}
+		upkeep = {
+			
+			GF_nyto_collapse_liquid = 5.6
+		}
+	}
+	prerequisites = {
+		"tech_GFnyto_power_lv2"
+	}
+	component_set = "power_core"
+	size_restriction = { battleship }
+	#	upgrades_to = "BATTLESHIP_DARK_MATTER_REACTOR"
+	class_restriction = {
+		shipclass_military
+		shipclass_constructor
+		shipclass_colonizer
+		shipclass_science_ship
+		shipclass_transport
+		shipclass_military_special
+		shipclass_starbase
+		shipclass_military_station
+	}
+	ai_weight = {
+		weight = 500
+	}
+	upgrades_to = GF_nyto_godenergy
+}
+utility_component_template = {
+	key = "GFnyto_power_lv2_4"
+	size = small
+	icon = "GFX_ship_part_GFnyto_power_lv2"
+	icon_frame = 1
+	power = 5000
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 710
+			GF_nyto_collapse_liquid = 100
+		}
+		upkeep = {
+			
+			GF_nyto_collapse_liquid = 10
+		}
+	}
+	prerequisites = {
+		"tech_GFnyto_power_lv2"
+	}
+	component_set = "power_core"
+	size_restriction = {  titan }
+	#	upgrades_to = "BATTLESHIP_DARK_MATTER_REACTOR"
+	class_restriction = {
+		shipclass_military
+		shipclass_constructor
+		shipclass_colonizer
+		shipclass_science_ship
+		shipclass_transport
+		shipclass_military_special
+		shipclass_starbase
+		shipclass_military_station
+	}
+	ai_weight = {
+		weight = 500
+	}
+	upgrades_to = GF_nyto_godenergy
+}
+utility_component_template = {
+	key = "GFnyto_power_lv2_5"
+	size = small
+	icon = "GFX_ship_part_GFnyto_power_lv2"
+	icon_frame = 1
+	power = 10000
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 1400
+			GF_nyto_collapse_liquid = 200
+		}
+		upkeep = {			
+			GF_nyto_collapse_liquid = 20
+		}
+	}
+	prerequisites = {
+		"tech_GFnyto_power_lv2"
+	}
+	component_set = "power_core"
+	size_restriction = {  GFnyto_Command_ship GFnyto_shiled_ship GF_nyto_super_battelship GFnyto_mobile_city }
+	#	upgrades_to = "BATTLESHIP_DARK_MATTER_REACTOR"
+	class_restriction = {
+		shipclass_military
+		shipclass_constructor
+		shipclass_colonizer
+		shipclass_science_ship
+		shipclass_transport
+		shipclass_military_special
+		shipclass_starbase
+		shipclass_military_station
+	}
+	ai_weight = {
+		weight = 500
+	}
+	upgrades_to = GF_nyto_godenergy
+}
+
+#lv3 熵能借贷
+utility_component_template = {
+	key = "GFnyto_power_lv3"
+	size = small
+	icon = "GFX_ship_part_GFnyto_power_lv3"
+	icon_frame = 1
+	power = 100000
+	resources = {
+		category = ship_components
+		cost = {
+			GF_nyto_collapse_liquid = 2000
+		}
+	}
+	prerequisites = {
+		"tech_GFnyto_power"
+	}
+	ship_modifier = {
+		custom_tooltip = "GFnyto_power_lv3_modif"
+	}
+	component_set = "power_core"
+	class_restriction = {
+		shipclass_military
+		shipclass_constructor
+		shipclass_colonizer
+		shipclass_science_ship
+		shipclass_transport
+		shipclass_military_special
+		shipclass_starbase
+		shipclass_military_station
+	}
+	ai_weight = {
+		weight = 0
+	}
+	upgrades_to = GF_nyto_godenergy
+}
+
+#穿梭引擎
+utility_component_template = {
+	key = "GF_nyto_shuttle_engine"
+	size = small
+	icon = "GFX_ship_part_GFnyto_shuttle_engine"
+	icon_frame = 1
+	power = -40
+	resources = {
+		category = ship_components
+		cost = {
+			
+			alloys = 24
+			GF_nyto_collapse_liquid = 2.4
+		}
+	}
+	ftl = yes
+	jumpdrive = yes
+	ship_modifier = {
+		#		ship_windup_mult = -1
+		#		ship_winddown_mult = -1
+		ship_jumpdrive_cooldown_mult = -0.8
+		ship_windup_mult = -0.8
+		ship_ftl_jumpdrive_range_mult = 1
+		
+	}
+	ai_weight = {
+		weight = 500
+	}
+	#	class_restriction = { shipclass_military shipclass_constructor shipclass_colonizer shipclass_science_ship shipclass_transport shipclass_military_special shipclass_starbase }
+	prerequisites = {
+		"tech_GFnyto_war_theory_a3"
+	}
+	component_set = "ftl_components"
+}
+
+#深空之眼
+utility_component_template = {
+	key = "utility_GF_nyto_Deep_space"
+	size = medium
+	icon = "GFX_ship_part_GFnyto_Deep_space"
+	icon_frame = 1
+	power = -200
+	resources = {
+		category = ship_components
+		cost = {
+			
+			alloys = 30
+			GF_nyto_new_fire_control_unit = 20
+			GF_nyto_collapse_liquid = 200
+		}
+		upkeep = {
+			
+			GF_nyto_collapse_liquid = 10
+			GF_nyto_new_fire_control_unit = 5
+		}
+	}
+	sensor_range = 10
+	hyperlane_range = 10
+	friendly_aura = {
+		name = "星空观测"
+		system_wide = yes
+		stack_info = {
+			id = "GF_nyto_deep_space_aura"
+			priority = 1
+		}
+		modifier = {
+			ship_ftl_jumpdrive_range_mult = 2
+		}
+	}
+	hostile_aura = {
+		name = "远方的凝视"
+		system_wide = yes
+		stack_info = {
+			id = "GF_nyto_deep_space_aura2"
+			priority = 1
+		}
+		modifier = {
+			ship_evasion_mult = -0.6
+		}
+	}
+	ship_modifier = {
+		ship_ftl_jumpdrive_range_mult = 2
+	}
+	ai_weight = {
+		weight = 600
+	}
+	prerequisites = {
+		"tech_GF_nyto_Deep_space"
+	}
+	size_restriction = {
+		titan
+	}
+	component_set = "sensor_components"
+}
+
+#光明的诗歌
+utility_component_template = {
+	key = "bright_poetry_template"
+	size = small
+	icon = GFX_bright_poetry
+	icon_frame = 1
+	power = -30
+	ship_modifier = {
+		ship_engagement_range_mult = 10
+	}
+	friendly_aura = {
+		name = "光明的礼赞"
+		system_wide = yes
+		stack_info = {
+			id = "GF_nyto_bright_aura"
+			priority = 1
+		}
+		modifier = {
+			ship_fire_rate_mult = 0.5
+			ship_weapon_range_mult = 0.5
+		}
+	}
+	hostile_aura = {
+		name = "光明的深渊"
+		system_wide = yes
+		stack_info = {
+			id = "GF_nyto_bright_aura"
+			priority = 2
+		}
+		modifier = {
+			ship_fire_rate_mult = -0.5
+			ship_weapon_range_mult = -0.6
+		}
+	}
+	class_restriction = {
+		shipclass_military
+	}
+	component_set = "combat_computers"
+	resources = {
+		category = ship_components
+		cost = {
+			
+			alloys = 30
+			GF_nyto_new_fire_control_unit = 20
+			GF_nyto_collapse_liquid = 200
+		}
+		upkeep = {
+			
+			GF_nyto_collapse_liquid = 10
+			GF_nyto_new_fire_control_unit = 5
+		}
+	}
+	size_restriction = {
+		titan
+	}
+	ship_behavior = "GFnyto_ship_behaviors5"
+	prerequisites = {
+		tech_GF_nyto_bright_poetry
+	}
+	ai_weight = {
+		weight = 600
+	}
+}
+
+#曙光
+utility_component_template = {
+	key = "light_thruster"
+	size = small
+	icon = GFX_light_thruster
+	icon_frame = 1
+	power = -200
+	ship_modifier = {
+		ship_speed_mult = 2
+	}
+	modifier = {
+		ship_base_speed_mult = 2
+	}
+	hostile_aura = {
+		name = "绝望"
+		system_wide = yes
+		stack_info = {
+			id = "light_thruster_aura"
+			priority = 1
+		}
+		modifier = {
+			ship_speed_mult = -4
+			ship_fire_rate_mult = -0.3
+		}
+	}
+	class_restriction = {
+		shipclass_military
+	}
+	size_restriction = {
+		titan
+	}
+	resources = {
+		category = ship_components
+		cost = {
+			
+			alloys = 30
+			GF_nyto_new_fire_control_unit = 20
+			GF_nyto_collapse_liquid = 200
+		}
+		upkeep = {
+			
+			GF_nyto_collapse_liquid = 10
+			GF_nyto_new_fire_control_unit = 5
+		}
+	}
+	component_set = thruster_components
+	prerequisites = {
+		tech_GF_nyto_light_thruster
+	}
+	ai_weight = {
+		weight = 600
+	}
+}
+
+#信标
+utility_component_template = {
+	key = "GF_nyto_Beacon"
+	size = small
+	icon = GFX_GFnyto_Beacon
+	icon_frame = 1
+	power = -200
+	resources = {
+		category = ship_components
+		cost = {
+			
+			alloys = 30
+			GF_nyto_new_fire_control_unit = 20
+			GF_nyto_collapse_liquid = 200
+		}
+		upkeep = {
+			
+			GF_nyto_collapse_liquid = 10
+			GF_nyto_new_fire_control_unit = 5
+		}
+	}
+	ftl = yes
+	jumpdrive = yes
+	friendly_aura = {
+		name = "信标"
+		system_wide = yes
+		stack_info = {
+			id = "GF_nyto_Beacon_aura"
+			priority = 1
+		}
+		modifier = {
+			ship_jumpdrive_cooldown_mult = -1
+			ship_windup_mult = -0.8
+			ship_ftl_jumpdrive_range_mult = 1
+		}
+	}
+	ship_modifier = {
+		ship_jumpdrive_cooldown_mult = -1
+		ship_windup_mult = -0.8
+		ship_ftl_jumpdrive_range_mult = 1
+	}
+	class_restriction = {
+		shipclass_military
+	}
+	ai_weight = {
+		weight = 5
+	}
+	component_set = "ftl_components"
+	size_restriction = {
+		titan
+	}
+	prerequisites = {
+		tech_GF_nyto_Beacon
+	}
+	ai_weight = {
+		weight = 600
+	}
+}
+
+#无尽能源2
+utility_component_template = {
+	key = GF_nyto_godenergy
+	size = small
+	icon = GFX_GFnyto_godenergy
+	icon_frame = 1
+	power = 1000000
+	resources = {
+		category = ship_components
+		cost = {
+			
+			alloys = 30
+			GF_nyto_new_fire_control_unit = 20
+			GF_nyto_collapse_liquid = 200
+		}
+		upkeep = {
+			
+			GF_nyto_collapse_liquid = 10
+			GF_nyto_new_fire_control_unit = 5
+		}
+	}
+	class_restriction = {
+		shipclass_military
+	}
+	component_set = "power_core"
+	class_restriction = {
+		shipclass_military
+	}
+	size_restriction = {
+		titan
+	}
+	hostile_aura = {
+		name = "能量潮汐"
+		system_wide = yes
+		stack_info = {
+			id = "GF_nyto_godenergy_aura"
+			priority = 1
+		}
+		modifier = {
+			ship_windup_mult = 0.3
+		}
+	}
+	prerequisites = {
+		tech_GF_nyto_godenergy
+	}
+	ai_weight = {
+		weight = 600
+	}
+}
+
+#附加运算模块-护航
+utility_component_template = {
+	key = "GFnyto_additional_arithmetic_module2"
+	size = small
+	icon = "GFX_ship_part_GFnyto_additional_arithmetic_module2"
+	icon_frame = 1
+	power = -20
+	ship_modifier = {
+		ship_fire_rate_mult = 0.3
+		ship_base_speed_mult = -0.3
+	}
+	class_restriction = {
+		shipclass_military
+	}
+	component_set = "combat_computers"
+	resources = {
+		category = ship_components
+		cost = {			
+			alloys = 20
+			GF_nyto_new_fire_control_unit = 5
+			GF_nyto_collapse_liquid = 0.2
+		}
+		upkeep = {			
+			GF_nyto_new_fire_control_unit = 1
+		}
+	}
+	ship_behavior = "GFnyto_ship_behaviors2"
+	prerequisites = {
+		"tech_GFnyto_additional_arithmetic_module"
+	}
+	ai_weight = {
+		weight = 10
+		modifier = {
+			factor = 60
+			is_ship_size = titan
+		}
+	}
+}
+
+#附加运算模块-支援
+utility_component_template = {
+	key = "GFnyto_additional_arithmetic_module3"
+	size = small
+	icon = "GFX_ship_part_GFnyto_additional_arithmetic_module3"
+	icon_frame = 1
+	power = -30
+	ship_modifier = {
+		ship_weapon_damage = 0.3
+		ship_fire_rate_mult = -0.3
+		ship_weapon_range_mult = 0.3
+	}
+	class_restriction = {
+		shipclass_military
+	}
+	component_set = "combat_computers"
+	resources = {
+		category = ship_components
+		cost = {
+			
+			alloys = 30
+			GF_nyto_new_fire_control_unit = 5
+			GF_nyto_collapse_liquid = 0.3
+		}
+		upkeep = {
+			
+			GF_nyto_new_fire_control_unit = 1
+		}
+	}
+	ship_behavior = "GFnyto_ship_behaviors3"
+	prerequisites = {
+		"tech_GFnyto_additional_arithmetic_module"
+	}
+	ai_weight = {
+		weight = 10
+		modifier = {
+			factor = 60
+			is_ship_size = battleship
+		}
+	}
+}
+#附加运算模块-冲锋
+utility_component_template = {
+	key = "GFnyto_additional_arithmetic_module1"
+	size = small
+	icon = "GFX_ship_part_GFnyto_additional_arithmetic_module3"
+	icon_frame = 1
+	power = -30
+	ship_modifier = {
+		ship_base_speed_mult = 0.3
+		ship_evasion_mult = 0.3
+		ship_fire_rate_mult = 0.3
+	}
+	class_restriction = {
+		shipclass_military
+	}
+	component_set = "combat_computers"
+	resources = {
+		category = ship_components
+		cost = {			
+			alloys = 30
+			GF_nyto_new_fire_control_unit = 5
+			GF_nyto_collapse_liquid = 0.3
+		}
+		upkeep = {
+			
+			GF_nyto_new_fire_control_unit = 1
+		}
+	}
+	ship_behavior = "GFnyto_ship_behaviors1"
+	prerequisites = {
+		"tech_GFnyto_additional_arithmetic_module"
+	}
+	ai_weight = {
+		weight = 10
+		modifier = {
+			factor = 60
+			is_ship_size = battleship
+		}
+	}
+}
+#附加运算模块-冲锋
+
+###########盾舰专用亚光速
+utility_component_template = {
+	key = "GFnyto_SHIP_THRUSTER_1"
+	size = small
+	icon = "GFX_ship_part_thruster_1"
+	icon_frame = 1
+	power = -10
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 3
+		}
+	}
+
+	modifier = {
+	}
+
+	prerequisites = { "tech_thrusters_1" }
+	component_set = "thruster_components"
+	size_restriction = {  GFnyto_Command_ship GFnyto_shiled_ship  GF_nyto_super_battelship GFnyto_mobile_city}
+	upgrades_to = "SHIP_THRUSTER_2"
+
+	ai_weight = {
+		weight = 1
+	}
+}
+utility_component_template = {
+	key = "GFnyto_BATTLESHIP_SHIP_THRUSTER_2"
+	size = small
+	icon = "GFX_ship_part_thruster_2"
+	icon_frame = 1
+	power = -15
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 6
+		}
+	}
+
+	modifier = {
+		ship_base_speed_mult = 0.25
+		ship_evasion_add = 2
+	}
+
+	prerequisites = { "tech_thrusters_2" }
+	component_set = "thruster_components"
+	size_restriction = {  GFnyto_Command_ship GFnyto_shiled_ship GF_nyto_super_battelship GFnyto_mobile_city}
+	upgrades_to = "BATTLESHIP_SHIP_THRUSTER_3"
+
+	ai_weight = {
+		weight = 2
+	}
+}
+utility_component_template = {
+	key = "GFnyto_BATTLESHIP_SHIP_THRUSTER_3"
+	size = small
+	icon = "GFX_ship_part_thruster_3"
+	icon_frame = 1
+	power = -25
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 9
+		}
+	}
+	modifier = {
+		ship_base_speed_mult = 0.50
+		ship_evasion_add = 4
+	}
+
+	prerequisites = { "tech_thrusters_3" }
+	component_set = "thruster_components"
+	size_restriction = { GFnyto_Command_ship GFnyto_shiled_ship GF_nyto_super_battelship GFnyto_mobile_city}
+	upgrades_to = "BATTLESHIP_SHIP_THRUSTER_4"
+
+	ai_weight = {
+		weight = 3
+	}
+}
+utility_component_template = {
+	key = "GFnyto_SHIP_THRUSTER_4"
+	size = small
+	icon = "GFX_ship_part_thruster_4"
+	icon_frame = 1
+	power = -25
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 12
+		}
+	}
+	modifier = {
+		ship_base_speed_mult = 0.75
+		ship_evasion_add = 15
+	}
+
+	prerequisites = { "tech_thrusters_4" }
+	component_set = "thruster_components"
+	size_restriction = { GFnyto_Command_ship GFnyto_shiled_ship GF_nyto_super_battelship GFnyto_mobile_city}
+	upgrades_to = "SHIP_THRUSTER_5"
+
+	ai_weight = {
+		weight = 4
+	}
+}
+#电
+utility_component_template = {
+	key = "GFnyto_BATTLESHIP_FISSION_REACTOR"
+	size = small
+	icon = "GFX_ship_part_reactor_1"
+	icon_frame = 1
+	power = 550
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 80
+		}
+		upkeep = {
+			energy = 0.80
+			alloys = 0.08
+		}
+	}
+
+	prerequisites = { "tech_fission_power" }
+	component_set = "power_core"
+	size_restriction = { GFnyto_Command_ship GFnyto_shiled_ship GF_nyto_super_battelship GFnyto_mobile_city}
+	upgrades_to = "BATTLESHIP_FUSION_REACTOR"
+
+	ai_weight = {
+		weight = 1
+	}
+}
+utility_component_template = {
+	key = "GFnyto_BATTLESHIP_FUSION_REACTOR"
+	size = small
+	icon = "GFX_ship_part_reactor_2"
+	icon_frame = 1
+	power = 720
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 104
+		}
+		upkeep = {
+			energy = 1.04
+			alloys = 0.104
+		}
+	}
+
+	prerequisites = { "tech_fusion_power" }
+	component_set = "power_core"
+	size_restriction = { GFnyto_Command_ship GFnyto_shiled_ship GF_nyto_super_battelship GFnyto_mobile_city}
+	upgrades_to = "BATTLESHIP_COLD_FUSION_REACTOR"
+
+	ai_weight = {
+		weight = 2
+	}
+}
+
+utility_component_template = {
+	key = "GFnyto_BATTLESHIP_COLD_FUSION_REACTOR"
+	size = small
+	icon = "GFX_ship_part_reactor_3"
+	icon_frame = 1
+	power = 950
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 136
+		}
+		upkeep = {
+			energy = 1.35
+			alloys = 0.135
+		}
+	}
+
+	prerequisites = { "tech_cold_fusion_power" }
+	component_set = "power_core"
+	size_restriction = { GFnyto_Command_ship GFnyto_shiled_ship GF_nyto_super_battelship GFnyto_mobile_city}
+	upgrades_to = "BATTLESHIP_ANTIMATTER_REACTOR"
+
+	ai_weight = {
+		weight = 3
+	}
+}
+
+utility_component_template = {
+	key = "GFnyto_BATTLESHIP_ANTIMATTER_REACTOR"
+	size = small
+	icon = "GFX_ship_part_reactor_4"
+	icon_frame = 1
+	power = 1250
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 176
+		}
+		upkeep = {
+			energy = 1.76
+			alloys = 0.176
+		}
+	}
+
+	prerequisites = { "tech_antimatter_power" }
+	component_set = "power_core"
+	size_restriction = { GFnyto_Command_ship GFnyto_shiled_ship GF_nyto_super_battelship GFnyto_mobile_city}
+	upgrades_to = "BATTLESHIP_ZERO_POINT_REACTOR"
+
+	ai_weight = {
+		weight = 4
+	}
+}

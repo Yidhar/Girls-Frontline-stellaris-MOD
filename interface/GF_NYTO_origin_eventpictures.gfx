@@ -1,0 +1,26 @@
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_GF_nyto_the_last_light"
+		texturefile = "gfx/event_pictures/origins/origin_GF_nyto_the_last_light.dds"
+		alwaystransparent = yes
+	}
+}
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_GF_nyto_the_beginning_of_exile"
+		texturefile = "gfx/event_pictures/origins/origin_GF_nyto_the_beginning_of_exile.dds"
+		alwaystransparent = yes
+	}
+}
+spriteTypes = {
+	frameAnimatedSpriteType = {	
+		name = "GFX_GF_nyto_the_last_light2"
+		texturefile = "gfx/event_pictures/origins/origin_GF_nyto_the_last_light2.dds"
+		noOfFrames = 30
+		transParencecheck = no
+		animation_rate_fps = 30
+		looping = yes
+		play_on_show = yes
+		alwaystransparent =yes	
+	}
+}

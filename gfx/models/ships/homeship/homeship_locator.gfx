@@ -1,0 +1,15 @@
+objectTypes = {
+	pdxmesh = {
+		name = "homeship_locator_mesh"
+		file = "gfx/models/ships/homeship/homeship_locator.mesh"
+		scale = 1
+		meshsettings = {
+			name = "pCubeShape3"
+			index = 0
+			texture_diffuse = "galaxy_hd_hold_502_d.dds"
+			texture_normal = "galaxy_hd_hold_502_n.dds"
+			texture_specular = "galaxy_hd_hold_502_s.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+}

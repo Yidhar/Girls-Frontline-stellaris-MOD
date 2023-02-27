@@ -1,0 +1,1286 @@
+objectTypes = {
+	pdxmesh = {
+		name = "black_mesh"
+		file = "gfx/models/ships/blak/black.mesh"
+		scale = 1.0
+		animation = { id = "idle1"			type = "black_idle1_animation" }
+		animation = { id = "idle2"			type = "black_idle2_animation" }
+		meshsettings = {
+			name = "black:pPlaneShape34"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:pPlaneShape38"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:pPlaneShape35"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:pPlaneShape37"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:pPlaneShape36"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:pPlaneShape1"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:pPlaneShape39"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:pPlaneShape40"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:pPlaneShape41"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:pPlaneShape42"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:polySurface2364Shape"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:polySurface2363Shape"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:polySurface2362Shape"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:polySurface2361Shape"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:polySurface2360Shape"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:polySurface2359Shape"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:polySurface2358Shape"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:polySurface1Shape"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:polySurface2340Shape"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:polySurface2341Shape"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:polySurface2350Shape"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:pCubeShape169"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:polySurface2347Shape"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:polySurface2345Shape"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:pCubeShape172"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:pCubeShape171"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:pCubeShape170"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:polySurface2344Shape"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:polySurface2343Shape"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:polySurface2346Shape"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:polySurface2342Shape"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:polySurface2379Shape"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:polySurface2380Shape"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:polySurface2381Shape"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:polySurface2382Shape"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:pCubeShape1"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:pCubeShape173"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:pCubeShape174"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:polySurface2383Shape"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:polySurface2384Shape"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:pCubeShape175"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:polySurface2385Shape"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:polySurface2386Shape"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:polySurface2387Shape"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:polySurface2388Shape"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:polySurface2351Shape"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:polySurface2352Shape"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:polySurface2353Shape"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:polySurface2354Shape"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:polySurface2355Shape"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:polySurface2356Shape"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:polySurface2357Shape"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:group85_group72_jie27Shape"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:group85_group72_jie26Shape"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:group85_group72_jie25Shape"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:group85_group72_jie24Shape"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:group85_group72_jie23Shape"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:group85_group72_jie22Shape"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:group85_group72_jie21Shape"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:group85_group72_jie20Shape"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:group85_group72_jie19Shape"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:group85_group72_jie18Shape"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:group85_group72_jie17Shape"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:group85_group72_jie16Shape"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:group85_group72_jie15Shape"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:group85_group72_jie14Shape"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:group85_group72_jie13Shape"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:group85_group72_jie12Shape"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:group85_group72_jie11Shape"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:group85_group72_jie10Shape"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:group85_group72_jie9Shape"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:group85_group72_jie8Shape"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:group85_group72_jie7Shape"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:group85_group72_jie6Shape"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:group85_group72_jie5Shape"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:group85_group72_jie4Shape"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:group85_group72_jie3Shape"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:group85_group72_jie2Shape"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:group85_group72_jie1Shape"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:jieShape28"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:polySurface2378Shape"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:polySurface2377Shape"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:polySurface2376Shape"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:polySurface2375Shape"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:polySurface2374Shape"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:polySurface2373Shape"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:polySurface2372Shape"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:polySurface2408Shape"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:polySurface2407Shape"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:polySurface2406Shape"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:polySurface2405Shape"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:pCubeShape183"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:polySurface2404Shape"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:polySurface2403Shape"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:pCubeShape182"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:pCubeShape181"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:pCubeShape180"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:polySurface2402Shape"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:polySurface2401Shape"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:polySurface2400Shape"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:polySurface2399Shape"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:polySurface2371Shape"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:polySurface2370Shape"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:polySurface2369Shape"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:polySurface2368Shape"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:polySurface2367Shape"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:polySurface2366Shape"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:polySurface2365Shape"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:polySurface2398Shape"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:polySurface2397Shape"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:polySurface2396Shape"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:polySurface2395Shape"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:pCubeShape179"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:polySurface2394Shape"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:polySurface2393Shape"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:pCubeShape178"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:pCubeShape177"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:pCubeShape176"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:polySurface2392Shape"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:polySurface2391Shape"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:polySurface2390Shape"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:polySurface2389Shape"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:polySurface2287Shape"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:polySurface2297Shape"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:pCube152Shape"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:polySurface2305Shape"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:group32Shape"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:group35Shape"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:polySurface2298Shape"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:polySurface2295Shape"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:pCylinder73Shape"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:polySurface2310Shape"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:polySurface2307Shape"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:polySurface2308Shape"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:polySurface2309Shape"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:group39Shape"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:group38Shape"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:group29Shape"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:group30Shape"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:group27Shape"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:group24Shape"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "black:polySurface2332Shape"
+			index = 0
+			texture_diffuse = "black_drgon_diff.dds"
+			texture_normal = "black_drgon_norm.dds"
+			texture_specular = "black_drgon_spec.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+}

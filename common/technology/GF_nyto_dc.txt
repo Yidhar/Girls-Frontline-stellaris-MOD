@@ -1,0 +1,304 @@
+#坍缩液提取
+tech_GF_nyto_collapse_stability_dc= {
+	icon = tech_GF_nyto_collapse_stability
+	cost = 2000
+	area = physics
+	start_tech = no
+	tier = 1
+	category = {particles}
+	prerequisites = { "tech_basic_science_lab_1" }
+	weight = 65
+	modifier = {}
+	potential = {
+		has_country_flag = has_nyto_technology
+	}
+	weight_modifier = {factor = 4}
+	ai_weight = {weight = 2}
+}
+#坍缩液提取2
+tech_GF_nyto_collapse_stability_2_dc= {
+	icon = tech_GF_nyto_collapse_stability_2
+	cost = 4000
+	area = physics
+	start_tech = no
+	tier = 2
+	category = {particles}
+	prerequisites = { "tech_GF_nyto_collapse_stability_dc" }
+	weight = 95
+	modifier = {}
+	potential = {
+		has_country_flag = has_nyto_technology
+	}
+	ai_weight = {weight = 2}
+}
+#坍缩粒子解析
+tech_GF_nyto_Inverse_collapse_1_dc= {
+	icon = tech_GF_nyto_Inverse_collapse_1
+	cost = 6000
+	area = physics
+	tier = 3
+	is_rare = yes
+	category = {field_manipulation}
+	prerequisites = { "tech_GF_nyto_Inverse_collapse_1_dc" }
+	weight = 100
+	modifier = {planet_jobs_produces_mult = 0.1}
+	potential = {
+		has_country_flag = has_nyto_technology
+	}
+	prereqfor_desc = {
+		custom = {
+			title = "核心科技"
+			desc = "坍塌液是一种以[紊乱运动]方式行进的粒子波,高速穿透物质后呈[量子隐态],穿透过程辐射频率高,组成成分不同,可观测到的仅有底夸克与光子。"
+		}
+	}
+	ai_weight = {weight = 5}
+}
+#逆向坍缩
+tech_GF_nyto_Inverse_collapse_2_dc = {
+	icon = tech_GF_nyto_Inverse_collapse_2
+	cost = 10000
+	area = physics
+	tier = 4
+	is_rare = yes
+	category = {field_manipulation}
+	prerequisites = { "tech_GF_nyto_Inverse_collapse_1_dc" }
+	weight = 85
+	modifier = {planet_jobs_produces_mult = 0.1}
+	potential = {
+		has_country_flag = has_nyto_technology
+	}
+	prereqfor_desc = {
+		custom = {
+			title = "核心科技"
+			desc = "坍塌物质在吸收同频率光子后其内构中大量电子跃迁到高能轨道,过程中能量传递产生高温,物质进入活跃的流状并根据物质建立模型开始回归有序排列以及恢复引斥力。"
+		}
+	}
+	ai_weight = {weight = 5}
+}
+#坍塌粒子稳定化
+tech_GF_nyto_Stabiliz_dc={
+	icon = tech_GF_nyto_Inverse_collapse_1
+	cost = 12500
+	area = physics
+	tier = 5
+	is_rare = yes
+	category = {field_manipulation}
+	prerequisites = { "tech_GF_nyto_Inverse_collapse_2_dc" }
+	weight = 50
+	modifier = {planet_jobs_produces_mult = 0.1}
+	potential = {
+		has_country_flag = has_nyto_technology
+	}
+	ai_weight = {weight = 999}
+}
+#宏观物质微观化
+tech_GF_nyto_RAR_dc = {
+	icon = tech_GF_nyto_Inverse_collapse_2
+	cost = 50000
+	area = physics
+	tier = 5
+	is_rare = yes
+	category = {field_manipulation}
+	prerequisites = { "tech_GF_nyto_Stabiliz_dc" }
+	weight = 50
+	modifier = {planet_jobs_produces_mult = 0.1}
+	potential = {
+		has_country_flag = has_nyto_technology
+	}
+	ai_weight = {weight = 5}
+}
+#坍塌理论
+tech_GFnyto_tansuo_dc={
+	icon = tech_GFnyto_tansuo
+	cost = 30000
+	area = engineering
+	category = { voidcraft }
+	tier = 4
+	weight = 50
+	potential = {
+		has_country_flag = has_nyto_technology
+	}
+	ai_weight = {weight = 2}
+	prerequisites = {
+		tech_GF_nyto_Inverse_collapse_1_dc
+	}
+}
+
+#粒子解离
+tech_GFnyto_tansuo2_dc={
+	icon = tech_GFnyto_tansuo2
+	cost = 30000
+	area = engineering
+	category = { voidcraft }
+	tier = 5
+	weight = 50
+	potential = {
+		has_country_flag = has_nyto_technology
+	}
+	ai_weight = {weight = 2}
+	prerequisites = {
+		tech_GFnyto_tansuo_dc
+	}
+}
+
+#恒星坍缩器
+tech_GFnyto_star_tasuo_dc={
+	cost = 50000
+	area = engineering
+	icon = tech_GFnyto_star_tasuo
+	category = {
+		voidcraft
+	}
+	tier = 5
+	weight = 50
+	potential = {
+		has_country_flag = has_nyto_technology
+	}
+	ai_weight = {weight = 200}
+	prerequisites = {
+		tech_mega_engineering
+	}
+	modifier = {
+		custom_tooltip = "tech_GFnyto_star_tasuo_desc"
+	}
+}
+
+#武器联锁
+tech_GF_nyto_x_dc ={
+	icon = tech_GF_nyto_Inverse_collapse_1
+	cost = 17000
+	area = physics
+	start_tech = no
+	tier = 4
+	category = { voidcraft }
+	weight = 34
+	is_rare = yes
+	prerequisites ={ tech_GF_nyto_RAR_dc  }
+	potential = {
+		has_country_flag = has_nyto_technology
+	}
+	ai_weight = {weight =  50}
+}
+#无人机集群
+tech_GF_nyto_H_dc ={
+	icon = tech_GF_nyto_Inverse_collapse_1
+	cost = 15000
+	area = physics
+	start_tech = no
+	tier = 5
+	weight = 25
+	is_rare = yes
+	category = { voidcraft }
+	prerequisites ={ tech_GF_nyto_RAR_dc }
+	potential = {
+		has_country_flag = has_nyto_technology
+	}
+	ai_weight = {weight =  50}
+}
+
+#交叉火力连锁
+tech_GF_nyto_P_dc ={
+	icon = tech_GF_nyto_PP
+	cost = 20000
+	area = physics
+	start_tech = no
+	tier = 5
+	weight = 20
+	is_rare = yes
+	category = { voidcraft }
+	prerequisites ={ tech_GF_nyto_RAR_dc }
+	potential = {
+		has_country_flag = has_nyto_technology
+	}
+	modifier = {
+		weapon_type_point_defense_weapon_fire_rate_mult = 0.5
+	}
+	ai_weight = {weight =  50}
+}
+
+#饱和式火力覆盖
+tech_GF_nyto_G_dc ={
+	icon = tech_GF_nyto_Inverse_collapse_1
+	cost = 20000
+	area = physics
+	start_tech = no
+	tier = 5
+	weight = 20
+	is_rare = yes
+	category = { voidcraft }
+	prerequisites ={ tech_GF_nyto_RAR_dc }
+	potential = {
+		has_country_flag = has_nyto_technology
+	}
+	modifier = {
+		weapon_type_explosive_weapon_fire_rate_mult = 0.5
+	}
+	ai_weight = {weight =  50}
+}
+
+#火力引导标记
+tech_GF_nyto_sm_dc ={
+	icon = tech_GF_nyto_Inverse_collapse_1
+	cost = 8000
+	area = physics
+	start_tech = no
+	tier = 3
+	weight = 20
+	is_rare = yes
+	category = { voidcraft }
+	prerequisites ={ tech_GF_nyto_Inverse_collapse_1_dc }
+	potential = {
+		has_country_flag = has_nyto_technology
+	}
+	ai_weight = {weight =  50}
+}
+
+#力场盾
+tech_GFnyto_force_shield1_dc= {
+	icon = tech_GFnyto_force_shield1
+	cost = 7000
+	area = physics
+	tier = 1
+	is_rare = no
+	category = {field_manipulation}
+	prerequisites = { "tech_GF_nyto_Inverse_collapse_2_dc" }
+	weight = 65
+	modifier = {ship_shield_regen_add_perc = 0.01}
+	potential = {
+		has_country_flag = has_nyto_technology
+	}
+	ai_weight = {weight = 5}
+}
+tech_GFnyto_force_shield2_dc= {
+	icon = tech_GFnyto_force_shield2
+	cost = 10000
+	area = physics
+	tier = 2
+	is_rare = no
+	category = {field_manipulation}
+	prerequisites = { "tech_GFnyto_force_shield1_dc" }
+	weight = 75
+	modifier = {ship_shield_regen_add_perc = 0.01}
+	potential = {
+		OR = {
+			has_authority = auth_GF_paradeus
+			has_country_flag = has_nyto_technology
+		}	
+	}
+	ai_weight = {weight = 5}
+}
+tech_GFnyto_force_shield3_dc= {
+	icon = tech_GFnyto_force_shield3
+	cost = 20000
+	area = physics
+	tier = 3
+	is_rare = no
+	category = {field_manipulation}
+	prerequisites = { "tech_GFnyto_force_shield2_dc" }
+	weight = 45
+	modifier = {ship_shield_regen_add_perc = 0.01}
+	potential = {
+		has_country_flag = has_nyto_technology
+	}
+	ai_weight = {weight = 5}
+}

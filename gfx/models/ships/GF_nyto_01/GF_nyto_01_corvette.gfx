@@ -1,0 +1,16 @@
+objectTypes = {
+	pdxmesh = {
+		name = "GF_nyto_01_corvette_mesh"
+		file = "gfx/models/ships/GF_nyto_01/GF_nyto_01_corvette.mesh"
+		scale = 1.0
+
+		meshsettings = {
+			name = "S_SS_Mod_E_06Shape"
+			index = 0
+			texture_diffuse = "S_SS_Tex_E_06_d.dds"
+			texture_normal = "S_SS_Tex_E_06_n.dds"
+			texture_specular = "S_SS_Tex_E_06_s.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+}

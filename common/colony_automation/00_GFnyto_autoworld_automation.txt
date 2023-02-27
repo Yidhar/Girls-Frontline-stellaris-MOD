@@ -1,0 +1,755 @@
+#纯合金
+GF_nyto_alloy_automation = {
+	category = "planet_automation_designation_construction"
+	available = {
+		has_district = district_GF_nyto_pc_toxic_alloy
+		colony_type = col_GF_nyto_pc_toxic_alloy_plural
+		NOT = {
+			has_district = district_GF_nyto_pc_toxic_science
+		}
+		NOT = {
+			has_district = district_GF_nyto_pc_toxic_leisure
+		}
+		owner = {
+			has_authority = auth_GF_paradeus
+		}
+	}
+	prio_districts = {
+		district_GF_nyto_pc_toxic_alloy
+	}
+	buildings = {
+		1 = {
+			building = building_capital
+			available = {
+				always = yes
+			}
+		}
+		2 = {
+			building = building_GFnyto_transportation_hub
+			available = {
+				always = yes
+			}
+		}
+		3 = {
+			building = building_GFnyto_collapse_change_center
+			available = {
+				owner = {
+					has_technology = tech_GF_nyto_collapse_stability
+				}
+			}
+		}
+		4 = {
+			building = building_GFnyto_fe_stronghold
+			available = {
+				num_buildings = {
+					type = building_GFnyto_fe_stronghold
+					value < 1
+				}
+				owner = {
+					has_technology = tech_GF_nyto_storage_of_ancient_technology
+				}
+			}
+		}
+		5 = {
+			building = building_ministry_production
+			available = {
+				owner = {
+					has_technology = tech_global_production_strategy
+				}
+			}
+		}
+		6 = {
+			building = building_GFnyto_dimensional_fabricator
+			available = {
+				owner = {
+					has_technology = tech_GFnyto_tansuo
+				}
+			}
+		}
+	}
+}
+
+#合金加科研
+GF_nyto_alloy_and_science_automation = {
+	category = "planet_automation_designation_construction"
+	available = {
+		has_district = district_GF_nyto_pc_toxic_alloy
+		has_district = district_GF_nyto_pc_toxic_science
+		NOT = {
+			has_district = district_GF_nyto_pc_toxic_leisure
+		}
+		owner = {
+			has_authority = auth_GF_paradeus
+		}
+	}
+	prio_districts = {
+		district_GF_nyto_pc_toxic_science
+	}
+	buildings = {
+		1 = {
+			building = building_capital
+			available = {
+				always = yes
+			}
+		}
+		2 = {
+			building = building_GFnyto_transportation_hub
+			available = {
+				always = yes
+			}
+		}
+		3 = {
+			building = building_GFnyto_collapse_change_center
+			available = {
+				owner = {
+					has_technology = tech_GF_nyto_collapse_stability
+				}
+			}
+		}
+		4 = {
+			building = building_GFnyto_fe_stronghold
+			available = {
+				num_buildings = {
+					type = building_GFnyto_fe_stronghold
+					value < 1
+				}
+				owner = {
+					has_technology = tech_GF_nyto_storage_of_ancient_technology
+				}
+			}
+		}
+		5 = {
+			building = building_ministry_production
+			available = {
+				owner = {
+					has_technology = tech_global_production_strategy
+				}
+			}
+		}
+		6 = {
+			building = building_institute
+			available = {
+				owner = {
+					has_technology = tech_global_research_initiative
+				}
+			}
+		}
+		7 = {
+			building = building_GFnyto_dimensional_fabricator
+			available = {
+				owner = {
+					has_technology = tech_GFnyto_tansuo
+				}
+			}
+		}
+	}
+}
+
+#合金+密钥
+GF_nyto_algorithm_and_alloy_automation = {
+	category = "planet_automation_designation_construction"
+	available = {
+		colony_type = col_GF_nyto_pc_toxic_energy_plural
+		has_district = district_GF_nyto_pc_toxic_alloy
+	}
+	prio_districts = {
+		district_GF_nyto_pc_toxic_alloy
+	}
+	buildings = {
+		1 = {
+			building = building_capital
+			available = {
+				always = yes
+			}
+		}
+		2 = {
+			building = building_GFnyto_transportation_hub
+			available = {
+				always = yes
+			}
+		}
+		3 = {
+			building = building_GFnyto_collapse_change_center
+			available = {
+				owner = {
+					has_technology = tech_GF_nyto_collapse_stability
+				}
+			}
+		}
+		4 = {
+			building = building_GFnyto_fe_stronghold
+			available = {
+				num_buildings = {
+					type = building_GFnyto_fe_stronghold
+					value < 1
+				}
+				owner = {
+					has_technology = tech_GF_nyto_storage_of_ancient_technology
+				}
+			}
+		}
+		5 = {
+			building = building_ministry_production
+			available = {
+				owner = {
+					has_technology = tech_global_production_strategy
+				}
+			}
+		}
+		6 = {
+			building = building_GFnyto_algorithm
+			available = {
+				owner = {
+					has_technology = tech_GF_nyto_algorithm
+				}
+			}
+		}
+	}
+}
+
+#坍塌液+密钥
+GF_nyto_algorithm_and_rar_automation = {
+	category = "planet_automation_designation_construction"
+	available = {
+		colony_type = col_GF_nyto_pc_toxic_consumer_good_plural
+		has_district = district_GF_nyto_pc_toxic_leisure
+	}
+	prio_districts = {
+		district_GF_nyto_pc_toxic_leisure
+	}
+	buildings = {
+		1 = {
+			building = building_capital
+			available = {
+				always = yes
+			}
+		}
+		2 = {
+			building = building_GFnyto_transportation_hub
+			available = {
+				always = yes
+			}
+		}
+		3 = {
+			building = building_GFnyto_collapse_change_center
+			available = {
+				owner = {
+					has_technology = tech_GF_nyto_collapse_stability
+				}
+			}
+		}
+		4 = {
+			building = building_GFnyto_fe_stronghold
+			available = {
+				num_buildings = {
+					type = building_GFnyto_fe_stronghold
+					value < 1
+				}
+				owner = {
+					has_technology = tech_GF_nyto_storage_of_ancient_technology
+				}
+			}
+		}
+		5 = {
+			building = building_ministry_production
+			available = {
+				owner = {
+					has_technology = tech_global_production_strategy
+				}
+			}
+		}
+		6 = {
+			building = building_GFnyto_algorithm
+			available = {
+				owner = {
+					has_technology = tech_GF_nyto_algorithm
+				}
+			}
+		}
+	}
+}
+
+#科研区划+密钥基地
+GF_nyto_science_and_algorithm ={
+	category = "planet_automation_designation_construction"
+	available = {
+		colony_type = col_GF_nyto_pc_toxic_energy_plural
+		has_district = district_GF_nyto_pc_toxic_science
+	}
+	prio_districts = {
+		district_GF_nyto_pc_toxic_science
+	}
+	buildings = {
+		1 = {
+			building = building_capital
+			available = {
+				always = yes
+			}
+		}
+		2 = {
+			building = building_GFnyto_transportation_hub
+			available = {
+				always = yes
+			}
+		}
+		3 = {
+			building = building_GFnyto_collapse_change_center
+			available = {
+				owner = {
+					has_technology = tech_GF_nyto_collapse_stability
+				}
+			}
+		}
+		4 = {
+			building = building_GFnyto_fe_stronghold
+			available = {
+				num_buildings = {
+					type = building_GFnyto_fe_stronghold
+					value < 1
+				}
+				owner = {
+					has_technology = tech_GF_nyto_storage_of_ancient_technology
+				}
+			}
+		}
+		5 = {
+			building = building_ministry_production
+			available = {
+				owner = {
+					has_technology = tech_global_production_strategy
+				}
+			}
+		}
+		6 = {
+			building = building_GFnyto_collapse_exploit_plant_1
+			available = {
+				num_buildings = {
+					type = building_GFnyto_collapse_exploit_plant_1
+					value <1
+				}
+				num_buildings = {
+					type = building_GFnyto_collapse_exploit_plant_2
+					value < 1
+				}				
+			}
+		}
+		7 = {
+			building = building_GFnyto_algorithm
+			available = {
+				owner = {
+					has_technology = tech_GF_nyto_algorithm
+				}
+			}
+		}
+	}
+}
+
+#不符合任何判断的密钥基地
+GF_nyto_algorithm_no_true ={
+	category = "planet_automation_designation_construction"
+	available = {
+		colony_type = col_GF_nyto_pc_toxic_energy_plural
+	}
+	prio_districts = {
+		
+	}
+	buildings = {
+		1 = {
+			building = building_capital
+			available = {
+				always = yes
+			}
+		}
+		2 = {
+			building = building_GFnyto_transportation_hub
+			available = {
+				always = yes
+			}
+		}
+		3 = {
+			building = building_GFnyto_collapse_change_center
+			available = {
+				owner = {
+					has_technology = tech_GF_nyto_collapse_stability
+				}
+			}
+		}
+		4 = {
+			building = building_GFnyto_fe_stronghold
+			available = {
+				num_buildings = {
+					type = building_GFnyto_fe_stronghold
+					value < 1
+				}
+				owner = {
+					has_technology = tech_GF_nyto_storage_of_ancient_technology
+				}
+			}
+		}
+		5 = {
+			building = building_ministry_production
+			available = {
+				owner = {
+					has_technology = tech_global_production_strategy
+				}
+			}
+		}
+		6 = {
+			building = building_GFnyto_collapse_exploit_plant_1
+			available = {
+				num_buildings = {
+					type = building_GFnyto_collapse_exploit_plant_1
+					value <1
+				}
+				num_buildings = {
+					type = building_GFnyto_collapse_exploit_plant_2
+					value < 1
+				}				
+			}
+		}
+		7 = {
+			building = building_GFnyto_algorithm
+			available = {
+				owner = {
+					has_technology = tech_GF_nyto_algorithm
+				}
+			}
+		}
+	}
+}
+
+
+#科研环+火控核心
+GF_nyto_framework_core_automation = {
+	category = "planet_automation_designation_construction"
+	available = {
+		OR = {
+			colony_type = col_ring_research
+			colony_type = col_ecu_research
+		}
+	}
+	prio_districts = {		
+		district_rw_science
+		district_hab_science
+	}
+	buildings = {
+		1 = {
+			building = building_capital
+			available = {
+				always = yes
+			}
+		}
+		2 = {
+			building = building_GFnyto_transportation_hub
+			available = {
+				always = yes
+			}
+		}
+		3 = {
+			building = building_GFnyto_collapse_change_center
+			available = {
+				owner = {
+					has_technology = tech_GF_nyto_collapse_stability
+				}
+			}
+		}
+		4 = {
+			building = building_GFnyto_fe_stronghold
+			available = {
+				num_buildings = {
+					type = building_GFnyto_fe_stronghold
+					value < 1
+				}
+				owner = {
+					has_technology = tech_GF_nyto_storage_of_ancient_technology
+				}
+			}
+		}
+		5 = {
+			building = building_ministry_production
+			available = {
+				owner = {
+					has_technology = tech_global_production_strategy
+				}
+			}
+		}
+		6 = {
+			building = building_institute
+			available = {
+				owner = {
+					has_technology = tech_global_research_initiative
+				}
+			}
+		}
+		7 = {
+			building = building_GFnytp_framework_core
+			available = {
+				owner = {
+					has_technology = tech_GFnyto_framework
+				}
+			}
+		}
+	}
+}
+
+#发电
+GF_nyto_class_4_automation ={
+	category = "planet_automation_designation_construction"
+	available = {
+		check_variable = {
+			which = GFnyto_plante_wrlv
+			value < 100
+		}
+		owner = {
+			resource_income_compare = {
+				resource = energy
+				value < 300
+			}
+		}
+	}
+	prio_districts = {
+		district_GF_nyto_pc_toxic_energy
+	}
+	buildings = {
+		1 ={
+			building = building_capital
+			available = {
+				always = yes
+			}
+		}
+		2={
+			building = building_GFnyto_class_4_singularity
+			available = {
+				owner = {
+					has_technology = tech_GF_nyto_storage_of_ancient_technology
+				}
+			}
+		}
+	}
+}
+
+#科研殖民地类型
+GF_nyto_science2_automation ={
+	category = "planet_automation_designation_construction"
+	available = {
+		colony_type = col_GF_nyto_science
+		has_district = district_GF_nyto_pc_toxic_science
+	}
+	prio_districts = {
+		district_GF_nyto_pc_toxic_science
+	}
+	buildings = {
+		1 = {
+			building = building_capital
+			available = {
+				always = yes
+			}
+		}
+		2 = {
+			building = building_GFnyto_transportation_hub
+			available = {
+				always = yes
+			}
+		}
+		3 = {
+			building = building_GFnyto_collapse_change_center
+			available = {
+				owner = {
+					has_technology = tech_GF_nyto_collapse_stability
+				}
+			}
+		}
+		4 = {
+			building = building_GFnyto_fe_stronghold
+			available = {
+				num_buildings = {
+					type = building_GFnyto_fe_stronghold
+					value < 1
+				}
+				owner = {
+					has_technology = tech_GF_nyto_storage_of_ancient_technology
+				}
+			}
+		}
+		5 = {
+			building = building_institute
+			available = {
+				owner = {
+					has_technology = tech_global_research_initiative
+				}
+			}
+		}
+		6 = {
+			building = building_GFnyto_collapse_exploit_plant_1
+			available = {
+				num_buildings = {
+					type = building_GFnyto_collapse_exploit_plant_1
+					value <1
+				}
+				num_buildings = {
+					type = building_GFnyto_collapse_exploit_plant_2
+					value < 1
+				}				
+			}
+		}
+		7 ={ 
+			building = building_GFnyto_algorithm
+			available = {
+				owner = {
+					has_technology = tech_GF_nyto_algorithm
+				}
+			}
+		}
+	}
+}
+
+
+
+#快速转化 （有昙花区划时）
+GF_nyto_tanhua_automation ={
+	category = "planet_automation_designation_construction"
+	available = {
+		colony_type = col_GF_nyto_speed_planet_wrlv
+	}
+	prio_districts = {
+		district_GFnyto_pc_Epiphyllum
+	}
+	buildings = {
+		1 = {
+			building = building_capital
+			available = {
+				always = yes
+			}
+		}
+		2 ={
+			building = building_GFnyto_dimensional_fabricator
+			available = {
+				owner = {
+					has_technology = tech_GFnyto_tansuo
+				}
+			}
+		}
+	}
+}
+#没有时
+GF_nyto_no_tanhua_automation={
+	category = "planet_automation_designation_construction"
+	available = {
+		colony_type = col_GF_nyto_speed_planet_wrlv
+	}
+	prio_districts = {
+		
+	}
+	buildings = {
+		1 = {
+			building = building_capital
+			available = {
+				always = yes
+			}
+		}
+		2 ={
+			building = building_GFnyto_dimensional_fabricator
+			available = {
+				owner = {
+					has_technology = tech_GFnyto_tansuo
+				}
+			}
+		}
+	}
+}
+
+#战略资源 (三稀有+火控）
+Gf_nyto_refinery_automation ={
+	category = "planet_automation_designation_construction"
+	available = {
+		colony_type = col_Gf_nyto_xiyou_rss
+		has_district = district_GF_nyto_pc_toxic_refine
+	}
+	prio_districts = {
+		district_GF_nyto_pc_toxic_refine
+	}
+	buildings = {
+		1 = {
+			building = building_capital
+			available = {
+				always = yes
+			}
+		}
+		2 = {
+			building = building_GFnyto_transportation_hub
+			available = {
+				always = yes
+			}
+		}
+		3 = {
+			building = building_GFnyto_collapse_change_center
+			available = {
+				owner = {
+					has_technology = tech_GF_nyto_collapse_stability
+				}
+			}
+		}
+		4 = {
+			building = building_GFnyto_fe_stronghold
+			available = {
+				num_buildings = {
+					type = building_GFnyto_fe_stronghold
+					value < 1
+				}
+				owner = {
+					has_technology = tech_GF_nyto_storage_of_ancient_technology
+				}
+			}
+		}
+		5 = {
+			building = building_GFnytp_framework_core
+			available = {
+				owner = {
+					has_technology = tech_GFnyto_framework
+				}
+			}
+		}
+	}
+}
+#舰容
+GF_nyto_fleet_automation ={
+	category = "planet_automation_designation_construction"
+	available = {
+		colony_type = col_GF_nyto_nv_fleet
+		has_district = district_GF_nyto_pc_toxic_trade
+	}
+	prio_districts = {
+		district_GF_nyto_pc_toxic_trade
+	}
+	buildings = {
+		1 = {
+			building = building_capital
+			available = {
+				always = yes
+			}
+		}
+		2 = {
+			building = building_GFnyto_transportation_hub
+			available = {
+				always = yes
+			}
+		}
+		3 = {
+			building = building_GFnyto_collapse_change_center
+			available = {
+				owner = {
+					has_technology = tech_GF_nyto_collapse_stability
+				}
+			}
+		}
+		4 = {
+			building = building_GFnyto_fe_stronghold
+			available = {
+				owner = {
+					has_technology = tech_GF_nyto_storage_of_ancient_technology
+				}
+			}
+		}
+	}
+}
+

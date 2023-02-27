@@ -1,0 +1,62 @@
+particle={
+	name="GF_hit_tihs_effect"
+	subsystem={
+		name="Surface_fire"
+		max_amount=1
+		slave_particles=0
+		sort="depth"
+		emitter_type="box"
+		box_emitter_y=10
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/dc_gf3.dds"
+			x=1
+			y=1
+			shader="ParticleAdditive"
+		}
+		color={
+			alpha=255
+		}
+		position={
+		}
+		start=0
+		duration=-1
+		velocity_pitch=-90
+		velocity=5
+		life=1
+		emission=1
+		size=5
+		rotation=0
+	}
+	animation={
+		name="ani1"
+		start=0
+		duration=1
+		repeat=yes
+		minValue=0
+		maxValue=10
+		curve={
+			0 0 0.50588 1 1 0 
+		}
+		op="MUL"
+		time="life"
+	}
+	force={
+		type="planar"
+		name="force0"
+		position={
+			0 0 0 
+		}
+		direction={
+			0 1 0 
+		}
+		local_force=yes
+		yaw=0
+		division=16
+		amount=5
+	}
+}

@@ -1,0 +1,87 @@
+Gf_nyto_habitat_cost ={
+	base = 0
+	complex_trigger_modifier={
+		trigger = count_planet_within_border
+		parameters ={
+			limit = {
+				NOT = { has_anomaly = yes }
+				NOR = {
+					has_planet_flag = megastructure
+					has_planet_flag = has_megastructure
+					solar_system = { has_star_flag = ring_world_built }
+					is_planet_class = pc_ringworld_habitable
+					is_planet_class = pc_ringworld_habitable_damaged
+					is_planet_class = pc_ringworld_tech
+					is_planet_class = pc_ringworld_tech_damaged
+					is_planet_class = pc_ringworld_seam
+					is_planet_class = pc_ringworld_seam_damaged
+					is_planet_class = pc_habitat
+				}
+				NOR = { is_asteroid = yes is_moon = yes }
+				is_star = no
+			}
+		}
+		mode = add
+		mult = 1
+	}
+}
+# GF_nyto_technician_modifer ={
+# 	base = 0
+# 	complex_trigger_modifier = {
+# 		trigger = count_owned_pop
+# 		parameters = {
+# 			limit ={
+# 				has_job = GFnyto_phase_technician
+# 			}
+# 		}
+# 		mode = add
+# 		mult = 1
+# 	}
+# }
+GF_nyto_drp_modifer ={
+	base = 0
+	complex_trigger_modifier = {
+		trigger = num_districts
+		parameters = {
+			type = $districts$
+		}
+		mode = mult
+		mult = 0.5
+	}
+	[[rss]
+		add = modifier:planet_jobs_$rss$_produces_mult
+	]
+		add = modifier:planet_jobs_produces_mult
+	[[category]
+		add = modifier:planet_jobs_$category$_produces_mult
+		]
+	[[rss_category]
+		add = modifier:planet_$rss_category$_produces_mult
+		]
+	[[researchers0]
+		add = modifier:planet_$researchers0$_produces_mult
+	]
+	[[researchers1]
+		add = modifier:planet_$researchers1$_produces_mult
+		add = modifier:planet_jobs_$researchers1$_produces_mult
+	]
+	[[researchers2]
+		add = modifier:planet_$researchers2$_produces_mult
+		add = modifier:planet_jobs_$researchers2$_produces_mult
+	]
+	[[researchers3]
+		add = modifier:planet_researchers_$researchers3$_produces_mult
+		add = modifier:planet_jobs_$researchers3$_produces_mult
+	]
+	add = planet.trigger:has_planetary_ascension_tier
+	complex_trigger_modifier = {
+		trigger = count_owned_pop
+		parameters = {
+			limit ={
+				has_job = $JOB$
+			}
+		}
+		mode = mult
+		mult = 1
+	}
+}

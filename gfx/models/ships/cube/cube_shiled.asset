@@ -1,0 +1,29 @@
+entity = {
+	name = "cube_shiled_entity"
+	pdxmesh = "cube_shiled_mesh"
+	scale = 50
+	locator = {
+		name = loc1
+		position = {
+			0 0 0
+		}
+	}
+	default_state = idle
+	state = { name = idle animation = idle1 animation_speed = 0.001 animation_blend_time = 10 state_time = 20 }
+	state = { name = combat_moving animation = idle1 animation_speed = 0.001 animation_blend_time = 10 state_time = 20 }
+	
+}
+
+entity = {
+	name = "cube_shiled_entity2"
+	pdxmesh = "cube_shiled_mesh"
+	scale = 50
+	default_state = idle
+	state = { name = idle animation = idle2 animation_speed = 0.01 state_time = 20 }
+	state = { name = combat_moving animation = idle2 animation_speed = 0.01 state_time = 20  }
+}
+
+
+animation = { name = cube_shiled_idle file = cube_shiled_idle.anim }
+
+animation = { name = cube_shiled_idle2 file = cube_shiled_idle2.anim }

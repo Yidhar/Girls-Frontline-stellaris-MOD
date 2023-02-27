@@ -1,0 +1,81 @@
+nyto= {
+	archetype = NYTO
+	randomized = yes
+	gender = no
+	use_climate_preference = no
+	portrait_modding = no	
+	possible = {authority = {value = auth_GF_paradeus}}
+	portraits = {"GFnyto_nyto"}
+	custom_portraits = {portraits = {"GFnyto_nyto"}}
+	leader_age_min = 5
+	leader_age_max = 50
+	graphical_culture = GF_nyto_02
+	move_pop_sound_effect = "robot_pops_move"
+	resources = {
+		category = planet_pops
+		upkeep = {
+			energy = 0.2
+			food = 0.1
+			alloys = 0.05
+			GF_nyto_collapse_liquid = 0.1
+		}
+		produces = {
+			trigger = {
+				has_trait = trait_GF_nyto_Self_directed_development
+			}
+			physics_research = 1
+			society_research = 1
+			engineering_research = 1		
+		}
+		produces = {
+			trigger = {
+				planet = { has_modifier = planet_population_control }
+				owner = { is_ai = no }				
+			}
+			GF_nyto_dark_star_core = 0.01
+		}
+		produces = {
+			trigger = { owner = { is_ai = yes } }
+			GF_nyto_dark_star_core = 0.01
+		}
+	}
+	playable = {
+		always = yes
+	}
+	modifier = {
+		planet_pop_assembly_add = 3
+		pop_assembly_speed = 2
+		
+	}
+	trait = "trait_GF_nyto_ogas_agreement"
+}
+#机械
+nyto_machine= {
+	archetype = MACHINE
+	randomized = {NOT = { has_global_flag = game_started }}
+	possible = { authority = { OR = { value = auth_machine_intelligence text = SPECIES_CLASS_MUST_USE_MACHINE_INTELLIGENCE } } }
+	possible_secondary = { always = no text = SECONDARY_SPECIES_CLASS_INVALID }
+	gender = no
+	use_climate_preference = no
+	portrait_modding = no
+	leader_age_min = 2
+	leader_age_max = 10
+	custom_portraits = {portraits = {"GFnyto_nyto"}}
+	graphical_culture = GF_nyto_01
+	move_pop_sound_effect = "robot_pops_move"
+	trait = "trait_machine_unit"
+	resources = {}
+}
+#crisis_nyto= {
+#	archetype = NYTO
+#	randomized = no
+#	robotic = no
+#	gender = no
+#	use_climate_preference = no
+#	portrait_modding = yes
+#	portraits = {"GFnyto_crisis_nyto"}
+#	leader_age_min = 5
+#	leader_age_max = 50
+#	graphical_culture = humanoid_01
+#	move_pop_sound_effect = "robot_pops_move"
+#}

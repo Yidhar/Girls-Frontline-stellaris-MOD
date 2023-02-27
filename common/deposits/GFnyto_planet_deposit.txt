@@ -1,0 +1,185 @@
+###母星特有区块###
+#远古隔离墙
+d_GFnyto_ancient_land_zone = {
+	is_for_colonizable = yes
+	icon = d_GFnyto_ancient_land_zone
+	category = deposit_cat_rare	
+	planet_modifier = {
+		job_soldier_add = 1
+		planet_housing_add = 1
+		army_health = 0.1	
+	}
+	drop_weight = {weight = 0}
+}
+#远古城市区
+d_GFnyto_ancient_city_zone = {
+	is_for_colonizable = yes
+	icon = d_GFnyto_ancient_city_zone
+	category = deposit_cat_rare	
+	planet_modifier = {
+		job_technician_add = 2
+		job_miner_add = 2
+		job_farmer_add = 2
+		planet_housing_add = 5
+	}
+
+	resources = {
+		category =  planet_deposits
+		produces = {
+			energy = 100
+			food = 50
+			consumer_goods = 50
+		}
+	}
+	drop_weight = {weight = 0}
+}
+#远古工业区
+d_GFnyto_ancient_industry_zone = {
+	is_for_colonizable = yes
+	icon = d_GFnyto_ancient_industry_zone
+	category = deposit_cat_rare	
+	planet_modifier = {
+		job_foundry_add = 1
+        job_artisan_add = 1
+		planet_housing_add = 5
+	}
+	resources = {
+		category = armies
+		produces = {
+			alloys = 10
+		}
+	}
+	drop_weight = {weight = 0}
+}
+#地下避难所
+d_GFnyto_underground_shelters_zone= {
+	is_for_colonizable = yes
+	icon = d_GFnyto_underground_shelters_zone
+	category = deposit_cat_rare	
+	planet_modifier = {
+		job_technician_add = 1
+		job_miner_add = 1
+		job_farmer_add = 1
+		planet_housing_add = 10
+	}
+	drop_weight = {weight = 0}
+}
+#地下实验室
+d_GFnyto_underground_laboratory_zone = {
+	is_for_colonizable = yes
+	icon = d_GFnyto_underground_laboratory_zone
+	category = deposit_cat_rare
+	planet_modifier = {
+		job_researcher_add = 4
+		job_head_researcher_add = 1
+	}	
+	drop_weight = {weight = 0}
+}
+#远古遗迹群
+d_GFnyto_ancient_ruins_zone = {
+	is_for_colonizable = yes
+	icon = d_GFnyto_ancient_ruins_zone
+	category = deposit_cat_rare
+	planet_modifier = {
+		planet_jobs_society_research_produces_mult = 0.2
+		planet_jobs_engineering_research_produces_mult = 0.2
+		planet_jobs_physics_research_produces_mult = 0.2
+	}	
+	drop_weight = {weight = 0}
+}
+#土豆服务器
+d_GFnyto_potato_server_zone = {
+	is_for_colonizable = yes
+	icon = d_GFnyto_ancient_ruins_zone
+	category = deposit_cat_rare
+	planet_modifier = {
+		planet_housing_mult = 0.1
+		pop_happiness = -0.01
+	}	
+	
+	drop_weight = {weight = 0}
+}
+###通用地块###
+#黑区
+d_GFnyto_black_zone = {
+	is_for_colonizable = yes
+	icon = d_GFnyto_black_zone
+	category = deposit_cat_rare	
+	resources = {produces = {GF_nyto_collapse_liquid=20}}
+	planet_modifier = {}
+	drop_weight = {weight = 0}
+}
+#行星地表防御系统
+d_GFnyto_planetary_surface_defense_zone = {
+	is_for_colonizable = yes
+	icon = d_GFnyto_planetary_surface_defense_zone
+	category = deposit_cat_rare	
+	planet_modifier = {
+		job_soldier_add = 2
+		planet_housing_add = 10
+		army_health = 0.2	
+	}
+	drop_weight = {weight = 0}
+}
+#行星轨道防御系统
+d_GFnyto_planetary_orbit_defense_zone = {
+	is_for_colonizable = yes
+	icon = d_GFnyto_planetary_orbit_defense_zone
+	category = deposit_cat_rare	
+	planet_modifier = {
+		job_soldier_add = 2
+		army_damage_mult = 0.2
+	}
+	drop_weight = {weight = 0}
+}
+#地心城区
+d_GFnyto_geocentric_zone = {
+	is_for_colonizable = yes
+	icon = d_GFnyto_geocentric_zone
+	category = deposit_cat_rare	
+	planet_modifier = {
+		job_technician_add = 4
+		job_miner_add = 4
+		job_farmer_add = 4
+		job_foundry_add = 2
+        job_artisan_add = 2
+		job_researcher_add = 4
+		job_head_researcher_add = 1
+		planet_housing_add = 10
+	}
+	drop_weight = {weight = 0}
+}
+#地下交通网络
+d_GFnyto_Underground_transportation_network_zone = {
+	is_for_colonizable = yes
+	icon = d_GFnyto_Underground_transportation_network_zone
+	category = deposit_cat_rare	
+	planet_modifier = {
+		job_technician_add = 4
+		job_miner_add = 4
+		job_farmer_add = 4
+		job_foundry_add = 2
+        job_artisan_add = 2
+		job_researcher_add = 4
+		job_head_researcher_add = 1
+		planet_housing_add = 10
+	}
+	drop_weight = {weight = 0}
+}
+#昙花种植区
+d_GFnyto_tanhua ={
+	is_for_colonizable = yes
+	category = deposit_cat_rare	
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner_main_species = {
+				has_trait = trait_GFnyto_tanhua
+			}
+		}
+		modifier = {
+			district_farming_max = -10000
+		}
+	}
+	drop_weight = {weight = 0}
+}

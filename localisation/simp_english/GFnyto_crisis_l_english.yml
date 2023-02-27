@@ -1,0 +1,15 @@
+﻿l_english:
+GFnyto_crisis_chain_title:0 "Conquer Hell"
+GFnyto_crisis_chain_desc:0 "Through Zion, we forsees an invasion targeted towards the galaxy. We have not a chance against such an invader...... if we just sit and wait. If we can integrate all of the galaxy, We may still have a chance. Unfortunately, tehres little to no one that can see the situation clearly. We don't have the patience or the time to keep arguing. \n\n Note:If our nations Maintenance level drops to 0m we will automatically lose this game!\n\n Methods of increasing maintenance level:\nDestroying enemy ships:+1 \nOccupying enemy planets :+50 \nDestory hostile empires:+500\n\nMaintenance lowering mechanics:\nMonthly Growth:-10 \nLosing a planet:-100"
+
+GFnytocrisis.4.name:0 "Bad end"
+GFnytocrisis.4.desc:0 "War machines collapses to the floor after losing its last bit of fuel. All is over."
+GFnytocrisis.4.a:0 "We lost."
+
+GFnyto_empire_maintenance:0 "Empire Maintenance"
+
+GFnyto_lgate_base:0 "Collapsation Point"
+GFnyto_lgate_base_DESC:0 ""
+we_cannot_break_through_the_singularity:1 "We couldn't breach the singularity。"
+
+GFnyto_crisis_see_angel:0 "Sighting of Angel"

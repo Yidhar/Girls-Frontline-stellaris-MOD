@@ -1,0 +1,59 @@
+namespace = GFnyto_other_event
+planet_event = {
+	id = GFnyto_other_event.1
+	title = "GFnyto_other_event.1.name"
+	desc = "GFnyto_other_event.1.desc"
+	picture = GFX_evt_GFnyto_potato_server
+	show_sound = event_engineered_evolution
+	hide_window = no
+	is_triggered_only = yes
+	trigger = {
+		owner = {
+			has_origin = origin_GF_nyto_the_last_light
+			has_authority = auth_GF_paradeus
+		}
+	}
+	immediate = {
+		owner = {
+			add_resource = {
+				food = 100
+			}
+		}
+	}
+	option = {
+		name = "GFnyto_other_event.1.a"
+		owner = {
+			add_resource = {
+				food = -100
+			}
+		}
+		hidden_effect = {
+			planet_event = {
+				id = GFnyto_other_event.2 days = 10
+			}
+		}
+	}
+	option = {
+		name = "GFnyto_other_event.1.b"
+	}
+}
+planet_event = {
+	id = GFnyto_other_event.2
+	title = "GFnyto_other_event.2.name"
+	desc = "GFnyto_other_event.2.desc"
+	picture = GFX_evt_GFnyto_potato_server
+	show_sound = event_engineered_evolution
+	hide_window = no
+	is_triggered_only = yes
+	trigger = {
+		owner = {
+			has_origin = origin_GF_nyto_the_last_light
+			has_authority = auth_GF_paradeus
+		}
+	}
+	immediate = {}
+	option = {
+		name = "GFnyto_other_event.2.a"
+		add_deposit = d_GFnyto_potato_server_zone
+	}
+}

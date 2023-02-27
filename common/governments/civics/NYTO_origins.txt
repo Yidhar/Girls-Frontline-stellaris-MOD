@@ -1,0 +1,53 @@
+#最后的曙光
+origin_GF_nyto_the_last_light= {
+	is_origin = yes
+	icon = "gfx/interface/icons/origins/origin_GF_nyto_the_last_light.dds"
+	picture = GFX_GF_nyto_the_last_light2
+	starting_colony = pc_GF_nyto_embers_gloomy
+	possible = {
+		authority = {value = auth_GF_paradeus} 
+	}
+	description = "the_last_light"
+	traits = {
+		trait = trait_GF_nyto_the_last_light
+		trait = trait_GF_nyto_collapse_radiation_adaptation
+	}
+	advanced_start = yes
+	random_weight = {base = 5}
+}
+###天灾起源######暂时搁置###
+#流亡的开始
+origin_GF_nyto_the_beginning_of_exile= {
+	is_origin = yes
+	icon = "gfx/interface/icons/origins/origin_GF_nyto_the_beginning_of_exile.dds"
+	picture = GFX_GF_nyto_the_beginning_of_exile
+	starting_colony = pc_GF_nyto_devil_furnace
+	playable = {always = no}
+	possible = {
+		always = no
+	#		authority = {value = auth_GF_paradeus} 
+	#		species = {value=nyto}
+	}
+	description = "the_beginning_of_exile"
+	traits = {
+		trait = trait_GF_nyto_savage_origin
+		trait = trait_GF_nyto_gluttony
+		trait = trait_GF_nyto_lust
+		trait = trait_GF_nyto_greedy
+		trait = trait_GF_nyto_arrogant
+		trait = trait_GF_nyto_laziness
+		trait = trait_GF_nyto_anger
+		trait = trait_GF_nyto_envy
+	}
+	advanced_start = yes
+	random_weight = {base = 5}
+}
+#帕拉蒂斯残余起源
+origin_GF_nyto_fallen_empire = {
+	is_origin = yes
+	icon = "gfx/interface/icons/origins/origin_GF_nyto_the_last_light.dds"
+	playable = {always = no}
+	possible = {}
+	description = "the_last_light"
+	random_weight = {base = 0}
+}

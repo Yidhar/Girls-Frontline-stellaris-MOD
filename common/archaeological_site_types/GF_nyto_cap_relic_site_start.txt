@@ -1,0 +1,158 @@
+#首都遗迹
+site_nyto_unknown_civilization_202055 = {
+	desc = "site_nyto_unknown_civilization_202055_desc"
+	picture = GFX_evt_nyto_unknown_civilization_202055
+	stages = 6#阶段
+	max_instances = 10
+	weight = 0 #Set by ancrel.2000
+	allow = {
+		exists = leader
+		leader = { leader_class = scientist }
+	}
+	visible = {
+		owner = {has_authority = auth_GF_paradeus}
+	}
+	#首都遗迹
+	stage = {
+		difficulty = 3
+		icon = GFX_archaeology_runes_C1
+		event = gfnytoparadeusancrel.2001
+	}
+	#封闭的城市
+	stage = {
+		difficulty = 4
+		icon = GFX_archaeology_runes_C2
+		event = gfnytoparadeusancrel.2002
+	}
+	#坍缩点
+	stage = {
+		difficulty = 5
+		icon = GFX_archaeology_runes_C3
+		event = gfnytoparadeusancrel.2003
+	}
+	#潜艇基地
+	stage = {
+		difficulty = 6
+		icon = GFX_archaeology_runes_C4
+		event = gfnytoparadeusancrel.2004
+	}
+	#废弃工厂
+	stage = {
+		difficulty = 7
+		icon = GFX_archaeology_runes_C5
+		event = gfnytoparadeusancrel.2005
+	}
+	#不可知奇点
+	stage = {
+		difficulty = 8
+		icon = GFX_archaeology_runes_C6
+		event = gfnytoparadeusancrel.2006
+	}
+	on_roll_failed = {from = {standard_archaeological_site_on_roll_failed = { RANDOM_EVENTS = all_random_events }}}
+}
+#第二段坟
+site_nyto_unknown_civilization_3 ={
+	desc = "site_nyto_unknown_civilization_2_desc"
+	picture = GFX_evt_nyto_unknown_civilization_202055
+	stages = 5#阶段
+	max_instances = 2
+	weight = 0
+	allow = {
+		exists = leader
+		leader = { leader_class = scientist }
+	}
+	visible = {
+		owner = {has_authority = auth_GF_paradeus}
+	}
+	stage = {
+		difficulty = 5
+		icon = "How to revert Stellaris to a previous version."
+		event = gfnytoparadeusancrel.301
+	}
+	stage = {
+		difficulty = 6
+		icon = "How to revert Stellaris to a previous version."
+		event = gfnytoparadeusancrel.302
+	}
+	stage = {
+		difficulty = 7
+		icon = "How to revert Stellaris to a previous version."
+		event = gfnytoparadeusancrel.303
+	}
+	stage = {
+		difficulty = 8
+		icon = "How to revert Stellaris to a previous version."
+		event = gfnytoparadeusancrel.304
+	}
+	stage = {
+		difficulty = 9
+		icon = "How to revert Stellaris to a previous version."
+		event = gfnytoparadeusancrel.305
+	}
+	on_roll_failed = {
+		from = {
+			standard_archaeological_site_on_roll_failed = { RANDOM_EVENTS = all_random_events }
+		}
+	}
+}
+
+#联动坟
+site_nyto_unknown_civilization_dc_nyto = {
+	desc = "site_nyto_unknown_civilization_dc_nyto_desc"
+	picture = GFX_evt_GF_dc_nyto_12
+	stages = 8
+	max_instances = 1
+	weight = 0
+	allow = {
+		exists = leader
+		leader = { leader_class = scientist }
+	}
+	visible = {
+		always = yes
+	}
+	stage = {
+		difficulty = 3
+		icon = "GFX_archaeology_runes_C1"
+		event = gfnytoparadeusancrel.401
+	}
+	stage = {
+		difficulty = 5
+		icon = "GFX_archaeology_runes_C2"
+		event = gfnytoparadeusancrel.402
+	}
+	stage = {
+		difficulty = 7
+		icon = "GFX_archaeology_runes_C3"
+		event = gfnytoparadeusancrel.403
+	}
+	stage = {
+		difficulty = 8
+		icon = "GFX_archaeology_runes_C4"
+		event = gfnytoparadeusancrel.404
+	}
+	stage = {
+		difficulty = 9
+		icon = "GFX_archaeology_runes_C5"
+		event = gfnytoparadeusancrel.405
+	}
+	stage = {
+		difficulty = 9
+		icon = "GFX_archaeology_runes_C6"
+		event = gfnytoparadeusancrel.406
+	}
+	stage = {
+		difficulty = 9
+		icon = "GFX_archaeology_runes_B6"
+		event = gfnytoparadeusancrel.407
+	}
+	stage = {
+		difficulty = 9
+		icon = "GFX_archaeology_runes_D6"
+		event = gfnytoparadeusancrel.408
+	}
+	on_roll_failed = {
+		from = {
+			standard_archaeological_site_on_roll_failed = { RANDOM_EVENTS = all_random_events }
+		}
+	}
+}

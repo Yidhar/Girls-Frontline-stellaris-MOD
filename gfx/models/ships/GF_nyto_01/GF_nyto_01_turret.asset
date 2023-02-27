@@ -1,0 +1,149 @@
+#中子发射器
+entity = {
+	name = "GF_nyto_01_turret_energy_torpedo_entity"
+	# pdxmesh = "GF_nyto_01_turret_mesh"
+	pdxmesh = GF_nyto_01_turret_null_mesh
+	state = { name = "idle"	}
+	state = { name = "attack" looping = no next_state = "idle"
+	}
+	scale = 1
+}
+
+#点防
+entity = {
+	name = "GF_nyto_01_turret_point_defence_entity"
+	# pdxmesh = "GF_nyto_01_turret_mesh"
+	pdxmesh = GF_nyto_01_turret_null_mesh
+
+	state = { name = "idle"	}
+	state = { name = "attack" looping = no next_state = "idle"
+	}
+	scale = 1.0
+}
+
+#sml动能
+entity = {
+	name = "GF_nyto_01_large_kinetic_gun_entity"
+	# pdxmesh = "GF_nyto_01_kinetic_mesh"
+	pdxmesh = GF_nyto_01_turret_null_mesh
+
+	state = { name = "idle"	}
+	state = { name = "attack" looping = no next_state = "idle"
+	}
+	scale = 4
+}
+
+entity = {
+	name = "GF_nyto_01_medium_kinetic_gun_entity"
+	# pdxmesh = "GF_nyto_01_kinetic_mesh"
+	pdxmesh = GF_nyto_01_turret_null_mesh
+
+	state = { name = "idle"	}
+	state = { name = "attack" looping = no next_state = "idle"
+	}
+	scale = 1.9
+}
+
+entity = {
+	name = "GF_nyto_01_small_kinetic_gun_entity"
+	# pdxmesh = "GF_nyto_01_kinetic_mesh"
+	pdxmesh = GF_nyto_01_turret_null_mesh
+
+	state = { name = "idle"	}
+	state = { name = "attack" looping = no next_state = "idle"
+	}
+	scale = 0.85
+}
+
+#sml激光
+entity = {
+	name = "GF_nyto_01_large_laser_gun_entity"
+	# pdxmesh = "GF_nyto_01_turret_mesh"
+	pdxmesh = GF_nyto_01_turret_null_mesh
+
+	state = { name = "idle"	}
+	state = { name = "attack" looping = no next_state = "idle"
+	}
+	scale = 4
+}
+
+entity = {
+	name = "GF_nyto_01_medium_laser_gun_entity"
+	# pdxmesh = "GF_nyto_01_turret_mesh"
+	pdxmesh = GF_nyto_01_turret_null_mesh
+
+	state = { name = "idle"	}
+	state = { name = "attack" looping = no next_state = "idle"
+	}
+	scale = 1.9
+}
+
+entity = {
+	name = "GF_nyto_01_small_laser_gun_entity"
+	# pdxmesh = "GF_nyto_01_turret_mesh"
+	pdxmesh = GF_nyto_01_turret_null_mesh
+
+	state = { name = "idle"	}
+	state = { name = "attack" looping = no next_state = "idle"
+	}
+	scale = 0.85
+}
+
+#导弹
+entity = {
+	name = "GF_nyto_01_turret_missile_large_entity"
+	# pdxmesh = "GF_nyto_01_missle_turret_mesh"
+	pdxmesh = GF_nyto_01_turret_null_mesh
+
+	state = { name = "idle"	}
+	state = { name = "attack" looping = no next_state = "idle"
+	}
+	scale = 0.85
+}
+
+entity = {
+	name = "GF_nyto_01_turret_missile_medium_entity"
+	# pdxmesh = "GF_nyto_01_missle_turret_mesh"
+	pdxmesh = GF_nyto_01_turret_null_mesh
+
+	state = { name = "idle"	}
+	state = { name = "attack" looping = no next_state = "idle"
+	}
+	scale = 0.85
+}
+
+entity = {
+	name = "GF_nyto_01_turret_missile_small_entity"
+	# pdxmesh = "GF_nyto_01_missle_turret_mesh"
+	pdxmesh = GF_nyto_01_turret_null_mesh
+
+	state = { name = "idle"	}
+	state = { name = "attack" looping = no next_state = "idle"
+	}
+	scale = 1.0
+}
+
+#点防
+entity = {
+	name = "GF_nyto_01_turret_point_defence_entity"
+	pdxmesh = GF_nyto_01_turret_null_mesh
+
+	state = { name = "idle"	}
+	state = { name = "attack" looping = no next_state = "idle"
+	}
+	scale = 1.0
+}
+
+entity = {
+	name = "GF_nyto_01_turret_xl_entity"
+	pdxmesh = "GF_nyto_01_turret_null_mesh"
+
+	state = { name = "idle"	}
+	state = { name = "attack" looping = no next_state = "idle"
+	}
+	scale = 1
+
+	game_data = {
+		emissive_recolor_crunch = 2.0
+	}
+}

@@ -1,0 +1,124 @@
+namespace = GFnytobloodywar
+#第四天灾觉醒
+country_event = {
+	id = GFnytobloodywar.1
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {country_event={id=GFnytobloodywar.11 random = 180 days=180}}
+		every_country = {
+			limit = {
+				has_origin =origin_GF_nyto_the_beginning_of_exile}
+				add_awakened_fallen_empire_resources = yes
+				copy_techs_from = { target =event_target:GFnyto_fallen_empire_country }
+			}
+		every_country = {
+			limit = {NOT={has_origin =origin_GF_nyto_the_beginning_of_exile}}
+		}
+	}
+}
+#发送消息
+country_event = {
+	id = GFnytobloodywar.2
+	title = GFnytobloodywar.2.name
+	desc = GFnytobloodywar.2.desc
+	picture = GFX_evt_fallen_empire
+	show_sound = event_alien_signal
+	location = from
+	is_triggered_only = yes
+	immediate = {
+		country_event = {id = GFnytobloodywar.3 days=30}
+		every_country = {
+			limit = {is_country_type =fallen_empire}
+			set_country_type = awakened_fallen_empire
+			add_awakened_fallen_empire_resources = yes
+			change_government = {
+				civics = {
+					civic = civic_revanchist_fervor
+					civic = civic_ancient_caches_of_technology
+				}
+			}
+		}
+	}
+	option = {name =GFnytobloodywar.2.a}
+}
+#创建战争
+country_event = {
+	id = GFnytobloodywar.3
+	hide_window = yes
+	is_triggered_only = yes
+	location = from
+	trigger = {has_origin = origin_GF_nyto_the_beginning_of_exile}
+	immediate = {
+		random_country = {
+			limit = { 
+				is_country_type = awakened_fallen_empire
+			}			
+			save_global_event_target_as = GFnyto_awake_leader
+		}
+		declare_war = {
+			target = event_target:GFnyto_awake_leader
+			name = "浴血之战"
+			attacker_war_goal = "wg_GFnyto_bloody_war"
+		}
+		every_country = {
+			limit = {has_origin = origin_GF_nyto_the_beginning_of_exile}
+			join_war = FROM
+		}
+		every_country = {
+			limit = {
+				OR = {
+					is_country_type = default
+					is_country_type = awakened_fallen_empire
+					is_country_type = fallen_empire
+				}
+				NOT = {has_origin = origin_GF_nyto_the_beginning_of_exile}
+			}
+			join_war = event_target:GFnyto_awake_leader
+		}
+	}
+}
+#第四天灾被击败
+country_event = {
+	id = GFnytobloodywar.10
+	title = GFnytobloodywar.10.name
+	desc = GFnytobloodywar.10.desc
+	picture = GFX_evt_metropolis
+	show_sound = event_celebration
+	is_triggered_only = yes
+	trigger = {has_origin =origin_GF_nyto_the_last_light}
+}
+#游戏开始与涅托堕落强制建立联系
+country_event = {
+	id = GFnytobloodywar.10
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {has_origin =origin_GF_nyto_the_beginning_of_exile}
+	fire_only_once = yes
+	immediate = {
+		establish_communications_no_message = event_target:sh_fallen_empire
+		country_event = { id = GFnytobloodywar.11 }
+	}
+}
+#发送消息,准备战争
+country_event = {
+	id = GFnytobloodywar.11
+	title = "TRANSMISSION"
+	desc = GFnytobloodywar.11.desc
+	is_triggered_only = yes
+	diplomatic = yes
+	force_open = yes
+	trigger = {has_origin =origin_GF_nyto_the_beginning_of_exile}
+	picture_event_data = {
+		portrait = event_target:GFnyto_fallen_empire_country
+		planet_background = event_target:GFnyto_fallen_empire_country
+		graphical_culture = event_target:GFnyto_fallen_empire_country
+		city_level = event_target:GFnyto_fallen_empire_country
+		room = event_target:GFnyto_fallen_empire_country.ruler
+	}
+	option = {
+		trigger = {has_authority = auth_GF_paradeus}
+		name = GFnytobloodywar.11.a
+		hidden_effect = {country_event={id=GFnytobloodywar.2 random= 180 days=180}}
+	}
+}

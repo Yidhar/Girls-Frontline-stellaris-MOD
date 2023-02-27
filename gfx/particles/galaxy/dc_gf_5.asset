@@ -1,0 +1,280 @@
+particle={
+	name="GF_star_explosion_3_file"
+	subsystem={
+		name="SolarSparks"
+		max_amount=100
+		slave_particles=0
+		sort="depth"
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=yes
+		hide=no
+		texture={
+			file="gfx/particles/sparks_circle.dds"
+			x=1
+			y=1
+			shader="ParticleAdditive"
+		}
+		color={
+			x=240
+			y=150
+			z=100
+			alpha={ 200,fade_in_out_flairs 15 }
+		}
+		position={
+			y=0
+		}
+		start=2
+		duration=1
+		velocity_pitch={ 0 180 }
+		velocity_yaw={ 0 180 }
+		velocity={ 0 0 }
+		life={ 1.5 0.25 }
+		emission=200
+		size={ 300,size_grow_flairs 10 }
+		particle_yaw={ 0 180 }
+		particle_pitch={ 0 180 }
+		rotation={ 0 180 }
+	}
+	subsystem={
+		name="Darken"
+		max_amount=3000
+		slave_particles=0
+		sort="depth"
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/glow.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=240
+			y=150
+			z=100
+			alpha=255,fade_in_out_flairs
+		}
+		position={
+			x=0
+			y=0
+			z=0
+		}
+		start=1.5
+		duration=1
+		emitter_yaw={ 0 0 }
+		emitter_pitch={ 0 0 }
+		velocity_pitch={ 0 180 }
+		velocity_yaw={ 0 180 }
+		velocity={ 0 0 }
+		life={ 1.5 0.25 }
+		emission=2000
+		size={ 100,size_grow_flairs 10 }
+		particle_yaw={ 0 180 }
+		particle_pitch={ 0 180 }
+		rotation={ 0 180 }
+	}
+	subsystem={
+		name="Shockwaves"
+		max_amount=20
+		slave_particles=0
+		sort="depth"
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/halo.dds"
+			x=1
+			y=1
+			shader="ParticleAdditive"
+		}
+		color={
+			x=240
+			y=200
+			z=150
+			alpha=255,shock_fade
+		}
+		position={
+			y=0
+		}
+		start=1.5
+		duration={ 1.5 0.5 }
+		emitter_yaw={ 0 0 }
+		emitter_pitch={ 0 0 }
+		velocity_pitch={ 0 180 }
+		velocity_yaw={ 0 180 }
+		velocity={ 0 0 }
+		life={ 1.5 0.5 }
+		emission=100
+		size={ 500,shockwave_grow 20 }
+		particle_yaw={ 0 0 }
+		particle_pitch={ 90 0 }
+		rotation={ 0 180 }
+	}
+	subsystem={
+		name="Force"
+		max_amount=100
+		slave_particles=0
+		sort="depth"
+		emitter_type="box"
+		box_emitter_x={ 50 100 }
+		box_emitter_z={ 50 100 }
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/sun_flare.dds"
+			x=1
+			y=1
+			shader="ParticleAdditive"
+		}
+		color={
+			x=240
+			y=220
+			z=200
+			alpha={ 210,fade_in_out_flairs 15 }
+		}
+		position={
+			x=50
+			y=0
+			z=-50
+		}
+		start=1.5
+		duration=3
+		emitter_yaw={ 0 0 }
+		emitter_pitch={ 0 0 }
+		velocity_pitch={ 0 180 }
+		velocity_yaw={ 0 180 }
+		velocity={ 0 0 }
+		life={ 1 0.25 }
+		emission=10
+		size={ 1000,size_grow_flairs 5 }
+		particle_yaw={ 0 180 }
+		particle_pitch={ 0 180 }
+		rotation={ 0 180 }
+	}
+	subsystem={
+		name="point"
+		max_amount=1000
+		slave_particles=0
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=yes
+		hide=no
+		texture={
+			file="gfx/particles/cloud.dds"
+			x=1
+			y=1
+			shader="ParticleAdditive"
+		}
+		color={
+			x=255
+			y=255
+			z=255
+			alpha={ 10000 fade_in_out_flairs }
+		}
+		position={
+			y=25
+			z=-10
+		}
+		duration=1
+		velocity_pitch=-65
+		velocity_yaw=-90
+		velocity=15
+		life=2
+		emission=20000.99968
+		size=1
+	}
+	animation={
+		name="fade_in_out_flairs"
+		start=0
+		duration=1
+		repeat=yes
+		minValue=0
+		maxValue=1
+		curve={
+			0 0 0.10882 0.34375 0.32353 0.94531 0.68235 0.5 0.87353 0.13281 1 0 
+		}
+		op="MUL"
+		time="life"
+	}
+	animation={
+		name="size_grow_flairs"
+		start=0
+		duration=1
+		repeat=no
+		minValue=0.1
+		maxValue=1
+		curve={
+			0 0.54688 0.47647 0.76563 1 0.94531 
+		}
+		op="MUL"
+		time="life"
+	}
+	animation={
+		name="shockwave_grow"
+		start=0
+		duration=1
+		repeat=no
+		minValue=0
+		maxValue=1
+		curve={
+			0 0.0625 0.54706 0.60938 0.79412 0.82031 1 0.92188 
+		}
+		op="MUL"
+		time="life"
+	}
+	animation={
+		name="shock_fade"
+		start=0
+		duration=1
+		repeat=no
+		minValue=0
+		maxValue=1
+		curve={
+			0 0 0.03824 1 0.50294 0.40625 1 0 
+		}
+		op="MUL"
+		time="life"
+	}
+	animation={
+		name="x_ani"
+		start=0
+		duration=1
+		repeat=no
+		minValue=0
+		maxValue=3
+		curve={
+			0 0 0.13235 0.95313 0.17941 0.08594 0.28235 0.91406 0.37941 0.0625 0.47353 0.92969 0.54412 0.03125 0.7 0.89844 0.9 0.14063 1 1 
+		}
+		op="ADD"
+		time="spawn"
+	}
+	force={
+		type="planar"
+		name="force0"
+		position={
+			0 0 0 
+		}
+		direction={
+			0 1 0 
+		}
+		local_force=yes
+		yaw=0
+		division=16
+		amount=5
+	}
+}

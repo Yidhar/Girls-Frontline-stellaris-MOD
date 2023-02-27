@@ -1,0 +1,40 @@
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_evt_GFnyto_game_start"
+		texturefile = "gfx/event_pictures/evt_GFnyto_game_start.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = GFX_evt_GFnyto_global.5
+		textureFile = "gfx/event_pictures/GFX_evt_GFnyto_global.5.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaysTransparent = yes
+	}
+	spriteType={
+		name = GFX_evt_GFnyto_global.7
+		textureFile = "gfx/event_pictures/evt_GFnyto_global.7.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaysTransparent = yes
+	}
+}
+#穿梭引擎
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_evt_nyto_shuttle_engine"
+		texturefile = "gfx/event_pictures/evt_nyto_shuttle_engine.dds"
+		alwaystransparent = yes
+	}
+}
+#战争目标
+	spriteType = {
+		name = "GFX_wg_GFnyto_assimilation"
+		texturefile = "gfx/interface/icons/diplomacy/wg_GFnyto_assimilation.dds"
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_wg_GFnyto_bloody_war"
+		texturefile = "gfx/interface/icons/diplomacy/wg_GFnyto_bloody_war.dds"
+		noOfFrames = 2
+	}

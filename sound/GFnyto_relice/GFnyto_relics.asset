@@ -1,0 +1,5 @@
+sound = {
+	name = "GFnyto_relics_sound"
+	file = "GFnyto_relics_sound.wav"
+	volume = 1
+}

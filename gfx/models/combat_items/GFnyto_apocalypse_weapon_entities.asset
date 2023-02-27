@@ -1,0 +1,169 @@
+######## ION CANNON #######
+
+# WINDUP
+
+entity = {
+	name = "GFnyto_colossus_neutron_planet_windup_entity"
+	
+	default_state = "attack"
+	get_state_from_parent = no
+	state = {
+		name = "attack" looping = no state_time = 0.1
+		event = { trigger_once = yes sound = { soundeffect = "neutron_windup_layer_1" } }
+		event = { trigger_once = yes sound = { soundeffect = "neutron_windup_layer_2" } }
+		
+		event = { time = 0.0 particle = "GFnyto_neutron_planet_muzzle_windup_effect" trigger_once = yes keep_particle = yes }
+		#event = { time = 0.0 particle = "mf_W_windup_effect" trigger_once = yes keep_particle = yes }
+	}
+}
+
+# MUZZLE FLASH
+
+entity = {
+	name = "GFnyto_colossus_neutron_planet_muzzle_entity"
+	cull_radius = 1.0
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 7.0 looping = no
+		event = { time = 0 particle = "neutron_planet_laser_muzzle_effect" keep_particle = yes trigger_once = yes }
+		#event = { time = 0 particle = mf_W_muzzle_effect keep_particle = yes trigger_once = yes }
+		event = { trigger_once = yes sound = { soundeffect = "neutron_fire_layer_1" } }
+		event = { trigger_once = yes sound = { soundeffect = "neutron_fire_layer_2" } }
+		event = { trigger_once = yes sound = { soundeffect = "neutron_fire_layer_3" } }
+
+		event = { trigger_once = yes sound = { soundeffect = "distance_neutron_fire_layer_1" } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_neutron_fire_layer_2" } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_neutron_fire_layer_3" } }
+
+		event = { trigger_once = yes sound = { soundeffect = "colossus_neutron_beam" stop_on_state_change = yes } }
+	}	
+}
+
+# HIT ENTITIES
+
+entity = {
+	name = "GFnyto_colossus_neutron_planet_hit_entity"
+	cull_radius = 1.0
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 5 looping = no
+		start_event = { particle = "GFnyto_neutron_planet_laser_hit_effect" keep_particle = yes }
+	#start_event = { particle = mf_w_laser_hit_effect keep_particle = yes }
+		event = { trigger_once = yes sound = { soundeffect = "neutron_hit_layer_1" } }
+		event = { trigger_once = yes sound = { soundeffect = "neutron_hit_layer_2" } }
+
+		event = { trigger_once = yes sound = { soundeffect = "distance_neutron_hit_layer_1" } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_neutron_hit_layer_2" } }
+
+	}	
+	state = { name = "stop" state_time = 0.5 looping = no }
+}
+
+
+
+######## COLOSSUS ASSIMILATE NANOBOTS #######
+
+# WINDUP
+
+entity = {
+	name = "colossus_assimilate_windup_entity"
+	
+	default_state = "attack"
+	get_state_from_parent = no
+	state = {
+		name = "attack" looping = no state_time = 0.1
+		event = { trigger_once = yes sound = { soundeffect = "assimilate_windup_layer_1" } }
+		event = { trigger_once = yes sound = { soundeffect = "assimilate_windup_layer_2" } }
+		
+		event = { time = 0.0 particle = "assimilate_muzzle_windup_effect" trigger_once = yes keep_particle = yes }
+	}
+}
+
+# MUZZLE FLASH
+
+entity = {
+	name = "colossus_assimilate_muzzle_entity"
+	cull_radius = 1.0
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 7.0 looping = no
+		event = { time = 0 particle = "assimilate_laser_muzzle_effect" keep_particle = yes trigger_once = yes }
+		
+		event = { trigger_once = yes sound = { soundeffect = "assimilate_fire_layer_1" } }
+		event = { trigger_once = yes sound = { soundeffect = "assimilate_fire_layer_2" } }
+		event = { trigger_once = yes sound = { soundeffect = "assimilate_fire_layer_3" } }
+
+		event = { trigger_once = yes sound = { soundeffect = "distance_assimilate_fire_layer_1" } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_assimilate_fire_layer_2" } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_assimilate_fire_layer_3" } }
+
+		event = { trigger_once = yes sound = { soundeffect = "colossus_assimilate_beam" stop_on_state_change = yes } }
+
+	}
+}
+
+# HIT ENTITIES
+
+entity = {
+	name = "colossus_assimilate_hit_entity"
+	pdxmesh = "assimilate_hit_effect_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle" looping = yes animation = "idle"
+		start_event = { particle = "assimilate_laser_hit_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "effect_1" particle = "assimilate_nano_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "effect_2" particle = "assimilate_nano_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "effect_3" particle = "assimilate_nano_effect" keep_particle = yes trigger_once = yes }
+		
+		event = { trigger_once = yes sound = { soundeffect = "assimilate_hit_layer_1" } }
+		event = { trigger_once = yes sound = { soundeffect = "assimilate_hit_layer_2" } }
+
+		event = { trigger_once = yes sound = { soundeffect = "distance_assimilate_hit_layer_1" } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_assimilate_hit_layer_2" } }
+
+	}
+	state = { name = "stop" state_time = 0.5 looping = no }
+	
+	#scale = 0.9
+}
+
+# MEGASTRUCTURE HIT ENTITIES
+
+entity = {
+	name = "colossus_assimilate_megastructure_hit_entity"
+	cull_radius = 1.0
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 5 looping = no
+		start_event = { particle = "assimilate_laser_megastructure_hit_effect" keep_particle = yes trigger_once = yes }
+		
+		event = { trigger_once = yes sound = { soundeffect = "assimilate_hit_layer_1" } }
+		event = { trigger_once = yes sound = { soundeffect = "assimilate_hit_layer_2" } }
+
+		event = { trigger_once = yes sound = { soundeffect = "distance_assimilate_hit_layer_1" } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_assimilate_hit_layer_2" } }
+
+	}
+	state = { name = "stop" state_time = 0.5 looping = no }
+	
+	#scale = 0.9
+}
+
+animation = {
+	name = "assimilate_hit_effect_idle_animation"
+	file = "assimilate_hit_effect_idle.anim"
+}
+
+######## STAR DESTROYER #######
+
+entity = {
+	name = "GF_star_eater_muzzle_windup_entity"
+	locator = { name = "part1" position = { 0 0 0 } }	
+	default_state = "idle"
+	state = { name = "idle" state_time = 7.0 looping = yes
+		event = { time = 0 node = "part1" particle = "star_eater_muzzle_windup_effect" keep_particle = yes trigger_once = no }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_star_eater_muzzle_hum_low" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_star_eater_muzzle_hum_high" } }
+	}
+	scale = 5
+}

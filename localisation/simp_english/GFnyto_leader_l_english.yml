@@ -1,0 +1,65 @@
+﻿l_english:
+
+################################特殊项目##############################
+GFnyto_god_created_by_us:0 "Artificial God"
+GFnyto_god_created_by_us_desc:0 ""
+
+##################################法令################################
+edict_GF_nyto_leader_change:0 "Leader cloth change"
+edict_GF_nyto_leader_change_desc:0 "Changes cloth of your Leader"
+
+##################################事件################################
+GFnyto_leader.1.name:0 ""
+GFnyto_leader.1.desc.a:0 "Yegor"
+GFnyto_leader.1.desc.b:0 "Dandelion"
+GFnyto_leader.1.desc.c:0 "Lycoris"
+GFnyto_leader.1.a:0 "Yegor_general"
+GFnyto_leader.1.b:0 "Yegor_admiral"
+GFnyto_leader.1.c:0 "Yegor_ruler"
+GFnyto_leader.1.d:0 "Dandelion_ruler"
+GFnyto_leader.1.e:0 "Lycoris_scientist"
+GFnyto_leader.1.f:0 "Lycoris_ruler"
+
+GFnyto_leader.2.name:0 ""
+GFnyto_leader.2.desc.a:0 "Yegor"
+GFnyto_leader.2.desc.b:0 "Dandelion"
+GFnyto_leader.2.desc.c:0 "Lycoris"
+GFnyto_leader.2.a:0 "Yegor_general"
+GFnyto_leader.2.b:0 "Yegor_admiral"
+GFnyto_leader.2.c:0 "Yegor_ruler"
+GFnyto_leader.2.d:0 "Dandelion_wear_this"
+GFnyto_leader.2.e:0 "Dandelion_wear_this"
+GFnyto_leader.2.f:0 "Dandelion_wear_this"
+GFnyto_leader.2.g:0 "Lycoris_scientist"
+GFnyto_leader.2.h:0 "Lycoris_ruler"
+
+##################################特质################################
+leader_trait_Yegor_general1:0 "Yegor_general1"
+leader_trait_Yegor_general1_desc:0 "Yegor_general1"
+leader_trait_Yegor_general2:0 "Yegor_general2"
+leader_trait_Yegor_general2_desc:0 "Yegor_general2"
+
+leader_trait_Yegor_admiral1:0 "Yegor_admiral1"
+leader_trait_Yegor_admiral1_desc:0 "Yegor_admiral1"
+leader_trait_Yegor_admiral2:0 "Yegor_admiral2"
+leader_trait_Yegor_admiral2_desc:0 "Yegor_admiral2"
+
+leader_trait_Yegor_ruler1:0 "Yegor_ruler1"
+leader_trait_Yegor_ruler1_desc:0 "Yegor_ruler1"
+leader_trait_Yegor_ruler2:0 "Yegor_ruler2"
+leader_trait_Yegor_ruler2_desc:0 "Yegor_ruler2"
+
+leader_trait_Dandelion_ruler1:0 "Dandelion_ruler1"
+leader_trait_Dandelion_ruler1_desc:0 "Dandelion_ruler1"
+leader_trait_Dandelion_ruler2:0 "Dandelion_ruler2"
+leader_trait_Dandelion_ruler2_desc:0 "Dandelion_ruler2"
+
+leader_trait_Lycoris_scientist1:0 "Lycoris_scientist1"
+leader_trait_Lycoris_scientist1_desc:0 "Lycoris_scientist1"
+leader_trait_Lycoris_scientist2:0 "Lycoris_scientist2"
+leader_trait_Lycoris_scientist2_desc:0 "Lycoris_scientist2"
+
+leader_trait_Lycoris_ruler1:0 "Lycoris_ruler1"
+leader_trait_Lycoris_ruler1_desc:0 "Lycoris_ruler1"
+leader_trait_Lycoris_ruler2:0 "Lycoris_ruler2"
+leader_trait_Lycoris_ruler2_desc:0 "Lycoris_ruler2"

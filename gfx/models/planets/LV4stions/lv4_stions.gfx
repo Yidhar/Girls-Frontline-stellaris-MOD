@@ -1,0 +1,19 @@
+objectTypes = {
+	pdxmesh = {
+		name = "Lv4_stions_mesh"
+		file = "gfx/models/planets/LV4stions/lv4_stions.mesh"
+		scale = 1.0
+
+		meshsettings = {
+			name = "yaosai:transform1Shape"
+			index = 0
+			texture_diffuse = "galaxy_lod0_hold_34_d.dds"
+			texture_normal = "DefaultMaterial_Normal.dds"
+			texture_specular = "DefaultMaterial_Base_spacecolor.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+	pdxmesh = {
+		name = "Lv4_stions_star_mesh"
+	}
+}

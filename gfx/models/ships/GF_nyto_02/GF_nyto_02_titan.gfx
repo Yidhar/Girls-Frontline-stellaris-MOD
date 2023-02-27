@@ -1,0 +1,30 @@
+objectTypes = {
+	pdxmesh = {
+		name = "GF_nyto_02_titan_mesh"
+		file = "gfx/models/ships/GF_nyto_02/GF_nyto_02_titan.mesh"
+		scale = 1.5
+
+		meshsettings = {
+			name = "S_04Dreadnought_mod_lod_0_01Shape"
+			index = 0
+			texture_diffuse = "GF_nyto_02_titan_d.dds"
+			texture_normal = "GF_nyto_02_titan_n.dds"
+			texture_specular = "GF_nyto_02_titan_s.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "S_04Dreadnought_mod_lod_0_02Shape"
+			index = 0
+			texture_diffuse = "GF_nyto_02_titan_d2.dds"
+			texture_normal = "GF_nyto_02_titan_n2.dds"
+			texture_specular = "GF_nyto_02_titan_s2.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+	pdxmesh ={
+		name = GF_nyto_02_titan_locator_mesh
+		file = "gfx/models/ships/GF_nyto_02/GF_nyto_02_titan_locator.mesh"
+		scale = 1.0
+	}
+}

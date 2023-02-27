@@ -1,0 +1,18 @@
+﻿l_english:
+gfnytoaction.6.name:0 "Bombardment fleet received repulse from planetary surface"
+gfnytoaction.6.desc:0 "Our fleet located on §Y[From.GetName]§! orbit executing bombardment tasks received counter attack from the Surface to Space defense systems. Several ships hit, mild casualties received. Enemies are attempting to attack and shoot down ships parked in orbit of §Y[From.GetName]§!"
+
+gfnytoaction.3.name:0 "[From.GetName]bombarded"
+gfnytoaction.3.desc:0 "A §H[From.From.GetName]§!fleet massacred the §H[From.GetName]§! residents！After a merciless large scale Collapse fluid bombardment, [From.GetPlanetMoon] has already turned to a radiated wasteland, incapable of supporting life. "
+gfnytoaction.4.a:0 "This atrocity must be avenged！"
+gfnytoaction.4.desc:0 "Our military reports that we have completed bombardmnent of §H[From.GetName]§!, [From.GetPlanetMoon] is now a perfectly habitable planet for us."
+
+bombardment_gfnyto_collapse_liquid:0 "Collapse fluid bombardment"
+bombardment_gfnyto_collapse_liquid_desc:0 "Deal §Rmassive§! damage to §Yplanets§!\nDeal §Rmassive§! damage to §Yarmies§!\nDeal §Rmassive§! damage to §Ypops§!\n When Devastation is above §Y95%§! it will turn the planet into Dimmened Ashes World"
+bombardment_gfnyto_marine_corps:0 "Amphibious assault"
+bombardment_gfnyto_marine_corps_desc:0 "Produces 4 marine corps on the target planet."
+bombardment_gfnyto_trade_blockade:0 "Embargo blockade"
+bombardment_gfnyto_trade_blockade_desc:0 "Bombarded planet will have greatly increase job and pop upkeep"
+
+gfnyto_trade_blockade:0 "Embargo blockade"
+gfnyto_trade_blockade_desc:0 "Bombarded planet will have greatly increase job and pop upkeep"

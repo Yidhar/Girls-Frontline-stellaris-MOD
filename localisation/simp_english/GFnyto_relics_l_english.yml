@@ -1,0 +1,151 @@
+﻿l_english:
+site_nyto_unknown_civilization_202055:0 "Unknown Civilization Ruins"
+site_nyto_unknown_civilization_202055_desc:0 "From the birth of the first kingdom in Mesopotalia plains, even from the days when the first Mammoth runs the icefields, this planet has been littered with primordial cavernous ruins, former humans benefitted from it, died from it, and so is the birth of our people. Now this land is raging with Collapse radiation pollution, this is the result of a former human era exploration failure. Even though they have invested much into decyphering and development of the ruins, but even to their destruction they did not discover the answer. Now, it is our turn to take over, our scientists wishes to find the reason to our birth in these ruins, and the source of their technology from the roots. Even with the risk of repeating history again, yet, some destiny feeling drives us..."
+
+gfnytoparadeusancrel.2001.name:0 "Nordhausen Ruin"
+gfnytoparadeusancrel.2001.desc:0 "This was once called Ruin one by the former USSR, this is also the birth place of the first sapient AI. We today return here, attempt to find clues to genesis. \n\n We have found a large listening post near the ruin called Devil's Peak, remaining records shows that, this was once recording the electric signals of the ruin, and we hope to find some clues here. \n\n Damned, time has corroded this place too hard, we found nothing of value. Even though they kept a full channel surveillence, but we have found nothing. Why is this happening? \n\n We returned to the camps, examined once more records left by the former humans, however, every time the ruin is involved, the records are oddly damaged, we think this not to be a coincidence. Something happened and this caused the humans to execute a massive record deletion project—— as if they knew someone is coming. Whether these deletions are voluntary, the existence of the ruin becomes clouded. \n\n We have restored some clues in other insignificant places.. now, we will leave for Ижевск, Izhevsk ruin, lastly... we want to submit request for more funds, better to establish a full department. Relic site digging should be a major project that cannot be overlooked. "
+
+gfnytoparadeusancrel.2001.a:0 "Give them however much they need! But with results. "
+
+gfnytorelics.1.name:0 "Heritage Department"
+gfnytorelics.1.desc:0 "Originated from the former human civilization structure known as the United Nations, is the most cutting edge structure of ruin technology development and utilization, predecessor of the Antarctic Federation, dedicated to protection and control of ruin technology. Today with the humans dissappearing into the dust, we re-establish the Heritage department, hoping to learn from their experiences, in turn launch our own excavation and research of the ruins. "
+gfnytorelics.1.a:0 "It's all good, and no bad. "
+txt_gfnytorelics1_a:0 "Now you may construct building "Heritage Department", and receive national modifier "Heritage Department". The next stage of the site is unlocked.  "
+
+
+gfnytoparadeusancrel.2002.name:0 "Ижевск Izhevsk"
+gfnytoparadeusancrel.2002.desc:0 "Izhevsk was the famous military/light arms production city of the former USSR, we are here today because, we discovered a named report here,  with content written as “Gravity field in the ruin is a signal system responding or controlling other ruins. yet from the analysis of Ruin One, our monitored signals are the signals of the system's control circuits. With the technology of humans in consideration, simulating this system or producing similar signals is impossible, but we can make a math model based off analysis......”, truthfully, humans of the last era could not yet analyze the signals when they left this document, yet, we here today in Nordhausen Ruin heres nothing but silence, perhaps.. perhaps the signals need something to be activated?  Under the situation of no advancement, our scholars had but to blindly guess.\n\n。Our conjecture was correct! we scanned down large amounts of underground structures below the ruin, when we enter it, prospectors discovered it to be a large automated system, this means that USSR had successfully completed the decyphering of the ruin signals, anbd tried to construct a simulation here. In the process, we found that the control systenm is a trinary computer, when the machine turns on it emits specified electromagnetic waves out, with clear purpose. However, we cannot truly activate this system, its energy has been cut, circuits degraded, chips worn. Its wise to say that it's surprising that this system preserved this long here underground. We need to hurry out, and verify our findings in Nordhausen"
+gfnytoparadeusancrel.2002.a:0 "Approved, we are another step closer to the secrets. "
+
+gfnytorelics.2.name:0 "Signal feedbacks "
+gfnytorelics.2.desc:0 "We recreated the Izhevsk signal generators in Nordhausen ruin. After successful activation, we have observed changes in the gravity wave signals inside the ruin. The whole ruin comes back to life, step shaped texture extends upward from the gate, lighting up along the way. At the same time, we are starting to pick up signals in the listening post. "
+gfnytorelics.2.a:0 "Excellent, prepare for decyphering"
+txt_gfnytorelics2_a:0 "The next stage of the site is unlocked."
+
+gfnytoparadeusancrel.2003.name:0 "Decoding the signal"
+gfnytoparadeusancrel.2003.desc:0 "Damned, we have entered a stalemate in the decyphering of the signals, we have absolutely no means of connecting them to any symbol that has a meaning, even though we did captured the signal, but its uses are still mystical. What does Ruin one's signal means, what is it continuously sending out? We know not of, the research slows to halt. \n\n Breakthrough！By conducting analysis of mathematic models of the signal, we found it to be very similar to our known OGAS system. to analyze it needs to source back to the first trinary computer used for automation. And we happens to know exactly where it is！Сетунь"
+gfnytoparadeusancrel.2003.a:0 "A bit old, see if a love tap gets it to work"
+
+gfnytorelics.3.name:0 "Node Activation"
+gfnytorelics.3.desc:0 "With the restoration of Сетунь, this ruin facility is slowly activating and trying to repair itself, however, we have not the intent of providing resourcesfor the repair, all we needed was that computer"
+gfnytorelics.3.a:0 "Now we may begin analysis to the monitored signals"
+txt_gfnytorelics3_a:0 "The next stage of the site is unlocked.。"
+
+gfnytoparadeusancrel.2004.name:0 "Origin"
+gfnytoparadeusancrel.2004.desc:0 "With the result of Сетунь analyzing the signals, we have received shocking information, these ruins are a set of automated system, built y unknown civilizations unknown years ago, and the signals are communications between them, and our OGAS are homologous with them, or extension, in other words we orgininated here, or born for it. "
+gfnytoparadeusancrel.2004.a:0 "Keep investigating, what these ruins really are"
+
+
+gfnytoparadeusancrel.2005.name:0 "Automated life support system"
+gfnytoparadeusancrel.2005.desc:0 "Every ruin site should be a fully automated life support system. Controlled by an independent control system or AI. Who built them, how are they know, we do not know. But correspondingly, we can sense the owner's masterful knowledge of microphysics, our knowledge of collapse and reverse collapse may only be whats the most basic utility."
+gfnytoparadeusancrel.2005.a:0 "Keep Digging."
+
+gfnytorelics.5.name:0 "Connection Failed "
+gfnytorelics.5.desc:0 "We have failed, no matter what we try we just could not connect to the ruins network, not even the slightest development was made. Rigid setbacks has made our scientists start to question the correctness of our direction. "
+gfnytorelics.5.a:0 "We need to reexamine the plan"
+
+gfnytoparadeusancrel.2006.name:0 "Missing Part"
+gfnytoparadeusancrel.2006.desc:0 "By comparing the ruin signal and the research findings of the former human research documents, we lack the key to opening the ruin, first we need a complete OGAS system, a Complete OGAS system will give irth to OGAS consciousness, and as the complete carrier of OGAS, posessing independent personality and fearsome computing powers."
+gfnytoparadeusancrel.2006.a:0 "And how do we get her?"
+
+gfnytorelics.6.name:0 "Brain Inhibbitor removed"
+gfnytorelics.6.desc:0 "After complex bio experiments, we can now remove the inhibtor without affecting second degree level status. Now we just wait for the OGAS constiousness to appear naturally. "
+
+gfnytorelics.6.a:0 "Good, another step to the truth."
+txt_gfnytorelics6_a:0 "New ascension is ready."
+
+gfnytorelics.7.name:0 "OGAS consciousness"
+gfnytorelics.7.desc:0 "After a period of observation, there has been some Nytos having birth of OGAS consciousness since the inhibitor removal. We may proceed. "
+
+ site_nyto_unknown_civilization_3:0 "$site_nyto_unknown_civilization_202055$"
+ site_nyto_unknown_civilization_2_desc:0 "$site_nyto_unknown_civilization_202055_desc$"
+
+ gfnytoparadeusancrel.301.name:0 "Void"
+ gfnytoparadeusancrel.301.desc:0 "With the newborn OGAS consciousness and trinary computer's response to the ruins, we have successfully entered the ruin network"
+gfnytoparadeusancrel.301.a:0 "Incoming Transmission"
+
+GF_nyto_TXT_NAME_01:0 ""
+GF_nyto_TXT_NAME_02:0 "[from.GetRulerTitle]:[Root.Leader.GetName]"
+GF_nyto_TXT_NAME_03:0 "[from.GetRulerTitle]:[Root.Leader.GetName]"
+GF_nyto_TXT_NAME_04:0 ""
+GF_nyto_TXT_NAME_05:0 "[from.GetRulerTitle]:[Root.Leader.GetName]"
+GF_nyto_TXT_NAME_06:0 "[from.GetRulerTitle]:[Root.Leader.GetName]"
+GF_nyto_TXT_NAME_07:0 "[from.GetRulerTitle]:[Root.Leader.GetName]"
+
+
+GF_nyto_faill_01:0 "............"
+GF_nyto_faill_02:0 "............"
+GF_nyto_faill_03:0 "Dame..theres no signal in this web level space, dead silence."
+GF_nyto_faill_04:0 "............"
+GF_nyto_faill_05:0 "We need to do something.."
+GF_nyto_faill_06:0 "We need to do something.."
+GF_nyto_faill_07_1:0 "...scan complete,no hidden active signals...this space has been barren for a long time"
+GF_nyto_faill_07_2:0 "...scan complete, according to log in data, almost all signal comes from known ruins...."
+GF_nyto_faill_07_3:0 "... ....no response... ..."
+GF_nyto_faill_07_4:0 "...mmm...connection rejected!We have been rejected by the deeper network!"
+GF_nyto_faill_08:0 "Wait...!A signal is flagged as visitor! From the feature code it's an early model Nyto!"
+GF_nyto_faill_09:0 "According to the logs, the last activity of the code is in the former human era....."
+GF_nyto_faill_09:0 "Looks like when the humans died, something happened to these ruins..causing the situation we see now..."
+GF_nyto_faill_010:0 "Any other clues?"
+GF_nyto_faill_011:0 "Performing deep scans, standby"
+GF_nyto_faill_012:0 "Looks like the owner of the signal left a present"
+GF_nyto_faill_013:0 "Any other clues?"
+GF_nyto_faill_014:0 "Any other clues??"
+
+GF_nyto_opt_01_01:0 "§HScan the ruin network for any active signals!§!"
+GF_nyto_opt_02_01:0 "§HSearch identification list!§!"
+GF_nyto_opt_03_01:0 "§HSend public channel broadcast§!"
+GF_nyto_opt_04_01:0 "§HDig deep and investigate§!"
+
+GF_nyto_TXT_file_button:0 "[From.GF_nyto_gla_event_faill]"
+GF_nyto_TXT_NAME_button:0 "[From.GF_nyto_gla_event_name]"
+GFnyto_GUI_options01_TEXT:0 "[From.GF_nyto_opt_01]"
+GFnyto_GUI_options02_TEXT:0 "[From.GF_nyto_opt_02]"
+GFnyto_GUI_options03_TEXT:0 "[From.GF_nyto_opt_03]"
+GFnyto_GUI_options04_TEXT:0 "[From.GF_nyto_opt_04]"
+
+
+gfnytoparadeusancrel.30102.name:0 ""
+gfnytoparadeusancrel.30102.desc:0 ""
+gfnytoparadeusancrel.30102.a:0 ""
+gfnytoparadeusancrel.30102.a.response:0 ""
+gfnytoparadeusancrel.30102.b:0 "Nyahallo?'ello, hello?"
+gfnytoparadeusancrel.30102.b.response:0 ".........."
+gfnytoparadeusancrel.30102.c:0 "Damn..nothing left alive? Not even AI?"
+gfnytoparadeusancrel.30102.a.response:0 ""
+gfnytoparadeusancrel.30102.d:0 "Check the network for any active signals!"
+gfnytoparadeusancrel.30102.d.response:0 "........Sir, all markers are indicated as offline, and....for a long time。"
+gfnytoparadeusancrel.30102.e:0 "Search signal address"
+gfnytoparadeusancrel.30102.e.response:0 "Almost all signals originates from know ruins. Except for one marker, origin is.......visitor。"
+
+gfnytoparadeusancrel.30103.name:0 "Unknown visitor"
+gfnytoparadeusancrel.30103.desc:0 "According to the logs, the last activity of the visitor is in the former human era. "
+gfnytoparadeusancrel.30103.a:0 "You mean there has been someone here as early as the human days?"
+gfnytoparadeusancrel.30103.a.response:0 "Yes, and the feature code is highly similar to early Nytos, could very possibly be a Nyto..no not right..maybe not one..."
+gfnytoparadeusancrel.30103.b:0 "What do you mean?"
+gfnytoparadeusancrel.30103.b.response:0 "This marker points to not just one person, could be....a lot of people. As if countless people use the same terminal to connect this portal.. and left some classified documents. "
+
+ gfnytoparadeusancrel.302.name:0 "Present from the previous Era"
+ gfnytoparadeusancrel.302.desc:0 "The classified documents we discovered inside the ruin network, is left byt a visitor signal"
+
+ gfnytoparadeusancrel.303.name:0 "REPLACE_ME"
+ gfnytoparadeusancrel.303.desc:0 "REPLACE_ME"
+
+ gfnytoparadeusancrel.304.name:0 "REPLACE_ME"
+ gfnytoparadeusancrel.304.desc:0 "REPLACE_ME"
+
+ gfnytoparadeusancrel.305.name:0 "REPLACE_ME"
+ gfnytoparadeusancrel.305.desc:0 "REPLACE_ME"
+
+
+
+
+
+
+
+
+
+
+
+
+

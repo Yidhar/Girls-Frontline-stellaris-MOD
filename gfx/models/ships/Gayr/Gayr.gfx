@@ -1,0 +1,24 @@
+objectTypes = {
+	pdxmesh = {
+		name = "Gayr_mesh"
+		file = "gfx/models/ships/Gayr/Gayr.mesh"
+		scale = 2.0
+
+		meshsettings = {
+			name = "S_02Dreadnought_mod_3G_lod_0Shape"
+			index = 0
+			texture_diffuse = "Gayr_Hull_Diff.dds"
+			texture_normal = "Gayr_Hull_Norm.dds"
+			texture_specular = "Gayr_Hull_Spec.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+}
+
+objectTypes = {
+	pdxmesh = {
+		name = "Gayr_frame_mesh"
+		file = "gfx/models/ships/Gayr/Gayr_frame.mesh"
+		scale = 1.0
+	}
+}

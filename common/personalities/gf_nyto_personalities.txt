@@ -1,0 +1,69 @@
+# claims_modifier -> Affects opinion penalty from claims
+
+# Ships
+# armor_ratio -> Amount of armor they should aim for on ships
+# shields_ratio -> Amount of shields they should aim for on ships
+# hull_ratio -> Amount of hull boosters they should aim for on ships (if available)
+
+##### Diplomacy:
+# federation_acceptance -> Added directly to chance of accepting to form/join a federation
+# nap_acceptance -> Added directly to chance of accepting to form a non-aggression pact
+# commercial_pact_acceptance -> Added directly to chance of accepting to form a commercial pact
+# research_agreement_acceptance -> Added directly to chance of accepting to form a research agreement
+# migration_pact_acceptance -> Added directly to chance of accepting to form a migration pact
+# defensive_pact_acceptance -> Added directly to chance of accepting to form a defensive pact
+
+##### Diplomacy:
+# advanced_start_chance -> Likelyhood of this empire being an advanced start (higher = better chance of being one of empires selected for advanced start)
+
+# NOTE: Weight is additive!
+GF_nyto_warrior ={
+	aggressiveness = 4 #攻击性
+	trade_willingness = 0 #贸易意愿
+	bravery = 4.0  #？
+	combat_bravery = 99	# rarely ever retreat in battle
+
+	military_spending = 3 #军费
+	colony_spending = 3
+	federation_acceptance = 0 #-10 联邦
+	nap_acceptance = 0
+	commercial_pact_acceptance = -20
+	research_agreement_acceptance = 0
+	defensive_pact_acceptance = -20
+	migration_pact_acceptance = -20
+	advanced_start_chance = 75
+	weapon_preferences = weapon_type_energy
+	armor_ratio = 0
+	shields_ratio =1
+	hull_ratio = 0
+	threat_modifier = 1.0
+	threat_others_modifier = 1.0
+	friction_modifier = 1.0
+	claims_modifier = 1.0
+	behaviour = {
+		conqueror = yes
+		subjugator = yes
+		liberator = yes
+		opportunist = yes
+		purger = yes
+		displacer = yes
+		slaver = no
+		uplifter = no
+		infiltrator = no
+		dominator = yes
+		robot_exploiter = no
+		robot_liberator = no
+		propagator = yes
+		multispecies = no
+		crisis_fighter = yes
+		crisis_leader = yes 
+	}
+
+	allow = {
+		is_country_type = default
+		has_authority = auth_GF_paradeus
+	}
+	weight_modifier = {
+		weight = 1000
+	}
+}

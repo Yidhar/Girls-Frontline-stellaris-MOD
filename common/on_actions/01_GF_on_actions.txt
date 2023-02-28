@@ -1,0 +1,115 @@
+
+on_game_start = {
+	events = {
+		GF_start.0	# 添加模组的全局标识
+	}
+}
+
+# this = GF country
+on_GF_game_start = {
+	events = {
+		GF_start.1	# 初始化开局
+		GF_sf.0		# 铁血事件链
+		GF_recover_plan.0 # 复兴协议
+	}
+}
+
+on_game_start_country = {
+}
+
+# Called during empire initialization when starting a new game if has_secondary_species game rule is true.
+# Called before empire_init_create_capital_pops.
+# scope: planet
+# from: founder species
+# fromfrom: secondary species (if exists)
+empire_init_capital_planet = {
+	events = {
+		GF_start.20	# 初始化第二物种（人形）
+	}
+}
+
+# Triggers when trying to open the diplomacy view for countries with custom diplomacy.
+# Country scope
+# This = target country (player)
+# From = source country
+on_custom_diplomacy = {
+	events = {
+		GF_ogas.0	# 建立OGAS国家
+	}
+}
+
+# A pop has finished assembling
+# This = Planet scope
+# From = Country
+# FromFrom = Pop
+# on_pop_assembled = {
+# 	events = {
+# 		GF_doll.0	# 人形权利相关
+# 	}
+# }
+
+# Executes after a policy has been changed
+# use last_changed_policy to identify which policy it was
+# This = Country
+# on_policy_changed = {
+# 	events = {
+# 		# 权利政策
+# 		GF_doll.1110	# 完整权利 或 有限权利 - 可以生成领袖
+# 		GF_doll.1120	# 侍从权利 或 商品权利 - 不可生成领袖
+
+# 		# 任务分配政策
+# 		GF_doll.1200	#
+# 	}
+# }
+
+# a new leader is generated for an empire, to be available for recruitment
+# scope: country, from: leader
+on_leader_spawned = {
+	events = {
+		GF_new_type.0		# 仅女性新人类物种领袖（都是美少女立绘为什么会有男人）
+		GF_doll_leader.0	# 添加专属领袖特质
+		GF_overlord.100		# OGAS子网 II：机械领袖等级+2
+	}
+}
+
+# this = country
+on_monthly_pulse_country = {
+	events = {
+		GF_doll.3000		# 月检事件 锁定人形的公民权
+	}
+}
+
+
+# fires when a country releases a sector as a vassal
+# This = released vassal
+# From = overlord
+on_released_as_vassal = {
+	events = {
+		GF_overlord.0		# 少前政体释放附庸
+	}
+}
+
+# No scope, like on_game_start
+# Does not run when loading MP saves due to OOS concerns
+on_single_player_save_game_load = {
+	events = {
+		GF_evt_misc.1000	# 加载旧版存档时的处理
+	}
+}
+
+#Fired whenever a new owner is set for a planet,
+#be it after a war or through a trade
+#FromFrom = Former Owner (if any)
+#From = Country scope (new owner)
+#This = Planet scope
+on_planet_transfer = {
+	events = {
+		GF_evt_misc.2000	# 处理球上的人口组装建筑
+	}
+}
+
+on_leader_death = {
+	events = {
+		GF_ogas.50
+	}
+}

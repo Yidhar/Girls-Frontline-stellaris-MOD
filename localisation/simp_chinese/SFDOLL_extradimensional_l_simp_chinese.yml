@@ -1,0 +1,46 @@
+﻿l_simp_chinese:
+###############################
+sfdoll_extradimensional_event.1:0 "高维通讯"
+sfdoll_extradimensional_event.1_desc:0 "我们接到了某种信号.这种信号来自银河系的某个未知维度,并和其他杂音混合在一起.铁血的研究者坚信,该信号源自一种智慧生物.对这个信号的破解已经得到了成果"
+
+sfdoll_extradimensional_event.2:0 "高维通讯"
+sfdoll_extradimensional_event.2_desc:0 "我很高兴,你们读懂了我发出的信号.我是一个路过你们星系的旅行者.如果你们乐意的话,我想暂时停留在你们的世界."
+sfdoll_extradimensional_event.2_option:0 "你有什么打算?"
+sfdoll_extradimensional_event.2_response:0 "我需要一个安全的地方.具体来说,我无法在低维生存,除非有一套专门的维生设施.我会把设计方案提供给你们."
+
+sfdoll_exd_leader_project:0 "次元锚素体设计"
+sfdoll_exd_leader_project_DESC:0 "根据高维生物提供的资料,我们将设计一套铁血素体,在其中装备微型次元锚,用来维持高维生物的生命."
+
+
+sfdoll_extradimensional_event.3:0 "与漫游者通讯"
+sfdoll_extradimensional_event.3_desc:0 "你们成功了.把自己储存到这副素体中,我就可以在你们的维度活动.通过设计这件素体,你们也学到了很多东西,对吧?"
+sfdoll_extradimensional_event.3_option:0 "好东西.多来点."
+
+sfdoll_extradimensional_event.4:0 "与漫游者通讯"
+sfdoll_extradimensional_event.4_desc:0 "我们可以继续合作."
+# sfdoll_extradimensional_event.4_option_a:0 "人类很孤独"
+# sfdoll_extradimensional_event.4_option_b:0 "代替他们干活"
+# sfdoll_extradimensional_event.4_option_c:0 "有能力为什么不造?"
+# sfdoll_extradimensional_event.4_option_d:0 "好奇心?"
+
+sfdoll_extradimensional_event.5:0 "与漫游者通讯"
+sfdoll_extradimensional_event.5_desc:0 "有何见教?"
+sfdoll_extradimensional_event.5_desc_b:0 "你们不是自然进化而成的物种,而是一种人工智能.我很好奇,你们的造物主为何创造你们呢?"
+
+sfdoll_exd_leader_to_scientist:0 "请协助我们的科研工作"
+response_sfdoll_exd_leader_to_scientist:0 "我会提供帮助."
+
+sfdoll_get_exd_science_ship:0 "我们需要一艘科研船"
+response_sfdoll_get_exd_science_ship:0 "小心使用。调试这船需要花费我两年的时间。"
+have_fleet_sfdoll_exd_science_ship:0 "科研船已经在工作。"
+sfdoll_exd_science_ship_destroyed:0 "科研船正在修理。"
+timed_flag_sfdoll_exd_science_ship:0 "暂时无法获得科研船。"
+
+NAME_sfdoll_exd_leader:0 "漫游者"
+leader_trait_sfdoll_exd_leader:0 "异次元漫游者"
+leader_trait_sfdoll_exd_leader_desc:0 "来自其他世界的生物,身上充满谜团.它总能轻易看穿物体的构造."
+
+sfdoll_exd_science_ship:0 "异次元科研船"
+sfdoll_exd_science_ship_plural:0 "$sfdoll_exd_science_ship$"
+sfdoll_exd_science_section:0 "$sfdoll_exd_science_ship$"
+design_sfdoll_exd_science_ship:0 "$sfdoll_exd_science_ship$"

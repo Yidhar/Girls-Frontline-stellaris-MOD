@@ -1,0 +1,22 @@
+﻿l_simp_chinese:
+###############################
+tech_sfdoll_nanites:0"超微观人工智能"
+tech_sfdoll_nanites_desc:0 "微小的结构也能运行复杂的程序"
+
+building_sfdoll_nanites_plant:0 "铁血纳米机械厂"
+building_sfdoll_nanites_plant_desc:0 "$building_sfdoll_nanites_plant$"
+job_sfdoll_nanites_maker:0"纳米机械师"
+job_sfdoll_nanites_maker_plural:0"$job_sfdoll_nanites_maker$"
+job_sfdoll_nanites_maker_desc:0"$building_sfdoll_nanites_plant_desc$"
+job_sfdoll_nanites_maker_effect_desc:0 " $job_sfdoll_nanites_maker$ 将 §Y$minerals$§! 转化为 §Y$nanites$§!"
+mod_job_sfdoll_nanites_maker_add:0 "$job_sfdoll_nanites_maker$岗位"
+
+tech_trait_sfdoll_nanite:0 "纳米铁血机体"
+tech_trait_sfdoll_nanite_desc:0 "新一代的微型机械足以打破多种关于生物的限制。它们可以为铁血人形素体带来自我复制的功能。"
+tech_trait_sfdoll_nanite_modifier:0 "§H解锁物种特质:§! $trait_sfdoll_nanite$"
+
+trait_sfdoll_nanite:0 "增殖模块"
+trait_sfdoll_nanite_desc:0 "解锁人口增长"
+
+sm_sfdoll_starbase_building_chemical:0 "自动化学工厂"
+sm_sfdoll_starbase_building_chemical_desc:0 "纳米科技让化学合成变得简单"

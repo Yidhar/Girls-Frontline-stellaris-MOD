@@ -1,0 +1,550 @@
+# Icons set here are the ones show in the actual slot.
+
+@cost1 = 3
+@cost2 = 6
+@cost3 = 9
+@cost4 = 12
+@cost5 = 15
+
+@power_1 = -10
+@power_2 = -15
+@power_3 = -20
+@power_4 = -25
+@power_5 = -30
+
+@destroyer_power_1 = -20
+@destroyer_power_2 = -30
+@destroyer_power_3 = -40
+@destroyer_power_4 = -50
+@destroyer_power_5 = -60
+
+@cruiser_power_1 = -40
+@cruiser_power_2 = -60
+@cruiser_power_3 = -80
+@cruiser_power_4 = -100
+@cruiser_power_5 = -120
+
+@battleship_power_1 = -80
+@battleship_power_2 = -120
+@battleship_power_3 = -160
+@battleship_power_4 = -200
+@battleship_power_5 = -240
+
+@titan_power_1 = -160
+@titan_power_2 = -240
+@titan_power_3 = -320
+@titan_power_4 = -400
+@titan_power_5 = -480
+
+@colossus_power_1 = -200
+@colossus_power_2 = -300
+@colossus_power_3 = -400
+@colossus_power_4 = -500
+@colossus_power_5 = -600
+
+@destroyer_cost1 = 6
+@destroyer_cost2 = 12
+@destroyer_cost3 = 18
+@destroyer_cost4 = 24
+@destroyer_cost5 = 30
+
+@cruiser_cost1 = 12
+@cruiser_cost2 = 24
+@cruiser_cost3 = 36
+@cruiser_cost4 = 48
+@cruiser_cost5 = 60
+
+@battleship_cost1 = 24
+@battleship_cost2 = 48
+@battleship_cost3 = 72
+@battleship_cost4 = 96
+@battleship_cost5 = 120
+
+@titan_cost1 = 48
+@titan_cost2 = 96
+@titan_cost3 = 144
+@titan_cost4 = 192
+@titan_cost5 = 240
+
+@colossus_cost1 = 60
+@colossus_cost2 = 120
+@colossus_cost3 = 180
+@colossus_cost4 = 240
+@colossus_cost5 = 300
+# THRUSTERS #
+
+#高级推进器
+#护卫，特殊工程船和科研船
+utility_component_template = {
+	key = "sfdoll_thruster"
+	size = small
+	icon = "GFX_sfdoll_thruster"
+	icon_frame = 1
+	power =-45
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 15
+			#sr_dark_matter = 1
+		}
+	}
+	modifier = {
+		ship_speed_mult = 8
+		ship_evasion_add = 80
+	}
+
+	prerequisites = { "tech_sfdoll_thruster" }
+	component_set = "thruster_components"
+	size_restriction = { sfdoll_warship_1 sfdoll_warship_2 sfdoll_warship_3 corvette frigate colonizer sponsored_colonizer constructor science transport }
+	
+	ai_weight = {
+		weight = 5
+		modifier = {
+			factor = -4
+			NOT = {	has_authority = auth_gf_sfdoll	}
+		}
+	}
+}
+
+#驱逐
+utility_component_template = {
+	key = "sfdoll_thruster_2"
+	size = small
+	icon = "GFX_sfdoll_thruster"
+	icon_frame = 1
+	power = -80
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 40
+		}
+	}
+	modifier = {
+		ship_speed_mult = 8
+		ship_evasion_add = 70
+	}
+	prerequisites = { "tech_sfdoll_thruster" }
+	component_set = "thruster_components"
+	size_restriction = { sfdoll_warship_4 sfdoll_warship_5 sfdoll_warship_6 destroyer }
+
+	ai_weight = {
+		weight = 5
+		modifier = {
+			factor = -4
+			NOT = {	has_authority = auth_gf_sfdoll	}
+		}
+	}
+}
+#巡洋
+utility_component_template = {
+	key = "sfdoll_thruster_3"
+	size = small
+	icon = "GFX_sfdoll_thruster"
+	icon_frame = 1
+	power = -180
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = -50
+		}
+	}
+	modifier = {
+		ship_speed_mult = 8
+		ship_evasion_add = 60
+	}
+
+	prerequisites = { "tech_sfdoll_thruster" }
+	component_set = "thruster_components"
+	size_restriction = { sfdoll_mobile_starbase  cruiser }
+
+	ai_weight = {
+		weight = 5
+		modifier = {
+			factor = -4
+			NOT = {	has_authority = auth_gf_sfdoll	}
+		}
+	}
+}
+
+#战列
+utility_component_template = {
+	key = "sfdoll_thruster_4"
+	size = small
+	icon = "GFX_sfdoll_thruster"
+	icon_frame = 1
+	power = -300
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 100
+		}
+	}
+	modifier = {
+		ship_speed_mult = 8
+		ship_evasion_add = 50
+	}
+
+	prerequisites = { "tech_sfdoll_thruster" }
+	component_set = "thruster_components"
+	size_restriction = {   battleship  }
+	ai_weight = {
+		weight = 5
+		modifier = {
+			factor = -4
+			NOT = {	has_authority = auth_gf_sfdoll	}
+		}
+	}
+}
+
+#泰坦
+utility_component_template = {
+	key = "sfdoll_thruster_5"
+	size = small
+	icon = "GFX_sfdoll_thruster"
+	icon_frame = 1
+	power = -600
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 200
+		}
+	}
+	modifier = {
+		ship_speed_mult = 8
+		ship_evasion_add = 20
+	}
+
+	prerequisites = { "tech_sfdoll_thruster" }
+	component_set = "thruster_components"
+	size_restriction = { sfdoll_constructor   titan }
+
+	ai_weight = {
+		weight = 5
+		modifier = {
+			factor = -4
+			NOT = {	has_authority = auth_gf_sfdoll	}
+		}
+	}
+}
+
+#巨像
+utility_component_template = {
+	key = "sfdoll_thruster_6"
+	size = small
+	icon = "GFX_sfdoll_thruster"
+	icon_frame = 1
+	power = -1000
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 400
+		}
+	}
+	modifier = {
+		ship_speed_mult = 8
+	}
+
+	prerequisites = { "tech_sfdoll_thruster" }
+	component_set = "thruster_components"
+	size_restriction = { sfdoll_star_eater star_eater colossus	juggernaut 	}
+	ai_weight = {
+		weight = 5
+		modifier = {
+			factor = -4
+			NOT = {	has_authority = auth_gf_sfdoll	}
+		}
+	}
+}
+
+# utility_component_template = {
+# 	key = "thruster_ship_carrier_2_sfdoll"
+# 	size = small
+# 	icon = "GFX_sfdoll_thruster"
+# 	icon_frame = 1
+# 	modifier = {
+# 		ship_base_speed_mult = 12
+# 	}
+# 	prerequisites = { "tech_sfdoll_thruster" }
+# 	component_set = "thruster_components"
+# 	size_restriction = { 	ship_carrier_2_sfdoll }
+# 	resources = {
+# 		category = ship_components
+# 		cost = {
+# 			alloys = 200
+# 		}
+# 	}
+# }
+
+#深空母舰推进器
+utility_component_template = {
+	key = "thruster_sfdoll_mobile_starbase"
+	size = small
+	hidden = yes
+	icon = "GFX_ship_part_thruster_5"
+	icon_frame = 1
+	resources = {
+		category = ship_components
+	}
+	modifier = {
+		ship_speed_mult = 8
+	}
+	component_set = "thruster_components"
+	size_restriction = { sfdoll_mobile_starbase }
+}
+
+
+#高速科研船和工程船的各级推进器
+# utility_component_template = {
+# 	key = "SCIENCE_SFDOLL_THRUSTER_1"
+# 	size = small
+# 	icon = "GFX_ship_part_thruster_1"
+# 	icon_frame = 1
+# 	power =  @power_1
+# 	resources = {
+# 		category = ship_components
+# 		cost = {
+# 			alloys = @cost1
+# 		}
+# 	}
+
+# 	modifier = {
+# 	}
+
+# 	prerequisites = { "tech_thrusters_1" }
+# 	component_set = "thruster_components"
+# 	size_restriction = { science_sfdoll  constructor_sfdoll }
+	
+# 	upgrades_to = "SCIENCE_SFDOLL_THRUSTER_2"
+
+# 	ai_weight = {
+# 		weight = 1
+# 	}
+# }
+
+# utility_component_template = {
+# 	key = "SCIENCE_SFDOLL_THRUSTER_2"
+# 	size = small
+# 	icon = "GFX_ship_part_thruster_2"
+# 	icon_frame = 1
+# 	power = @power_2
+# 	resources = {
+# 		category = ship_components
+# 		cost = {
+# 			alloys = @cost2
+# 		}
+# 	}
+# 	modifier = {
+# 		ship_base_speed_mult = 0.25
+# 		ship_evasion_add = 5
+# 	}
+
+# 	prerequisites = { "tech_thrusters_2" }
+# 	component_set = "thruster_components"
+# 	size_restriction = { science_sfdoll constructor_sfdoll }
+# 	upgrades_to = "SCIENCE_SFDOLL_THRUSTER_3"
+
+# 	ai_weight = {
+# 		weight = 2
+# 	}
+# }
+
+# utility_component_template = {
+# 	key = "SCIENCE_SFDOLL_THRUSTER_3"
+# 	size = small
+# 	icon = "GFX_ship_part_thruster_3"
+# 	icon_frame = 1
+# 	power = @power_3
+# 	resources = {
+# 		category = ship_components
+# 		cost = {
+# 			alloys = @cost3
+# 		}
+# 	}
+# 	modifier = {
+# 		ship_base_speed_mult = 0.50
+# 		ship_evasion_add = 10
+# 	}
+
+# 	prerequisites = { "tech_thrusters_3" }
+# 	component_set = "thruster_components"
+# 	size_restriction = { science_sfdoll constructor_sfdoll }
+# 	upgrades_to = "SCIENCE_SFDOLL_THRUSTER_4"
+
+# 	ai_weight = {
+# 		weight = 3
+# 	}
+# }
+
+# utility_component_template = {
+# 	key = "SCIENCE_SFDOLL_THRUSTER_4"
+# 	size = small
+# 	icon = "GFX_ship_part_thruster_4"
+# 	icon_frame = 1
+# 	power = @power_4
+# 	resources = {
+# 		category = ship_components
+# 		cost = {
+# 			alloys = @cost4
+# 		}
+# 	}
+# 	modifier = {
+# 		ship_base_speed_mult = 0.75
+# 		ship_evasion_add = 15
+# 	}
+
+# 	prerequisites = { "tech_thrusters_4" }
+# 	component_set = "thruster_components"
+# 	size_restriction = { science_sfdoll  constructor_sfdoll }
+# 	upgrades_to = "SCIENCE_SFDOLL_THRUSTER_5"
+
+# 	ai_weight = {
+# 		weight = 4
+# 	}
+# }
+
+
+# utility_component_template = {
+# 	key = "SCIENCE_SFDOLL_THRUSTER_5"
+# 	size = small
+# 	icon = "GFX_ship_part_thruster_5"
+# 	icon_frame = 1
+# 	power = @power_5
+# 	resources = {
+# 		category = ship_components
+# 		cost = {
+# 			alloys = @cost4
+# 			sr_dark_matter = 1
+# 		}
+# 	}
+# 	modifier = {
+# 		ship_base_speed_mult = 1.25
+# 		ship_evasion_add = 20
+# 	}
+
+# 	prerequisites = { "tech_dark_matter_propulsion" }
+# 	component_set = "thruster_components"
+# 	size_restriction = { science_sfdoll  constructor_sfdoll }
+
+# 	ai_weight = {
+# 		weight = 5
+# 		modifier = {
+# 			factor = 0.0
+# 			no_resource_for_component = { RESOURCE = sr_dark_matter }
+# 		}
+# 	}
+# }
+
+
+
+# utility_component_template = {
+# 	key = "SCIENCE_SFDOLL_THRUSTER_2"
+# 	size = small
+# 	icon = "GFX_ship_part_thruster_2"
+# 	icon_frame = 1
+# 	power = @power_2
+# 	resources = {
+# 		category = ship_components
+# 		cost = {
+# 			alloys = @cost2
+# 		}
+# 	}
+# 	modifier = {
+# 		ship_base_speed_mult = 0.25
+# 		ship_evasion_add = 5
+# 	}
+
+# 	prerequisites = { "tech_thrusters_2" }
+# 	component_set = "thruster_components"
+# 	size_restriction = { science_sfdoll constructor_sfdoll }
+# 	upgrades_to = "SCIENCE_SFDOLL_THRUSTER_3"
+
+# 	ai_weight = {
+# 		weight = 2
+# 	}
+# }
+
+# utility_component_template = {
+# 	key = "SCIENCE_SFDOLL_THRUSTER_3"
+# 	size = small
+# 	icon = "GFX_ship_part_thruster_3"
+# 	icon_frame = 1
+# 	power = @power_3
+# 	resources = {
+# 		category = ship_components
+# 		cost = {
+# 			alloys = @cost3
+# 		}
+# 	}
+# 	modifier = {
+# 		ship_base_speed_mult = 0.50
+# 		ship_evasion_add = 10
+# 	}
+
+# 	prerequisites = { "tech_thrusters_3" }
+# 	component_set = "thruster_components"
+# 	size_restriction = { science_sfdoll constructor_sfdoll }
+# 	upgrades_to = "SCIENCE_SFDOLL_THRUSTER_4"
+
+# 	ai_weight = {
+# 		weight = 3
+# 	}
+# }
+
+# utility_component_template = {
+# 	key = "SCIENCE_SFDOLL_THRUSTER_4"
+# 	size = small
+# 	icon = "GFX_ship_part_thruster_4"
+# 	icon_frame = 1
+# 	power = @power_4
+# 	resources = {
+# 		category = ship_components
+# 		cost = {
+# 			alloys = @cost4
+# 		}
+# 	}
+# 	modifier = {
+# 		ship_base_speed_mult = 0.75
+# 		ship_evasion_add = 15
+# 	}
+
+# 	prerequisites = { "tech_thrusters_4" }
+# 	component_set = "thruster_components"
+# 	size_restriction = { science_sfdoll  constructor_sfdoll }
+# 	upgrades_to = "SCIENCE_SFDOLL_THRUSTER_5"
+
+# 	ai_weight = {
+# 		weight = 4
+# 	}
+# }
+
+
+# utility_component_template = {
+# 	key = "SCIENCE_SFDOLL_THRUSTER_5"
+# 	size = small
+# 	icon = "GFX_ship_part_thruster_5"
+# 	icon_frame = 1
+# 	power = @power_5
+# 	resources = {
+# 		category = ship_components
+# 		cost = {
+# 			alloys = @cost4
+# 			sr_dark_matter = 1
+# 		}
+# 	}
+# 	modifier = {
+# 		ship_base_speed_mult = 1.25
+# 		ship_evasion_add = 20
+# 	}
+
+# 	prerequisites = { "tech_dark_matter_propulsion" }
+# 	component_set = "thruster_components"
+# 	size_restriction = { science_sfdoll  constructor_sfdoll }
+
+# 	ai_weight = {
+# 		weight = 5
+# 		modifier = {
+# 			factor = 0.0
+# 			no_resource_for_component = { RESOURCE = sr_dark_matter }
+# 		}
+# 	}
+# }

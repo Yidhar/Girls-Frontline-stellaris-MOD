@@ -1,0 +1,274 @@
+# sf doll Triggers
+
+on_game_start_country={
+	events = {
+		gf_sfdoll_game_start_event.0 
+	}
+}
+
+on_yearly_pulse_country = {
+	events = {
+		sfdoll_event.1
+		# sfdoll_time_event.1
+	}
+}
+
+on_custom_diplomacy = {
+	events = {
+		sfdoll_elisa_event.2
+		# sfdoll_ump45_event.1
+		# sfdoll_noel_event.1
+		# sfdoll_gunslinger_girl_event.6
+	}
+}
+
+on_leader_spawned = {
+	events = {
+		gf_sfdoll_leader_trait_event.0
+		gf_sfdoll_leader_trait_event.1
+		sfdoll_leader_revive_event.5
+	}
+}
+
+# Executed as a leader has died
+# This = Country
+# From = Leader
+on_leader_death = {
+	events = {
+		sfdoll_leader_revive_event.0
+	}
+} 
+
+on_leader_assigned = {
+	events = {
+
+	}
+}
+
+on_ruler_removed = {
+	events = {
+		
+	}
+}
+
+
+# A leader leveled up.
+# Scope = Country
+# From = Leader
+on_leader_level_up = {
+	events = {
+
+	}
+}
+
+# Executed when the ruler is ousted and goes back to their pre-ruler class
+# From = Previous Ruler, already has the new class
+# This = Country
+on_ruler_back_to_pre_ruler_class = {
+	events = {
+		gf_sfdoll_leader_trait_event.2
+		gf_sfdoll_leader_trait_event.3
+	}
+}
+
+on_monthly_pulse_country = {
+	events = {
+	}
+}
+
+# this = country
+# on_five_year_pulse_country = {
+# 	events = {
+# 	}
+# }
+
+# Triggers when a Special Project to apply a species modification template has completed.
+# Note that this will trigger once for each combination of planet & original species.
+#
+# This = Country
+# From = Species ( Post Modification )
+on_modification_complete = {
+	events = {
+		sfdoll_leader_event.1
+		sfdoll_time_event.2
+	}
+}
+
+
+on_tech_increased = {
+	events = {
+		sfdoll_tech_event.1
+	}
+}
+
+#飞升时触发
+on_ascension_perk_picked = {
+	events = {
+
+	}
+}
+
+# This = owner of fleet 1
+# From = owner of fleet 2
+# FromFrom = fleet 1
+# FromFromFrom = fleet 2
+on_entering_battle = {
+	events = {
+		sfdoll_fleet_event.1
+	}
+}
+
+# This = owner of fleet 1 (winner)
+# From = owner of fleet 2 (loser)
+# FromFrom = fleet 1
+# FromFromFrom = fleet 2
+on_space_battle_won = {
+	events = {
+		
+	}
+}
+
+# This = owner of ship 1 (destroyed)
+# From = owner of ship 2 (combatant)
+# FromFrom = ship 1
+# FromFromFrom = ship 2
+on_ship_destroyed_victim = {
+	events = {
+		sfdoll_fleet_event.5
+	}	
+}
+
+# This = owner of ship 1 (combatant)
+# From = owner of ship 2 (destroyed)
+# FromFrom = ship 1
+# FromFromFrom = ship 2
+on_ship_destroyed_perp = {
+	events = {
+	}
+}
+
+# This = owner of fleet 1 (destroyed)
+# From = owner of fleet 2 (combatant)
+# FromFrom = fleet 1
+# FromFromFrom = fleet 2
+on_fleet_destroyed_victim = {
+	events = {
+		# sfdoll_fleet_event.10
+	}
+}
+
+
+# This = owner of fleet 1 (combatant)
+# From = owner of fleet 2 (destroyed)
+# FromFrom = fleet 1
+# FromFromFrom = fleet 2
+on_fleet_destroyed_perp = {
+	events = {
+
+	}
+}
+
+# This = owner of fleet
+# From = disbanded fleet
+on_fleet_disbanded = {
+	events = {
+		sfdoll_fleet_event.11
+	}
+}
+
+# This = Ship
+# From = Disabler Ship
+on_ship_disabled = {
+	events = {
+	}
+}
+
+on_entering_system_fleet = {
+	events = {
+	}
+}
+
+on_ship_built = {
+	events = {
+	}
+}
+
+# Planet has taken damage from orbital bombardment - Damage is applied daily
+# This = Planet
+# From = Bombarder
+on_planet_bombarded = {
+	events = {
+	}
+}
+
+# this = ship
+# 星球压制舰被制造 / 升级时触发
+# on_wg_pod_built = {
+# 	events = {
+
+# 	}
+# }
+
+# this = ship
+# from = bombarded planet
+# 星球压制舰轰炸时触发
+# on_wg_pod_bombarding_planet = {
+# 	events = {
+# 	}
+# }
+
+# this = ship
+# 星球压制舰轰炸的星球的陆军战斗结束时触发
+# on_wg_pod_planet_fight_end = {
+# 	events = {
+# 	}
+# }
+
+#From = Planet/Starbase/Megastructure scope
+#This = Fleet scope
+on_fleet_enter_orbit = {
+	events = {
+		# sfdoll_planet_killer_event.9
+	}
+}
+
+
+#W槽触发器
+# this/root = planet that have been fired upon
+# from = fleet that fired
+on_destroy_planet_with_planet_killer_sfdoll_1 = {
+	events = {
+		# sfdoll_planet_killer_event.1
+		sfdoll_planet_killer_event.12
+
+		#焚天神兵的事件
+		#crisis.4550
+	}
+}
+
+#炸星系
+on_destroy_planet_with_planet_killer_sfdoll_2 = {
+	events = {
+		sfdoll_planet_killer_event.1
+	}
+}
+
+#转化为黑洞
+on_destroy_planet_with_planet_killer_sfdoll_3 = {
+	events = {
+		sfdoll_planet_killer_event.15
+	}
+}
+
+#黑洞转恒星
+on_destroy_planet_with_planet_killer_sfdoll_4 = {
+	events = {
+		sfdoll_planet_killer_event.16
+	}
+}
+
+on_destroy_planet_with_planet_killer_sfdoll_colonizer = {
+	events = {
+		sfdoll_planet_killer_event.13
+	}
+}

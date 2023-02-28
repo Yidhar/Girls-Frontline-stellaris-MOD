@@ -1,0 +1,50 @@
+utility_component_template = {
+	key = "sfdoll_constructor_REACTOR"
+	size = small
+	icon = "GFX_ship_part_reactor_1"
+	icon_frame = 1
+	power = 550
+	resources = {
+		category = ship_components
+		upkeep = {
+			energy = 0.80
+			alloys = 0.08
+		}
+	}
+
+	# prerequisites = { "tech_fission_power" }
+	component_set = "power_core"
+	size_restriction = { sfdoll_constructor }
+	# upgrades_to = "BATTLESHIP_FUSION_REACTOR"
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+utility_component_template = {
+	key = "sfdoll_constructor_thruster"
+	size = small
+	icon = "GFX_ship_part_thruster_1"
+	icon_frame = 1
+	power = -100
+	# resources = {
+	# 	category = ship_components
+	# }
+	modifier = {
+		ship_speed_mult = 1
+		ship_evasion_add = 10
+	}
+
+	# prerequisites = { "tech_sfdoll_thruster" }
+	component_set = "thruster_components"
+	size_restriction = { sfdoll_constructor }
+
+	ai_weight = {
+		weight = 5
+		modifier = {
+			factor = -4
+			NOT = {	has_authority = auth_gf_sfdoll	}
+		}
+	}
+}

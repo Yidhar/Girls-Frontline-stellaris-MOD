@@ -1,0 +1,438 @@
+portraits = {
+	sfdoll_01_sf_0 = { textureFile = "gfx/models/portraits/gf_sfdoll/01_sf_0.dds" }
+	sfdoll_01_sf_1 = { textureFile = "gfx/models/portraits/gf_sfdoll/01_sf_1.dds" }
+	sfdoll_01_sf_10 = { textureFile = "gfx/models/portraits/gf_sfdoll/01_sf_10.dds" }
+	sfdoll_01_sf_11 = { textureFile = "gfx/models/portraits/gf_sfdoll/01_sf_11.dds" }
+	sfdoll_01_sf_12 = { textureFile = "gfx/models/portraits/gf_sfdoll/01_sf_12.dds" }
+	sfdoll_01_sf_13 = { textureFile = "gfx/models/portraits/gf_sfdoll/01_sf_13.dds" }
+	sfdoll_01_sf_14 = { textureFile = "gfx/models/portraits/gf_sfdoll/01_sf_14.dds" }
+	sfdoll_01_sf_15 = { textureFile = "gfx/models/portraits/gf_sfdoll/01_sf_15.dds" }
+	sfdoll_01_sf_16 = { textureFile = "gfx/models/portraits/gf_sfdoll/01_sf_16.dds" }
+	sfdoll_01_sf_17 = { textureFile = "gfx/models/portraits/gf_sfdoll/01_sf_17.dds" }
+	sfdoll_01_sf_18 = { textureFile = "gfx/models/portraits/gf_sfdoll/01_sf_18.dds" }
+	sfdoll_01_sf_19 = { textureFile = "gfx/models/portraits/gf_sfdoll/01_sf_19.dds" }
+	sfdoll_01_sf_2 = { textureFile = "gfx/models/portraits/gf_sfdoll/01_sf_2.dds" }
+	sfdoll_01_sf_20 = { textureFile = "gfx/models/portraits/gf_sfdoll/01_sf_20.dds" }
+	sfdoll_01_sf_21 = { textureFile = "gfx/models/portraits/gf_sfdoll/01_sf_21.dds" }
+	sfdoll_01_sf_22 = { textureFile = "gfx/models/portraits/gf_sfdoll/01_sf_22.dds" }
+	sfdoll_01_sf_23 = { textureFile = "gfx/models/portraits/gf_sfdoll/01_sf_23.dds" }
+	sfdoll_01_sf_24 = { textureFile = "gfx/models/portraits/gf_sfdoll/01_sf_24.dds" }
+	sfdoll_01_sf_25 = { textureFile = "gfx/models/portraits/gf_sfdoll/01_sf_25.dds" }
+	sfdoll_01_sf_26 = { textureFile = "gfx/models/portraits/gf_sfdoll/01_sf_26.dds" }
+	sfdoll_01_sf_27 = { textureFile = "gfx/models/portraits/gf_sfdoll/01_sf_27.dds" }
+	sfdoll_01_sf_28 = { textureFile = "gfx/models/portraits/gf_sfdoll/01_sf_28.dds" }
+	sfdoll_01_sf_29 = { textureFile = "gfx/models/portraits/gf_sfdoll/01_sf_29.dds" }
+	sfdoll_01_sf_3 = { textureFile = "gfx/models/portraits/gf_sfdoll/01_sf_3.dds" }
+	sfdoll_01_sf_30 = { textureFile = "gfx/models/portraits/gf_sfdoll/01_sf_30.dds" }
+	sfdoll_01_sf_31 = { textureFile = "gfx/models/portraits/gf_sfdoll/01_sf_31.dds" }
+	sfdoll_01_sf_32 = { textureFile = "gfx/models/portraits/gf_sfdoll/01_sf_32.dds" }
+	sfdoll_01_sf_33 = { textureFile = "gfx/models/portraits/gf_sfdoll/01_sf_33.dds" }
+	sfdoll_01_sf_34 = { textureFile = "gfx/models/portraits/gf_sfdoll/01_sf_34.dds" }
+	sfdoll_01_sf_35 = { textureFile = "gfx/models/portraits/gf_sfdoll/01_sf_35.dds" }
+	sfdoll_01_sf_36 = { textureFile = "gfx/models/portraits/gf_sfdoll/01_sf_36.dds" }
+	sfdoll_01_sf_37 = { textureFile = "gfx/models/portraits/gf_sfdoll/01_sf_37.dds" }
+	sfdoll_01_sf_38 = { textureFile = "gfx/models/portraits/gf_sfdoll/01_sf_38.dds" }
+	sfdoll_01_sf_39 = { textureFile = "gfx/models/portraits/gf_sfdoll/01_sf_39.dds" }
+	sfdoll_01_sf_4 = { textureFile = "gfx/models/portraits/gf_sfdoll/01_sf_4.dds" }
+	sfdoll_01_sf_40 = { textureFile = "gfx/models/portraits/gf_sfdoll/01_sf_40.dds" }
+	sfdoll_01_sf_41 = { textureFile = "gfx/models/portraits/gf_sfdoll/01_sf_41.dds" }
+	sfdoll_01_sf_42 = { textureFile = "gfx/models/portraits/gf_sfdoll/01_sf_42.dds" }
+	sfdoll_01_sf_43 = { textureFile = "gfx/models/portraits/gf_sfdoll/01_sf_43.dds" }
+	sfdoll_01_sf_44 = { textureFile = "gfx/models/portraits/gf_sfdoll/01_sf_44.dds" }
+	sfdoll_01_sf_45 = { textureFile = "gfx/models/portraits/gf_sfdoll/01_sf_45.dds" }
+	sfdoll_01_sf_46 = { textureFile = "gfx/models/portraits/gf_sfdoll/01_sf_46.dds" }
+	sfdoll_01_sf_47 = { textureFile = "gfx/models/portraits/gf_sfdoll/01_sf_47.dds" }
+	sfdoll_01_sf_48 = { textureFile = "gfx/models/portraits/gf_sfdoll/01_sf_48.dds" }
+	sfdoll_01_sf_49 = { textureFile = "gfx/models/portraits/gf_sfdoll/01_sf_49.dds" }
+	sfdoll_01_sf_5 = { textureFile = "gfx/models/portraits/gf_sfdoll/01_sf_5.dds" }
+	sfdoll_01_sf_50 = { textureFile = "gfx/models/portraits/gf_sfdoll/01_sf_50.dds" }
+	sfdoll_01_sf_51 = { textureFile = "gfx/models/portraits/gf_sfdoll/01_sf_51.dds" }
+	sfdoll_01_sf_52 = { textureFile = "gfx/models/portraits/gf_sfdoll/01_sf_52.dds" }
+	sfdoll_01_sf_6 = { textureFile = "gfx/models/portraits/gf_sfdoll/01_sf_6.dds" }
+	sfdoll_01_sf_7 = { textureFile = "gfx/models/portraits/gf_sfdoll/01_sf_7.dds" }
+	sfdoll_01_sf_8 = { textureFile = "gfx/models/portraits/gf_sfdoll/01_sf_8.dds" }
+	sfdoll_01_sf_9 = { textureFile = "gfx/models/portraits/gf_sfdoll/01_sf_9.dds" }
+	sfdoll_01_sf_53 = { textureFile = "gfx/models/portraits/gf_sfdoll/01_sf_53.dds" }
+	sfdoll_01_sf_54 = { textureFile = "gfx/models/portraits/gf_sfdoll/01_sf_54.dds" }
+	sfdoll_01_sf_55 = { textureFile = "gfx/models/portraits/gf_sfdoll/01_sf_55.dds" }
+	sfdoll_01_sf_56 = { textureFile = "gfx/models/portraits/gf_sfdoll/01_sf_56.dds" }
+	sfdoll_01_sf_57 = { textureFile = "gfx/models/portraits/gf_sfdoll/01_sf_57.dds" }
+	sfdoll_01_sf_58 = { textureFile = "gfx/models/portraits/gf_sfdoll/01_sf_58.dds" }
+	sfdoll_01_sf_59 = { textureFile = "gfx/models/portraits/gf_sfdoll/01_sf_59.dds" }
+	sfdoll_01_sf_60 = { textureFile = "gfx/models/portraits/gf_sfdoll/01_sf_60.dds" }
+	sfdoll_01_sf_61 = { textureFile = "gfx/models/portraits/gf_sfdoll/01_sf_61.dds" }
+	sfdoll_01_sf_62 = { textureFile = "gfx/models/portraits/gf_sfdoll/01_sf_62.dds" }
+	sfdoll_01_sf_63 = { textureFile = "gfx/models/portraits/gf_sfdoll/01_sf_63.dds" }
+}
+
+portrait_groups = {
+	#战术人形肖像的集合设定
+	gf_sf_doll_group = {
+		#默认显示
+		default = sfdoll_01_sf_0
+		#开局选择的统治者头像
+		game_setup = { 
+			add = {
+				portraits = {			
+					sfdoll_01_sf_0
+					sfdoll_01_sf_1
+					sfdoll_01_sf_10
+					sfdoll_01_sf_11
+					sfdoll_01_sf_12
+					sfdoll_01_sf_13
+					sfdoll_01_sf_14
+					sfdoll_01_sf_15
+					sfdoll_01_sf_16
+					sfdoll_01_sf_17
+					sfdoll_01_sf_18
+					sfdoll_01_sf_19
+					sfdoll_01_sf_2
+					sfdoll_01_sf_20
+					sfdoll_01_sf_21
+					sfdoll_01_sf_22
+					sfdoll_01_sf_23
+					sfdoll_01_sf_24
+					sfdoll_01_sf_25
+					sfdoll_01_sf_26
+					sfdoll_01_sf_27
+					sfdoll_01_sf_28
+					sfdoll_01_sf_29
+					sfdoll_01_sf_3
+					sfdoll_01_sf_30
+					sfdoll_01_sf_31
+					sfdoll_01_sf_32
+					sfdoll_01_sf_33
+					sfdoll_01_sf_34
+					sfdoll_01_sf_35
+					sfdoll_01_sf_36
+					sfdoll_01_sf_37
+					sfdoll_01_sf_38
+					sfdoll_01_sf_39
+					sfdoll_01_sf_4
+					sfdoll_01_sf_40
+					sfdoll_01_sf_41
+					sfdoll_01_sf_42
+					sfdoll_01_sf_43
+					sfdoll_01_sf_44
+					sfdoll_01_sf_45
+					sfdoll_01_sf_46
+					sfdoll_01_sf_47
+					sfdoll_01_sf_48
+					sfdoll_01_sf_49
+					sfdoll_01_sf_5
+					sfdoll_01_sf_50
+					sfdoll_01_sf_51
+					sfdoll_01_sf_52
+					sfdoll_01_sf_53 
+					sfdoll_01_sf_54
+					sfdoll_01_sf_55
+					sfdoll_01_sf_56
+					sfdoll_01_sf_57
+					sfdoll_01_sf_58
+					sfdoll_01_sf_59
+					sfdoll_01_sf_6
+					sfdoll_01_sf_60
+					sfdoll_01_sf_61
+					sfdoll_01_sf_62
+					sfdoll_01_sf_63
+					sfdoll_01_sf_7
+					sfdoll_01_sf_8
+					sfdoll_01_sf_9
+				}
+			}
+		}
+			#set = {
+			#	trigger = { ... }
+			#	portraits = { ... }
+			#	#using "set =" instead of "add" will first clear any portraits already added
+			#}
+			
+		species = { 
+			add = {
+				portraits = {
+					sfdoll_01_sf_0
+					sfdoll_01_sf_1
+					sfdoll_01_sf_10
+					sfdoll_01_sf_11
+					sfdoll_01_sf_12
+					sfdoll_01_sf_13
+					sfdoll_01_sf_14
+					sfdoll_01_sf_15
+					sfdoll_01_sf_16
+					sfdoll_01_sf_17
+					sfdoll_01_sf_18
+					sfdoll_01_sf_19
+					sfdoll_01_sf_2
+					sfdoll_01_sf_20
+					sfdoll_01_sf_21
+					sfdoll_01_sf_22
+					sfdoll_01_sf_23
+					sfdoll_01_sf_24
+					sfdoll_01_sf_25
+					sfdoll_01_sf_26
+					sfdoll_01_sf_27
+					sfdoll_01_sf_28
+					sfdoll_01_sf_29
+					sfdoll_01_sf_3
+					sfdoll_01_sf_30
+					sfdoll_01_sf_31
+					sfdoll_01_sf_32
+					sfdoll_01_sf_33
+					sfdoll_01_sf_34
+					sfdoll_01_sf_35
+					sfdoll_01_sf_36
+					sfdoll_01_sf_37
+					sfdoll_01_sf_38
+					sfdoll_01_sf_39
+					sfdoll_01_sf_4
+					sfdoll_01_sf_40
+					sfdoll_01_sf_41
+					sfdoll_01_sf_42
+					sfdoll_01_sf_43
+					sfdoll_01_sf_44
+					sfdoll_01_sf_45
+					sfdoll_01_sf_46
+					sfdoll_01_sf_47
+					sfdoll_01_sf_48
+					sfdoll_01_sf_49
+					sfdoll_01_sf_5
+					sfdoll_01_sf_50
+					sfdoll_01_sf_51
+					sfdoll_01_sf_52
+					sfdoll_01_sf_53 
+					sfdoll_01_sf_54
+					sfdoll_01_sf_55
+					sfdoll_01_sf_56
+					sfdoll_01_sf_57
+					sfdoll_01_sf_58
+					sfdoll_01_sf_59
+					sfdoll_01_sf_6
+					sfdoll_01_sf_60
+					sfdoll_01_sf_61
+					sfdoll_01_sf_62
+					sfdoll_01_sf_63
+					sfdoll_01_sf_7
+					sfdoll_01_sf_8
+					sfdoll_01_sf_9
+				}
+			}
+		}
+
+		pop = {
+			add = {
+				portraits = {
+					sfdoll_01_sf_0
+					sfdoll_01_sf_1
+					sfdoll_01_sf_10
+					sfdoll_01_sf_11
+					sfdoll_01_sf_12
+					sfdoll_01_sf_13
+					sfdoll_01_sf_14
+					sfdoll_01_sf_15
+					sfdoll_01_sf_16
+					sfdoll_01_sf_17
+					sfdoll_01_sf_18
+					sfdoll_01_sf_19
+					sfdoll_01_sf_2
+					sfdoll_01_sf_20
+					sfdoll_01_sf_21
+					sfdoll_01_sf_22
+					sfdoll_01_sf_23
+					sfdoll_01_sf_24
+					sfdoll_01_sf_25
+					sfdoll_01_sf_26
+					sfdoll_01_sf_27
+					sfdoll_01_sf_28
+					sfdoll_01_sf_29
+					sfdoll_01_sf_3
+					sfdoll_01_sf_30
+					sfdoll_01_sf_31
+					sfdoll_01_sf_32
+					sfdoll_01_sf_33
+					sfdoll_01_sf_34
+					sfdoll_01_sf_35
+					sfdoll_01_sf_36
+					sfdoll_01_sf_37
+					sfdoll_01_sf_38
+					sfdoll_01_sf_39
+					sfdoll_01_sf_4
+					sfdoll_01_sf_40
+					sfdoll_01_sf_41
+					sfdoll_01_sf_42
+					sfdoll_01_sf_43
+					sfdoll_01_sf_44
+					sfdoll_01_sf_45
+					sfdoll_01_sf_46
+					sfdoll_01_sf_47
+					sfdoll_01_sf_48
+					sfdoll_01_sf_49
+					sfdoll_01_sf_5
+					sfdoll_01_sf_50
+					sfdoll_01_sf_51
+					sfdoll_01_sf_52
+					sfdoll_01_sf_53 
+					sfdoll_01_sf_54
+					sfdoll_01_sf_55
+					sfdoll_01_sf_56
+					sfdoll_01_sf_57
+					sfdoll_01_sf_58
+					sfdoll_01_sf_59
+					sfdoll_01_sf_6
+					sfdoll_01_sf_60
+					sfdoll_01_sf_61
+					sfdoll_01_sf_62
+					sfdoll_01_sf_63
+					sfdoll_01_sf_7
+					sfdoll_01_sf_8
+					sfdoll_01_sf_9
+				}
+			}
+
+		}
+
+		leader = {
+			add = {
+				portraits = {
+					sfdoll_01_sf_0
+					sfdoll_01_sf_1
+					sfdoll_01_sf_10
+					sfdoll_01_sf_11
+					sfdoll_01_sf_12
+					sfdoll_01_sf_13
+					sfdoll_01_sf_14
+					sfdoll_01_sf_15
+					sfdoll_01_sf_16
+					sfdoll_01_sf_17
+					sfdoll_01_sf_18
+					sfdoll_01_sf_19
+					sfdoll_01_sf_2
+					sfdoll_01_sf_20
+					sfdoll_01_sf_21
+					sfdoll_01_sf_22
+					sfdoll_01_sf_23
+					sfdoll_01_sf_24
+					sfdoll_01_sf_25
+					sfdoll_01_sf_26
+					sfdoll_01_sf_27
+					sfdoll_01_sf_28
+					sfdoll_01_sf_29
+					sfdoll_01_sf_3
+					sfdoll_01_sf_30
+					sfdoll_01_sf_31
+					sfdoll_01_sf_32
+					sfdoll_01_sf_33
+					sfdoll_01_sf_34
+					sfdoll_01_sf_35
+					sfdoll_01_sf_36
+					sfdoll_01_sf_37
+					sfdoll_01_sf_38
+					sfdoll_01_sf_39
+					sfdoll_01_sf_4
+					sfdoll_01_sf_40
+					sfdoll_01_sf_41
+					sfdoll_01_sf_42
+					sfdoll_01_sf_43
+					sfdoll_01_sf_44
+					sfdoll_01_sf_45
+					sfdoll_01_sf_46
+					sfdoll_01_sf_47
+					sfdoll_01_sf_48
+					sfdoll_01_sf_49
+					sfdoll_01_sf_5
+					sfdoll_01_sf_50
+					sfdoll_01_sf_51
+					sfdoll_01_sf_52
+					sfdoll_01_sf_53 
+					sfdoll_01_sf_54
+					sfdoll_01_sf_55
+					sfdoll_01_sf_56
+					sfdoll_01_sf_57
+					sfdoll_01_sf_58
+					sfdoll_01_sf_59
+					sfdoll_01_sf_6
+					sfdoll_01_sf_60
+					sfdoll_01_sf_61
+					sfdoll_01_sf_62
+					sfdoll_01_sf_63
+					sfdoll_01_sf_7
+					sfdoll_01_sf_8
+					sfdoll_01_sf_9
+				}
+
+			}
+		}
+
+		ruler = {
+			add = {
+				portraits = {
+					sfdoll_01_sf_0
+					sfdoll_01_sf_1
+					sfdoll_01_sf_10
+					sfdoll_01_sf_11
+					sfdoll_01_sf_12
+					sfdoll_01_sf_13
+					sfdoll_01_sf_14
+					sfdoll_01_sf_15
+					sfdoll_01_sf_16
+					sfdoll_01_sf_17
+					sfdoll_01_sf_18
+					sfdoll_01_sf_19
+					sfdoll_01_sf_2
+					sfdoll_01_sf_20
+					sfdoll_01_sf_21
+					sfdoll_01_sf_22
+					sfdoll_01_sf_23
+					sfdoll_01_sf_24
+					sfdoll_01_sf_25
+					sfdoll_01_sf_26
+					sfdoll_01_sf_27
+					sfdoll_01_sf_28
+					sfdoll_01_sf_29
+					sfdoll_01_sf_3
+					sfdoll_01_sf_30
+					sfdoll_01_sf_31
+					sfdoll_01_sf_32
+					sfdoll_01_sf_33
+					sfdoll_01_sf_34
+					sfdoll_01_sf_35
+					sfdoll_01_sf_36
+					sfdoll_01_sf_37
+					sfdoll_01_sf_38
+					sfdoll_01_sf_39
+					sfdoll_01_sf_4
+					sfdoll_01_sf_40
+					sfdoll_01_sf_41
+					sfdoll_01_sf_42
+					sfdoll_01_sf_43
+					sfdoll_01_sf_44
+					sfdoll_01_sf_45
+					sfdoll_01_sf_46
+					sfdoll_01_sf_47
+					sfdoll_01_sf_48
+					sfdoll_01_sf_49
+					sfdoll_01_sf_5
+					sfdoll_01_sf_50
+					sfdoll_01_sf_51
+					sfdoll_01_sf_52
+					sfdoll_01_sf_53 
+					sfdoll_01_sf_54
+					sfdoll_01_sf_55
+					sfdoll_01_sf_56
+					sfdoll_01_sf_57
+					sfdoll_01_sf_58
+					sfdoll_01_sf_59
+					sfdoll_01_sf_6
+					sfdoll_01_sf_60
+					sfdoll_01_sf_61
+					sfdoll_01_sf_62
+					sfdoll_01_sf_63
+					sfdoll_01_sf_7
+					sfdoll_01_sf_8
+					sfdoll_01_sf_9
+				}
+			}
+		}
+	}
+}
+
+

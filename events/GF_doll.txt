@@ -1,0 +1,77 @@
+namespace = GF_doll
+
+
+country_event = {
+	id = GF_doll.2000
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		random_owned_species = {
+			limit = { has_species_flag = flag_GF_doll_species_@root }
+			save_event_target_as = GF_doll_species
+		}
+		every_owned_pop = {
+			limit = { GF_is_non_doll_robot_pop = yes }
+			change_species = event_target:GF_doll_species
+		}
+	}
+}
+
+
+country_event = {
+	id = GF_doll.3000
+	hide_window = yes
+
+	is_triggered_only = yes
+	trigger = {
+		has_authority = GF_auth_commonwealth
+	}
+
+	immediate = {
+		switch = {
+			trigger = has_policy_flag
+			GF_doll_right_full = {
+				every_owned_species = {
+					limit = { has_trait = GF_trait_doll }
+					set_citizenship_type = {
+						type = citizenship_full
+						country = root
+						cooldown = yes
+					}
+				}
+			}
+			GF_doll_right_limited = {
+				every_owned_species = {
+					limit = { has_trait = GF_trait_doll }
+					set_citizenship_type = {
+						type = citizenship_limited
+						country = root
+						cooldown = yes
+					}
+				}
+			}
+			GF_doll_right_servitude = {
+				every_owned_species = {
+					limit = { has_trait = GF_trait_doll }
+					set_citizenship_type = {
+						type = citizenship_robot_servitude
+						country = root
+						cooldown = yes
+					}
+				}
+			}
+			GF_doll_right_low = {
+				every_owned_species = {
+					limit = { has_trait = GF_trait_doll }
+					set_citizenship_type = {
+						type = citizenship_robot_servitude
+						country = root
+						cooldown = yes
+					}
+				}
+			}
+		}
+	}
+}

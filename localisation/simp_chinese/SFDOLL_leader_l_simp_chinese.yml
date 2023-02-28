@@ -1,0 +1,18 @@
+﻿l_simp_chinese:
+###############################
+sfdoll_leader_event.2:0 "与衔尾蛇通讯"
+sfdoll_leader_event.2_desc_a:0 "学无止境。"
+sfdoll_leader_event.2_desc_b:0 "你休息一下。任务交给我就可以了。"
+sfdoll_leader_event.2_desc_c:0 "我们需要把知识和实践结合起来。"
+sfdoll_leader_event.2_desc_d:0 "我们的造物主说过：‘只有离开父母，孩子才能成长。’毫无疑问，铁血现在自由了。"
+
+sfdoll_ouroboros_to_governor:0 "请担任总督"
+sfdoll_ouroboros_to_governor_response:0 "嗯？你需要我？我这就来。"
+sfdoll_ouroboros_to_scientist:0 "请担任科学家"
+sfdoll_ouroboros_to_scientist_response:0 "嗯？你需要我？我这就来。"
+sfdoll_ouroboros_to_admiral:0 "请担任舰队司令"
+sfdoll_ouroboros_to_admiral_response:0 "求之不得。"
+sfdoll_ouroboros_to_general:0 "请率领陆军"
+sfdoll_ouroboros_to_general_response:0 "求之不得。"
+
+Name_sfdoll_Ouroboros:0 "衔尾蛇"

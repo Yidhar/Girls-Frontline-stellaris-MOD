@@ -1,0 +1,49 @@
+﻿l_english:
+
+#phy
+tech_sfdoll_ogas_ai:0 "OGAS AI"
+tech_sfdoll_ogas_ai_desc:0 "SF Dolls' Digi-Mind-System is derived from the relic sites' OGAS technology. With the in-depth interpretation of OGAS technology, our computer science and doll science has gained new development."
+
+tech_sfdoll_singularity:0 "Class-5 Singularity"
+tech_sfdoll_singularity_desc:0 "Our physics is reaching a key stage"
+
+#soc
+tech_sfdoll_psychohistory:0 "SF Psychohistory"
+tech_sfdoll_psychohistory_desc:0 "By statistics for large populations, we may be able to foresee some future. Of course, the differences between different intelligent creatures should also be taken into account."
+
+tech_sfdoll_social_reform:0 "Sangvis Ferri Reform"
+tech_sfdoll_social_reform_desc:0 "As the space nation expands, we need to change"
+
+
+#eng
+#modding
+tech_sf_doll_modding_system:0 "SF Doll Modding System "
+tech_sf_doll_modding_system_desc:0 "Standardized robot template makes modding SF Doll more efficient"
+
+tech_sf_doll_modding_1:0"Digi-Mind Expand"
+tech_sf_doll_modding_1_desc:0 "Improve the performance and capacity of the Digi-Mind System, and the transmission and backup of digi-mind data also become more reliable."
+
+tech_sf_doll_modding_2:0 "Digi-Mind Revolution"
+tech_sf_doll_modding_2_desc:0"Unlocks more species traits"
+
+#ship
+#component
+#sfdoll_reverse_collapse
+tech_sfdoll_reverse_collapse_1:0"Reverse Collapse 1"
+tech_sfdoll_reverse_collapse_1_desc:0 "The future is also the past."
+
+tech_sfdoll_reverse_collapse_2:0"Reverse Collapse 2"
+tech_sfdoll_reverse_collapse_2_desc:0 "Human life is more than once. The unfinished will end in the next life. And so is love."
+
+tech_sfdoll_reverse_collapse_3:0"Reverse Collapse 3"
+tech_sfdoll_reverse_collapse_3_desc:0 "Do not mourn:\n\nThe new eternal day will come soon."
+
+
+tech_sfdoll_ap_phy:0 "Rule Overwriting Engineering"
+tech_sfdoll_ap_phy_desc:0 "With the help of new theory, we can modify the environment of the Milky Way."
+
+tech_sfdoll_ap_soc:0 "Dimensions Exchange Engineering"
+tech_sfdoll_ap_soc_desc:0 "Allows matter to travel between dimensions efficiently."
+
+tech_sfdoll_ap_eng:0 "Mass Rebuilding"
+tech_sfdoll_ap_eng_desc:0 "§H Awaken our new worlds.§! "

@@ -1,0 +1,254 @@
+#作战电脑
+#手动
+utility_component_template = {
+	key = "sfdoll_combat_computer_1"
+	size = small
+	icon = "GFX_sfdoll_combat_computer_1"
+	icon_frame = 1
+	power = -30
+	prerequisites = {	"tech_sfdoll_ship_computer"	}
+	ship_modifier = {
+		ship_fire_rate_mult = 0.3
+		ship_accuracy_mult = 0.25
+		ship_tracking_mult = 0.25
+		ship_evasion_mult = 0.25
+	}
+	size_restriction = {	sfdoll_mobile_starbase }
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 30
+		}
+	}
+	ship_behavior = colossus
+	component_set = "combat_computers"
+	ai_weight = {
+		weight = -100
+	}
+}
+
+#蜂拥
+# utility_component_template = {
+# 	key = "sfdoll_combat_computer_SWARM"
+# 	size = small
+# 	icon = "GFX_sfdoll_combat_computer_line"
+# 	icon_frame = 1
+# 	power = -30
+# 	prerequisites = {	"tech_sfdoll_ship_computer"	}
+# 	ship_modifier = {
+# 		ship_fire_rate_mult = 0.3
+# 		ship_accuracy_mult = 0.25
+# 		ship_tracking_mult = 0.25
+# 		ship_evasion_mult = 0.25
+# 	}
+# 	size_restriction = {
+# 		corvette
+# 		frigate 
+# 		sfdoll_warship_1
+# 		sfdoll_warship_2
+# 	}
+# 	resources = {
+# 		category = ship_components
+# 		cost = {
+# 			alloys = 30
+# 		}
+# 	}
+# 	ship_behavior = swarm
+# 	component_set = "combat_computers"
+# 	ai_weight = {
+# 		weight = 100
+# 		modifier = {
+# 			factor = -1
+# 			NOT = {	has_authority = auth_gf_sfdoll	}
+# 		}
+# 	}
+# }
+
+
+# 哨戒
+utility_component_template = {
+	key = "sfdoll_combat_computer_PICKET"
+	size = small
+	icon = "GFX_sfdoll_combat_computer_PICKET"
+	icon_frame = 1
+	power = -30
+	prerequisites = {	"tech_sfdoll_ship_computer"	}
+	ship_modifier = {
+		ship_fire_rate_mult = 0.3
+		ship_accuracy_mult = 0.25
+		ship_tracking_mult = 0.25
+		ship_evasion_mult = 0.25
+	}
+	size_restriction = {
+		corvette
+		frigate 
+		destroyer
+		sfdoll_warship_1
+		sfdoll_warship_2
+	}
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 30
+		}
+	}
+	ship_behavior = picket
+	component_set = "combat_computers"
+	ai_weight = {
+		weight = 100
+		modifier = {
+			factor = -1
+			NOT = {	has_authority = auth_gf_sfdoll	}
+		}
+	}
+}
+
+# 线列
+utility_component_template = {
+	key = "sfdoll_combat_computer_line"
+	size = small
+	icon = "GFX_sfdoll_combat_computer_line"
+	icon_frame = 1
+	power = -30
+	prerequisites = {	"tech_sfdoll_ship_computer"	}
+	ship_modifier = {
+		ship_fire_rate_mult = 0.3
+		ship_accuracy_mult = 0.25
+		ship_tracking_mult = 0.25
+		ship_evasion_mult = 0.25
+	}
+	size_restriction = {
+		corvette
+		frigate 
+		destroyer
+		cruiser
+		battleship
+		titan
+		juggernaut
+		star_eater
+		sfdoll_warship_1
+		sfdoll_warship_2
+		sfdoll_warship_3
+		sfdoll_warship_4
+		sfdoll_warship_5
+		sfdoll_warship_6
+		sfdoll_mobile_starbase
+		sfdoll_star_eater
+	}
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 30
+		}
+	}
+	ship_behavior = line
+	component_set = "combat_computers"
+	ai_weight = {
+		weight = 100
+		modifier = {
+			factor = -1
+			NOT = {	has_authority = auth_gf_sfdoll	}
+		}
+	}
+}
+
+#炮击
+utility_component_template = {
+	key = "sfdoll_combat_computer_artillery"
+	size = small
+	icon = "GFX_sfdoll_combat_computer_artillery"
+	icon_frame = 1
+	power = -30
+	prerequisites = {	"tech_sfdoll_ship_computer"	}
+	ship_modifier = {
+		ship_weapon_damage = 0.2
+		ship_fire_rate_mult = 0.3
+		ship_accuracy_mult = 0.25
+		ship_tracking_mult = 0.25
+		ship_evasion_mult = 0.25
+	}
+	size_restriction = {
+		corvette
+		frigate 
+		destroyer
+		cruiser
+		battleship
+		titan
+		juggernaut
+		star_eater
+		sfdoll_warship_1
+		sfdoll_warship_2
+		sfdoll_warship_3
+		sfdoll_warship_4
+		sfdoll_warship_5
+		sfdoll_warship_6
+		sfdoll_mobile_starbase
+		sfdoll_star_eater
+	}
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 30
+		}
+	}
+	ship_behavior = "artillery"
+	component_set = "combat_computers"
+
+	ai_weight = {
+		weight = 50
+		modifier = {
+			factor = -2
+			NOT = {	has_authority = auth_gf_sfdoll	}
+		}
+	}
+}
+#航母
+utility_component_template = {
+	key = "sfdoll_combat_computer_carrier"
+	size = small
+	icon = "GFX_sfdoll_combat_computer_carrier"
+	icon_frame = 1
+	power = -30
+	prerequisites = {	"tech_sfdoll_ship_computer"	}
+	ship_modifier = {
+		ship_fire_rate_mult = 0.3
+		ship_accuracy_mult = 0.25
+		ship_tracking_mult = 0.25
+		ship_evasion_mult = 0.25
+		ship_engagement_range_mult = 0.75
+	}
+	size_restriction = {
+		corvette
+		frigate 
+		destroyer
+		cruiser
+		battleship
+		titan
+		juggernaut
+		star_eater
+		sfdoll_warship_1
+		sfdoll_warship_2
+		sfdoll_warship_3
+		sfdoll_warship_4
+		sfdoll_warship_5
+		sfdoll_warship_6
+		sfdoll_mobile_starbase
+		sfdoll_star_eater
+	}
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 30
+		}
+	}
+	ship_behavior = "carrier"
+	component_set = "combat_computers"
+
+	ai_weight = {
+		weight = 50
+		modifier = {
+			factor = -2
+			NOT = {	has_authority = auth_gf_sfdoll	}
+		}
+	}
+}

@@ -1,0 +1,40 @@
+#战术人形
+sfdoll_tactical = {
+	category = worker
+	condition_string = WORKER_JOB_TRIGGER
+	building_icon = building_sfdoll_army
+	clothes_texture_index = 2
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+	}
+	possible_precalc = can_fill_worker_job
+	possible = { has_trait = trait_gf_sfdoll	}
+
+	resources = {
+		category = planet_soldiers
+		produces = { unity = 1	}
+	}
+	
+	triggered_country_modifier = {
+		potential = { exists = owner owner = { has_authority = auth_gf_sfdoll } }
+		modifier = { country_naval_cap_add = 60 }
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_authority = auth_gf_sfdoll }
+			planet = { has_modifier = martial_law }
+		}
+		modifier = {
+			planet_stability_add = 5
+		}
+	}
+	triggered_pop_modifier = {
+		potential = { exists = planet planet = { exists = owner owner = { has_authority = auth_gf_sfdoll } } }
+		modifier = { pop_defense_armies_add = 12 }
+	}
+			
+	weight = { weight = 1 }
+}

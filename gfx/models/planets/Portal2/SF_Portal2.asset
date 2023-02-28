@@ -1,0 +1,18 @@
+entity = {
+	name = "SF_Portal2_entity"
+	pdxmesh = "Portal2_mesh"
+}
+
+entity = {
+	name = "SF_Portal2_frame_entity"
+	scale = 4
+	locator = { name = "root" 	position = { 0  -32  0 } rotation = { 0 90 0 }}
+	attach = {	root = SF_Portal2_entity	}
+}
+
+entity = {
+	name = "SF_Portal2_frame2_entity"
+	scale = 0.6
+	locator = { name = "root" 	position = { 0 -180  0 } }
+	attach = {	root = ringworld_seam_entity_01_full_entity	}
+}

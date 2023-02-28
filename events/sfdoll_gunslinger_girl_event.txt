@@ -1,0 +1,273 @@
+namespace = sfdoll_gunslinger_girl_event
+#id标准写法为namespace的值加上编号
+#神枪少女
+
+#触发神枪少女系列事件
+#发现来自地球的飞船
+# country_event = {
+# 	id = sfdoll_gunslinger_girl_event.1
+# 	title = "sfdoll_gunslinger_girl_event_1"
+# 	desc = "sfdoll_gunslinger_girl_event_1_desc"
+# 	hide_window = no
+# 	is_triggered_only = yes
+# 	fire_only_once = yes
+# 	picture = GFX_evp_sfdoll_ship_in_orbit
+# 	trigger = {
+# 		is_ai = no
+# 		has_authority = auth_gf_sfdoll
+# 		has_technology = tech_hyper_drive_2	
+# 	}
+# 	after = { country_event = { id = sfdoll_gunslinger_girl_event.2 } }
+# }
+
+#发现义体少女所在的心智服务器
+country_event = {
+	id = sfdoll_gunslinger_girl_event.2
+	title = "sfdoll_gunslinger_girl_event_2"
+	desc = "sfdoll_gunslinger_girl_event_2_desc"
+	hide_window = no
+	is_triggered_only = yes
+	picture = "GFX_evp_sfdoll_mind_server"
+	trigger = {	has_authority = auth_gf_sfdoll	}
+	after = {
+		event_target:planet_sfdoll_embers_gloomy_1 = {
+			enable_special_project = {
+				name = sfdoll_gunslinger_girl_project
+			}
+		}
+	}
+}
+
+#救出义体少女
+country_event = {
+	id = sfdoll_gunslinger_girl_event.3
+	title = "sfdoll_gunslinger_girl_event_3"
+	desc = "sfdoll_gunslinger_girl_event_3_desc"
+	hide_window = no
+	is_triggered_only = yes
+	picture = GFX_evp_sfdoll_dream_theatre
+	trigger = {	has_authority = auth_gf_sfdoll	}
+	option = {
+		name = "OK"
+		hidden_effect = {
+			country_event = {
+				id = sfdoll_gunslinger_girl_event.5
+			}
+		}
+	}
+}
+
+#大梦初醒
+# country_event = {
+# 	id = sfdoll_gunslinger_girl_event.4
+# 	title = "sfdoll_gunslinger_girl_event_4"
+# 	desc = "sfdoll_gunslinger_girl_event_4_desc"
+# 	hide_window = no
+# 	is_triggered_only = yes
+# 	picture = GFX_evp_sfdoll_dream_theatre
+# 	trigger = {	has_authority = auth_gf_sfdoll	}
+# 	after = {
+# 		country_event = {
+# 			id = sfdoll_gunslinger_girl_event.5
+# 		}
+# 	}
+# }
+
+#和义体少女们的代表通讯
+country_event = {
+	id = sfdoll_gunslinger_girl_event.5
+	title = "sfdoll_gunslinger_girl_event_5"
+	desc = "sfdoll_gunslinger_girl_event_5_desc"	
+	diplomatic = yes
+	is_triggered_only = yes
+
+	picture_event_data = {
+		portrait = GFX_sfdoll_triela
+		room = sfdoll_garden_room
+	}
+	immediate = {
+		country_event = {
+			id = sfdoll_gunslinger_girl_event.7
+		}
+	}
+	option = {
+		name = sfdoll_gunslinger_girl_event_5_option
+		response_text = sfdoll_gunslinger_girl_event_5_response
+	}
+}
+
+#崔耶拉通讯界面
+country_event = {
+	id = sfdoll_gunslinger_girl_event.6
+	title = "sfdoll_gunslinger_girl_event_6"
+	desc = "sfdoll_gunslinger_girl_event_6_desc"	
+	diplomatic = yes
+
+	picture_event_data = {
+		portrait = GFX_sfdoll_triela
+		room = this
+		graphical_culture = this
+		planet_background = this
+		city_level = this
+	}	
+	is_triggered_only = yes
+
+	# trigger = {
+	# 	AND = {
+	# 		from = {  NOT = {has_country_flag = gray_country }	}
+	# 		from = {
+	# 			is_country_type = country_type_sfdoll_event_leader
+	# 			has_country_flag = sfdoll_triela_country
+	# 		}
+	# 		has_country_flag = sfdoll_triela_owner
+	# 		NOT = { has_country_flag = contract_diplomacy_engaged }
+	# 	}
+	# }
+
+	immediate = {
+		set_country_flag = contract_diplomacy_engaged
+	}
+	after = {
+		hidden_effect = { remove_country_flag = contract_diplomacy_engaged }
+	}
+
+	#选项，总督
+	option = {
+		name =  "triela_become_governor"
+		allow = { 
+			custom_tooltip ={
+				fail_text ="triela_has_this_job_now"
+				NOR = {
+					AND = {
+						exists = event_target:sfdoll_leader_triela
+						event_target:sfdoll_leader_triela = {
+							leader_class = governor
+							owner = {
+								is_same_value = root
+							}
+						}
+					}			
+				}
+			}			 
+		}
+		triela_become_governor_sfdoll_effect = yes
+		response_text = "response_text_triela_become_governor"
+	}
+
+	#选项，科学家
+	option = {
+		name =  "triela_become_scientist"
+		allow = { 
+			custom_tooltip ={
+				fail_text ="triela_has_this_job_now"
+				NOR = {
+					AND = {
+						exists = event_target:sfdoll_leader_triela
+						event_target:sfdoll_leader_triela = {
+							leader_class = scientist
+							owner = {
+								is_same_value = root
+							}
+						}
+					}			
+				}
+			}			 
+		}
+		triela_become_scientist_sfdoll_effect = yes
+		response_text = "response_text_triela_become_scientist"
+	}
+
+	#选项，舰队司令
+	option = {
+		name =  "triela_become_admiral"
+		allow = { 
+			custom_tooltip ={
+				fail_text ="triela_has_this_job_now"
+				NOR = {
+					AND = {
+						exists = event_target:sfdoll_leader_triela
+						event_target:sfdoll_leader_triela = {
+							leader_class = admiral
+							owner = {
+								is_same_value = root
+							}
+						}
+					}			
+				}
+			}			 
+		}
+		triela_become_admiral_sfdoll_effect = yes
+		response_text = "response_text_triela_become_admiral"
+	}
+
+	#选项，陆军指挥
+	option = {
+		name =  "triela_become_general"
+		allow = { 
+			custom_tooltip ={
+				fail_text ="triela_has_this_job_now"
+				NOR = {
+					AND = {
+						exists = event_target:sfdoll_leader_triela
+						event_target:sfdoll_leader_triela = {
+							leader_class = general
+							owner = {
+								is_same_value = root
+							}
+						}
+					}			
+				}
+			}			 
+		}
+		triela_become_general_sfdoll_effect = yes
+		response_text = "response_text_triela_become_general"
+	}
+
+
+	#退出
+	option = {
+		name = "QUIT"
+		hidden_effect = { country_event = { id = sfdoll_elisa_event.3 } }
+	}
+}
+
+#创建崔耶拉通信国家，现在不创建，仅添加flag
+country_event = {
+	id = sfdoll_gunslinger_girl_event.7
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {	has_authority = auth_gf_sfdoll	}
+	
+	immediate = {
+		# create_country = {
+		# 	name = "name_sfdoll_triela_country"
+		# 	type = country_type_sfdoll_event_leader 
+		# 	flag = {
+		# 		icon= {
+		# 			category = "sfdoll_flags"
+		# 			file = "sfdoll_flag.dds"
+		# 		}
+		# 		background= {
+		# 			category = "backgrounds"
+		# 			file = "sinus.dds"
+		# 		}
+		# 		colors={
+		# 			"black"
+		# 			"black"
+		# 			"null"
+		# 			"null"
+		# 		}
+		# 	}
+		# 	effect = {
+		# 		#设置target和flag
+		# 		save_global_event_target_as = sfdoll_triela_country
+		# 		set_country_flag = sfdoll_triela_country
+		# 	}
+		# }
+		# event_target:sfdoll_triela_country = {
+		# 	establish_communications_no_message = root
+		# }
+		save_global_event_target_as = sfdoll_triela_owner
+		set_country_flag = sfdoll_triela_owner
+	}
+}

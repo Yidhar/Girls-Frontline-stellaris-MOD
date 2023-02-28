@@ -1,0 +1,108 @@
+
+@GF_doll_upgrade_POINTS = 3
+@GF_doll_upgrade_COST_MULT = -0.25
+####GFperks
+#######doll upgrade
+ap_GF_mind_upgrade = {
+	modifier = {
+		description = ap_GF_mind_upgrade_modifier_desc
+		description_parameters = {
+			POINTS = @GF_doll_upgrade_POINTS
+			COST_MULT = @GF_doll_upgrade_COST_MULT
+		}
+		modify_species_cost_mult = @GF_doll_upgrade_COST_MULT
+		GF_ANDROID_species_trait_points_add = @GF_doll_upgrade_POINTS
+	}
+	possible = {
+		has_technology = GF_tech_mind_upgrade_2
+		custom_tooltip = {
+			fail_text = "requires_ascension_perks_1"
+			num_ascension_perks > 0
+		}
+	}
+	
+	potential = {
+		has_authority = GF_auth_commonwealth
+		NOT = { has_ascension_perk = ap_GF_mind_upgrade }
+	}
+	
+	ai_weight = {
+		factor = 0
+	}
+}
+ap_GF_body_upgrade = {
+	on_enabled = {
+		hidden_effect = {
+			set_country_flag = GF_body_upgrade
+		}
+	}
+	modifier = {
+		description = ap_GF_body_upgrade_modifier_desc
+		description_parameters = {
+			POINTS = 2
+			COST_MULT = @GF_doll_upgrade_COST_MULT
+		}
+		modify_species_cost_mult = @GF_doll_upgrade_COST_MULT
+		GF_ANDROID_species_trait_picks_add = 2
+	}
+	possible = {
+		has_technology = GF_tech_doll_modding_point_3
+		has_ascension_perk = ap_GF_mind_upgrade
+		custom_tooltip = {
+			fail_text = "requires_ascension_perks_3"
+			num_ascension_perks > 2
+		}
+	}
+	
+	potential = {
+		has_authority = GF_auth_commonwealth
+		NOT = { has_ascension_perk = ap_GF_body_upgrade }
+	}
+	
+	ai_weight = {
+		factor = 0
+	}
+}
+#######collapse坍缩科技
+
+####### gavirul计划
+ap_GF_gavirul_project = {
+	on_enabled = {
+		custom_tooltip = enable_GF_gavirul_project
+		custom_tooltip = describe_GF_gavirul_project
+		hidden_effect = {
+			set_country_flag = flag_GF_gavirul_project_started
+			country_event = {
+				id = GF_gavirul.0
+			}
+		}
+	}
+	# modifier = {
+	# 	description = ap_GF_gavirul_project_desc
+	# 	BIOLOGICAL_species_trait_points_add = 2
+	# }
+	possible = {
+		has_technology = tech_gene_tailoring
+		has_technology = GF_tech_collapse_relic_tech
+		
+		custom_tooltip = {
+			fail_text = "has_flag_GF_collapse_relic_surveyed"
+			has_country_flag = flag_GF_collapse_relic_surveyed
+		}
+		custom_tooltip = {
+			fail_text = "requires_ascension_perks_3"
+			num_ascension_perks > 2
+		}
+	}
+	
+	potential = {
+		has_authority = GF_auth_commonwealth
+		NOT = {
+			has_ascension_perk = ap_GF_gavirul_project
+		}
+	}
+	
+	ai_weight = {
+		factor = 0
+	}
+}

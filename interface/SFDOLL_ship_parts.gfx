@@ -1,0 +1,318 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_sfdoll_weapon_X_1"
+		texturefile = "gfx/interface/icons/ship_parts/sfdoll_weapon_X_1.dds"
+	}
+}
+
+spriteTypes = {
+	spriteType = {
+		name = "GFX_sfdoll_jump_drive"
+		texturefile = "gfx/interface/icons/ship_parts/sfdoll_jump_drive.dds"
+	}
+}
+
+spriteTypes = {
+	spriteType = {
+		name = "GFX_sfdoll_combat_computer_1"
+		texturefile = "gfx/interface/icons/ship_parts/computers/ship_part_computer_default.dds"
+	}
+}
+
+spriteTypes = {
+	spriteType = {
+		name = "GFX_sfdoll_combat_computer_PICKET"
+		texturefile = "gfx/interface/icons/ship_parts/sfdoll_combat_computer_PICKET.dds"
+	}
+
+	spriteType = {
+		name = "GFX_sfdoll_combat_computer_line"
+		texturefile = "gfx/interface/icons/ship_parts/sfdoll_combat_computer_line.dds"
+	}
+}
+
+spriteTypes = {
+	spriteType = {
+		name = "GFX_sfdoll_combat_computer_artillery"
+		texturefile = "gfx/interface/icons/ship_parts/sfdoll_combat_computer_artillery.dds"
+	}
+}
+
+spriteTypes = {
+	spriteType = {
+		name = "GFX_sfdoll_combat_computer_carrier"
+		texturefile = "gfx/interface/icons/ship_parts/sfdoll_combat_computer_carrier.dds"
+	}
+}
+
+spriteTypes = {
+	spriteType = {
+		name = "GFX_sfdoll_thruster"
+		texturefile = "gfx/interface/icons/ship_parts/sfdoll_thruster.dds"
+	}
+}
+
+spriteTypes = {
+	spriteType = {
+		name = "GFX_sfdoll_aux_repair_ship"
+		texturefile = "gfx/interface/icons/ship_parts/sfdoll_aux_repair_ship.dds"
+	}
+	spriteType = {
+		name = "GFX_sfdoll_aux_fire_range"
+		texturefile = "gfx/interface/icons/ship_parts/sfdoll_aux_fire_range.dds"
+	}
+}
+
+spriteTypes = {
+	spriteType = {
+		name = "GFX_sfdoll_weapon_S_1"
+		texturefile = "gfx/interface/icons/ship_parts/sfdoll_weapon_S_1.dds"
+	}
+}
+
+spriteTypes = {
+	spriteType = {
+		name = "GFX_sfdoll_weapon_P_1"
+		texturefile = "gfx/interface/icons/ship_parts/sfdoll_weapon_P_1.dds"
+	}
+}
+
+spriteTypes = {
+	spriteType = {
+		name = "GFX_sfdoll_weapon_T_1"
+		texturefile = "gfx/interface/icons/ship_parts/sfdoll_weapon_T_1.dds"
+	}
+}
+
+spriteTypes = {
+	spriteType = {
+		name = "GFX_sfdoll_weapon_G_1"
+		texturefile = "gfx/interface/icons/ship_parts/sfdoll_weapon_G_1.dds"
+	}
+}
+
+spriteTypes = {
+	spriteType = {
+		name = "GFX_sfdoll_weapon_H_1"
+		texturefile = "gfx/interface/icons/ship_parts/sfdoll_weapon_H_1.dds"
+	}
+}
+
+spriteTypes = {
+	spriteType = {
+		name = "GFX_sfdoll_ship_defense_s"
+		texturefile = "gfx/interface/icons/ship_parts/sfdoll_ship_defense_s.dds"
+	}
+}
+
+spriteTypes = {
+	spriteType = {
+		name = "GFX_sfdoll_ship_armor_L"
+		texturefile = "gfx/interface/icons/ship_parts/sfdoll_ship_armor_L.dds"
+	}
+}
+spriteTypes = {
+	spriteType = {
+		name = "GFX_sfdoll_ship_armor_2"
+		texturefile = "gfx/interface/icons/ship_parts/sfdoll_ship_armor_2.dds"
+	}
+}
+
+spriteTypes = {
+	spriteType = {
+		name = "GFX_sfdoll_ship_sensors"
+		texturefile = "gfx/interface/icons/ship_parts/sfdoll_ship_sensors.dds"
+	}
+}
+
+spriteTypes = {
+	spriteType = {
+		name = "GFX_ship_part_sfdoll_collapse_REACTOR"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_sfdoll_collapse_reactor.dds"
+	}
+}
+spriteTypes = {
+	spriteType = {
+		name = "GFX_ship_part_sfdoll_ship_power_2"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_sfdoll_ship_power_2.dds"
+	}
+}
+
+
+
+spriteTypes = {
+	spriteType = {
+		name = "GFX_sfdoll_aux_quality_rebuilding"
+		texturefile = "gfx/interface/icons/ship_parts/sfdoll_aux_quality_rebuilding.dds"
+	}
+}
+
+spriteTypes = {
+	spriteType = {
+		name = "GFX_component_aura_sfdoll_1"
+		texturefile = "gfx/interface/icons/ship_parts/component_aura_sfdoll_1.dds"
+	}
+}
+
+
+spriteTypes = {
+	spriteType = {
+		name = "GFX_planet_killer_sfdoll_1"
+		texturefile = "gfx/interface/icons/ship_parts/planet_killer_sfdoll_1.dds"
+	}
+}
+
+spriteTypes = {
+	spriteType = {
+		name = "GFX_aux_sfdoll_collapse_power"
+		texturefile = "gfx/interface/icons/ship_parts/aux_sfdoll_collapse_power.dds"
+	}
+}
+
+spriteTypes = {
+	spriteType = {
+		name = "GFX_planet_killer_sfdoll_2"
+		texturefile = "gfx/interface/icons/ship_parts/planet_killer_sfdoll_2.dds"
+	}
+}
+
+spriteTypes = {
+	spriteType = {
+		name = "GFX_planet_killer_sfdoll_3"
+		texturefile = "gfx/interface/icons/ship_parts/planet_killer_sfdoll_3.dds"
+	}
+}
+
+spriteTypes = {
+	spriteType = {
+		name = "GFX_planet_killer_sfdoll_4"
+		texturefile = "gfx/interface/icons/ship_parts/planet_killer_sfdoll_4.dds"
+	}
+}
+
+spriteTypes = {
+	spriteType = {
+		name = "GFX_component_aura_sfdoll_2"
+		texturefile = "gfx/interface/icons/ship_parts/component_aura_sfdoll_2.dds"
+	}
+}
+
+spriteTypes = {
+	spriteType = {
+		name = "GFX_sfdoll_weapon_T_SP"
+		texturefile = "gfx/interface/icons/ship_parts/sfdoll_weapon_T_SP.dds"
+	}
+}
+
+spriteTypes = {
+	spriteType = {
+		name = "GFX_sfdoll_weapon_T_2"
+		texturefile = "gfx/interface/icons/ship_parts/sfdoll_weapon_T_2.dds"
+	}
+}
+
+spriteTypes = {
+	spriteType = {
+		name = "GFX_sfdoll_weapon_X_2"
+		texturefile = "gfx/interface/icons/ship_parts/sfdoll_weapon_X_2.dds"
+	}
+}
+
+spriteTypes = {
+	spriteType = {
+		name = "GFX_sfdoll_weapon_L_2"
+		texturefile = "gfx/interface/icons/ship_parts/sfdoll_weapon_L_2.dds"
+	}
+}
+
+spriteTypes = {
+	spriteType = {
+		name = "GFX_sfdoll_weapon_M_2"
+		texturefile = "gfx/interface/icons/ship_parts/sfdoll_weapon_M_2.dds"
+	}
+}
+
+spriteTypes = {
+	spriteType = {
+		name = "GFX_sfdoll_weapon_S_2"
+		texturefile = "gfx/interface/icons/ship_parts/sfdoll_weapon_S_2.dds"
+	}
+}
+
+spriteTypes = {
+	spriteType = {
+		name = "GFX_sfdoll_weapon_P_2"
+		texturefile = "gfx/interface/icons/ship_parts/sfdoll_weapon_P_2.dds"
+	}
+}
+
+spriteTypes = {
+	spriteType = {
+		name = "GFX_sfdoll_weapon_G_2"
+		texturefile = "gfx/interface/icons/ship_parts/sfdoll_weapon_G_2.dds"
+	}
+}
+
+
+spriteTypes = {
+	spriteType = {
+		name = "GFX_sfdoll_weapon_H_2"
+		texturefile = "gfx/interface/icons/ship_parts/sfdoll_weapon_H_2.dds"
+	}
+}
+
+spriteTypes = {
+	spriteType = {
+		name = "GFX_sfdoll_weapon_H_2_PD"
+		texturefile = "gfx/interface/icons/ship_parts/sfdoll_weapon_H_2_PD.dds"
+	}
+}
+
+spriteTypes = {
+	spriteType = {
+		name = "GFX_sfdoll_aux_rebuild_2"
+		texturefile = "gfx/interface/icons/ship_parts/sfdoll_aux_rebuild_2.dds"
+	}
+}
+spriteTypes = {
+	spriteType = {
+		name = "GFX_sfdoll_aux_rebuild"
+		texturefile = "gfx/interface/icons/ship_parts/sfdoll_aux_rebuild.dds"
+	}
+}
+
+spriteTypes = {
+	spriteType = {
+		name = "GFX_sfdoll_noel_REACTOR"
+		texturefile = "gfx/interface/icons/ship_parts/sfdoll_noel_REACTOR.dds"
+	}
+}
+
+spriteTypes = {
+	spriteType = {
+		name = "GFX_sfdoll_noel_jump_drive"
+		texturefile = "gfx/interface/icons/ship_parts/sfdoll_noel_jump_drive.dds"
+	}
+}
+
+spriteTypes = {
+	spriteType = {
+		name = "GFX_sfdoll_ship_sensors_noel"
+		texturefile = "gfx/interface/icons/ship_parts/sfdoll_ship_sensors_noel.dds"
+	}
+}
+
+spriteTypes = {
+	spriteType = {
+		name = "GFX_thruster_sfdoll_noel"
+		texturefile = "gfx/interface/icons/ship_parts/thruster_sfdoll_noel.dds"
+	}
+}
+
+# starbase
+spriteTypes = {
+	spriteType = {
+		name = "GFX_starbase_building_sfdoll_assembly"
+		texturefile = "gfx/interface/icons/ship_parts/starbase_building_sfdoll_assembly.dds"
+	}
+}

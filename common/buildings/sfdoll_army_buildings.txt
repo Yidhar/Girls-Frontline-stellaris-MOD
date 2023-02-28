@@ -1,0 +1,97 @@
+#铁血军事基地
+# building_sfdoll_army = {
+# 	base_buildtime = @b1_time
+# 	can_be_disabled = yes
+# 	icon = building_sfdoll_army
+# 	category = army
+# 	potential = {
+# 		exists = owner
+# 		owner = {
+# 			has_country_flag = sfdoll_empire
+# 		}
+# 	}
+# 	destroy_trigger = {
+# 		exists = owner
+# 		owner = {
+# 			NOT = {	has_country_flag = sfdoll_empire }
+# 		}
+# 	}
+
+# 	triggered_desc = {
+# 		text = job_sfdoll_tactical_effect_desc
+# 	}
+# 	triggered_planet_modifier = {
+# 		potential = {
+# 			exists = owner
+# 			owner = { has_authority = auth_gf_sfdoll }
+# 		}
+# 		modifier = {
+# 			job_sfdoll_tactical_add = 2
+# 		}
+# 	}
+# 	resources = {
+# 		category = planet_buildings
+# 		cost = {
+# 			minerals = @b2_minerals
+# 		}
+# 		upkeep = {
+# 			energy = @b2_upkeep
+# 		}
+# 	}
+# 	upgrades = {
+# 		building_sfdoll_army_2
+# 	}
+# 	#文本可以设置条件，满足条件时显示
+# 	# triggered_desc = {
+# 	# 	text = building_sfdoll_assembly_plant_triggered_desc
+# 	# }	
+# }
+
+#升级军事基地
+building_sfdoll_army_2 = {
+	base_buildtime = @b2_time
+	can_be_disabled = yes
+	icon = building_sfdoll_army_2
+	category = army
+	planetary_ftl_inhibitor = yes
+	prerequisites = { tech_sfdoll_heavy_army }
+	potential = {
+		exists = owner
+		owner = {
+			has_country_flag = sfdoll_empire
+		}
+	}
+	destroy_trigger = {
+		exists = owner
+		owner = {
+			NOT = {	has_country_flag = sfdoll_empire }
+		}
+	}
+	#不可用时转换为
+	# convert_to = {
+	# 	building_drone_storage
+	# 	building_hive_warren
+	# 	building_communal_housing
+	# }
+	triggered_desc = {
+		text = job_sfdoll_tactical_effect_desc
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_authority = auth_gf_sfdoll }
+		}
+		modifier = {
+			job_sfdoll_tactical_add = 6
+		}
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @b3_minerals
+		}
+		upkeep = {
+			energy = @b3_upkeep
+		}
+	}
+}

@@ -1,0 +1,265 @@
+namespace = sfdoll_leader_event
+
+#锁定特殊领袖的头像
+country_event = {
+	id = sfdoll_leader_event.1
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = { has_authority = auth_gf_sfdoll }
+	immediate = {
+		if = {
+			limit = {  exists =  event_target:sfdoll_leader_elisa }
+			event_target:sfdoll_leader_elisa = { change_leader_portrait = GFX_sfdoll_elisa	}
+		}
+		if = {
+			limit = { exists = event_target:sfdoll_leader_ump45 }
+			event_target:sfdoll_leader_ump45 = {
+				change_leader_portrait = GFX_sfdoll_ump45_03
+			}
+		}
+		if = {
+			limit = { exists = event_target:sfdoll_leader_ouroboros }
+			event_target:sfdoll_leader_ouroboros = {
+				if = {
+					limit = { OR = { leader_class = admiral  leader_class = general } }
+					change_leader_portrait = GFX_sfdoll_Ouroboros_2
+				}
+				else = { change_leader_portrait = GFX_sfdoll_Ouroboros }
+			}
+		}
+		if = {
+			limit = { exists = event_target:ogas40_sfdoll_leader }
+			event_target:ogas40_sfdoll_leader = {
+				if = {
+					limit = {
+						OR = {
+							leader_class = admiral
+							leader_class = general
+						}
+					}
+					change_leader_portrait = GFX_sfdoll_ump40_3
+				}
+				else = { change_leader_portrait = GFX_sfdoll_ump40_2 }
+			}
+		}
+		if = {
+			limit = { exists = event_target:sfdoll_leader_triela }
+			event_target:sfdoll_leader_triela = { change_leader_portrait = GFX_sfdoll_triela }
+		}
+		if = {
+			limit = { exists = event_target:sfdoll_leader_noel }
+			event_target:sfdoll_leader_noel = { change_leader_portrait = GFX_sfdoll_noel }
+		}
+		if = {
+			limit = { exists = event_target:sfdoll_leader_hari_seldon }
+			event_target:sfdoll_leader_hari_seldon = { change_leader_portrait = GFX_sfdoll_hari_seldon }
+		}
+		if = {
+			limit = { exists = event_target:sfdoll_leader_dingyi }
+			event_target:sfdoll_leader_dingyi = { change_leader_portrait = GFX_sfdoll_dingyi }
+		}
+		if = {
+			limit = { exists = event_target:sfdoll_exd_leader }
+			event_target:sfdoll_exd_leader = { change_leader_portrait = exd2 }
+		}
+		if = {
+			limit = { exists = event_target:sfdoll_shizuki_ryouko }
+			event_target:sfdoll_shizuki_ryouko = { change_leader_portrait = GFX_sfdoll_Shizuki_Ryouko }
+		}
+	}
+}
+
+
+#衔尾蛇
+country_event = {
+	id = sfdoll_leader_event.2
+	title = "sfdoll_leader_event.2"
+	desc = "sfdoll_leader_event.2_desc_a"
+	desc = "sfdoll_leader_event.2_desc_b"
+	desc = "sfdoll_leader_event.2_desc_c"
+	desc = "sfdoll_leader_event.2_desc_d"
+	is_triggered_only = yes
+	trigger = { has_authority = auth_gf_sfdoll }
+	diplomatic = yes
+	picture_event_data = {
+		portrait = GFX_sfdoll_Ouroboros
+		room = this
+		graphical_culture = this
+		planet_background = this
+		city_level = this
+	}
+	immediate = { set_country_flag = contract_diplomacy_engaged }
+
+	# 衔尾蛇担任总督
+	option = {
+		name = "sfdoll_ouroboros_to_governor"
+		response_text = "sfdoll_ouroboros_to_governor_response"
+		allow = {
+			custom_tooltip = {
+				fail_text = "sfdoll_the_leader_is_doing_this_job"
+				NOT = {
+					AND = {
+						exists = event_target:sfdoll_leader_ouroboros
+						event_target:sfdoll_leader_ouroboros = {
+							leader_class = governor
+							owner = { is_same_value = root }
+						}
+					}
+				}
+			}
+		}
+		hidden_effect = {
+			# 删除旧的领袖，但不会移除修正
+			if = {
+				limit = { exists = event_target:sfdoll_leader_ouroboros }
+				event_target:sfdoll_leader_ouroboros = { kill_leader = { show_notification = no fire = yes } }
+			}
+			create_leader = {
+				class = governor
+				species = owner_species
+				name = "Name_sfdoll_Ouroboros"
+				skill = 1
+				set_age = 20
+				immortal = yes
+				event_leader = yes	# prevents this leader from leading factions and winning elections
+				traits = { trait = leader_trait_army_veteran }
+				effect = {
+					change_leader_portrait = GFX_sfdoll_Ouroboros
+					set_leader_flag = sfdoll_leader_ouroboros
+					save_global_event_target_as = sfdoll_leader_ouroboros
+				}
+			}
+		}
+	}
+
+	# 衔尾蛇担任科学家
+	option = {
+		name = "sfdoll_ouroboros_to_scientist"
+		response_text = "sfdoll_ouroboros_to_scientist_response"
+		allow = {
+			custom_tooltip = {
+				fail_text = "sfdoll_the_leader_is_doing_this_job"
+				NOT = {
+					AND = {
+						exists = event_target:sfdoll_leader_ouroboros
+						event_target:sfdoll_leader_ouroboros = {
+							leader_class = scientist
+							owner = { is_same_value = root }
+						}
+					}
+				}
+			}
+		}
+		hidden_effect = {
+			# 删除旧的领袖，但不会移除修正
+			if = {
+				limit = { exists = event_target:sfdoll_leader_ouroboros }
+				event_target:sfdoll_leader_ouroboros = {
+					kill_leader = { show_notification = no fire = yes }
+				}
+			}
+			create_leader = {
+				class = scientist
+				species = owner_species
+				name = "Name_sfdoll_Ouroboros"
+				skill = 1
+				set_age = 20
+				immortal = yes
+				event_leader = yes	# prevents this leader from leading factions and winning elections
+				traits = { trait = leader_trait_expertise_military_theory trait = leader_trait_meticulous }
+				effect = {
+					change_leader_portrait = GFX_sfdoll_Ouroboros
+					set_leader_flag = sfdoll_leader_ouroboros
+					save_global_event_target_as = sfdoll_leader_ouroboros
+				}
+			}
+		}
+	}
+
+	#衔尾蛇担任舰队司令
+	option = {
+		name = "sfdoll_ouroboros_to_admiral"
+		response_text = "sfdoll_ouroboros_to_admiral_response"
+		allow = {
+			custom_tooltip = {
+				fail_text = "sfdoll_the_leader_is_doing_this_job"
+				NOT = {
+					AND = {
+						exists = event_target:sfdoll_leader_ouroboros
+						event_target:sfdoll_leader_ouroboros = {
+							leader_class = admiral
+							owner = { is_same_value = root }
+						}
+					}
+				}
+			}
+		}
+		hidden_effect = {
+			# 删除旧的领袖，但不会移除修正
+			if = {
+				limit = { exists = event_target:sfdoll_leader_ouroboros }
+				event_target:sfdoll_leader_ouroboros = { kill_leader = { show_notification = no fire = yes } }
+			}
+			create_leader = {
+				class = admiral
+				species = owner_species
+				name = "Name_sfdoll_Ouroboros"
+				skill = 1
+				set_age = 20
+				immortal = yes
+				event_leader = yes	# prevents this leader from leading factions and winning elections
+				traits = { trait = leader_trait_aggressive }
+				effect = {
+					change_leader_portrait = GFX_sfdoll_Ouroboros_2
+					set_leader_flag = sfdoll_leader_ouroboros
+					save_global_event_target_as = sfdoll_leader_ouroboros
+				}
+			}
+		}
+	}
+
+	#衔尾蛇担任陆军将领
+	option = {
+		name = "sfdoll_ouroboros_to_general"
+		response_text = "sfdoll_ouroboros_to_general_response"
+		allow = {
+			custom_tooltip = {
+				fail_text = "sfdoll_the_leader_is_doing_this_job"
+				NOT = {
+					AND = {
+						exists = event_target:sfdoll_leader_ouroboros
+						event_target:sfdoll_leader_ouroboros = {
+							leader_class = general
+							owner = { is_same_value = root }
+						}
+					}
+				}
+			}
+		}
+		hidden_effect = {
+			# 删除旧的领袖，但不会移除修正
+			if = {
+				limit = { exists = event_target:sfdoll_leader_ouroboros }
+				event_target:sfdoll_leader_ouroboros = { kill_leader = { show_notification = no fire = yes } }
+			}
+			create_leader = {
+				class = general
+				species = owner_species
+				name = "Name_sfdoll_Ouroboros"
+				skill = 1
+				set_age = 20
+				immortal = yes
+				event_leader = yes	# prevents this leader from leading factions and winning elections
+				traits = { trait = leader_trait_demoralizer }
+				effect = {
+					change_leader_portrait = GFX_sfdoll_Ouroboros_2
+					set_leader_flag = sfdoll_leader_ouroboros
+					save_global_event_target_as = sfdoll_leader_ouroboros
+				}
+			}
+		}
+	}
+
+	option = { name =  "EXIT" hidden_effect = { country_event = { id = sfdoll_elisa_event.3 } } }
+	after = { hidden_effect = { remove_country_flag = contract_diplomacy_engaged } }
+}

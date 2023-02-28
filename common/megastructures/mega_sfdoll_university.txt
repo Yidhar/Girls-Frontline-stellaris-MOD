@@ -1,0 +1,124 @@
+# 银河大学
+mega_sfdoll_university_1 = {
+	entity = "construction_platform_entity" #"stions_entity"
+	construction_entity = "construction_platform_entity"
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = no
+	build_outside_gravity_well = yes
+	entity_offset = { x = -7 y = -7 }
+	build_time = 720
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 10000
+			influence = 100
+			unity = 2000
+		}
+
+		upkeep = { energy = 5 }
+	}
+	show_prereqs = yes
+	prerequisites = { "tech_mega_sfdoll_university" }
+	potential = {
+		is_ai = no
+		NOT = { has_megastructure = mega_sfdoll_university_2 }
+		has_authority = auth_gf_sfdoll
+	}
+	possible = {
+		exists = starbase
+		custom_tooltip = {
+			fail_text = "requires_inside_border"
+			is_inside_border = from
+		}
+		custom_tooltip = {
+			fail_text = "requires_surveyed_system"
+			NOT = {
+				any_system_planet = {
+					is_surveyed = {
+						who = prev.from
+						status = no
+					}
+				}
+			}
+		}
+	}
+
+	# placement_rules = {
+	# 	planet_possible = {
+	# 		custom_tooltip = {
+	# 			fail_text = "requires_no_anomaly"
+	# 			NOT = { has_anomaly = yes }
+	# 		}
+	# 	}
+	# 	custom_tooltip = {
+	# 		fail_text = "requires_no_existing_megastructure"
+	# 		NOR = {
+	# 			has_planet_flag = megastructure
+	# 			has_planet_flag = has_megastructure
+	# 			solar_system = { has_star_flag = ring_world_built }
+	# 		}
+	# 	}
+	# }
+
+	on_build_complete = {
+		fromfrom.planet = { set_planet_flag = has_megastructure }
+		create_message = {
+			type =  MEGASTRUCTURE_BUILT
+			localization = "mega_sfdoll_university_1"
+			days = 30
+			target = THIS
+		}
+	}
+}
+
+mega_sfdoll_university_2 = {
+	entity = "stions_entity"
+	construction_entity = "stions_entity"
+	portrait = "GFX_background_mega_sfdoll_starport"
+	place_entity_on_planet_plane = no
+	entity_offset = { x = -7 y = -7 }
+	show_in_outliner = no
+	build_time = 3600
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 20000
+			unity = 2500
+			GF_nyto_collapse_liquid = 1500
+		}
+		produces = {
+			society_research = 5000
+			engineering_research = 5000
+			physics_research = 5000
+			unity = 3000
+			influence = 3
+		}
+		upkeep = { energy = 200 alloys = 20 GF_nyto_collapse_liquid = 10 }
+	}
+	upgrade_from = { mega_sfdoll_university_1 }
+	prerequisites = { "tech_mega_sfdoll_university" }
+	country_modifier = { all_technology_research_speed = 0.2 }
+	on_build_complete = {
+		from = {
+			if = {
+				limit = {
+					any_megastructure = {
+						is_megastructure_type = mega_sfdoll_university_2
+						NOT = { is_same_value = root.fromfrom }
+					}
+				}
+				remove_megastructure = root.fromfrom
+			}
+			else = {
+				set_country_flag = has_built_or_repaired_megastructure
+				country_event = { id = sfdoll_event.5 }
+				create_message = {
+					type =  MEGASTRUCTURE_BUILT
+					localization = "mega_sfdoll_university_2"
+					days = 30
+					target = root
+				}
+			}
+		}
+	}
+}

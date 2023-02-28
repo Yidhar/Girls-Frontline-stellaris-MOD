@@ -34,3 +34,18 @@ sc_GF_endler ={
 		ship_weapon_range_mult = -0.2
 	}
 }
+
+sc_sfdoll_mega_system = {
+	# 引用恒星素材
+	class			= f_star
+	planet			= { key = pc_sfdoll_black_hole }
+	# spawn_odds		= 15
+	# num_planets	= { min = 4 max = 10 }
+}
+
+sc_sfdoll_ring_world = {
+	class			= g_star
+	planet			= { key = pc_sfdoll_black_hole }
+	# spawn_odds		= 15
+	# num_planets	= { min = 4 max = 10 }
+}

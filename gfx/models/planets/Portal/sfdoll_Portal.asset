@@ -1,0 +1,11 @@
+entity = {
+	name = "sfdoll_Portal_entity"
+	pdxmesh = "Portal_mesh"
+}
+
+entity = {
+	name = "sfdoll_Portal_frame_entity"
+	scale = 1.5
+	locator = { name = "root" 	position = { 0  0  0 } rotation = { 0 0 90 }}
+	attach = {	root = sfdoll_Portal_entity	}
+}

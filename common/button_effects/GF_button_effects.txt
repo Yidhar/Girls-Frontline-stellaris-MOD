@@ -1,0 +1,27 @@
+GF_quick_ogas_contact = {
+	potential = {
+		exists = from
+		from = {
+			is_scope_type = country
+			GF_can_contact_OGAS = yes
+		}
+	}
+	allow = {
+		hidden_trigger = {
+			exists = from
+			from = { is_ai = no }
+		}
+	}
+	
+	effect = {
+		custom_tooltip = "GF_quick_ogas_contact_tooltip"
+		hidden_effect = {
+			from = { country_event = { id = GF_ogas.10000 } }
+		}
+	}
+}
+
+GF_effect_button_always_on = {
+	potential = { always = yes }
+	allow = { always = yes }
+}

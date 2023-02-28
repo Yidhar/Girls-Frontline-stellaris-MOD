@@ -1,0 +1,36 @@
+# 铁血mod覆盖 内容：
+# common\game_rules\sfdoll_rules.txt  can_species_procreate
+# common\buildings\building_sfdoll_override.txt  building_robot_assembly_plant
+
+#人形组装规则
+can_species_procreate = {
+	is_sapient = yes
+	NOR = {
+		has_trait = trait_machine_unit
+		has_trait = trait_mechanical
+		has_trait = GF_trait_doll	# GF
+		
+		AND = {	# GF SF
+			has_trait = trait_gf_sfdoll
+			NOT = {	has_trait = trait_sfdoll_nanite	}
+		}
+	}
+	NAND = {
+		root = { has_modifier = slave_colony }
+		NOT = { has_citizenship_type = { type = citizenship_slavery country = root.owner } }
+	}
+	if = {
+		limit = {
+			has_trait = trait_necrophage
+		}
+		NOT = {
+			root = {
+				any_owned_species = {
+					has_population_control = { country = root.owner type = no }
+					species_can_be_necrophaged = yes
+				}
+			}
+		}
+	}
+	NOT = { has_species_flag = nivlac_no_procreation }
+}

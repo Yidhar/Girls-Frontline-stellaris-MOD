@@ -1,0 +1,10 @@
+﻿l_english:
+
+sfdoll_break_option:0 "quit"
+
+#领袖修复
+sfdoll_leader_revive_event_1_title:0"repair Sangvis Ferri leader"
+sfdoll_leader_revive_event_1_desc:0 "A Sangvis Ferri leader was badly damaged. We had to transfer its Neural Cloud to the new body."
+
+sfdoll_leader_revive_event_3_title:0 "Noel Recovery"
+sfdoll_leader_revive_event_3_desc:0 "Noel was severely damaged, she had to reorganize herself."

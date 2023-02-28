@@ -1,0 +1,58 @@
+
+namespace = GF_gavirul
+
+# GAVIRUL计划
+country_event = {
+
+	id = GF_gavirul.0
+	title = GF_gavirul.0.name
+	desc = GF_gavirul.0.desc
+
+	picture = GFX_evt_GF_gavirul
+
+	is_triggered_only = yes
+
+	trigger = {
+		has_authority = GF_auth_commonwealth
+		has_country_flag = flag_GF_collapse_relic_surveyed
+		has_country_flag = flag_GF_gavirul_project_started
+	}
+
+	option = {
+		name = GF_gavirul.0.a
+		enable_special_project = {
+			name = "SP_GF_GAVIRUL_PROJECT"
+			owner = root
+		}
+	}
+}
+
+country_event = {
+	id = GF_gavirul.1
+	title = GF_gavirul.1.name
+	desc = GF_gavirul.1.desc
+
+	is_triggered_only = yes
+
+	picture = GFX_evt_GF_gavirul
+
+	option = {
+		name = GF_gavirul.1.a
+		add_modifier = { modifier = GF_gavirul_project_finished }
+		every_owned_species = {
+			limit = { has_trait = GF_trait_sequela }
+			custom_tooltip = GF_gavirul.1.a.tooltip
+			hidden_effect = {
+				change_species_characteristics = {
+					remove_trait = GF_trait_sequela
+					add_trait = GF_trait_sequela_immune
+					add_traits_at_start_of_list = yes
+				}
+			}
+		}
+		hidden_effect = {
+			remove_country_flag = flag_GF_gavirul_project_started
+			set_country_flag = flag_GF_gavirul_project_completed
+		}
+	}
+}

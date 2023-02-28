@@ -1,0 +1,209 @@
+ship_section_template = {
+	key = "sfdoll_CRUISER_BOW_X1"
+	ship_size = cruiser
+	fits_on_slot = bow
+	should_draw_components = yes
+	entity = "cruiser_bow_L1_entity"
+	icon = "GFX_ship_part_core_bow"
+	prerequisites = { "tech_sfdoll_battleship_bow_x2"	}
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "invisible_extra_large_fixed"
+		locatorname = "large_gun_01"
+	}
+
+	medium_utility_slots = 4
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 160
+		}
+	}
+}
+
+# #战列舰T槽
+ship_section_template = {
+	key = "sfdoll_battleship_bow_T1"
+	ship_size = battleship
+	fits_on_slot = bow
+	should_draw_components = yes
+	entity = "battleship_bow_XL1_entity"
+	# icon = "GFX_ship_part_core_bow"
+	prerequisites = { "tech_sfdoll_battleship_bow_x2"	}
+
+	component_slot = {
+		name = "t_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}
+
+
+	large_utility_slots = 3
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 160
+		}
+	}
+}
+
+
+ship_section_template = {
+	key = "sfdoll_change_hyperlane_section"
+	ship_size = sfdoll_change_hyperlane_ship
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "construction_ship_entity"
+	icon = "GFX_ship_part_core_bow"
+}
+
+#高维科研船
+ship_section_template = {
+	key = "sfdoll_exd_science_section"
+	ship_size = sfdoll_exd_science_ship
+	fits_on_slot = mid
+	entity = "extra_dimensional_01_warship_large_entity"
+	icon = "GFX_ship_part_core_mid"
+
+	component_slot = {
+		name = "X_01"
+		template = invisible_extra_large_fixed
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "X_02"
+		template = invisible_extra_large_fixed
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "L_01"
+		template = invisible_large_turret
+		locatorname = "large_gun_02"
+	}
+	component_slot = {
+		name = "L_02"
+		template = invisible_large_turret
+		locatorname = "large_gun_02"
+	}
+	component_slot = {
+		name = "L_03"
+		template = invisible_large_turret
+		locatorname = "large_gun_02"
+	}
+	component_slot = {
+		name = "L_04"
+		template = invisible_large_turret
+		locatorname = "large_gun_02"
+	}
+	component_slot = {
+		name = "L_05"
+		template = invisible_large_turret
+		locatorname = "large_gun_02"
+	}
+	component_slot = {
+		name = "L_06"
+		template = invisible_large_turret
+		locatorname = "large_gun_02"
+	}
+	component_slot = {
+		name = "L_07"
+		template = invisible_large_turret
+		locatorname = "large_gun_02"
+	}
+	component_slot = {
+		name = "L_08"
+		template = invisible_large_turret
+		locatorname = "large_gun_02"
+	}
+
+	component_slot = {
+		name = "M_01"
+		template = invisible_medium_turret
+		locatorname = "large_gun_03"
+	}
+	component_slot = {
+		name = "M_02"
+		template = invisible_medium_turret
+		locatorname = "large_gun_03"
+	}
+	component_slot = {
+		name = "M_03"
+		template = invisible_medium_turret
+		locatorname = "large_gun_03"
+	}
+	component_slot = {
+		name = "M_04"
+		template = invisible_medium_turret
+		locatorname = "large_gun_03"
+	}
+	component_slot = {
+		name = "M_05"
+		template = invisible_medium_turret
+		locatorname = "large_gun_03"
+	}
+	component_slot = {
+		name = "M_06"
+		template = invisible_medium_turret
+		locatorname = "large_gun_03"
+	}
+	component_slot = {
+		name = "M_07"
+		template = invisible_medium_turret
+		locatorname = "large_gun_03"
+	}
+	component_slot = {
+		name = "M_08"
+		template = invisible_medium_turret
+		locatorname = "large_gun_03"
+	}
+
+	component_slot = {
+		name = "P_01"
+		template = invisible_point_defence_turret
+		locatorname = "large_gun_03"
+	}
+	component_slot = {
+		name = "P_02"
+		template = invisible_point_defence_turret
+		locatorname = "large_gun_03"
+	}
+	component_slot = {
+		name = "P_03"
+		template = invisible_point_defence_turret
+		locatorname = "large_gun_03"
+	}
+	component_slot = {
+		name = "P_04"
+		template = invisible_point_defence_turret
+		locatorname = "large_gun_03"
+	}
+
+	large_utility_slots = 4
+	aux_utility_slots = 3
+}
+
+#铁血工程船
+ship_section_template = {
+	key = "sfdoll_constructor_SECTION"
+	ship_size = sfdoll_constructor
+	fits_on_slot = bow
+	entity = "SF_SANGVIS_FERRI_flag_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	component_slot = {
+		name = "W_01"
+		template = invisible_planet_killer_fixed
+		locatorname = "W01"
+	}
+	small_utility_slots = 3
+}
+
+#星门舰
+ship_section_template = {
+	key = "sfdoll_gateway_ship_SECTION"
+	ship_size = sfdoll_gateway_ship
+	fits_on_slot = bow
+	entity = "deactivated_gateway_entity"
+	icon = "GFX_ship_part_core_mid"
+}

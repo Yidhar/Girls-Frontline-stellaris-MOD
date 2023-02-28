@@ -1,0 +1,195 @@
+﻿l_english:
+#职业本地化包括，职业名称，职业复数形式，职业描述，职业效果（用于显示在提供职业的建筑中），相关修正(mod_XX)的本地化
+planet_sfdoll_sp_industry:0 "SF Special Industry"
+
+#produce
+tech_sfdoll_dark_matter_plant:0 "Grand Unified Theory"
+tech_sfdoll_dark_matter_plant_desc:0 "What is the truth behind gravity? SF Dolls already had an answer to this question."
+building_sfdoll_dark_matter_plant:0"SF Dark Matter Factory"
+building_sfdoll_dark_matter_plant_desc:0"$building_sfdoll_dark_matter_plant$"
+
+job_sfdoll_dark_matter_maker:0"Dark Matter Maker"
+job_sfdoll_dark_matter_maker_plural:0"Dark Matter Makers"
+job_sfdoll_dark_matter_maker_desc:0"$job_sfdoll_dark_matter_maker$"
+job_sfdoll_dark_matter_maker_effect_desc:0 "$job_sfdoll_dark_matter_maker$ consumes §Y$energy$§! producees §Y$sr_dark_matter$§!"
+mod_job_sfdoll_dark_matter_maker_add:0"$job_sfdoll_dark_matter_maker$ jobs"
+
+#collapse
+tech_sfdoll_collapse_liquid_produce:0"Collapse Particle Manufacture"
+tech_sfdoll_collapse_liquid_produce_desc:0 "Collapse particles are a class of micromachines that are used in the processing of matter."
+
+building_sfdoll_collapse_liquid_plant:0"SF Collapse Fluid Factory"
+building_sfdoll_collapse_liquid_plant_desc:0 "Synthesize Collapse Fluid at high energy, and program it."
+
+job_sfdoll_collapse_liquid_maker:0"Collapse Fluid Mechanician"
+job_sfdoll_collapse_liquid_maker_plural:0"Collapse Fluid Mechanicians"
+job_sfdoll_collapse_liquid_maker_desc:0"$job_sfdoll_collapse_liquid_maker$"
+mod_job_sfdoll_collapse_liquid_maker_add:0 "$job_sfdoll_collapse_liquid_maker$ jobs"
+
+
+tech_sfdoll_lab:0 "$building_sfdoll_research$"
+tech_sfdoll_lab_desc:0 "The application of reverse collapse technology has greatly improved the performance of SF Doll's computer."
+
+building_sfdoll_research:0 "SF Research Lab"
+building_sfdoll_research_desc:0 "$building_sfdoll_research$"
+building_sfdoll_research_2:0 "SF Advanced Research Complexes"
+building_sfdoll_research_2_desc:0 "$building_sfdoll_research_2$"
+
+job_sfdoll_researcher:0"SF Researcher"
+job_sfdoll_researcher_plural:0"SF Researchers"
+job_sfdoll_researcher_desc:0"$job_sfdoll_researcher$"
+job_sfdoll_researcher_effect_desc:0 "$job_sfdoll_researcher$ consumes §Y$consumer_goods$§! ,produces §Y$physics_research$§! ， §Y$society_research$§! ， §Y$engineering_research$§!"
+mod_job_sfdoll_researcher_add:0"$job_sfdoll_researcher$ jobs"
+
+# job_sfdoll_researcher_2:0"SF Senior Researcher"
+# job_sfdoll_researcher_2_plural:0"SF Senior Researchers"
+# job_sfdoll_researcher_2_desc:0"$job_sfdoll_researcher_2$"
+# job_sfdoll_researcher_2_effect_desc:0 "$job_sfdoll_researcher_2$ consumes §Y$consumer_goods$§! ,produces §Y$physics_research$§! ， §Y$society_research$§! ， §Y$engineering_research$§!"
+# mod_job_sfdoll_researcher_2_add:0"$job_sfdoll_researcher_2$ jobs"
+
+tech_sfdoll_alloys_produce:0 "Matter Collapse Engineering"
+tech_sfdoll_alloys_produce_desc:0 "We can print materials efficiently using reverse collapse technology."
+
+building_sfdoll_alloys:0"SF Alloys Factory"
+building_sfdoll_alloys_desc:0 "$building_sfdoll_alloys$"
+building_sfdoll_alloys_2:0 "SF Advanced Alloys Factory"
+building_sfdoll_alloys_2_desc:0 "$building_sfdoll_alloys_2$"
+
+job_sfdoll_alloys_maker:0 "SF Alloys Maker"
+job_sfdoll_alloys_maker_plural:0 "$job_sfdoll_alloys_maker$s"
+job_sfdoll_alloys_maker_desc:0 "$job_sfdoll_alloys_maker$"
+job_sfdoll_alloys_maker_effect_desc:0 "$job_sfdoll_alloys_maker$ consumes §Y$minerals$§!, produces §Y$alloys$§!"
+mod_job_sfdoll_alloys_maker_add:0"$job_sfdoll_alloys_maker$ jobs"
+
+
+tech_sfdoll_goods:0 "Collapse Technology Industry"
+tech_sfdoll_goods_desc:0 "Thanks to collapse technology, our production efficiency and craftsmanship have improved rapidly."
+
+building_sfdoll_goods_plant:0 "SF Consumer Goods Factory"
+building_sfdoll_goods_plant_desc:0 "$tech_sfdoll_goods_desc$"
+
+job_sfdoll_goods_maker:0"SF Artisan"
+job_sfdoll_goods_maker_plural:0"$job_sfdoll_goods_maker$s"
+job_sfdoll_goods_maker_desc:0 "$job_sfdoll_goods_maker$"
+job_sfdoll_goods_maker_effect_desc:0 "$job_sfdoll_goods_maker$ consumes §Y$minerals$§!, produces §Y$consumer_goods$§!,§Y$engineering_research$§!"
+mod_job_sfdoll_goods_maker_add:0 "$job_sfdoll_goods_maker$ jobs"
+
+# job_sfdoll_goods_producer_2:0"SF Senior Artisan"
+# job_sfdoll_goods_producer_2_plural:0"SF Senior Artisan"
+# job_sfdoll_goods_producer_2_desc:0 "$job_sfdoll_goods_producer_2$"
+# # job_sfdoll_goods_producer_2_effect_desc:0 "生产消费品"
+# mod_job_sfdoll_goods_producer_2_add:0 "$job_sfdoll_goods_producer_2$ jobs"
+
+
+tech_sfdoll_energy_plant:0"Singularity Energy"
+tech_sfdoll_energy_plant_desc:0"Singularity Energy breaks multiple laws of physics"
+building_sfdoll_energy_plant:0"SF Singularity Energy Plant"
+building_sfdoll_energy_plant_desc:0"$building_sfdoll_energy_plant$"
+
+job_sfdoll_energy_maker:0 "Singularity Technician"
+job_sfdoll_energy_maker_plural:0 "Singularity Technicians"
+job_sfdoll_energy_maker_desc:0 "$job_sfdoll_energy_maker$"
+job_sfdoll_energy_maker_effect_desc:0 "$job_sfdoll_energy_maker$ consumes §Y$sr_dark_matter$§!, produces §Y$energy$§! "
+mod_job_sfdoll_energy_maker_add:0"$job_sfdoll_energy_maker$ jobs"
+
+
+tech_building_sfdoll_mineral:0 "Quality Generate Project"
+tech_building_sfdoll_mineral_desc:0 "As long as there is enough energy, we can generate all matter we need."
+building_sfdoll_mineral:0 "SF Matter Generate Factory"
+building_sfdoll_mineral_desc:0"$building_sfdoll_mineral$"
+
+job_sfdoll_mineral_maker:0"SF Matter Maker"
+job_sfdoll_mineral_maker_plural:0 "SF Matter Makers"
+job_sfdoll_mineral_maker_desc:0 "$job_sfdoll_mineral_maker$"
+job_sfdoll_mineral_maker_effect_desc:0 "$job_sfdoll_mineral_maker$ consumes §Y$energy$§!,produces §Y$minerals$§! "
+mod_job_sfdoll_mineral_maker_add:0"$job_sfdoll_mineral_maker$ jobs"
+
+tech_sfdoll_chemical:0 "SF Efficient Chemical Synthesis"
+tech_sfdoll_chemical_desc:0 "Nanotechnology makes chemical synthesis easy."
+
+building_sfdoll_gases_plant:0 "SF Chemical Plant"
+building_sfdoll_gases_plant_desc:0 "$building_sfdoll_gases_plant$"
+job_sfdoll_gases_maker:0"SF Chemical Technician"
+job_sfdoll_gases_maker_plural:0"$job_sfdoll_gases_maker$"
+job_sfdoll_gases_maker_desc:0"$job_sfdoll_gases_maker$"
+job_sfdoll_gases_maker_effect_desc:0 "$job_sfdoll_gases_maker$ consumes §Y$minerals$§!，produces §Y$exotic_gases$§!，§Y$rare_crystals$§!，§Y$volatile_motes$§!"
+mod_job_sfdoll_gases_maker_add:0 "$job_sfdoll_gases_maker$ job"
+
+
+#civic
+building_sfdoll_academy:0 "Sangvis Ferri Collage"
+building_sfdoll_academy_desc:0 "Althogh SF Dolls can download much knowledge to their brains, practice and training is necessary."
+
+job_sfdoll_educator:0"Educator"
+job_sfdoll_educator_plural:0"Educators"
+job_sfdoll_educator_desc:0 "$job_sfdoll_educator$"
+job_sfdoll_educator_effect_desc:0 "$job_sfdoll_educator$ consumes £consumer_goods£ §Y$consumer_goods$§!,produces £unity£ §Y$unity$§!, £society_research£ §Y$society_research$§!,reduces crime on the planet "
+mod_job_sfdoll_educator_add:0 "$job_sfdoll_educator$ jobs"
+
+building_sfdoll_media:0 "SF Cultural Square"
+building_sfdoll_media_desc:0 "You can find lots of cultural products here."
+job_sfdoll_artist:0 "Artist"
+job_sfdoll_artist_plural:0 "Artists"
+job_sfdoll_artist_desc:0 "$job_sfdoll_artist$"
+job_sfdoll_artist_effect_desc:0 "$job_sfdoll_artist$ consumes £consumer_goods£ §Y$consumer_goods$§!, produces £unity£ §Y$unity$§!, £society_research£ §Y$society_research$§!, improves amenities"
+mod_job_sfdoll_artist_add:0 "$job_sfdoll_artist$ jobs"
+
+building_sfdoll_net:0"OGAS Network"
+building_sfdoll_net_desc:0 "High-speed OGAS networks cover the planet and provide various information services."
+
+building_sfdoll_museum:0"Sangvis Ferri National Museum"
+building_sfdoll_museum_desc:0 "This museum brings together the heritage and materials of various civilizations to provide strong support for research. There are models of Lycoris, Lunasia, and the commander at the door."
+
+#army
+building_sfdoll_army_2:0 "Sangvis Ferri Military Base"
+building_sfdoll_army_2_desc:0 "$building_sfdoll_army_2$"
+
+job_sfdoll_tactical:0"Tactical Doll"
+job_sfdoll_tactical_plural:0"Tactical Dolls"
+job_sfdoll_tactical_desc:0"Tatical Doll equiped with  "
+job_sfdoll_tactical_effect_desc:0"$job_sfdoll_tactical$ produces naval capacity and $unity$，increases defense forces, improves the stability during martial law."
+mod_job_sfdoll_tactical_add:0 "$job_sfdoll_tactical$ jobs"
+
+
+tech_gf_sfdoll_assemble_building:0 "SF Doll Assembling"
+tech_gf_sfdoll_assemble_building_desc:0 "$building_sfdoll_assembly_plant_desc$"
+
+building_sfdoll_assembly_plant:0 "Sangvis Ferri Doll Assembly Plant"
+building_sfdoll_assembly_plant_desc:0 "The AI science based on the OGAS algorithm, bionics, and mechanics , all of which form the basis for assembling Sangvis Ferri Doll."
+
+building_sfdoll_assembly_2:0 "SF Doll Advanced Assembly Plant"
+building_sfdoll_assembly_2_desc:0 "$building_sfdoll_assembly_plant_desc$"
+
+edict_sfdoll_collapse_liquid_more:0 "SF Doll: Mass Production of Collapse Particles"
+edict_sfdoll_collapse_liquid_more_desc:0 "£GF_nyto_collapse_liquid£ §Y$GF_nyto_collapse_liquid$§! output from $job_sfdoll_collapse_liquid_maker$ §G+3§!, £energy£ §Y$energy$§! upkeep §R+20§!"
+tech_sfdoll_collapse_liquid_upgrade:0 "Collapse Fluid Particle Synthesis Upgrade"
+tech_sfdoll_collapse_liquid_upgrade_desc:0 "Manufacturing of Collapse Fluid Particle could become more efficient."
+# tech_sfdoll_collapse_liquid_upgrade_mod:0 "£GF_nyto_collapse_liquid£ §Y$GF_nyto_collapse_liquid$§! output from $job_sfdoll_collapse_liquid_maker$ §G+2§!, £energy£ §Y$energy$§! upkeep §R+8§!"
+
+edict_sfdoll_research_more:0 "SF Doll: Increase Investment in Scientific Research"
+edict_sfdoll_research_more_desc:0 "£physics£ £society£ £engineering£ §YResearch Points§! output of $job_sfdoll_researcher$ §G+20§!, £energy£ §Y$energy$§! upkeep §R+5§!, £consumer_goods£ §Y$consumer_goods$§! upkeep §R+6§!"
+tech_sfdoll_lab_upgrade:0 "SF Scientific Research Equipment Upgrade"
+tech_sfdoll_lab_upgrade_desc:0 "Upgraded research equipment can handle tasks more quickly."
+# tech_sfdoll_lab_upgrade_mod:0 "£physics£ £society£ £engineering£ §YResearch Points§! output of $job_sfdoll_researcher$ §G+12§!, £consumer_goods£ §Y$consumer_goods$§! upkeep §R+2§!"
+
+edict_sfdoll_alloys_more:0 "SF Doll: Mass Production of Alloys"
+edict_sfdoll_alloys_more_desc:0 "£alloys£ §Y$alloys$§! output from $job_sfdoll_alloys_maker$ §G+12§!, £minerals£ §Y$minerals$§! upkeep §R+12§!"
+tech_sfdoll_alloys_upgrade:0 "SF Alloy Process Upgrade"
+tech_sfdoll_alloys_upgrade_desc:0 "The efficiency of material synthesis using collapse technology can be further improved."
+# tech_sfdoll_alloys_upgrade_mod:0 "£alloys£ §Y$alloys$§! output from $job_sfdoll_alloys_maker$ §G+9§!, £minerals£ §Y$minerals$§! upkeep §R+6§!"
+
+# building_sfdoll_crystal_plant:0 "铁血水晶合成厂"
+# building_sfdoll_crystal_plant_desc:0 "$building_sfdoll_crystal_plant$"
+# job_sfdoll_crystals_maker:0"铁血水晶合成师"
+# job_sfdoll_crystals_maker_plural:0"$job_sfdoll_crystals_maker$"
+# job_sfdoll_crystals_maker_desc:0"$job_sfdoll_crystals_maker$"
+# job_sfdoll_crystals_maker_effect_desc:0 "水晶合成师将 §Y$minerals$§! 转化为 §Y$rare_crystals$§!"
+# mod_job_sfdoll_crystals_maker_add:0 "$job_sfdoll_crystals_maker$岗位"
+
+# building_sfdoll_motes_plant:0 "铁血易爆微粒厂"
+# building_sfdoll_motes_plant_desc:0 "$building_sfdoll_motes_plant$"
+# job_sfdoll_motes_maker:0"铁血化学师"
+# job_sfdoll_motes_maker_plural:0"$job_sfdoll_motes_maker$"
+# job_sfdoll_motes_maker_desc:0"铁血化学师使用先进的技术制造化学产品。"
+# job_sfdoll_motes_maker_effect_desc:0 "化学师将 §Y$minerals$§! 转化为§Y$volatile_motes$§!"
+# mod_job_sfdoll_motes_maker_add:0 "$job_sfdoll_motes_maker$岗位"

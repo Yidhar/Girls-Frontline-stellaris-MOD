@@ -1,0 +1,411 @@
+@base_cost = 300
+@city_cost = 500
+
+#少前中枢区划
+district_GF_center = {
+	base_buildtime = 480
+	is_capped_by_modifier = no
+	icon = district_GF_center
+	exempt_from_ai_planet_specialization = yes
+
+	show_on_uncolonized = {
+		exists = from
+		from = { has_authority = GF_auth_commonwealth }
+		uses_district_set = GF_sf_machine_world
+	}
+
+	potential = {
+		exists = owner
+		owner = { has_authority = GF_auth_commonwealth }
+		uses_district_set = GF_sf_machine_world
+	}
+
+	allow = {
+		NOT = { has_modifier = resort_colony }
+	}
+
+	conversion_ratio = 1
+	convert_to = {
+		district_arcology_housing
+		district_rw_nexus
+        district_nexus
+		district_city
+		district_hive
+		district_GF_duplicate_city
+		district_GF_duplicate_nexus
+	}
+
+	resources = {
+		category = planet_districts_cities
+		cost = { minerals = @city_cost }
+		upkeep = { energy = 2 }
+	}
+
+	planet_modifier = {
+		planet_housing_add = 5
+		planet_max_buildings_add = 1
+		job_GF_maintain_doll_add = 3
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			planet = { has_modifier = GF_storage_protocol }
+		}
+		modifier = {
+			job_GF_dormancy_doll_add = 2
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_technology = tech_housing_1 }
+		}
+		modifier = { planet_housing_add = 1 }
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_technology = tech_housing_2 }
+		}
+		modifier = {
+			planet_housing_add = 1
+			job_GF_maintain_doll_add = 1
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_active_tradition = tr_prosperity_optimized_nexus }
+		}
+		modifier = { planet_housing_add = 1 }
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				has_authority = GF_auth_commonwealth
+				NOT = { has_valid_civic = GF_civic_90WISH }
+			}
+		}
+		text = job_GF_maintain_doll_effect_desc
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { has_valid_civic = GF_civic_90WISH }
+		}
+		text = job_GF_maintain_doll_effect_90WISH_desc
+	}
+}
+#少前发电区划
+district_GF_generator = {
+	base_buildtime = 240
+	icon = district_generator
+	is_capped_by_modifier = no
+
+	prerequisites = {
+		tech_power_plant_1
+	}
+
+	show_on_uncolonized = {
+		exists = from
+		from = { has_authority = GF_auth_commonwealth }
+		uses_district_set = GF_sf_machine_world
+	}
+
+	potential = {
+		exists = owner
+		owner = { has_authority = GF_auth_commonwealth }
+		uses_district_set = GF_sf_machine_world
+	}
+
+	allow = {
+		NOT = { has_modifier = resort_colony }
+	}
+
+	conversion_ratio = 1
+	convert_to = {
+		district_generator_uncapped
+		district_GF_duplicate_generator_uncapped
+	}
+
+	resources = {
+		category = planet_districts
+		cost = { minerals = @base_cost }
+		upkeep = { energy = 1 }
+	}
+
+	planet_modifier = {
+		planet_housing_add = 2
+		job_technician_add = 2
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_valid_civic = civic_agrarian_idyll }
+		}
+		modifier = { planet_housing_add = 1 }
+	}
+	
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_machine_empire = yes }
+		}
+		text = job_technician_drone_effect_desc
+	}
+}
+#少前采矿区划
+district_GF_mining = {
+	base_buildtime = 240
+	icon = district_mining
+	is_capped_by_modifier = no
+
+	prerequisites = {
+		tech_mechanized_mining
+	}
+
+	show_on_uncolonized = {
+		exists = from
+		from = { has_authority = GF_auth_commonwealth }
+		uses_district_set = GF_sf_machine_world
+	}
+
+	potential = {
+		exists = owner
+		owner = { has_authority = GF_auth_commonwealth }
+		uses_district_set = GF_sf_machine_world
+	}
+
+	allow = {
+		NOT = { has_modifier = resort_colony }
+	}
+
+	conversion_ratio = 1
+	convert_to = {
+		district_mining_uncapped
+		district_GF_duplicate_mining_uncapped
+	}
+
+	resources = {
+		category = planet_districts
+		cost = { minerals = @base_cost }
+		upkeep = { energy = 1 }
+	}
+
+	planet_modifier = {
+		planet_housing_add = 2
+		job_miner_add = 2
+	}
+
+	triggered_desc = {
+		text = job_miner_effect_desc
+	}
+}
+#少前坍塌反应区划
+district_GF_collapse = {
+	base_buildtime = 480
+	is_capped_by_modifier = no
+
+	desc = {
+		trigger = { uses_district_set = GF_sf_machine_world }
+		text = district_GF_collapse_sf_machine_world_desc
+	}
+
+	desc = {
+		trigger = { NOT = { uses_district_set = GF_sf_machine_world } }
+		text = district_GF_collapse_desc
+	}
+
+	show_on_uncolonized = {
+		exists = from
+		from = { has_authority = GF_auth_commonwealth }
+		has_planet_flag = flag_p_GF_has_collapse_district
+	}
+
+	potential = {
+		exists = owner
+		owner = { has_authority = GF_auth_commonwealth }
+		has_planet_flag = flag_p_GF_has_collapse_district
+	}
+
+	allow = {
+		custom_tooltip = {
+			fail_text = GF_require_tech_collapse
+			owner = { has_technology = GF_tech_collapse }
+		}
+		NOR = {
+			has_modifier = resort_colony
+			has_modifier = slave_colony
+		}
+	}
+
+	conversion_ratio = 1
+	convert_to = {
+		district_arcology_arms_industry
+		district_rw_industrial
+		district_industrial
+		district_GF_duplicate_industrial
+	}
+
+	resources = {
+		category = planet_districts_industrial
+		cost = { minerals = @city_cost }
+		upkeep = { energy = 2 }
+
+		upkeep = {
+			trigger = {
+				exists = owner
+				owner = { has_edict = industrial_maintenance }
+			}
+			energy = 1
+		}
+	}
+
+	planet_modifier = {
+		planet_housing_add = 2
+		job_GF_collapser_add = 2
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { NOT = { has_technology = GF_tech_ecological_recovery } }
+		}
+		modifier = {
+			pop_amenities_usage_robotic_mult = 0.2
+		}
+	}
+	
+	triggered_desc = {
+		text = job_GF_collapser_effect_desc
+	}
+}
+#少前人形组装区划
+district_GF_assembly = {
+	base_buildtime = 360
+	icon = district_GF_assembly
+	is_capped_by_modifier = yes
+
+	show_on_uncolonized = {
+		exists = from
+		uses_district_set = GF_sf_machine_world
+	}
+
+	potential = {
+		uses_district_set = GF_sf_machine_world
+	}
+
+	desc = {
+		trigger = {
+			OR = {
+				NOT = { exists = owner }
+				AND = {
+					exists = owner
+					owner = { has_authority = GF_auth_commonwealth }
+				}
+			}
+		}
+		text = district_GF_assembly_desc
+	}
+
+	desc = {
+		trigger = { 
+			exists = owner
+			owner = { NOT = { has_authority = GF_auth_commonwealth } }
+		}
+		text = district_GF_assembly_vanilla_desc
+	}
+
+	allow = {
+		exists = owner
+		owner = {
+			NOT = { has_policy_flag = ai_outlawed }
+		}
+	}
+
+	conversion_ratio = 1
+	convert_to = {
+		district_arcology_arms_industry
+		district_rw_industrial
+		district_industrial
+		district_GF_duplicate_industrial
+	}
+
+	resources = {
+		category = planet_districts
+		cost = { minerals = @city_cost }
+		upkeep = { energy = 2 }
+	}
+
+	planet_modifier = {
+		planet_housing_add = 2
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_valid_civic = civic_agrarian_idyll }
+		}
+		modifier = { planet_housing_add = 1 }
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_authority = GF_auth_commonwealth }
+		}
+		modifier = { job_GF_assemble_doll_add = 2 }
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_machine_empire = yes }
+		}
+		modifier = { job_replicator_add = 1 }
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_machine_empire = no
+				has_technology = tech_robotic_workers
+			}
+		}
+		modifier = { job_roboticist_add = 1 }
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { has_authority = GF_auth_commonwealth }
+		}
+		text = job_GF_assemble_doll_effect_desc
+	}
+	
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_machine_empire = yes }
+		}
+		text = job_replicator_effect_desc
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				is_machine_empire = no
+				has_technology = tech_robotic_workers
+			}
+		}
+		text = job_roboticist_effect_desc
+	}
+}

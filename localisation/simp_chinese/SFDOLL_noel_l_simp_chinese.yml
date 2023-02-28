@@ -1,0 +1,92 @@
+﻿l_simp_chinese:
+#
+sfdoll_noel_event_1_title:0"和诺耶露通讯中"
+sfdoll_noel_event_1_a_desc:0"我的外形可以自由变换。你问我为什么变成这种形象？这是为了纪念某些日子..."
+sfdoll_noel_event_1_c_desc:0 "有什么事情吗？"
+noel_has_this_job_now:0"诺耶露已经在担任这个职务了"
+sfdoll_noel_is_destroyed:0 "诺耶露暂时无法以这个形态现身"
+
+noel_become_governor:0 "请管理殖民地"
+noel_become_scientist:0 "请担任科学家"
+noel_become_admiral:0 "指挥舰船战斗吧"
+noel_become_general:0 "指挥陆军战斗吧"
+option_noel_become_ship:0 "请变身为太空单位"
+option_noel_become_ship_desc:0 "需要有至少一个诺耶露舰船设计"
+timed_flag_noel_become_ship:0 "诺耶露需要等待一定时间才能再次变身。"
+
+response_text_noel_become_governor:0 "开始建设新世界吧!"
+response_text_noel_become_scientist:0 "我们需要更多知识."
+response_text_noel_become_admiral:0"先制定合理的战术。"
+response_text_noel_become_general:0"准备出击。"
+response_option_noel_become_ship:0 "请注意，从现在开始，经过360天之后，我才能再次变为这个形态。"
+
+sfdoll_noel_event.2:0 "诺耶露的近况"
+sfdoll_noel_event.2.desc:0 "我们在遗迹中发现的少女诺耶露，目前看起来很健康. 这些年里，诺耶露为我们的遗迹研究带来了许多启发，我们则帮她控制自己的精神与力量，教给她知识. 现在，她似乎具备了担任领袖的资质。\n§Y<你现在可以通过伊莱莎与诺耶露交流。>§!"
+
+# sfdoll_noel_event_2_title:0"诺耶露的近况"
+# sfdoll_noel_event_2_desc:0"我们在遗迹中发现的少女诺耶露，目前看起来很健康，但似乎失去了遇到我们之前的记忆。这几年里，她生活在铁血人形的社会里，像一个普通的人类少女一样成长。\n\n 诺耶露为我们的遗迹研究带来了许多启发，我们则帮她控制自己的精神与力量，教给她知识。"
+
+
+# sfdoll_noel_event.3:0 "§R诺耶露失踪§!"
+# sfdoll_noel_event.3_desc:0 "研究诺耶露的项目发生了意外！诺耶露和监护人们外出时，她劫持了一艘星际飞船，之后就消失得无影无踪。\n\n 我们的所有搜索行动都以失败告终。"
+# sfdoll_noel_event.3_option:0 "我们低估了她能力的成长"
+
+# sfdoll_noel_event.4:0 "诺耶露？"
+# sfdoll_noel_event.4_desc:0 "在我们星球的上空，出现了通往其他次元的裂缝，其中倾泻出大量物质流，让我们的星球处于危险中。\n\n在同一时间，诺耶露出现在附近的太空中。诺耶露要求我们派出最精锐的舰队，跟随她前往裂缝的另一边，协助她关闭次元裂缝。"
+# sfdoll_noel_event.4_option:0 "她会帮我们吗?"
+
+# sfdoll_noel_event.5:0 "紧急会议"
+# sfdoll_noel_event.5_desc:0 "如各位所见,现在的诺耶露很可疑,和她合作存在风险.你们怎么看?"
+
+# sfdoll_noel_event.7:0 "协助诺耶露"
+# sfdoll_noel_event.7_desc:0 "铁血们的意见在OGAS网络中交汇。很快，它们作出了决定，跟随诺耶露开始了救灾工作\n\n经过努力,次元裂缝的反应逐步减弱，星球恢复了安全。"
+
+# sfdoll_noel_event.8:0 "和诺耶露通讯"
+# sfdoll_noel_event.8_desc:0 "之前不辞而别,真对不起."
+# sfdoll_noel_event.8_option:0 "你去了哪里?"
+
+# sfdoll_noel_event.9:0 "和诺耶露通讯"
+# sfdoll_noel_event.9_desc:0 "说来话长。我试图找到一些人，亲手解决一些问题。有些遗憾被消除了，却又留下了新的遗憾。"
+# sfdoll_noel_event.9_option:0 "总之,欢迎回来。"
+# response_sfdoll_noel_event.9_option:0 "谢谢,我回来了。"
+
+#noel trait
+leader_trait_governor_sfdoll_noel:0 "遗迹少女"
+leader_trait_governor_sfdoll_noel_desc:0 "诺耶露是铁血从某个遗迹中发现的人造生命。\n\n她拥有人类和某个未知物种的特征"
+
+leader_trait_scientist_sfdoll_noel:0 "$leader_trait_governor_sfdoll_noel$"
+leader_trait_scientist_sfdoll_noel_desc:0 "$leader_trait_governor_sfdoll_noel_desc$"
+leader_trait_admiral_sfdoll_noel:0"$leader_trait_governor_sfdoll_noel$"
+leader_trait_admiral_sfdoll_noel_desc:0"$leader_trait_governor_sfdoll_noel_desc$"
+leader_trait_general_sfdoll_noel:0"$leader_trait_governor_sfdoll_noel$"
+leader_trait_general_sfdoll_noel_desc:0"$leader_trait_governor_sfdoll_noel_desc$"
+
+sfdoll_noel_REACTOR:0 "能源核心"
+sfdoll_noel_jump_drive:0 "命运纺线"
+sfdoll_ship_sensors_noel:0 "传感器"
+thruster_sfdoll_noel:0 "曙光"
+
+sfdoll_noel_system_attack:0 "请摧毁一个星系"
+noel_must_become_ship:0 "诺耶露需要变为太空单位"
+sfdoll_noel_system_attack_cool_down:0 "诺耶露的星系攻击技能正在冷却"
+
+sfdoll_planet_killer_event.3:0 "诺耶露：跨星系攻击"
+sfdoll_planet_killer_event_3_desc:0 "诺耶露可以对周围的星系进行超光速攻击。跨星系攻击的范围限制:超空间航道1跳以内，或者探测距离1以内"
+
+sfdoll_planet_killer_event_3_attack_here:0 "摧毁诺耶露当前所在的星系"
+# sfdoll_planet_killer_event_3_option_1:0 "[event_target:target_1_of_pk_sfdoll.GetName]"
+# sfdoll_planet_killer_event_3_option_2:0 "[event_target:target_2_of_pk_sfdoll.GetName]"
+# sfdoll_planet_killer_event_3_option_3:0 "[event_target:target_3_of_pk_sfdoll.GetName]"
+# sfdoll_planet_killer_event_3_option_4:0 "[event_target:target_4_of_pk_sfdoll.GetName]"
+# sfdoll_planet_killer_event_3_option_5:0 "[event_target:target_5_of_pk_sfdoll.GetName]"
+# sfdoll_planet_killer_event_3_option_6:0 "[event_target:target_6_of_pk_sfdoll.GetName]"
+sfdoll_planet_killer_event_3_option_1:0 "[target_1_of_pk_sfdoll.GetName]"
+sfdoll_planet_killer_event_3_option_2:0 "[target_2_of_pk_sfdoll.GetName]"
+sfdoll_planet_killer_event_3_option_3:0 "[target_3_of_pk_sfdoll.GetName]"
+sfdoll_planet_killer_event_3_option_4:0 "[target_4_of_pk_sfdoll.GetName]"
+sfdoll_planet_killer_event_3_option_5:0 "[target_5_of_pk_sfdoll.GetName]"
+sfdoll_planet_killer_event_3_option_6:0 "[target_6_of_pk_sfdoll.GetName]"
+
+sfdoll_planet_killer_event_3_option_11:0 "下一页"
+sfdoll_planet_killer_event_3_option_12:0 "重新选择"
+# sfdoll_planet_killer_event_3_option_13:0 "取消本次攻击"

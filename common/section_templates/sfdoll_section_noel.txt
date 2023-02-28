@@ -1,0 +1,150 @@
+ship_section_template = {
+	key = "section_sfdoll_noel"
+	ship_size = ship_sfdoll_noel
+	fits_on_slot = core
+	should_draw_components = yes
+	entity = "dimensional_horror_hull_entity"
+	icon = "GFX_ship_part_core_bow"
+	component_slot = {
+		name = "W_LARGE_01"
+		template = invisible_planet_killer_fixed
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "T_LARGE_01"
+		template = invisible_titanic_fixed
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "T_LARGE_02"
+		template = invisible_titanic_fixed
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "T_LARGE_03"
+		template = invisible_titanic_fixed
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "X_LARGE_01"
+		template = invisible_extra_large_fixed
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "X_LARGE_02"
+		template = invisible_extra_large_fixed
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "X_LARGE_03"
+		template = invisible_extra_large_fixed
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "X_LARGE_04"
+		template = invisible_extra_large_fixed
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "X_LARGE_05"
+		template = invisible_extra_large_fixed
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "X_LARGE_06"
+		template = invisible_extra_large_fixed
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "H_LARGE_01"
+		template = invisible_point_defence_turret
+		locatorname = "large_gun_02"
+	}
+	component_slot = {
+		name = "H_LARGE_02"
+		template = invisible_point_defence_turret
+		locatorname = "large_gun_02"
+	}
+	component_slot = {
+		name = "H_LARGE_03"
+		template = invisible_point_defence_turret
+		locatorname = "large_gun_02"
+	}
+	component_slot = {
+		name = "H_LARGE_04"
+		template = invisible_point_defence_turret
+		locatorname = "large_gun_02"
+	}
+	component_slot = {
+		name = "H_LARGE_05"
+		template = invisible_point_defence_turret
+		locatorname = "large_gun_02"
+	}
+	component_slot = {
+		name = "H_LARGE_06"
+		template = invisible_point_defence_turret
+		locatorname ="large_gun_02"
+	}
+
+	component_slot = {
+		name = "L_LARGE_01"
+		template = invisible_large_turret
+		locatorname = "large_gun_02"
+	}
+	component_slot = {
+		name = "L_LARGE_02"
+		template = invisible_large_turret
+		locatorname = "large_gun_02"
+	}
+	component_slot = {
+		name = "L_LARGE_03"
+		template = invisible_large_turret
+		locatorname = "large_gun_02"
+	}
+	component_slot = {
+		name = "L_LARGE_04"
+		template = invisible_large_turret
+		locatorname = "large_gun_02"
+	}
+	component_slot = {
+		name = "L_LARGE_05"
+		template = invisible_large_turret
+		locatorname = "large_gun_02"
+	}
+	component_slot = {
+		name = "L_LARGE_06"
+		template = invisible_large_turret
+		locatorname = "large_gun_02"
+	}
+	component_slot = {
+		name = "L_LARGE_07"
+		template = invisible_large_turret
+		locatorname = "large_gun_02"
+	}
+	component_slot = {
+		name = "L_LARGE_08"
+		template = invisible_large_turret
+		locatorname = "large_gun_02"
+	}
+	component_slot = {
+		name = "L_LARGE_09"
+		template = invisible_large_turret
+		locatorname = "large_gun_02"
+	}
+	component_slot = {
+		name = "L_LARGE_10"
+		template = invisible_large_turret
+		locatorname = "large_gun_02"
+	}
+	component_slot = {
+		name = "L_LARGE_11"
+		template = invisible_large_turret
+		locatorname = "large_gun_02"
+	}
+	component_slot = {
+		name = "L_LARGE_12"
+		template = invisible_large_turret
+		locatorname = "large_gun_02"
+	}
+}
+

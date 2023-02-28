@@ -1,0 +1,84 @@
+#屏障球壳子
+entity = {
+	name = "sfdoll_planet_shield_effect_entity"
+	pdxmesh = "planet_shield_effect_mesh"
+	#get_state_from_parent = no
+	
+	default_state = "idle"
+	# state = { name = "idle" state_time = 5
+	#	start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
+	#	start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class_02" } }
+	# 	start_event = { node = root particle = "planet_shield_effect" keep_particle = yes trigger_once = yes }
+	# }
+	
+	# game_data = { 
+	# 	bloom_factor = 1.2 
+	# 	uv_animation_speed 		= 2
+	# 	uv_animation_direction 	= { 0.0 -0.02 }
+	# }
+	locator = { name = "root" position = { 0 0 0 } }
+	scale = 41
+}
+	
+entity = {
+	name = "sfdoll_black_hole_entity"
+	pdxmesh = "black_hole_new_mesh"
+	scale = 1
+	default_state = "idle"
+	state = { name = "idle" state_time = 5
+		# event = { time = 0 particle = "black_hole_particle" trigger_once = yes keep_particle = yes }
+		# event = { trigger_once = yes sound = { soundeffect = "blackhole_hum_idle" } }
+	}
+	locator = { name = "planet" }
+	# attach = { "planet" = "black_hole_rings_entity" }
+	# attach = { "planet" = "black_hole_grav_lens_entity" }
+	# attach = { "planet" = "black_hole_grav_animation_entity" }
+	game_data = {
+		size = 1.0
+		bloom_factor = 5
+	}
+	cull_radius = 700
+}
+
+
+#行星坍塌
+# entity = {
+# 	name = "sfdoll_planet_blackhole_entity"
+# 	pdxmesh = "black_hole_new_mesh"
+	
+# 	scale = 0.1
+# 	default_state = "idle"
+# 	state = { name = "idle" state_time = 5
+# 		event = { time = 0 particle = "black_hole_particle" trigger_once = yes keep_particle = yes }
+# 		event = { trigger_once = yes sound = { soundeffect = "blackhole_hum_idle" } }
+# 	}
+# 	locator = { name = "planet" }
+# 	attach = { "planet" = "black_hole_rings_entity" }
+# 	attach = { "planet" = "black_hole_grav_lens_entity" }
+# 	attach = { "planet" = "black_hole_grav_animation_entity" }
+	
+# 	game_data = {
+# 		size = 1.0
+# 		bloom_factor = 5
+# 	}
+# }
+
+#用于舰船组合
+entity = {
+	name = "sfdoll_black_hole_ship_entity"
+	pdxmesh = black_hole_new_mesh
+	scale = 0.3
+	default_state = "idle"
+	state = { name = "idle" state_time = 0
+	# 	event = { time = 0 particle = "black_hole_particle" trigger_once = yes keep_particle = yes }
+	# 	event = { trigger_once = yes sound = { soundeffect = "blackhole_hum_idle" } }
+	}
+	locator = { name = "planet" }
+	# attach = { "planet" = "black_hole_rings_entity" }
+	# attach = { "planet" = "black_hole_grav_lens_entity" }
+	# attach = { "planet" = "black_hole_grav_animation_entity" }
+	game_data = {
+		size = 1.0
+		bloom_factor = 5
+	}
+}

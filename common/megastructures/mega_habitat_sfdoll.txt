@@ -1,0 +1,195 @@
+sfdoll_habitat_01 ={
+	entity = "construction_platform_entity"
+	construction_entity = "construction_platform_entity"
+	show_galactic_map_icon = yes
+	show_in_outliner = yes
+	place_entity_on_planet_plane = no
+	build_outside_gravity_well = no
+	build_time = 720
+	construction_blocks_and_blocked_by = multi_stage_type
+	potential = { is_ai = no	has_authority = auth_gf_sfdoll }
+	show_prereqs = yes
+	prerequisites = { tech_sfdoll_habitat_01 }
+	possible = {
+		exists = starbase
+		custom_tooltip = {
+			fail_text = "requires_inside_border"
+			is_inside_border = from
+		}
+		custom_tooltip = {
+			fail_text = "requires_surveyed_system"
+			NOT = {
+				any_system_planet = {
+					is_surveyed = {
+						who = prev.from
+						status = no
+					}
+				}
+			}
+		}
+
+		#不能有环世界
+		NOT = {
+			OR = {
+				has_star_flag = ring_world_built
+				any_system_planet = {
+					is_planet_class = pc_ringworld_habitable
+					is_planet_class = pc_ringworld_habitable_damaged
+					is_planet_class = pc_ringworld_tech
+					is_planet_class = pc_ringworld_tech_damaged
+					is_planet_class = pc_ringworld_seam
+					is_planet_class = pc_ringworld_seam_damaged
+				}
+			}
+		}
+	}
+	placement_rules = {
+		planet_possible = {
+			custom_tooltip = {
+				fail_text = "requires_surveyed_planet"
+				is_surveyed = {			# prevent leaking habitability information
+					who = prev.from
+					status = yes
+				}
+			}
+			custom_tooltip = {
+				fail_text = "requires_no_anomaly"
+				NOT = { has_anomaly = yes }
+			}
+			custom_tooltip = {
+				fail_text = "requires_no_existing_megastructure"
+				#can_build_megastructure_on_planet = yes
+				NOR = {
+					has_planet_flag = megastructure
+					has_planet_flag = has_megastructure
+					solar_system = {
+						has_star_flag = ring_world_built
+					}
+					is_planet_class = pc_rw_sfdoll
+					is_planet_class = pc_ringworld_habitable
+					is_planet_class = pc_ringworld_habitable_damaged
+					is_planet_class = pc_ringworld_tech
+					is_planet_class = pc_ringworld_tech_damaged
+					is_planet_class = pc_ringworld_seam
+					is_planet_class = pc_ringworld_seam_damaged
+					is_planet_class = pc_habitat
+				}
+			}
+
+			# balance for habitats
+			custom_tooltip = {
+				fail_text = "requires_not_minor_planetary_body"
+				NOR = {
+					is_asteroid = yes
+					is_moon = yes
+				}
+			}
+			custom_tooltip = {
+				fail_text = "requires_not_star"
+				is_star = no
+			}
+		} # use these for all non-star megastructures
+	}
+
+	resources = {
+		category = megastructures_habitat
+		cost = {
+			alloys = 5000
+			unity = 1000
+			GF_nyto_collapse_liquid = 1000
+		}
+	}
+	#Solar System scope, FROM = builder empire, FROMFROM = the megastructure
+	on_build_complete = {
+		from = {
+			#set_country_flag = has_built_or_repaired_megastructure
+			create_message = {
+				type = MEGASTRUCTURE_BUILT
+				localization = sfdoll_habitat_01_complete
+				days = 30
+				target= prev
+			}
+		}
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#太空城
+sfdoll_habitat_02 ={
+	entity = ""
+	entity_offset = { x = -7 y = -7 }
+	construction_entity = "construction_platform_entity"
+	portrait = "GFX_sfdoll_habitat_01"
+	place_entity_on_planet_plane = no
+	build_time = 1080
+	construction_blocks_and_blocked_by = multi_stage_type
+	potential = { has_authority = auth_gf_sfdoll }
+	upgrade_from = { sfdoll_habitat_01 }
+	# ship_modifier = { ship_starting_experience_add = 600 }
+	# station_modifier = {
+	# 	starbase_shipyard_capacity_add = 20
+	# 	starbase_shipyard_build_speed_mult = 2
+	# }
+	resources = {
+		category = megastructures_habitat
+		cost = {
+			alloys = 10000
+			unity = 1000
+			GF_nyto_collapse_liquid = 2000
+		}
+	}
+	#Solar System scope, FROM = builder empire, FROMFROM = the megastructure
+	on_build_complete = {
+		if = {
+			limit = { owner = { has_authority = auth_gf_sfdoll } }
+			spawn_planet = {
+				class = pc_sfdoll_habitat
+				size = 6
+				location = fromfrom.planet
+				orbit_location = yes
+				orbit_angle_offset = 45
+				orbit_distance_offset = 9.899
+				has_ring = yes
+				init_effect = {
+					set_name = "HABITAT_PLANET_NAME"
+					set_surveyed = {
+						surveyed = yes
+						surveyor = FROM
+					}
+					set_all_comms_surveyed = yes
+					clear_blockers = yes
+					start_colony = {
+						owner = root
+						species = owner_main_species
+					}
+					set_planet_entity = {
+						entity = sf_GF_nyto_habita_entity
+					}
+					save_event_target_as = this_planet_habiti
+					set_planet_flag = megastructure
+					set_planet_flag = habitat
+					# 禁止一部分事件
+					set_planet_flag = colony_event
+				}
+			}
+			from = {
+				set_country_flag = has_built_or_repaired_megastructure 
+				create_message = {
+					type = MEGASTRUCTURE_BUILT
+					localization = sfdoll_habitat_02_complete
+					days = 30
+					target = root
+				}
+			}
+			fromfrom.planet = { set_planet_flag = has_megastructure }
+		}
+		remove_megastructure = fromfrom
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}

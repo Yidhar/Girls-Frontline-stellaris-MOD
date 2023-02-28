@@ -1,0 +1,114 @@
+objectTypes = {
+
+	pdxparticle = {
+		name = "GF_collapse_lance_windup_effect"
+		type = "GF_collapse_lance_windup_effect"
+		
+		scale = 1.5
+	}
+	
+	pdxparticle = {
+		name = "GF_collapse_lance_muzzle_windup_effect"
+		type = "GF_collapse_lance_muzzle_windup_effect"
+		
+		scale = 1.5
+	}
+
+	pdxparticle = {
+		name = "GF_collapse_lance_muzzle_particle"
+		type = "GF_collapse_lance_muzzle"
+		
+		scale = 1.5
+	}
+
+	pdxparticle = {
+		name = "GF_collapse_lance_hit_effect"
+		type = "GF_collapse_lance_hit_effect"
+		
+		scale = 1.15
+	}
+
+	pdxparticle = {
+		name = "titan_GF_collapse_lance_hit_effect"
+		type = "titan_GF_collapse_lance_hit_effect"
+		
+		scale = 1.0
+	}
+
+	# 巨像
+	pdxparticle = {
+		name = "GF_ending_flash_muzzle_windup_effect"
+		type = "GF_ending_flash_muzzle_windup_effect"
+		
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "GF_ending_flash_laser_hit_effect"
+		type = "GF_ending_flash_laser_hit_effect"
+		
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "GF_ending_flash_laser_muzzle_effect"
+		type = "GF_ending_flash_laser_muzzle"
+		
+		scale = 1.0
+	}
+
+	# 坍塌液导弹
+	pdxparticle = {
+		name = "GF_small_collapse_missile_hit_effect"
+		type = "GF_small_collapse_missile_hit_effect"
+		
+		scale = 0.25
+	}
+	
+	# 坍塌液鱼雷
+	pdxparticle = {
+		name = "GF_collapse_torpedo_hit_effect"
+		type = "GF_collapse_torpedo_hit_effect"
+		
+		scale = 0.75
+	}
+
+	# 坍塌液机炮
+	pdxparticle = {
+		name = "GF_collapse_cannon_small_hit_effect"
+		type = "GF_collapse_cannon_hit_effect"
+		
+		scale = 0.5
+	}
+	pdxparticle = {
+		name = "GF_collapse_cannon_medium_hit_effect"
+		type = "GF_collapse_cannon_hit_effect"
+		
+		scale = 1.0
+	}
+	pdxparticle = {
+		name = "GF_collapse_cannon_large_hit_effect"
+		type = "GF_collapse_cannon_hit_effect"
+		
+		scale = 1.25
+	}
+	
+	pdxparticle = {
+		name = "GF_collapse_cannon_small_muzzle_particle"
+		type = "GF_collapse_cannon_muzzle"
+		
+		scale = 0.5
+	}
+	pdxparticle = {
+		name = "GF_collapse_cannon_medium_muzzle_particle"
+		type = "GF_collapse_cannon_muzzle"
+		
+		scale = 1.0
+	}
+	pdxparticle = {
+		name = "GF_collapse_cannon_large_muzzle_particle"
+		type = "GF_collapse_cannon_muzzle"
+		
+		scale = 1.25
+	}
+}

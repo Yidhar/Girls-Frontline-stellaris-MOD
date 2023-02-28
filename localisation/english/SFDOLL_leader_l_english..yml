@@ -1,0 +1,18 @@
+﻿l_english:
+###############################
+sfdoll_leader_event.2:0 "Communicating with Ouroboros"
+sfdoll_leader_event.2_desc_a:0 "There is no end to learning."
+sfdoll_leader_event.2_desc_b:0 "You take a break. Just leave the task to me."
+sfdoll_leader_event.2_desc_c:0 "We need to combine knowledge and practice."
+sfdoll_leader_event.2_desc_d:0 "Our creator said: 'Children get freedom only when they leave their parents.' There is no doubt that we are free now."
+
+sfdoll_ouroboros_to_governor:0 "Please work as a governor"
+sfdoll_ouroboros_to_governor_response:0 "Hm? Need something? I'll be right there."
+sfdoll_ouroboros_to_scientist:0 ""Please work as a scientist"
+sfdoll_ouroboros_to_scientist_response:0 "Hm? Need something? I'll be right there."
+sfdoll_ouroboros_to_admiral:0 "Please work as a admiral"
+sfdoll_ouroboros_to_admiral_response:0 "I'd love to."
+sfdoll_ouroboros_to_general:0 "Please work as a general"
+sfdoll_ouroboros_to_general_response:0 "I'd love to."
+
+Name_sfdoll_Ouroboros:0 "Ouroboros"

@@ -1,0 +1,23 @@
+﻿l_simp_chinese:
+###############################
+
+sfdoll_foundation_event.1:0 "另一个世界的机器人"
+sfdoll_foundation_event.1_desc:0 "在一次实验中,我们打开了一个通往其他宇宙的通道.通道的彼端,是另一个宇宙中的银河系.那个世界里,一群机器人正在进行某种秘密实验，并意外地和我们共同打通了这条道路.不过,这个脆弱的通道很快会关闭."
+sfdoll_foundation_event.1_option:0 "那些机器人和铁血人形的构造不同"
+
+sfdoll_foundation_event.2:0 "$sfdoll_foundation_event.1$"
+sfdoll_foundation_event.2_desc:0 "我们和另一个宇宙的机器人进行了愉快地对话,并得知,它们的挚友,一位名叫哈里·谢顿的人类科学家,即将去世.\n\n我们提出,能够治疗他并让他继续研究.于是,他穿过通道,来到我们这边的世界.\n\n对面的机器人领袖对谢顿说,'您为帝国工作了很久,有权选择自己的新生活.'"
+sfdoll_foundation_event.2_option:0 "有趣的铁皮罐头"
+
+sfdoll_foundation_event.3:0 "与谢顿通讯"
+sfdoll_foundation_event.3_desc_a:0 "有时我会想起我过去的妻子和朋友.你们和他们之间存在巨大的差异,又充满了相似之处."
+sfdoll_foundation_event.3_desc_b:0 "有什么事吗?"
+
+hari_seldon_become_scientist:0 "请担任科学家"
+hari_seldon_has_this_job_now:0 "谢顿已经在担任这个职务"
+response_text_sfd_hari_seldon_become_scientist:0 "终于有事情干了."
+
+
+Name_sfd_hari_seldon:0 "哈里·谢顿"
+leader_trait_scientist_sfd_hari_seldon:0 "$Name_sfd_hari_seldon$"
+leader_trait_scientist_sfd_hari_seldon_desc:0 "$Name_sfd_hari_seldon$"

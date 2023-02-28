@@ -1,0 +1,358 @@
+#崔耶拉切换职业
+triela_become_governor_sfdoll_effect = {
+	optimize_memory
+	hidden_effect = {
+		every_owned_leader = {
+			limit = {
+				has_leader_flag = sfdoll_leader_triela
+			}
+			kill_leader = {
+				show_notification = no
+				fire = yes
+			}
+		}
+		event_target:sfdoll_leader_triela = {
+			kill_leader = {
+				show_notification = no
+				fire = yes
+			}
+		}
+		create_leader = {
+			class = governor
+			species = owner_species
+			name = NAME_sfdoll_triela
+			skill = 1
+			set_age = 20
+			immortal = yes
+			event_leader = yes	# prevents this leader from leading factions and winning elections
+			traits = {
+				trait = leader_trait_adaptable
+				trait = leader_trait_righteous
+			}
+			effect = {
+				change_leader_portrait = GFX_sfdoll_triela
+				set_leader_flag = sfdoll_leader_triela
+				save_global_event_target_as = sfdoll_leader_triela
+			}
+		}
+	}
+}
+
+triela_become_scientist_sfdoll_effect = {
+	optimize_memory
+	hidden_effect = {
+		every_owned_leader = {
+			limit = {
+				has_leader_flag = sfdoll_leader_triela
+			}
+			kill_leader = {
+				show_notification = no
+				fire = yes
+			}
+		}
+
+		event_target:sfdoll_leader_triela = {
+			kill_leader = {
+				show_notification = no
+				fire = yes
+			}
+		}
+		create_leader = {
+			class = scientist
+			species = owner_species
+			name = NAME_sfdoll_triela
+			skill = 1
+			set_age = 20
+			immortal = yes
+			event_leader = yes	# prevents this leader from leading factions and winning elections
+			traits = {
+				trait = leader_trait_adaptable
+			}
+			effect = {
+				change_leader_portrait = GFX_sfdoll_triela
+				set_leader_flag = sfdoll_leader_triela
+				save_global_event_target_as = sfdoll_leader_triela
+			}
+		}
+	}
+}
+
+triela_become_admiral_sfdoll_effect = {
+	optimize_memory
+	hidden_effect = {
+		every_owned_leader = {
+			limit = {
+				has_leader_flag = sfdoll_leader_triela
+			}
+			kill_leader = {
+				show_notification = no
+				fire = yes
+			}
+		}
+
+		event_target:sfdoll_leader_triela = {
+			kill_leader = {
+				show_notification = no
+				fire = yes
+			}
+		}
+		create_leader = {
+			class = admiral
+			species = owner_species
+			name = NAME_sfdoll_triela
+			skill = 1
+			set_age = 20
+			immortal = yes
+			event_leader = yes	# prevents this leader from leading factions and winning elections
+			traits = {	trait = leader_trait_adaptable	}
+			effect = {
+				change_leader_portrait = GFX_sfdoll_triela
+				set_leader_flag = sfdoll_leader_triela
+				save_global_event_target_as = sfdoll_leader_triela
+			}
+		}
+	}
+}
+
+triela_become_general_sfdoll_effect = {
+	optimize_memory
+	hidden_effect = {
+		every_owned_leader = {
+			limit = {
+				has_leader_flag = sfdoll_leader_triela
+			}
+			kill_leader = {
+				show_notification = no
+				fire = yes
+			}
+		}
+
+		event_target:sfdoll_leader_triela = {
+			kill_leader = {
+				show_notification = no
+				fire = yes
+			}
+		}
+		create_leader = {
+			class = general
+			species = owner_species
+			name = NAME_sfdoll_triela
+			skill = 1
+			set_age = 20
+			immortal = yes
+			event_leader = yes	# prevents this leader from leading factions and winning elections
+			traits = {
+				trait = leader_trait_adaptable
+				trait = leader_trait_charismatic
+				trait = leader_trait_glory_seeker
+			}
+			effect = {
+				change_leader_portrait = GFX_sfdoll_triela
+				set_leader_flag = sfdoll_leader_triela
+				save_global_event_target_as = sfdoll_leader_triela
+			}
+		}
+	}
+}
+
+#伊莱莎切换形态
+elisa_to_scientist_sfd_effect = {
+	optimize_memory
+	hidden_effect = {
+		# every_owned_leader = {
+		# 	limit = {
+		# 		has_leader_flag = sfdoll_leader_elisa
+		# 	}
+		# 	kill_leader = {
+		# 		show_notification = no
+		# 		fire = yes
+		# 	}
+		# }
+		event_target:sfdoll_leader_elisa = {
+			kill_leader = {
+				show_notification = no
+				fire = yes
+			}
+		}
+		create_leader = {
+			class = scientist
+			species = owner_species
+			name = name_elisa_sfdoll
+			skill = 1
+			set_age = 20
+			immortal = yes
+			event_leader = yes	# prevents this leader from leading factions and winning elections
+			traits = {
+				# trait = leader_trait_elisa_sfd_scientist
+				trait = leader_trait_archaeologist_ancrel
+			}
+			effect = {
+				change_leader_portrait = GFX_sfdoll_elisa
+				set_leader_flag = sfdoll_leader_elisa
+				save_global_event_target_as = sfdoll_leader_elisa
+			}
+		}
+	}
+}
+
+
+#ump40成为总督
+ogas40_become_governor_effect = {
+	optimize_memory
+	hidden_effect = {
+		if = {
+			limit = { exists = event_target:ogas40_sfdoll_leader }
+			event_target:ogas40_sfdoll_leader = {
+				kill_leader = {
+					show_notification = no
+					fire = yes
+				}
+			}
+		}
+
+		create_leader = {
+			class = governor
+			species = owner_species
+			name = NAME_sfdoll_ump40
+			skill = 5
+			set_age = 20
+			immortal = yes
+			event_leader = yes	# prevents this leader from leading factions and winning elections
+			traits = {
+				trait = leader_trait_governor_ogas40
+			}
+			effect = {
+				change_leader_portrait = GFX_sfdoll_ump40_2
+				set_leader_flag = ogas40_sfdoll_leader
+				save_global_event_target_as = ogas40_sfdoll_leader
+			}
+		}
+	}
+
+}
+
+#ump40成为科学家
+ogas40_become_scientist_effect = {
+	optimize_memory
+	hidden_effect = {
+		if = {
+			limit = { exists = event_target:ogas40_sfdoll_leader }
+			event_target:ogas40_sfdoll_leader = {
+				kill_leader = {
+					show_notification = no
+					fire = yes
+				}
+			}
+		}
+		create_leader = {
+			class = scientist
+			species = owner_species
+			name = NAME_sfdoll_ump40
+			skill = 5
+			set_age = 20
+			immortal = yes
+			event_leader = yes	# prevents this leader from leading factions and winning elections
+			traits = {
+				trait = leader_trait_scientist_ogas40
+			}
+			effect = {
+				change_leader_portrait = GFX_sfdoll_ump40_2
+				set_leader_flag = ogas40_sfdoll_leader
+				save_global_event_target_as = ogas40_sfdoll_leader
+			}
+		}
+	}
+
+}
+
+#ump40成为舰队司令
+ogas40_become_admiral_effect = {
+	optimize_memory
+	hidden_effect = {
+		if = {
+			limit = { exists = event_target:ogas40_sfdoll_leader }
+			event_target:ogas40_sfdoll_leader = {
+				kill_leader = {
+					show_notification = no
+					fire = yes
+				}
+			}
+		}
+		
+		create_leader = {
+			class = admiral
+			species = owner_species
+			name = NAME_sfdoll_ump40
+			skill = 5
+			set_age = 20
+			immortal = yes
+			event_leader = yes	# prevents this leader from leading factions and winning elections
+			traits = {
+				trait = leader_trait_admiral_ogas40
+			}
+			effect = {
+				change_leader_portrait = GFX_sfdoll_ump40_3
+				set_leader_flag = ogas40_sfdoll_leader
+				save_global_event_target_as = ogas40_sfdoll_leader
+			}
+		}
+	}
+}
+
+#ump40成为陆军司令
+ogas40_become_general_effect = {
+	optimize_memory
+	hidden_effect = {
+		if = {
+			limit = { exists = event_target:ogas40_sfdoll_leader }
+			event_target:ogas40_sfdoll_leader = {
+				kill_leader = {
+					show_notification = no
+					fire = yes
+				}
+			}
+		}
+		
+		create_leader = {
+			class = general
+			species = owner_species
+			name = NAME_sfdoll_ump40
+			skill = 5
+			set_age = 20
+			immortal = yes
+			event_leader = yes	# prevents this leader from leading factions and winning elections
+			traits = {
+				trait = leader_trait_general_ogas40
+			}
+			effect = {
+				change_leader_portrait = GFX_sfdoll_ump40_3
+				set_leader_flag = ogas40_sfdoll_leader
+				save_global_event_target_as = ogas40_sfdoll_leader
+			}
+		}
+	}
+}
+
+sfdoll_dingyi_become_scientist = {
+	event_target:sfdoll_leader_dingyi = {
+		kill_leader = { show_notification = no fire = yes }
+	}
+	create_leader = {
+		class = scientist
+		species = owner_species
+		name = "NAME_sfdoll_dingyi"
+		skill = 5
+		set_age = 35
+		immortal = yes
+		event_leader = yes	# prevents this leader from leading factions and winning elections
+		traits = {
+			trait = leader_trait_sfdoll_dingyi
+			trait = leader_trait_maniacal
+		}
+		effect = {
+			change_leader_portrait = GFX_sfdoll_dingyi
+			set_leader_flag = sfdoll_leader_dingyi
+			save_global_event_target_as = sfdoll_leader_dingyi
+		}
+	}
+}

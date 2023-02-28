@@ -1,0 +1,110 @@
+#坍缩液匮乏
+GF_nyto_collapse_liquid_deficit = {
+	planet_stability_add=-200
+	country_produces_mult = -0.25
+}
+
+# 铁血传媒合作协议
+sfdoll_media_agreement = {
+	country_unity_produces_mult = 0.10
+	pop_happiness = 0.15
+}
+
+##特质系统
+# trait_sfdoll_logic_engine_2_modifier = {
+# 	num_tech_alternatives_add = 1
+# }
+
+trait_sfdoll_engineer_modifier = {
+	planet_building_build_speed_mult = 0.5
+	megastructure_build_speed_mult = 0.5
+	country_megastructure_build_cap_add = 2
+	starbase_shipyard_build_speed_mult = 0.5
+	starbase_upgrade_speed_mult = 0.5
+	starbase_module_build_speed_mult = 0.5
+	starbase_building_build_speed_mult = 0.5
+}
+
+trait_sfdoll_war_2_modifier = {
+	planet_army_build_speed_mult = 0.5
+	ship_weapon_damage = 0.5
+	starbase_shipyard_build_speed_mult = 0.5
+}
+
+add_hp_1500000_times = {
+	ship_hull_add = 10
+}
+
+weapon_damage_test = {
+	weapon_type_kinetic_weapon_damage_mult = 1
+}
+
+#开战压制
+aura_sfdoll_1_modifier = {
+	ship_weapon_damage = -8
+	ship_fire_rate_mult = -16
+	ship_weapon_range_mult = -8
+}
+
+#持续压制
+aura_sfdoll_2_hostile_mod = {
+	ship_accuracy_mult = -10
+	# ship_fire_rate_mult = -4
+	# ship_weapon_range_mult = -4
+	# ship_shield_penetration_mult = -1
+	# ship_armor_penetration_mult = -1
+}
+
+# ogas提供的修正
+sfdoll_ogas_economic_mod = {
+	planet_decision_enact_speed_mult = 0.5
+	planet_building_build_speed_mult = 0.25
+}
+sfdoll_ogas_research_mod = {
+	all_technology_research_speed = 0.1
+	num_tech_alternatives_add = 1
+}
+sfdoll_ogas_intel_mod = {
+	intel_encryption_add = 10
+	intel_decryption_add = 10
+}
+
+
+# 智子提供的修正
+sfdoll_sophon_intel_mod = {
+	add_base_country_intel = 40
+	intel_encryption_add = 20
+	intel_decryption_add = 20
+}
+sfdoll_sophon_research_mod = { all_technology_research_speed = 0.15 }
+# sfdoll_sophon_engineering_mod
+
+# 母舰
+sfdoll_mobile_starbase_mod = {
+	ship_starting_experience_add = 1000	
+}
+
+sfdoll_test_modifier = {
+	all_technology_research_speed = 20
+	# planet_jobs_physics_research_produces_mult = 20
+	# planet_jobs_society_research_produces_mult  = 20
+	# planet_jobs_engineering_research_produces_mult = 20
+	# country_physics_research_produces_mult = 20
+	# country_society_research_produces_mult = 20
+	# country_engineering_research_produces_mult = 20
+	country_base_energy_produces_add = 10000
+	country_base_alloys_produces_add = 10000
+	country_base_physics_research_produces_add = 40000
+	country_base_society_research_produces_add = 40000
+	country_base_engineering_research_produces_add = 40000
+	country_base_unity_produces_add = 1000
+	country_base_influence_produces_add = 100
+	megastructure_build_speed_add = 1000
+	starbase_shipyard_build_speed_mult = 100
+}
+
+# xxx= {
+# 	shiel
+# 	weapon_type_energy_weapon_damage_mult = 1
+# 	# weapon_type_energy_weapon_damage_add
+# }

@@ -1,0 +1,73 @@
+﻿l_simp_chinese:
+###############################
+#planet_killer
+message_system_destroyed_sfdoll:0 "一个星系被摧毁了"
+message_planet_destroyed_sfdoll:0 "一个星球被摧毁了"
+
+#清除星系
+planet_killer_sfdoll_1:0 "消除装置"
+planet_killer_sfdoll_1_DESC:0 "该设备会将星系中的所有存在消灭,仅有己方舰队可以免受影响."
+tech_planet_killer_sfdoll_1:0 "$planet_killer_sfdoll_1$"
+tech_planet_killer_sfdoll_1_desc:0 "$planet_killer_sfdoll_1_DESC$"
+
+planet_killer_sfdoll_1_ACTION:0 "$planet_killer_sfdoll_1$"
+
+FLEETORDER_DESTROY_PLANET_WITH_planet_killer_sfdoll_1:0 "$planet_killer_sfdoll_1$"
+
+MESSAGE_DESC_FOR_planet_killer_sfdoll_1:0 "摧毁"
+
+#摧毁恒星
+planet_killer_sfdoll_2:0 "对恒星炮"
+planet_killer_sfdoll_2_DESC:0 "这种武器可以摧毁整个星球.摧毁恒星会波及周围的天体"
+
+planet_killer_sfdoll_2_ACTION:0 "$planet_killer_sfdoll_2$"
+FLEETORDER_DESTROY_PLANET_WITH_planet_killer_sfdoll_2:0 "$planet_killer_sfdoll_2$"
+MESSAGE_DESC_FOR_planet_killer_sfdoll_2:0 "摧毁"
+
+# 转化为黑洞
+planet_killer_sfdoll_3:0 "视界之剑"
+planet_killer_sfdoll_3_DESC:0 "这种武器可以令恒星坍缩为黑洞，并引发超新星爆发。这一事件释放的能量会被用于制造暗物质。$planet_killer_sfdoll_3$也能够摧毁行星。"
+
+planet_killer_sfdoll_3_ACTION:0 "$planet_killer_sfdoll_3$"
+FLEETORDER_DESTROY_PLANET_WITH_planet_killer_sfdoll_3:0 "$planet_killer_sfdoll_3$"
+MESSAGE_DESC_FOR_planet_killer_sfdoll_3:0 "塌缩"
+
+tech_planet_killer_sfdoll_3:0 "$planet_killer_sfdoll_3$"
+tech_planet_killer_sfdoll_3_desc:0 "$planet_killer_sfdoll_3_DESC$"
+
+planet_killer_sfdoll_4:0 "视界消除装置"
+planet_killer_sfdoll_4_DESC:0 "这种设备可以将黑洞转化为恒星。"
+
+planet_killer_sfdoll_4_ACTION:0 "$planet_killer_sfdoll_4$"
+FLEETORDER_DESTROY_PLANET_WITH_planet_killer_sfdoll_4:0 "$planet_killer_sfdoll_4$"
+MESSAGE_DESC_FOR_planet_killer_sfdoll_4:0 "转化"
+
+tech_planet_killer_sfdoll_4:0 "$planet_killer_sfdoll_4$"
+tech_planet_killer_sfdoll_4_desc:0 "$planet_killer_sfdoll_4_DESC$"
+
+sfdoll_planet_killer_event.17:0 "$planet_killer_sfdoll_4$"
+sfdoll_planet_killer_event.17_desc:0 "在$planet_killer_sfdoll_4$的作用下，[from.GetName]被转化为恒星。我们详细地记录了这一过程。"
+
+planet_killer_sfdoll_colonizer:0 "殖民太空梭"
+planet_killer_sfdoll_colonizer_DESC:0 "$planet_killer_sfdoll_colonizer$可以向星球上运输人员和物资,支持对星球的初步开发。"
+
+planet_killer_sfdoll_colonizer_ACTION:0 "$planet_killer_sfdoll_colonizer$"
+FLEETORDER_DESTROY_PLANET_WITH_planet_killer_sfdoll_colonizer:0 "$planet_killer_sfdoll_colonizer$"
+MESSAGE_DESC_FOR_planet_killer_sfdoll_colonizer:0 "开始殖民"
+
+
+sfdoll_change_hyperlane_ship:0 "航道改造信标"
+sfdoll_change_hyperlane_section:0 "$sfdoll_change_hyperlane_ship$"
+design_sfdoll_change_hyperlane_ship:0 "$sfdoll_change_hyperlane_ship$"
+
+sfdoll_planet_killer_event.6:0 "航道改造工程"
+sfdoll_planet_killer_event.6_desc:0 "点击生成两个信标,将它们分别移动到两个星系中,即可修改两个星系间的航道.\n\n两个信标所在的星系之间，如果有航道，则航道会被删除；如果没有航道，则会生成新的航道"
+sfdoll_planet_killer_event.6_option_a:0 "生成两个信标,并删除旧的信标"
+sfdoll_planet_killer_event.6_option_b:0 "修改航道"
+create_sfdoll_change_hyperlane_ship_wait:0 "生成信标后需要进行60天的冷却"
+
+edict_sfdoll_change_hyperlane_window:0 "$sfdoll_planet_killer_event.6$"
+edict_sfdoll_change_hyperlane_window_desc:0 "$sfdoll_planet_killer_event.6_desc$"
+
+tech_sfdoll_change_hyperlane:0 "$sfdoll_planet_killer_event.6$"
+tech_sfdoll_change_hyperlane_desc:0 "随着对超空间的深入研究,铁血人形掌握了建造超空间航道的方法."

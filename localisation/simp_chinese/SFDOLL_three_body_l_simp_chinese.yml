@@ -1,0 +1,74 @@
+﻿l_simp_chinese:
+###############################
+sfdoll_three_body_event.1:0 "与伊莱莎通讯"
+sfdoll_three_body_event.1_desc:0 "我很重视丁仪博士。所以，在地球时，我给了他一个无法拒绝的条件，让他成为了我们的一员。"
+
+sfdoll_three_body_event.2:0 "与丁仪通讯"
+sfdoll_three_body_event.2_desc_a:0 "......（他看起来醉了）"
+sfdoll_three_body_event.2_desc_b:0 "去沙漠星球逛逛也不错。看，那些沙丘是不是很像女人的胴体？"
+sfdoll_three_body_event.2_desc_c:0 "我的烟斗该充电了。"
+sfdoll_three_body_event.2_desc_d:0 "外面的花很美。"
+
+sfdoll_three_body_event.2_option_a:0 "请担任科学家"
+sfdoll_three_body_event.2_option_a_response:0 "好极了."
+
+leader_trait_sfdoll_dingyi:0 "丁仪"
+leader_trait_sfdoll_dingyi_desc:0 "从前，丁仪是一位杰出的人类科学家。"
+
+NAME_sfdoll_dingyi:0 "丁仪"
+
+tech_sfdoll_sophon:0 "铁血智子工程"
+tech_sfdoll_sophon_desc:0 "将一个微观粒子改造为超级智能计算机，这正是智子工程的目标。"
+
+mega_sfdoll_sophon:0 "智子工程"
+mega_sfdoll_sophon_1:0 "铁血$mega_sfdoll_sophon$基址"
+mega_sfdoll_sophon_1_DESC:0 "在铁血人形探索人造智慧的道路上，$mega_sfdoll_sophon$无疑是一座里程碑。"
+mega_sfdoll_sophon_1_MEGASTRUCTURE_DETAILS:0 "$sfdoll_mega_should_outside_gravity_well$"
+
+mega_sfdoll_sophon_2:0 "$mega_sfdoll_sophon$框架"
+mega_sfdoll_sophon_2_DESC:0 "加工最小的东西，需要最大的能量。我们需要打造一个全新的工程平台，对作为原材料的微观粒子进行庞大的改造工程。"
+mega_sfdoll_sophon_3:0 "$mega_sfdoll_sophon$展开阶段"
+mega_sfdoll_sophon_3_DESC:0 "铁血运用超物理学改变一个微观粒子的维度，使其在三维空间展开，进而改造它的结构，使其成为一台计算机。这种超微尺度的工程当中，会产生多种违背常识的现象。"
+mega_sfdoll_sophon_4:0 "$mega_sfdoll_sophon$最终阶段"
+mega_sfdoll_sophon_4_DESC:0 "成功建造第一个智子之后，铁血得到了足够的经验，这让它们能够建造更多智子，并在这些智子之间建立超光速通讯网络。"
+
+sfdoll_three_body_event.4:0 "$mega_sfdoll_sophon$"
+sfdoll_three_body_event.4_desc:0 "我们已经建造了数个智子，并能够将它们连结为网络。通过某些看似违背物理常识的方式，智子可以从周围获取能量并改变自身维度，并进行超高速运算。现在，我们可以和智子通讯了。\n§Y<你现在可以通过伊莱莎与智子交流。>§"
+sfdoll_three_body_event.5:0 "和智子通讯"
+sfdoll_three_body_event.5_desc:0 "你们好啊，造物主们。我可以高速运动，并反复穿过你们的感觉模块来产生信号，从而和你们直接‘对话’。当然，我也乐意操纵一具铁血人形素体来行动。为此，我特意学习了大量文化方面的知识，从而为自己设计一个说得过去的形象。"
+sfdoll_three_body_event.5_option:0 "让我们看看你的新造型吧。"
+sfdoll_three_body_event.6:0 "和智子通讯"
+sfdoll_three_body_event.6_desc:0 "看吧！这个形象的原型好像叫常盘七香？"
+sfdoll_three_body_event.6_a:0 "棒极了！"
+sfdoll_three_body_event.6_b:0 "你究竟学了些什么？"
+
+sfdoll_three_body_event.3:0 "访问智子计算机组"
+sfdoll_three_body_event.3_desc:0 "有任务吗？"
+sfdoll_three_body_event.3_a:0 "请你收集情报"
+sfdoll_three_body_event.3_b:0 "收集和处理研究数据"
+sfdoll_sophon_to_leader:0 "联系智子领袖"
+
+
+sfdoll_three_body_event.7:0 "和智子通讯"
+sfdoll_three_body_event.7_desc_a:0 "无论我们是否乐意，时间总会径自流逝。记忆远去，自己也一起消失...唉，万物的生命竟如此虚幻..."
+sfdoll_three_body_event.7_desc_b:0 "要去散散步吗？适当运动一下，可以让心情舒畅。"
+sfdoll_three_body_event.7_desc_c:0 "面对命运，改变命运。人的命运，应该由自己决定。"
+sfdoll_three_body_event.7_desc_d:0 "很高兴与你再次相见。让我们结伴同行如何？"
+
+sfdoll_sophon_to_scientist:0 "请你负责科学考察"
+sfdoll_sophon_to_scientist_response:0 "出发了。让我看看，银河系还有哪个角落必须注意的。"
+sfdoll_sophon_to_admiral:0 "请指挥舰队"
+sfdoll_sophon_to_admiral_response:0 "走吧，前往我们的战场。"
+sfdoll_sophon_to_general:0 "请指挥陆军"
+sfdoll_sophon_to_general_response:0 "观察敌人的行动，找出弱点，一举击溃，这就是我的最优解。"
+
+sfdoll_sophon_intel_mod:0 "智子探测网络"
+sfdoll_sophon_research_mod:0 "智子科研支持"
+
+NAME_SFDOLL_SOPHON:0 "智子"
+leader_trait_sfdoll_sophon_scientist:0 "智子人工智能"
+leader_trait_sfdoll_sophon_scientist_desc:0 "智子是一种基本粒子尺度的超级计算机,能以极小的质量和尺度产生巨大的算力,并改变自身的维度。"
+leader_trait_sfdoll_sophon_general:0 "$leader_trait_sfdoll_sophon_scientist$"
+leader_trait_sfdoll_sophon_general_desc:0 "$leader_trait_sfdoll_sophon_scientist_desc$"
+leader_trait_sfdoll_sophon_admiral:0 "$leader_trait_sfdoll_sophon_scientist$"
+leader_trait_sfdoll_sophon_admiral_desc:0 "$leader_trait_sfdoll_sophon_scientist_desc$"

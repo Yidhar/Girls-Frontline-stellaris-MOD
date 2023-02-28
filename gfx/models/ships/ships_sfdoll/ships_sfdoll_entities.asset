@@ -1,0 +1,173 @@
+#点位位置{x,z,y} x正向左 z正向上 y正向后
+#rotation里的参数为上下轴,左右轴,前后轴
+
+entity = {
+	name = "sfdoll_mining_station_section_entity"
+	pdxmesh = "humanoid_01_mining_station_mesh"
+	scale = 3
+
+	# default_state = "idle"
+	# state = { name = "idle" state_time = 5
+	# 	start_event = { trigger_once = yes sound = { soundeffect = "amb_mining_station_signals" } }
+	# 	event = { time = 0.0 node = "light_locator_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+	# 	event = { time = 0.0 node = "light_locator_02" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+	# 	event = { time = 0.0 node = "light_locator_03" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+	# 	event = { time = 0.0 node = "light_locator_04" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+	# 	event = { time = 0.0 node = "light_locator_05" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+	# 	event = { time = 0.0 node = "light_locator_06" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+	# }
+
+	state = { name = "death" state_time = 4 looping = no
+		event = { time = 0.0 node = "explosion_locator_01" particle = "ship_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_small" } }
+		event = { time = 0.5 node = "explosion_locator_02" particle = "ship_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_small" } }
+		event = { time = 1.5 node = "explosion_locator_03" particle = "ship_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_small" } }
+		event = { time = 2.0 node = "explosion_locator_04" particle = "ship_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_small" } }
+		event = { time = 3.0 node = "explosion_locator_05" particle = "ship_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_small" } }
+	}
+
+	locator = { name = "main_body" 			position = { 0 	0 	0 } }
+
+}
+
+#搭配泰坦头四合一
+# entity = {
+# 	name = "sfdoll_star_attacker_entity"
+# 	pdxmesh = "sfdoll_star_attacker_mesh"
+# 	locator = { name = "W01" 	position = { 0  0  -25 }}
+
+# 	locator = { name = "T01" 	position = { 6  6  -5 }  }
+# 	locator = { name = "T02" 	position = { 6  -6  -5 }  }
+# 	locator = { name = "T03" 	position = { -6  6  -5 }  }
+# 	locator = { name = "T04" 	position = { -6  -6  -5 }  }
+
+# 	locator = { name = "L01" 	position = { 8  8  3 }  }
+# 	locator = { name = "L02" 	position = { 8  -8  3 }  }
+# 	locator = { name = "L03" 	position = { -8  8  3 }  }
+# 	locator = { name = "L04" 	position = { -8  -8  3 }  }
+
+# 	locator = { name = "L05" 	position = { 10  10  9 }  }
+# 	locator = { name = "L06" 	position = { 10  -10  9 }  }
+# 	locator = { name = "L07" 	position = { -10  10  9 }  }
+# 	locator = { name = "L08" 	position = { -10  -10  9 }  }
+
+# 	locator = { name = "L09" 	position = { 12  12  15 }  }
+# 	locator = { name = "L10" 	position = { 12  -12  15 }  }
+# 	locator = { name = "L11" 	position = { -12  12  15 }  }
+# 	locator = { name = "L12" 	position = { -12  -12  15 }  }
+
+# 	locator = { name = "L13" 	position = { 14  14  18 }  }
+# 	locator = { name = "L14" 	position = { 14  -14  18 }  }
+# 	locator = { name = "L15" 	position = { -14  14  18 }  }
+# 	locator = { name = "L16" 	position = { -14  -14  18 }  }
+	
+# 	locator = { name = "root" 	position = { 0  0  0 } }
+# 	locator = { name = "black_0" 	position = { 0  0  -2 }   scale = 2 }
+# 	locator = { name = "black_1" 	position = { 13  0  -20 } }
+# 	locator = { name = "black_2" 	position = { -13  0  -20 }  }
+# 	locator = { name = "black_3" 	position = { 0  13  -20 }  }
+# 	locator = { name = "black_4" 	position = { 0  -13  -20 }  }
+# 	scale = 1.5
+# 	attach = {
+# 		black_0 = "sfdoll_black_hole_ship_entity"
+# 	}
+# 	# attach = {
+# 	# 	black_1 = "sfdoll_black_hole_2_entity"
+# 	# 	black_2 = "sfdoll_black_hole_2_entity"
+# 	# 	black_3 = "sfdoll_black_hole_2_entity"
+# 	# 	black_4 = "sfdoll_black_hole_2_entity"
+# 	# }
+# }
+
+# 搭配涅托主宰的点位
+entity = {
+	name = "sfdoll_carrier_entity"
+	locator = { name = "T01" 	position = { -4  3  -50 } }
+	locator = { name = "T02" 	position = { 4   3  -50 } }
+	locator = { name = "T03" 	position = { -3  3  -50 } }
+	locator = { name = "T04" 	position = { 3   3  -50 } }
+	locator = { name = "T05" 	position = { -2  3  -50 } }
+	locator = { name = "T06" 	position = { 2   3  -50 } }
+
+	locator = { name = "X01" 	position = { -7  3 -50 } }
+	locator = { name = "X02" 	position = { 7   3 -50 } }
+	locator = { name = "X03" 	position = { -7  3  -40 } }
+	locator = { name = "X04" 	position = { 7  3  -40 } }
+	locator = { name = "X05" 	position = { -7  3  -30 } }
+	locator = { name = "X06" 	position = { 7   3  -30 } }
+	locator = { name = "X07" 	position = { -7  3  -20 } }
+	locator = { name = "X08" 	position = { 7   3  -20 } }
+	locator = { name = "X09" 	position = { -7 3  -10 } }
+	locator = { name = "X10" 	position = { 7  3 -10} }
+	locator = { name = "X11" 	position = { -7  3  -0 } }
+	locator = { name = "X12" 	position = { 7  3  -0 } }
+
+	locator = { name = "L01" 	position = { -10  3  5 } }
+	locator = { name = "L02" 	position = { 10  3  5 } }
+	locator = { name = "L03" 	position = { -10  3  10 } }
+	locator = { name = "L04" 	position = {  10  3  10 } }
+	locator = { name = "L05" 	position = { -10  3  15 } }
+	locator = { name = "L06" 	position = {  10  3  15 } }
+	locator = { name = "L07" 	position = { -12  3  20 } }
+	locator = { name = "L08" 	position = { 12   3  20 } }
+	locator = { name = "L09" 	position = { -12  3  25 } }
+	locator = { name = "L10" 	position = { 12  3  25 } }
+	locator = { name = "L11" 	position = { -12  3  27 } }
+	locator = { name = "L12" 	position = { 12  3  27 } }
+
+	locator = { name = "L13" 	position = { -13  3  30 } }
+	locator = { name = "L14" 	position = { 13  3  30 } }
+	locator = { name = "L15" 	position = { -13  3  32 } }
+	locator = { name = "L16" 	position = {  13  3  32 } }
+	locator = { name = "L17" 	position = { -14  3  34 } }
+	locator = { name = "L18" 	position = {  14  3  34 } }
+	locator = { name = "L19" 	position = { -14  3  36 } }
+	locator = { name = "L20" 	position = { 14   3  36 } }
+	locator = { name = "L21" 	position = { -15  3  38 } }
+	locator = { name = "L22" 	position = { 15  3  38 } }
+	locator = { name = "L23" 	position = { -16  3  40 } }
+	locator = { name = "L24" 	position = { 16  3  40 } }
+}
+
+
+# 搭配涅托母舰模型的点位
+entity = {
+	name = "sfdoll_nyto_mathership_locator_entity"
+	locator = { name = "T01" 	position = { -6  -3  -50 } }
+	locator = { name = "T02" 	position = { 6   -3  -50 } }
+	locator = { name = "T03" 	position = { -12  -3  -50 } }
+	locator = { name = "T04" 	position = { 12   -3  -50 } }
+	locator = { name = "T05" 	position = { -18  -3  -50 } }
+	locator = { name = "T06" 	position = { 18   -3  -50 } }
+	locator = { name = "T07" 	position = { -6  -3  -50 } }
+	locator = { name = "T08" 	position = { 6   -3  -50 } }
+	locator = { name = "T09" 	position = { -12  -3  -50 } }
+	locator = { name = "T10" 	position = { 12   -3  -50 } }
+	locator = { name = "T11" 	position = { -18  -3  -50 } }
+	locator = { name = "T12" 	position = { 18   -3  -50 } }
+
+	locator = { name = "X01" 	position = { -16  -3 -100 } }
+	locator = { name = "X02" 	position = { 16   -3 -100 } }
+	locator = { name = "X03" 	position = { -16  -3  -80 } }
+	locator = { name = "X04" 	position = { 16  -3  -80 } }
+	locator = { name = "X05" 	position = { -16  -3  -60 } }
+	locator = { name = "X06" 	position = { 16   -3  -60 } }
+	locator = { name = "X07" 	position = { -16  -3  -40 } }
+	locator = { name = "X08" 	position = { 16   -3  -40 } }
+	locator = { name = "X09" 	position = { -16  -3  -20 } }
+	locator = { name = "X10" 	position = { 16  -3 -20} }
+	locator = { name = "X11" 	position = { -16  -3  -0 } }
+	locator = { name = "X12" 	position = { 16  -3  -0 } }
+
+	locator = { name = "L01" 	position = { -24  -3  20 } }
+	locator = { name = "L02" 	position = { 24  -3  20 } }
+	locator = { name = "L03" 	position = { -24  -3  40 } }
+	locator = { name = "L04" 	position = { 24  -3  40 } }
+	locator = { name = "L05" 	position = { -24  -3  60 } }
+	locator = { name = "L06" 	position = { 24  -3  60 } }
+	locator = { name = "L07" 	position = { -26  -3  80 } }
+	locator = { name = "L08" 	position = { 26   -3  80 } }
+	locator = { name = "L09" 	position = { -26  -3  100 } }
+	locator = { name = "L10" 	position = { 26  -3  100 } }
+	locator = { name = "L11" 	position = { -26  -3  120 } }
+	locator = { name = "L12" 	position = { 26  -3  120 } }
+}

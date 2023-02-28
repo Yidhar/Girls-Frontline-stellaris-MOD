@@ -1,0 +1,23 @@
+#少女前线铁血起源
+origin_sfdoll_country ={
+	is_origin = yes
+	icon = "gfx/interface/icons/origins/origin_sfdoll_country.dds"
+	picture = GFX_origin_sfdoll_country
+	# starting_colony =   
+	possible = {
+		species_class = {
+			value = gf_sfdoll
+		}
+	}
+	description = "origin_sfdoll_country_description"
+	random_weight = {
+		base = 0
+	}
+	modifier = {
+#		planet_pops_robotics_upkeep_mult = -0.05
+	}
+	traits = {
+		trait = trait_gf_sfdoll
+	}
+	#flags
+}

@@ -1,0 +1,11 @@
+namespace = sfdoll_planet_event
+#id标准写法为namespace的值加上编号
+
+planet_event = {
+	id = sfdoll_planet_event.1
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		
+	}
+}

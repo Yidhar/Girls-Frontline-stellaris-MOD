@@ -1,0 +1,72 @@
+######gf tech
+#星舰城市
+tech_sfdoll_homeless_ship = {
+	cost = @tier1cost1
+	tier = 1
+	area = engineering
+	start_tech = no
+	icon = tech_sfdoll_homeless_ship
+	is_rare = yes
+	category = { voidcraft }
+	potential = {
+		always = no
+		has_authority = auth_gf_sfdoll
+	}
+	weight = 0
+}
+
+tech_sfdoll_homeless_section_2 = {
+	cost = @tier3cost1
+	tier = 3
+	area = engineering
+	start_tech = no
+	icon = tech_sfdoll_homeless_ship
+	is_rare = yes
+	category = { voidcraft }
+	prerequisites = {
+		tech_sfdoll_homeless_ship
+		tech_sfdoll_collapse_liquid_produce
+	}
+	potential = {
+		always = no
+		has_authority = auth_gf_sfdoll
+	}
+	weight = 0
+}
+
+tech_sfdoll_homeless_section_3 = {
+	cost = @tier4cost1
+	tier = 4
+	area = engineering
+	start_tech = no
+	icon = tech_sfdoll_homeless_ship
+	is_rare = yes
+	category = { voidcraft }
+	prerequisites = {
+		tech_sfdoll_homeless_section_2
+	}
+	potential = {
+		always = no
+		has_authority = auth_gf_sfdoll
+	}
+	weight = 0
+}
+
+tech_sfdoll_large_homeship = {
+	cost = @tier5cost3
+	tier = 5
+	area = engineering
+	start_tech = no
+	icon = tech_sfdoll_homeless_ship
+	is_rare = yes
+	category = { voidcraft }
+	prerequisites = {
+		tech_sfdoll_homeless_section_3
+		tech_building_sfdoll_mineral
+	}
+	potential = {
+		always = no
+		has_authority = auth_gf_sfdoll
+	}
+	weight = 0
+}

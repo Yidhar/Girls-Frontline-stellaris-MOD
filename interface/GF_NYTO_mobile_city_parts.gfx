@@ -1,0 +1,38 @@
+#移动城市S
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_ship_part_GFnyto_mobile_city_energy"
+		texturefile = "gfx/interface/icons/ship_parts/GFX_ship_part_GFnyto_mobile_city_energy.dds"
+	}
+}
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_ship_part_GFnyto_mobile_city_minerals"
+		texturefile = "gfx/interface/icons/ship_parts/GFX_ship_part_GFnyto_mobile_city_minerals.dds"
+	}
+}
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_ship_part_GFnyto_mobile_city_food"
+		texturefile = "gfx/interface/icons/ship_parts/GFX_ship_part_GFnyto_mobile_city_food.dds"
+	}
+}
+#移动城市M
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_ship_part_GFnyto_mobile_city_alloys"
+		texturefile = "gfx/interface/icons/ship_parts/GFX_ship_part_GFnyto_mobile_city_alloys.dds"
+	}
+}
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_ship_part_GFnyto_mobile_city_consumer_goods"
+		texturefile = "gfx/interface/icons/ship_parts/GFX_ship_part_GFnyto_mobile_city_consumer_goods.dds"
+	}
+}
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_ship_part_GFnyto_mobile_city_research"
+		texturefile = "gfx/interface/icons/ship_parts/GFX_ship_part_GFnyto_mobile_city_research.dds"
+	}
+}

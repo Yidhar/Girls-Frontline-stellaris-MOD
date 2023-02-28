@@ -1,0 +1,1476 @@
+#坍缩液实验室
+building_GFnyto_collapse_exploit_plant_1 = {
+	icon = building_nyto_collapse_exploit_plant_1
+	base_buildtime = 180
+	category = research
+	potential = {
+		owner = {
+			has_authority = auth_GF_paradeus
+		}
+	}
+	triggered_desc = {
+		trigger = {
+			check_variable = {
+				which = GFnyto_plante_wrlv
+				value > 200
+			}
+		}
+		text = "GF_nyto_plante_build_off"
+	}
+	triggered_planet_modifier = {
+		potential = {
+
+			check_variable = {
+				which = GFnyto_plante_wrlv
+				value < 200
+			}
+		}
+		job_GFnyto_collapse_particle_researcher_add = 2
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 400
+		}
+		upkeep = {
+			trigger = {
+				check_variable = {
+					which = GFnyto_plante_wrlv
+					value < 200
+				}
+			}
+			energy = 4
+		}
+		upkeep = {
+			trigger = {
+				is_variable_set = GFnyto_plante_wrlv
+				check_variable = {
+					which = GFnyto_plante_wrlv
+					value > 0
+				}
+				check_variable = {
+					which = GFnyto_plante_wrlv
+					value < 200
+				}
+			}
+			energy = 0.07
+			multiplier = planet.GFnyto_plante_wrlv
+		}
+	}
+	upgrades = {
+		"building_GFnyto_collapse_exploit_plant_2"
+	}
+	prerequisites = {
+		"tech_GF_nyto_collapse_stability"
+	}
+	ai_resource_production = {
+		trigger = {
+			owner = {
+				has_authority = auth_GF_paradeus
+			}
+		}
+		physics_research = 999
+		society_research = 999
+		engineering_research = 999
+	}
+	exempt_from_ai_planet_specialization = yes
+}
+
+building_GFnyto_collapse_exploit_plant_2 = {
+	icon = building_nyto_collapse_exploit_plant_2
+	base_buildtime = 360
+	can_build = no
+	category = research
+	potential = {
+		owner = {
+			has_authority = auth_GF_paradeus
+		}
+	}
+	allow = {
+		has_upgraded_capital = yes
+	}
+	triggered_desc = {
+		trigger = {
+			check_variable = {
+				which = GFnyto_plante_wrlv
+				value > 500
+			}
+		}
+		text = "GF_nyto_plante_build_off"
+	}
+	
+	triggered_planet_modifier = {
+		potential = {
+
+			check_variable = {
+				which = GFnyto_plante_wrlv
+				value < 500
+			}
+		}
+		job_GFnyto_collapse_particle_researcher_add = 3
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 600
+		}
+		upkeep = {
+			trigger = {
+				is_variable_set = GFnyto_plante_wrlv
+				check_variable = {
+					which = GFnyto_plante_wrlv
+					value < 500
+				}
+			}
+			energy = 6
+		}
+		upkeep = {
+			trigger = {
+				is_variable_set = GFnyto_plante_wrlv
+				check_variable = {
+					which = GFnyto_plante_wrlv
+					value < 500
+				}
+				check_variable = {
+					which = GFnyto_plante_wrlv
+					value > 10
+				}
+			}
+			energy = 0.05
+			multiplier = planet.GFnyto_plante_wrlv
+		}
+	}
+	prerequisites = {
+		"tech_GF_nyto_collapse_stability_2"
+	}
+	ai_resource_production = {
+		trigger = {
+			owner = {
+				has_authority = auth_GF_paradeus
+			}
+		}
+		physics_research = 999
+		society_research = 999
+		engineering_research = 999
+	}
+}
+
+#复制中心
+building_GFnyto_collapse_change_center = {
+	icon = building_job_GFnyto_collapse_changer
+	base_buildtime = 360
+	category = pop_assembly
+	base_cap_amount = 1
+	potential = {
+		owner = {
+			has_authority = auth_GF_paradeus
+			NOT = {
+				has_ascension_perk = ap_GF_nyto_conquer_hell
+			}
+		}
+	}
+	allow = {
+		has_upgraded_capital = yes
+	}
+	planet_modifier = {
+		
+	}
+	triggered_planet_modifier = {
+		planet_pop_assembly_add = 2
+	}
+	ai_resource_production = {
+		trigger = {
+			always = yes
+		}
+		alloys = 10000
+		minerals = 10000
+		rare_crystals = 10000
+		exotic_gases = 10000
+		volatile_motes = 1000
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 500
+		}
+		upkeep = {
+			energy = 5
+			alloys = 2
+			food = 5
+		}
+	}
+	ai_weight = {
+		weight = 5
+		modifier = {
+			factor = 20
+			always = yes
+		}
+	}
+	exempt_from_ai_planet_specialization = yes
+	prerequisites = {
+		"tech_GF_nyto_collapse_stability"
+	}
+}
+
+#前进基地
+building_GFnyto_forward_base = {
+	icon = building_GFnyto_forward_base
+	base_buildtime = 360
+	category = resource
+	base_cap_amount = 1
+	can_build = no
+	potential = {
+		owner = {
+			has_authority = auth_GF_paradeus
+			has_civic = civic_GF_nyto_forward_base
+		}
+	}
+	triggered_desc = {
+		trigger = {
+			is_capital = no
+		}
+		text = building_GFnyto_forward_base_desc1
+	}
+	triggered_desc = {
+		trigger = {
+			is_capital = yes
+		}
+		text = building_GFnyto_forward_base_desc2
+	}
+	planet_modifier = {
+		job_GFnyto_explorer_add = 5
+		planet_housing_add = 10
+		planet_stability_add = 10
+		planet_crime_add = -10
+	}
+	triggered_planet_modifier = {
+		potential = {
+			is_capital = no
+		}
+		modifier = {
+			pop_happiness = -0.1
+			job_soldier_add = 3
+		}
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 200
+		}
+		upkeep = {
+			energy = 2
+		}
+	}
+	ai_weight = {
+		weight = 100
+	}
+}
+
+building_GFnyto_forward_base2 = {
+	icon = building_GFnyto_forward_base
+	base_buildtime = 360
+	category = resource
+	base_cap_amount = 1
+	can_build = no
+	potential = {
+		owner = {
+			has_authority = auth_GF_paradeus
+			has_civic = civic_GF_nyto_forward_base
+		}
+	}
+	triggered_desc = {
+		trigger = {
+			is_capital = no
+		}
+		text = building_GFnyto_forward_base_desc1
+	}
+	triggered_desc = {
+		trigger = {
+			is_capital = yes
+		}
+		text = building_GFnyto_forward_base_desc2
+	}
+	planet_modifier = {
+		job_GFnyto_explorer_add = 5
+		planet_housing_add = 10
+		planet_stability_add = 10
+		planet_crime_add = -10
+	}
+	triggered_planet_modifier = {
+		potential = {
+			is_capital = no
+		}
+		modifier = {
+			pop_happiness = -0.1
+			job_soldier_add = 3
+		}
+	}
+	country_modifier = {
+		starbase_shipyard_build_speed_mult = 0.05
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 200
+		}
+		upkeep = {
+			energy = 2
+		}
+	}
+	ai_weight = {
+		weight = 100
+	}
+}
+
+#交通枢纽
+building_GFnyto_transportation_hub = {
+	icon = building_GFnyto_transportation_hub
+	base_buildtime = 360
+	category = manufacturing
+	potential = {
+		owner = {
+			has_authority = auth_GF_paradeus
+		}
+	}
+	base_cap_amount = 1
+	planet_modifier = {
+		job_bureaucrat_add = 4
+		job_GFnyto_white_knight_add = 2
+		planet_jobs_produces_mult = 0.1
+		army_health = 0.2
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 600
+			alloys = 100
+			energy = 1
+		}
+		upkeep = {
+			energy = 6
+		}
+		upkeep = {
+			trigger = {
+				is_variable_set = GFnyto_plante_wrlv
+			}
+			energy = 0.05
+			multiplier = planet.GFnyto_plante_wrlv
+		}
+	}
+	ai_weight = {
+		weight = 999
+	}
+	country_modifier = {
+		country_resource_max_add = 1000
+	}
+	ai_resource_production = {
+		trigger = {
+			always = yes
+		}
+		alloys = 10000
+		minerals = 10000
+		rare_crystals = 10000
+		exotic_gases = 10000
+		volatile_motes = 1000
+	}
+	exempt_from_ai_planet_specialization = yes
+}
+
+#遗迹署
+building_GFnyto_heritage_department = {
+	icon = building_GFnyto_heritage_department
+	base_buildtime = 360
+	can_build = yes
+	category = manufacturing
+	potential = {
+		owner = {
+			has_authority = auth_GF_paradeus
+			check_variable = {
+				which = GFnyto_heritage_department_build_count
+				value = 1
+			}
+		}
+		is_capital = yes
+	}
+	base_cap_amount = 1
+	triggered_desc = {
+		trigger = {
+			check_variable = {
+				which = GFnyto_plante_wrlv
+				value > 400
+			}
+		}
+		text = "GF_nyto_plante_build_off"
+	}
+	triggered_planet_modifier = {
+		potential = {
+			is_variable_set = GFnyto_plante_wrlv
+			check_variable = {
+				which = GFnyto_plante_wrlv
+				value < 400
+			}
+		}
+		job_culture_worker_add = 5
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 600
+		}
+		produces = {
+			minor_artifacts = 4
+		}
+		upkeep = {
+			energy = 8
+			alloys = 2
+			minerals = 2
+		}
+		upkeep = {
+			trigger = {
+				is_variable_set = GFnyto_plante_wrlv
+				check_variable = {
+					which = GFnyto_plante_wrlv
+					value > 1000
+				}
+				years_passed > 50
+			}
+			energy = 0.1
+			multiplier = planet.GFnyto_plante_wrlv
+		}
+		upkeep = {
+			trigger = {
+				is_variable_set = GFnyto_plante_wrlv
+			}
+			energy = 0.05
+			multiplier = planet.GFnyto_plante_wrlv
+		}
+	}
+	on_queued = {
+		owner = {
+			subtract_variable = {
+				which = GFnyto_heritage_department_build_count
+				value = 1
+			}
+		}
+	}
+	on_unqueued = {
+		owner = {
+			change_variable = {
+				which = GFnyto_heritage_department_build_count
+				value = 1
+			}
+		}
+	}
+	ai_weight = {
+		weight = 500
+	}
+}
+
+#工程大楼
+building_GFnyto_algorithm = {
+	icon = building_GFnyto_algorithm
+	base_buildtime = 360
+	can_build = yes
+	category = research
+	potential = {
+		owner = {
+			has_authority = auth_GF_paradeus
+		}
+	}
+	triggered_desc = {
+		trigger = {
+			or = {
+				check_variable = {
+					which = GFnyto_plante_wrlv
+					value > 500
+				}
+			}
+		}
+		text = "GF_nyto_plante_build_off"
+	}
+	triggered_planet_modifier = {
+		potential = {
+			check_variable = {
+				which = GFnyto_plante_wrlv
+				value < 500
+			}
+		}
+		job_GFnyto_algorithm_add = 2
+	}
+	resources = {
+		category = research_agreements
+		cost = {
+			minerals = 500
+			GF_nyto_collapse_liquid = 20
+		}
+		upkeep = {
+			energy = 10
+			exotic_gases = 1
+		}
+		upkeep = {
+			trigger = {
+				is_variable_set = GFnyto_plante_wrlv
+			}
+			energy = 0.05
+			multiplier = planet.GFnyto_plante_wrlv
+		}
+	}
+	prerequisites = {
+		tech_GF_nyto_algorithm
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#核心研发基地
+building_GFnytp_framework_core = {
+	icon = building_GFnytp_framework_core
+	base_buildtime = 360
+	can_build = yes
+	category = research
+	potential = {
+		owner = {
+			has_authority = auth_GF_paradeus
+		}
+	}
+	triggered_desc = {
+		trigger = {
+			or = {
+				check_variable = {
+					which = GFnyto_plante_wrlv
+					value > 500
+				}
+			}
+		}
+		text = "GF_nyto_plante_build_off"
+	}
+	triggered_planet_modifier = {
+		potential = {
+			check_variable = {
+				which = GFnyto_plante_wrlv
+				value < 500
+			}
+		}
+		job_GFnyto_framework_add = 2
+	}
+	resources = {
+		category = research_agreements
+		cost = {
+			minerals = 500
+			GF_nyto_collapse_liquid = 20
+		}
+		upkeep = {
+			energy = 20
+			rare_crystals = 5
+		}
+		upkeep = {
+			trigger = {
+				is_variable_set = GFnyto_plante_wrlv
+			}
+			energy = 0.05
+			multiplier = planet.GFnyto_plante_wrlv
+		}
+	}
+	ai_weight = {
+		weight = 0
+	}
+	upgrades = {
+		building_GFnytp_framework_core2
+	}
+	prerequisites = {
+		tech_GFnyto_framework
+	}
+}
+
+building_GFnytp_framework_core2 = {
+	icon = building_GFnytp_framework_core2
+	base_buildtime = 360
+	can_build = no
+	category = research
+	potential = {
+		owner = {
+			has_authority = auth_GF_paradeus
+		}
+	}
+	triggered_desc = {
+		trigger = {
+			or = {
+				check_variable = {
+					which = GFnyto_plante_wrlv
+					value > 400
+				}
+			}
+		}
+		text = "GF_nyto_plante_build_off"
+	}
+	triggered_planet_modifier = {
+		potential = {
+			check_variable = {
+				which = GFnyto_plante_wrlv
+				value < 400
+			}
+		}
+		job_GFnyto_framework_add = 4
+	}
+	resources = {
+		category = research_agreements
+		cost = {
+			minerals = 500
+			GF_nyto_collapse_liquid = 20
+		}
+		upkeep = {
+			energy = 20
+			rare_crystals = 10
+		}
+		upkeep = {
+			trigger = {
+				is_variable_set = GFnyto_plante_wrlv
+				check_variable = {
+					which = GFnyto_plante_wrlv
+					value > 1000
+				}
+				years_passed > 50
+			}
+			energy = 0.1
+			multiplier = planet.GFnyto_plante_wrlv
+		}
+		upkeep = {
+			trigger = {
+				is_variable_set = GFnyto_plante_wrlv
+			}
+			energy = 0.05
+			multiplier = planet.GFnyto_plante_wrlv
+		}
+	}
+	ai_weight = {
+		weight = 0
+	}
+	prerequisites = {
+		tech_GFnyto_framework2
+	}
+}
+
+#坍塌反应釜
+building_GFnyto_nourishment_center = {
+	base_buildtime = @b2_time
+	can_build = yes
+	can_demolish = yes
+	potential = {
+		owner = {
+			has_authority = auth_GF_paradeus
+		}
+	}
+	category = resource
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @b3_minerals
+			GF_nyto_collapse_liquid = 30
+		}
+		upkeep = {
+			energy = 10
+			GF_nyto_collapse_liquid = 5
+		}
+		upkeep = {
+			trigger = {
+				is_variable_set = GFnyto_plante_wrlv
+			}
+			energy = 0.05
+			multiplier = planet.GFnyto_plante_wrlv
+		}
+	}
+	triggered_desc = {
+		trigger = {
+			check_variable = {
+				which = GFnyto_plante_wrlv
+				value > 600
+			}
+		}
+		text = "GF_nyto_plante_build_off"
+	}
+	triggered_planet_modifier = {
+		potential = {
+
+			check_variable = {
+				which = GFnyto_plante_wrlv
+				value < 600
+			}
+		}
+		job_GFnyto_collapse_particle_zip_add = 2
+	}
+	prerequisites = {
+		"tech_GFnyto_tansuo"
+	}
+	upgrades = {
+		building_GFnyto_nourishment_center2
+	}
+}
+
+building_GFnyto_nourishment_center2 = {
+	base_buildtime = @b2_time
+	can_build = no
+	can_demolish = yes
+	potential = {
+		owner = {
+			has_authority = auth_GF_paradeus
+		}
+	}
+	category = resource
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @b3_minerals
+			GF_nyto_collapse_liquid = 30
+		}
+		upkeep = {
+			energy = 10
+			GF_nyto_collapse_liquid = 6
+		}
+		upkeep = {
+			trigger = {
+				is_variable_set = GFnyto_plante_wrlv
+			}
+			energy = 0.05
+			multiplier = planet.GFnyto_plante_wrlv
+		}
+	}
+	triggered_desc = {
+		trigger = {
+			check_variable = {
+				which = GFnyto_plante_wrlv
+				value > 600
+			}
+		}
+		text = "GF_nyto_plante_build_off"
+	}
+	triggered_planet_modifier = {
+		potential = {
+
+			check_variable = {
+				which = GFnyto_plante_wrlv
+				value < 600
+			}
+		}
+		job_GFnyto_collapse_particle_zip_add = 4
+	}
+	prerequisites = {
+		"tech_GFnyto_tansuo2"
+	}
+	ai_weight = {
+		base = 5
+		modifier = {
+			factor = 20
+			owner = {
+				has_monthly_income = {
+					resource = GF_nyto_collapse_liquid
+					value < 100
+				}
+			}
+		}
+	}
+}
+
+#逆向坍塌反应釜
+building_GFnyto_dimensional_fabricator = {
+	base_buildtime = @b2_time
+	can_build = yes
+	can_demolish = yes
+	potential = {
+		owner = {
+			has_authority = auth_GF_paradeus
+		}
+	}
+	category = resource
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @b3_minerals
+			GF_nyto_collapse_liquid = 30
+		}
+		upkeep = {
+			energy = 10
+			GF_nyto_collapse_liquid = 5
+		}
+		upkeep = {
+			trigger = {
+				is_variable_set = GFnyto_plante_wrlv			
+			}
+			energy = 0.05
+			multiplier = planet.GFnyto_plante_wrlv
+		}
+	}
+	triggered_desc = {
+		trigger = {
+			check_variable = {
+				which = GFnyto_plante_wrlv
+				value > 600
+			}
+		}
+		text = "GF_nyto_plante_build_off"
+	}
+	triggered_planet_modifier = {
+		potential = {
+
+			check_variable = {
+				which = GFnyto_plante_wrlv
+				value < 600
+			}
+		}
+		job_GFnyto_collapse_particle_rar_add = 2
+	}
+	prerequisites = {
+		"tech_GFnyto_tansuo"
+	}
+	upgrades = {
+		building_GFnyto_dimensional_fabricator2
+	}
+	ai_resource_production = {
+		trigger = {
+			always = yes
+		}
+		alloys = 1000
+		minerals = 1000
+	}
+}
+
+building_GFnyto_dimensional_fabricator2 = {
+	base_buildtime = @b2_time
+	can_build = no
+	can_demolish = yes
+	potential = {
+		owner = {
+			has_authority = auth_GF_paradeus
+		}
+	}
+	category = resource
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @b3_minerals
+			GF_nyto_collapse_liquid = 30
+		}
+		upkeep = {
+			energy = 10
+			GF_nyto_collapse_liquid = 5
+		}
+		upkeep = {
+			trigger = {
+				is_variable_set = GFnyto_plante_wrlv
+				check_variable = {
+					which = GFnyto_plante_wrlv
+					value > 1000
+				}
+				years_passed > 50
+				owner = { is_ai = no }	
+			}
+			energy = 0.1
+			multiplier = planet.GFnyto_plante_wrlv
+		}
+		upkeep = {
+			trigger = {
+				is_variable_set = GFnyto_plante_wrlv
+			}
+			energy = 0.05
+			multiplier = planet.GFnyto_plante_wrlv
+		}
+	}
+	triggered_desc = {
+		trigger = {
+			check_variable = {
+				which = GFnyto_plante_wrlv
+				value > 600
+			}
+		}
+		text = "GF_nyto_plante_build_off"
+	}
+	triggered_planet_modifier = {
+		potential = {
+
+			check_variable = {
+				which = GFnyto_plante_wrlv
+				value < 600
+			}
+		}
+		job_GFnyto_collapse_particle_rar_add = 4
+	}
+	prerequisites = {
+		"tech_GFnyto_tansuo2"
+	}
+	ai_weight = {
+		base = 999
+		modifier = {
+			subtract = 999
+			owner = {
+				has_monthly_income = {
+					resource = GF_nyto_collapse_liquid
+					value < 100
+				}
+			}
+		}
+	}
+}
+
+#受洗中心
+building_GFnyto_Elids = {
+	base_buildtime = @b3_time
+	can_build = yes
+	can_demolish = yes
+	category = pop_assembly
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @b3_minerals
+			GF_nyto_collapse_liquid = 100
+			alloys = 50
+		}
+		upkeep = {
+			energy = 5
+			GF_nyto_collapse_liquid = 3
+		}
+		upkeep = {
+			trigger = {
+				is_variable_set = GFnyto_plante_wrlv
+				check_variable = {
+					which = GFnyto_plante_wrlv
+					value > 1000
+				}
+				years_passed > 50
+			}
+			energy = 0.1
+			multiplier = planet.GFnyto_plante_wrlv
+		}
+		upkeep = {
+			trigger = {
+				is_variable_set = GFnyto_plante_wrlv
+			}
+			energy = 0.05
+			multiplier = planet.GFnyto_plante_wrlv
+		}
+	}
+	prerequisites = {
+		tech_GF_nyto_EILD_brain_wave
+	}
+	ai_weight = {
+		base = 0
+		modifier = {
+			add = 100
+			if = {
+				limit = {
+					any_owned_pop = {
+						species = {
+							NOT = {
+								is_species = NYTO
+							}
+							NOT = {
+								is_species = EILD
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+#坍塌粒子聚合塔
+building_GFnyto_collapse_tower = {
+	base_buildtime = @b3_time
+	can_build = yes
+	can_demolish = yes
+	category = resource
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 200
+		}
+		produces = {
+			GF_nyto_collapse_liquid = 10
+		}
+		produces = {
+			trigger ={
+				check_variable = {
+					which = GFnyto_plante_wrlv
+					value < 200
+				}
+			}
+			GF_nyto_collapse_liquid = 0.5
+			multiplier = planet.GFnyto_plante_wrlv
+		}
+		produces = {
+			trigger = {
+				check_variable = {
+					which = GFnyto_plante_wrlv
+					value >= 200
+				}
+			}
+			GF_nyto_collapse_liquid = 100
+		}
+		produces = {
+			trigger = {
+				check_variable = {
+					which = GFnyto_plante_wrlv
+					value > 200
+				}
+			}
+			GF_nyto_collapse_liquid = 0.05
+			multiplier = planet.GFnyto_plante_wrlv
+		}
+		upkeep = {
+			energy = 0.25
+			multiplier = planet.GFnyto_plante_wrlv
+		}
+	}
+	potential = {
+		owner = {
+			OR = {
+				any_owned_species = {
+					is_species_class = nyto
+				}
+				has_country_flag = has_nyto_technology
+			}
+		}
+	}
+}
+
+
+#坍塌反应釜
+building_GFnyto_nourishment_center_dc = {
+	icon = building_GFnyto_nourishment_center
+	base_buildtime = @b2_time
+	can_build = yes
+	can_demolish = yes
+	category = resource
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @b3_minerals
+			GF_nyto_collapse_liquid = 30
+		}
+		upkeep = {
+			energy = 10
+			GF_nyto_collapse_liquid = 5
+		}
+		upkeep = {
+			trigger = {
+				is_variable_set = GFnyto_plante_wrlv
+				check_variable = {
+					which = GFnyto_plante_wrlv
+					value > 1000
+				}
+				years_passed > 50
+			}
+			energy = 0.1
+			multiplier = planet.GFnyto_plante_wrlv
+		}
+		upkeep = {
+			trigger = {
+				is_variable_set = GFnyto_plante_wrlv
+			}
+			energy = 0.05
+			multiplier = planet.GFnyto_plante_wrlv
+		}
+	}
+	planet_modifier = {
+		job_GFnyto_collapse_particle_zip_add = 4
+	}
+	prerequisites = {
+		"tech_GFnyto_tansuo_dc"
+	}
+	upgrades = {
+		building_GFnyto_nourishment_center2
+	}
+}
+
+building_GFnyto_nourishment_center2_dc = {
+	icon = building_GFnyto_nourishment_center2
+	base_buildtime = @b2_time
+	can_build = no
+	can_demolish = yes
+	category = resource
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @b3_minerals
+			GF_nyto_collapse_liquid = 30
+		}
+		upkeep = {
+			energy = 10
+			GF_nyto_collapse_liquid = 6
+		}
+		upkeep = {
+			trigger = {
+				is_variable_set = GFnyto_plante_wrlv
+				check_variable = {
+					which = GFnyto_plante_wrlv
+					value > 1000
+				}
+				years_passed > 50
+			}
+			energy = 0.1
+			multiplier = planet.GFnyto_plante_wrlv
+		}
+		upkeep = {
+			trigger = {
+				is_variable_set = GFnyto_plante_wrlv
+			}
+			energy = 0.05
+			multiplier = planet.GFnyto_plante_wrlv
+		}
+	}
+	planet_modifier = {
+		job_GFnyto_collapse_particle_zip_add = 6
+	}
+	prerequisites = {
+		"tech_GFnyto_tansuo2_dc"
+	}
+	ai_weight = {
+		base = 5
+		modifier = {
+			factor = 20
+			owner = {
+				has_monthly_income = {
+					resource = GF_nyto_collapse_liquid
+					value < 100
+				}
+			}
+		}
+	}
+}
+
+#逆向坍塌反应釜
+building_GFnyto_dimensional_fabricator_dc = {
+	icon = building_GFnyto_dimensional_fabricator
+	base_buildtime = @b2_time
+	can_build = yes
+	can_demolish = yes
+	category = resource
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @b3_minerals
+			GF_nyto_collapse_liquid = 30
+		}
+		upkeep = {
+			energy = 10
+			GF_nyto_collapse_liquid = 5
+		}
+		upkeep = {
+			trigger = {
+				is_variable_set = GFnyto_plante_wrlv
+				check_variable = {
+					which = GFnyto_plante_wrlv
+					value > 1000
+				}
+				years_passed > 50
+				owner = { is_ai = no }	
+			}
+			energy = 0.1
+			multiplier = planet.GFnyto_plante_wrlv
+		}
+		upkeep = {
+			trigger = {
+				is_variable_set = GFnyto_plante_wrlv			
+			}
+			energy = 0.05
+			multiplier = planet.GFnyto_plante_wrlv
+		}
+	}
+	planet_modifier = {
+		job_GFnyto_collapse_particle_rar_add = 4
+	}
+	prerequisites = {
+		"tech_GFnyto_tansuo_dc"
+	}
+	upgrades = {
+		building_GFnyto_dimensional_fabricator2
+	}
+	ai_resource_production = {
+		trigger = {
+			always = yes
+		}
+		alloys = 1000
+		minerals = 1000
+	}
+}
+
+building_GFnyto_dimensional_fabricator2_dc = {
+	icon = building_GFnyto_dimensional_fabricator2
+	base_buildtime = @b2_time
+	can_build = no
+	can_demolish = yes
+	category = resource
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @b3_minerals
+			GF_nyto_collapse_liquid = 30
+		}
+		upkeep = {
+			energy = 10
+			GF_nyto_collapse_liquid = 5
+		}
+		upkeep = {
+			trigger = {
+				is_variable_set = GFnyto_plante_wrlv
+				check_variable = {
+					which = GFnyto_plante_wrlv
+					value > 1000
+				}
+				years_passed > 50
+				owner = { is_ai = no }	
+			}
+			energy = 0.1
+			multiplier = planet.GFnyto_plante_wrlv
+		}
+		upkeep = {
+			trigger = {
+				is_variable_set = GFnyto_plante_wrlv
+			}
+			energy = 0.05
+			multiplier = planet.GFnyto_plante_wrlv
+		}
+	}
+	planet_modifier = {
+		job_GFnyto_collapse_particle_rar_add = 6
+	}
+	prerequisites = {
+		"tech_GFnyto_tansuo2_dc"
+	}
+	ai_weight = {
+		base = 999
+		modifier = {
+			subtract = 999
+			owner = {
+				has_monthly_income = {
+					resource = GF_nyto_collapse_liquid
+					value < 100
+				}
+			}
+		}
+	}
+}
+
+#坍缩液实验室
+building_GFnyto_collapse_exploit_plant_1_dc = {
+	icon = building_nyto_collapse_exploit_plant_1
+	base_buildtime = 180
+	category = research
+	planet_modifier = {
+		job_GFnyto_collapse_particle_researcher_add = 2
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 400
+		}
+		upkeep = {
+			energy = 4
+		}
+		upkeep = {
+			trigger = {
+				is_variable_set = GFnyto_plante_wrlv
+				check_variable = {
+					which = GFnyto_plante_wrlv
+					value > 1000
+				}
+				years_passed > 50
+			}
+			energy = 0.1
+			multiplier = planet.GFnyto_plante_wrlv
+		}
+		upkeep = {
+			trigger = {
+				is_variable_set = GFnyto_plante_wrlv
+			}
+			energy = 0.05
+			multiplier = planet.GFnyto_plante_wrlv
+		}
+	}
+	upgrades = {
+		"building_GFnyto_collapse_exploit_plant_2"
+	}
+	prerequisites = {
+		"tech_GF_nyto_collapse_stability_dc"
+	}
+	ai_resource_production = {
+		trigger = {
+			owner = {
+				has_authority = auth_GF_paradeus
+			}
+		}
+		physics_research = 999
+		society_research = 999
+		engineering_research = 999
+	}
+	exempt_from_ai_planet_specialization = yes
+}
+
+building_GFnyto_collapse_exploit_plant_2_dc = {
+	icon = building_nyto_collapse_exploit_plant_2
+	base_buildtime = 360
+	can_build = no
+	category = research
+	allow = {
+		has_upgraded_capital = yes
+	}
+	planet_modifier = {
+		job_GFnyto_collapse_particle_researcher_add = 3
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 600
+		}
+		upkeep = {
+			energy = 6
+		}
+		upkeep = {
+			trigger = {
+				is_variable_set = GFnyto_plante_wrlv
+				check_variable = {
+					which = GFnyto_plante_wrlv
+					value > 1000
+				}
+				years_passed > 50
+			}
+			energy = 0.1
+			multiplier = planet.GFnyto_plante_wrlv
+		}
+		upkeep = {
+			trigger = {
+				is_variable_set = GFnyto_plante_wrlv
+			}
+			energy = 0.05
+			multiplier = planet.GFnyto_plante_wrlv
+		}
+	}
+	prerequisites = {
+		"tech_GF_nyto_collapse_stability_2_dc"
+	}
+	ai_resource_production = {
+		trigger = {
+			owner = {
+				has_authority = auth_GF_paradeus
+			}
+		}
+		physics_research = 999
+		society_research = 999
+		engineering_research = 999
+	}
+}
+
+#诺亚反应堆
+building_GFnyto_class_4_singularity_dc = {
+	icon = building_GFnyto_class_4_singularity
+	base_buildtime = @b2_time
+	can_build = yes
+	can_demolish = yes
+	category = resource
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @b4_minerals
+			alloys = 100
+		}
+		upkeep = {
+			minerals = 50
+			alloys = 10
+			GF_nyto_collapse_liquid = 5
+		}
+		upkeep = {
+			trigger = {
+				is_variable_set = GFnyto_plante_wrlv
+			}
+			energy = 0.1
+		}
+	}
+	planet_modifier = {
+		job_GFnyto_phase_technician_add = 3
+	}
+	prerequisites = {
+		"tech_GF_nyto_collapse_stability_2_dc"
+	}
+	ai_weight = {
+		base = 10
+		modifier = {
+			factor = 10
+			owner = {
+				has_monthly_income = {
+					resource = energy
+					value < 1000
+				}
+			}
+		}
+	}
+}
+
+GF_nyto_holding_sacrificial_shrine = {
+	base_buildtime = 360
+	owner_type = subject_holding
+	icon = building_sacrificial_temple_2
+	base_cap_amount = 1
+
+	resources = {
+		category = planet_holdings
+		cost = {
+			minerals = @b1_minerals
+		}
+		upkeep = {
+			energy = @b1_upkeep
+		}
+	}
+
+	potential = {
+		owner.overlord = { has_civic = civic_Gf_nyto_tanhua_pluse  }
+		owner = { is_machine_empire = no }
+	}
+
+	destroy_trigger = {
+		owner = { is_machine_empire = yes }
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = planet.owner
+			planet.owner = { is_spiritualist = no }
+		}
+		monthly_loyalty = -0.5
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = planet.owner
+		}
+		job_overlord_Epiphyllum_add  = 2
+	}
+}
+
+#反冲式衰变壁垒
+GF_nyto_Recoil_decay_barrier ={
+	base_buildtime = @b3_time
+	can_build = yes
+	can_demolish = yes
+	potential = {
+		owner = {
+			OR = {
+				has_authority = auth_GF_paradeus
+				has_country_flag = has_nyto_technology
+			}		
+		}
+	}
+	category = manufacturing
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 1000
+			alloys = 200
+		}
+		upkeep = {
+			energy = 0.5
+			multiplier = planet.GFnyto_plante_wrlv
+		}
+	}
+}
+
+#

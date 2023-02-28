@@ -1,0 +1,319 @@
+#诺耶露
+ship_design = {
+	name = "design_ship_sfdoll_noel"
+	ship_size = ship_sfdoll_noel
+	section = {
+		template = section_sfdoll_noel
+		slot = "core"
+		component = {
+			slot = "W_LARGE_01"
+			template = PLANET_KILLER_CRACKER
+		}
+		component = {
+			slot = "T_LARGE_01"
+			template = TITAN_LASER
+		}
+		component = {
+			slot = "T_LARGE_02"
+			template = TITAN_LASER
+		}
+		component = {
+			slot = "T_LARGE_03"
+			template = TITAN_LASER
+		}
+		component = {
+			slot = "X_LARGE_01"
+			template = MASS_ACCELERATOR_2
+		}
+		component = {
+			slot = "X_LARGE_02"
+			template = MASS_ACCELERATOR_2
+		}
+		component = {
+			slot = "X_LARGE_03"
+			template = MASS_ACCELERATOR_2
+		}
+		component = {
+			slot = "X_LARGE_04"
+			template = MASS_ACCELERATOR_2
+		}
+		component = {
+			slot = "X_LARGE_05"
+			template = MASS_ACCELERATOR_2
+		}
+		component = {
+			slot = "X_LARGE_06"
+			template = MASS_ACCELERATOR_2
+		}
+		component = {
+			slot = "H_LARGE_01"
+			template = POINT_DEFENCE_3
+		}
+		component = {
+			slot = "H_LARGE_02"
+			template = POINT_DEFENCE_3
+		}
+		component = {
+			slot = "H_LARGE_03"
+			template = POINT_DEFENCE_3
+		}
+		component = {
+			slot = "H_LARGE_04"
+			template = POINT_DEFENCE_3
+		}
+		component = {
+			slot = "H_LARGE_05"
+			template = POINT_DEFENCE_3
+		}
+		component = {
+			slot = "H_LARGE_06"
+			template = POINT_DEFENCE_3
+		}
+
+		component = {
+			slot = "L_LARGE_01"
+			template = LARGE_ED_WEAPON
+		}
+		component = {
+			slot = "L_LARGE_02"
+			template = LARGE_ED_WEAPON
+		}
+		component = {
+			slot = "L_LARGE_03"
+			template = LARGE_ED_WEAPON
+		}
+		component = {
+			slot = "L_LARGE_04"
+			template = LARGE_ED_WEAPON
+		}
+		component = {
+			slot = "L_LARGE_05"
+			template = LARGE_ED_WEAPON
+		}
+		component = {
+			slot = "L_LARGE_06"
+			template = LARGE_ED_WEAPON
+		}
+		component = {
+			slot = "L_LARGE_07"
+			template = KINETIC_ARTILLERY_2
+		}
+		component = {
+			slot = "L_LARGE_08"
+			template = KINETIC_ARTILLERY_2
+		}
+		component = {
+			slot = "L_LARGE_09"
+			template = KINETIC_ARTILLERY_2
+		}
+		component = {
+			slot = "L_LARGE_10"
+			template = KINETIC_ARTILLERY_2
+		}
+		component = {
+			slot = "L_LARGE_11"
+			template = KINETIC_ARTILLERY_2
+		}
+		component = {
+			slot = "L_LARGE_12"
+			template = KINETIC_ARTILLERY_2
+		}
+	}
+	required_component= sfdoll_noel_REACTOR
+	required_component = sfdoll_noel_jump_drive
+	required_component= sfdoll_ship_sensors_noel
+	required_component = thruster_sfdoll_noel
+}
+
+# 星门舰
+ship_design = {
+	name = "design_sfdoll_gateway_ship"
+	ship_size = sfdoll_gateway_ship
+	section = {
+		template = sfdoll_gateway_ship_SECTION
+		slot = "bow"
+	}
+	required_component = sfdoll_jump_drive
+}
+
+#高维科研船
+ship_design = {
+	name = "design_sfdoll_exd_science_ship"
+	ship_size = sfdoll_exd_science_ship
+	section = {
+		template = sfdoll_exd_science_section
+		slot = "mid"
+		component = {
+			slot = "X_01"
+			template = ENERGY_LANCE_2
+		}
+		component = {
+			slot = "X_02"
+			template = MASS_ACCELERATOR_2
+		}
+		component = {
+			slot = "L_01"
+			template = KINETIC_ARTILLERY_2
+		}
+		component = {
+			slot = "L_02"
+			template = KINETIC_ARTILLERY_2
+		}
+		component = {
+			slot = "L_03"
+			template = KINETIC_ARTILLERY_2
+		}
+		component = {
+			slot = "L_04"
+			template = KINETIC_ARTILLERY_2
+		}
+		component = {
+			slot = "L_05"
+			template = KINETIC_ARTILLERY_2
+		}
+		component = {
+			slot = "L_06"
+			template = KINETIC_ARTILLERY_2
+		}
+		component = {
+			slot = "L_07"
+			template = LARGE_ED_WEAPON
+		}
+		component = {
+			slot = "L_08"
+			template = LARGE_ED_WEAPON
+		}
+		component = {
+			slot = "M_01"
+			template = MEDIUM_ED_WEAPON
+		}
+		component = {
+			slot = "M_02"
+			template = MEDIUM_ED_WEAPON
+		}
+		component = {
+			slot = "M_03"
+			template = MEDIUM_ED_WEAPON
+		}
+		component = {
+			slot = "M_04"
+			template = MEDIUM_ED_WEAPON
+		}
+		component = {
+			slot = "M_05"
+			template = MEDIUM_ED_WEAPON
+		}
+		component = {
+			slot = "M_06"
+			template = MEDIUM_ED_WEAPON
+		}
+		component = {
+			slot = "M_07"
+			template = MEDIUM_ED_WEAPON
+		}
+		component = {
+			slot = "M_08"
+			template = MEDIUM_ED_WEAPON
+		}
+
+		component = {
+			slot = "P_01"
+			template = POINT_DEFENCE_3
+		}
+		component = {
+			slot = "P_02"
+			template = POINT_DEFENCE_3
+		}
+		component = {
+			slot = "P_03"
+			template = POINT_DEFENCE_3
+		}
+		component = {
+			slot = "P_04"
+			template = POINT_DEFENCE_3
+		}
+		component = {
+			slot = AUX_UTILITY_1
+			template = AUTO_REPAIR_2
+		}
+		component = {
+			slot = AUX_UTILITY_2
+			template = ENIGMATIC_ENCODER
+		}
+		component = {
+			slot = AUX_UTILITY_3
+			template = ENIGMATIC_DECODER
+		}
+		component = {
+			slot = LARGE_UTILITY_1
+			template = LARGE_DRAGON_ARMOR
+		}
+		component = {
+			slot = LARGE_UTILITY_2
+			template = LARGE_DRAGON_ARMOR
+		}
+		component = {
+			slot = LARGE_UTILITY_3
+			template = LARGE_PSI_SHIELD
+		}
+		component = {
+			slot = LARGE_UTILITY_4
+			template = LARGE_PSI_SHIELD
+		}
+	}
+	required_component= COLOSSUS_DARK_MATTER_REACTOR
+	required_component = PSI_JUMP_DRIVE_1
+	required_component= SENSOR_4
+	required_component = DESTROYER_SHIP_THRUSTER_5
+	required_component = COMBAT_COMPUTER_ARTILLERY_PRECOG
+}
+
+#航道修改信标
+ship_design = {
+	name = "design_sfdoll_change_hyperlane_ship"
+	ship_size = sfdoll_change_hyperlane_ship
+	section = {
+		template = sfdoll_change_hyperlane_section
+		slot = "mid"
+	}
+	required_component= CORVETTE_sfdoll_collapse_REACTOR
+	required_component= sfdoll_jump_drive
+}
+
+#开局家园舰
+ship_design = {
+	name = "design_sfdoll_homeless_ship_game_start"
+	ship_size = sfdoll_homeless_ship
+	section = {
+		template = section_sfdoll_homeless_1
+		slot = "mid"
+		component = {
+			slot = W01
+			template = planet_killer_sfdoll_colonizer
+		}
+		component = {
+			slot = L01
+			template = alloys_sfdoll_homeless
+		}
+		component = {
+			slot = L02
+			template = consumer_goods_sfdoll_homeless
+		}
+		component = {
+			slot = L03
+			template = research_sfdoll_homeless
+		}
+		component = {
+			slot = AUX_UTILITY_1
+			template = sfdoll_homeship_exploit
+		}
+		component = {
+			slot = AUX_UTILITY_2
+			template = sfdoll_homeship_exploit
+		}
+	}
+	required_component= "sfdoll_homeless_ship_reactor"
+	required_component = sfdoll_homeless_ship_thruster_1
+	required_component= HYPER_DRIVE_1
+	required_component = SENSOR_1
+}

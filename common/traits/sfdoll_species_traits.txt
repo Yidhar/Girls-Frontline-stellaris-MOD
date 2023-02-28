@@ -1,0 +1,338 @@
+#人形特质
+trait_gf_sfdoll = {
+	cost = 0
+	initial = no
+	randomized = no
+	species_possible_remove = {
+		always = no
+	}
+	icon = "gfx/interface/icons/traits/sfdoll/trait_gf_sfdoll.dds"
+	immortal_leaders = yes
+	improves_leaders = yes
+	forced_happiness = no
+	advanced_trait = no
+	allowed_archetypes = { SFDOLL  }
+	modifier = {
+		pop_environment_tolerance = 2
+		pop_demotion_time_mult = -1
+		empire_size_pops_mult = -0.1
+		planet_jobs_produces_mult = 0.05
+		army_damage_mult = 0.5
+	}
+}
+
+#OGAS通讯扩展
+trait_sfdoll_ogas_protocol = {
+	cost=  1
+	initial = yes
+	randomized = yes
+	icon = "gfx/interface/icons/traits/sfdoll/trait_sfdoll_ogas_protocol.dds"
+	advanced_trait = no
+	allowed_archetypes = {	SFDOLL	}
+	opposites = {	trait_sfdoll_high_bandwidth	}
+	modifier = {	planet_jobs_unity_produces_mult = 0.10	}	
+}
+
+#先进数据进程工具(烙印技术)advance statistic session tool
+trait_sfdoll_asst = {
+	cost = 2
+	initial = yes
+	randomized = yes
+	icon = "gfx/interface/icons/traits/sfdoll/trait_doll_asst.dds"
+	improves_leaders = no
+	advanced_trait = no
+	allowed_archetypes = {	SFDOLL	}
+	modifier = {
+		planet_jobs_produces_mult = 0.05
+		army_damage_mult = 0.2
+	}
+}
+
+#能源专精
+trait_sfdoll_energy = {
+	cost = 2
+	initial = yes
+	randomized = yes
+	forced_happiness = no
+	advanced_trait = no
+	icon = "gfx/interface/icons/traits/sfdoll/trait_energy_doll.dds"
+	allowed_archetypes = { SFDOLL }
+	modifier = {	planet_jobs_energy_produces_mult = 0.15		}
+}
+
+#轻工业专精
+trait_sfdoll_goods = {
+	cost= 2
+	initial = yes
+	randomized = yes
+	icon = "gfx/interface/icons/traits/sfdoll/trait_sfdoll_goods.dds"
+	advanced_trait = no
+	allowed_archetypes = {	SFDOLL	}
+	modifier = {
+		planet_jobs_consumer_goods_produces_mult = 0.15
+	}
+}
+
+#重工业专精
+trait_sfdoll_alloys = {
+	cost= 2
+	initial = yes
+	randomized = yes
+	icon = "gfx/interface/icons/traits/sfdoll/trait_sfdoll_alloys.dds"
+	advanced_trait = no
+	allowed_archetypes = {	SFDOLL	}
+	modifier = {
+		planet_jobs_alloys_produces_mult = 0.15
+	}
+}
+
+#矿
+trait_sfdoll_mining = {
+	cost = 2
+	initial = yes
+	randomized = yes
+	forced_happiness = no
+	advanced_trait = no
+	icon = "gfx/interface/icons/traits/sfdoll/trait_doll_mining.dds"
+	allowed_archetypes = { SFDOLL }
+	modifier = {	planet_jobs_minerals_produces_mult = 0.15 }
+}
+
+#子机指挥
+trait_sfdoll_ogas_command= {
+	cost= 3
+	initial = no
+	randomized = no
+	icon = "gfx/interface/icons/traits/sfdoll/trait_sfdoll_ogas_command.dds"
+	advanced_trait = no
+	allowed_archetypes = {	SFDOLL	}
+	species_potential_add = {
+		always = no
+	}
+	modifier = {	planet_jobs_worker_produces_mult = 0.20	}
+}
+
+#作战
+trait_sfdaoll_battle = {
+	cost = 1
+	initial = yes
+	randomized = yes
+	icon = "gfx/interface/icons/traits/sfdoll/trait_sfdaoll_battle.dds"
+	advanced_trait = no
+	allowed_archetypes = { 	SFDOLL }
+	modifier = {	army_damage_mult = 0.30	}
+}
+
+trait_sfdoll_logic_engine = {
+	cost = 2
+	initial = yes
+	randomized = yes
+	forced_happiness = no
+	advanced_trait = no
+	icon = "gfx/interface/icons/traits/sfdoll/trait_sfdoll_logic_engine.dds"
+	allowed_archetypes = { SFDOLL }
+	modifier = {
+		planet_jobs_physics_research_produces_mult = 0.2
+		planet_jobs_society_research_produces_mult = 0.2
+		planet_jobs_engineering_research_produces_mult = 0.2
+		species_leader_exp_gain = 0.25
+	}
+}
+
+trait_sfdoll_conservation = {
+	cost= 1
+	initial = yes
+	randomized = yes
+	icon = "gfx/interface/icons/traits/sfdoll/trait_sfdoll_conservation.dds"
+	advanced_trait = no
+	allowed_archetypes = {	SFDOLL	}
+	modifier = {	planet_pops_consumer_goods_upkeep_mult = -0.10	}	
+}
+
+trait_sfdoll_assembly = {
+	cost = 2
+	initial = yes
+	randomized = yes
+	forced_happiness = no
+	advanced_trait = no
+	icon = "gfx/interface/icons/traits/sfdoll/trait_doll_assembly.dds"
+	allowed_archetypes = { SFDOLL }
+	opposites = {	trait_sfdoll_assembly_slowly	}
+	modifier = {	planet_pop_assembly_mult = 0.15	}
+}
+
+#轻量素体
+trait_light_sfdoll = {
+	cost = 1
+	initial = yes
+	randomized = yes
+	icon = "gfx/interface/icons/traits/sfdoll/trait_light_doll.dds"
+	advanced_trait = no
+	opposites = {	trait_heavy_sfdoll	}
+	allowed_archetypes = {	SFDOLL	}
+	modifier = {		pop_housing_usage_mult = -0.10	}
+}
+
+#负面、中性特质
+trait_heavy_sfdoll = {
+	cost = -1
+	initial = yes
+	randomized = yes
+	icon = "gfx/interface/icons/traits/sfdoll/trait_heavy_doll.dds"
+	advanced_trait = no
+	opposites = {	trait_light_sfdoll	}
+	allowed_archetypes = {	SFDOLL	}
+	modifier = {	pop_housing_usage_mult = 0.10	}
+}
+
+trait_sfdoll_energy_upkeep = {
+	cost= -1
+	initial = yes
+	randomized = yes
+	icon = "gfx/interface/icons/traits/sfdoll/trait_sfdoll_energy_upkeep.dds"
+	advanced_trait = no
+	allowed_archetypes = {	SFDOLL	}
+	modifier = {	planet_pops_robotics_energy_upkeep_mult = 0.10	}	
+}
+
+trait_sfdoll_assembly_slowly = {
+	cost = -2
+	initial = yes
+	randomized = yes
+	forced_happiness = no
+	advanced_trait = no
+	opposites = {	trait_sfdoll_assembly	}
+	icon = "gfx/interface/icons/traits/sfdoll/trait_doll_assembly_slowly.dds"
+	allowed_archetypes = {SFDOLL }
+	modifier = {	planet_pop_assembly_mult = -0.15	}
+}
+
+trait_sfdoll_high_bandwidth = {
+	cost= -1
+	initial = yes
+	randomized = yes
+	icon = "gfx/interface/icons/traits/sfdoll/trait_sfdoll_high_bandwidth.dds"
+	advanced_trait = no
+	allowed_archetypes = {	SFDOLL	}
+	modifier = {	planet_jobs_unity_produces_mult = -0.10	}
+}
+
+
+#
+# trait_sfdoll_ogas_ai = {
+# 	cost = 4
+# 	initial = no
+# 	forced_happiness = no
+# 	advanced_trait = no
+# 	immortal_leaders = yes
+# 	icon = "gfx/interface/icons/traits/sfdoll/trait_sfdoll_ogas_ai.dds"
+# 	opposites = {	trait_sfdoll_logic_engine trait_sfdoll_logic_engine_2	}
+# 	allowed_archetypes = { SFDOLL }
+# 	modifier = {
+# 		planet_jobs_physics_research_produces_mult = 0.40
+# 		planet_jobs_society_research_produces_mult = 0.40
+# 		planet_jobs_engineering_research_produces_mult = 0.40
+# 		species_leader_exp_gain = 0.50
+# 		leader_skill_levels = 2
+# 	}
+# }
+# trait_sfdoll_ogas_ai:0 "OGAS心智系统"
+# trait_sfdoll_ogas_ai_desc:0 "OGAS心智系统为这些铁血带来了强大的算力"
+
+#update
+trait_sfdoll_efficient_produce= {
+	cost = 0
+	initial = no
+	randomized = no
+	forced_happiness = no
+	advanced_trait = no
+	immortal_leaders = no
+	icon = "gfx/interface/icons/traits/sfdoll/trait_sfdoll_efficient_produce.dds"
+	allowed_archetypes = { SFDOLL }
+	prerequisites = { tech_sf_doll_modding_2 }
+	modifier = {	planet_jobs_produces_mult = 0.1	}
+}
+
+trait_sfdoll_logic_engine_2 = {
+	cost = 4
+	initial = no
+	forced_happiness = no
+	advanced_trait = no
+	immortal_leaders = no
+	icon = "gfx/interface/icons/traits/sfdoll/trait_sfdoll_logic_engine_2.dds"
+	opposites = {	trait_sfdoll_logic_engine	}
+	allowed_archetypes = { SFDOLL }
+	prerequisites = { tech_sf_doll_modding_2 }
+	modifier = {
+		planet_jobs_physics_research_produces_mult = 0.50
+		planet_jobs_society_research_produces_mult = 0.50
+		planet_jobs_engineering_research_produces_mult = 0.50
+		species_leader_exp_gain = 0.50
+		leader_skill_levels = 2
+	}
+}
+
+#鬼斧神工
+trait_sfdoll_engineer = {
+	cost= 4
+	initial = no
+	randomized = no
+	icon = "gfx/interface/icons/traits/sfdoll/trait_sfdoll_engineer.dds"
+	advanced_trait = no
+	allowed_archetypes = {	SFDOLL	}
+	prerequisites = { tech_sf_doll_modding_2 }
+	modifier = {
+		planet_building_build_speed_mult = 0.5
+		megastructure_build_speed_mult = 0.5
+		country_megastructure_build_cap_add = 2
+		starbase_shipyard_build_speed_mult = 0.5
+	}
+}
+
+#军事科学
+trait_sfdoll_war_2 = {
+	cost= 4
+	initial = no
+	randomized = no
+	icon = "gfx/interface/icons/traits/sfdoll/trait_sfdoll_war_2.dds"
+	advanced_trait = no
+	allowed_archetypes = {	SFDOLL	}
+	prerequisites = { tech_sf_doll_modding_2 }
+	opposites = {	trait_sfdaoll_battle }
+	modifier = {
+		army_damage_mult = 0.5
+		planet_army_build_speed_mult = 0.5
+		ship_weapon_damage = 0.5
+		starbase_shipyard_build_speed_mult = 0.25
+	}
+}
+
+#工业专家
+trait_sfdoll_industry= {
+	cost= 4
+	initial = no
+	randomized = no
+	icon = "gfx/interface/icons/traits/sfdoll/trait_sfdoll_industry.dds"
+	advanced_trait = no
+	allowed_archetypes = {	SFDOLL	}
+	prerequisites = { tech_sf_doll_modding_2 }
+	opposites = {	trait_sfdoll_goods	trait_sfdoll_alloys }
+	modifier = {
+		planet_jobs_consumer_goods_produces_mult = 0.3
+		planet_jobs_alloys_produces_mult = 0.3
+		planet_jobs_sr_dark_matter_produces_mult = 0.3
+		planet_jobs_nanites_produces_mult = 0.3
+		planet_jobs_GF_nyto_collapse_liquid_produces_mult = 0.3
+	}
+}
+
+#纳米铁血
+trait_sfdoll_nanite = {
+	cost= 0
+	initial = no
+	randomized = no
+	icon = "gfx/interface/icons/traits/sfdoll/trait_sfdoll_nanite.dds"
+	advanced_trait = no
+	allowed_archetypes = {	SFDOLL	}
+	prerequisites = {	tech_trait_sfdoll_nanite	}
+}

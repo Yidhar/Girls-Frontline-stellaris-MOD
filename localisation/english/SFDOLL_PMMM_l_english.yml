@@ -1,0 +1,46 @@
+﻿l_english:
+NAME_SHIZUKI_RYOUKO:0 "Shizuki Ryouko"
+sfdoll_pmmm_event.1:0 "Communication with Shizuki Ryouko"
+sfdoll_pmmm_event.1_desc_a:0 "I want to explore unknown places. Perhaps the meeting with you is the result of my wish?"
+sfdoll_pmmm_event.1_desc_b:0 "My hair might look like tentacles, because there are nanites in it."
+sfdoll_pmmm_event.1_desc_c:0 "If I have a chance, I want to go to different colonies."
+sfdoll_pmmm_event.1_desc_d:0 "The starry sky is beautiful."
+
+sfdoll_pmmm_event.1_b:0 "Please assist in the research"
+sfdoll_pmmm_event.1_c:0 "Please serve as admiral"
+sfdoll_pmmm_event.1_d:0 "Please serve as general"
+
+sfdoll_pmmm_event.1_b_response:0 "According to experience, I am good at the perception of gravity and the warping of space."
+sfdoll_pmmm_event.1_c_response:0 "$INTERESTING$"
+sfdoll_pmmm_event.1_d_response:0 "Long lost feeling."
+
+sfdoll_pmmm_event.1_e:0 "Information about Ryouko"
+sfdoll_pmmm_event.2:0 "Information about Ryouko"
+sfdoll_pmmm_event.2_desc:0 "Shizuki Ryouko is a girl from other universes. She can trigger many phenomena that break the laws of physics, which she calls magic. \nHer specialty is that of teleportation by wormhole. Under normal circumstances, she has a maximum range of 200km - enough to get her into low Earth orbit - but as the limiting factor is her ability to warp space, much larger ranges are theoretically possible depending on the situation. A weakness of her teleportation is that she must teleport herself along with the targets. "
+
+leader_trait_sfdoll_shizuki_ryouko_governor:0 "Shizuki Ryouko"
+leader_trait_sfdoll_shizuki_ryouko_governor_desc:0 "Shizuki Ryouko is a girl from other universes. She can trigger many phenomena that break the laws of physics."
+
+leader_trait_sfdoll_shizuki_ryouko_scientist:0 "$leader_trait_sfdoll_shizuki_ryouko_governor$"
+leader_trait_sfdoll_shizuki_ryouko_scientist_desc:0 "$leader_trait_sfdoll_shizuki_ryouko_governor_desc$"
+
+leader_trait_sfdoll_shizuki_ryouko_admiral:0 "$leader_trait_sfdoll_shizuki_ryouko_governor$"
+leader_trait_sfdoll_shizuki_ryouko_admiral_desc:0 "$leader_trait_sfdoll_shizuki_ryouko_governor_desc$"
+
+leader_trait_sfdoll_shizuki_ryouko_general:0 "$leader_trait_sfdoll_shizuki_ryouko_governor$"
+leader_trait_sfdoll_shizuki_ryouko_general_desc:0 "$leader_trait_sfdoll_shizuki_ryouko_governor_desc$"
+
+sfdoll_pmmm_event.3:0 "The person who asked for help"
+sfdoll_pmmm_event.3_desc:0 "SF Dolls' deep space probe has found the traces of aliens. They claim that their spaceship has lost its power and needs our rescue. \nWe captured a wrecked alien ship with only a teenage girl and her AI assistant. The body of the teenager, Shizuki Ryouko, is powered by a perpetual motion machine that requires regular purification, AI said. \nTherefore, according to the information provided by AI, we are going to build a purification device to help her maintain her life."
+
+sfdoll_shizuki_ryouko_project:0 "Research Shizuki Ryouko"
+sfdoll_shizuki_ryouko_project_DESC:0 "$sfdoll_pmmm_event.3_desc$"
+
+sfdoll_pmmm_event.4:0 "Research Shizuki Ryouko"
+sfdoll_pmmm_event.4_desc:0 "With the help of our purification device, Shizuki Ryouko completed self-repair, which seems to break many physical laws. Ryouko claims to be from a galactic civilization with several colonies, but we think that she is probably from another universe. \nShe is willing to cooperate with our research until she finds a way to return."
+
+sfdoll_leader_revive_event.6:0 "Treat Shizuki Ryouko"
+sfdoll_leader_revive_event.6_desc:0 "Shizuki Ryouko was badly hurt. We rescued her soul gem - that is, her energy and memory carrier. After that, we created a new body for her to use."
+
+tech_sfdoll_magic:0 "Class-2 Rule Overwriting Engineering"
+tech_sfdoll_magic_desc:0 "How many times has nature been modified?"

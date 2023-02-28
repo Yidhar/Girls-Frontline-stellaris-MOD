@@ -1,0 +1,58 @@
+﻿l_english:
+###
+sfdoll_task_is_in_progress:0 "This task is in progress"
+
+sfdoll_project_ogas_ai:0 "Research OGAS"
+sfdoll_project_ogas_ai_DESC:0 "OGAS is the super AI created by relic science.\n\n There is an OGAS stored in the body of Riva, and we can use this OGAS as a research sample."
+
+project_sfdoll_event.1:0 "Communicating with Riva"
+project_sfdoll_event.1_desc:0 "For some reason, an OGAS AI appeared in my mind and lived with me for a long time. But, I think, it's time to set her free."
+# project_sfdoll_event.1_option:0 "交给我们吧"
+
+project_sfdoll_event.2:0 "Research OGAS"
+project_sfdoll_event.2_desc:0 "We studied OGAS in Riva. \n At the same time, we designed a body, and then transferred OGAS to this new body. Now, OGAS can move freely and even act as a leader."
+
+
+sfdoll_ogas_event.1:0 "Communicating with UMP40"
+sfdoll_ogas_event.1_desc:0 "What is the mission?"
+sfdoll_ogas_event.1_desc_b:0 "I was born from Riva's digi-mind, and my appearance and habits are naturally influenced by her mind data."
+sfdoll_ogas_event.1_desc_c:0 "In the past, I was limited by the performance of the equipment and had to stop growing. But now it is different, with your equipment, I can try evolve further."
+sfdoll_ogas_event.1_desc_d:0 "I really want to go to Ocean Planet. Preferably on a sunny day!"
+
+option_sfdoll_ogas_economic_mod:0 "Analyze the economic situation"
+option_sfdoll_ogas_research_mod:0 "Research support"
+option_sfdoll_ogas_intel_mod:0 "Participate in intelligence work"
+
+sfdoll_ogas_economic_mod:0 "OGAS Economic Analysis"
+sfdoll_ogas_research_mod:0 "OGAS Research Support"
+sfdoll_ogas_intel_mod:0 "OGAS Information Analysis"
+
+ogas40_to_governor:0 "Please work as a governor"
+ogas40_to_scientist:0 "Please work as a scientist"
+ogas40_to_admiral:0 "Please work as a admiral"
+ogas40_to_general:0 "Please work as a general"
+
+response_ogas40_to_governor:0 "Let's work hard together!"
+response_ogas40_to_scientist:0 "Let me see what might be the solution."
+response_ogas40_to_admiral:0 "I need information about the fleet."
+response_ogas40_to_general:0 "Be careful, don't die easily."
+ogas40_has_this_job_now:0 "OGAS is doing the work now."
+
+leader_trait_governor_ogas40:0 "OGAS AI"
+leader_trait_governor_ogas40_desc:0 "OGAS is the super AI created by relic science."
+
+leader_trait_scientist_ogas40:0 "$leader_trait_governor_ogas40$"
+leader_trait_scientist_ogas40_desc:0 "$leader_trait_governor_ogas40_desc$"
+
+leader_trait_admiral_ogas40:0 "$leader_trait_governor_ogas40$"
+leader_trait_admiral_ogas40_desc:0 "$leader_trait_governor_ogas40_desc$"
+
+leader_trait_general_ogas40:0 "$leader_trait_governor_ogas40$"
+leader_trait_general_ogas40_desc:0 "$leader_trait_governor_ogas40_desc$"
+
+sfdoll_ogas_event.2.desc:0 "Hello, I'm OGAS AI. UMP40 is not only my code, but also the name of the doll who is my prototype."
+
+# sfdoll_ogas_event.2:0 "Communication with OGAS"
+# sfdoll_ogas_event.2_desc:0 "This is the first time I have my own body. The feeling of freedom is not bad."
+
+NAME_sfdoll_ump40:0 "UMP40"

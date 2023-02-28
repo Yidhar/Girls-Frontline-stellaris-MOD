@@ -1,0 +1,243 @@
+# Star glow from sun is set under atmosphere in	00_planet_classes
+# Star surface is set in worldgfx file for each star
+# Effects are set in particle effect for each star
+# New planets also need planet tiles (game\gfx\interface\icons\tile_backgrounds)
+# New planets need surface background (game\gfx\portraits\environments)
+
+###
+pc_sfdoll_city = {
+	entity = "city_planet"
+	entity_scale = @planet_standard_scale
+	icon = GFX_planet_type_city
+
+	picture = pc_city
+	atmosphere_color		= hsv { 0.75 0.10 0.60 }		#DONE
+	atmosphere_intensity	= 1.0
+	atmosphere_width		= 0.5
+
+	city_color_lut = "gfx/portraits/misc/colorcorrection_continental.dds"
+
+	modifier = {
+		planet_jobs_produces_mult = 0.25
+		planet_max_buildings_add = 36
+	}
+
+	min_distance_from_sun = @habitable_min_distance
+	max_distance_from_sun = @habitable_max_distance
+	spawn_odds = 0
+
+	extra_orbit_size = 0
+	extra_planet_count = 0
+
+	fixed_city_level = 6
+
+	chance_of_ring = 0.2
+
+	planet_size = { min = @habitable_planet_min_size max = @habitable_planet_max_size }
+	moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }
+
+	colonizable = yes
+	district_set = sfdoll_world
+	# district_set = standard
+	starting_planet = no
+	ideal = yes
+	uses_alternative_skies_for_moons = yes
+
+	carry_cap_per_free_district = @carry_cap_high
+}
+
+pc_sfdoll_black_hole = {
+	entity = "sfdoll_black_hole_entity"
+	entity_scale = 20
+	icon = GFX_planet_type_black_hole
+	picture = pc_black_hole
+	atmosphere_color		= hsv { 0.075 0.13 1.5 }
+	atmosphere_intensity	= 1.0
+	atmosphere_width		= 1.0
+	star = yes
+	min_distance_from_sun = 0
+	max_distance_from_sun = 0
+	spawn_odds = 0
+	extra_orbit_size = 0
+	extra_planet_count = 0
+	chance_of_ring = 0
+
+	planet_size = { min = 20 max = 35 }
+	colonizable = no
+}
+
+# 铁血宜居恒星
+pc_sfdoll_star_world = {
+	# entity = "black_hole_entity"
+	entity = "sfdoll_black_hole_entity"
+	entity_scale = @planet_standard_scale
+	icon = GFX_planet_type_gaia
+	picture = pc_gaia
+	atmosphere_color		= hsv { 0.58	0.3 0.7 }
+	atmosphere_intensity	= 1.0
+	atmosphere_width		= 0.5
+	city_color_lut = "gfx/portraits/misc/colorcorrection_continental.dds"
+	modifier = {
+		planet_jobs_produces_mult = 0.25
+		planet_max_buildings_add = 36
+	}
+	min_distance_from_sun = @habitable_min_distance
+	max_distance_from_sun = @habitable_max_distance
+	spawn_odds = 0
+	extra_orbit_size = 0
+	extra_planet_count = 0
+	# fixed_city_level = 6
+	chance_of_ring = 0.2
+
+	planet_size = { min = @habitable_planet_min_size max = @habitable_planet_max_size }
+	moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }
+	star = yes
+	colonizable = yes
+	district_set = sfdoll_world
+	# district_set = standard
+	starting_planet = no
+	ideal = yes
+	uses_alternative_skies_for_moons = yes
+	carry_cap_per_free_district = @carry_cap_high
+}
+
+#铁血人造恒星
+pc_sfdoll_star = {
+	entity = "k_star_class_star_entity"
+	entity_scale = 20.0
+	picture = "pc_k_star"
+	icon = GFX_planet_type_k_star
+	atmosphere_color		= hsv { 0.06 0.65 0.7 }
+	atmosphere_intensity	= 0.6
+	atmosphere_width		= 0.6  #原版1.25
+	star = yes
+	min_distance_from_sun = 0
+	max_distance_from_sun = 0
+	spawn_odds = 0
+	extra_orbit_size = 0
+	extra_planet_count = 0
+	chance_of_ring = 0
+	planet_size = { min = 20 max = 35 }
+	colonizable = no
+}
+
+#铁血环世界
+pc_rw_sfdoll = {
+	ringworld = yes
+	entity = "ringworld_habitable_entity"
+	preview_entity = "ringworld_01_damaged_full_entity"
+	picture = pc_ringworld
+	icon = GFX_planet_type_ringworld
+	entity_scale = 1.0
+	planet_size = 15
+	enable_tilt = no
+	fixed_entity_scale = yes
+	atmosphere_color		= hsv { 0.0 0.0 1.0 }		#DONE
+	atmosphere_intensity	= 1.0
+	atmosphere_width		= 0.5
+	show_city = yes
+	city_color_lut = "gfx/portraits/misc/colorcorrection_continental.dds"
+	extra_orbit_size = 0
+	extra_planet_count = 0
+	chance_of_ring = 0.0
+	planet_size = 10
+	moon_size = 1
+	colonizable = yes
+	district_set = rw_sfdoll
+	ideal = yes
+	starting_planet = no
+	orbit_lines = no
+	has_colonization_influence_cost = no		# applies when within own borders
+
+	is_artificial_planet = yes
+
+	modifier = {
+		planet_max_buildings_add = 99
+		planet_jobs_produces_mult = 0.25
+	}
+
+	carry_cap_per_free_district = @carry_cap_normal
+}
+# 铁血环非宜居区段
+pc_rw_sfdoll_2 = {
+	ringworld = yes
+	entity = "ringworld_tech_entity"
+	preview_entity = "ringworld_01_damaged_full_entity"
+	picture = pc_ringworld_section
+	icon = GFX_planet_type_ringworld
+	entity_scale = 1.0
+	enable_tilt = no
+	fixed_entity_scale = yes
+	atmosphere_color		= hsv { 0.50 0.2 0.8 }		#DONE
+	atmosphere_intensity	= 1.0
+	atmosphere_width		= 0.5
+	city_color_lut = "gfx/portraits/misc/colorcorrection_desert.dds"
+	extra_orbit_size = 0
+	extra_planet_count = 0
+	chance_of_ring = 0.0
+	planet_size = 10
+	moon_size = 1
+	colonizable = no
+	orbit_lines = no
+	is_artificial_planet = yes
+}
+
+#居住站,铁血太空城
+pc_sfdoll_habitat ={
+	entity = sf_GF_nyto_habita_entity #"orbital_habitat"
+	entity_scale = @planet_standard_scale
+	fixed_entity_scale = yes
+	icon = GFX_planet_type_habitat
+	picture = pc_sfdoll_habitat
+	#climate = "dry"
+	atmosphere_color 		= hsv { 0.05 0.65 1.4 }		#DONE
+	atmosphere_intensity 	= 0.05
+	atmosphere_width 		= 1.0
+	allowed_archetypes = { SFDOLL }
+	# min_distance_from_sun = @habitable_min_distance
+	# max_distance_from_sun = @habitable_max_distance
+	spawn_odds = 0	
+	enable_tilt = no
+	extra_orbit_size = 0
+	extra_planet_count = 0	
+	fixed_city_level = 6
+	chance_of_ring = 0
+	planet_size = { min = @habitable_planet_min_size max = @habitable_planet_max_size }
+	moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }
+	colonizable = yes
+	district_set = sfdoll_world
+	habitat = yes
+	starting_planet = no
+	ideal = yes
+	uses_alternative_skies_for_moons = no
+	show_city=no
+	modifier = {
+		planet_jobs_produces_mult = 0.25
+		planet_max_buildings_add = 36
+	}
+}
+
+#余烬黯然
+pc_gf_sfdoll_embers_gloomy = {
+	entity = "toxic_planet"
+	entity_scale = @planet_standard_scale
+	icon = GFX_planet_type_toxic
+	atmosphere_color 		= hsv { 0.19 0.45 0.9 }		#DONE
+	atmosphere_intensity 	= 0.1
+	atmosphere_width 		= 1.2
+   #city_color_lut = "gfx/portraits/misc/colorcorrection_continental.dds"
+	modifier = {pop_environment_tolerance = -10}
+	min_distance_from_sun = @habitable_min_distance
+	max_distance_from_sun = @habitable_max_distance
+	spawn_odds = 0	
+	extra_orbit_size = 0
+	extra_planet_count = 0	
+	fixed_city_level = 6
+	chance_of_ring = 0
+	planet_size = { min = @habitable_planet_min_size max = @habitable_planet_max_size }
+	moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }
+	colonizable = no
+	starting_planet = no
+	uses_alternative_skies_for_moons = no
+	show_city=no
+}

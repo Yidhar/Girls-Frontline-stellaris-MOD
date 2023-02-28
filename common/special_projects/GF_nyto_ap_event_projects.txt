@@ -1,0 +1,147 @@
+#数据挖掘  [探测器]
+special_project = {
+	key = "GF_NYTO_RE_perk"
+	event_chain = "GFnyto_data_mining_chain"
+	cost  = 100000
+	tech_department = physics_technology
+	picture = GFX_evt_nyto_unknown_civilization_202055_1_1
+	event_scope = country_event
+	on_success = {
+		country_event = {id = GFnyto_ascension_perk.10}
+		country_event = {
+			id = GFnyto_ascension_perk.4
+			days = 100
+		}
+	}
+	on_fail = {}
+}
+#神秘来客  [调查船] 
+special_project = {
+	key = "GF_NYTO_RE_perk.2"
+	event_chain = "GFnyto_data_mining_chain"
+	event_scope = country_event
+	cost  = 100000
+	tech_department = physics_technology
+	picture = GFX_evt_nyto_unknown_civilization_202055
+	on_success = { 
+		country_event = {
+		id = GFnyto_ascension_perk.5
+		}
+	}
+}
+#舰船现实投影
+special_project = {
+	key = "GF_NYTO_RE_perk.3"
+	event_chain = "GFnyto_data_mining_chain"
+	event_scope = country_event
+	cost = 100000
+	tech_department = society_technology
+	tech_department = physics_technology
+	on_success = {
+		country_event = {
+			id = GFnyto_ascension_perk.6
+		}
+	 }
+}
+
+#舰船设备逆向
+special_project = {
+	key = "GF_NYTO_RE_perk.4"
+	event_chain = "GFnyto_data_mining_chain"
+	event_scope = country_event
+	cost = 200000
+	tech_department = society_technology
+	tech_department = physics_technology
+	on_success = { 
+		country_event = {
+			id = GFnyto_ascension_perk.7
+		}
+	}
+}
+
+#亚光速
+special_project = {
+	key = "GF_NYTO_RE_perk.5"
+	event_chain = "GFnyto_data_mining_chain"
+	event_scope = country_event
+	days_to_research = 720
+	on_success = { 
+		set_country_flag = has_nyto_Prp_flag
+		country_event = {
+			id = GFnyto_ascension_perk.8
+		}
+		give_technology = {
+			tech = tech_GF_nyto_light_thruster
+		}
+		enable_special_project = {
+			name = GF_NYTO_RE_perk.6
+		}
+	}
+}
+# [ftl]
+special_project = {
+	key = "GF_NYTO_RE_perk.6"
+	event_chain = "GFnyto_data_mining_chain"
+	event_scope = country_event
+	days_to_research = 720
+	on_success = { 
+		set_country_flag = has_nyto_ftl_flag
+		country_event = {
+			id = GFnyto_ascension_perk.8
+		}
+		give_technology = {
+			tech = tech_GF_nyto_Beacon
+		}
+		enable_special_project = {
+			name = GF_NYTO_RE_perk.7
+		}
+	}
+	
+}
+
+#能源核心
+special_project = {
+	key = "GF_NYTO_RE_perk.7"
+	event_chain = "GFnyto_data_mining_chain"
+	event_scope = country_event
+	days_to_research = 720
+	on_success = { 
+		set_country_flag = has_nyto_Ex_shield_flag
+		country_event = {
+			id = GFnyto_ascension_perk.8
+		}
+		give_technology = {
+			tech = tech_GF_nyto_godenergy
+		}
+		enable_special_project = {
+			name = GF_NYTO_RE_perk.8
+		}
+	}
+}
+#电脑
+special_project = {
+	key = "GF_NYTO_RE_perk.8"
+	event_chain = "GFnyto_data_mining_chain"
+	event_scope = country_event
+	days_to_research = 720
+	on_success = { 
+		set_country_flag = has_nyto_ai_flag
+		country_event = {
+			id = GFnyto_ascension_perk.8
+		}
+		give_technology = {
+			tech = tech_GF_nyto_bright_poetry
+		}
+	}
+}
+#建立锡安
+special_project = {
+	key = "GF_NYTO_RE_perk.10"
+	event_scope = country_event
+	days_to_research = 720
+	on_success = { 
+		country_event = {
+			id = GFnyto_ascension_perk.668
+		}
+	}
+}

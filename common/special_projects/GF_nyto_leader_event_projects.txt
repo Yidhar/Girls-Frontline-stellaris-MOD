@@ -1,0 +1,16 @@
+#特殊项目,人造神明
+special_project = {
+	key = "GFnyto_god_created_by_us"
+	cost = 1000
+	tech_department = physics_technology
+	picture = GFX_evt_GFnyto_god_created_by_us_project
+	icon = "gfx/interface/icons/situation_log/situation_log_engineering.dds"
+	event_scope = country_event
+	on_success = {
+		country_event = {
+			id = GFnyto_leader.1
+		}
+	}
+	on_fail = {
+	}
+}

@@ -1,0 +1,23 @@
+	#AI加强
+tech_GF_nyto_super_ai_o= {
+	icon = tech_GF_nyto_robomodding_points_1
+	cost = 0
+	area = engineering
+	tier = 1
+	start_tech = yes
+	category = { industry }
+	#	prerequisites = { "tech_powered_exoskeletons" }
+	#	weight = 5
+	#	modifier = {NYTO_species_trait_points_add = 2}
+	potential = {
+		has_authority = auth_GF_paradeus
+		is_ai = yes
+	}
+	prereqfor_desc = {
+		custom = {
+			title = "AI加强"
+			desc = "使AI帕拉蒂斯遗迹进展更快。"
+		}
+	}
+	ai_weight = {weight = 999}
+}

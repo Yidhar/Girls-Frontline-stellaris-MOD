@@ -1,0 +1,11 @@
+entity = {
+	name = "nova_ring_entity"
+	pdxmesh = "nova_ring_mesh"
+	default_state = "idle"
+	state = { name = "idle" animation = "idle1" animation_blend_time = 2 chance = 9.0 looping = no next_state = "idle" }
+}
+
+animation = {
+	name = "nova_ring_idle1_animation"
+	file = "nova_ring_idle1.anim"
+}

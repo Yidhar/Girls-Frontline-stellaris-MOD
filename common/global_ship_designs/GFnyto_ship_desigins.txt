@@ -1,0 +1,219 @@
+ship_design = {
+	name = "GF_Nyto_mather_ship"
+	ship_size = GFnyto_mather_ship
+	section = {
+
+		template = "GFnyto_mather_ship_core"
+		slot = "core"
+		component = {
+			slot = "T_LARGE_01"
+			template = GF_Nyto_T_weapon2
+		}
+		component = {
+			slot = "T_LARGE_02"
+			template = GF_Nyto_T_weapon2
+		}
+		component = {
+			slot = "T_LARGE_03"
+			template = GF_Nyto_T_weapon1
+		}
+		component = {
+			slot = "T_LARGE_04"
+			template = GF_Nyto_T_weapon1
+		}
+		component = {
+			slot = "W_LARGE_01"
+			template = tech_GFnyto_accelerating_coil3
+		}
+		component = {
+			slot = "X_LARGE_01"
+			template = GF_Nyto_x_weapon1
+		}
+		component = {
+			slot = "X_LARGE_02"
+			template = GF_Nyto_x_weapon1
+		}
+		component = {
+			slot = "X_LARGE_03"
+			template = GF_Nyto_x_weapon1
+		}
+		component = {
+			slot = "X_LARGE_04"
+			template = GF_Nyto_x_weapon1
+		}
+		component = {
+			slot = "X_LARGE_05"
+			template = GF_Nyto_x_weapon1
+		}
+		component = {
+			slot = "X_LARGE_06"
+			template = GF_Nyto_x_weapon2
+		}
+		component = {
+			slot = "X_LARGE_07"
+			template = GF_Nyto_x_weapon2
+		}
+		component = {
+			slot = "X_LARGE_08"
+			template = GF_Nyto_x_weapon2
+		}
+		component = {
+			slot = "X_LARGE_09"
+			template = GF_Nyto_x_weapon2
+		}
+		component = {
+			slot = "X_LARGE_10"
+			template = GF_Nyto_x_weapon2
+		}
+		component = {
+			slot = "X_LARGE_11"
+			template = GF_Nyto_x_weapon2
+		}
+		component = {
+			slot = "X_LARGE_12"
+			template = GF_Nyto_x_weapon2
+		}
+		component = {
+			slot = "X_LARGE_13"
+			template = GF_Nyto_x_weapon2
+		}
+		component = {
+			slot = "H_LARGE_01"
+			template = GF_Nyto_h_weapon1
+		}
+		component = {
+			slot = "H_LARGE_02"
+			template = GF_Nyto_h_weapon1
+		}
+		component = {
+			slot = "H_LARGE_03"
+			template = GF_Nyto_h_weapon1
+		}
+		component = {
+			slot = "H_LARGE_04"
+			template = GF_Nyto_h_weapon1
+		}
+		component = {
+			slot = "H_LARGE_05"
+			template = GF_Nyto_h_weapon1
+		}
+		component = {
+			slot = "H_LARGE_06"
+			template = GF_Nyto_h_weapon1
+		}
+		component = {
+			slot = "H_LARGE_07"
+			template = tech_GFnyto_accelerating_coil1
+		}
+		component = {
+			slot = "H_LARGE_08"
+			template = tech_GFnyto_accelerating_coil1
+		}
+		component = {
+			slot = "H_LARGE_09"
+			template = tech_GFnyto_accelerating_coil1
+		}
+		component = {
+			slot = "H_LARGE_10"
+			template = tech_GFnyto_accelerating_coil1
+		}
+		component = {
+			slot = "L_LARGE_01"
+			template = GF_Nyto_l_weapon1
+		}
+		component = {
+			slot = "L_LARGE_02"
+			template = GF_Nyto_l_weapon1
+		}
+		component = {
+			slot = "L_LARGE_03"
+			template = GF_Nyto_l_weapon1
+		}
+		component = {
+			slot = "L_LARGE_04"
+			template = GF_Nyto_l_weapon1
+		}
+		component = {
+			slot = "L_LARGE_05"
+			template = GF_Nyto_l_weapon1
+		}
+		component = {
+			slot = "L_LARGE_06"
+			template = GF_Nyto_l_weapon1
+		}
+		component = {
+			slot = "L_LARGE_07"
+			template = GF_Nyto_l_weapon1
+		}
+		component = {
+			slot = "L_LARGE_08"
+			template = GF_Nyto_l_weapon1
+		}
+		component = {
+			slot = "L_LARGE_09"
+			template = GF_Nyto_l_weapon1
+		}
+		component = {
+			slot = "L_LARGE_10"
+			template = GF_Nyto_l_weapon1
+		}
+		component = {
+			slot = "L_LARGE_11"
+			template = GF_Nyto_l_weapon1
+		}
+		component = {
+			slot = "L_LARGE_12"
+			template = GF_Nyto_l_weapon1
+		}
+		component = {
+			slot = "L_LARGE_13"
+			template = GF_Nyto_l_weapon1
+		}
+		component = {
+			slot = "L_LARGE_14"
+			template = GF_Nyto_l_weapon1
+		}
+		component = {
+			slot = "L_LARGE_15"
+			template = GF_Nyto_l_weapon1
+		}
+		component = {
+			slot = "L_LARGE_16"
+			template = GF_Nyto_l_weapon1
+		}
+		component = {
+			slot = "L_LARGE_17"
+			template = GF_Nyto_l_weapon2
+		}
+		component = {
+			slot = "L_LARGE_18"
+			template = GF_Nyto_l_weapon2
+		}
+		component = {
+			slot = "L_LARGE_19"
+			template = GF_Nyto_l_weapon2
+		}
+		component = {
+			slot = "L_LARGE_20"
+			template = GF_Nyto_l_weapon2
+		}
+	}
+	
+	required_component = GF_nyto_godenergy
+	required_component = GF_nyto_Beacon
+	required_component = utility_GF_nyto_Deep_space
+	required_component = bright_poetry_template
+	required_component = light_thruster
+}
+# ship_design = {
+# 	name = "花之锁"
+# 	ship_size = GFnyto_flags
+# 	section = {
+# 		template = GFnyto_flag_ship_core
+# 		slot = core
+# 		component = {
+# 			slot = EXTRA_LARGE_01
+# 			template = GF_Nyto_p_weapon3
+# 		}
+# 	}
+# }

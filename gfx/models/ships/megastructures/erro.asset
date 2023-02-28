@@ -1,0 +1,276 @@
+# 待机
+entity = {
+	name = "error_entity"
+	scale = 2
+	default_state = idle 
+	locator ={
+		name = entity2
+		position ={
+			0 650 0
+		}
+	}
+	locator ={
+		name = entity3
+		position = {
+			0 450 0
+		}
+		rotation = {
+			0 -90 0
+		}
+	}
+	locator = {
+		name = entity4
+		position = {
+			0 400 0
+		}
+		rotation = {
+			0 -180 0
+		}
+	}
+	attach = {
+		entity2 = error_entity2	
+	}
+	attach = {
+		entity3 = weapons_entity
+	}
+	attach = {
+		entity4 = error_entity2
+	}
+}
+
+# 开火
+entity = {
+	name = "error_entity_fire"
+	scale = 2
+	default_state = idle 
+	locator = {
+		name = partice1
+		position = {
+			0 10 0
+		}
+	}
+	locator ={
+		name = entity2
+		position ={
+			0 650 0
+		}
+	}
+	locator ={
+		name = entity3
+		position = {
+			0 450 0
+		}
+		rotation = {
+			0 -90 0
+		}
+	}
+	locator = {
+		name = entity4
+		position = {
+			0 400 0
+		}
+		rotation = {
+			0 -180 0
+		}
+	}
+	state = {
+		name = idle 
+		start_event = {
+			node = "partice1" particle = weapon_beacon_fire_effect keep_particle = yes trigger_once = yes sound = { soundeffect = titan_laser_fire_01 }
+		}
+		# start_event = {
+		# 	node = "partice1" particle = GFnyto_neutron_planet_laser_hit_effect keep_particle = yes trigger_once = yes sound = { soundeffect = titan_laser_fire_01 }
+		# }
+	}
+	attach = {
+		entity2 = error_entity2	
+	}
+	attach = {
+		entity3 = weapons_entity
+	}
+	attach = {
+		entity4 = error_entity2
+	}
+	attach = {
+		partice1 = GF_star_eater_muzzle_windup_entity
+	}
+}
+
+
+entity = {
+	name =  "error_entity2"
+	pdxmesh = nemesis_01_colossus_mesh
+	scale = 1.3
+	default_state = idle
+	state = {
+		name = idle animation = open looping = yes	
+		event = { trigger_once = yes sound = { soundeffect = "sfx_nemesis_colossus_opening" stop_on_state_change = yes } }
+	
+		event = { time = 1000 id = "beam_start" } #will never fire, but lets the game know that an event with this ID exists
+	
+		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "light_locator_015" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "light_locator_016" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "light_locator_017" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "light_locator_017" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "light_locator_019" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "light_locator_020" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "light_locator_06" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		
+		event = { time = 0 node = "root" particle = "nemesis_colossus_core_lightning_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 3 node = "L_effect_5" particle = "nemesis_colossus_side_lightning_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 3 node = "R_effect_5" particle = "nemesis_colossus_side_lightning_effect" keep_particle = yes trigger_once = yes }
+	
+		event = { time = 6 node = "L_effect_4" particle = "nemesis_colossus_side_lightning_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 6 node = "R_effect_4" particle = "nemesis_colossus_side_lightning_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 9 node = "L_effect_3" particle = "nemesis_colossus_side_lightning_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 9 node = "R_effect_3" particle = "nemesis_colossus_side_lightning_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 12.5 node = "L_effect_2" particle = "nemesis_colossus_side_lightning_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 12.5 node = "R_effect_2" particle = "nemesis_colossus_side_lightning_effect" keep_particle = yes trigger_once = yes }
+
+		event = { time = 17 node = "L_effect_1" particle = "nemesis_colossus_side_lightning_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 17 node = "R_effect_1" particle = "nemesis_colossus_side_lightning_effect" keep_particle = yes trigger_once = yes }
+		
+	}
+}
+
+entity = {
+	name =  "error_entity3"
+	pdxmesh = nemesis_01_colossus_mesh
+	scale = 3
+	default_state = idle
+	state = {
+		name = idle animation = open looping = yes	
+		event = { trigger_once = yes sound = { soundeffect = "sfx_nemesis_colossus_opening" stop_on_state_change = yes } }
+	
+		event = { time = 1000 id = "beam_start" } #will never fire, but lets the game know that an event with this ID exists
+	
+		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "light_locator_015" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "light_locator_016" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "light_locator_017" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "light_locator_017" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "light_locator_019" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "light_locator_020" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "light_locator_06" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		
+		event = { time = 0 node = "root" particle = "nemesis_colossus_core_lightning_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 3 node = "L_effect_5" particle = "nemesis_colossus_side_lightning_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 3 node = "R_effect_5" particle = "nemesis_colossus_side_lightning_effect" keep_particle = yes trigger_once = yes }
+	
+		event = { time = 6 node = "L_effect_4" particle = "nemesis_colossus_side_lightning_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 6 node = "R_effect_4" particle = "nemesis_colossus_side_lightning_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 9 node = "L_effect_3" particle = "nemesis_colossus_side_lightning_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 9 node = "R_effect_3" particle = "nemesis_colossus_side_lightning_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 12.5 node = "L_effect_2" particle = "nemesis_colossus_side_lightning_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 12.5 node = "R_effect_2" particle = "nemesis_colossus_side_lightning_effect" keep_particle = yes trigger_once = yes }
+
+		event = { time = 17 node = "L_effect_1" particle = "nemesis_colossus_side_lightning_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 17 node = "R_effect_1" particle = "nemesis_colossus_side_lightning_effect" keep_particle = yes trigger_once = yes }
+		
+	}
+}
+
+
+
+entity = {
+	name = "error_story_entity"
+	locator = { name = "core" position = { 0 -5 0 }}
+	scale = 5
+
+	default_state = "idle"
+	state = { name = "idle" 		state_time = 5
+		event = { time = 0 node = "core" particle = "psi_storm_1_effect" keep_particle = yes trigger_once = yes }
+		start_event = { 
+			trigger_once = yes 
+			sound = { soundeffect = "sfx_amb_psi_storm_1" } 
+            }
+        }
+	
+	attach = { core = "psi_storm_core_entity" }
+
+	cull_radius = 20000
+}
+
+
+#偏移用点位
+entity = {
+	name = "ps_en_1"
+	locator = {
+		name = entity_1
+		position = {
+			0 0 -100
+		}
+		rotation = {
+			0 -90 0
+		}
+	}
+	attach = {
+		entity_1 = error_entity
+	}
+}
+
+entity = {
+	name = "ps_en_2"
+	locator = {
+		name = entity_1
+		position = {
+			0 0 -100
+		}
+		rotation = {
+			0 -90 0
+		}
+	}
+	attach = {
+		entity_1 = error_entity_fire
+	}
+}
+
+entity = {
+	name = testpop_entity
+	scale = 100
+	locator = {
+		name = entity_1
+		position = {
+			0 0 -100
+		}
+		rotation = {
+			0 -90 0
+		}
+	}
+	default_state = idle
+	state = {  name = idle next_state = idle2
+		event = {
+			time = 0 node = "entity_1" particle = testpop_particle keep_particle = yes 
+		}
+	}
+	state = { name = idle2 next_state = idle
+		event = {
+			time = 0 node = "entity_1" particle = testpop_particle keep_particle = yes 
+		}
+	}
+}
+entity = {
+	name = testpop_entity2
+	scale = 100
+	locator = {
+		name = entity_1
+		position = {
+			0 0 -100
+		}
+		rotation = {
+			0 -90 0
+		}
+	}
+	default_state = idle
+	state = {  name = idle looping = yes
+		event = {
+			time = 0 node = "root" particle = testpop_particle keep_particle = yes 
+		}
+	}
+}
+
+#空模型
+entity = {
+	name =  GF_null_entity
+}

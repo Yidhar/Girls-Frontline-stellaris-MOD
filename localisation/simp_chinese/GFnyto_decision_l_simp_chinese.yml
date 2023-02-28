@@ -1,0 +1,50 @@
+﻿l_simp_chinese:
+decision_pc_GF_nyto_embers_gloomy_project:0 "春天唤醒"
+decision_pc_GF_nyto_embers_gloomy_project_effects:1 "建造一个包裹着§Y余烬黯然星球§!的坍缩堆框架。每次升级坍缩堆都可以增加行星规模,以及一次选择新类型区划的机会。"
+decision_pc_GF_nyto_embers_gloomy_project_effects_short:2 "建造一个包裹着§Y余烬黯然星球§!的坍缩堆框架。每次升级坍缩堆都可以增加行星规模,以及一次选择新类型区划的机会。"
+decision_pc_GF_nyto_embers_gloomy_project_requirements:0 "需要先将行星环境改造为§Y余烬黯然星球§!,之后才能使用这个行星决议。"
+decision_pc_GF_nyto_embers_gloomy_project_desc:1 "笼罩在行星上的巨型空间站将整个行星变为坍缩反应堆。"
+
+decision_pc_GF_nyto_devil_furnace_project:0 "征服地狱"
+decision_pc_GF_nyto_devil_furnace_project_effects:1 "建造一个包裹着§Y恶魔熔炉星球§!的坍缩堆框架。每次升级坍缩堆都可以增加行星规模,以及一次选择新类型区划的机会。"
+decision_pc_GF_nyto_devil_furnace_project_effects_short:2 "建造一个包裹着§Y恶魔熔炉星球§!的坍缩堆框架。每次升级坍缩堆都可以增加行星规模,以及一次选择新类型区划的机会。"
+decision_pc_GF_nyto_devil_furnace_project_requirements:0 "需要先将行星环境改造为§Y恶魔熔炉星球§!,之后才能使用这个行星决议。"
+decision_pc_GF_nyto_devil_furnace_project_desc:1 "笼罩在行星上的巨型空间站将整个行星变为坍缩反应堆。"
+
+decision_GFnyto_planetary_defense:0 "行星防御"
+decision_GFnyto_planetary_defense_effects:1 "为行星添加行星轨道防御系统和行星地表防御系统。"
+decision_GFnyto_planetary_defense_effects_short:2 "为行星添加行星轨道防御系统和行星地表防御系统。"
+decision_GFnyto_planetary_defense_desc:1 "停留在这个星球轨道上的敌方舰队会不断受到伤害。"
+
+decision_GFnyto_enact_population_control:0 "停止人口增长"
+decision_GFnyto_enact_population_control_effects:1 "停止人口增长,同时产生战略资源§Y暗星内核§! £GF_nyto_dark_star_core£"
+decision_GFnyto_enact_population_control_effects_short:2 "停止人口增长,同时产生战略资源§Y暗星内核§! £GF_nyto_dark_star_core£"
+decision_GFnyto_enact_population_control_desc:0 "新的涅托心智不会载入到机体里,而是存储到暗星内核中。"
+
+decision_GFnyto_end_population_control:0 "继续人口增长"
+decision_GFnyto_end_population_control_effects:1 "继续人口增长,不再产生战略资源§Y暗星内核§! £GF_nyto_dark_star_core£"
+decision_GFnyto_end_population_control_effects_short:2 "继续人口增长,不再产生战略资源§Y暗星内核§! £GF_nyto_dark_star_core£"
+decision_GFnyto_end_population_control_desc:0 "继续涅托人口增长,不再产生战略资源§Y暗星内核§! £GF_nyto_dark_star_core£"
+
+decision_GFnyto_pop_load:0 "心智载入"
+decision_GFnyto_pop_load_desc:1 "将库存的涅托心智载入到机体中"
+
+decision_GFnyto_boom:0 "坍缩堆过载"
+decision_GFnyto_boom_effects:1 "360天后该恒星系及范围内的巨构建筑、舰队§R毁灭§!"
+decision_GFnyto_boom_effects_short:2 "360天后该恒星系及范围内的巨构建筑、舰队§R毁灭§!"
+decision_GFnyto_boom_desc:1 "过载坍缩反应堆来炸毁这个恒星系。"
+
+decision_GFnyto_boom_effect:0 "§R摧毁这个星系内所有恒星、舰队、巨构建筑§!"
+decision_GFnyto_pop_load_effect:0 "为该星球增加10个涅托人口"
+
+ decision_GFnyto_yaosai:0 "要塞化计划"
+ decision_GFnyto_yaosai_desc:0 "打造一个永恒钢铁要塞星球"
+decision_GFnyto_yaosai_desc1:0 "通过决议将允许建造永固要塞,将我们的城市打造成钢铁要塞"
+
+decision_GFnyto_EILD_hunting:0 "EILD狩猎"
+decision_GFnyto_EILD_hunting_desc:0 "一味的防守终究不是好方法,我们将重拳出击。主动进攻"
+
+decision_GFnyto_autopops:0 "定向人口迁徙:接收"
+decision_GFnyto_autopops_desc:0 "接收从其他星球迁移而来的人口"
+decision_GFnyto_autopops_2:0 "定向人口迁徙:输送"
+decision_GFnyto_autopops_2_desc:0 "放弃该殖民地转移全部人口"

@@ -1,0 +1,1696 @@
+namespace = GFnyto_global
+#领袖招募1
+country_event = {
+	id = GFnyto_global.10
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		from = {
+			species = {
+				has_trait = trait_GF_nyto_ogas_agreement
+			}
+		}
+	}
+	immediate = {
+		from = {
+			if = {
+				limit = {
+					leader_class = admiral
+				}
+				add_trait = leader_admiral_trait_GF_nyto_ogas_agreement
+				add_ruler_trait = leader_trait_GF_nyto_ogas_agreement
+				break = yes
+			}
+			if = {
+				limit = {
+					leader_class = general
+				}
+				add_trait = leader_general_trait_GF_nyto_ogas_agreement
+				add_ruler_trait = leader_trait_GF_nyto_ogas_agreement
+				break = yes
+			}
+			if = {
+				limit = {
+					leader_class = governor
+				}
+				add_trait = leader_governor_trait_GF_nyto_ogas_agreement
+				add_ruler_trait = leader_trait_GF_nyto_ogas_agreement
+				break = yes
+			}
+			if = {
+				limit = {
+					leader_class = scientist
+				}
+				add_trait = leader_scientist_trait_GF_nyto_ogas_agreement
+				add_ruler_trait = leader_trait_GF_nyto_ogas_agreement
+				break = yes
+			}
+			if = {
+				limit = {
+					leader_class = ruler
+				}
+				add_trait = leader_trait_GF_nyto_ogas_agreement
+				add_ruler_trait = leader_trait_GF_nyto_ogas_agreement
+				break = yes
+			}
+		}
+	}
+}
+
+#领袖招募1
+country_event = {
+	id = GFnyto_global.11
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		from = {
+			species = {
+				has_trait = trait_GF_nyto_ogas_agreement_plus
+			}
+		}
+	}
+	immediate = {
+		from = {
+			if = {
+				limit = {
+					leader_class = admiral
+				}
+				add_trait = leader_admiral_trait_GF_nyto_ogas_agreement_plus
+				add_ruler_trait = leader_trait_GF_nyto_ogas_agreement_plus
+				break = yes
+			}
+			if = {
+				limit = {
+					leader_class = general
+				}
+				add_trait = leader_general_trait_GF_nyto_ogas_agreement_plus
+				add_ruler_trait = leader_trait_GF_nyto_ogas_agreement_plus
+				break = yes
+			}
+			if = {
+				limit = {
+					leader_class = governor
+				}
+				add_trait = leader_governor_trait_GF_nyto_ogas_agreement_plus
+				add_ruler_trait = leader_trait_GF_nyto_ogas_agreement_plus
+				break = yes
+			}
+			if = {
+				limit = {
+					leader_class = scientist
+				}
+				add_trait = leader_scientist_trait_GF_nyto_ogas_agreement_plus
+				add_ruler_trait = leader_trait_GF_nyto_ogas_agreement_plus
+				break = yes
+			}
+			if = {
+				limit = {
+					leader_class = ruler
+				}
+				add_trait = leader_trait_GF_nyto_ogas_agreement_plus
+				add_ruler_trait = leader_trait_GF_nyto_ogas_agreement_plus
+				break = yes
+			}
+		}
+	}
+}
+
+#领袖招募1
+country_event = {
+	id = GFnyto_global.12
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		from = {
+			species = {
+				has_trait = trait_GF_nyto_noussphere
+			}
+		}
+	}
+	immediate = {
+		from = {
+			if = {
+				limit = {
+					leader_class = admiral
+				}
+				add_trait = leader_admiral_trait_GF_nyto_noussphere
+				add_ruler_trait = leader_trait_GF_nyto_noussphere
+				break = yes
+			}
+			if = {
+				limit = {
+					leader_class = general
+				}
+				add_trait = leader_general_trait_GF_nyto_noussphere
+				add_ruler_trait = leader_trait_GF_nyto_noussphere
+				break = yes
+			}
+			if = {
+				limit = {
+					leader_class = governor
+				}
+				add_trait = leader_governor_trait_GF_nyto_noussphere
+				add_ruler_trait = leader_trait_GF_nyto_noussphere
+				break = yes
+			}
+			if = {
+				limit = {
+					leader_class = scientist
+				}
+				add_trait = leader_scientist_trait_GF_nyto_noussphere
+				add_ruler_trait = leader_trait_GF_nyto_noussphere
+				break = yes
+			}
+			if = {
+				limit = {
+					leader_class = ruler
+				}
+				add_trait = leader_trait_GF_nyto_noussphere
+				add_ruler_trait = leader_trait_GF_nyto_noussphere
+				break = yes
+			}
+		}
+	}
+}
+
+#选择领袖类别
+country_event = {
+	id = GFnyto_global.21
+	desc = GFnyto_global.21.desc
+	is_triggered_only = yes
+	diplomatic = yes
+	picture_event_data = {
+		portrait = owner
+		room = enclave_curator_room
+	}
+	immediate = {
+		remove_country_flag = has_scientist_leader
+		remove_country_flag = has_general_leader
+		remove_country_flag = has_admiral_leader
+		remove_country_flag = has_governor_leader
+		remove_country_flag = has_rule_leader
+		clear_global_event_target = GFnyot_leader_select_1
+		clear_global_event_target = GFnyot_leader_select_2
+		clear_global_event_target = GFnyot_leader_select_3
+		clear_global_event_target = GFnyot_leader_select_4
+		clear_global_event_target = GFnyot_leader_select_5
+		clear_global_event_target = GFnyot_leader_select_6
+		every_owned_leader = {
+			remove_leader_flag = GFnyot_leader_select
+		}
+	}
+	option = {
+		#科学家
+		name = GFnyto_global.21.a
+		set_country_flag = has_scientist_leader
+		country_event = {
+			id = GFnyto_global.22
+		}
+	}
+	option = {
+		#陆军
+		set_country_flag = has_general_leader
+		name = GFnyto_global.21.b
+		country_event = {
+			id = GFnyto_global.22
+		}
+	}
+	option = {
+		#舰队
+		set_country_flag = has_admiral_leader
+		name = GFnyto_global.21.c
+		country_event = {
+			id = GFnyto_global.22
+		}
+	}
+	option = {
+		#总督
+		set_country_flag = has_governor_leader
+		name = GFnyto_global.21.e
+		country_event = {
+			id = GFnyto_global.22
+		}
+	}
+	option = {
+		#统治者
+		set_country_flag = has_rule_leader
+		name = GFnyto_global.21.f
+		country_event = {
+			id = GFnyto_global.22
+		}
+	}
+}
+
+#领袖选择器
+country_event = {
+	id = GFnyto_global.22
+	desc = GFnyto_global.21.desc
+	is_triggered_only = yes
+	diplomatic = yes
+	picture_event_data = {
+		portrait = owner
+		room = enclave_curator_room
+	}
+	immediate = {
+		clear_global_event_target = GFnyot_leader_select_1
+		clear_global_event_target = GFnyot_leader_select_2
+		clear_global_event_target = GFnyot_leader_select_3
+		clear_global_event_target = GFnyot_leader_select_4
+		clear_global_event_target = GFnyot_leader_select_5
+		clear_global_event_target = GFnyot_leader_select_6
+		if = {
+			limit = {
+				has_country_flag = has_scientist_leader
+			}
+			random_6_leader = {
+				leader_class = scientist
+			}
+		}
+		else_if = {
+			limit = {
+				has_country_flag = has_general_leader
+			}
+			random_6_leader = {
+				leader_class = general
+			}
+		}
+		else_if = {
+			limit = {
+				has_country_flag = has_admiral_leader
+			}
+			random_6_leader = {
+				leader_class = admiral
+			}
+		}
+		else_if = {
+			limit = {
+				has_country_flag = has_governor_leader
+			}
+			random_6_leader = {
+				leader_class = governor
+			}
+		}
+		else_if = {
+			limit = {
+				has_country_flag = has_rule_leader
+			}
+			random_6_leader = {
+				leader_class = ruler
+			}
+		}
+	}
+	option = {
+		trigger = {
+			exists = event_target:GFnyot_leader_select_1
+		}
+		name = GFnyto_global.22.a
+		event_target:GFnyot_leader_select_1 = {
+			leader_event = {
+				id = GFnyto_global.23
+			}
+		}
+	}
+	option = {
+		trigger = {
+			exists = event_target:GFnyot_leader_select_2
+		}
+		name = GFnyto_global.22.b
+		event_target:GFnyot_leader_select_2 = {
+			leader_event = {
+				id = GFnyto_global.23
+			}
+		}
+	}
+	option = {
+		trigger = {
+			exists = event_target:GFnyot_leader_select_3
+		}
+		name = GFnyto_global.22.c
+		event_target:GFnyot_leader_select_3 = {
+			leader_event = {
+				id = GFnyto_global.23
+			}
+		}
+	}
+	option = {
+		trigger = {
+			exists = event_target:GFnyot_leader_select_4
+		}
+		name = GFnyto_global.22.d
+		event_target:GFnyot_leader_select_4 = {
+			leader_event = {
+				id = GFnyto_global.23
+			}
+		}
+	}
+	option = {
+		trigger = {
+			exists = event_target:GFnyot_leader_select_5
+		}
+		name = GFnyto_global.22.e
+		event_target:GFnyot_leader_select_5 = {
+			leader_event = {
+				id = GFnyto_global.23
+			}
+		}
+	}
+	option = {
+		trigger = {
+			exists = event_target:GFnyot_leader_select_6
+		}
+		name = GFnyto_global.22.f
+		event_target:GFnyot_leader_select_6 = {
+			leader_event = {
+				id = GFnyto_global.23
+			}
+		}
+	}
+	option = {
+		name = GFnyto_global.22.next
+		country_event = {
+			id = GFnyto_global.22
+		}
+	}
+	option = {
+		name = GFnyto_global.22.prev
+		country_event = {
+			id = GFnyto_global.21
+		}
+	}
+	option = {
+		name = GFnyto_global.22.close
+		default_hide_option = yes
+		hidden_effect = {
+			owner = {
+				every_owned_leader = {
+					remove_leader_flag = GFnyot_leader_select
+				}
+				remove_country_flag = has_scientist_leader
+				remove_country_flag = has_general_leader
+				remove_country_flag = has_admiral_leader
+				remove_country_flag = has_governor_leader
+				remove_country_flag = has_rule_leader
+			}
+		}
+		break = yes
+	}
+}
+
+#添加经验
+leader_event = {
+	id = GFnyto_global.23
+	desc = GFnyto_global.23.desc
+	is_triggered_only = yes
+	diplomatic = yes
+	picture_event_data = {
+		portrait = owner
+		room = enclave_curator_room
+	}
+	immediate = {
+		export_trigger_value_to_variable = {
+			trigger = has_skill
+			variable = GFnyto_leader_lv
+		}
+	}
+	option = {
+		allow = {
+			owner = {
+				has_country_resource = {
+					type = GF_nyto_training_key
+					amount > 10
+				}
+			}
+		}
+		owner = {
+			add_resource = {
+				GF_nyto_training_key = -10
+			}
+		}
+		add_experience = 100
+		name = GFnyto_global.23.a
+		hidden_effect = {
+			leader_event = {
+				id = GFnyto_global.23
+			}
+		}
+	}
+	option = {
+		allow = {
+			owner = {
+				has_country_resource = {
+					type = GF_nyto_training_key
+					amount > 50
+				}
+			}
+		}
+		owner = {
+			add_resource = {
+				GF_nyto_training_key = -50
+			}
+		}
+		add_experience = 500
+		name = GFnyto_global.23.b
+		hidden_effect = {
+			leader_event = {
+				id = GFnyto_global.23
+			}
+		}
+	}
+	option = {
+		allow = {
+			owner = {
+				has_country_resource = {
+					type = GF_nyto_training_key
+					amount > 100
+				}
+			}
+		}
+		owner = {
+			add_resource = {
+				GF_nyto_training_key = -100
+			}
+		}
+		add_experience = 1000
+		name = GFnyto_global.23.c
+		hidden_effect = {
+			leader_event = {
+				id = GFnyto_global.23
+			}
+		}
+	}
+	option = {
+		allow = {
+			owner = {
+				has_country_resource = {
+					type = GF_nyto_training_key
+					amount > 200
+				}
+			}
+		}
+		owner = {
+			add_resource = {
+				GF_nyto_training_key = -200
+			}
+		}
+		add_experience = 2000
+		name = GFnyto_global.23.d
+		hidden_effect = {
+			leader_event = {
+				id = GFnyto_global.23
+			}
+		}
+	}
+	option = {
+		name = GFnyto_global.23.prev
+		owner = {
+			every_owned_leader = {
+				remove_leader_flag = GFnyot_leader_select
+			}
+			country_event = {
+				id = GFnyto_global.22
+			}
+		}
+	}
+	option = {
+		name = GFnyto_global.23.close
+		break = yes
+		default_hide_option = yes
+		hidden_effect = {
+			owner = {
+				every_owned_leader = {
+					remove_leader_flag = GFnyot_leader_select
+				}
+				remove_country_flag = has_scientist_leader
+				remove_country_flag = has_general_leader
+				remove_country_flag = has_admiral_leader
+				remove_country_flag = has_governor_leader
+				remove_country_flag = has_rule_leader
+			}
+		}
+	}
+}
+
+#替换地块
+planet_event = {
+	id = GFnyto_global.4
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		owner = {
+			has_authority = auth_GF_paradeus
+		}
+		owner_main_species = {
+			has_trait = trait_GFnyto_tanhua
+		}
+	}
+	immediate = {
+		add_deposit = d_GFnyto_tanhua
+	}
+}
+
+#年检通用延迟事件
+country_event = {
+	id = GFnyto_global.9999
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		has_authority = auth_GF_paradeus
+	}
+	immediate = {
+		if = {
+			limit = {
+				any_owned_planet = {
+					has_building = building_GFnyto_Elids
+					num_assigned_jobs = {
+						job = GFnyto_collapse_changer
+						value > 0
+					}
+				}
+			}
+			country_event = {
+				id = GFnyto_global.9
+				days = 25
+			}
+		}
+		#花期
+		if = {
+			limit = {
+				has_authority = auth_GF_paradeus
+			}
+			country_event = {
+				id = GFnyto_global.16
+				days = 5
+			}
+		}
+		country_event = {
+			id = GFnyto_global.14
+			days = 150
+		}
+		country_event = {
+			id = GFnyto_global.18
+			days = 15
+		}
+	}
+}
+
+#花期条件检测
+country_event = {
+	id = GFnyto_global.16
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		any_owned_planet = {
+			NAND = {
+				num_assigned_jobs = {
+					job = GFnyto_Epiphyllum_job
+					value < 1
+				}
+				check_variable = {
+					which = GFnyto_plante_wrlv
+					value < 100
+				}
+				NOT = {
+					has_planet_flag = GF_nyto_eild_attack_begin
+				}
+			}
+			OR = {
+				NOT = {
+					has_planet_flag = GFnyto_no_tanhua
+				}
+				num_assigned_jobs = {
+					job = GFnyto_Epiphyllum_job
+					value > 1
+				}
+				has_planet_flag = GF_nyto_eild_attack_begin
+			}
+		}
+	}
+	immediate = {
+		if = {
+			limit = {
+				NOT = {
+					has_country_flag = hide_GFnytoeild52
+				}
+			}
+			country_event = {
+				id = GFnytoeild.51
+				days = 5
+			}
+		}
+		else = {
+			country_event = {
+				id = GFnytoeild.52
+				days = 5
+			}
+		}
+	}
+}
+
+#击杀岗位通知
+country_event = {
+	id = GFnyto_global.501
+	title = GFnyto_global.5
+	desc = GFnyto_global.5.desc
+	picture = GFX_evt_GFnyto_global.5
+	is_triggered_only = yes #The game will not consider this event for starting on its own. Event will need to be triggered by another event, or by some other effect. Most events will use this.
+	trigger = {
+		
+	}
+	immediate = {
+		multiply_variable ={
+			which = kill_pops_Epiphyllum
+			value = 1.5
+		}
+		divide_variable = {
+			which = kill_pops_Epiphyllum
+			value = trigger:num_pops
+		}
+		multiply_variable ={
+			which = kill_pops_Epiphyllum
+			value = 10
+		}
+		round_variable_to_closes= {
+			which = kill_pops_Epiphyllum
+			value = 0.1
+		}
+	}
+	option = {
+		name = "GFnyto_global.5a"
+		hidden_effect ={
+			remove_modifier = GF_nyto_kill_tanhua
+		}
+		add_modifier = {
+			modifier = GF_nyto_kill_tanhua
+			multiplier = owner.kill_pops_Epiphyllum
+			days = -1
+		}
+		hidden_effect ={
+			clear_variable = kill_pops_Epiphyllum
+		}		
+	}
+	option = {
+		name = "GFnyto_global.5b"
+		custom_tooltip = GFnyto_global.5b.desc
+		owner = {
+			set_country_flag = GFnyto_global.5_hide
+		}
+	}
+}
+
+country_event = {
+	id = GFnyto_global.502
+	hide_window = yes
+	trigger = {
+		
+	}
+	is_triggered_only = yes
+	immediate = {
+		multiply_variable ={
+			which = kill_pops_Epiphyllum
+			value = 1.5
+		}
+		divide_variable = {
+			which = kill_pops_Epiphyllum
+			value = trigger:num_pops
+		}
+		multiply_variable ={
+			which = kill_pops_Epiphyllum
+			value = 10
+		}
+		round_variable_to_closes= {
+			which = kill_pops_Epiphyllum
+			value = 0.1
+		}
+		hidden_effect ={
+			remove_modifier = GF_nyto_kill_tanhua
+		}
+		add_modifier = {
+			modifier = GF_nyto_kill_tanhua
+			multiplier = owner.kill_pops_Epiphyllum
+			days = -1
+		}
+		hidden_effect ={
+			clear_variable = kill_pops_Epiphyllum
+		}	
+	}
+}
+
+#每次花期时 击杀一个昙花种植者
+planet_event = {
+	id = GFnyto_global.5
+	picture = GFX_evt_GFnyto_global.5
+	is_triggered_only = yes
+	hide_window = yes
+
+	trigger = {
+		owner = {
+			has_civic = civic_Gf_nyto_tanhua_pluse
+		}
+		num_assigned_jobs = {
+			job = GFnyto_Epiphyllum_job
+			value > 0
+		}
+	}
+	immediate = {
+		if = {
+			limit = {
+				num_assigned_jobs = {
+					job = GFnyto_Epiphyllum_job
+					value > 0
+				}
+			}
+			save_event_target_as = GFnyto_random_plante
+			every_owned_pop = {
+				limit = {
+					has_job = GFnyto_Epiphyllum_job
+				}
+				owner ={
+					change_variable = {
+						which = kill_pops_Epiphyllum
+						value = 1
+					}
+				}
+				kill_pop = yes
+			}
+		}
+	}
+
+}
+
+# planet_event = {
+# 	id = GFnyto_global.6
+# 	is_triggered_only = yes
+# 	hide_window = yes
+# 	trigger = {
+# 		owner = {
+# 			has_civic = civic_Gf_nyto_tanhua_pluse
+# 		}
+# 	}
+# 	immediate = {
+# 		if = {
+# 			limit = {
+# 				num_assigned_jobs = {
+# 					job = GFnyto_Epiphyllum_job
+# 					value > 0
+# 				}
+# 			}
+# 			random_owned_pop = {
+# 				limit = {
+# 					has_job = GFnyto_Epiphyllum_job
+# 				}
+# 				kill_pop = yes
+# 			}
+# 		}
+# 	}
+# }
+
+#每年击杀三个受洗者岗 转换成一个eild人口 延期 25d
+country_event = {
+	id = GFnyto_global.9
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		every_owned_planet = {
+			limit = {
+				has_building = building_GFnyto_Elids
+			}
+			every_owned_pop = {
+				limit ={
+					NOR = {
+						is_species_class = nyto
+						is_species_class = eild
+					}
+				}
+				random_list = {
+					50 ={
+						change_species = event_target:GFnyto_ELID_infected		
+					}
+					50={
+						kill_pop = yes
+					}
+				}				
+			}
+		}
+	}
+}
+
+#每年坍塌辐射污染度计算 #不包含昙花
+country_event = {
+	id = GFnyto_global.14
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		# has_authority = auth_GF_paradeus
+		OR = {
+			num_assigned_jobs = { job = GFnyto_collapse_particle_rar value > 0 }
+			num_assigned_jobs = { job = GFnyto_collapse_particle_zip value > 0 }
+			num_assigned_jobs = { job = GFnyto_collapse_particle_researcher value > 0 }		
+			any_owned_planet = { is_variable_set = GFnyto_plante_wrlv }
+			
+		}
+	}
+	immediate = {
+		every_owned_planet = {
+			limit = {
+				OR = {
+					num_assigned_jobs = { job = GFnyto_collapse_particle_rar value > 0 }
+					num_assigned_jobs = { job = GFnyto_collapse_particle_zip value > 0 }
+					num_assigned_jobs = { job = GFnyto_collapse_particle_researcher value > 0 }
+					num_buildings = { type = GF_nyto_Recoil_decay_barrier value > 0 }
+					num_districts = { type = district_GF_nyto_pc_toxic_energy value > 0  }
+					num_districts = { type = district_GF_nyto_pc_toxic_leisure value > 0  }
+					num_districts = { type = district_GF_nyto_pc_toxic_science value > 0  }
+					num_districts = { type = district_GF_nyto_pc_toxic_alloy value > 0  }
+					is_variable_set = GFnyto_plante_wrlv
+				}
+			}
+			#初始星球恢复力
+			set_variable = { which = planet_size_cleanse value = trigger:planet_size }
+			#岗位污染度产出
+			if = {
+				limit = {
+					OR = {
+						any_owned_pop = {
+							OR = {
+								has_job = GFnyto_collapse_particle_rar
+								has_job = GFnyto_collapse_particle_zip
+								has_job = GFnyto_collapse_particle_researcher
+							}
+						}
+						is_variable_set = GFnyto_plante_wrlv
+					}
+				}				
+				export_trigger_value_to_variable = {
+					trigger = num_assigned_jobs
+					parameters = { job = GFnyto_Epiphyllum_job }
+					variable = Epiphyllum_job_num
+				}
+				export_trigger_value_to_variable = {
+					trigger = num_assigned_jobs
+					parameters = { job = GFnyto_collapse_particle_rar }
+					variable = collapse_particle_rar_num
+				}
+				export_trigger_value_to_variable = {
+					trigger = num_assigned_jobs
+					parameters = { job = GFnyto_collapse_particle_zip }
+					variable = collapse_particle_zip_num
+				}
+				export_trigger_value_to_variable = {
+					trigger = num_assigned_jobs
+					parameters = {
+						job = GFnyto_collapse_particle_researcher
+					}
+					variable = GFnyto_collapse_particle_researcher_num
+				}
+				#产业革命地块产出
+				if = {
+					limit = {
+						has_global_flag = PR_flg_glbl_ASCENDED
+						has_planet_flag = PR_flg_plnt_ASCENDED 
+						
+					}
+					if = {
+						limit = { 
+							is_variable_set = PR_FACTOR_plnt_JOB_GFnyto_collapse_particle_researcher
+						}
+						change_variable = {
+							which = GFnyto_collapse_particle_researcher_num
+							value = PR_FACTOR_plnt_JOB_GFnyto_collapse_particle_researcher
+						}
+					} #研究员
+					if = {
+						limit = { 
+							is_variable_set = PR_FACTOR_plnt_JOB_GFnyto_collapse_particle_zip
+						}
+						change_variable = {
+							which = collapse_particle_zip_num
+							value = PR_FACTOR_plnt_JOB_GFnyto_collapse_particle_zip
+						}
+					} #压缩
+					if = {
+						limit = {
+							is_variable_set = PR_FACTOR_plnt_JOB_GFnyto_collapse_particle_rar
+						}
+						change_variable = {
+							which = GFnyto_collapse_particle_researcher_num
+							value = PR_FACTOR_plnt_JOB_GFnyto_collapse_particle_rar
+						}
+					}#解压
+					if = {
+						limit = {
+							is_variable_set = PR_FACTOR_plnt_JOB_GFnyto_Epiphyllum
+						}
+						change_variable = {
+							which = Epiphyllum_job_num
+							value = PR_FACTOR_plnt_JOB_GFnyto_Epiphyllum
+						}
+					}	#昙花	
+				}		
+				multiply_variable = {
+					which = Epiphyllum_job_num
+					value = -0.25
+				}
+				multiply_variable = {
+					which = collapse_particle_rar_num
+					value = 2
+				}
+				multiply_variable = {
+					which = collapse_particle_zip_num
+					value = 2
+				}		
+			}
+			#区划提供的污染度产出
+			if = {
+				limit = {
+					has_planet_flag = GFnyto_Spring_wakes_up
+				}
+				export_trigger_value_to_variable = {
+					trigger = num_districts
+					parameters = { type = district_GF_nyto_pc_toxic_alloy }
+					variable = district_GF_nyto_pc_toxic_alloy_num
+				}
+				export_trigger_value_to_variable = {
+					trigger = num_districts
+					parameters = { type = district_GF_nyto_pc_toxic_energy }
+					variable = district_GF_nyto_pc_toxic_energy_num
+				}
+				export_trigger_value_to_variable = {
+					trigger = num_districts
+					parameters = { type = district_GF_nyto_pc_toxic_leisure }
+					variable = district_GF_nyto_pc_toxic_leisure_num
+				}
+				export_trigger_value_to_variable = {
+					trigger = num_districts
+					parameters = { type = district_GF_nyto_pc_toxic_science }
+					variable = district_GF_nyto_pc_toxic_science_num
+				}
+				multiply_variable = {
+					which = district_GF_nyto_pc_toxic_alloy_num
+					value = 10
+				}
+				multiply_variable = {
+					which = district_GF_nyto_pc_toxic_energy_num
+					value = 10
+				}
+				multiply_variable = {
+					which = district_GF_nyto_pc_toxic_leisure_num
+					value = 10
+				}
+				multiply_variable = {
+					which = district_GF_nyto_pc_toxic_science_num
+					value = 10
+				}
+			}	
+			# 星球恢复力衰减
+			if = {
+				limit = {
+					check_variable = {
+						which = GFnyto_plante_wrlv
+						value >= 30
+					}
+				}
+				set_variable = {
+					which = planet_size_down
+					value = GFnyto_plante_wrlv
+				}
+				change_variable = {
+					which = planet_size_down
+					value = -100
+				}
+				multiply_variable = {
+					which = planet_size_down
+					value = -0.015
+				}
+				multiply_variable = {
+					which = planet_size_cleanse
+					value = planet_size_down
+				}
+			}
+			#中和塔提供的净化力
+			if = {
+				limit = {
+					OR = {
+						has_building = building_GFnyto_affluence_center
+						is_variable_set = has_affluence_num
+					}
+					
+				}
+				export_trigger_value_to_variable = {
+					trigger = num_buildings
+					parameters = {
+						type = building_GFnyto_affluence_center
+					}
+					variable = has_affluence_num
+				}
+				set_variable = {
+					which = affluence_center_purify
+					value = has_affluence_num
+				}
+				multiply_variable = {
+					which = affluence_center_purify
+					value = 10
+				}
+			}
+			#壁垒提供的净化
+			if = {
+				limit = {
+					OR = {
+						has_building = GF_nyto_Recoil_decay_barrier
+						is_variable_set = GFnyto_plante_wrlv
+					}
+				}
+				#设置基础净化值
+				set_variable = {
+					which = Recoil_decay_barrier_center_purify_buffer
+					value = 50
+				}
+				#导出建筑数量
+				export_trigger_value_to_variable = {
+					trigger = num_buildings
+					parameters = {
+						type = GF_nyto_Recoil_decay_barrier
+					}
+					variable = has_GF_nyto_Recoil_decay_barrier_num
+				}
+				#计算加成
+				if = {
+					limit = {
+						check_variable = {
+							which = has_GF_nyto_Recoil_decay_barrier_num
+							value > 1
+						}		
+					}
+					 while = {
+						count = has_GF_nyto_Recoil_decay_barrier_num
+						multiply_variable = {
+							which = Recoil_decay_barrier_center_purify_buffer
+							value = 1.1
+						}
+					}
+				}
+				#计算总净化			
+				set_variable = {
+					which = Recoil_decay_barrier_center_purify
+					value = has_GF_nyto_Recoil_decay_barrier_num
+				}
+				multiply_variable = {
+					which = Recoil_decay_barrier_center_purify
+					value = Recoil_decay_barrier_center_purify_buffer
+				}
+			}
+			GFnyto_planet_wrlv_numpy = yes
+			#刷新buff
+			if = {
+				limit = {
+					is_planet_class = pc_GF_nyto_embers_gloomy
+				}
+				if = {
+					limit = {
+						has_modifier = GF_nyto_Radiation
+					}
+					remove_modifier = GF_nyto_Radiation
+				}
+				remove_modifier = GF_nyto_Radiation2
+				add_modifier = {
+					modifier = GF_nyto_Radiation2
+					multiplier = GFnyto_plante_wrlv
+				}
+			}
+			else_if = {
+				limit = {
+					NOR = {
+						is_planet_class = pc_GF_nyto_embers_gloomy
+						is_planet_class = pc_GFnyto_portal_star
+						is_planet_class = pc_GF_nyto_devil_furnace
+					}
+				}
+				remove_modifier = GF_nyto_Radiation
+				add_modifier = {
+					modifier = GF_nyto_Radiation
+					multiplier = GFnyto_plante_wrlv
+				}
+			}
+			#非坍塌星球 污染度到底200时 转变为坍塌星球
+			if = {
+				limit = {
+					check_variable = {
+						which = GFnyto_plante_wrlv
+						value >= 200
+					}
+					NOR = {
+						is_planet_class = pc_GF_nyto_embers_gloomy
+						is_planet_class = pc_GF_nyto_devil_furnace
+						is_planet_class = pc_GFnyto_portal_star
+						is_planet_class = pc_ringworld_habitable
+						is_planet_class = pc_ringworld_tech
+						is_planet_class = pc_GFnytp_habitis
+						is_planet_class = pc_holylight_city 
+						is_planet_class = pc_holylight_ring_world
+						is_planet_class = pc_holylight_flower 
+						is_planet_class = pc_sexgod_city 
+						is_planet_class = pc_prostitution_city
+						is_planet_class = pc_prostitution_ring_world_city
+						is_planet_class = pc_sacrifice_ring_world_city  
+						is_planet_class = pc_truth_ring_world_city
+						is_planet_class = pc_birth_ring_world_city  
+						is_planet_class = pc_KZ_VOY_hyper_sphare
+						is_planet_class = pc_KZ_VOY_hyper_sphare_solaria
+						is_planet_class = pc_KZ_VOY_luna
+						is_planet_class = pc_KZ_VOY_terran_relic
+						is_planet_class = pc_KZ_VOY_hyper_ecumenopolis
+					}
+				}
+				change_pc = pc_GF_nyto_embers_gloomy
+				remove_modifier = GF_nyto_Radiation
+				add_modifier = {
+					modifier = GF_nyto_Radiation2
+					multiplier = GFnyto_plante_wrlv
+					days = 3600
+				}
+			}
+		}
+	}
+} 
+
+#获得新球时初始话污染度
+planet_event = {
+	id = GFnyto_global.15
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		this = {
+			is_planet_class = pc_GF_nyto_embers_gloomy
+			NOT = {
+				has_modifier = GF_nyto_Radiation2
+			}
+		}
+	}
+	immediate = {
+		set_variable = {
+			which = GFnyto_plante_wrlv
+			value = 50
+		}
+		add_modifier = {
+			modifier = GF_nyto_Radiation2
+			multiplier = GFnyto_plante_wrlv
+		}
+	}
+}
+
+#获得新的星系是
+event = {
+	id = GFnyto_global.17
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		this = {
+			has_authority = auth_GF_paradeus
+			has_edict = GF_nyto_auto_habitat
+		}		
+	}
+	immediate = {
+		from = {
+			every_system_planet = {
+				limit = {
+					NOT = {
+						has_anomaly = yes
+					}
+					NOR = {
+						has_planet_flag = megastructure
+						has_planet_flag = has_megastructure
+						solar_system = {
+							has_star_flag = ring_world_built
+						}
+						is_planet_class = pc_ringworld_habitable
+						is_planet_class = pc_ringworld_habitable_damaged
+						is_planet_class = pc_ringworld_tech
+						is_planet_class = pc_ringworld_tech_damaged
+						is_planet_class = pc_ringworld_seam
+						is_planet_class = pc_ringworld_seam_damaged
+						is_planet_class = pc_habitat
+					}
+					NOR = {
+						is_asteroid = yes
+						is_moon = yes
+					}
+					is_star = no
+				}
+				save_event_target_as = give_this_planet
+				solar_system = {
+					spawn_megastructure = {
+						type = GFnyto_habitat_01
+						owner = root
+						planet = event_target:give_this_planet
+						coords_from = event_target:give_this_planet
+						init_effect = {
+							upgrade_megastructure_to = GFnyto_habitat_02
+						}
+					}
+				}
+				set_planet_flag = has_megastructure
+			}
+		}
+	}
+}
+
+#每年自动扩张
+country_event = {
+	id = GFnyto_global.18
+	hide_window = yes
+	trigger = {
+		has_edict = GF_nyto_auto_habitat
+	}
+	is_triggered_only = yes
+	immediate = {
+		random_system_within_border = {
+			every_system_planet = {
+				limit = {
+					NOT = {
+						has_anomaly = yes
+					}
+					NOR = {
+						has_planet_flag = megastructure
+						has_planet_flag = has_megastructure
+						solar_system = {
+							has_star_flag = ring_world_built
+						}
+						is_planet_class = pc_ringworld_habitable
+						is_planet_class = pc_ringworld_habitable_damaged
+						is_planet_class = pc_ringworld_tech
+						is_planet_class = pc_ringworld_tech_damaged
+						is_planet_class = pc_ringworld_seam
+						is_planet_class = pc_ringworld_seam_damaged
+						is_planet_class = pc_habitat
+					}
+					NOR = {
+						is_asteroid = yes
+						is_moon = yes
+					}
+					is_star = no
+				}
+				save_event_target_as = give_this_planet
+				solar_system = {
+					spawn_megastructure = {
+						type = GFnyto_habitat_01
+						owner = root
+						planet = event_target:give_this_planet
+						coords_from = event_target:give_this_planet
+					}
+				}
+				set_planet_flag = has_megastructure
+			}
+		}
+	}
+}
+
+#限制造船数量
+ship_event = {
+	id = GFnyto_global.19
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		OR = {
+			is_ship_size = GFnyto_Command_ship
+			is_ship_size = GFnyto_mobile_city
+		}	
+	}
+	immediate = {
+		if = {
+			limit = {
+				is_ship_size = GFnyto_mobile_city
+			}
+			owner = {
+				change_variable = {
+					which = GFnyto_mobile_city_num
+					value = 1
+				}			
+			}
+		}
+		if = {
+			limit = {
+				is_ship_size = GFnyto_Command_ship
+			}
+			owner = {
+				change_variable = {
+					which = GFnyto_Command_ship_num
+					value = 1
+				}			
+			}
+		}
+	}
+}
+
+#借贷清算 开始
+country_event = {
+	id = GFnyto_global.20
+	hide_window = yes
+	trigger = {		
+		NOT = {
+			has_country_flag = GF_end_star
+		}
+		end_game_years_passed >= 0	
+		any_owned_ship = { has_component = GFnyto_power_lv3 }
+	}
+	is_triggered_only = yes
+	immediate = {		
+		set_country_flag = GF_end_star
+		every_controlled_ship = {
+			limit = {
+				has_component = GFnyto_power_lv3
+			}
+			prev ={
+				change_variable = {
+					which = GF_has_end_num
+					value = 1
+				}
+			}
+		}
+		divide_variable = {
+			which = GF_has_end_num
+			value = 10
+		}
+		random_controlled_ship = {
+			limit = {
+				has_component = GFnyto_power_lv3
+			}
+			ship_event = {
+				id = GFnyto_global.25
+			}
+		}
+		country_event = {
+			id = GFnyto_global.26
+			days = 500
+		}
+	}
+}
+
+#第一次触发
+ship_event = {
+	id = GFnyto_global.25
+	title = GFnyto_global.25.name
+	desc = GFnyto_global.25.desc
+	picture = GFX_evt_GF_nyto_end_years 
+	location = from 
+	is_triggered_only = yes 
+	option = {
+		name = GFnyto_global.25.a
+		hidden_effect ={
+			delete_ship = this
+		}
+	}
+}
+
+#重复触发
+country_event = {
+	id = GFnyto_global.26
+	title = GFnyto_global.26.name
+	desc = GFnyto_global.26.desc
+	picture = GFX_evt_GF_nyto_end_years_2 
+	is_triggered_only = yes 
+	trigger ={
+		end_game_years_passed >= 1	
+		end_game_years_passed <= 10
+		any_owned_ship = { has_component = GFnyto_power_lv3 }
+		NOT = {
+			has_country_flag = GF_end_ending
+		}		
+		check_variable ={ which = GF_has_end_num value > 10 }
+	}		
+	immediate = {
+		every_controlled_ship ={
+			limit = { has_component = GFnyto_power_lv3 }
+			random = {
+				chance = root.GF_has_end_num
+				delete_ship = this
+			}
+		}
+		country_event = {
+			id = GFnyto_global.26
+			days = 380
+			random = 100
+		}
+	}
+	option = {
+		name = GFnyto_global.26.a
+		every_owned_fleet = {
+			add_modifier = {
+				modifier = GF_nyto_end_years
+				days = 180
+			}
+		}
+		if = {
+			limit = { 
+				end_game_years_passed >= 5
+				NOT = {
+					has_country_flag = GF_end_midm
+				}
+			}
+			country_event = {
+				id = GFnyto_global.27
+				days = 180
+			}
+		}
+		if = {
+			limit = {
+				end_game_years_passed >= 7
+			}
+			country_event = {
+				id = GFnyto_global.28
+				days = 180
+				random = 180
+			}
+		}
+	}
+
+}
+
+#>5年时熄灭数量/10个星系的恒星
+country_event = {
+	id = GFnyto_global.27
+	title = GFnyto_global.27.name
+	desc = GFnyto_global.27.desc
+	picture = GFX_evt_GF_nyto_end_years_3 #a name of a picture to display
+	is_triggered_only = yes 
+	trigger = {
+		has_country_flag = GF_end_star
+		NOT = {
+			has_country_flag = GF_end_midm
+		}
+		check_variable ={ which = GF_has_end_num value > 10 }
+	}
+	immediate = {
+		set_country_flag = GF_end_midm
+		every_system_within_border = {
+			random = {
+				chance = root.GF_has_end_num
+				set_star_class = sc_GF_endler
+				every_system_planet = {
+					limit = {
+						is_star = yes
+					}
+					if = {
+						limit = { has_orbital_station = yes }
+						orbital_station = {
+							dismantle = yes
+						}
+					}
+					clear_deposits = yes
+				}
+			}			
+		}
+	}
+	option = {
+		name = GFnyto_global.27.a
+	}
+}
+
+#>7年时随机崩碎星球
+country_event = {
+	id = GFnyto_global.28
+	title = GFnyto_global.28.name
+	desc = GFnyto_global.28.desc
+	picture = GFX_evt_GF_nyto_end_years_5 #a name of a picture to display
+	is_triggered_only = yes 
+	trigger = {
+		NOT = {
+			has_country_flag = GF_end_midm2
+		}
+		check_variable ={ which = GF_has_end_num value > 10 }
+	}
+	immediate = {
+		set_country_flag = GF_end_midm2
+		every_system_within_border = {			
+			every_system_planet = {
+				limit = {
+					NOT = {
+						is_capital = yes
+					}
+				}
+				random = {
+					chance = root.GF_has_end_num
+					solar_system = {
+						set_star_class = sc_GF_endler
+					}
+					change_pc = pc_GF_nyto_endles
+					destroy_colony = yes
+					remove_all_buildings = yes
+					clear_deposits = yes
+					clear_blockers = yes
+					orbital_station = {
+						dismantle = yes
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = GFnyto_global.28.a
+		country_event = {
+			id = GFnyto_global.29
+			days = 360
+			random = 180
+		}		
+	}
+}
+
+#> 变量>1000 则开启终焉事件
+country_event = {
+	id = GFnyto_global.29
+	title = GFnyto_global.29.name
+	desc = GFnyto_global.29.desc
+	picture = GFX_evt_GF_nyto_end_years_4 #a name of a picture to display
+	is_triggered_only = yes 
+	trigger = {
+		NOT = {
+			has_country_flag = GF_end_ending
+		}
+		check_variable ={ which = GF_has_end_num value > 10 }
+	}
+	immediate = {
+		set_country_flag = GF_end_ending
+		every_system = {
+			random = {
+				chance = 50
+				set_star_class = sc_GF_endler
+				every_system_planet ={
+					if = {
+						limit = { 
+							is_star = yes
+							NOT = { is_planet_class = pc_GF_nyto_endles}
+						}
+						change_pc = pc_GF_nyto_endles
+						if = { 
+							limit = { has_orbital_station = yes }
+							orbital_station = { dismantle = yes }
+						}
+						
+					}
+					if = {
+						limit = { 
+							NOT = { is_planet_class = pc_GF_nyto_endles}
+						}
+						change_pc = pc_GF_nyto_endles
+						destroy_colony = yes
+						remove_all_buildings = yes
+						clear_deposits = yes
+						clear_blockers = yes
+						if = { 
+							limit = { has_orbital_station = yes }
+							orbital_station = { dismantle = yes }
+						}
+					}
+					if = { 
+						limit = { has_orbital_station = yes }
+						orbital_station = { dismantle = yes }
+					}
+					clear_deposits = yes
+					clear_blockers = yes
+					set_planet_name =  ""
+				}
+			}			
+
+		}
+		if = {
+			limit = {
+				check_variable_arithmetic ={
+					multiply = 10
+					which = GF_has_end_num
+					value >= 1000
+				}
+			}
+			country_event = {
+				id = GFnyto_global.31
+				days = 31
+			}
+		}
+		else_if = {
+			limit = { 
+				check_variable_arithmetic ={
+					multiply = 10
+					which = GF_has_end_num
+					value <= 1000
+				}
+			}
+			country_event = {
+				id = GFnyto_global.30
+				days = 180
+			}
+		}
+	}
+}
+
+#>10 变量<1000 安然度过
+country_event = {
+	id = GFnyto_global.30
+	title = GFnyto_global.30.name
+	desc = GFnyto_global.30.desc
+	picture = GFX_evt_GF_nyto_end_years_6 #a name of a picture to display
+	is_triggered_only = yes 
+	option = {
+		name = GFnyto_global.30.a
+	}
+}
+
+#寄！
+country_event = {
+	id = GFnyto_global.31
+	title = GFnyto_global.31.name
+	desc = GFnyto_global.31.desc
+	picture = GFX_evt_GF_nyto_end_years_7 #a name of a picture to display
+	is_triggered_only = yes 
+	option = {
+		name = GFnyto_global.31.a
+		home_planet = {
+			solar_system = {
+				create_nebula = {
+					radius = 50
+					name = "应许之地"
+					effect = {
+						set_star_flag = salvager_nebula
+					}
+				}
+			}
+		}
+		every_controlled_ship = {
+			limit = {
+				has_component = GF_Nyto_l_weapon1
+				has_component = GF_Nyto_x_weapon2
+			}
+			export_modifier_to_variable = {
+				modifier = weapon_type_LsScepter_weapon_damage_mult
+				variable = LsScepter_weapon_num
+			}
+		}
+		destroy_country = yes
+	}
+}
+
+#开局时检测是否存在多彩帝国
+
+
+
+#給任意一个多彩玩家帝国发送消息
+
+
+
+#创建星系

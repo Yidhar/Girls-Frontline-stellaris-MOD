@@ -1,0 +1,492 @@
+# Icons set here are the ones show in the actual slot. The reason is so that we can support different icons for different sizes.
+#############
+#	POWER	#
+#############
+
+@corvette_power_1 = 75
+@corvette_power_2 = 100
+@corvette_power_3 = 130
+@corvette_power_4 = 170
+@corvette_power_5 = 220
+@corvette_power_6 = 285
+
+@destroyer_power_1 = 140
+@destroyer_power_2 = 180
+@destroyer_power_3 = 240
+@destroyer_power_4 = 320
+@destroyer_power_5 = 430
+@destroyer_power_6 = 550
+
+@cruiser_power_1 = 280
+@cruiser_power_2 = 360
+@cruiser_power_3 = 480
+@cruiser_power_4 = 620
+@cruiser_power_5 = 800
+@cruiser_power_6 = 1030
+
+@battleship_power_1 = 550
+@battleship_power_2 = 720
+@battleship_power_3 = 950
+@battleship_power_4 = 1250
+@battleship_power_5 = 1550
+@battleship_power_6 = 2000
+
+@titan_power_1 = 1100
+@titan_power_2 = 1450
+@titan_power_3 = 1900
+@titan_power_4 = 2500
+@titan_power_5 = 3200
+@titan_power_6 = 4200
+
+@colossus_power = 10000
+
+@starbase_power_1 = 1650
+@starbase_power_2 = 2170
+@starbase_power_3 = 2850
+@starbase_power_4 = 3750
+@starbase_power_5 = 4550
+@starbase_power_6 = 6200
+
+@platform_power_1 = 200
+@platform_power_2 = 260
+@platform_power_3 = 340
+@platform_power_4 = 440
+@platform_power_5 = 575
+@platform_power_6 = 750
+@corvette_cost_1 = 10
+@corvette_cost_2 = 13
+@corvette_cost_3 = 17
+@corvette_cost_4 = 22
+@corvette_cost_5 = 28
+@corvette_cost_6 = 37
+
+@destroyer_cost_1 = 20
+@destroyer_cost_2 = 26
+@destroyer_cost_3 = 34
+@destroyer_cost_4 = 44
+@destroyer_cost_5 = 56
+@destroyer_cost_6 = 74
+
+@cruiser_cost_1 = 40
+@cruiser_cost_2 = 52
+@cruiser_cost_3 = 68
+@cruiser_cost_4 = 88
+@cruiser_cost_5 = 112
+@cruiser_cost_6 = 148
+
+@battleship_cost_1 = 80
+@battleship_cost_2 = 104
+@battleship_cost_3 = 136
+@battleship_cost_4 = 176
+@battleship_cost_5 = 224
+@battleship_cost_6 = 296
+
+@titan_cost_1 = 160
+@titan_cost_2 = 208
+@titan_cost_3 = 272
+@titan_cost_4 = 352
+@titan_cost_5 = 448
+@titan_cost_6 = 592
+
+@colossus_cost_1 = 0
+
+@platform_cost_1 = 20
+@platform_cost_2 = 26
+@platform_cost_3 = 34
+@platform_cost_4 = 44
+@platform_cost_5 = 56
+@platform_cost_6 = 74
+
+#飞船坍塌堆
+#护卫舰
+utility_component_template = {
+	key = "CORVETTE_sfdoll_collapse_REACTOR"
+	size = small
+	icon = "GFX_ship_part_sfdoll_collapse_REACTOR"
+	icon_frame = 1
+	power = 1200
+	resources = {
+		category = ship_components
+		cost = {
+			GF_nyto_collapse_liquid	= 2
+			sr_dark_matter = 10
+		}
+		upkeep = {
+			energy = 0.3
+			alloys = 0.05
+		}
+	}
+	prerequisites = { tech_aux_sfdoll_collapse_power }
+	component_set = "power_core"
+	size_restriction = { corvette frigate colonizer sponsored_colonizer constructor science transport  }
+	ai_weight = {	weight = 20	}
+}
+#驱逐舰
+utility_component_template = {
+	key = "DESTROYER_sfdoll_collapse_REACTOR"
+	size = small
+	icon = "GFX_ship_part_sfdoll_collapse_REACTOR"
+	icon_frame = 1
+	power = 2600
+	resources = {
+		category = ship_components
+		cost = {
+			GF_nyto_collapse_liquid = 6
+			sr_dark_matter = 20
+		}
+		upkeep = {
+			energy = 0.5
+			alloys = 0.1
+		}
+	}
+	
+	prerequisites = {  tech_aux_sfdoll_collapse_power  }
+	component_set = "power_core"
+	size_restriction = { destroyer }
+	ai_weight = {	weight = 20	}
+}
+#巡洋舰
+utility_component_template = {
+	key = "CRUISER_sfdoll_collapse_REACTOR"
+	size = small
+	icon = "GFX_ship_part_sfdoll_collapse_REACTOR"
+	icon_frame = 1
+	power = 6000
+	resources = {
+		category = ship_components
+		cost = {
+			GF_nyto_collapse_liquid = 12
+			sr_dark_matter = 60
+		}
+		upkeep = {
+			energy = 0.8
+			alloys = 0.3
+		}
+	}
+	
+	prerequisites = {  tech_aux_sfdoll_collapse_power }
+	component_set = "power_core"
+	size_restriction = {  cruiser }
+	ai_weight = {	weight = 20	}
+}
+#战列舰
+utility_component_template = {
+	key = "BATTLESHIP_sfdoll_collapse_REACTOR"
+	size = small
+	icon = "GFX_ship_part_sfdoll_collapse_REACTOR"
+	icon_frame = 1
+	power = 9600
+	resources = {
+		category = ship_components
+		cost = {
+			GF_nyto_collapse_liquid = 24
+			sr_dark_matter = 120
+		}
+		upkeep = {
+			energy = 0.8
+			alloys = 0.5
+		}
+	}
+	
+	prerequisites = { tech_aux_sfdoll_collapse_power }
+	component_set = "power_core"
+	size_restriction = {  battleship }	
+	ai_weight = {	weight = 20	}
+}
+
+#泰坦，战列
+utility_component_template = {
+	key = "TITAN_sfdoll_collapse_REACTOR"
+	size = small
+	icon = "GFX_ship_part_sfdoll_collapse_REACTOR"
+	icon_frame = 1
+	power = 30000
+	resources = {
+		category = ship_components
+		cost = {
+			GF_nyto_collapse_liquid = 50
+			sr_dark_matter = 200
+		}
+		upkeep = {
+			energy = 1.6
+			alloys = 1
+		}
+	}
+	
+	prerequisites = {  tech_aux_sfdoll_collapse_power }
+	component_set = "power_core"
+	size_restriction = {  titan battleship }
+	ai_weight = {	weight = 20	}
+}
+
+#巨像，铁血泰坦级飞船
+utility_component_template = {
+	key = "COLOSSUS_sfdoll_collapse_REACTOR"
+	size = small
+	icon = "GFX_ship_part_sfdoll_collapse_REACTOR"
+	icon_frame = 1
+	power = 80000
+	prerequisites = { tech_aux_sfdoll_collapse_power  }
+	component_set = "power_core"
+	size_restriction = { sfdoll_constructor  colossus }
+	resources = {
+		category = ship_components
+		cost = {
+			GF_nyto_collapse_liquid = 75
+			sr_dark_matter = 400
+		}
+		upkeep = {
+			energy = 3.2
+			alloys = 2
+		}
+	}
+	ai_weight = {	weight = 20	}
+}
+#移动船坞
+utility_component_template = {
+	key = "Mobile_Starbase_sfdoll_collapse_REACTOR"
+	size = small
+	hidden = yes
+	icon = "GFX_ship_part_sfdoll_collapse_REACTOR"
+	icon_frame = 1
+	power = 1800000
+	# prerequisites = { tech_aux_sfdoll_collapse_power  }
+	component_set = "power_core"
+	size_restriction = {  sfdoll_mobile_starbase }
+	resources = {
+		category = ship_components
+		cost = {
+			GF_nyto_collapse_liquid = 75
+			sr_dark_matter = 400
+		}
+		upkeep = {
+			energy = 3.2
+			alloys = 2
+		}
+	}
+	ai_weight = {	weight = 20	}
+}
+
+
+#T2反应堆
+utility_component_template = {
+	key = "sfdoll_REACTOR_2_1"
+	size = small
+	icon = "GFX_ship_part_sfdoll_ship_power_2"
+	icon_frame = 1
+	power = 96000
+	prerequisites = { tech_sfdoll_ship_power_2  }
+	component_set = "power_core"
+	size_restriction = {  sfdoll_warship_1 }
+	resources = {
+		category = ship_components
+		cost = {
+			GF_nyto_collapse_liquid = 3
+			sr_dark_matter = 20
+		}
+		upkeep = {
+			energy = 0.2
+			alloys = 0.1
+		}
+	}
+	ai_weight = {	weight = 20	}
+}
+utility_component_template = {
+	key = "sfdoll_REACTOR_2_2"
+	size = small
+	icon = "GFX_ship_part_sfdoll_ship_power_2"
+	icon_frame = 1
+	power = 240000
+	prerequisites = { tech_sfdoll_ship_power_2  }
+	component_set = "power_core"
+	size_restriction = {  sfdoll_warship_2 }
+	resources = {
+		category = ship_components
+		cost = {
+			GF_nyto_collapse_liquid = 5
+			sr_dark_matter = 40
+		}
+		upkeep = {
+			energy = 0.3
+			alloys = 0.2
+		}
+	}
+	ai_weight = {	weight = 20	}
+}
+utility_component_template = {
+	key = "sfdoll_REACTOR_2_3"
+	size = small
+	icon = "GFX_ship_part_sfdoll_ship_power_2"
+	icon_frame = 1
+	power = 600000
+	prerequisites = { tech_sfdoll_ship_power_2  }
+	component_set = "power_core"
+	size_restriction = {  sfdoll_warship_3 }
+	resources = {
+		category = ship_components
+		cost = {
+			GF_nyto_collapse_liquid = 10
+			sr_dark_matter = 80
+		}
+		upkeep = {
+			energy = 0.6
+			alloys = 0.4
+		}
+	}
+	ai_weight = {	weight = 20	}
+}
+
+utility_component_template = {
+	key = "sfdoll_REACTOR_2_4"
+	size = small
+	icon = "GFX_ship_part_sfdoll_ship_power_2"
+	icon_frame = 1
+	power = 1600000
+	prerequisites = { tech_sfdoll_ship_power_2  }
+	component_set = "power_core"
+	size_restriction = {  sfdoll_warship_4 }
+	resources = {
+		category = ship_components
+		cost = {
+			GF_nyto_collapse_liquid = 24
+			sr_dark_matter = 160
+		}
+		upkeep = {
+			energy = 1.5
+			alloys = 1
+		}
+	}
+	ai_weight = {	weight = 20	}
+}
+
+utility_component_template = {
+	key = "sfdoll_REACTOR_2_5"
+	size = small
+	icon = "GFX_ship_part_sfdoll_ship_power_2"
+	icon_frame = 1
+	power = 4000000
+	prerequisites = { tech_sfdoll_ship_power_2  }
+	component_set = "power_core"
+	size_restriction = {  sfdoll_warship_5 }
+	resources = {
+		category = ship_components
+		cost = {
+			GF_nyto_collapse_liquid = 60
+			sr_dark_matter = 400
+		}
+		upkeep = {
+			energy = 3.2
+			alloys = 2
+		}
+	}
+	ai_weight = {	weight = 20	}
+}
+
+utility_component_template = {
+	key = "sfdoll_REACTOR_2_6"
+	size = small
+	icon = "GFX_ship_part_sfdoll_ship_power_2"
+	icon_frame = 1
+	power = 8000000
+	prerequisites = { tech_sfdoll_ship_power_2  }
+	component_set = "power_core"
+	size_restriction = {  sfdoll_warship_6 sfdoll_star_eater }
+	resources = {
+		category = ship_components
+		cost = {
+			GF_nyto_collapse_liquid = 90
+			sr_dark_matter = 600
+		}
+		upkeep = {
+			energy = 4.8
+			alloys = 3
+		}
+	}
+	ai_weight = {	weight = 20	}
+}
+
+
+#防御平台
+utility_component_template = {
+	key = "PLATFORM_sfdoll_collapse_REACTOR"
+	size = large
+	icon = "GFX_ship_part_sfdoll_collapse_REACTOR"
+	icon_frame = 1
+	power = 7000
+	resources = {
+		category = ship_components
+		cost = {
+			GF_nyto_collapse_liquid = 2
+			sr_dark_matter = 10
+		}
+		upkeep = {
+			energy = 0.3
+			alloys = 0.1
+		}
+	}
+
+	prerequisites = {  tech_aux_sfdoll_collapse_power }
+	component_set = "power_core"
+	class_restriction = { shipclass_military_station }
+	size_restriction = {
+		military_station_small
+		military_station_medium
+		military_station_large
+	}
+	ai_weight = {	weight = 20	}
+}
+
+#离子加农炮
+utility_component_template = {
+	key = "ION_CANNON_sfdoll_collapse_REACTOR"
+	size = small
+	icon = "GFX_ship_part_sfdoll_collapse_REACTOR"
+	icon_frame = 1
+	power = 7500
+	resources = {
+		category = ship_components
+		cost = {
+			GF_nyto_collapse_liquid = 5
+			sr_dark_matter =25
+		}
+	}
+	prerequisites = { tech_aux_sfdoll_collapse_power  }
+	component_set = "power_core"
+	size_restriction = { ion_cannon }
+	ai_weight = {	weight = 20	}
+}
+
+#恒星基地，主宰
+utility_component_template = {
+	key = "STARBASE_sfdoll_collapse_REACTOR"
+	size = large
+	icon = "GFX_ship_part_sfdoll_collapse_REACTOR"
+	icon_frame = 1
+	power = 70000
+	prerequisites = { tech_aux_sfdoll_collapse_power  }
+	component_set = "power_core"
+	class_restriction = { shipclass_starbase }
+	size_restriction = {
+		starbase_outpost
+		starbase_starport
+		starbase_starhold
+		starbase_starfortress
+		starbase_citadel
+		juggernaut
+	}
+	ai_weight = {	weight = 20	}
+}
+
+#无反应堆
+# utility_component_template = {
+# 	key = "sfdoll_ship_reactor_no"
+# 	size = small
+# 	icon = "GFX_ship_sfdoll_empty"
+# 	icon_frame = 1
+# 	resources = {
+# 		category = ship_components
+# 	}
+# 	component_set = "power_core"
+# 	size_restriction = { 	  }
+# 	ai_weight = {	weight = -100	}
+# }

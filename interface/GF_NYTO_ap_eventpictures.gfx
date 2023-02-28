@@ -1,0 +1,52 @@
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_ap_GF_nyto_resurrection"
+		texturefile = "gfx/interface/icons/ascension_perks/ap_GF_nyto_resurrection.dds"
+		alwaystransparent = yes
+	}
+}
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_ap_GF_nyto_conquer_hell"
+		texturefile = "gfx/interface/icons/ascension_perks/ap_GF_nyto_conquer_hell.dds"
+		alwaystransparent = yes
+	}
+}
+#飞升弹窗
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_evt_nyto_ap"
+		texturefile = "gfx/event_pictures/evt_nyto_ap.dds"
+		alwaystransparent = yes
+	}
+}
+#征服地狱
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_evt_GFnyto_conquer_hell"
+		texturefile = "gfx/event_pictures/evt_GFnyto_conquer_hell.dds"
+		alwaystransparent = yes
+	}
+}
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_evt_GFnyto_bad_ending_1"
+		texturefile = "gfx/event_pictures/evt_GFnyto_bad_ending_1.dds"
+		alwaystransparent = yes
+	}
+	frameAnimatedSpriteType = {	
+		name = "GFX_ap_GF_nyto_imba"
+		texturefile = "gfx/interface/icons/ascension_perks/ap_GF_nyto_imba.dds"
+		noOfFrames = 43
+		transParencecheck = no
+		animation_rate_fps = 30
+		looping = yes
+		play_on_show = yes
+		alwaystransparent =yes	
+	}	
+	spriteType = {
+		name = "GFX_ap_GF_nyto_noussphere"
+		textureFile = "gfx/interface/icons/ascension_perks/ap_GF_nyto_noussphere.dds"
+		alwaysTransparent = yes
+	}
+}

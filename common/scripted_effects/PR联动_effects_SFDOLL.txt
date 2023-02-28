@@ -1,0 +1,26 @@
+PR_eft_plnt_JOB_deposit_SFDOLL = {
+	optimize_memory	#内存
+	if = {
+		limit = {
+			OR = {
+				#	第一条件: 必须要写!必须要写!必须要写! scope = planet
+				AND = { exists = owner owner = { has_authority = auth_gf_sfdoll } }
+				#	第二条件: 岗位检测标签
+				#	这个主要是用来debug, 也就是星球不符合第一条件的时候, 进行第二次检测清理掉上次的变动以增加优化
+				check_modifier_value = { modifier = PR_smod_plnt_JOB_deposit_SFDOLL value > 0 }
+			}
+		}
+		PR_prmt_eft_plnt_JOB_deposit_DB = { JOB = sfdoll_collapse_liquid_maker }
+		PR_prmt_eft_plnt_JOB_deposit_DB = { JOB = sfdoll_dark_matter_maker }
+		PR_prmt_eft_plnt_JOB_deposit_DB = { JOB = sfdoll_nanites_maker }
+		PR_prmt_eft_plnt_JOB_deposit_DB = { JOB = sfdoll_researcher }
+		PR_prmt_eft_plnt_JOB_deposit_DB = { JOB = sfdoll_alloys_maker }
+		PR_prmt_eft_plnt_JOB_deposit_DB = { JOB = sfdoll_goods_maker }
+		PR_prmt_eft_plnt_JOB_deposit_DB = { JOB = sfdoll_energy_maker }
+		PR_prmt_eft_plnt_JOB_deposit_DB = { JOB = sfdoll_mineral_maker }
+		PR_prmt_eft_plnt_JOB_deposit_DB = { JOB = sfdoll_gases_maker }
+		PR_prmt_eft_plnt_JOB_deposit_DB = { JOB = sfdoll_educator }
+		PR_prmt_eft_plnt_JOB_deposit_DB = { JOB = sfdoll_artist }
+		PR_prmt_eft_plnt_JOB_deposit_DB = { JOB = sfdoll_tactical }
+	}
+}

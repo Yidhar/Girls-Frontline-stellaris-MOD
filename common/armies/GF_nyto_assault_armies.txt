@@ -1,0 +1,209 @@
+#机械战甲
+GF_nyto_machine_assault_2 = {
+	damage = 3.5
+	health = 5
+	has_morale = no
+	morale_damage = 1
+	collateral_damage = 1.0
+	war_exhaustion = 1.0
+	time = 120
+	has_species = yes
+	pop_limited = yes
+	icon = GFX_army_type_assault
+	resources = {
+		category = armies
+		cost = {minerals = 200}
+		upkeep = {energy = 2}
+	}
+	potential = {owner = {has_authority = auth_GF_paradeus}}	
+	prerequisites = { "tech_GF_nyto_adaptive_combat_algorithms" }
+}
+#巨型战体
+GF_nyto_machine_assault_3 = {
+	damage = 5
+	health = 6
+	has_morale = no
+	morale_damage = 1.5
+	collateral_damage = 1.5
+	war_exhaustion = 2.0
+	time = 180
+	has_species = yes
+	pop_limited = yes
+	icon = GFX_army_type_assault
+	resources = {
+		category = armies
+		cost = {minerals = 300}
+		upkeep = {energy = 3}
+	}
+	potential = {owner = {has_authority = auth_GF_paradeus}}
+	prerequisites = { "tech_GF_nyto_biomechanics" }
+}
+#白骑士
+GF_nyto_white_knight= {
+	damage = 3.0
+	health = 3.0
+	has_morale = yes
+	morale = 1.0
+	morale_damage = 5
+	collateral_damage = 0.5
+	war_exhaustion = 1.0
+	time = 120
+	has_species = yes
+	icon = GFX_army_type_primitive
+	resources = {
+		category = armies
+		cost = {minerals = 200}
+		upkeep = {energy = 1}
+	}
+	potential = {owner = {has_authority = auth_GF_paradeus}}
+}
+GF_nyto_white_knight2= {
+	damage = 3.0
+	health = 3.0
+	has_morale = no
+	morale_damage = 1.0
+	collateral_damage = 0.5
+	war_exhaustion = 1.0
+	has_species = yes
+	icon = GFX_army_type_primitive
+	is_pop_spawned = yes
+	spawn_chance = {
+		factor = 1
+	}
+	potential = {owner = {has_authority = auth_GF_paradeus has_civic = civic_GF_nyto_special_operations_command  }}
+}
+
+#战争修女
+GF_nyto_war_nuns= {
+	damage = 2
+	health = 2
+	has_morale = no
+	morale_damage = 5
+	collateral_damage = 0.5
+	war_exhaustion = 0
+	time = 20
+	has_species = no
+	icon = GFX_army_type_primitive
+	resources = {
+		category = armies
+		cost = {minerals = 200}
+		upkeep = {energy = 2}
+	}
+	potential = {owner = {has_authority = auth_GF_paradeus}}
+	prerequisites = { "tech_GF_nyto_war_nuns" }
+}
+#受洗者
+GF_nyto_eild_army= {
+	damage = 4.0
+	health = 7.0
+	has_morale = no
+	morale_damage = 5.0
+	collateral_damage = 5.0
+	war_exhaustion = 1.0
+	icon = GFX_army_type_xenomorph
+	time = 360
+	has_species = no
+	resources = {
+		category = armies
+		cost = {
+			minerals = 1000
+			GF_nyto_collapse_liquid=10
+		}
+		upkeep = {
+			energy = 10
+			GF_nyto_collapse_liquid=0.1
+		}
+	}
+	potential = {owner = {has_authority = auth_GF_paradeus}}
+	prerequisites = { "tech_GF_nyto_EILD_brain_wave" }
+}
+#装甲列车
+GF_nyto_armor_train= {
+	defensive = yes
+	damage = 15
+	health = 15
+	has_morale = no
+	morale_damage = 5.0
+	collateral_damage = 1.0
+	war_exhaustion = 0
+	pop_limited = no
+	icon  = GFX_army_type_defensive
+	time = 360
+	has_species = no
+	resources = {
+		category = armies
+		cost = {
+			alloys = 150
+			GF_nyto_collapse_liquid=10
+		}
+		upkeep = {
+			energy = 2
+			GF_nyto_collapse_liquid=0.1
+		}
+	}
+	potential = {
+		owner = {has_authority = auth_GF_paradeus}
+		planet = {has_building = building_GFnyto_transportation_hub}
+	}
+}
+
+#海军陆战队
+GF_nyto_marine_corps = {
+	defensive = yes
+	damage = 2.0
+	health = 2.0
+	has_morale = yes
+	morale_damage = 1
+	collateral_damage = 1
+	war_exhaustion = 0
+	icon = GFX_army_type_assault
+	has_species = no
+	potential = {always = no}
+}
+#大型岸基炮台
+GF_nyto_Land_base_station={
+	defensive = yes
+	damage = 30
+	health = 10
+	has_morale = no
+	morale_damage = 5.0
+	collateral_damage = 5.0
+	war_exhaustion = 0
+	icon  = GFX_army_type_defensive
+	has_species = no
+	potential = {
+	 always = no
+	}
+}
+#永固要塞
+GF_nyto_yaosai={
+	defensive = yes
+	damage = 15
+	health = 55
+	has_morale = no
+	morale_damage = 5.0
+	collateral_damage = 2
+	war_exhaustion = 10
+	time = 500	
+	icon  = GFX_army_type_defensive
+	has_species = no
+	potential = {
+		always = no  
+	}
+	has_species = yes
+	resources = {
+		category = armies
+		upkeep = {
+			energy = 10
+			GF_nyto_collapse_liquid= 3
+		}
+	}
+}
+#陆军单位替换，图标制作。
+
+
+#巨剑士
+
+
+
+#

@@ -1,0 +1,774 @@
+#舰首
+ship_section_template = {
+	key = "sfdoll_mobile_starbase_section_1"
+	ship_size = sfdoll_mobile_starbase
+	fits_on_slot = bow
+	should_draw_components = yes
+	entity = "sfdoll_Sewship_entity"
+	icon = GFX_ship_part_core_bow
+	icon_frame = 1
+	component_slot = {
+		name = W_01
+		template = invisible_planet_killer_fixed
+		locatorname = explosion_locator_01
+	}
+
+	component_slot = {
+		name = T_01
+		template = invisible_titanic_fixed
+		locatorname = T01
+	}
+	component_slot = {
+		name = T_02
+		template = invisible_titanic_fixed
+		locatorname = T02
+	}
+	component_slot = {
+		name = T_03
+		template = invisible_titanic_fixed
+		locatorname = T03
+	}
+	component_slot = {
+		name = T_04
+		template = invisible_titanic_fixed
+		locatorname = T04
+	}
+	component_slot = {
+		name = T_05
+		template = invisible_titanic_fixed
+		locatorname = T05
+	}
+	component_slot = {
+		name = T_06
+		template = invisible_titanic_fixed
+		locatorname = T06
+	}
+	large_utility_slots = 15
+}
+
+#中段
+ship_section_template = {
+	key = sfdoll_mobile_starbase_section_2
+	ship_size = sfdoll_mobile_starbase
+	fits_on_slot = core
+	should_draw_components = yes
+	entity =  sfdoll_Sewship_locator_entity
+	icon = GFX_ship_part_core_bow
+	icon_frame = 1
+	component_slot = {
+		name = X_01
+		template = invisible_extra_large_fixed
+		locatorname = X01
+	}
+	component_slot = {
+		name = X_02
+		template = invisible_extra_large_fixed
+		locatorname = X02
+	}
+	component_slot = {
+		name = X_03
+		template = invisible_extra_large_fixed
+		locatorname = X03
+	}
+	component_slot = {
+		name = X_04
+		template = invisible_extra_large_fixed
+		locatorname = X04
+	}
+	component_slot = {
+		name = X_05
+		template = invisible_extra_large_fixed
+		locatorname = X05
+	}
+	component_slot = {
+		name = X_06
+		template = invisible_extra_large_fixed
+		locatorname = X06
+	}
+	component_slot = {
+		name = X_07
+		template = invisible_extra_large_fixed
+		locatorname = X07
+	}
+	component_slot = {
+		name = X_08
+		template = invisible_extra_large_fixed
+		locatorname = X08
+	}
+	component_slot = {
+		name = X_09
+		template = invisible_extra_large_fixed
+		locatorname = X09
+	}
+	component_slot = {
+		name = X_10
+		template = invisible_extra_large_fixed
+		locatorname = X10
+	}
+	component_slot = {
+		name = X_11
+		template = invisible_extra_large_fixed
+		locatorname = X11
+	}
+	component_slot = {
+		name = X_12
+		template = invisible_extra_large_fixed
+		locatorname = X12
+	}
+	component_slot = {
+		name = L_01
+		template = invisible_large_turret
+		locatorname = L01
+	}
+	component_slot = {
+		name = L_02
+		template = invisible_large_turret
+		locatorname = L02
+	}
+	component_slot = {
+		name = L_03
+		template = invisible_large_turret
+		locatorname = L03
+	}
+	component_slot = {
+		name = L_04
+		template = invisible_large_turret
+		locatorname = L04
+	}
+	component_slot = {
+		name = L_05
+		template = invisible_large_turret
+		locatorname = L05
+	}
+	component_slot = {
+		name = L_06
+		template = invisible_large_turret
+		locatorname = L06
+	}
+	component_slot = {
+		name = L_07
+		template = invisible_large_turret
+		locatorname = L07
+	}
+	component_slot = {
+		name = L_08
+		template = invisible_large_turret
+		locatorname = L08
+	}
+	large_utility_slots = 15
+}
+
+ship_section_template = {
+	key = sfdoll_mobile_starbase_section_3
+	ship_size = sfdoll_mobile_starbase
+	fits_on_slot = core2
+	should_draw_components = yes
+	entity =  sfdoll_Sewship_locator_entity
+	icon = GFX_ship_part_core_bow
+	icon_frame = 1
+	component_slot = {
+		name = L_09
+		template = invisible_large_turret
+		locatorname = L09
+	}
+	component_slot = {
+		name = L_10
+		template = invisible_large_turret
+		locatorname = L10
+	}
+	component_slot = {
+		name = L_11
+		template = invisible_large_turret
+		locatorname = L11
+	}
+	component_slot = {
+		name = L_12
+		template = invisible_large_turret
+		locatorname = L12
+	}
+	component_slot = {
+		name = L_13
+		template = invisible_large_turret
+		locatorname = L13
+	}
+	component_slot = {
+		name = L_14
+		template = invisible_large_turret
+		locatorname = L14
+	}
+	component_slot = {
+		name = L_15
+		template = invisible_large_turret
+		locatorname = L15
+	}
+	component_slot = {
+		name = L_16
+		template = invisible_large_turret
+		locatorname = L16
+	}
+	component_slot = {
+		name = L_17
+		template = invisible_large_turret
+		locatorname = L17
+	}
+	component_slot = {
+		name = L_18
+		template = invisible_large_turret
+		locatorname = L18
+	}
+	component_slot = {
+		name = L_19
+		template = invisible_large_turret
+		locatorname = L19
+	}
+	component_slot = {
+		name = L_20
+		template = invisible_large_turret
+		locatorname = L20
+	}
+	component_slot = {
+		name = L_21
+		template = invisible_large_turret
+		locatorname = L21
+	}
+	component_slot = {
+		name = L_22
+		template = invisible_large_turret
+		locatorname = L22
+	}
+	component_slot = {
+		name = L_23
+		template = invisible_large_turret
+		locatorname = L23
+	}
+	component_slot = {
+		name = L_24
+		template = invisible_large_turret
+		locatorname = L24
+	}
+	component_slot = {
+		name = M1
+		template = "invisible_medium_turret"
+		locatorname = L25
+	}
+	component_slot = {
+		name = M2
+		template = "invisible_medium_turret"
+		locatorname = L26
+	}
+	component_slot = {
+		name = M3
+		template = "invisible_medium_turret"
+		locatorname = L27
+	}
+	component_slot = {
+		name = M4
+		template = "invisible_medium_turret"
+		locatorname = L28
+	}
+	large_utility_slots = 15
+}
+
+#舰尾
+ship_section_template = {
+	key = sfdoll_mobile_starbase_section_4
+	ship_size = sfdoll_mobile_starbase
+	fits_on_slot = stern
+	should_draw_components = yes
+	entity =  sfdoll_Sewship_locator_entity
+	icon = GFX_ship_part_core_bow
+	icon_frame = 1
+	component_slot = {
+		name = G_01
+		template = invisible_missile_turret
+		locatorname = T09
+	}
+	component_slot = {
+		name = G_02
+		template = invisible_missile_turret
+		locatorname = T10
+	}
+	component_slot = {
+		name = G_03
+		template = invisible_missile_turret
+		locatorname = T11
+	}
+	component_slot = {
+		name = G_04
+		template = invisible_missile_turret
+		locatorname = T12
+	}
+	component_slot = {
+		name = S1
+		template = "invisible_small_turret"
+		locatorname = L29
+	}
+	component_slot = {
+		name = S2
+		template = "invisible_small_turret"
+		locatorname = L30
+	}
+	component_slot = {
+		name = S3
+		template = "invisible_small_turret"
+		locatorname = L29
+	}
+	component_slot = {
+		name = S4
+		template = "invisible_small_turret"
+		locatorname = L30
+	}
+	component_slot = {
+		name = S5
+		template = "invisible_small_turret"
+		locatorname = L31
+	}
+	component_slot = {
+		name = S6
+		template = "invisible_small_turret"
+		locatorname = L32
+	}
+	component_slot = {
+		name = P_01
+		template = invisible_point_defence_turret
+		locatorname = L27
+	}
+	component_slot = {
+		name = P_02
+		template = invisible_point_defence_turret
+		locatorname = L28
+	}
+	component_slot = {
+		name = P_03
+		template = invisible_point_defence_turret
+		locatorname = L29
+	}
+	component_slot = {
+		name = P_04
+		template = invisible_point_defence_turret
+		locatorname = L30
+	}
+	component_slot = {
+		name = P_05
+		template = invisible_point_defence_turret
+		locatorname = L31
+	}
+	component_slot = {
+		name = P_06
+		template = invisible_point_defence_turret
+		locatorname = L32
+	}
+	component_slot = {
+		name = H1
+		template = "large_strike_craft"
+		locatorname = W_01
+	}
+	component_slot = {
+		name = H2
+		template = "large_strike_craft"
+		locatorname = W_01
+	}
+	component_slot = {
+		name = H3
+		template = "large_strike_craft"
+		locatorname = W_01
+	}
+	component_slot = {
+		name = H4
+		template = "large_strike_craft"
+		locatorname = W_01
+	}
+	large_utility_slots = 15
+	aux_utility_slots = 5
+}
+
+# ship_section_template = {
+# 	key = "sfdoll_mobile_starbase_section_1"
+# 	ship_size = sfdoll_mobile_starbase
+# 	fits_on_slot = core
+# 	should_draw_components = yes
+# 	entity = homeship_entity
+# 	icon = "GFX_ship_part_core_bow"
+# 	icon_frame = 1
+# 	component_slot = {
+# 		name = "L01"
+# 		template = invisible_large_turret
+# 		locatorname = "L01"
+# 	}
+# 	component_slot = {
+# 		name = "L02"
+# 		template = invisible_large_turret
+# 		locatorname = "L02"
+# 	}
+# 	component_slot = {
+# 		name = "L03"
+# 		template = invisible_large_turret
+# 		locatorname = "L03"
+# 	}
+# 	component_slot = {
+# 		name = "L04"
+# 		template = invisible_large_turret
+# 		locatorname = "L04"
+# 	}
+# 	component_slot = {
+# 		name = "L05"
+# 		template = invisible_large_turret
+# 		locatorname = "L05"
+# 	}
+# 	component_slot = {
+# 		name = "L06"
+# 		template = invisible_large_turret
+# 		locatorname = "L06"
+# 	}
+# 	component_slot = {
+# 		name = "L07"
+# 		template = invisible_large_turret
+# 		locatorname = "L07"
+# 	}
+# 	component_slot = {
+# 		name = "L08"
+# 		template = invisible_large_turret
+# 		locatorname = "L08"
+# 	}
+# 	component_slot = {
+# 		name = "L09"
+# 		template = invisible_large_turret
+# 		locatorname = "L09"
+# 	}
+# 	component_slot = {
+# 		name = "L010"
+# 		template = invisible_large_turret
+# 		locatorname = "L010"
+# 	}
+# 	component_slot = {
+# 		name = "L011"
+# 		template = invisible_large_turret
+# 		locatorname = "L011"
+# 	}
+# 	component_slot = {
+# 		name = "L012"
+# 		template = invisible_large_turret
+# 		locatorname = "L012"
+# 	}
+# 	component_slot = {
+# 		name = "L013"
+# 		template = invisible_large_turret
+# 		locatorname = "L013"
+# 	}
+# 	component_slot = {
+# 		name = "L014"
+# 		template = invisible_large_turret
+# 		locatorname = "L014"
+# 	}
+# 	component_slot = {
+# 		name = "L015"
+# 		template = invisible_large_turret
+# 		locatorname = "L015"
+# 	}
+# 	component_slot = {
+# 		name = "L016"
+# 		template = invisible_large_turret
+# 		locatorname = "L016"
+# 	}
+# 	component_slot = {
+# 		name = "L017"
+# 		template = invisible_large_turret
+# 		locatorname = "L017"
+# 	}
+# 	component_slot = {
+# 		name = "L018"
+# 		template = invisible_large_turret
+# 		locatorname = "L018"
+# 	}
+# 	component_slot = {
+# 		name = "L019"
+# 		template = invisible_large_turret
+# 		locatorname = "L019"
+# 	}
+# 	component_slot = {
+# 		name = "L020"
+# 		template = invisible_large_turret
+# 		locatorname = "L020"
+# 	}
+# 	large_utility_slots = 16
+# }
+
+# #移动城市LV2
+# ship_section_template = {
+# 	key = "sfdoll_mobile_starbase_section_2"	#ID,不能重复
+# 	ship_size = sfdoll_mobile_starbase	#所属类别
+# 	fits_on_slot = meidm	#是哪个区段？
+# 	should_draw_components = yes
+# 	entity = homeship_entity_loctor_mesh_entity
+# 	icon = "GFX_ship_part_core_mid"
+# 	icon_frame = 1
+# 	component_slot = {
+# 		name = "L021"
+# 		template = invisible_large_turret
+# 		locatorname = "L021"
+# 	}
+# 	component_slot = {
+# 		name = "L022"
+# 		template = invisible_large_turret
+# 		locatorname = "L022"
+# 	}
+# 	component_slot = {
+# 		name = "L023"
+# 		template = invisible_large_turret
+# 		locatorname = "L023"
+# 	}
+# 	component_slot = {
+# 		name = "L024"
+# 		template = invisible_large_turret
+# 		locatorname = "L024"
+# 	}
+# 	component_slot = {
+# 		name = "L025"
+# 		template = invisible_large_turret
+# 		locatorname = "L025"
+# 	}
+# 	component_slot = {
+# 		name = "L026"
+# 		template = invisible_large_turret
+# 		locatorname = "L026"
+# 	}
+# 	component_slot = {
+# 		name = "L027"
+# 		template = invisible_large_turret
+# 		locatorname = "L027"
+# 	}
+# 	component_slot = {
+# 		name = "L028"
+# 		template = invisible_large_turret
+# 		locatorname = "L028"
+# 	}
+# 	component_slot = {
+# 		name = "L029"
+# 		template = invisible_large_turret
+# 		locatorname = "L029"
+# 	}
+# 	component_slot = {
+# 		name = "L030"
+# 		template = invisible_large_turret
+# 		locatorname = "L030"
+# 	}
+# 	component_slot = {
+# 		name = "L031"
+# 		template = invisible_large_turret
+# 		locatorname = "L031"
+# 	}
+# 	component_slot = {
+# 		name = "L032"
+# 		template = invisible_large_turret
+# 		locatorname = "L032"
+# 	}
+# 	component_slot = {
+# 		name = "L033"
+# 		template = invisible_large_turret
+# 		locatorname = "L033"
+# 	}
+# 	component_slot = {
+# 		name = "L034"
+# 		template = invisible_large_turret
+# 		locatorname = "L034"
+# 	}
+# 	component_slot = {
+# 		name = "L035"
+# 		template = invisible_large_turret
+# 		locatorname = "L035"
+# 	}
+# 	component_slot = {
+# 		name = "L036"
+# 		template = invisible_large_turret
+# 		locatorname = "L036"
+# 	}
+# 	component_slot = {
+# 		name = "L037"
+# 		template = invisible_large_turret
+# 		locatorname = "L037"
+# 	}
+# 	component_slot = {
+# 		name = "L038"
+# 		template = invisible_large_turret
+# 		locatorname = "L038"
+# 	}
+# 	component_slot = {
+# 		name = "L039"
+# 		template = invisible_large_turret
+# 		locatorname = "L039"
+# 	}
+# 	component_slot = {
+# 		name = "L040"
+# 		template = invisible_large_turret
+# 		locatorname = "L040"
+# 	}
+# 	large_utility_slots = 16
+# }
+
+# #移动城市LV3
+# ship_section_template = {
+# 	key = "sfdoll_mobile_starbase_section_3"	#ID,不能重复
+# 	ship_size = sfdoll_mobile_starbase	#所属类别
+# 	fits_on_slot = end	#是哪个区段？
+# 	should_draw_components = yes
+# 	entity = homeship_entity_loctor_mesh_entity
+# 	icon = "GFX_ship_part_core_stern"
+# 	icon_frame = 1
+# 	component_slot = {
+# 		name = "L041"
+# 		template = invisible_large_turret
+# 		locatorname = "L041"
+# 	}
+# 	component_slot = {
+# 		name = "L042"
+# 		template = invisible_large_turret
+# 		locatorname = "L042"
+# 	}
+# 	component_slot = {
+# 		name = "L043"
+# 		template = invisible_large_turret
+# 		locatorname = "L043"
+# 	}
+# 	component_slot = {
+# 		name = "L044"
+# 		template = invisible_large_turret
+# 		locatorname = "L044"
+# 	}
+# 	component_slot = {
+# 		name = "L045"
+# 		template = invisible_large_turret
+# 		locatorname = "L045"
+# 	}
+# 	component_slot = {
+# 		name = "L046"
+# 		template = invisible_large_turret
+# 		locatorname = "L046"
+# 	}
+# 	component_slot = {
+# 		name = "L047"
+# 		template = invisible_large_turret
+# 		locatorname = "L047"
+# 	}
+# 	component_slot = {
+# 		name = "L048"
+# 		template = invisible_large_turret
+# 		locatorname = "L048"
+# 	}
+# 	component_slot = {
+# 		name = "L049"
+# 		template = invisible_large_turret
+# 		locatorname = "L049"
+# 	}
+# 	component_slot = {
+# 		name = "L050"
+# 		template = invisible_large_turret
+# 		locatorname = "L050"
+# 	}
+# 	component_slot = {
+# 		name = "L051"
+# 		template = invisible_large_turret
+# 		locatorname = "L051"
+# 	}
+# 	component_slot = {
+# 		name = "L052"
+# 		template = invisible_large_turret
+# 		locatorname = "L052"
+# 	}
+# 	component_slot = {
+# 		name = "L053"
+# 		template = invisible_large_turret
+# 		locatorname = "L053"
+# 	}
+# 	component_slot = {
+# 		name = "L054"
+# 		template = invisible_large_turret
+# 		locatorname = "L054"
+# 	}
+# 	component_slot = {
+# 		name = "L055"
+# 		template = invisible_large_turret
+# 		locatorname = "L055"
+# 	}
+# 	component_slot = {
+# 		name = "L056"
+# 		template = invisible_large_turret
+# 		locatorname = "L056"
+# 	}
+# 	component_slot = {
+# 		name = "L057"
+# 		template = invisible_large_turret
+# 		locatorname = "L057"
+# 	}
+# 	component_slot = {
+# 		name = "L058"
+# 		template = invisible_large_turret
+# 		locatorname = "L058"
+# 	}
+# 	component_slot = {
+# 		name = "L059"
+# 		template = invisible_large_turret
+# 		locatorname = "L059"
+# 	}
+# 	component_slot = {
+# 		name = "L060"
+# 		template = invisible_large_turret
+# 		locatorname = "L060"
+# 	}
+# 	large_utility_slots = 16
+# }
+
+# ship_section_template = {
+# 	key = "sfdoll_mobile_starbase_section_4"
+# 	ship_size = sfdoll_mobile_starbase
+# 	fits_on_slot = weapon
+# 	should_draw_components = yes
+# 	entity = homeship_entity_loctor_mesh_entity
+# 	icon = "GFX_ship_part_core_bow"
+# 	icon_frame = 1
+# 	component_slot = {
+# 		name = "L061"
+# 		template = invisible_point_defence_turret
+# 		locatorname = "L061"
+# 	}
+# 	component_slot = {
+# 		name = "L062"
+# 		template = invisible_point_defence_turret
+# 		locatorname = "L062"
+# 	}
+# 	component_slot = {
+# 		name = "L063"
+# 		template = invisible_point_defence_turret
+# 		locatorname = "L063"
+# 	}
+# 	component_slot = {
+# 		name = "L064"
+# 		template = invisible_point_defence_turret
+# 		locatorname = "L064"
+# 	}
+# 	component_slot = {
+# 		name = "L065"
+# 		template = invisible_point_defence_turret
+# 		locatorname = "L065"
+# 	}
+# 	component_slot = {
+# 		name = "L066"
+# 		template = invisible_point_defence_turret
+# 		locatorname = "L066"
+# 	}
+# 	component_slot = {
+# 		name = "L067"
+# 		template = invisible_point_defence_turret
+# 		locatorname = "L067"
+# 	}
+# 	component_slot = {
+# 		name = "L068"
+# 		template = invisible_point_defence_turret
+# 		locatorname = "L068"
+# 	}
+# 	component_slot = {
+# 		name = "L069"
+# 		template = invisible_point_defence_turret
+# 		locatorname = "L069"
+# 	}
+# 	aux_utility_slots = 5
+# }

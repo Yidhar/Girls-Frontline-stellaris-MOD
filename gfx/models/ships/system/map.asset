@@ -1,0 +1,5 @@
+entity = {
+	name = "map_entity"
+	pdxmesh = "map_mesh"
+	scale = 70
+}

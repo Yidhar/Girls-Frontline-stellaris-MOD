@@ -1,0 +1,26 @@
+planet_sfdoll_sp_industry = {
+	icon = "job_foundry" #原版冶金行业图标
+	parent = planet_jobs_productive
+	generate_mult_modifiers = {
+		produces
+		upkeep
+	}
+	generate_add_modifiers = {
+		produces
+		upkeep
+	}
+	modifier_category = pop
+}
+
+economic_sfdoll_homeless_ship = {
+	generate_mult_modifiers = {
+		cost
+		produces
+		upkeep
+	}
+	generate_add_modifiers = {
+		cost
+		produces
+		upkeep
+	}
+}

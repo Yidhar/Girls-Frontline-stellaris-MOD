@@ -1,0 +1,461 @@
+#瓦解射线
+tech_GFnyto_accelerating_coil1= {
+	icon = tech_GFnyto_accelerating_coil1
+	cost = 40000
+	area = physics
+	tier = 4
+
+	is_rare = yes
+	category = {field_manipulation}
+	prerequisites = { "tech_GF_nyto_Inverse_collapse_2" }
+	weight = 5
+	modifier = {}
+	prereqfor_desc = {
+		custom = {
+			title = "解锁泰坦舰首区段类型：空母舰首"
+			desc = "可以安装歼星武器,使泰坦能够进行对行星毁灭打击。"
+		}
+	}
+	potential = {
+		has_authority = auth_GF_paradeus
+	}
+	ai_weight = {weight = 5}
+}
+#能源核心 lv3
+tech_GFnyto_power={
+	icon = tech_GFnyto_power
+	cost = 50000
+	area = physics
+	tier = 5
+	is_rare = yes
+	gateway = power_generation
+	category = {particles}
+	prerequisites = {"tech_zero_point_power"}
+	weight = 5
+	modifier = {}
+	potential = {
+		OR = {
+			has_authority = auth_GF_paradeus
+			has_country_flag = has_nyto_technology
+		}	
+	}
+	ai_weight = {weight = 5}
+	prereqfor_desc = {
+		hide_prereq_for_desc = component
+		custom = {
+			title = "tech_GFnyto_power_title"
+			desc = "tech_GFnyto_power_desc"
+		}
+	}
+	
+}
+#能源核心 lv2
+tech_GFnyto_power_lv2 ={
+	area = physics
+	cost = @tier3cost2
+	tier = 3
+	category = { particles }
+	ai_update_type = all
+	weight = @tier3weight2
+	gateway = power_generation
+	potential = {
+		OR = {
+			has_authority = auth_GF_paradeus
+			has_country_flag = has_nyto_technology
+		}		
+	}
+	prereqfor_desc = {
+		hide_prereq_for_desc = component
+		custom = {
+			title = "tech_GFnyto_power_lv2_title"
+			desc = "tech_GFnyto_power_lv2_desc"
+		}
+	}
+	prerequisites = {	
+		tech_cold_fusion_power
+	}
+	weight_modifier = {
+		factor = 2
+		modifier = {
+			factor = 2
+			has_technology = tech_battleships
+		}
+		modifier = {
+			factor = 10
+			has_technology =tech_GF_nyto_Inverse_collapse_2
+		}
+		modifier = {
+			factor = value:tech_weight_likelihood
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+	}
+}
+#能源核心 lv1
+tech_GFnyto_power_lv1 = {
+	area = physics
+	cost = 0
+	tier = 1
+	category = { particles }
+	ai_update_type = all
+	potential = {
+		OR = {
+			has_authority = auth_GF_paradeus
+			has_country_flag = has_nyto_technology
+		}	
+	}
+	start_tech = yes
+	prereqfor_desc = {
+		hide_prereq_for_desc = component
+		custom = {
+			title = "tech_GFnyto_power_lv1_title"
+			desc = "tech_GFnyto_power_lv1_desc"
+		}
+	}
+	
+}
+#附加运算模块
+tech_GFnyto_additional_arithmetic_module= {
+	icon = tech_GFnyto_additional_arithmetic_module
+	cost = 50000
+	area = physics
+	tier = 5
+	is_rare = yes
+	category = {computing}
+	prerequisites = { "tech_combat_computers_3" }
+	weight = 5
+	modifier = {}
+	potential = {has_authority = auth_GF_paradeus}
+	ai_weight = {weight = 5}
+}
+#伤害控制小组
+tech_GF_nyto_injury_control_team= {
+	icon = tech_GF_nyto_injury_control_team
+	cost = 30000
+	area = physics
+	start_tech = no
+	tier = 3
+	category = {field_manipulation}
+	prerequisites = { "tech_space_defense_station_improvement" }
+	weight = 5
+	modifier = {}
+	potential = {has_authority = auth_GF_paradeus}
+	weight_modifier = {factor = 4}
+	ai_weight = {weight = 2}
+}
+#装甲
+tech_GFnyto_body_armor1= {
+	icon = tech_GFnyto_body_armor1
+	cost = 5000
+	area = physics
+	tier = 1
+	is_rare = no
+	category = {field_manipulation}
+	prerequisites = { "tech_GF_nyto_Inverse_collapse_1" }
+	weight = 75
+	modifier = {}
+	potential = {has_authority = auth_GF_paradeus}
+	ai_weight = {weight = 5}
+}
+tech_GFnyto_body_armor2= {
+	icon = tech_GFnyto_body_armor2
+	cost = 7000
+	area = physics
+	tier = 2
+	is_rare = no
+	category = {field_manipulation}
+	prerequisites = { "tech_GFnyto_body_armor1" }
+	weight = 89
+	modifier = {}
+	potential = {has_authority = auth_GF_paradeus}
+	ai_weight = {weight = 5}
+}
+tech_GFnyto_body_armor3= {
+	icon = tech_GFnyto_body_armor3
+	cost = 10000
+	area = physics
+	tier = 3
+	is_rare = no
+	category = {field_manipulation}
+	prerequisites = { "tech_GFnyto_body_armor2" }
+	weight = 65
+	modifier = {}
+	potential = {has_authority = auth_GF_paradeus}
+	ai_weight = {weight = 5}
+}
+#力场盾
+tech_GFnyto_force_shield1= {
+	icon = tech_GFnyto_force_shield1
+	cost = 7000
+	area = physics
+	tier = 1
+	is_rare = no
+	category = {field_manipulation}
+	prerequisites = { "tech_GF_nyto_Inverse_collapse_2" }
+	weight = 65
+	modifier = {ship_shield_regen_add_perc = 0.01}
+	potential = {
+		OR = {
+			has_authority = auth_GF_paradeus
+			has_country_flag = has_nyto_technology
+		}	
+	}
+	ai_weight = {weight = 5}
+}
+tech_GFnyto_force_shield2= {
+	icon = tech_GFnyto_force_shield2
+	cost = 10000
+	area = physics
+	tier = 2
+	is_rare = no
+	category = {field_manipulation}
+	prerequisites = { "tech_GFnyto_force_shield1" }
+	weight = 75
+	modifier = {ship_shield_regen_add_perc = 0.01}
+	potential = {
+		OR = {
+			has_authority = auth_GF_paradeus
+			has_country_flag = has_nyto_technology
+		}	
+	}
+	ai_weight = {weight = 5}
+}
+tech_GFnyto_force_shield3= {
+	icon = tech_GFnyto_force_shield3
+	cost = 20000
+	area = physics
+	tier = 3
+	is_rare = no
+	category = {field_manipulation}
+	prerequisites = { "tech_GFnyto_force_shield2" }
+	weight = 45
+	modifier = {ship_shield_regen_add_perc = 0.01}
+	potential = {
+		OR = {
+			has_authority = auth_GF_paradeus
+			has_country_flag = has_nyto_technology
+		}	
+	}
+	ai_weight = {weight = 5}
+}
+#高爆弹
+tech_GF_nyto_high_explosive_bomb = {
+	icon = tech_GF_nyto_high_explosive_bomb
+	cost = 40000
+	area = engineering
+	tier = 4
+	category = { propulsion }
+	prerequisites = { "tech_arc_emitter_1" }
+	weight = 45
+	modifier = {}
+	potential = {has_authority = auth_GF_paradeus}
+	ai_weight = {weight = 2}
+}
+#穿甲弹
+tech_GF_nyto_armor_piercing_bullet = {
+	icon = tech_GF_nyto_armor_piercing_bullet
+	cost = 50000
+	area = engineering
+	tier = 5
+	category = { propulsion }
+	prerequisites = { "tech_arc_emitter_2" }
+	weight = 45
+	modifier = {}
+	potential = {has_authority = auth_GF_paradeus}
+	ai_weight = {weight = 2}
+}
+#侦察机
+tech_GF_nyto_reconnaissance_aircraft= {
+	icon = tech_GF_nyto_reconnaissance_aircraft
+	cost = 40000
+	area = physics
+	start_tech = no
+	tier = 4
+	category = {computing}
+	prerequisites = { "tech_strike_craft_3" }
+	weight = 0
+	modifier = {}
+	potential = {
+		has_authority = auth_GF_paradeus
+	}
+	weight_modifier = {factor = 4}
+	ai_weight = {weight = 2}
+}
+
+#深空之眼
+tech_GF_nyto_Deep_space={
+	icon = GF_nyto_Deep_space
+	cost = 40000
+	area = physics
+	start_tech = no
+	tier = 4
+	category = { voidcraft }
+	weight = 0
+	is_dangerous = yes
+	potential = {
+		has_authority = auth_GF_paradeus
+	}
+	ai_weight = {weight = 0}
+}
+#曙光
+tech_GF_nyto_light_thruster={
+	icon = GF_nyto_light_thruster
+	cost = 40000
+	area = physics
+	start_tech = no
+	tier = 4
+	category = { voidcraft }
+	weight = 0
+	is_dangerous = yes
+	potential = {
+		has_authority = auth_GF_paradeus
+	}
+	ai_weight = {weight = 0}
+}
+#光明的诗歌
+tech_GF_nyto_bright_poetry ={
+	icon = GF_nyto_bright_poetry
+	cost = 40000
+	area = physics
+	start_tech = no
+	tier = 4
+	category = { voidcraft }
+	weight = 0
+	is_dangerous = yes
+	potential = {
+		has_authority = auth_GF_paradeus
+	}
+	ai_weight = {weight = 0}
+}
+#信标
+tech_GF_nyto_Beacon={
+	icon = GF_nyto_Beacon
+	cost = 40000
+	area = physics
+	start_tech = no
+	tier = 4
+	category = { voidcraft }
+	weight = 0
+	is_dangerous = yes
+	potential = {
+		has_authority = auth_GF_paradeus
+	}
+	ai_weight = {weight = 0}
+}
+#深空核心
+tech_GF_nyto_godenergy={
+	icon = GF_nyto_godenergy
+	cost = 40000
+	area = physics
+	start_tech = no
+	tier = 4
+	category = { voidcraft }
+	weight = 0
+	is_dangerous = yes
+	potential = {
+		has_authority = auth_GF_paradeus
+	}
+	ai_weight = {weight = 0}
+}
+
+#武器联锁
+tech_GF_nyto_x ={
+	icon = tech_GF_nyto_Inverse_collapse_1
+	cost = 17000
+	area = physics
+	start_tech = no
+	tier = 4
+	category = { voidcraft }
+	weight = 34
+	is_rare = yes
+	prerequisites ={ tech_GF_nyto_RAR tech_GFnyto_framework }
+	potential = {
+		has_authority = auth_GF_paradeus
+	}
+	ai_weight = {weight =  50}
+}
+#无人机集群
+tech_GF_nyto_H ={
+	icon = tech_GF_nyto_Inverse_collapse_1
+	cost = 15000
+	area = physics
+	start_tech = no
+	tier = 5
+	weight = 25
+	is_rare = yes
+	category = { voidcraft }
+	prerequisites ={ tech_GF_nyto_RAR tech_GFnyto_framework}
+	potential = {
+		has_authority = auth_GF_paradeus
+	}
+	ai_weight = {weight =  50}
+}
+
+#交叉火力连锁
+tech_GF_nyto_P ={
+	icon = tech_GF_nyto_PP
+	cost = 20000
+	area = physics
+	start_tech = no
+	tier = 5
+	weight = 20
+	is_rare = yes
+	category = { voidcraft }
+	prerequisites ={ tech_GF_nyto_RAR tech_GFnyto_framework}
+	potential = {
+		has_authority = auth_GF_paradeus
+	}
+	modifier = {
+		weapon_type_point_defense_weapon_fire_rate_mult = 0.5
+	}
+	ai_weight = {weight =  50}
+}
+
+#饱和式火力覆盖
+tech_GF_nyto_G ={
+	icon = tech_GF_nyto_Inverse_collapse_1
+	cost = 20000
+	area = physics
+	start_tech = no
+	tier = 5
+	weight = 20
+	is_rare = yes
+	category = { voidcraft }
+	prerequisites ={ tech_GF_nyto_RAR tech_GFnyto_framework}
+	potential = {
+		has_authority = auth_GF_paradeus
+	}
+	modifier = {
+		weapon_type_explosive_weapon_fire_rate_mult = 0.5
+	}
+	ai_weight = {weight =  50}
+}
+
+#火力引导标记
+tech_GF_nyto_sm ={
+	icon = tech_GF_nyto_Inverse_collapse_1
+	cost = 8000
+	area = physics
+	start_tech = no
+	tier = 3
+	weight = 20
+	is_rare = yes
+	category = { voidcraft }
+	prerequisites ={ tech_GF_nyto_Inverse_collapse_1 tech_GFnyto_framework}
+	potential = {
+		has_authority = auth_GF_paradeus
+	}
+	ai_weight = {weight =  50}
+}

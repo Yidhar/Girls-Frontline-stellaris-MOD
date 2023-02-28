@@ -1,0 +1,56 @@
+category = {
+	name = "GFnyto_Effects"
+	soundeffects = {
+		GF_nyto_relics_end_sound
+		GF_nyto_Elid_attack_lose
+	}
+}
+
+soundeffect = {
+	name = "GF_nyto_relics_end_sound"
+	volume = 0.5
+	max_audible = 1
+	max_audible_behaviour = fail
+	fade_out = 0.3
+	sounds = {
+		sound = GFnyto_relics_sound
+	}
+}
+
+soundeffect = {
+	name = "GF_nyto_Elid_attack_lose"
+	volume = 0.5
+	max_audible = 1
+	max_audible_behaviour = fail
+	fade_out = 0.3
+	sounds = {
+		sound = GFnyto_ELid_sound
+	}
+}
+
+sound = {
+	name = "GFnyto_relics_sound"
+	file = "GFnyto_relics_sound.wav"
+	volume = 1
+}
+
+sound = {
+	name = "GFnyto_ELid_sound"
+	file = "GFnyto_Elidattack_sound.wav"
+	volume = 1
+}
+sound = {
+	name =  "GFnyto_ELid_win_sound"
+	file = "GF_nyto_twilight.wav"
+	volume = 1
+}
+soundeffect = {
+	name = "GFnyto_ELid_win_sound"
+	volume = 0.5
+	max_audible = 1
+	max_audible_behaviour = fail
+	fade_out = 0.3
+	sounds = {
+		sound = "GFnyto_ELid_win_sound"
+	}
+}

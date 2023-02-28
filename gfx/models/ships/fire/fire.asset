@@ -1,0 +1,38 @@
+entity = {
+	name = "weapons_entity"
+	pdxmesh = "weapons_mesh"
+	scale = 50
+	default_state = idle
+	state = { name = idle animation = idle animation_blend_time = 3 chance = 9.0 looping = yes
+	}
+	locator = {
+		name = l01
+		position = {
+			0 0 0
+		}
+		rotation = {
+			0 180 0
+		}
+	}
+	attach = {
+		l01 = weapons_entity_02
+	}
+}
+entity = {
+	name = "weapons_entity_02"
+	pdxmesh = "weapons_mesh"
+	scale = 1.8
+	default_state = idle
+	state = { name = idle animation = idle animation_blend_time = 3 chance = 9.0 looping = yes
+	}
+
+	attach = {
+		
+	}
+}
+
+
+animation = {
+	name = Gf_nyto_weapons_idel_animation
+	file = weapons_idle.anim
+}

@@ -1,0 +1,48 @@
+@base_moon_distance = 10
+
+sfdoll_system_search_zion = {
+	name = Name_sfdoll_system_search_zion
+	class = sc_black_hole
+	#usage = sfdoll_system_init
+	planet = {
+		class = pc_black_hole
+		orbit_distance = 0
+		orbit_angle = 0
+	}
+	change_orbit = 45
+	planet = {
+		class = pc_gf_sfdoll_embers_gloomy
+		orbit_angle = 30
+		orbit_distance = 30
+		size = 20
+		flags = {
+			sfdoll_system_search_zion_planet_1
+		}
+		init_effect = {
+			create_archaeological_site = site_noel_sfdoll
+			save_global_event_target_as = planet_sfdoll_embers_gloomy_1
+		}
+	}
+}
+
+sfdoll_system_mega_world = {
+	name = "pc_sfdoll_black_hole"
+	class = sc_sfdoll_mega_system
+	#usage = sfdoll_system_init
+	planet = {
+		class = pc_sfdoll_black_hole
+		orbit_distance = 0
+		orbit_angle = 0
+		size = 5
+		init_effect = {
+			# 创建星系时已经调查，无需重复
+			# set_surveyed = {
+			# 	surveyed = yes
+			# 	surveyor = FROM
+			# }
+			set_all_comms_surveyed = yes
+			clear_blockers = yes
+		}
+	}
+	change_orbit = 45
+}

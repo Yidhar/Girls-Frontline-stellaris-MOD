@@ -1,0 +1,4 @@
+NGameplay = {
+	COMMAND_LIMIT_MAX										= 800
+	NAVAL_CAPACITY_MAX										= 20000 
+}

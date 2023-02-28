@@ -1,0 +1,206 @@
+#升级1
+tech_GF_nyto_robomodding_points_1= {
+	icon = tech_GF_nyto_robomodding_points_1
+	cost = 10000
+	area = engineering
+	tier = 1
+	is_rare = yes
+	category = { industry }
+	prerequisites = { "tech_GF_nyto_EILD_brain_wave" }
+	weight = 5
+	modifier = {NYTO_species_trait_points_add = 2 EILD_species_trait_points_add = 2 }
+	potential = {has_authority = auth_GF_paradeus}
+	ai_weight = {weight = 2}
+}
+#升级2
+tech_GF_nyto_robomodding_points_2 = {
+	icon = tech_GF_nyto_robomodding_points_2
+	cost = 20000
+	area = engineering
+	tier = 2
+	is_rare = yes
+	category = { industry }
+	prerequisites = { "tech_GF_nyto_robomodding_points_1" }
+	weight = 5
+	modifier = {NYTO_species_trait_points_add = 2 EILD_species_trait_points_add = 2 }
+	potential = {has_authority = auth_GF_paradeus}
+	ai_weight = {weight = 2}
+}
+#移动城市LV1
+tech_GF_nyto_mobile_city_1= {
+	icon = tech_GF_nyto_mobile_city_1
+	cost = 10000
+	area = engineering
+	tier = 1
+	category = { voidcraft }
+	prerequisites = { "tech_mega_engineering" }
+	weight = 5
+	modifier = {}
+	potential = {has_authority = auth_GF_paradeus}
+	ai_weight = {weight = 2}
+}
+#算法工程
+tech_GF_nyto_algorithm ={ 
+	cost = 30000
+	area = engineering
+	category = { biology }
+	tier = 3
+	weight = 999
+	potential = {has_authority = auth_GF_paradeus}
+	ai_weight = {weight = 2}
+	prerequisites = {
+		tech_exotic_gases
+	}
+}
+#新型火控单元
+tech_GFnyto_framework ={
+	cost = 30000
+	area = engineering
+	category = { voidcraft }
+	tier = 3
+	weight = 999
+	potential = {has_authority = auth_GF_paradeus}
+	ai_weight = {weight = 2}
+	prerequisites = {
+		tech_rare_crystals
+	}
+}
+
+#高级蚀刻理论
+tech_GFnyto_framework2={
+	cost = 30000
+	area = engineering
+	category = { voidcraft }
+	tier = 3
+	weight = 50
+	potential = {has_authority = auth_GF_paradeus}
+	ai_weight = {weight = 2}
+	prerequisites = {
+		tech_GFnyto_framework
+	}
+}
+
+#坍塌理论
+tech_GFnyto_tansuo={
+	cost = 30000
+	area = engineering
+	category = { voidcraft }
+	tier = 4
+	weight = 50
+	potential = {
+		has_authority = auth_GF_paradeus
+	}
+	ai_weight = {weight = 2}
+	prerequisites = {
+		tech_GF_nyto_Inverse_collapse_1
+	}
+}
+
+#粒子解离
+tech_GFnyto_tansuo2={
+	cost = 30000
+	area = engineering
+	category = { voidcraft }
+	tier = 5
+	weight = 50
+	potential = {
+		has_authority = auth_GF_paradeus
+	}
+	ai_weight = {weight = 2}
+	prerequisites = {
+		tech_GFnyto_tansuo
+	}
+}
+
+#恒星坍缩器
+tech_GFnyto_star_tasuo={
+	cost = 50000
+	area = engineering
+	category = {
+		voidcraft
+	}
+	tier = 5
+	weight = 50
+	potential = {
+		has_authority = auth_GF_paradeus
+	}
+	ai_weight = {weight = 200}
+	prerequisites = {
+		tech_mega_engineering
+	}
+	modifier = {
+		custom_tooltip = "tech_GFnyto_star_tasuo_desc"
+	}
+}
+
+#指挥舰
+tech_template_GFnyto_Command_ship ={
+	cost = 50000
+	area = engineering
+	category = {
+		voidcraft
+	}
+	tier = 5
+	weight = 20
+	ai_weight = {
+		weight = 50
+	}
+	potential = {
+		has_authority = auth_GF_paradeus
+	}
+	prerequisites = {
+		tech_template_GFnyto_cv_batellship
+	}
+}
+#航空战列舰
+tech_template_GFnyto_cv_batellship ={
+	cost = 50000
+	area = engineering
+	category = {
+		voidcraft
+	}
+	tier = 5
+	weight = 20
+	ai_weight = {
+		weight = 50
+	}
+	potential = {
+		has_authority = auth_GF_paradeus
+	}
+	prerequisites = {
+		tech_titans
+	}
+}
+#永恒要塞
+tech_template_stions_fortress ={
+	cost = 50000
+	area = engineering
+	category = {
+		voidcraft
+	}
+	tier = 5
+	weight = 20
+	ai_weight = {
+		weight = 50
+	}
+	potential = {
+		has_authority = auth_GF_paradeus
+	}
+	prerequisites = {
+		tech_mega_engineering
+	}
+}
+#轨道卫星城
+tech_template_GF_nyto_orbit_stions ={
+	cost = 50000
+	area = engineering
+	category = { voidcraft }
+	tier = 5
+	weight = 20
+	ai_weight = { weight = 50 	}
+	potential = { has_authority = auth_GF_paradeus 	}
+	prerequisites = { tech_habitat_1 }	
+	modifier = {
+		custom_tooltip = "tech_template_GF_nyto_orbit_stions_desc"
+	}
+}

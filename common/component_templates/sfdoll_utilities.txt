@@ -1,0 +1,449 @@
+utility_component_template = {
+	key="sfdoll_ship_defense_s"
+	size = small
+	icon = "GFX_sfdoll_ship_defense_s"
+	icon_frame = 1
+	power = -100
+	modifier = {
+		ship_shield_add = 900
+		ship_shield_regen_add_static = 90
+	}
+	ship_modifier = {
+		ship_emergency_ftl_mult = -0.10
+	}
+	prerequisites = { "tech_sfdoll_ship_defense_s" }
+	component_set = "component_set_sfdoll_ship_defense_s"
+	resources = {
+		category = ship_components
+		cost= {
+			sr_dark_matter = 6
+			GF_nyto_collapse_liquid = 6
+		}		
+		upkeep = {
+			alloys = 0.5
+		}
+	}
+	ai_weight = {
+		weight = 200
+		modifier = {
+			factor = -4
+			NOT = {	has_authority = auth_gf_sfdoll	}
+		}
+	}
+}
+
+
+utility_component_template  = {
+	key = "sfdoll_ship_defense_m"
+	size =  medium
+	icon = "GFX_sfdoll_ship_defense_s"
+	icon_frame = 1
+	power = -200
+	modifier = {
+		ship_shield_add = 1800
+		ship_shield_regen_add_static = 180
+	}
+	ship_modifier = {
+		ship_emergency_ftl_mult = -0.10
+	}
+
+	prerequisites = { "tech_sfdoll_ship_defense_s" }
+	component_set = "component_set_sfdoll_ship_defense_s"
+	resources = {
+		category = ship_components
+		cost= {
+			sr_dark_matter = 12
+			GF_nyto_collapse_liquid = 12
+		}		
+		upkeep = {
+			alloys = 1
+		}
+	}
+	ai_weight = {
+		weight = 200
+		modifier = {
+			factor = -4
+			NOT = {	has_authority = auth_gf_sfdoll	}
+		}
+		
+	}
+}
+
+
+utility_component_template = {
+	key="sfdoll_ship_defense_L"
+	size = large
+	icon = "GFX_sfdoll_ship_defense_s"
+	icon_frame = 1
+	power = -400
+	modifier = {
+		ship_shield_add = 3600
+		ship_shield_regen_add_static = 360
+	}
+	ship_modifier = {
+		ship_emergency_ftl_mult = -0.10
+	}
+
+	prerequisites = { "tech_sfdoll_ship_defense_s" }
+	component_set = "component_set_sfdoll_ship_defense_s"
+	resources = {
+		category = ship_components
+		cost= {
+			sr_dark_matter = 24
+			GF_nyto_collapse_liquid = 24
+		}		
+		upkeep = {
+			alloys = 2
+		}
+	}
+	ai_weight = {
+		weight = 200
+		modifier = {
+			factor = -4
+			NOT = {	has_authority = auth_gf_sfdoll	}
+		}
+	}
+}
+
+
+utility_component_template = {
+	key="sfdoll_ship_armor_L"
+	size = large
+	icon = "GFX_sfdoll_ship_armor_L"
+	icon_frame = 1
+	power = -100
+	modifier = {
+		ship_armor_add = 2400
+		ship_hull_add = 2400
+		ship_armor_regen_add_static = 120
+		ship_hull_regen_add_static = 120
+	}
+	ship_modifier = {
+		ship_emergency_ftl_mult = -0.10
+	}
+
+	prerequisites = { "tech_sfdoll_ship_armor_L" }
+	component_set = "component_set_sfdoll_ship_armor_L"
+	resources = {
+		category = ship_components
+		cost= {
+			sr_dark_matter = 48
+			GF_nyto_collapse_liquid = 12
+		}		
+		upkeep = {
+			alloys = 2
+		}
+	}
+	ai_weight = {
+		weight = 200
+		modifier = {
+			factor = -4
+			NOT = {	has_authority = auth_gf_sfdoll	}
+		}
+	}
+}
+
+utility_component_template = {
+	key="sfdoll_ship_armor_m"
+	size = medium
+	icon = "GFX_sfdoll_ship_armor_L"
+	icon_frame = 1
+	power = -50
+	modifier = {
+		ship_armor_add = 1200
+		ship_hull_add = 1200
+		ship_armor_regen_add_static = 60
+		ship_hull_regen_add_static = 60
+	}
+	ship_modifier = {
+		ship_emergency_ftl_mult = -0.10
+	}
+
+	prerequisites = { "tech_sfdoll_ship_armor_L" }
+	component_set = "component_set_sfdoll_ship_armor_L"
+	resources = {
+		category = ship_components
+		cost= {
+			sr_dark_matter = 24
+			GF_nyto_collapse_liquid = 6
+		}		
+		upkeep = {
+			alloys = 1
+		}
+	}
+	ai_weight = {
+		weight = 200
+		modifier = {
+			factor = -4
+			NOT = {	has_authority = auth_gf_sfdoll	}
+		}
+	}
+}
+
+utility_component_template = {
+	key="sfdoll_ship_armor_s"
+	size = small
+	icon = "GFX_sfdoll_ship_armor_L"
+	icon_frame = 1
+	power = -25
+	modifier = {
+		ship_armor_add = 600
+		ship_hull_add = 600
+		ship_armor_regen_add_static = 30
+		ship_hull_regen_add_static = 30
+	}
+	ship_modifier = {
+		ship_emergency_ftl_mult = -0.10
+	}
+
+	prerequisites = { "tech_sfdoll_ship_armor_L" }
+	component_set = "component_set_sfdoll_ship_armor_L"
+	resources = {
+		category = ship_components
+		cost= {
+			sr_dark_matter = 12
+			GF_nyto_collapse_liquid = 3
+		}		
+		upkeep = {
+			alloys = 0.5
+		}
+	}
+	ai_weight = {
+		weight = 200
+		modifier = {
+			factor = -4
+			NOT = {	has_authority = auth_gf_sfdoll	}
+		}
+	}
+}
+
+#2级装甲
+utility_component_template = {
+	key= "sfdoll_ship_armor_2_S"
+	size = small
+	icon = "GFX_sfdoll_ship_armor_2"
+	icon_frame = 1
+	power = -150
+	modifier = {
+		ship_shield_add = 5000
+		ship_armor_add = 5000
+		ship_hull_add = 5000
+		ship_shield_regen_add_static = 2500
+		ship_armor_regen_add_static = 1300
+		ship_hull_regen_add_static = 1300
+		ship_shield_hardening_add = 0.1
+		ship_armor_hardening_add = 0.1
+	}
+
+	prerequisites = { "tech_sfdoll_ship_armor_2" }
+	component_set = "sfdoll_ship_armor_2"
+	size_restriction = { sfdoll_mobile_starbase sfdoll_warship_1 sfdoll_warship_2 sfdoll_warship_3 sfdoll_warship_4 sfdoll_warship_5 sfdoll_warship_6 }
+	resources = {
+		category = ship_components
+		cost= {
+			alloys = 60
+			sr_dark_matter = 5
+			GF_nyto_collapse_liquid = 5
+		}		
+		upkeep = {
+			energy = 1
+			alloys = 1
+		}
+	}
+	ai_weight = {
+		weight = 200
+		modifier = {
+			factor = -4
+			NOT = {	has_authority = auth_gf_sfdoll	}
+		}
+	}
+}
+
+utility_component_template = {
+	key= "sfdoll_ship_armor_2_M"
+	size = medium
+	icon = "GFX_sfdoll_ship_armor_2"
+	icon_frame = 1
+	power = -250
+	modifier = {
+		ship_shield_add = 10000
+		ship_armor_add = 10000
+		ship_hull_add = 10000
+		ship_shield_regen_add_static = 5000
+		ship_armor_regen_add_static = 2500
+		ship_hull_regen_add_static = 2500
+		ship_shield_hardening_add = 0.1
+		ship_armor_hardening_add = 0.1
+	}
+
+	prerequisites = { "tech_sfdoll_ship_armor_2" }
+	component_set = "sfdoll_ship_armor_2"
+	size_restriction = { sfdoll_mobile_starbase sfdoll_warship_1 sfdoll_warship_2 sfdoll_warship_3 sfdoll_warship_4 sfdoll_warship_5 sfdoll_warship_6 }
+	resources = {
+		category = ship_components
+		cost= {
+			alloys = 130
+			sr_dark_matter = 10
+			GF_nyto_collapse_liquid = 10
+		}		
+		upkeep = {
+			energy = 2
+			alloys = 1
+		}
+	}
+	ai_weight = {
+		weight = 200
+		modifier = {
+			factor = -4
+			NOT = {	has_authority = auth_gf_sfdoll	}
+		}
+	}
+}
+
+utility_component_template = {
+	key= "sfdoll_ship_armor_2_L"
+	size = large
+	icon = "GFX_sfdoll_ship_armor_2"
+	icon_frame = 1
+	power = -400
+	modifier = {
+		ship_shield_add = 18000
+		ship_armor_add = 18000
+		ship_hull_add = 18000
+		ship_shield_regen_add_static = 10000
+		ship_armor_regen_add_static = 5000
+		ship_hull_regen_add_static = 5000
+		ship_shield_hardening_add = 0.1
+		ship_armor_hardening_add = 0.1
+	}
+
+	prerequisites = { "tech_sfdoll_ship_armor_2" }
+	component_set = "sfdoll_ship_armor_2"
+	size_restriction = { sfdoll_mobile_starbase sfdoll_warship_1 sfdoll_warship_2 sfdoll_warship_3 sfdoll_warship_4 sfdoll_warship_5 sfdoll_warship_6 }
+	resources = {
+		category = ship_components
+		cost= {
+			alloys = 250
+			sr_dark_matter = 20
+			GF_nyto_collapse_liquid = 20
+		}		
+		upkeep = {
+			energy = 3.5
+			alloys = 2.5
+		}
+	}
+	ai_weight = {
+		weight = 200
+		modifier = {
+			factor = -4
+			NOT = {	has_authority = auth_gf_sfdoll	}
+		}
+	}
+}
+
+#护盾
+# utility_component_template = {
+# 	key="sfdoll_ship_shield_L"
+# 	size = large
+# 	icon = "GFX_sfdoll_ship_shield_L"
+# 	icon_frame = 1
+# 	power = -400
+# 	modifier = {
+# 		ship_shield_add = 4000
+# 		ship_shield_regen_add_static = 400
+# 		weapon_type_kinetic_weapon_damage_mult = 0.2
+# 		ship_accuracy_add = 5
+# 		ship_emergency_ftl_mult = -0.10
+# 		ship_emergency_ftl_min_days_add = -5
+# 	}
+
+# 	prerequisites = { "sfdoll_ship_shield_L" }
+# 	component_set = "component_set_sfdoll_ship_shield_L"
+# 	resources = {
+# 		category = ship_components
+# 		cost= {
+# 			sr_dark_matter = 24
+# 			GF_nyto_collapse_liquid = 24
+# 		}		
+# 		upkeep = {
+# 			alloys = 2
+# 		}
+# 	}
+# 	ai_weight = {
+# 		weight = 200
+# 		modifier = {
+# 			factor = -4
+# 			NOT = {	has_authority = auth_gf_sfdoll	}
+# 		}
+# 	}
+# }
+
+# utility_component_template = {
+# 	key="sfdoll_ship_shield_m"
+# 	size = medium
+# 	icon = "GFX_sfdoll_ship_shield_L"
+# 	icon_frame = 1
+# 	power = -200
+# 	modifier = {
+# 		ship_shield_add = 2000
+# 		ship_shield_regen_add_static = 200
+# 		weapon_type_kinetic_weapon_damage_mult = 0.1
+# 		ship_accuracy_add = 5
+# 		ship_emergency_ftl_mult = -0.10
+# 	}
+
+# 	prerequisites = { "sfdoll_ship_shield_L" }
+# 	component_set = "component_set_sfdoll_ship_shield_L"
+# 	resources = {
+# 		category = ship_components
+# 		cost= {
+# 			alloys = 12
+# 			GF_nyto_collapse_liquid = 12
+# 		}		
+# 		upkeep = {
+# 			alloys = 1
+# 		}
+# 	}
+# 	ai_weight = {
+# 		weight = 200
+# 		modifier = {
+# 			factor = -4
+# 			NOT = {	has_authority = auth_gf_sfdoll	}
+# 		}
+# 	}
+# }
+
+# utility_component_template = {
+# 	key="sfdoll_ship_shield_s"
+# 	size = small
+# 	icon = "GFX_sfdoll_ship_shield_L"
+# 	icon_frame = 1
+# 	power = -100
+# 	modifier = {
+# 		ship_shield_add = 1000
+# 		ship_shield_regen_add_static = 100
+# 		weapon_type_kinetic_weapon_damage_mult = 0.05
+# 		ship_accuracy_add = 5
+# 		ship_emergency_ftl_mult = -0.10
+# 	}
+
+# 	prerequisites = { "sfdoll_ship_shield_L" }
+# 	component_set = "component_set_sfdoll_ship_shield_L"
+# 	resources = {
+# 		category = ship_components
+# 		cost= {
+# 			alloys = 6
+# 			GF_nyto_collapse_liquid = 6
+# 		}		
+# 		upkeep = {
+# 			alloys = 0.5
+# 		}
+# 	}
+# 	ai_weight = {
+# 		weight = 200
+# 		modifier = {
+# 			factor = -4
+# 			NOT = {	has_authority = auth_gf_sfdoll	}
+# 		}
+# 	}
+# }

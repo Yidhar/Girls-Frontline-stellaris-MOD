@@ -1,0 +1,39 @@
+﻿l_simp_chinese:
+mod_PR_smod_plnt_JOB_deposit_SFDOLL:0 "§Y铁血人形 $PR_smod_plnt_JOB_DEP$§!"
+mod_PR_smod_plnt_CAT_planet_sfdoll_sp_industry_add:0 "§Y$mod_PR_smod_plnt_CAT$ $planet_sfdoll_sp_industry$§!"
+
+PR_D_JOB_sfdoll_collapse_liquid_maker:0 "$job_sfdoll_collapse_liquid_maker$"
+PR_D_JOB_sfdoll_collapse_liquid_maker_desc:0 "$job_sfdoll_collapse_liquid_maker_desc$"
+
+PR_D_JOB_sfdoll_dark_matter_maker:0 "$job_sfdoll_dark_matter_maker$"
+PR_D_JOB_sfdoll_dark_matter_maker_desc:0 "$job_sfdoll_dark_matter_maker_desc$"
+
+PR_D_JOB_sfdoll_nanites_maker:0 "$job_sfdoll_nanites_maker$"
+PR_D_JOB_sfdoll_nanites_maker_desc:0 "$job_sfdoll_nanites_maker_desc$"
+
+PR_D_JOB_sfdoll_researcher:0 "$job_sfdoll_researcher$"
+PR_D_JOB_sfdoll_researcher_desc:0 "$job_sfdoll_researcher_desc$"
+
+PR_D_JOB_sfdoll_alloys_maker:0 "$job_sfdoll_alloys_maker$"
+PR_D_JOB_sfdoll_alloys_maker_desc:0 "$job_sfdoll_alloys_maker_desc$"
+
+PR_D_JOB_sfdoll_goods_maker:0 "$job_sfdoll_goods_maker$"
+PR_D_JOB_sfdoll_goods_maker_desc:0 "$job_sfdoll_goods_maker_desc$"
+
+PR_D_JOB_sfdoll_energy_maker:0 "$job_sfdoll_energy_maker$"
+PR_D_JOB_sfdoll_energy_maker_desc:0 "$job_sfdoll_energy_maker_desc$"
+
+PR_D_JOB_sfdoll_mineral_maker:0 "$job_sfdoll_mineral_maker$"
+PR_D_JOB_sfdoll_mineral_maker_desc:0 "$job_sfdoll_mineral_maker_desc$"
+
+PR_D_JOB_sfdoll_gases_maker:0 "$job_sfdoll_gases_maker$"
+PR_D_JOB_sfdoll_gases_maker_desc:0 "$job_sfdoll_gases_maker_desc$"
+
+PR_D_JOB_sfdoll_educator:0 "$job_sfdoll_educator$"
+PR_D_JOB_sfdoll_educator_desc:0 "$job_sfdoll_educator_desc$"
+
+PR_D_JOB_sfdoll_artist:0 "$job_sfdoll_artist$"
+PR_D_JOB_sfdoll_artist_desc:0 "$job_sfdoll_artist_desc$"
+
+PR_D_JOB_sfdoll_tactical:0 "$job_sfdoll_tactical$"
+PR_D_JOB_sfdoll_tactical_desc:0 "$job_sfdoll_tactical_desc$"

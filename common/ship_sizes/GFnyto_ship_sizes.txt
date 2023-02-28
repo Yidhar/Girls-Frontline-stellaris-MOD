@@ -1,0 +1,304 @@
+#花之锁
+GFnyto_flags = {
+	formation_priority =  @corvette_formation_priority
+	max_speed = 20
+	acceleration = 0
+	rotation_speed = 0
+	collision_radius = @corvette_formation_priority
+	max_hitpoints = 3000
+	size_multiplier = 1
+	fleet_slot_size = 1
+	section_slots = {
+		"core" = { locator = "part1" }
+	}
+	ship_modifier = {
+		ship_engagement_range_mult = 100
+	}
+	num_target_locators = 3
+	is_space_station = no
+	icon_frame = 2
+	can_have_federation_design = no
+	enable_default_design = no
+	default_behavior = GFnyto_ship_behaviors2
+	combat_disengage_chance = 0
+	class = shipclass_military	
+	is_designable = no
+}
+
+#母舰
+GFnyto_mather_ship ={
+	formation_priority =  @corvette_formation_priority
+	icon = ship_size_military_16
+	entity =  Gayr_frame_entity
+	max_speed = 20
+	acceleration = 0.1
+	rotation_speed = 0.1
+	collision_radius = @corvette_formation_priority
+	max_hitpoints = 10000000
+	modifier = {
+		ship_evasion_add = -50
+		ship_ftl_jumpdrive_range_mult = 2
+		ship_shield_add = 10000
+		ship_armor_add = 10000000
+		ships_upkeep_mult = -1
+	}
+	size_multiplier = 0
+	fleet_slot_size = 0
+	section_slots = {
+		"core" = { locator = "part1" }
+	}
+	is_space_station = no
+	icon_frame = 2
+	base_buildtime = 9999999
+	can_have_federation_design = no
+	enable_default_design = no
+	default_behavior = GFnyto_ship_behaviors3
+	combat_disengage_chance = -0.9
+	class = shipclass_military
+	required_component_set = "power_core"
+    required_component_set = "ftl_components"
+    required_component_set = "thruster_components"
+    required_component_set = "sensor_components"
+    required_component_set = "combat_computers"
+	required_component_set = "ship_aura_components"
+	 possible_country = {
+		 always = no
+	 }	
+	 num_target_locators = 6
+}	
+
+#指挥舰
+GFnyto_Command_ship={
+	graphical_culture = yes
+	formation_priority =  @corvette_formation_priority
+	icon = ship_size_military_16
+	entity = SANGVIS_FERRI_frame_entity
+	max_speed = 100
+	acceleration = 0.2
+	rotation_speed = 0.05
+	collision_radius = @corvette_formation_priority
+	max_hitpoints = 500000
+	modifier = {
+		ship_evasion_add = -0.5
+		ship_armor_add = 70000
+		ship_shield_add = 20000
+	}
+	section_slots = {
+		"bow" = { locator = part2 }
+		"core" = { locator = part2 }
+		"core2" = { locator = part2 }
+		"stern"  = { locator = part2 }
+	}
+	size_multiplier = 64
+	fleet_slot_size = 0
+	class = shipclass_military
+	base_buildtime = 3600
+	can_have_federation_design = no
+	enable_default_design = yes
+	construction_type = starbase_shipyard
+	required_component_set = "power_core"
+    required_component_set = "ftl_components"
+    required_component_set = "thruster_components"
+    required_component_set = "sensor_components"
+    required_component_set = "combat_computers"
+	required_component_set = "ship_aura_components"
+	default_behavior = GFnyto_ship_behaviors3
+	enable_3dview_in_ship_browser  =yes
+	combat_disengage_chance = -0.9
+	potential_construction = {
+		OR = {
+			is_scope_type = starbase
+			AND = {
+				is_scope_type = megastructure
+				OR = {
+					is_megastructure_type = mega_shipyard_3
+					is_megastructure_type = mega_shipyard_restored
+					is_megastructure_type = StarForge
+					is_megastructure_type = exe_black_hole_restore
+				}
+			}
+		}
+	}	
+	possible_construction = {
+		custom_tooltip = {
+			fail_text = starbase_citadel_trigger
+			OR = {
+				AND = {
+					is_scope_type = megastructure
+					OR = {
+						is_megastructure_type = mega_shipyard_3
+						is_megastructure_type = mega_shipyard_restored
+						is_megastructure_type = StarForge
+						is_megastructure_type = exe_black_hole_restore
+					}
+				}
+				AND = {
+					is_scope_type = starbase
+					has_starbase_size >= starbase_citadel
+				}
+			}
+		}
+		custom_tooltip = {
+			fail_text = starbase_titan_yards_trigger
+			OR = {
+				AND = {
+					is_scope_type = megastructure
+					OR = {
+						is_megastructure_type = mega_shipyard_3
+						is_megastructure_type = mega_shipyard_restored
+						is_megastructure_type = StarForge
+						is_megastructure_type = exe_black_hole_restore
+					}
+				}
+				AND = {
+					is_scope_type = starbase
+					has_starbase_building = titan_yards
+				}
+			}
+		}
+	}
+	# possible_country = {
+	# 	check_variable = {
+	# 		which = GFnyto_Command_ship_num
+	# 		value <= 4
+	# 	}
+	# 	custom_tooltip = check_GFnyto_Command_ship_num
+	# }
+	prerequisites = {
+		tech_template_GFnyto_Command_ship
+	}
+	num_target_locators = 8
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 1000
+		}
+		upkeep = {
+			energy = 100
+			alloys = 200
+		}
+	}
+	ai_ship_data = {
+		fraction ={
+			base = 4
+		}
+	}
+}
+
+#主力舰
+GF_nyto_super_battelship ={
+	graphical_culture = yes
+	formation_priority =  @corvette_formation_priority
+	icon = ship_size_military_16
+	entity = battel_ship_cv_frame_entity
+	max_speed = 100
+	acceleration = 0.2
+	rotation_speed = 0.05
+	collision_radius = @corvette_formation_priority
+	max_hitpoints = 50000
+	modifier = {
+		ship_armor_add = 70000
+		ship_shield_add = 20000
+	}
+	section_slots = {
+		"bow" = { locator = part2 }
+		"core" = { locator = part2 }
+		"stern"  = { locator = part2 }
+	}
+	size_multiplier = 16
+	fleet_slot_size = 8
+	class = shipclass_military
+	base_buildtime = 1800
+	can_have_federation_design = no
+	enable_default_design = yes
+	construction_type = starbase_shipyard
+	required_component_set = "power_core"
+    required_component_set = "ftl_components"
+    required_component_set = "thruster_components"
+    required_component_set = "sensor_components"
+    required_component_set = "combat_computers"
+	default_behavior = GFnyto_ship_behaviors3
+	enable_3dview_in_ship_browser  =yes
+	combat_disengage_chance = -0.9
+	potential_construction = {
+		OR = {
+			is_scope_type = starbase
+			AND = {
+				is_scope_type = megastructure
+				OR = {
+					is_megastructure_type = GFnyto_habitat_02
+					is_megastructure_type = mega_shipyard_3
+					is_megastructure_type = mega_shipyard_restored
+					is_megastructure_type = StarForge
+					is_megastructure_type = exe_black_hole_restore
+				}
+			}
+		}
+	}	
+	prerequisites = {
+		tech_template_GFnyto_cv_batellship
+	}
+	num_target_locators = 10
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 1000
+		}
+		upkeep = {
+			energy = 100
+			alloys = 200
+		}
+	}
+	ai_ship_data = {
+		fraction ={
+			base = 1000
+		}
+	}
+}
+
+#要塞 
+GFnyto_stions_fortress ={
+	formation_priority =  @corvette_formation_priority
+	entity = stions_frame
+	max_speed = 0
+	max_hitpoints = 200000
+	collision_radius = @corvette_formation_priority
+	size_multiplier = 0
+	fleet_slot_size = 0
+	modifier = {
+		ship_armor_add = 100000
+		ship_shield_add = 100000
+	}
+	class = shipclass_military_station
+	section_slots = {
+		"core" = { locator = "part1" }
+	}
+	base_buildtime = 0
+	can_have_federation_design = no
+	enable_default_design = yes
+	combat_disengage_chance = -1
+	possible_country = {
+		has_authority = auth_GF_paradeus
+	}
+	potential_country = {
+		has_authority = auth_GF_paradeus
+	}
+	num_target_locators = 8
+	prerequisites = {
+		tech_titans
+	}
+	enable_default_design = yes
+	is_space_station = no
+	can_have_federation_design = no
+	is_civilian = no
+	is_listed = no
+	components_add_to_cost = no
+	can_disable = no
+	is_designable = yes
+	required_component_set = "power_core"
+	required_component_set = "sensor_components"
+	default_behavior = default
+	prerequisites = {
+		tech_template_stions_fortress
+	}
+}

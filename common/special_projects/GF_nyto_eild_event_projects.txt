@@ -1,0 +1,128 @@
+#特殊项目,用来修复隔离墙
+special_project = {
+	key = "GFnyto_defense_eild_attack_project"
+	event_chain = "GFnyto_eild_attack_chain"
+	cost = 1000
+	tech_department = engineering_technology
+	picture = GFX_evt_GFnyto_defense_eild_attack_project
+	icon = "gfx/interface/icons/situation_log/situation_log_engineering.dds"
+	event_scope = planet_event
+	on_success = {
+		planet_event = {
+			id = GFnytoeild.2
+		}
+	}
+	on_fail = {
+	}
+}
+
+#特殊项目,修正大型路基炮台
+special_project = {
+	key = GFnyto_defense_eild_attack_Land_base_station
+	event_chain = "GFnyto_eild_attack_chain"
+	picture = GFX_evt_GFnyto_defense_eild_attack_project_complete
+	cost = 3000
+	tech_department = engineering_technology
+	event_scope = planet_event
+	icon = "gfx/interface/icons/situation_log/situation_log_engineering.dds"
+	on_success = {
+		planet_event = {
+			id = GFnytoeild.4
+		}
+	}
+}
+
+#抢修炮台
+special_project = {
+	key = GFnyto_defense_eild_attack_Land_base_station2
+	event_chain = "GFnyto_eild_attack_chain"
+	picture = GFX_evt_GFnyto_defense_eild_attack_project_complete
+	cost = 3000
+	tech_department = engineering_technology
+	event_scope = planet_event
+	icon = "gfx/interface/icons/situation_log/situation_log_engineering.dds"
+	on_success = {
+		planet_event = {
+			id = GFnytoeild.7
+		}
+	}
+}
+
+#特殊项目,用来解锁关停遗迹方案
+special_project = {
+	key = "GFnyto_find_close_ruin_project"
+	event_chain = "GFnyto_eild_attack_chain"
+	cost = 5000
+	tech_department = engineering_technology
+	picture = GFX_evt_GFnyto_find_close_ruin_project
+	icon = "gfx/interface/icons/situation_log/situation_log_engineering.dds"
+	event_scope = planet_event
+	on_success = {
+		planet_event = {
+			id = GFnytoeild.32
+		}
+	}
+	on_fail = {
+	}
+}
+
+#特殊项目,用来关停遗迹
+special_project = {
+	key = "GFnyto_close_ruin_project"
+	event_chain = "GFnyto_eild_attack_chain"
+	cost = 3000
+	tech_department = engineering_technology
+	icon = "gfx/interface/icons/situation_log/situation_log_combat.dds"
+	picture = GFX_evt_GFnyto_close_ruin_project
+	event_scope = planet_event
+	requirements = {
+		assault_armies = 3
+	}
+	on_success = {
+		planet_event = {
+			id = GFnytoeild.33
+		}
+	}
+	on_fail = {
+	}
+}
+
+#特殊项目,用来解锁EILD军团
+special_project = {
+	key = "study_GF_nyto_eild_army_project"
+	event_chain = "GFnyto_eild_attack_chain"
+	cost = 5000
+	tech_department = society_technology
+	picture = GFX_evt_nyto_eild_army
+	event_scope = planet_event
+	on_success = {
+		planet_event = {
+			id = GFnytoeild.35
+		}
+		owner = {
+			end_event_chain = "GFnyto_eild_attack_chain"
+		}
+	}
+	on_fail = {
+	}
+}
+
+#特殊项目,用来清除殖民地EILD地块
+special_project = {
+	key = "defense_colony_GF_nyto_eild_attack_project"
+	event_chain = "GFnyto_colony_eild_attack_chain"
+	cost = 3000
+	tech_department = engineering_technology
+	picture = GFX_evt_GFnyto_eild_collapse_biosphere
+	event_scope = planet_event
+	requirements = {
+		assault_armies = 3
+	}
+	on_success = {
+		planet_event = {
+			id = GFnytoeild.11
+		}
+	}
+	on_fail = {
+	}
+}

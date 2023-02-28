@@ -1,0 +1,137 @@
+entity = {
+	name = "sfdoll_Sewship_entity"
+	pdxmesh = "Sewship_mesh"
+	default_state = "idle"
+	scale = 6
+	locator = { name = "T01" 	position = { 2  2  -15 }}
+	locator = { name = "T02" 	position = { -2  2  -15 }}
+	locator = { name = "T03" 	position = { 2  -2  -15 }}
+	locator = { name = "T04" 	position = { -2  -2  -15 }}
+	locator = { name = "T05" 	position = { 2  2  -13 }}
+	locator = { name = "T06" 	position = { -2  2  -13 }}
+	locator = { name = "T07" 	position = { 2 -2  -13 }}
+	locator = { name = "T08" 	position = { -2  -2 -13 }}
+	locator = { name = "T09" 	position = { 2  2  -11 }}
+	locator = { name = "T10" 	position = { -2  2  -11 }}
+	locator = { name = "T11" 	position = { 2 -2  -11 }}
+	locator = { name = "T12" 	position = { -2  -2 -11 }}
+
+	state = {
+		name = "idle"
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_battleship_hum" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_battleship_bass" } }
+	}
+	state = {
+		name = "moving"
+		event = { trigger_once = yes sound = { soundeffect = "moving_out_battleship" } }
+	}
+
+
+	state = {
+		name = "death"
+		event = { time = 0 node = "target_locator_01" particle = "avian_01_large_ship_explosion_particle" }
+		event = { time = 0 node = "target_locator_02" particle = "avian_01_large_ship_explosion_particle" }
+		event = { time = 0 node = "target_locator_03" particle = "ship_burn_particle" }
+		event = { time = 1.0 node = "explosion_locator_01" particle = "avian_01_large_ship_explosion_particle" }
+		event = { time = 1.0 node = "explosion_locator_01" particle = "ship_burn_particle" }
+	}
+	attach = {
+		explosion_locator_01 = "Sewship_gun_entity"
+	}
+}
+entity = {
+	name = "sfdoll_Sewship_locator_entity"
+	scale = 6
+	locator = { name = "T01" 	position = { 2  2  -15 }}
+	locator = { name = "T02" 	position = { -2  2  -15 }}
+	locator = { name = "T03" 	position = { 2  -2  -15 }}
+	locator = { name = "T04" 	position = { -2  -2  -15 }}
+	locator = { name = "T05" 	position = { 2  2  -13 }}
+	locator = { name = "T06" 	position = { -2  2  -13 }}
+	locator = { name = "T07" 	position = { 2 -2  -13 }}
+	locator = { name = "T08" 	position = { -2  -2 -13 }}
+	locator = { name = "T09" 	position = { 2  2  -11 }}
+	locator = { name = "T10" 	position = { -2  2  -11 }}
+	locator = { name = "T11" 	position = { 2 -2  -11 }}
+	locator = { name = "T12" 	position = { -2  -2 -11 }}
+	locator = { name = "X01" 	position = { 2  2  -9 }}
+	locator = { name = "X02" 	position = { -2  2  -9 }}
+	locator = { name = "X03" 	position = { 2  -2  -9 }}
+	locator = { name = "X04" 	position = { -2  -2  -9 }}
+	locator = { name = "X05" 	position = { 2  2  -7 }}
+	locator = { name = "X06" 	position = { -2  2  -7 }}
+	locator = { name = "X07" 	position = { 2 -2  -7 }}
+	locator = { name = "X08" 	position = { -2  -2 -7 }}
+	locator = { name = "X09" 	position = { 2  2  -5 }}
+	locator = { name = "X10" 	position = { -2  2  -5 }}
+	locator = { name = "X11" 	position = { 2 -2  -5 }}
+	locator = { name = "X12" 	position = { -2  -2 -5 }}
+
+	locator = { name = "L01" 	position = { 2  2  -4 }}
+	locator = { name = "L02" 	position = { -2  2  -4 }}
+	locator = { name = "L03" 	position = { 2  -2  -4 }}
+	locator = { name = "L04" 	position = { -2  -2  -4 }}
+	locator = { name = "L05" 	position = { 2  2  -3 }}
+	locator = { name = "L06" 	position = { -2  2  -3 }}
+	locator = { name = "L07" 	position = { 2 -2  -3 }}
+	locator = { name = "L08" 	position = { -2  -2 -3 }}
+	locator = { name = "L09" 	position = { 2  2  -2 }}
+	locator = { name = "L10" 	position = { -2  2  -2 }}
+	locator = { name = "L11" 	position = { 2 -2  -2 }}
+	locator = { name = "L12" 	position = { -2  -2 -2 }}
+	locator = { name = "L13" 	position = { 2  2  -1 }}
+	locator = { name = "L14" 	position = { -2  2  -1 }}
+	locator = { name = "L15" 	position = { 2 -2  -1 }}
+	locator = { name = "L16" 	position = { -2  -2  -1 }}
+
+	locator = { name = "L17" 	position = { 2  2  0 }}
+	locator = { name = "L18" 	position = { -2  2  0 }}
+	locator = { name = "L19" 	position = { 2  -2  0 }}
+	locator = { name = "L20" 	position = { -2  -2  0 }}
+	locator = { name = "L21" 	position = { 2  2  1 }}
+	locator = { name = "L22" 	position = { -2  2  1 }}
+	locator = { name = "L23" 	position = { 2 -2  1 }}
+	locator = { name = "L24" 	position = { -2  -2 1 }}
+	locator = { name = "L25" 	position = { 2  2  2 }}
+	locator = { name = "L26" 	position = { -2  2  2 }}
+	locator = { name = "L27" 	position = { 2 -2  2 }}
+	locator = { name = "L28" 	position = { -2  -2 2 }}
+	locator = { name = "L29" 	position = { 2  2  3 }}
+	locator = { name = "L30" 	position = { -2  2  3 }}
+	locator = { name = "L31" 	position = { 2 -2  3  }}
+	locator = { name = "L32" 	position = { -2  -2  3 }}
+}
+entity = {
+	name = "Sewship_gun_entity"
+	pdxmesh = black_hole_new_mesh
+	scale = 0.15
+	default_state = "idle"
+	state = { name = "idle" state_time = 0
+		event = { time = 0 particle = "black_hole_particle" trigger_once = yes keep_particle = yes }
+		event = { trigger_once = yes sound = { soundeffect = "blackhole_hum_idle" } }
+	    event = { time = 0.0 node = "planet" particle = "m_class_star_particle"  keep_particle = no trigger_once = yes sound = { soundeffect = "amb_star_fusion" } }
+		event = { trigger_once = yes sound = { soundeffect = "space_ambient" } }  
+		event = { trigger_once = yes sound = { soundeffect = "falling_star" } }
+		event = { trigger_once = yes sound = { soundeffect = "space_ambient_layer_02" } }
+	}
+
+	locator = { name = "planet" }
+	# attach = { "planet" = "black_hole_rings_entity" }
+	# attach = { "planet" = "black_hole_grav_lens_entity" }
+	# attach = { "planet" = "black_hole_grav_animation_entity" }
+	game_data = {
+		size = 1.0
+		bloom_factor = 5
+	}
+}
+
+# 巨构模型
+entity = {
+	name = "mega_sfdoll_Sewship_entity"
+	pdxmesh = "Sewship_mesh"
+	default_state = "idle"
+	scale = 9
+	attach = {
+		explosion_locator_01 = "Sewship_gun_entity"
+	}
+}

@@ -1,0 +1,448 @@
+## Possible Deposit Variables ##
+# resources, resource and amount
+# potential trigger (planet scope)
+# blocked_modifier - applied to planet
+# constant_modifier - applied to planet always
+# station = station class in orbit to gather
+
+PR_D_JOB_sfdoll_collapse_liquid_maker = {
+	##	基础信息,照抄
+	icon = PR_D_icon_MOD
+	is_for_colonizable = yes
+	category = PR_D_cat_JOB
+	should_swap_deposit_on_terraforming = no
+	drop_weight = { weight = 0 }
+	
+	##	基础大类
+	planet_modifier = {
+		PR_smod_plnt_JOB_deposit_SFDOLL = 1	# 岗位检测标签
+	}
+
+	##	资源
+	#	注意: 所有岗位资源转化到地块中必须加上这段人力系统的multiplier代码, 且只改动岗位名那一栏就可以, 剩下的照抄
+	#	如果岗位产出中已经有multiplier了, 你需要联系小伞获得帮助, 或者你水平比较高, 参考|泛用兼容|里面的"PR联动_effects_DAL.txt"和"PR联动_effects_NYTO.txt"
+	#	无论是资源还是修正, 所有检测条件的scope都从pop改为了他所在的planet注意转换, 另外有一些检测条件是检测pop自己的属性比如trait, 这种比较特殊, 你可以找小伞处理, 或者去掉这部分功能, 或者自己想办法
+	resources = { category = planet_sfdoll_sp_industry	# 行业类型,直接同步岗位的
+		produces = {
+			multiplier = value:PR_prmt_sv_plnt_JOB_FACTOR|JOB|sfdoll_collapse_liquid_maker|EFFICIENCY|general|	# 只改动"岗位key"这一栏,其他照抄
+			GF_nyto_collapse_liquid = 3
+		}
+		upkeep = {
+			multiplier = value:PR_prmt_sv_plnt_JOB_FACTOR|JOB|sfdoll_collapse_liquid_maker|EFFICIENCY|general|
+			consumer_goods = 15
+		}
+		produces = {
+			multiplier = value:PR_prmt_sv_plnt_JOB_FACTOR|JOB|sfdoll_collapse_liquid_maker|EFFICIENCY|general|	
+			trigger = { owner = {	has_edict = sfdoll_collapse_liquid_more	} }
+			GF_nyto_collapse_liquid = 3
+		}
+		upkeep = {
+			multiplier = value:PR_prmt_sv_plnt_JOB_FACTOR|JOB|sfdoll_collapse_liquid_maker|EFFICIENCY|general|
+			trigger = { owner = {	has_edict = sfdoll_collapse_liquid_more	} }
+			energy = 20
+		}
+	}
+
+	##	修正
+	#	注意: 所有岗位修正转化到地块中必须加上这段人力系统的mult代码, 且只改动岗位名那一栏就可以, 剩下的照抄
+	#	如果岗位产出中已经有mult了, 你需要联系小伞获得帮助, 或者你水平比较高, 参考|泛用兼容|里面的"PR联动_effects_DAL.txt"和"PR联动_effects_NYTO.txt"
+	#	资源和修正的所有检测条件的scope都从pop改为了他所在的planet注意转换
+	triggered_planet_modifier = {
+		mult = value:PR_prmt_sv_plnt_JOB_FACTOR|JOB|sfdoll_collapse_liquid_maker|	# 只改动"death_priest"这一栏,其他照抄
+		#	岗位削减
+		job_sfdoll_collapse_liquid_maker_add = -1
+		#	人力参数
+		PR_smod_plnt_VAR_workshop_add = 1	#_|工房|,永远是1
+		PR_smod_plnt_CAT_planet_sfdoll_sp_industry_add = 1	# 行业类型标签,永远是1
+	}
+}
+
+PR_D_JOB_sfdoll_dark_matter_maker = {
+	icon = PR_D_icon_MOD
+	is_for_colonizable = yes
+	category = PR_D_cat_JOB
+	should_swap_deposit_on_terraforming = no
+	drop_weight = { weight = 0 }
+	
+	planet_modifier = { PR_smod_plnt_JOB_deposit_SFDOLL = 1 }
+
+	##	资源
+	resources = { category = planet_sfdoll_sp_industry	# 行业类型,直接同步岗位的
+		produces = {
+			multiplier = value:PR_prmt_sv_plnt_JOB_FACTOR|JOB|sfdoll_dark_matter_maker|EFFICIENCY|general|
+			sr_dark_matter = 3
+		}
+		upkeep = {
+			multiplier = value:PR_prmt_sv_plnt_JOB_FACTOR|JOB|sfdoll_dark_matter_makert|EFFICIENCY|general|
+			energy = 15
+		}
+	}
+
+	triggered_planet_modifier = {
+		mult = value:PR_prmt_sv_plnt_JOB_FACTOR|JOB|sfdoll_dark_matter_maker|	# 只改动"death_priest"这一栏,其他照抄
+		#	岗位削减
+		job_sfdoll_dark_matter_maker_add = -1
+		#	人力参数
+		PR_smod_plnt_VAR_workshop_add = 1	#_|工房|,永远是1
+		PR_smod_plnt_CAT_planet_sfdoll_sp_industry_add = 1	# 行业类型标签,永远是1
+	}
+}
+
+PR_D_JOB_sfdoll_nanites_maker = {
+	icon = PR_D_icon_MOD
+	is_for_colonizable = yes
+	category = PR_D_cat_JOB
+	should_swap_deposit_on_terraforming = no
+	drop_weight = { weight = 0 }
+
+	planet_modifier = { PR_smod_plnt_JOB_deposit_SFDOLL = 1 }
+
+	resources = { category = planet_sfdoll_sp_industry	# 行业类型,直接同步岗位的
+		produces = {
+			multiplier = value:PR_prmt_sv_plnt_JOB_FACTOR|JOB|sfdoll_nanites_maker|EFFICIENCY|general|
+			nanites = 3
+		}
+
+		upkeep = {
+			multiplier = value:PR_prmt_sv_plnt_JOB_FACTOR|JOB|sfdoll_nanites_maker|EFFICIENCY|general|
+			minerals = 15
+		}
+	}
+
+	triggered_planet_modifier = {
+		mult = value:PR_prmt_sv_plnt_JOB_FACTOR|JOB|sfdoll_nanites_maker|
+		#	岗位削减
+		job_sfdoll_nanites_maker_add = -1
+		#	人力参数
+		PR_smod_plnt_VAR_workshop_add = 1	#_|工房|,永远是1
+		PR_smod_plnt_CAT_planet_sfdoll_sp_industry_add = 1	# 行业类型标签,永远是1
+	}
+}
+
+PR_D_JOB_sfdoll_researcher = {
+	icon = PR_D_icon_MOD
+	is_for_colonizable = yes
+	category = PR_D_cat_JOB
+	should_swap_deposit_on_terraforming = no
+	drop_weight = { weight = 0 }
+
+	planet_modifier = { PR_smod_plnt_JOB_deposit_SFDOLL = 1 }
+
+	resources = { category = planet_researchers	# 行业类型,直接同步岗位的
+		produces = {
+			multiplier = value:PR_prmt_sv_plnt_JOB_FACTOR|JOB|sfdoll_researcher|EFFICIENCY|general|
+			physics_research = 20
+			society_research = 20
+			engineering_research = 20
+		}
+		upkeep = {
+			multiplier = value:PR_prmt_sv_plnt_JOB_FACTOR|JOB|sfdoll_researcher|EFFICIENCY|general|
+			consumer_goods = 6
+		}
+		produces = {
+			multiplier = value:PR_prmt_sv_plnt_JOB_FACTOR|JOB|sfdoll_researcher|EFFICIENCY|general|
+			trigger = { owner = { has_edict = sfdoll_research_more } }
+			physics_research = 20
+			society_research = 20
+			engineering_research = 20
+		}
+		upkeep = {
+			multiplier = value:PR_prmt_sv_plnt_JOB_FACTOR|JOB|sfdoll_researcher|EFFICIENCY|general|
+			trigger = { owner = {	has_edict = sfdoll_research_more	} }
+			energy = 5
+			consumer_goods = 6
+		}
+	}
+
+	triggered_planet_modifier = {
+		mult = value:PR_prmt_sv_plnt_JOB_FACTOR|JOB|sfdoll_researcher|
+		#	岗位削减
+		job_sfdoll_researcher_add = -1
+		#	人力参数
+		PR_smod_plnt_VAR_workshop_add = 1	#_|工房|,永远是1
+		PR_smod_plnt_CAT_planet_researchers_add = 1	# 行业类型标签,永远是1
+	}
+}
+
+PR_D_JOB_sfdoll_alloys_maker = {
+	##	基础信息,照抄
+	icon = PR_D_icon_MOD
+	is_for_colonizable = yes
+	category = PR_D_cat_JOB
+	should_swap_deposit_on_terraforming = no
+	drop_weight = { weight = 0 }
+	
+	planet_modifier = { PR_smod_plnt_JOB_deposit_SFDOLL = 1	 }
+
+	resources = { category = planet_metallurgists	# 行业类型,直接同步岗位的
+		produces = {
+			multiplier = value:PR_prmt_sv_plnt_JOB_FACTOR|JOB|sfdoll_alloys_maker|EFFICIENCY|general|
+			alloys = 18
+		}
+		upkeep = {
+			multiplier = value:PR_prmt_sv_plnt_JOB_FACTOR|JOB|sfdoll_alloys_maker|EFFICIENCY|general|
+			minerals =  12
+		}
+		produces = {
+			multiplier = value:PR_prmt_sv_plnt_JOB_FACTOR|JOB|sfdoll_alloys_maker|EFFICIENCY|general|
+			trigger = { owner = { has_edict = sfdoll_alloys_more } }
+			alloys = 12
+		}
+		upkeep = {
+			multiplier = value:PR_prmt_sv_plnt_JOB_FACTOR|JOB|sfdoll_alloys_maker|EFFICIENCY|general|
+			trigger = { owner = { has_edict = sfdoll_alloys_more } }
+			minerals =  12
+		}
+	}
+
+	triggered_planet_modifier = {
+		mult = value:PR_prmt_sv_plnt_JOB_FACTOR|JOB|sfdoll_alloys_maker|
+		#	岗位削减
+		job_sfdoll_alloys_maker_add = -1
+		#	人力参数
+		PR_smod_plnt_VAR_workshop_add = 1	#_|工房|,永远是1
+		PR_smod_plnt_CAT_planet_metallurgists_add = 1	# 行业类型标签,永远是1
+	}
+}
+
+PR_D_JOB_sfdoll_goods_maker = {
+	##	基础信息,照抄
+	icon = PR_D_icon_MOD
+	is_for_colonizable = yes
+	category = PR_D_cat_JOB
+	should_swap_deposit_on_terraforming = no
+	drop_weight = { weight = 0 }
+	
+	planet_modifier = { PR_smod_plnt_JOB_deposit_SFDOLL = 1	 }
+
+	resources = { category = planet_artisans	# 行业类型,直接同步岗位的
+		produces = {
+			multiplier = value:PR_prmt_sv_plnt_JOB_FACTOR|JOB|sfdoll_goods_maker|EFFICIENCY|general|
+			consumer_goods = 90
+			engineering_research = 6
+		}
+		upkeep = {
+			multiplier = value:PR_prmt_sv_plnt_JOB_FACTOR|JOB|sfdoll_goods_maker|EFFICIENCY|general|
+			minerals = 36
+		}
+	}
+
+	triggered_planet_modifier = {
+		mult = value:PR_prmt_sv_plnt_JOB_FACTOR|JOB|sfdoll_goods_maker|
+		#	岗位削减
+		job_sfdoll_goods_maker_add = -1
+		#	人力参数
+		PR_smod_plnt_VAR_workshop_add = 1	#_|工房|,永远是1
+		PR_smod_plnt_CAT_planet_artisans_add = 1	# 行业类型标签,永远是1
+	}
+}
+
+PR_D_JOB_sfdoll_energy_maker = {
+	icon = PR_D_icon_MOD
+	is_for_colonizable = yes
+	category = PR_D_cat_JOB
+	should_swap_deposit_on_terraforming = no
+	drop_weight = { weight = 0 }
+	
+	##	基础大类
+	planet_modifier = { PR_smod_plnt_JOB_deposit_SFDOLL = 1 }
+
+	resources = { category = planet_technician	# 行业类型,直接同步岗位的
+		produces = {
+			multiplier = value:PR_prmt_sv_plnt_JOB_FACTOR|JOB|sfdoll_energy_maker|EFFICIENCY|general|	# 只改动"death_priest"这一栏,其他照抄
+			energy = 250
+		}
+		upkeep = {
+			multiplier = value:PR_prmt_sv_plnt_JOB_FACTOR|JOB|sfdoll_energy_maker|EFFICIENCY|general|	# 只改动"death_priest"这一栏,其他照抄
+			sr_dark_matter = 2
+		}
+	}
+
+	triggered_planet_modifier = {
+		mult = value:PR_prmt_sv_plnt_JOB_FACTOR|JOB|sfdoll_energy_maker|
+		#	岗位削减
+		job_sfdoll_energy_maker_add = -1
+		#	人力参数
+		PR_smod_plnt_VAR_workshop_add = 1	#_|工房|,永远是1
+		PR_smod_plnt_CAT_planet_technician_add = 1	# 行业类型标签,永远是1
+	}
+}
+
+PR_D_JOB_sfdoll_mineral_maker = {
+	icon = PR_D_icon_MOD
+	is_for_colonizable = yes
+	category = PR_D_cat_JOB
+	should_swap_deposit_on_terraforming = no
+	drop_weight = { weight = 0 }
+
+	planet_modifier = {
+		PR_smod_plnt_JOB_deposit_SFDOLL = 1	# 岗位检测标签
+	}
+
+	resources = { category = planet_sfdoll_sp_industry	# 行业类型,直接同步岗位的
+		produces = {
+			multiplier = value:PR_prmt_sv_plnt_JOB_FACTOR|JOB|sfdoll_mineral_maker|EFFICIENCY|general|
+			minerals = 150
+		}
+		upkeep = {
+			multiplier = value:PR_prmt_sv_plnt_JOB_FACTOR|JOB|sfdoll_mineral_maker|EFFICIENCY|general|
+			energy = 250
+		}
+	}
+
+	triggered_planet_modifier = {
+		mult = value:PR_prmt_sv_plnt_JOB_FACTOR|JOB|sfdoll_mineral_maker|
+		#	岗位削减
+		job_sfdoll_mineral_maker_add = -1
+		#	人力参数
+		PR_smod_plnt_VAR_workshop_add = 1	#_|工房|,永远是1
+		PR_smod_plnt_CAT_planet_sfdoll_sp_industry_add = 1	# 行业类型标签,永远是1
+	}
+}
+
+PR_D_JOB_sfdoll_gases_maker = {
+	icon = PR_D_icon_MOD
+	is_for_colonizable = yes
+	category = PR_D_cat_JOB
+	should_swap_deposit_on_terraforming = no
+	drop_weight = { weight = 0 }
+	
+	planet_modifier = {
+		PR_smod_plnt_JOB_deposit_SFDOLL = 1	# 岗位检测标签
+	}
+
+	resources = { category = planet_refiners	# 行业类型,直接同步岗位的
+		produces = {
+			multiplier = value:PR_prmt_sv_plnt_JOB_FACTOR|JOB|sfdoll_gases_maker|EFFICIENCY|general|
+			exotic_gases = 6
+			rare_crystals = 6
+			volatile_motes = 6
+		}
+		upkeep = {
+			multiplier = value:PR_prmt_sv_plnt_JOB_FACTOR|JOB|sfdoll_gases_maker|EFFICIENCY|general|
+			minerals = 20
+		}
+	}
+
+
+	triggered_planet_modifier = {
+		mult = value:PR_prmt_sv_plnt_JOB_FACTOR|JOB|sfdoll_gases_maker|
+		#	岗位削减
+		job_sfdoll_gases_maker_add = -1
+		#	人力参数
+		PR_smod_plnt_VAR_workshop_add = 1	#_|工房|,永远是1
+		PR_smod_plnt_CAT_planet_refiners_add = 1	# 行业类型标签,永远是1
+	}
+}
+
+PR_D_JOB_sfdoll_educator = {
+	##	基础信息,照抄
+	icon = PR_D_icon_MOD
+	is_for_colonizable = yes
+	category = PR_D_cat_JOB
+	should_swap_deposit_on_terraforming = no
+	drop_weight = { weight = 0 }
+	
+	##	基础大类
+	planet_modifier = {
+		PR_smod_plnt_JOB_deposit_SFDOLL = 1	# 岗位检测标签
+	}
+
+	resources = { category = planet_culture_workers	# 行业类型,直接同步岗位的
+		produces = {
+			multiplier = value:PR_prmt_sv_plnt_JOB_FACTOR|JOB|sfdoll_educator|EFFICIENCY|general|
+			unity = 20
+			society_research = 6
+		}
+		upkeep = {
+			multiplier = value:PR_prmt_sv_plnt_JOB_FACTOR|JOB|sfdoll_educator|EFFICIENCY|general|
+			consumer_goods = 2
+		}
+	}
+
+	triggered_planet_modifier = {
+		mult = value:PR_prmt_sv_plnt_JOB_FACTOR|JOB|sfdoll_educator|
+		#	岗位削减
+		job_sfdoll_educator_add = -1
+		#	人力参数
+		PR_smod_plnt_VAR_workshop_add = 1	#_|工房|,永远是1
+		PR_smod_plnt_CAT_planet_culture_workers_add = 1	# 行业类型标签,永远是1
+		#	岗位功能
+		planet_crime_add = -10	#犯罪度
+	}
+}
+
+PR_D_JOB_sfdoll_artist = {
+	icon = PR_D_icon_MOD
+	is_for_colonizable = yes
+	category = PR_D_cat_JOB
+	should_swap_deposit_on_terraforming = no
+	drop_weight = { weight = 0 }
+	
+	##	基础大类
+	planet_modifier = {
+		PR_smod_plnt_JOB_deposit_SFDOLL = 1	# 岗位检测标签
+	}
+
+	resources = { category = planet_culture_workers	# 行业类型,直接同步岗位的
+		produces = {
+			multiplier = value:PR_prmt_sv_plnt_JOB_FACTOR|JOB|sfdoll_artist|EFFICIENCY|general|
+			unity = 12
+			society_research = 6
+		}
+		upkeep = {
+			multiplier = value:PR_prmt_sv_plnt_JOB_FACTOR|JOB|sfdoll_artist|EFFICIENCY|general|
+			consumer_goods = 2
+		}
+	}
+
+	triggered_planet_modifier = {
+		mult = value:PR_prmt_sv_plnt_JOB_FACTOR|JOB|sfdoll_artist|
+		#	岗位削减
+		job_sfdoll_artist_add = -1
+		#	人力参数
+		PR_smod_plnt_VAR_workshop_add = 1	#_|工房|,永远是1
+		PR_smod_plnt_CAT_planet_culture_workers_add = 1	# 行业类型标签,永远是1
+		PR_smod_plnt_MOD_all_amenities_add = 25	#_|PR舒适度|
+	}
+}
+
+PR_D_JOB_sfdoll_tactical = {
+	icon = PR_D_icon_MOD
+	is_for_colonizable = yes
+	category = PR_D_cat_JOB
+	should_swap_deposit_on_terraforming = no
+	drop_weight = { weight = 0 }
+
+	planet_modifier = {
+		PR_smod_plnt_JOB_deposit_SFDOLL = 1	# 岗位检测标签
+	}
+
+	resources = { category = planet_soldiers	# 行业类型,直接同步岗位的
+		produces = {
+			multiplier = value:PR_prmt_sv_plnt_JOB_FACTOR|JOB|sfdoll_tactical|EFFICIENCY|general|	# 只改动"death_priest"这一栏,其他照抄
+			unity = 1
+		}
+	}
+
+	##	修正
+	#	注意: 所有岗位修正转化到地块中必须加上这段人力系统的mult代码, 且只改动岗位名那一栏就可以, 剩下的照抄
+	#	如果岗位产出中已经有mult了, 你需要联系小伞获得帮助, 或者你水平比较高, 参考|泛用兼容|里面的"PR联动_effects_DAL.txt"和"PR联动_effects_NYTO.txt"
+	#	无论是资源还是修正, 所有检测条件的scope都从pop改为了他所在的planet注意转换, 另外有一些检测条件是检测pop自己的属性比如trait, 这种比较特殊, 你可以找小伞处理, 或者去掉这部分功能, 或者自己想办法
+	triggered_planet_modifier = {
+		mult = value:PR_prmt_sv_plnt_JOB_FACTOR|JOB|sfdoll_tactical|
+		#	岗位削减
+		job_sfdoll_tactical_add = -1
+		#	人力参数
+		PR_smod_plnt_VAR_workshop_add = 1	#_|工房|,永远是1
+		PR_smod_plnt_CAT_planet_soldiers_add = 1	# 行业类型标签,永远是1
+		PR_smod_plnt_MOD_naval_cap_add = 60 #PR海军容量
+		PR_smod_plnt_MOD_defense_armies_add = 12 #PR人口防卫军
+	}
+	triggered_planet_modifier = {
+		# 转化的effect会判断是否为铁血国家，此处不必再次判断
+		potential = { planet = { has_modifier = martial_law } }
+		mult = value:PR_prmt_sv_plnt_JOB_FACTOR|JOB|sfdoll_tactical| #PR修正
+		modifier = { planet_stability_add = 5 }
+	}
+}

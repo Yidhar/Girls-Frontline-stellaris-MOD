@@ -1,0 +1,88 @@
+﻿l_english:
+#
+sfdoll_noel_event_1_title:0 "In communication with Noel"
+sfdoll_noel_event_1_a_desc:0 "I can transform my shape freely.Why I became this image? Because I want to commemorate certain days..."
+sfdoll_noel_event_1_c_desc:0 "What's matter?"
+noel_has_this_job_now:0 "Noel is in this role."
+sfdoll_noel_is_destroyed:0 "Noel can't do this work now."
+
+noel_become_governor:0 "Please serve as governor"
+noel_become_scientist:0 "Please serve as scientist"
+noel_become_admiral:0 "Please serve as admiral"
+noel_become_general:0 "Please serve as general"
+option_noel_become_ship:0 "Become a space unit"
+option_noel_become_ship_desc:0 "Requires at least one Noel ship design"
+timed_flag_noel_become_ship:0 "Noel'll have to wait a while before she can turn again."
+
+response_text_noel_become_governor:0 "Let's start building the new world!"
+response_text_noel_become_scientist:0 "We need more knowledge."
+response_text_noel_become_admiral:0 "Make a reasonable strategy first."
+response_text_noel_become_general:0 "Prepare to fight."
+response_option_noel_become_ship:0 "Please note that from now on, after 360 days, I can become like this again."
+
+sfdoll_noel_event.2:0 "Noel's Recent Status"
+sfdoll_noel_event.2.desc:0 "The girl Noel, who was found by us in the relic site, seems to be healthy at the moment. Over the years, Noel has brought many inspirations to our relic research, and we help her control her spirit and power, and teach her knowledge. Now, she seems to have the qualifications to be a leader.\n\n§Y<You can now communicate with Noel through Elisa.>§!"
+
+# sfdoll_noel_event_2_title:0 "Noel's recent status"
+# sfdoll_noel_event_2_desc:0 "The girl Noel, who was found by us in the relic site, seems to be healthy at the moment, but seems to have lost the memory before meeting us. In the past few years, she has lived in our world, growing up like an ordinary human girl. \n\nNoel has brought many inspirations to our relic research, and we help her control her spirit and power, and teach her knowledge."
+
+# sfdoll_noel_event.3:0 "§RNoel is missing§!"
+# sfdoll_noel_event.3_desc:0 "The project to research Noel has an accident! While Noel was out with her guardians, she hijacked a space ship and disappeared without a trace. \n\nAll our searches have failed. "
+# sfdoll_noel_event.3_option:0 "We underestimated the growth of her ability"
+
+# sfdoll_noel_event.4:0 "Noel?"
+# sfdoll_noel_event.4_desc:0 "Above our planet, rifts to other dimensions have appeared, pouring out massive streams of matter that put our planet in danger. \n\nAt the same time, Noel appeared in the nearby space. Noyelu asked us to send the most elite fleet to follow her to the other side of the crack to help her close the dimensional crack."
+# sfdoll_noel_event.4_option:0 "Is she going to help us?"
+
+# sfdoll_noel_event.5:0 "Emergency Meeting"
+# sfdoll_noel_event.5_desc:0 "As you can see, Noel is suspicious now, and there is a risk in cooperating with her. What do you think?"
+# # sfdoll_noel_event.5_option:0 "We think the same as yours."
+
+# sfdoll_noel_event.7:0 "Assist Noel"
+# sfdoll_noel_event.7_desc:0 "SF Dolls' opinions converge on the OGAS network. Soon, they made a decision and followed Noel to start the disaster relief work. \n\nAfter a hard, the reaction of the dimensional crack gradually weakened, and the planet returned to safety."
+
+
+# sfdoll_noel_event.8:0 "In communication with Noel"
+# sfdoll_noel_event.8_desc:0 "Sorry, I left without saying goodbye before."
+# sfdoll_noel_event.8_option:0 "Where did you go?"
+
+# sfdoll_noel_event.9:0 "In communication with Noel"
+# sfdoll_noel_event.9_desc:0 "Long story. I'm trying to find some people and solve some problems myself. Some regrets are removed, but new ones are left behind."
+# sfdoll_noel_event.9_option:0 "Anyway, welcome back."
+# response_sfdoll_noel_event.9_option:0 "Thanks, I'm back."
+
+
+#noel trait
+leader_trait_governor_sfdoll_noel:0 "Relic Site Girl"
+leader_trait_governor_sfdoll_noel_desc:0 "Noel is an artificial life that SF Dolls found in a relic site. \n\nShe has the characteristics of human beings and an unknown species."
+
+leader_trait_scientist_sfdoll_noel:0 "$leader_trait_governor_sfdoll_noel$"
+leader_trait_scientist_sfdoll_noel_desc:0 "$leader_trait_governor_sfdoll_noel_desc$"
+leader_trait_admiral_sfdoll_noel:0"$leader_trait_governor_sfdoll_noel$"
+leader_trait_admiral_sfdoll_noel_desc:0"$leader_trait_governor_sfdoll_noel_desc$"
+leader_trait_general_sfdoll_noel:0"$leader_trait_governor_sfdoll_noel$"
+leader_trait_general_sfdoll_noel_desc:0"$leader_trait_governor_sfdoll_noel_desc$"
+
+sfdoll_noel_REACTOR:0 "power core"
+sfdoll_noel_jump_drive:0 "Spinning Thread of Destiny"
+sfdoll_ship_sensors_noel:0 "Sensor"
+thruster_sfdoll_noel:0 "Dawn"
+
+sfdoll_noel_system_attack:0 "Destroy a system"
+noel_must_become_ship:0 "Noel must be a space unit"
+sfdoll_noel_system_attack_cool_down:0 "Skill is cooling down"
+
+sfdoll_planet_killer_event.3:0 "Noel: Interstellar Attack"
+sfdoll_planet_killer_event_3_desc:0 "Noel can attacks on surrounding stars faster than light. Range limit: within 1 hyperlane range, or within 1 sensors range"
+
+sfdoll_planet_killer_event_3_attack_here:0 "Destroy the system Noel is in"
+sfdoll_planet_killer_event_3_option_1:0 "[target_1_of_pk_sfdoll.GetName]"
+sfdoll_planet_killer_event_3_option_2:0 "[target_2_of_pk_sfdoll.GetName]"
+sfdoll_planet_killer_event_3_option_3:0 "[target_3_of_pk_sfdoll.GetName]"
+sfdoll_planet_killer_event_3_option_4:0 "[target_4_of_pk_sfdoll.GetName]"
+sfdoll_planet_killer_event_3_option_5:0 "[target_5_of_pk_sfdoll.GetName]"
+sfdoll_planet_killer_event_3_option_6:0 "[target_6_of_pk_sfdoll.GetName]"
+
+sfdoll_planet_killer_event_3_option_11:0 "Next Page"
+sfdoll_planet_killer_event_3_option_12:0 "Select Again"
+# sfdoll_planet_killer_event_3_option_13:0 "Quit"

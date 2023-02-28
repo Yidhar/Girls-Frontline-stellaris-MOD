@@ -1,0 +1,19 @@
+objectTypes = {
+	pdxmesh = {
+		name = "shiledship_mesh"
+		file = "gfx/models/ships/shiledship/shiledship.mesh"
+		scale = 1
+		animation = { id = shiledship_open type = shiledship_open_anim }
+		animation = { id = shiledship_idle type = shiledship_idle_anim }
+		animation = { id = shiledship_closs type = shiledship_closs_anim }
+		meshsettings = {
+			name = "ScifiTerraformerHull_ScifiTerraformerBlue_0Shape"
+			index = 0
+			texture_diffuse = "ScifiTerraformerBlueAlbedo.dds"
+			texture_normal = "ScifiTerraformerNormal.dds"
+			texture_specular = "ScifiTerraformerPBRSpecular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+	
+}

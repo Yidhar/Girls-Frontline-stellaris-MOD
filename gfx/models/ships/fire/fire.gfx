@@ -1,0 +1,98 @@
+objectTypes = {
+	pdxmesh = {
+		name = "weapons_mesh"
+		file = "gfx/models/ships/fire/weapons.mesh"
+		scale = 1.0
+		animation = { id = idle type = "Gf_nyto_weapons_idel_animation" }
+		meshsettings = {
+			name = "FBXASC054_4_6_0Shape"
+			index = 0
+			texture_diffuse = "2.dds"
+			shader = "PdxMeshAlphaAdditive"
+		}
+
+		meshsettings = {
+			name = "FBXASC051_8_3_0Shape"
+			index = 0
+			texture_diffuse = "1.dds"
+			shader = "PdxMeshAlphaAdditive"
+		}
+
+		meshsettings = {
+			name = "FBXASC052_15_4_0Shape"
+			index = 0
+			texture_diffuse = "3.dds"
+			shader = "PdxMeshAlphaAdditive"
+		}
+
+		meshsettings = {
+			name = "FBXASC052_16_4_0Shape"
+			index = 0
+			texture_diffuse = "5.dds"
+			shader = "PdxMeshAlphaAdditive"
+		}
+
+		meshsettings = {
+			name = "FBXASC055_2_7_0Shape"
+			index = 0
+			texture_diffuse = "4.dds"
+			shader = "PdxMeshAlphaAdditive"
+		}
+
+		meshsettings = {
+			name = "FBXASC0496_16_0Shape"
+			index = 0
+			texture_diffuse = "7.dds"
+			shader = "PdxMeshAlphaAdditive"
+		}
+
+		meshsettings = {
+			name = "FBXASC049_2_1_0Shape"
+			index = 0
+			texture_diffuse = "6.dds"
+			shader = "PdxMeshAlphaAdditive"
+		}
+
+		meshsettings = {
+			name = "FBXASC0493_13_0Shape"
+			index = 0
+			texture_diffuse = "8.dds"
+			shader = "PdxMeshAlphaAdditive"
+		}
+
+		meshsettings = {
+			name = "FBXASC050_3_2_0Shape"
+			index = 0
+			texture_diffuse = "9.dds"
+			shader = "PdxMeshAlphaAdditive"
+		}
+
+		meshsettings = {
+			name = "FBXASC057_9_0Shape"
+			index = 0
+			texture_diffuse = "10.dds"
+			shader = "PdxMeshAlphaAdditive"
+		}
+
+		meshsettings = {
+			name = "FBXASC051_5_3_0Shape"
+			index = 0
+			texture_diffuse = "11.dds"
+			shader = "PdxMeshAlphaAdditive"
+		}
+
+		meshsettings = {
+			name = "Plane_24_8_oreange_0Shape"
+			index = 0
+			texture_diffuse = "weapons_2.dds"
+			shader = "PdxMeshAlphaAdditive"
+		}
+
+		meshsettings = {
+			name = "Cube_4_5_green_0Shape"
+			index = 0
+			texture_diffuse = "weapons.dds"
+			shader = "PdxMeshAlphaAdditive"
+		}
+	}
+}

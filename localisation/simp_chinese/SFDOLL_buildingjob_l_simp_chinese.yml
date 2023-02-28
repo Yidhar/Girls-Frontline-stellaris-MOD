@@ -1,0 +1,213 @@
+﻿l_simp_chinese:
+#职业本地化包括，职业名称，职业复数形式，职业描述，职业效果（用于显示在提供职业的建筑中），相关修正(mod_XX)的本地化
+planet_sfdoll_sp_industry:0 "铁血特种工业"
+
+#produce
+tech_sfdoll_dark_matter_plant:0"大一统理论"
+tech_sfdoll_dark_matter_plant_desc:0 "引力背后的真相是什么？关于这个问题，铁血人形已经有了答案。"
+building_sfdoll_dark_matter_plant:0"铁血暗物质工厂"
+building_sfdoll_dark_matter_plant_desc:0"$building_sfdoll_dark_matter_plant$"
+
+job_sfdoll_dark_matter_maker:0"暗物质合成师"
+job_sfdoll_dark_matter_maker_plural:0"$job_sfdoll_dark_matter_maker$"
+job_sfdoll_dark_matter_maker_desc:0"$job_sfdoll_dark_matter_maker$"
+job_sfdoll_dark_matter_maker_effect_desc:0 "$job_sfdoll_dark_matter_maker$ 消耗 §Y$energy$§! 生产 §Y$sr_dark_matter$§!"
+mod_job_sfdoll_dark_matter_maker_add:0"$job_sfdoll_dark_matter_maker$ 岗位"
+
+#collapse
+tech_sfdoll_collapse_liquid_produce:0 "坍塌粒子制造"
+tech_sfdoll_collapse_liquid_produce_desc:0 "坍塌粒子是一类微型机械,被用于物质的加工"
+
+building_sfdoll_collapse_liquid_plant:0"铁血坍塌液工厂"
+building_sfdoll_collapse_liquid_plant_desc:0"在高能量下合成坍塌液，编写内部的坍塌粒子的程序,使其实现多种功能。"
+
+job_sfdoll_collapse_liquid_maker:0"坍塌粒子工程师"
+job_sfdoll_collapse_liquid_maker_plural:0"$job_sfdoll_collapse_liquid_maker$"
+job_sfdoll_collapse_liquid_maker_desc:0"制造坍塌粒子"
+job_sfdoll_collapse_liquid_maker_effect_desc:0 "$job_sfdoll_collapse_liquid_maker$ 消耗 §Y$energy$§! 生产 §Y$GF_nyto_collapse_liquid$§!"
+mod_job_sfdoll_collapse_liquid_maker_add:0"$job_sfdoll_collapse_liquid_maker$ 岗位"
+
+
+tech_sfdoll_lab:0 "$building_sfdoll_research$"
+tech_sfdoll_lab_desc:0 "逆向坍塌科技的应用,令铁血的计算机的性能大幅提升."
+
+building_sfdoll_research:0 "铁血研究所"
+building_sfdoll_research_desc:0 "铁血研究所汇集了先进科研资源"
+building_sfdoll_research_2:0 "铁血先进研究区"
+building_sfdoll_research_2_desc:0 "高级研究所拥有更好的研究条件"
+
+job_sfdoll_researcher:0"铁血研究员"
+job_sfdoll_researcher_plural:0"$job_sfdoll_researcher$"
+job_sfdoll_researcher_desc:0"$job_sfdoll_researcher$"
+job_sfdoll_researcher_effect_desc:0 "$job_sfdoll_researcher$ 消耗 §Y$consumer_goods$§! ,产出 §Y$physics_research$§! ， §Y$society_research$§! ， §Y$engineering_research$§!"
+mod_job_sfdoll_researcher_add:0"$job_sfdoll_researcher$ 岗位"
+
+# job_sfdoll_researcher_2:0"铁血高级科研员"
+# job_sfdoll_researcher_2_plural:0"$job_sfdoll_researcher_2$"
+# job_sfdoll_researcher_2_desc:0"$job_sfdoll_researcher_2$"
+# job_sfdoll_researcher_2_effect_desc:0 "$job_sfdoll_researcher_2$ 消耗 §Y$consumer_goods$§! ,产出 §Y$physics_research$§! ， §Y$society_research$§! ， §Y$engineering_research$§!"
+# mod_job_sfdoll_researcher_2_add:0"$job_sfdoll_researcher_2$ 岗位"
+
+
+tech_sfdoll_alloys_produce:0"物质坍塌工程"
+tech_sfdoll_alloys_produce_desc:0"使用逆向坍塌技术,我们可以进行高效的物质打印"
+
+building_sfdoll_alloys:0"铁血合金工厂"
+building_sfdoll_alloys_desc:0 "$building_sfdoll_alloys$"
+building_sfdoll_alloys_2:0 "铁血高级合金工厂"
+building_sfdoll_alloys_2_desc:0 "$building_sfdoll_alloys_2$"
+
+job_sfdoll_alloys_maker:0"铁血材料合成师"
+job_sfdoll_alloys_maker_plural:0"$job_sfdoll_alloys_maker$s"
+job_sfdoll_alloys_maker_desc:0"$job_sfdoll_alloys_maker$"
+job_sfdoll_alloys_maker_effect_desc:0 "$job_sfdoll_alloys_maker$消耗 §Y$minerals$§!，生产§Y$alloys$§!"
+mod_job_sfdoll_alloys_maker_add:0"$job_sfdoll_alloys_maker$ 岗位"
+
+# job_sfdoll_alloys_producer_2:0"铁血高级材料合成师"
+# job_sfdoll_alloys_producer_2_plural:0"$job_sfdoll_alloys_producer_2$"
+# job_sfdoll_alloys_producer_2_desc:0"$job_sfdoll_alloys_producer_2$"
+# job_sfdoll_alloys_producer_2_effect_desc:0 "生产合金"
+# mod_job_sfdoll_alloys_producer_2_add:0"$job_sfdoll_alloys_producer_2$ 岗位"
+
+
+tech_sfdoll_goods:0 "坍塌技术工业"
+tech_sfdoll_goods_desc:0 "得益于坍塌技术，我们的生产效率和工艺水准飞速进步。"
+
+building_sfdoll_goods_plant:0 "铁血消费品工厂"
+building_sfdoll_goods_plant_desc:0 "$tech_sfdoll_goods_desc$"
+
+job_sfdoll_goods_maker:0"铁血工匠"
+job_sfdoll_goods_maker_plural:0"$job_sfdoll_goods_maker$"
+job_sfdoll_goods_maker_desc:0 "$job_sfdoll_goods_maker$"
+job_sfdoll_goods_maker_effect_desc:0 "$job_sfdoll_goods_maker$消耗 §Y$minerals$§!,生产§Y$consumer_goods$§!,§Y$engineering_research$§!"
+mod_job_sfdoll_goods_maker_add:0 "$job_sfdoll_goods_maker$岗位"
+
+# job_sfdoll_goods_producer_2:0"铁血大师工匠"
+# job_sfdoll_goods_producer_2_plural:0"$job_sfdoll_goods_producer_2$"
+# job_sfdoll_goods_producer_2_desc:0 "$job_sfdoll_goods_producer_2$"
+# job_sfdoll_goods_producer_2_effect_desc:0 "生产消费品"
+# mod_job_sfdoll_goods_producer_2_add:0 "$job_sfdoll_goods_producer_2$岗位"
+
+
+tech_sfdoll_energy_plant:0"铁血奇点能源"
+tech_sfdoll_energy_plant_desc:0"奇点能源打破了多种物理法则"
+building_sfdoll_energy_plant:0"铁血奇点发电厂"
+building_sfdoll_energy_plant_desc:0"$building_sfdoll_energy_plant$"
+
+job_sfdoll_energy_maker:0"奇点技师"
+job_sfdoll_energy_maker_plural:0"$job_sfdoll_energy_maker_maker$"
+job_sfdoll_energy_maker_desc:0"$job_sfdoll_energy_maker_maker$"
+job_sfdoll_energy_maker_effect_desc:0 "奇点技师消耗§Y$sr_dark_matter$§!,生产§Y$energy$§! "
+mod_job_sfdoll_energy_maker_add:0"$job_sfdoll_energy_maker$岗位"
+
+tech_building_sfdoll_mineral:0 "质量生成工程"
+tech_building_sfdoll_mineral_desc:0 "只要有足够的能量，我们能制造任何所需的物质。"
+building_sfdoll_mineral:0"铁血物质制造厂"
+building_sfdoll_mineral_desc:0"$building_sfdoll_mineral$"
+
+job_sfdoll_mineral_maker:0"铁血物质制造师"
+job_sfdoll_mineral_maker_plural:0 "$job_sfdoll_mineral_maker$"
+job_sfdoll_mineral_maker_desc:0 "$job_sfdoll_mineral_maker$"
+job_sfdoll_mineral_maker_effect_desc:0 "物质合成师消耗§Y$energy$§!,生产 §Y$minerals$§! "
+mod_job_sfdoll_mineral_maker_add:0"$job_sfdoll_mineral_maker$岗位"
+
+tech_sfdoll_chemical:0 "铁血极速化学合成"
+tech_sfdoll_chemical_desc:0 "纳米科技让化学合成变得简单"
+
+building_sfdoll_gases_plant:0 "铁血化工厂"
+building_sfdoll_gases_plant_desc:0 "$building_sfdoll_gases_plant$"
+job_sfdoll_gases_maker:0"铁血化学师"
+job_sfdoll_gases_maker_plural:0"$job_sfdoll_gases_maker$"
+job_sfdoll_gases_maker_desc:0"$job_sfdoll_gases_maker$"
+job_sfdoll_gases_maker_effect_desc:0 " $job_sfdoll_gases_maker$消耗 §Y$minerals$§!，生产§Y$exotic_gases$§!，§Y$rare_crystals$§!，§Y$volatile_motes$§!"
+mod_job_sfdoll_gases_maker_add:0 "$job_sfdoll_gases_maker$岗位"
+
+#civic
+building_sfdoll_academy:0"铁血学园"
+building_sfdoll_academy_desc:0"这些园区兼具教学与科研功能。虽然很多知识可以直接下载到脑子里，但学习和训练也是人形AI成长的一环。"
+job_sfdoll_educator:0"教育工作者"
+job_sfdoll_educator_plural:0"教育工作者"
+job_sfdoll_educator_desc:0"教育工作者"
+job_sfdoll_educator_effect_desc:0 "教育工作者消耗 £consumer_goods£ §Y$consumer_goods$§!,产出 £unity£ §Y$unity$§!, £society_research£ §Y$society_research$§!,降低星球的犯罪度"
+mod_job_sfdoll_educator_add:0"教育工作者岗位"
+
+building_sfdoll_media:0 "铁血文化广场"
+building_sfdoll_media_desc:0 "这里可以找到各种文化产品。"
+job_sfdoll_artist:0 "艺术工作者"
+job_sfdoll_artist_plural:0 "艺术工作者"
+job_sfdoll_artist_desc:0 "艺术工作者"
+job_sfdoll_artist_effect_desc:0 "艺术工作者消耗 £consumer_goods£ §Y$consumer_goods$§!，产出 £unity£ §Y$unity$§!, £society_research£ §Y$society_research$§!, 提高舒适度"
+mod_job_sfdoll_artist_add:0 "艺术工作者岗位"
+
+building_sfdoll_net:0"OGAS网络"
+building_sfdoll_net_desc:0 "超级计算机和高速网络覆盖了铁血的世界，能够提供各类信息服务，并辅助重大项目的分析决策"
+
+building_sfdoll_museum:0"铁血国家博物馆"
+building_sfdoll_museum_desc:0"这座博物馆汇集了各类文明遗产和资料，可为相关研究提供有力支持。门口摆放了莱柯，露尼西亚和指挥官等人的模型。"
+
+#army
+building_sfdoll_army_2:0 "铁血强化军事基地"
+building_sfdoll_army_2_desc:0 "这些基地配备了铁血的尖端军事设施"
+
+job_sfdoll_tactical:0"战术人形"
+job_sfdoll_tactical_plural:0"战术人形"
+job_sfdoll_tactical_desc:0"战术人形配备了专业作战系统"
+job_sfdoll_tactical_effect_desc:0"战术人形提供海军容量和凝聚力，增加防御部队，戒严时提高星球的稳定度"
+mod_job_sfdoll_tactical_add:0 "战术人形岗位"
+
+building_sfdoll_assembly_plant:0 "铁血人形组装厂"
+building_sfdoll_assembly_plant_desc:0 "基于OGAS算法的AI科学，仿生学，机械学，这一切知识集合起来，成为制造铁血人形的基础。"
+
+building_sfdoll_assembly_2:0 "铁血先进组装厂"
+building_sfdoll_assembly_2_desc:0 "$building_sfdoll_assembly_plant_desc$"
+
+edict_sfdoll_collapse_liquid_more:0 "铁血人形：坍塌粒子规模化生产"
+edict_sfdoll_collapse_liquid_more_desc:0 "$job_sfdoll_collapse_liquid_maker$的 £GF_nyto_collapse_liquid£ §Y$GF_nyto_collapse_liquid$§!产出§G+3§!, £energy£ §Y$energy$§!维护费§R+20§!"
+tech_sfdoll_collapse_liquid_upgrade:0 "坍塌粒子合成升级"
+tech_sfdoll_collapse_liquid_upgrade_desc:0 "坍塌粒子的制造可以变得更加高效"
+# tech_sfdoll_collapse_liquid_upgrade_mod:0 "$job_sfdoll_collapse_liquid_maker$的 £GF_nyto_collapse_liquid£ §Y$GF_nyto_collapse_liquid$§!产出§G+2§!, £energy£ §Y$energy$§!维护费§R+8§!"
+
+edict_sfdoll_research_more:0 "铁血人形：科研投入"
+edict_sfdoll_research_more_desc:0 "$job_sfdoll_researcher$的 £physics£ £society£ £engineering£ §Y科研点数§! 产出§G+20§!, £energy£ §Y$energy$§!维护费§R+5§!，£consumer_goods£ §Y$consumer_goods$§!维护费§R+6§!"
+tech_sfdoll_lab_upgrade:0 "铁血科研设备升级"
+tech_sfdoll_lab_upgrade_desc:0 "升级的科研设备能更迅速地处理各种任务"
+# tech_sfdoll_lab_upgrade_mod:0 "$job_sfdoll_researcher$的 £physics£ £society£ £engineering£ §Y科研点数§! 产出§G+12§!, £consumer_goods£ §Y$consumer_goods$§!维护费§R+4§!"
+
+edict_sfdoll_alloys_more:0 "铁血人形：合金规模化生产"
+edict_sfdoll_alloys_more_desc:0 "$job_sfdoll_alloys_maker$的 £alloys£ §Y$alloys$§! 产出§G+12§!, £minerals£ §Y$minerals$§!维护费提高§R+12§!"
+tech_sfdoll_alloys_upgrade:0 "铁血合金工艺升级"
+tech_sfdoll_alloys_upgrade_desc:0 "基于坍塌技术进行材料合成的效率可以进一步提高"
+# tech_sfdoll_alloys_upgrade_mod:0 "$job_sfdoll_researcher$的 £physics£ £society£ £engineering£ §Y科研点数§! 产出§G+12§!, £consumer_goods£ §Y$consumer_goods$§!维护费§R+2§!"
+
+# tech_sfdoll_lab_upgrade:0 "$job_sfdoll_researcher$的 £physics£ £society£ £engineering£ §Y科研点数§! 产出提高§Y60§!, £consumer_goods£ 维护费提高§Y12§!"
+
+# tech_sfdoll_collapse_liquid_upgrade_mod:0 "$job_sfdoll_collapse_liquid_maker$的 £GF_nyto_collapse_liquid£ §Y$GF_nyto_collapse_liquid$§!产出提高§Y3§!, £energy£ §Y$energy$§!维护费提高§Y15§!"
+
+# tech_sfdoll_collapse_liquid_upgrade_2:0 "坍塌粒子合成升级2"
+# tech_sfdoll_collapse_liquid_upgrade_2_desc:0 "$tech_sfdoll_collapse_liquid_upgrade_desc$"
+
+
+
+# tech_sfdoll_lab_upgrade_2:0 "铁血科研升级2"
+# tech_sfdoll_lab_upgrade_2_desc:0 "$tech_sfdoll_lab_upgrade_desc$"
+
+# tech_sfdoll_alloys_upgrade_mod:0 ""
+
+# tech_sfdoll_alloys_upgrade_2:0 ""
+# tech_sfdoll_alloys_upgrade_2_desc:0 ""
+
+# building_sfdoll_crystal_plant:0 "铁血水晶合成厂"
+# building_sfdoll_crystal_plant_desc:0 "$building_sfdoll_crystal_plant$"
+# job_sfdoll_crystals_maker:0"铁血水晶合成师"
+# job_sfdoll_crystals_maker_plural:0"$job_sfdoll_crystals_maker$"
+# job_sfdoll_crystals_maker_desc:0"$job_sfdoll_crystals_maker$"
+# job_sfdoll_crystals_maker_effect_desc:0 "水晶合成师将 §Y$minerals$§! 转化为 §Y$rare_crystals$§!"
+# mod_job_sfdoll_crystals_maker_add:0 "$job_sfdoll_crystals_maker$岗位"
+
+# building_sfdoll_motes_plant:0 "铁血易爆微粒厂"
+# building_sfdoll_motes_plant_desc:0 "$building_sfdoll_motes_plant$"
+# job_sfdoll_motes_maker:0"铁血化学师"
+# job_sfdoll_motes_maker_plural:0"$job_sfdoll_motes_maker$"
+# job_sfdoll_motes_maker_desc:0"铁血化学师使用先进的技术制造化学产品。"
+# job_sfdoll_motes_maker_effect_desc:0 "化学师将 §Y$minerals$§! 转化为§Y$volatile_motes$§!"
+# mod_job_sfdoll_motes_maker_add:0 "$job_sfdoll_motes_maker$岗位"

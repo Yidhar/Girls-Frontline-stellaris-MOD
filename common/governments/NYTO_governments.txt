@@ -1,0 +1,20 @@
+gov_civic_GF_nyto_technology_church= {
+	ruler_title = RT_GPARADEUSF
+	possible = {has_civic=civic_GF_nyto_technology_minister}
+	weight = {base = 5}
+}
+gov_civic_GF_nyto_war_church= {
+	ruler_title = RT_GPARADEUSF
+	possible = {has_civic=civic_GF_nyto_special_operations_command}
+	weight = {base = 5}
+}
+gov_civic_GF_nyto_mechanical_church= {
+	ruler_title = RT_GPARADEUSF
+	possible = {has_civic=civic_GF_nyto_phase_technician}
+	weight = {base = 5}
+}
+gov_civic_GF_nyto_starsea_crusade= {
+	ruler_title = RT_GPARADEUSF
+	possible = {has_authority = auth_GF_paradeus}
+	weight = {base = 5}
+}

@@ -1,0 +1,38 @@
+namespace = sfdoll_tech_event
+
+#检测拥有的科技，并延迟触发事件
+country_event = {
+	id = sfdoll_tech_event.1
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		has_authority = auth_gf_sfdoll
+	}
+	immediate = {
+		# 发现志筑凉子
+		# if = {
+		# 	limit = { has_technology = tech_sfdoll_ap_phy }
+		# 	country_event = { id = sfdoll_pmmm_event.3 }
+		# }
+
+		# 深空母舰提示
+		# if = {
+		# 	limit = { has_technology = tech_sfdoll_mobile_starbase }
+		# 	country_event = {	id = sfdoll_tech_event.2	}
+		# }
+
+		# if = {
+		# 	limit = { 
+		# 		or = {
+		# 			last_increased_tech = tech_repeatable_sfdoll_phy
+		# 			last_increased_tech = tech_repeatable_sfdoll_soc
+		# 			last_increased_tech = tech_repeatable_sfdoll_eng
+		# 		}
+		# 	}
+		# 	change_variable = {
+		# 		which = count_unlock_sfdoll_ap
+		# 		value = 1
+		# 	}
+		# }
+	}
+}

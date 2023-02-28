@@ -1,0 +1,96 @@
+#规则覆写工程    #舰船
+tech_GF_nyto_repeatable_phys_100 = {
+	area = physics
+	cost = 100000
+	cost_per_level = 5000
+	tier = @repeatableTechTier
+	category = { computing }
+	levels = 50
+	
+	weight = 10
+	prerequisites = {
+		tech_GF_nyto_repeatable_phys_100
+	}
+	potential = {
+		is_ai = no
+		is_fallen_empire = no
+		has_country_flag = has_nyto_Prp_flag
+		has_country_flag = has_nyto_ftl_flag
+		has_country_flag = has_nyto_ai_flag
+		has_country_flag = has_nyto_Ex_shield_flag		
+	}	
+	modifier = {
+		ship_armor_mult = 0.1 #舰船装甲10%
+		ship_shield_mult = 0.1 #舰船护盾 10%
+		ship_windup_mult = -0.1 #超空间冷却
+		ship_ftl_jumpdrive_range_mult = 0.1 #ftl距离
+		ship_jumpdrive_cooldown_mult = -0.1 
+		ship_winddown_mult = -0.1 #超空间准备时间
+		weapon_type_energy_weapon_damage_mult = 0.25
+		weapon_type_energy_weapon_fire_rate_mult = 0.25
+		weapon_type_explosive_weapon_damage_mult = 0.25 #爆破武器伤害
+	}
+}
+
+
+#虚实转换技术   #产能
+tech_GF_nyto_repeatable_soc_100 = {
+	area = society
+	cost = 100000
+	cost_per_level = 5000
+	tier = @repeatableTechTier
+	category = { biology }
+	levels = 50
+	weight = 10	
+	prerequisites = {
+		tech_GF_nyto_repeatable_soc_100
+	}
+	potential = {
+		is_ai = no 
+		is_fallen_empire = no
+		has_country_flag = has_nyto_Prp_flag
+		has_country_flag = has_nyto_ftl_flag
+		has_country_flag = has_nyto_ai_flag
+		has_country_flag = has_nyto_Ex_shield_flag
+	}
+	modifier = {
+		country_resource_max_add = 50000
+		deposit_blockers_cost_mult = -0.05
+		planet_jobs_produces_mult = 0.1
+		planet_decision_enact_speed_mult = 0.1
+		planet_clear_blocker_time_mult = -0.1
+		all_technology_research_speed = 0.02
+	}
+}
+ 
+
+#现实投影工程  #建造
+tech_GF_nyto_repeatable_eng_100 = {
+	area = engineering
+	cost = 100000
+	cost_per_level = 5000
+	tier = @repeatableTechTier
+	category = {voidcraft}
+	levels = 50
+	weight = 10
+	prerequisites = {
+		tech_GF_nyto_repeatable_eng_100
+	}
+	potential = {
+		is_ai = no
+		is_fallen_empire = no
+		has_country_flag = has_nyto_Prp_flag
+		has_country_flag = has_nyto_ftl_flag
+		has_country_flag = has_nyto_ai_flag
+		has_country_flag = has_nyto_Ex_shield_flag
+	}	
+	modifier = {
+		country_megastructure_build_cap_add = 0.01 #巨构建造上限
+		megastructure_build_speed_mult = 0.05 #巨构建造速度
+		planet_building_build_speed_mult = 0.1 #星球建造速度
+		planet_colony_development_speed_mult =0.1 #殖民发展速度
+		starbase_shipyard_build_speed_mult = 0.1  #造舰速度
+		starbase_module_build_time_mult = -0.01 #模块建造速度
+		weapon_type_explosive_weapon_fire_rate_mult = 0.25		#爆破武器开火速度
+	}
+}

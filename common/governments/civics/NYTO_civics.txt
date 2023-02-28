@@ -1,0 +1,261 @@
+# #90wish,建筑、职业、事件
+# civic_GF_nyto_90wish = {
+# 	icon = "gfx/interface/icons/governments/civics/GF_nyto_90wish.dds"
+# 	potential = {
+# 		authority = {
+# 			value = auth_GF_paradeus
+# 		}
+# 	}
+# 	possible = {
+# 		species_class = {
+# 			value = nyto
+# 		}
+# 	}
+# 	modifier = {
+# 		all_technology_research_speed = 0.2
+# 		country_trade_fee = -0.2
+# 	}
+# 	modification = yes
+# 	random_weight = {
+# 		base = 5
+# 	}
+# }
+
+#相位技师,建筑、职业、事件
+# civic_GF_nyto_phase_technician = {
+# 	icon = "gfx/interface/icons/governments/civics/GF_nyto_phase_technician.dds"
+# 	potential = {
+# 		authority = {
+# 			value = auth_GF_paradeus
+# 		}
+# 	}
+# 	pickable_at_start = no
+# 	possible = {
+# 		species_class = {
+# 			value = nyto
+# 		}
+# 	}
+# 	modifier = {
+# 		country_megastructure_build_cap_add = 1
+# 	}	
+# 	modification = yes
+# 	random_weight = {
+# 		base = 5
+# 	}
+# }
+
+#星河远征,建筑、职业、事件
+civic_GF_nyto_forward_base = {
+	icon = "gfx/interface/icons/governments/civics/GF_nyto_forward_base.dds"
+	potential = {
+		authority = {
+			value = auth_GF_paradeus
+		}
+	}
+	possible = {
+		species_class = {
+			value = nyto
+		}
+		civics = {
+			NOT = {
+				value = civic_GF_nyoto_armor_train
+			}			
+			NOT = {
+				value = civic_GF_nyto_Vengeance_Crusade
+			}
+		}
+		ethics = {
+			OR = {
+				value = ethic_militarist
+				value = ethic_fanatic_militarist
+			}
+		}
+	}
+	modifier = {
+		colony_start_num_pops_add = 2
+		armies_upkeep_mult = -0.5
+		country_war_exhaustion_mult = -0.5
+	}
+	modification = yes
+	random_weight = {
+		base = 5
+	}
+}
+
+#特种作战指挥部,建筑、职业、事件
+civic_GF_nyto_special_operations_command = {
+	icon = "gfx/interface/icons/governments/civics/GF_nyto_Special_operations_Command.dds"
+	potential = {
+		authority = {
+			value = auth_GF_paradeus
+		}
+	}
+	modification = no
+	possible = {
+		species_class = {
+			value = nyto
+		}
+	}
+	modifier = {
+		intel_decryption_add = 10
+		envoys_add = 1
+	}	
+	
+	modification = yes
+	random_weight = {
+		base = 5
+	}
+}
+
+#科技牧师 限定唯心
+# civic_GF_nyto_technology_minister = {
+# 	icon = "gfx/interface/icons/governments/civics/GF_nyto_technology_minister.dds"
+# 	potential = {
+# 		authority = {
+# 			value = auth_GF_paradeus
+# 		}
+# 	}
+# 	possible = {
+# 		species_class = {
+# 			value = nyto
+# 		}
+# 		ethics = {
+# 			OR = {
+# 				value = ethic_spiritualist
+# 				value = ethic_fanatic_spiritualist
+# 			}
+# 		}
+# 	}
+# 	modifier = {
+# 		num_tech_alternatives_add = 1
+# 	}
+# 	modification = yes
+# 	random_weight = {
+# 		base = 5
+# 	}
+# }
+
+#永恒国度
+civic_GF_nyoto_armor_train={
+	icon = "gfx/interface/icons/governments/civics/civic_GF_nyoto_armor_train.dds"
+	potential = {
+		authority = {
+			value = auth_GF_paradeus
+		}
+	}
+	possible = {
+		civics = {
+			NOT = {
+				value = civic_GF_nyto_forward_base
+			}
+		}
+		ethics = {
+			NOT = {
+				value = ethic_fanatic_xenophile
+			}
+			NOT = {
+				value =ethic_xenophile
+			}
+		}
+	}
+	modifier = {
+		planet_army_build_time_mult = -0.1
+		armies_energy_upkeep_mult = -0.5
+		empire_size_systems_mult = 0.6
+		army_defense_health_mult = 1
+		army_attack_damage_mult = 0.5
+		SHIP_HOME_TERRITORY_FIRE_RATE_MULT = 2
+		shipclass_starbase_build_cost_mult = 2
+	}
+	
+	random_weight = {
+		base = 5
+	}
+	modification = no
+}
+
+#昙花共生
+civic_Gf_nyto_tanhua_pluse ={
+	potential = {
+		authority = {
+			value = auth_GF_paradeus
+		}
+	}
+	
+	modifier = {
+		leader_age = -20
+	}
+
+	random_weight = {
+		base = 5
+	}
+	modification = no
+}
+
+#高效回收
+civic_GF_nyto_reup = {
+	potential = {
+		authority = {
+			value = auth_GF_paradeus
+		}
+	}
+	modifier = {
+		pop_amenities_usage_mult = -0.5
+		planet_pops_consumer_goods_upkeep_mult = -0.3		
+		planet_jobs_consumer_goods_upkeep_mult = -0.5	
+	}
+}
+
+
+#受难者 所有国家关系-1000
+#轨道轰炸伤害增加50%
+#初始拥有10elid人口
+civic_GF_nyto_heart_of_suffering = {
+	potential = {
+		authority = {
+			value = auth_GF_paradeus
+		}		
+	}
+	possible = {
+		ethics = {
+			OR = {
+				value = ethic_fanatic_xenophobe
+				value = ethic_xenophobe
+			}
+		}
+		civics = {
+			NOT = {
+				value = civic_GF_nyoto_armor_train
+			}
+		}
+	}
+	modifier = {
+		ship_orbital_bombardment_mult = 0.5
+		planet_crime_add = -100
+		country_resettlement_cost_mult = -1
+	}
+	modification = no
+	description = "civic_GF_nyto_heart_of_suffering_modif"	
+	
+}
+
+#复仇远征 #初始拥有坍塌液抛射轰炸 #人口无法自然增长
+civic_GF_nyto_Vengeance_Crusade ={
+	potential = {
+		authority = {
+			value = auth_GF_paradeus
+		}		
+	}	
+	pickable_at_start =no
+	modification = no
+	modifier = {
+		starbase_shipyard_build_speed_mult = 0.5
+		pop_assembly_speed = -1000
+		pop_growth_speed = -1000
+		pop_happiness = -0.5	
+		ship_orbital_bombardment_mult = 0.5	
+		country_war_exhaustion_mult = -1
+	}
+	description = "civic_GF_nyto_Vengeance_Crusade_modif"
+}
+

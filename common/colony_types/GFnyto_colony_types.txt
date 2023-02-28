@@ -1,0 +1,213 @@
+#工业区划
+#综合工业星球 （全产
+col_GF_nyto_pc_toxic_alloy_plural = {
+	icon = GFX_colony_type_foundry
+	potential = {
+		OR = {
+			is_planet_class = pc_GF_nyto_embers_gloomy
+			is_planet_class = pc_GF_nyto_devil_furnace
+			is_planet_class = pc_GFnytp_habitis
+		}
+	}
+	planet_modifier = {
+		planet_district_GF_nyto_pc_toxic_alloy_build_speed_mult = 0.25
+		pc_GF_nyto_embers_gloomy_habitability = 1	
+	}
+	weight_modifier = {
+		add = 1000
+		modifier = {
+			num_free_districts = {
+				type = district_GF_nyto_pc_toxic_alloy
+				value > 1
+			}
+		}
+	}
+
+}
+
+#战略资源中枢 （稀有
+col_Gf_nyto_xiyou_rss = {
+	icon = GFX_colony_type_refinery
+	potential = {
+		OR = {
+			is_planet_class = pc_GF_nyto_embers_gloomy
+			is_planet_class = pc_GF_nyto_devil_furnace
+			is_planet_class = pc_GFnytp_habitis
+		}		
+	}
+	planet_modifier = {
+		planet_district_GF_nyto_pc_toxic_alloy_build_speed_mult = 0.25
+		pc_GF_nyto_embers_gloomy_habitability = 1	
+	}
+	weight_modifier = {
+		add = 20
+		modifier = {
+			is_planet_class = pc_habitat
+		}
+	}
+}
+
+#军工产业星球 (矿物/合金
+col_GF_nyto_general_planet = {
+	icon = GFX_colony_type_foundry
+	potential = {
+		OR = {
+			is_planet_class = pc_GF_nyto_embers_gloomy
+			is_planet_class = pc_GF_nyto_devil_furnace
+			is_planet_class = pc_GFnytp_habitis
+		}
+	}
+	planet_modifier = {
+		planet_district_GF_nyto_pc_toxic_alloy_build_speed_mult = 0.25
+		pc_GF_nyto_embers_gloomy_habitability = 1	
+	}
+	#妈的 权重要重做
+	weight_modifier = {
+		add = 10
+		modifier = {
+			num_free_districts = {
+				type = district_GF_nyto_pc_toxic_alloy
+				value > 1
+			}
+		}
+	}
+	weight_modifier = {
+		add = 100
+		modifier = {
+			owner = {
+				is_ai = yes
+			}
+		}
+	}
+}
+
+# 民用产业  食物/消费
+col_GF_nyto_food_planet ={
+	icon = GFX_colony_type_farm
+	potential = {
+		OR = {
+			is_planet_class = pc_GF_nyto_embers_gloomy
+			is_planet_class = pc_GF_nyto_devil_furnace
+			is_planet_class = pc_GFnytp_habitis
+		}
+	}
+	planet_modifier = {
+		planet_district_GF_nyto_pc_toxic_alloy_build_speed_mult = 0.25
+		pc_GF_nyto_embers_gloomy_habitability = 1	
+	}
+}
+
+
+
+
+
+
+
+#坍塌工业星球
+col_GF_nyto_pc_toxic_consumer_good_plural = {
+	icon = GFX_colony_type_foundry
+	potential = {
+		OR = {
+			is_planet_class = pc_GF_nyto_embers_gloomy
+			is_planet_class = pc_GF_nyto_devil_furnace
+			is_planet_class = pc_GFnytp_habitis
+		}
+	}
+	planet_modifier = {
+		planet_district_GF_nyto_pc_toxic_leisure_build_speed_mult = 0.25
+		planet_jobs_GF_nyto_collapse_liquid_produces_mult = 0.35
+		pc_GF_nyto_embers_gloomy_habitability = 1
+	}
+	weight_modifier = {
+		add = 10
+		modifier = {
+			num_free_districts = {
+				type = district_GF_nyto_pc_toxic_leisure
+				value >3
+			}
+		}
+	}
+}
+
+
+#高精业复合中心
+col_GF_nyto_pc_toxic_energy_plural = {
+	icon = GFX_colony_type_research
+	potential = {
+		OR = {
+			is_planet_class = pc_GF_nyto_embers_gloomy
+			is_planet_class = pc_GF_nyto_devil_furnace
+			is_planet_class = pc_GFnytp_habitis
+		}
+	}
+	planet_modifier = {
+		custom_tooltip = "col_GF_nyto_pc_toxic_energy_plural_a"
+		planet_jobs_upkeep_mult = -0.1
+	}
+	weight_modifier = {
+		add = 10
+		modifier = {
+			num_buildings = {
+				type = building_GFnyto_algorithm
+				value > 3
+			}
+		}
+	}
+}
+
+#快速污染星球
+col_GF_nyto_speed_planet_wrlv ={
+	icon = GFX_colony_type_foundry
+	potential = {
+		NOT = {
+			is_planet_class = pc_GF_nyto_embers_gloomy
+		}
+		NOT = {
+			is_planet_class = pc_GF_nyto_devil_furnace
+		}
+	}
+	weight_modifier = {
+		base = 0
+		modifier = {
+			add = 500
+			is_planet_class = pc_habitat
+		}
+	}
+
+}
+
+
+
+#指挥中心
+col_GF_nyto_nv_fleet ={
+	icon = GFX_colony_type_fortress
+	potential = {
+		OR = {
+			is_planet_class = pc_GF_nyto_embers_gloomy
+			is_planet_class = pc_GF_nyto_devil_furnace
+		}		
+	}
+	weight_modifier = {
+		base = 0
+	}
+}
+
+#科研中枢
+col_GF_nyto_science ={
+	icon = GFX_colony_type_research
+	potential = {
+		OR = {
+			is_planet_class = pc_GF_nyto_embers_gloomy
+			is_planet_class = pc_GF_nyto_devil_furnace
+			is_planet_class = pc_GFnytp_habitis
+		}
+	}
+	planet_modifier = {
+		planet_jobs_physics_research_produces_mult = 0.2
+		planet_jobs_society_research_produces_mult = 0.2
+		planet_jobs_engineering_research_produces_mult = 0.2
+	}
+	weight_modifier = {
+		base = 0
+	}
+}

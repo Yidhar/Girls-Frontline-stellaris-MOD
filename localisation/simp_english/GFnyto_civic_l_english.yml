@@ -1,0 +1,51 @@
+﻿l_english:
+
+civic_GF_nyto_90wish:0 "90wish"
+civic_GF_nyto_90wish_desc:0 "Research organization belonging to the Department of National Defense, projects and experiments banned in other countries under normal circumstances are allowed here in 90wish. Allows the construction of §PX§!-slot carrying corvettes."
+#civic_GF_nyto_90wish_text:0 ""
+
+civic_GF_nyto_forward_base:0 "Galactical Expedition"
+civic_GF_nyto_forward_base_desc:0 "The long Night shall come to an end! Being rid of the harsh enviroments of our home planet, the most important thing for us is to find a new colony!\n Every time a new planet is conquered receive building with 5 year limited life Forward base\n Recieve 5 year national modifier “Expedition ”on game start"
+#civic_GF_nyto_forward_base_text:0 "Allows construction of §YForward base§! on non §GDimmed Ashes world§! and §RDevil's Furnance world§!s, adds expert job §YPioneer§!。"
+
+civic_GF_nyto_phase_technician:0 "Phase Smith"
+civic_GF_nyto_phase_technician_desc:0 "Turns §GDimmed Ashes world§! and non §RDevil's Furnance world §!£job£§Ytechnicians§! into £job£§YPhase Smiths§!. §YPhase Smiths§! cam produce more §YEnergy Credits§!£energy£ and §YEngineering§!£engineering£. "
+#civic_GF_nyto_phase_technician_text:0 "Turns those on §GDimmed Ashes world§! and non §RDevil's Furnance world§! §Ytechnicians§! into §YPhase Smiths§!."
+
+civic_GF_nyto_special_operations_command:0 "Spec Ops Command"
+civic_GF_nyto_special_operations_command_desc:0 "Every man is born for the victory of battle. No one is innocent in each loss.\nAllows pops to generate £job£§YWhite Knight§! Army."
+civic_GF_nyto_special_operations_command_text:0 ""
+
+civic_GF_nyto_technology_minister:0 "Technoogy Ministers "
+civic_GF_nyto_technology_minister_desc:0 "Turns £job£§YResearchers§! on §GDimmed Ashes world§! and non §RDevil's Furnance world§! into £job£§YTechnoogy Ministers§!. £job£§YTechnoogy Ministers§! can produce more §YPhysics§!£physics£§YSociety§!£society£§YEngineering§!£engineering£§YUnity§!£unity£§YAmenities§!£amenities£。""
+
+civic_GF_nyto_see_angel:0 "Sighting of Angel"
+civic_GF_nyto_see_angel_desc:0 "§RI blindly rages, cuts the wing of the Oldest sister, beheads the third sister. The oldest sister cuts me in half, leaving me with just legs behind. Shes broken, but still kept our secrets long after my passing. §!"
+civic_GF_nyto_war:0 "War"
+civic_GF_nyto_war_desc:0 "§RAll nations' firerate-50%§!"
+civic_GF_nyto_famine:0 "Famine"
+civic_GF_nyto_famine_desc:0 "§RAll nations' food production-50%§!"
+civic_GF_nyto_plague:0 "Plague"
+civic_GF_nyto_plague_desc:0 "§RAll nations' immigration pull-50%§!"
+civic_GF_nyto_death:0 "death"
+civic_GF_nyto_death_desc:0 "§RAll nations' pop growth-50%§!"
+GF_nyto_see_angel:0 "§RFamine§! Pop stops growing \n§RWar§! Peace couldn't be kept \n§RPlague§! pops cannot move \n§Rdeath§! pops die automatically"
+
+ civic_GF_nyoto_armor_train:0 "Eternal State"
+civic_GF_nyoto_armor_train_desc:0 "Mankind are beings with a permanent sense of insecurity. No matter what kind of iron curtains we weld, it's all but too miniscule in this boundless universe\n§R Allows construction of Permanent Fortresses with no limits§!"
+mod_armies_energy_upkeep_mult:0 "Army $energy$upkeep:"
+
+ civic_Gf_nyto_tanhua_pluse:0 "Epiphyllum Symbiosis"
+ civic_Gf_nyto_tanhua_pluse_desc:0 "Flirtatious flowers freely blooms on people's bodies \n Epiphyllum Plantations will now provide extra 1$job_GFnyto_Epiphyllum_job$"
+
+civic_GF_nyto_reup:0 "High Efficiency Recycling"
+civic_GF_nyto_reup_desc:0 "We must use well every slice of resource we have on our hands, to have a chance to see the light of dawn\n§RSuccessfully defending ELID invasions will receive extra resources§!"
+mod_planet_jobs_consumer_goods_upkeep_mult:0 "Job$consumer_goods$upkeep:"
+
+civic_GF_nyto_heart_of_suffering:0 "Heart of Suffering"
+civic_GF_nyto_heart_of_suffering_desc:0 "Call me by my name, feed me with fountain youth, will your boundless indescribable heart, ever do respond?"
+civic_GF_nyto_heart_of_suffering_modif:0 " Starts game with ELID pop and no longer triggers ELID invasion events, every time you conquer a new planet witll convert half the pop into ELID.\n If has Policy Galactical Expedition then will become Vengeance Crusade on game start \n§R Will be exempt from using Bloomed awakens Decision§!"
+
+civic_GF_nyto_Vengeance_Crusade:0 "Vengeance Crusade"
+civic_GF_nyto_Vengeance_Crusade_desc:0 "May god one day finally forgive me, may I be worthy of this crown"
+civic_GF_nyto_Vengeance_Crusade_modif:0 "§RForward bases will no longer be time limited, provides bonus buffs\nBanns pop growth\n Starts with Collapsation liquid Technology and Embbargo blockade bombardment stance§!"

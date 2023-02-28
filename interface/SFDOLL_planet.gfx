@@ -1,0 +1,34 @@
+#巨构图片
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_sfdoll_habitat_01"
+		texturefile = "gfx/interface/planetview/sfdoll_habitat_01.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_megastructure_sfdoll_star_collapse"
+		texturefile = "gfx/interface/planetview/megastructure_sfdoll_star_collapse.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_megastructure_sfdoll_mega_shipyard"
+		texturefile = "gfx/interface/planetview/megastructure_sfdoll_mega_shipyard.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_background_mega_sfdoll_starport"
+		textureFile = "gfx/interface/planetview/mega_sfdoll_starport.dds"
+	}
+	spriteType = {
+		name = "GFX_background_mega_sfdoll_gateway"
+		textureFile = "gfx/interface/planetview/mega_sfdoll_gateway.dds"
+	}
+	spriteType = {
+		name = "GFX_background_sfdoll_mega_lab"
+		texturefile = "gfx/interface/planetview/sfdoll_mega_lab.dds"
+	}
+}

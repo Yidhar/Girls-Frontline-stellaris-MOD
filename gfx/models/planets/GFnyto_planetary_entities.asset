@@ -1,0 +1,84 @@
+@astroid_scale = 30
+entity = {
+	name = "embers_gloomy_planet_01_entity"
+	pdxmesh = "planet_clouded_mesh"	
+	meshsettings = {
+		name = "planet_geosphereShape"
+		texture_diffuse = "embers_gloomy_planet_diffuse.dds"
+		texture_normal = "embers_gloomy_planet_normal.dds"
+		texture_specular = "embers_gloomy_planet_spec.dds"
+	}
+	meshsettings = {
+		name = "polesShape"
+		texture_diffuse = "poles_1_diffuse.dds"
+		texture_normal = "poles_1_normal.dds"
+		texture_specular = "poles_1_specular.dds"
+	}
+	meshsettings = {
+		name = "clouds_geosphereShape"
+		texture_diffuse = "embers_gloomy_planet_clouds_diffuse.dds"
+		texture_normal = "embers_gloomy_planet_clouds_normal.dds"
+		texture_specular = "toxic_clouds_specular.dds"
+	}
+	meshsettings = {
+		name = "clouds_shadow_geosphereShape"
+		texture_diffuse = "embers_gloomy_planet_cloud_shadow_diffuse.dds"
+		texture_normal = "nonormal.dds"
+		texture_specular = "nospec.dds"
+	}	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" 
+	start_event = { trigger_once = yes sound = { soundeffect = "amb_toxic_world_a" } }
+	start_event = { trigger_once = yes sound = { soundeffect = "amb_toxic_world_b" } }
+	}
+}
+entity = {
+	name = "devil_furnace_planet_01_entity"
+	pdxmesh = "planet_no_pole_no_clouds_mesh"	 
+	meshsettings = {
+		name = "planet_geosphereShape"
+		shader = "PdxMeshPlanetEmissive"
+		texture_diffuse = "devil_furnace_planet_diffuse.dds"
+		texture_normal = "devil_furnace_planet_normals.dds"
+		texture_specular = "devil_furnace_planet_specular.dds"
+	}	
+	default_state = "idle"
+	playback_rate = -1.0
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_molten_world_a" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_molten_world_b" } }
+	}
+}
+entity = {
+	name = "GFnyto_planet03_entity"
+	pdxmesh = "planet_clouded_mesh"	
+	meshsettings = {
+		name = "planet_geosphereShape"
+		texture_diffuse = "1_diffuse.dds"
+		texture_normal = "1_normal.dds"
+		texture_specular = "embers_gloomy_planet_spec.dds"
+	}
+	meshsettings = {
+		name = "polesShape"
+		texture_diffuse = "1_diffuse.dds"
+		texture_normal = "1_normal.dds"
+		texture_specular = "poles_1_specular.dds"
+	}
+	meshsettings = {
+		name = "clouds_geosphereShape"
+		texture_diffuse = "embers_gloomy_planet_clouds_diffuse.dds"
+		texture_normal = "embers_gloomy_planet_clouds_normal.dds"
+		texture_specular = "toxic_clouds_specular.dds"
+	}
+	meshsettings = {
+		name = "clouds_shadow_geosphereShape"
+		texture_diffuse = "embers_gloomy_planet_cloud_shadow_diffuse.dds"
+		texture_normal = "nonormal.dds"
+		texture_specular = "nospec.dds"
+	}	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" 
+	start_event = { trigger_once = yes sound = { soundeffect = "amb_toxic_world_a" } }
+	start_event = { trigger_once = yes sound = { soundeffect = "amb_toxic_world_b" } }
+	}
+}

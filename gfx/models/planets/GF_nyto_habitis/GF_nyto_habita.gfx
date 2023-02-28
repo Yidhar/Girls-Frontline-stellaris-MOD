@@ -1,0 +1,88 @@
+objectTypes = {
+	pdxmesh = {
+		name = "GF_nyto_habita_mesh"
+		file = "gfx/models/planets/GF_nyto_habitis/GF_nyto_habita.mesh"
+		scale = 1.0
+
+		meshsettings = {
+			name = "galaxy_hd_fort_201_0Shape"
+			index = 0
+			texture_diffuse = "galaxy_hd_fort_201_d.dds"
+			texture_normal = "galaxy_hd_fort_201_n.dds"
+			texture_specular = "galaxy_hd_fort_201_s.dds"
+			shader = "PdxMeshPlanet"
+		}
+
+		meshsettings = {
+			name = "galaxy_hd_fort_202_0Shape"
+			index = 0
+			texture_diffuse = "galaxy_hd_fort_202_d.dds"
+			texture_normal = "galaxy_hd_fort_202_n.dds"
+			texture_specular = "galaxy_hd_fort_202_s.dds"
+			shader = "PdxMeshPlanet"
+		}
+
+		meshsettings = {
+			name = "galaxy_hd_fort_203_0Shape"
+			index = 0
+			texture_diffuse = "galaxy_hd_fort_203_d.dds"
+			texture_normal = "galaxy_hd_fort_203_n.dds"
+			texture_specular = "galaxy_hd_fort_203_s.dds"
+			shader = "PdxMeshPlanet"
+		}
+
+		meshsettings = {
+			name = "galaxy_hd_fort_204_0Shape"
+			index = 0
+			texture_diffuse = "galaxy_hd_fort_204_d.dds"
+			texture_normal = "galaxy_hd_fort_204_n.dds"
+			texture_specular = "galaxy_hd_fort_204_s.dds"
+			shader = "PdxMeshPlanet"
+		}
+
+		meshsettings = {
+			name = "galaxy_hd_fort_205_0Shape"
+			index = 0
+			texture_diffuse = "galaxy_hd_fort_205_d.dds"
+			texture_normal = "galaxy_hd_fort_205_n.dds"
+			texture_specular = "galaxy_hd_fort_205_s.dds"
+			shader = "PdxMeshPlanet"
+		}
+
+		meshsettings = {
+			name = "galaxy_hd_fort_206_0Shape"
+			index = 0
+			texture_diffuse = "galaxy_hd_fort_206_d.dds"
+			texture_normal = "galaxy_hd_fort_206_n.dds"
+			texture_specular = "galaxy_hd_fort_206_s.dds"
+			shader = "PdxMeshPlanet"
+		}
+
+		meshsettings = {
+			name = "galaxy_hd_fort_207_0Shape"
+			index = 0
+			texture_diffuse = "galaxy_hd_fort_207_d.dds"
+			texture_normal = "galaxy_hd_fort_207_n.dds"
+			texture_specular = "galaxy_hd_fort_207_s.dds"
+			shader = "PdxMeshPlanet"
+		}
+
+		meshsettings = {
+			name = "galaxy_hd_fort_208_0Shape"
+			index = 0
+			texture_diffuse = "galaxy_hd_fort_208_d.dds"
+			texture_normal = "galaxy_hd_fort_208_n.dds"
+			texture_specular = "galaxy_hd_fort_208_s.dds"
+			shader = "PdxMeshPlanet"
+		}
+
+		meshsettings = {
+			name = "galaxy_hd_fort_209_0Shape"
+			index = 0
+			texture_diffuse = "galaxy_hd_fort_209_d.dds"
+			texture_normal = "galaxy_hd_fort_209_n.dds"
+			texture_specular = "galaxy_hd_fort_209_s.dds"
+			shader = "PdxMeshPlanet"
+		}
+	}
+}

@@ -1,0 +1,159 @@
+#人口替换
+operation_nyto_pop = {
+	categories = {
+		op_cat_subterfuge
+		op_cat_government
+	}
+	picture = GFX_evt_acquire_asset
+	desc = operation_nyto_pop_desc
+	target = none
+	resources = {
+		category = operations
+		cost = {
+			influence = 45
+		}
+		upkeep = {
+			energy = 10
+		}
+	}
+	stages = 3
+	spy_power_cost = 30
+	potential = {
+		has_nemesis = yes
+
+		owner_main_species = {
+			is_species_class = nyto
+		}
+	}
+	allow = {
+		custom_tooltip = {
+			is_running_espionage_operation = no
+			fail_text = operation_one_at_a_time
+		}
+		target ={
+			NOT = {
+				owner_main_species = {
+					is_species_class = nyto
+				}
+			}
+		}
+	}
+	stage = {
+		difficulty = 5
+		icon = "GFX_espionage_chapter_icon_surveillance"
+		event = operation.1000 
+	}
+	stage = {
+		difficulty = 7
+		icon = "GFX_espionage_chapter_icon_surveillance"
+		event = operation.1001 
+	}
+	stage = {
+		difficulty = 9
+		icon = "GFX_espionage_chapter_icon_surveillance"
+		event = GF_nyto_operation.01
+	}
+	on_roll_failed = {
+		standard_espionage_operation_on_roll_failed = {
+			RANDOM_EVENTS = operation_random_events_generic
+		}
+	}
+	on_create = {
+	}
+	
+}
+#煽动暴乱
+operation_nyto_pop2 = {
+	categories = {
+		op_cat_manipulation
+		op_cat_provocation
+	}
+	picture = GFX_evt_acquire_asset
+	desc = operation_nyto_pop2_desc
+	target = country
+	resources = {
+		category = operations
+		cost = {
+			influence = 45
+		}
+		upkeep = {
+			energy = 10
+		}
+	}	
+	stages = 3
+	spy_power_cost = 50
+	potential = {
+		has_nemesis = yes
+		owner_main_species = {
+			is_species_class = nyto
+		}
+		target ={
+			any_owned_pop = {
+				has_pop_flag = operation_nyto_pop
+			}
+		}
+	}
+	allow = {
+		custom_tooltip = {
+			is_running_espionage_operation = no
+			fail_text = operation_one_at_a_time
+		}
+	}
+	target_allow = {
+		is_country_type = default
+		any_owned_pop = {
+			has_pop_flag = operation_nyto_pop
+		}
+	}
+	target_potential = {
+		is_country_type = default
+		any_owned_pop = {
+			has_pop_flag = operation_nyto_pop
+		}
+	}
+	stage = {
+		difficulty = 5
+		icon = "GFX_espionage_chapter_icon_surveillance"
+		event = GF_nyto_operation.02
+	}
+	stage = {
+		difficulty = 5
+		icon = "GFX_espionage_chapter_icon_surveillance"
+		event = GF_nyto_operation.03
+	}
+	stage = {
+		difficulty = 5
+		icon = "GFX_espionage_chapter_icon_surveillance"
+		event = GF_nyto_operation.04
+	}
+	on_roll_failed = {
+		standard_espionage_operation_on_roll_failed = {
+			RANDOM_EVENTS = operation_random_events_generic
+		}
+	}
+	on_create = {
+	}
+}
+#走私昙花
+
+#引爆脏弹
+
+#官员叛变
+
+#宣布国家解散
+
+#宣布国家合并
+
+
+###############领袖###############
+
+#干扰科研
+
+
+#星区独立
+
+#资金贪污
+
+#舰队叛乱
+
+#

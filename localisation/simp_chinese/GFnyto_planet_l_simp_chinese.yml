@@ -1,0 +1,13 @@
+﻿l_simp_chinese:
+pc_GF_nyto_embers_gloomy:0 "余烬黯然"
+pc_GF_nyto_embers_gloomy_desc:0 "气候恶劣的岩态行星,大气中含有浓厚的坍缩云,有坍塌风暴造访,带来的坍塌辐射对所有的生物和电子设备都非常致命。区域辐射浓度高,除了少数变异聚集性动植物以外,其他生物很难生存。"
+pc_GF_nyto_devil_furnace:0 "恶魔熔炉"
+pc_GF_nyto_devil_furnace_desc:0 "气候恶劣的熔岩态行星,大气中含有较为浓厚的坍缩云,有频繁的坍塌风暴造访,带来的过量坍塌辐射对所有生物和电子设备都非常致命。区域辐射浓度极高,除了少数变异聚集性动植物以外,其他生物极难生存。"
+pc_GFnyto_portal_star:0 "约西亚圣殿"
+pc_GFnyto_portal_star_desc:0 "地是空虚混沌。渊面黑暗。神的灵运行在水面上。神见人在地上罪恶很大,终日所思想的尽都是恶。世界在神面前败坏,地上满了强暴。神观看世界,见是败坏了。凡有血气的人,在地上都败坏了行为。看哪！我要使洪水泛滥在地上,毁灭天下。凡地上有血肉,有气息的活物,无一不死。黑暗的日子即将来到, 满有怜悯和智慧的神把柔弱的约西亚早点移到永恒的安慰中"
+mod_pc_GF_nyto_embers_gloomy_habitability:0 "余烬黯然星球适应"
+mod_pc_GF_nyto_devil_furnace_habitability:0 "恶魔熔炉星球适应"
+ GF_nyto_Radiation:0 "坍塌辐射污染"
+ GF_nyto_Radiation2:0 "$GF_nyto_Radiation$"
+GF_nyto_Radiation_desc:0 "§W这颗星球受到了严重的坍塌辐射污染。\n当前污染度:§!§R[planet.GFnyto_plante_wrlv]§!%\n昙花种植岗会再花期时提供高额辐射污染度,坍塌液相关岗位也会提供少量的辐射污染\n§W当前每年预估污染增长§!:§R[planet.GFnyto_plante_wrlv_contaminate]§!\n§W当前每年预估净化能力§!:§l[planet.GFnyto_plante_wrlv_cleanse]§!"
+GF_nyto_Radiation2_desc:0 "$GF_nyto_Radiation_desc$"

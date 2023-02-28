@@ -1,0 +1,151 @@
+#殖民w槽
+component_set = {
+	key = "planet_killer_sfdoll_colonizer"
+	icon = "GFX_planet_killer_sfdoll_colonizer"
+	icon_frame = 1
+}
+
+#消费品
+component_set = {
+	key = "consumer_goods_sfdoll_homeless_set"
+	icon = "GFX_consumer_goods_sfdoll_homeless"
+	icon_frame = 1
+}
+#高级消费品
+component_set = {
+	key = "consumer_goods_sfdoll_homeless_2_set"
+	icon = "GFX_consumer_goods_sfdoll_homeless"
+	icon_frame = 1
+}
+
+#合金
+component_set = {
+	key = "alloys_sfdoll_homeless_set"
+	icon = "GFX_alloys_sfdoll_homeless"
+	icon_frame = 1
+}
+#高级合金
+component_set = {
+	key = "alloys_sfdoll_homeless_2_set"
+	icon = "GFX_alloys_sfdoll_homeless"
+	icon_frame = 1
+}
+
+#科研
+component_set = {
+	key = "research_sfdoll_homeless_set"
+	icon = "GFX_research_sfdoll_homeless"
+	icon_frame = 1
+}
+#高级科研
+component_set = {
+	key = "research_sfdoll_homeless_2_set"
+	icon = "GFX_research_sfdoll_homeless"
+	icon_frame = 1
+}
+
+#坍塌液
+component_set = {
+	key = "collapse_liquid_sfdoll_homeless_set"
+	icon = "GFX_collapse_liquid_sfdoll_homeless"
+	icon_frame = 1
+}
+
+#暗物质
+component_set = {
+	key = "sr_dark_matter_sfdoll_homeless_set"
+	icon = "GFX_sr_dark_matter_sfdoll_homeless"
+	icon_frame = 1
+}
+
+
+#星舰学院
+component_set = {
+	key = "college_sfdoll_homeless_set"
+	icon = "GFX_college_sfdoll_homeless"
+	icon_frame = 1
+}
+
+#纳米机械模块
+component_set = {
+	key = "nanites_sfdoll_homeless_set"
+	icon = "GFX_nanites_sfdoll_homeless"
+	icon_frame = 1
+}
+
+
+#生态模块
+component_set = {
+	key = "food_sfdoll_homeless_set"
+	icon = "GFX_food_sfdoll_homeless"
+	icon_frame = 1
+}
+
+#能源
+component_set = {
+	key = "energy_sfdoll_homeless_set"
+	icon = "GFX_energy_sfdoll_homeless"
+	icon_frame = 1
+}
+
+#矿
+component_set = {
+	key = "minerals_sfdoll_homeless_set"
+	icon = "GFX_minerals_sfdoll_homeless"
+	icon_frame = 1
+}
+
+#人力
+component_set = {
+	key = "manpower_sfdoll_homeless_set"
+	icon = "GFX_manpower_sfdoll_homeless"
+	icon_frame = 1
+}
+
+#开采模块
+component_set = {
+	key = "sfdoll_homeship_exploit_set"
+	icon = "GFX_sfdoll_homeship_exploit"
+	icon_frame = 1
+}
+
+
+#异星气体
+component_set = {
+	key = "exotic_gases_sfdoll_homeless_set"
+	icon = "GFX_exotic_gases_sfdoll_homeless"
+	icon_frame = 1
+}
+#高级异星气体
+component_set = {
+	key = "exotic_gases_sfdoll_homeless_2_set"
+	icon = "GFX_exotic_gases_sfdoll_homeless"
+	icon_frame = 1
+}
+
+#稀有水晶
+component_set = {
+	key = "rare_crystals_sfdoll_homeless_set"
+	icon = "GFX_rare_crystals_sfdoll_homeless"
+	icon_frame = 1
+}
+#高级稀有水晶
+component_set = {
+	key = "rare_crystals_sfdoll_homeless_2_set"
+	icon = "GFX_rare_crystals_sfdoll_homeless"
+	icon_frame = 1
+}
+
+
+#易爆微粒
+component_set = {
+	key = "volatile_motes_sfdoll_homeless_set"
+	icon = "GFX_volatile_motes_sfdoll_homeless"
+	icon_frame = 1
+}
+#易爆微粒
+component_set = {
+	key = "volatile_motes_sfdoll_homeless_2"
+	icon = "GFX_volatile_motes_sfdoll_homeless"
+	icon_frame = 1
+}

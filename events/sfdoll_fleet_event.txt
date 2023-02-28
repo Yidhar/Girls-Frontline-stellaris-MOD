@@ -1,0 +1,244 @@
+namespace = sfdoll_fleet_event
+# 交战开始统一检测
+#on_entering_battle,是否为铁血的舰队，This = owner of fleet 1,FromFrom = fleet 1,FromFromFrom = fleet 2
+country_event = {
+	id = sfdoll_fleet_event.1
+	is_triggered_only = yes
+	hide_window = yes
+	title= fleet_sfdoll_event.1
+	trigger = {	has_authority = auth_gf_sfdoll	 }
+	immediate = {
+		# if = {
+		# 	limit = {
+		# 		fromfrom = {
+		# 			#复活的新舰队30天内不能触发
+		# 			NOT = {
+		# 				has_fleet_flag = flag_sfdoll_fleet_rebuild
+		# 			}
+		# 			any_owned_ship = {	has_component = component_aura_sfdoll_1		}
+		# 		}
+		# 	}
+		# 	fromfromfrom = {
+		# 		fleet_event = {
+		# 			id = sfdoll_fleet_event.7
+		# 		}
+		# 	}
+		# }
+		fromfrom = { fleet_event = { id = sfdoll_fleet_event.9 } }
+		if = {
+			limit = { 
+				fromfromfrom = { NOT = { has_fleet_flag = aura_sfdoll_2_hostile } }
+				fromfrom = { any_owned_ship = { has_component = component_aura_sfdoll_2 }}
+			}
+			fromfromfrom = { aura_sfdoll_2_set_mod_effect = yes }
+		}
+	}
+}
+
+#disable统一检测 This = Ship From = Disabler Ship
+ship_event = {
+	id = sfdoll_fleet_event.2
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {	owner = {	has_country_flag = sfdoll_empire	}	}
+	immediate = {
+		if = {
+			limit = { has_component = component_sfdoll_ship_disable }
+			repair_ship = yes
+			set_disabled = no
+			change_variable = {	which = sfdoll_ship_disable_count value = 1	}
+			if = {
+				limit = {
+					check_variable = {	which = sfdoll_ship_disable_count	value > 7 }
+				}
+				destroy_ship = this
+				break = yes
+			}
+			# 母舰不能设置锁血
+			# else_if = {
+			# 	limit = {
+			# 		is_ship_size = sfdoll_mobile_starbase
+			# 		check_variable = {	which = sfdoll_ship_disable_count	value > 5 }
+			# 	}
+			# 	destroy_ship = this
+			# 	break = yes
+			# }
+			#母舰以外的
+			if = {
+				limit = { NOT = {	has_ship_flag = sfdoll_ship_disable } }
+				set_timed_ship_flag = {	flag = sfdoll_ship_disable days = 29	}
+				ship_event = {	id = sfdoll_fleet_event.3 days = 30 }
+			}
+		}
+	}
+}
+# 重置修复次数
+ship_event = {
+	id = sfdoll_fleet_event.3
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {	NOT = {	has_ship_flag = sfdoll_fleet_event_3 }}
+	immediate = {
+		clear_variable = sfdoll_ship_disable_count
+		if = {
+			limit = { fleet = { is_in_combat = yes } }
+			set_timed_ship_flag = {	flag = sfdoll_fleet_event_3	days = 29	}
+			ship_event = {	id = sfdoll_fleet_event.3	days = 30	}
+		}
+	}
+}
+#清除锁血效果
+# ship_event = {
+# 	id = sfdoll_fleet_event.3
+# 	hide_window = yes
+# 	is_triggered_only = yes
+# 	immediate = {
+# 		if = {
+# 			limit = { has_ship_flag = ship_sfdoll_can_revive }
+# 			set_disable_at_health = -1
+# 			remove_ship_flag = ship_sfdoll_can_revive
+# 		}	
+# 	}
+# }
+
+
+#舰船破坏的统一检测,this = owner of destroyed ship,fromfrom = destroyed ship
+country_event = {
+	id = sfdoll_fleet_event.5
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		has_authority = auth_gf_sfdoll
+	}
+	immediate = {
+		fromfrom = {
+			#诺耶露受损
+			# if = {
+			# 	limit = {	is_ship_size = ship_sfdoll_noel	}
+			# 	root = {
+			# 		set_timed_country_flag = {
+			# 			flag = sfdoll_noel_is_destroyed
+			# 			days = 360
+			# 		}
+			# 	}
+			# }
+
+			#高维船受损
+			# if = {
+			# 	limit = {	is_ship_size = sfdoll_exd_science_ship	}
+			# 	root = {
+			# 		set_timed_country_flag = {
+			# 			flag = sfdoll_exd_science_ship_destroyed
+			# 			days = 360
+			# 		}
+			# 	}
+			# }
+			
+			if = {
+				limit = {
+					has_component = sfdoll_aux_rebuild
+					NOT = { has_ship_flag = flag_sfdoll_aux_rebuild }
+				}
+
+				#船数>1则在同一舰队内刷船
+				if = {
+					limit = {
+						fleet = {
+							num_ships > 1
+						}
+					}
+					sfdoll_warship_rebuild = yes
+				}
+				else = {
+					sfdoll_warship_rebuild_num1 = yes
+				}
+			}
+		}
+	}
+}
+
+
+fleet_event = {
+	id = sfdoll_fleet_event.6
+	hide_window = yes
+	is_triggered_only = yes
+}
+
+fleet_event = {
+	id = sfdoll_fleet_event.7
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		NOT = {
+			has_fleet_flag = flag_aura_sfdoll_1_modifier
+		}
+	}
+	immediate = {
+		add_modifier = {
+			modifier = aura_sfdoll_1_modifier
+			days = 30
+		}
+		set_timed_fleet_flag = {
+			flag = flag_aura_sfdoll_1_modifier
+			days = 30
+		}
+	}
+}
+
+# 交战循环月检
+fleet_event = {
+	id = sfdoll_fleet_event.9
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		NOT = {	has_fleet_flag = sfoll_fleet_checked	}
+		is_in_combat = yes
+	}
+	immediate = {
+		aura_sfdoll_2_effect = yes
+		set_timed_fleet_flag = {
+			flag = sfoll_fleet_checked
+			days = 27
+		}
+		fleet_event = {
+			id = sfdoll_fleet_event.9
+			days = 29
+		}
+	}
+}
+
+#铁血舰队被破坏的统一检测
+# This = owner of fleet 1 (destroyed)
+# From = owner of fleet 2 (combatant)
+# FromFrom = fleet 1
+# FromFromFrom = fleet 2
+country_event = {
+	id = sfdoll_fleet_event.10
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {	has_authority = auth_gf_sfdoll	 }
+	immediate = {
+		sfdoll_fleet_rebuild = yes
+	}
+}
+
+#是否生成移动星门 This = owner of fleet From = disbanded fleet
+country_event = {
+	id = sfdoll_fleet_event.11
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		has_country_flag = sfdoll_empire
+		from = { has_fleet_flag = flag_sfdoll_gateway_ship	}
+	}
+	immediate = {
+		from.solar_system = {
+			spawn_megastructure = {
+				type = sfdoll_mobile_gateway_01
+				owner = root
+				coords_from = root.from
+				init_effect = {	activate_gateway = this	 }
+			}
+		}
+	}
+}

@@ -1,0 +1,5 @@
+component_set = {
+	key = "GF_Nyto_missile_x_weapon"
+	icon = "GFX_ship_part_GFNyto_missile_weapon"
+	icon_frame = 1
+}

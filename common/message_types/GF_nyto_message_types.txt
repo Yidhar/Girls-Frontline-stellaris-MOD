@@ -1,0 +1,14 @@
+message_type = {
+	icon = GFX_message_anomaly
+	icon_frame = 1
+	key = "GF_nyto_music_1"
+	sound = GF_nyto_Elid_attack_lose
+	ping = ping_notification_red
+}
+message_type = {
+	icon = "GFX_message_anomaly"
+	icon_frame = 1
+	key = "GF_nyto_music_2"
+	ping = ping_notification_red
+	sound = GFnyto_ELid_win_sound
+}

@@ -1,0 +1,25 @@
+objectTypes = {
+	pdxmesh = {
+		name = "battel_ship_cv_mesh"
+		file = "gfx/models/ships/GFnewship/battel_ship_cv.mesh"
+		scale = 1.0
+
+		meshsettings = {
+			name = "decol_mesh1_decol_0Shape"
+			index = 0
+			texture_diffuse = "battleship_diffuse.dds"
+			texture_normal = "battleship_normal.dds"
+			texture_specular = "battleship_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}	
+}
+
+objectTypes ={
+	pdxmesh = {
+		name = "bettalships_loctor_mesh"
+		file = "gfx/models/ships/GFnewship/bettalships_loctor.mesh"
+		scale = 1.0
+	}
+	
+}

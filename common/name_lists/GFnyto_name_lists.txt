@@ -1,0 +1,252 @@
+﻿GFNYTO01 = {
+	category = "NYTO"
+	randomized = no
+	alias = "nyto"
+	ship_names = {
+		corvette = {
+			corvette_ship_01
+			corvette_ship_02
+		}
+		destroyer = {
+			destroyer_01
+			destroyer_02
+		}
+		cruiser = {
+			cruiser_01
+			cruiser_02
+		}
+		battleship ={
+			battleship_01
+			battleship_02
+		}
+		titan = {
+			titan_01
+			titan_02
+		}
+		colossus = {
+			colossus_01
+			colossus_02
+		}	
+		
+		science = {
+			science_01
+		}	
+		colonizer = {
+			colonizer_01
+		}	
+		constructor = {
+			constructor_01
+		}
+		transport = {
+			transport_01
+		}
+		military_station_small = {
+			military_station_small_01
+		}
+		ion_cannon = {
+			ion_cannon_01
+		}
+		GFnyto_Command_ship = {
+			GFnyto_Command_ship_01
+		}
+		GFnyto_shiled_ship = {
+			GFnyto_shiled_ship_01
+		}
+		GFnyto_mobile_city= {
+			GFnyto_mobile_city_01
+			GFnyto_mobile_city_02
+			GFnyto_mobile_city_03
+		}		
+	}
+	fleet_names = {
+		# random_names = {"枪骑兵舰队" "翼骑兵舰队" "龙骑兵舰队" "骠骑兵舰队" "近卫骑兵舰队" "重装骑兵舰队" "游骑兵舰队""弓骑兵舰队" "先锋骑兵舰队"}
+		sequential_name = nyto_xxFLEET_ORD
+	}
+	army_names = {
+		defense_army = {sequential_name = nyto_xxPLANETARYGUARD_ORD }		
+		assault_army = {sequential_name = nyto_xxEXPEDITIONARYFORCE_ORD }
+		slave_army = {sequential_name = nyto_xxINDENTUREDRIFLES_ORD } 		
+		clone_army = {sequential_name = nyto_xxCLONEARMY_ORD }		
+		robotic_army = {sequential_name = nyto_xxHUNTERKILLERGROUP_ORD}
+		robotic_defense_army = {sequential_name = nyto_xxGROUNDDEFENSEMATRIX_ORD }		
+		psionic_army = { sequential_name = nyto_xxPSICOMMANDO_ORD }		
+		xenomorph_army = { sequential_name = nyto_xxBIOWARFAREDIVISION_ORD }		
+		gene_warrior_army = {sequential_name = nyto_xxPLANETARYGUARD_ORD }
+		occupation_army = { sequential_name = nyto_xxGARRISONFORCE_ORD }
+		robotic_occupation_army = { sequential_name = nyto_xxMECHANIZEDGARRISON_ORD }
+		primitive_army = { sequential_name = nyto_PRIMITIVEARMYxx_SEQ }
+		
+		industrial_army = {  sequential_name = nyto_INDUSTRIALARMYxx_SEQ }
+		postatomic_army = {  sequential_name = nyto_POSTATOMICARMYxx_SEQ}
+
+		GF_nyto_armor_train = {  sequential_name = nyto_xxPLANETARTRAIN1_ORD }	
+		GF_nyto_machine_assault_2 = {  sequential_name = nyto_xxPLANETARTRAIN2ORD }
+		GF_nyto_machine_assault_3 = {  sequential_name = nyto_xxPLANETARTRAIN3_ORD }
+		GF_nyto_white_knight = {  sequential_name = nyto_xxPLANETARTRAIN4_ORD }
+		GF_nyto_war_nuns = {  sequential_name = nyto_xxPLANETARTRAIN5_ORD }
+		GF_nyto_eild_army = {  sequential_name = nyto_xxPLANETARTRAIN6_ORD }
+		GF_nyto_marine_corps = {  sequential_name = nyto_xxPLANETARTRAIN7_ORD }
+	}
+	planet_names = {
+		generic = {
+			names = {
+				nyto_planet_01
+				nyto_planet_02
+				nyto_planet_03
+				nyto_planet_04
+				nyto_planet_05
+				nyto_planet_06
+				nyto_planet_07
+				nyto_planet_08
+				nyto_planet_09
+				nyto_planet_10
+				nyto_planet_11
+				nyto_planet_12_ORD
+			}
+		}
+	}
+	character_names = {
+		names1 = {
+			weight = 40
+			full_names = {
+				nyto_full_names_01
+				nyto_full_names_02
+				nyto_full_names_03
+				nyto_full_names_04
+				nyto_full_names_05
+				nyto_full_names_06
+				nyto_full_names_07
+				nyto_full_names_08
+				nyto_full_names_09
+				nyto_full_names_10
+				nyto_full_names_11
+				nyto_full_names_12
+				nyto_full_names_13
+				nyto_full_names_14
+				nyto_full_names_15
+				nyto_full_names_16
+				nyto_full_names_17
+				nyto_full_names_18
+				nyto_full_names_19
+				nyto_full_names_20
+				nyto_full_names_21				
+			}
+			first_names = {}
+			second_names = {}
+		}
+	}
+}
+GFNYTO02 = {
+	ship_names = {
+		corvette = {
+			corvette_ship_01
+			corvette_ship_02
+		}
+		destroyer = {
+			destroyer_01
+			destroyer_02
+		}
+		cruiser = {
+			cruiser_01
+			cruiser_02
+		}
+		battleship ={
+			battleship_01
+			battleship_02
+		}
+		titan = {
+			titan_01
+			titan_02
+		}
+		colossus = {
+			colossus_01
+			colossus_02
+		}	
+		
+		science = {
+			science_01
+		}	
+		colonizer = {
+			colonizer_01
+		}	
+		constructor = {
+			constructor_01
+		}
+		transport = {
+			transport_01
+		}
+		military_station_small = {
+			military_station_small_01
+		}
+		ion_cannon = {
+			ion_cannon_01
+		}
+		GFnyto_Command_ship = {
+			GFnyto_Command_ship_01
+		}
+		GFnyto_shiled_ship = {
+			GFnyto_shiled_ship_01
+		}
+		GFnyto_mobile_city= {
+			GFnyto_mobile_city_01
+			GFnyto_mobile_city_02
+			GFnyto_mobile_city_03
+		}		
+	}
+	fleet_names = {
+		# random_names = {"枪骑兵舰队" "翼骑兵舰队" "龙骑兵舰队" "骠骑兵舰队" "近卫骑兵舰队" "重装骑兵舰队" "游骑兵舰队""弓骑兵舰队" "先锋骑兵舰队"}
+		sequential_name = nyto_xxFLEET_ORD
+	}
+	army_names = {
+		defense_army = {sequential_name = "elid_xxPLANETARTRAIN1_ORD"}		
+		assault_army = {sequential_name = "elid_xxPLANETARTRAIN2_ORD"}
+		slave_army = {sequential_name = "elid_xxPLANETARTRAIN3_ORD"}		
+		clone_army = { sequential_name = "elid_xxPLANETARTRAIN4_ORD"}		
+		robotic_army = {sequential_name = "elid_xxPLANETARTRAIN5_ORD"}
+		robotic_defense_army = {sequential_name = "elid_xxPLANETARTRAIN6_ORD"}		
+		psionic_army = { sequential_name = "elid_xxPLANETARTRAIN7_ORD"}		
+		xenomorph_army = {sequential_name = "elid_xxPLANETARTRAIN8_ORD"}		
+		gene_warrior_army = {sequential_name = "elid_xxPLANETARTRAIN9_ORD"}
+		occupation_army = {sequential_name = "elid_xxPLANETARTRAIN10_ORD"}
+		robotic_occupation_army = {sequential_name = "elid_xxPLANETARTRAIN11_ORD"}
+		primitive_army = {sequential_name = "elid_xxPLANETARTRAIN1_ORD"}
+		industrial_army = {sequential_name = "elid_xxPLANETARTRAIN1_ORD"}
+		postatomic_army = {sequential_name = "elid_xxPLANETARTRAIN1_ORD"}
+		industrial_army = {sequential_name = "elid_xxPLANETARTRAIN1_ORD"}
+		postatomic_army = {sequential_name = "elid_xxPLANETARTRAIN1_ORD"}
+
+		# GF_nyto_armor_train = {sequential_name = "机械巨兽"}	
+		# GF_nyto_machine_assault_2 = {sequential_name = "$O$ 装甲掷弹兵"}
+		# GF_nyto_machine_assault_3 = {sequential_name = "$O$ 装甲掷弹兵"}
+		# GF_nyto_white_knight = {sequential_name = "$O$ 骑兵"}
+		# GF_nyto_war_nuns = {sequential_name = "$O$ 国民掷弹兵"}
+		# GF_nyto_eild_army = {sequential_name = "$O$ 受洗者"}
+		# GF_nyto_marine_corps = {sequential_name = "$O$ 海军陆战队"}
+	}
+	planet_names = {
+		generic = {
+			names = {	
+				nyto_planet_01
+				nyto_planet_02
+				nyto_planet_03
+				nyto_planet_04
+				nyto_planet_05
+				nyto_planet_06
+				nyto_planet_07
+				nyto_planet_08
+				nyto_planet_09
+				nyto_planet_10
+				nyto_planet_11
+				nyto_planet_12_ORD
+			}
+		}
+	}
+	character_names = {
+		names1 = {
+			weight = 40
+			full_names = {"EILD"}
+			first_names = {}
+			second_names = {}
+		}
+	}
+}

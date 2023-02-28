@@ -1,0 +1,179 @@
+#黑洞开采器基址
+sfdoll_blackhole_mining_01 = {
+	entity = "construction_platform_entity"
+	entity_offset = { x = -20 y = -20 }
+	construction_entity = "construction_platform_entity"
+	show_galactic_map_icon = yes
+	show_in_outliner = yes
+	build_time = 360
+	show_prereqs = yes
+	prerequisites = { 	tech_sfdoll_blackhole_mining	}
+	potential = { is_ai = no	has_authority = auth_gf_sfdoll	}
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 1000
+			unity = 200
+		}
+		upkeep = {
+			energy = 2
+		}
+	}
+	possible = {
+		exists = starbase
+		custom_tooltip = {
+			fail_text = "requires_inside_border"
+			is_inside_border = from
+		}
+		custom_tooltip = {
+			fail_text = "requires_surveyed_system"
+			NOT = {
+				any_system_planet = {
+					is_surveyed = {
+						who = prev.from
+						status = no
+					}
+				}
+			}
+		}
+		#不是联星
+		# custom_tooltip = { 
+		# 	fail_text = "requires_no_binary_trinary"
+		# 	NOR = {
+		# 		is_star_class = sc_binary_1
+		# 		is_star_class = sc_binary_2
+		# 		is_star_class = sc_binary_3
+		# 		is_star_class = sc_binary_4
+		# 		is_star_class = sc_binary_5
+		# 		is_star_class = sc_binary_6
+		# 		is_star_class = sc_binary_7
+		# 		is_star_class = sc_binary_8
+		# 		is_star_class = sc_binary_9
+		# 		is_star_class = sc_binary_10
+		# 		is_star_class = sc_trinary_1
+		# 		is_star_class = sc_trinary_2
+		# 		is_star_class = sc_trinary_3
+		# 		is_star_class = sc_trinary_4
+		# 	}
+		# }
+	}
+	placement_rules = {
+		planet_possible = {
+			is_planet_class = pc_black_hole
+			custom_tooltip = {
+				fail_text = "must_build_around_star"
+				is_star = yes
+			}
+			custom_tooltip = {
+				fail_text = "requires_no_anomaly"
+				NOT = { has_anomaly = yes }
+			}
+			custom_tooltip = {
+				fail_text = "requires_no_existing_megastructure"
+				NOT = {
+					has_any_megastructure = yes
+				}
+			}
+		}
+	}
+
+	on_build_complete = {
+		create_message = {
+			type = MEGASTRUCTURE_BUILT
+			localization = sfdoll_blackhole_mining_01
+			days = 90
+			target = this
+		}
+	}
+}
+
+#黑洞开采器初级
+sfdoll_blackhole_mining_02 = {
+	entity = "construction_platform_entity"
+	entity_offset = { x = -20 y = -20 }
+	construction_entity = "construction_platform_entity"
+	portrait = "GFX_megastructure_sfdoll_star_collapse"
+	build_time = 720
+	show_galactic_map_icon = yes
+	prerequisites = { 	tech_sfdoll_blackhole_mining	}
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 5000
+			GF_nyto_collapse_liquid = 1000
+			unity = 1000
+		}
+		produces = {
+			minerals = 600
+		}
+		upkeep = { energy = 20 GF_nyto_collapse_liquid = 2 }
+	}
+	upgrade_from = { sfdoll_blackhole_mining_01 	}
+	on_build_complete = {
+		create_message = {
+			type = MEGASTRUCTURE_BUILT
+			localization = sfdoll_blackhole_mining_02
+			days = 30
+			target = this
+		}
+	}
+}
+
+# 黑洞开采器完成
+sfdoll_blackhole_mining_03 = {
+	entity = "nova_ring_entity"
+	construction_entity = "nova_ring_entity"
+	portrait = "GFX_megastructure_sfdoll_star_collapse"
+	build_time = 1800
+	show_galactic_map_icon = no
+	show_in_outliner = no
+	prerequisites = { 	tech_sfdoll_blackhole_mining	}
+	potential = {	has_authority = auth_gf_sfdoll	}
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 30000
+			GF_nyto_collapse_liquid = 7000
+			unity = 6000
+		}
+		produces = {
+			minerals = 3000
+			sr_dark_matter = 60
+		}
+		upkeep = { energy = 100 GF_nyto_collapse_liquid = 10 }
+	}
+	upgrade_from = { sfdoll_blackhole_mining_02 	}
+	on_build_complete = {
+		from = { set_country_flag = has_built_or_repaired_megastructure }
+		fromfrom.planet = {
+			set_planet_size = 12
+			if = {
+				limit = {
+					NOT = {
+						is_planet_class = pc_black_hole
+					}
+				}
+				change_pc = pc_black_hole
+			}
+		}
+		solar_system = {
+			if = {
+				limit = {
+					not = {
+						any_system_planet = {
+							is_star = yes
+							NOT = {	is_planet_class = pc_black_hole	}
+						}
+					}
+				}
+				set_star_class = sc_black_hole
+			}
+		}
+		create_message = {
+			type = MEGASTRUCTURE_BUILT
+			localization = sfdoll_blackhole_mining_03
+			days = 30
+			target = this
+		}
+	}
+}

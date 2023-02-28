@@ -1,0 +1,16 @@
+objectTypes = {
+	pdxmesh = {
+		name = "mech_mesh"
+		file = "gfx/models/ships/mech/mech.mesh"
+		scale = 1.0
+
+		meshsettings = {
+			name = "_00_0_0Shape"
+			index = 0
+			texture_diffuse = "MechanoidBlackAlbedo.dds"
+			texture_normal = "MechanoidNormal.dds"
+			texture_specular = "Mechanoid_spacel.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+}

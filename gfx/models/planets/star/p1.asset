@@ -1,0 +1,18 @@
+entity = {
+	name = "p1_entity"
+	pdxmesh = "p1_mesh"
+
+	scale = 1.0
+
+	default_state = "idle"
+	state = { name = "idle" animation = "idle1"  animation_speed = 1.0 looping = no next_state = "idle" 		
+		event = { time = 0  node = root particle = "galaxy_particle"  keep_particle = no  }
+		event = { time = 0 node = root particle = nyto_black_hole_particle  keep_particle = no 	}		
+	}	
+}
+
+
+animation = {
+	name = "p1_idle1_animation"
+	file = "p1_idle1.anim"
+}

@@ -1,0 +1,268 @@
+@gaiaCost = 7500
+@gaiaTime = 3600
+@machineCost = 10000
+@machineTime = 7200
+@hiveCost = 10000
+@hiveTime = 7200
+terraform_link = {
+	to = "pc_GF_nyto_embers_gloomy"
+	from = "pc_nuked"	
+	resources = {
+		category = terraforming
+		cost = {
+			GF_nyto_collapse_liquid = 1000
+		}
+	}
+	duration = 720
+	condition = {has_technology = "tech_GF_nyto_collapse_stability_bomb"}	
+	potential = {
+		owner = {  
+			has_authority = auth_GF_paradeus 
+		}
+	}
+	ai_weight = {
+		weight = 999
+		modifier = {
+			factor = 0
+			NOT = {
+				has_technology = tech_climate_restoration
+			}
+		}
+	}
+}
+terraform_link = {
+	to = "pc_GF_nyto_embers_gloomy"
+	from = pc_continental
+	resources = {
+		category = terraforming
+		cost = {
+			GF_nyto_collapse_liquid = 1000
+		}
+	}
+	duration = 720
+	condition = {has_technology = "tech_GF_nyto_collapse_stability_bomb"}	
+	potential = {
+		owner = {  
+			has_authority = auth_GF_paradeus 
+		}
+	}
+	ai_weight = {
+		weight = 999
+		modifier = {
+			factor = 0
+			NOT = {
+				has_technology = tech_climate_restoration
+			}
+		}
+	}
+}
+terraform_link = {
+	to = "pc_GF_nyto_embers_gloomy"
+	from = pc_tropical
+	resources = {
+		category = terraforming
+		cost = {
+			GF_nyto_collapse_liquid = 1000
+		}
+	}
+	duration = 720
+	condition = {has_technology = "tech_GF_nyto_collapse_stability_bomb"}	
+	potential = {
+		owner = {  
+			has_authority = auth_GF_paradeus 
+		}
+	}
+	ai_weight = {
+		weight = 999
+		modifier = {
+			factor = 0
+			NOT = {
+				has_technology = tech_climate_restoration
+			}
+		}
+	}
+}
+
+terraform_link = {
+	to = "pc_GF_nyto_embers_gloomy"
+	from = pc_ocean
+	resources = {
+		category = terraforming
+		cost = {
+			GF_nyto_collapse_liquid = 1000
+		}
+	}
+	duration = 720
+	condition = {has_technology = "tech_GF_nyto_collapse_stability_bomb"}	
+	potential = {
+		owner = {  
+			has_authority = auth_GF_paradeus 
+		}
+	}
+	ai_weight = {
+		weight = 999
+		modifier = {
+			factor = 0
+			NOT = {
+				has_technology = tech_climate_restoration
+			}
+		}
+	}
+}
+
+terraform_link = {
+	to = "pc_GF_nyto_embers_gloomy"
+	from = pc_arid
+	resources = {
+		category = terraforming
+		cost = {
+			GF_nyto_collapse_liquid = 1000
+		}
+	}
+	duration = 720
+	condition = {has_technology = "tech_GF_nyto_collapse_stability_bomb"}	
+	potential = {
+		owner = {  
+			has_authority = auth_GF_paradeus 
+		}
+	}
+	ai_weight = {
+		weight = 999
+		modifier = {
+			factor = 0
+			NOT = {
+				has_technology = tech_climate_restoration
+			}
+		}
+	}
+}
+terraform_link = {
+	to = "pc_GF_nyto_embers_gloomy"
+	from = pc_desert
+	resources = {
+		category = terraforming
+		cost = {
+			GF_nyto_collapse_liquid = 1000
+		}
+	}
+	duration = 720
+	condition = {has_technology = "tech_GF_nyto_collapse_stability_bomb"}	
+	potential = {
+		owner = {  
+			has_authority = auth_GF_paradeus 
+		}
+	}
+	ai_weight = {
+		weight = 999
+		modifier = {
+			factor = 0
+			NOT = {
+				has_technology = tech_climate_restoration
+			}
+		}
+	}
+}
+terraform_link = {
+	to = "pc_GF_nyto_embers_gloomy"
+	from = pc_savannah
+	resources = {
+		category = terraforming
+		cost = {
+			GF_nyto_collapse_liquid = 1000
+		}
+	}
+	duration = 720
+	condition = {has_technology = "tech_GF_nyto_collapse_stability_bomb"}	
+	potential = {
+		owner = {  
+			has_authority = auth_GF_paradeus 
+		}
+	}
+	ai_weight = {
+		weight = 999
+		modifier = {
+			factor = 0
+			NOT = {
+				has_technology = tech_climate_restoration
+			}
+		}
+	}
+}
+terraform_link = {
+	to = "pc_GF_nyto_embers_gloomy"
+	from = pc_arctic
+	resources = {
+		category = terraforming
+		cost = {
+			GF_nyto_collapse_liquid = 1000
+		}
+	}
+	duration = 720
+	condition = {has_technology = "tech_GF_nyto_collapse_stability_bomb"}	
+	potential = {
+		owner = {  
+			has_authority = auth_GF_paradeus 
+		}
+	}
+	ai_weight = {
+		weight = 999
+		modifier = {
+			factor = 0
+			NOT = {
+				has_technology = tech_climate_restoration
+			}
+		}
+	}
+}
+terraform_link = {
+	to = "pc_GF_nyto_embers_gloomy"
+	from = pc_tundra
+	resources = {
+		category = terraforming
+		cost = {
+			GF_nyto_collapse_liquid = 1000
+		}
+	}
+	duration = 720
+	condition = {has_technology = "tech_GF_nyto_collapse_stability_bomb"}	
+	potential = {
+		owner = {  
+			has_authority = auth_GF_paradeus 
+		}
+	}
+	ai_weight = {
+		weight = 999
+		modifier = {
+			factor = 0
+			NOT = {
+				has_technology = tech_climate_restoration
+			}
+		}
+	}
+}
+terraform_link = {
+	to = "pc_GF_nyto_embers_gloomy"
+	from = pc_alpine
+	resources = {
+		category = terraforming
+		cost = {
+			GF_nyto_collapse_liquid = 1000
+		}
+	}
+	duration = 720
+	condition = {has_technology = "tech_GF_nyto_collapse_stability_bomb"}	
+	potential = {
+		owner = {  
+			has_authority = auth_GF_paradeus 
+		}
+	}
+	ai_weight = {
+		weight = 999
+		modifier = {
+			factor = 0
+			NOT = {
+				has_technology = tech_climate_restoration
+			}
+		}
+	}
+}

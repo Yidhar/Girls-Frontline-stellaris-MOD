@@ -1,0 +1,199 @@
+defind_txt ={
+	name = GF_nyto_gla_event_name
+	text = {
+		trigger = { check_variable = { which = GF_nyto_TXT 	value = 0 } }
+		localization_key = GF_nyto_TXT_NAME_01
+	}
+	text = {
+		trigger = { check_variable = { which = GF_nyto_TXT value = 1 } }
+		localization_key = GF_nyto_TXT_NAME_02
+	}
+	text = {
+		trigger = { check_variable = { which = GF_nyto_TXT value = 2 } }
+		localization_key = GF_nyto_TXT_NAME_03
+	}
+	text = {
+		trigger = { check_variable = { which = GF_nyto_TXT value = 3 } }
+		localization_key = GF_nyto_TXT_NAME_04
+	}
+	text = {
+		trigger = { check_variable = { which = GF_nyto_TXT value = 4 } }
+		localization_key = GF_nyto_TXT_NAME_05
+	}
+	text = { trigger = { check_variable = { which = GF_nyto_TXT value = 5 } }
+		localization_key = GF_nyto_TXT_NAME_06
+	}
+	text = { trigger = { check_variable = { which = GF_nyto_TXT value = 6 } }
+		localization_key = GF_nyto_TXT_NAME_07
+	}
+	text = { trigger = { check_variable = { which = GF_nyto_TXT value = 7 } }
+		localization_key = GF_nyto_TXT_NAME_08
+	}
+	text = { trigger = { check_variable = { which = GF_nyto_TXT value = 8 } }
+		localization_key = GF_nyto_TXT_NAME_09
+	}
+	text = { trigger = { check_variable = { which = GF_nyto_TXT value = 9 } }
+		localization_key = GF_nyto_TXT_NAME_010
+	}
+	text = { trigger = { check_variable = { which = GF_nyto_TXT value = 10 } }
+		localization_key = GF_nyto_TXT_NAME_011
+	}
+	text = { trigger = { check_variable = { which = GF_nyto_TXT value = 11 } }
+		localization_key = GF_nyto_TXT_NAME_012
+	}
+	text = { trigger = { check_variable = { which = GF_nyto_TXT value = 12 } }
+		localization_key = GF_nyto_TXT_NAME_013
+	}
+}
+defind_txt ={
+	name = GF_nyto_gla_event_faill
+	text = {
+		trigger = {
+			check_variable = {
+				which = GF_nyto_TXT
+				value = 0
+			}
+		}
+		localization_key = GF_nyto_faill_01
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				which = GF_nyto_TXT
+				value = 1
+			}
+		}
+		localization_key = GF_nyto_faill_02
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				which = GF_nyto_TXT
+				value = 2
+			}
+		}
+		localization_key = GF_nyto_faill_03
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				which = GF_nyto_TXT
+				value = 3
+			}
+		}
+		localization_key = GF_nyto_faill_04
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				which = GF_nyto_TXT
+				value = 4
+			}
+		}
+		localization_key = GF_nyto_faill_05
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				which = GF_nyto_TXT
+				value = 5
+			}
+		}
+		localization_key = GF_nyto_faill_06
+	}
+	text = {
+		trigger = {			
+			check_variable = {
+				which = GF_nyto_TXT
+				value = 6
+			}
+			has_country_flag = user_GF_nyto_opt01
+		}
+		localization_key = GF_nyto_faill_07_1
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				which = GF_nyto_TXT
+				value = 6
+			}
+			has_country_flag = user_GF_nyto_opt02
+		}
+		localization_key = GF_nyto_faill_07_2
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				which = GF_nyto_TXT
+				value = 6
+			}
+			has_country_flag = user_GF_nyto_opt03
+		}
+		localization_key = GF_nyto_faill_07_3
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				which = GF_nyto_TXT
+				value = 6
+			}
+			has_country_flag = user_GF_nyto_opt04
+		}
+		localization_key = GF_nyto_faill_07_4
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				which = GF_nyto_TXT
+				value = 7
+			}
+		}
+		localization_key = GF_nyto_faill_08
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				which = GF_nyto_TXT
+				value = 8
+			}
+		}
+		localization_key = GF_nyto_faill_09
+	}
+}
+#4个按钮
+defind_txt={
+	name = GF_nyto_opt_01
+	text = {
+		trigger = {
+			has_country_flag = GF_nyto_opt_01_01
+		}
+		localization_key = GF_nyto_opt_01_01
+	}
+}
+defind_txt={
+	name = GF_nyto_opt_02
+	text = {
+		trigger = {
+			has_country_flag = GF_nyto_opt_02_01
+		}
+		localization_key = GF_nyto_opt_02_01
+	}
+}
+defind_txt={
+	name = GF_nyto_opt_03
+	text = {
+		trigger = {
+			has_country_flag = GF_nyto_opt_03_01
+		}
+		localization_key = GF_nyto_opt_03_01
+	}
+}
+defind_txt={
+	name = GF_nyto_opt_04
+	text = {
+		trigger = {
+			has_country_flag = GF_nyto_opt_04_01
+		}
+		localization_key = GF_nyto_opt_04_01
+	}
+}

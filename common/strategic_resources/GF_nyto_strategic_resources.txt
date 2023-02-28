@@ -1,0 +1,95 @@
+#坍缩液
+GF_nyto_collapse_liquid= {
+	tradable = no
+	max = 15000
+	deficit_modifier =GF_nyto_collapse_liquid_deficit
+	ai_weight = {weight = 10}
+}
+#钻石
+# GF_nyto_diamonds= {
+# 	tradable = no
+# 	max = 100000
+# }
+#模拟作战超导动能
+# GF_nyto_superconducting_kinetic_energy= {
+# 	tradable = no
+# 	max = 100
+# }
+#模拟作战超导势能
+# GF_nyto_superconducting_potential_energy= {
+# 	tradable = no
+# 	max = 100
+# }
+#黑卡
+# GF_nyto_black_card= {
+# 	tradable = no
+# 	max = 10
+# }
+#人形制造契约
+# GF_nyto_doll_manufacturing_contract= {
+# 	tradable = no
+# 	max = 100
+# }
+# #快速制造契约
+# GF_nyto_rapid_manufacturing_contract= {
+# 	tradable = no
+# 	max = 100
+# }
+#核心
+# GF_nyto_core= {
+# 	tradable = no
+# 	max = 1000
+# }
+# #快速修复契约
+# GF_nyto_quick_fix_contract= {
+# 	tradable = no
+# 	max = 100
+# }
+# #训练资料
+# GF_nyto_training_materials= {
+# 	tradable = no
+# 	max = 10000
+# }
+# #快速训练契约
+# GF_nyto_fast_track_contract= {
+# 	tradable = no
+# 	max = 100
+# }
+# #记忆碎片
+# GF_nyto_mental_fragments= {
+# 	tradable = no
+# 	max = 10000
+# }
+#新型火控单元
+GF_nyto_new_fire_control_unit= {
+	tradable = no
+	max = 10000
+	deficit_modifier = GF_nyto_new_fire_control_unit_deficit
+}
+# #协力委托书
+# GF_nyto_power_of_attorney= {
+# 	tradable = no
+# 	max = 100
+# }
+#暗星内核
+GF_nyto_dark_star_core= {
+	tradable = no
+	max = 10000
+}
+#超星内核
+# GF_nyto_superstar_core= {
+# 	tradable = no
+# 	max = 10000
+# }
+# #开发培养皿
+# GF_nyto_developing_petri_dishes= {
+# 	tradable = no
+# 	max = 10000
+# }
+#训练秘钥
+GF_nyto_training_key= {
+	tradable = no
+	max = 10000
+	deficit_modifier =GF_nyto_training_key_deficit
+}
+

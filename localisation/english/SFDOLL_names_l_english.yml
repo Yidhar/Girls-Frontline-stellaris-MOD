@@ -1,0 +1,32 @@
+﻿l_english:
+###############################
+name_elisa_country:0 "Elisa"
+name_elisa_sfdoll:0 "Elisa"
+
+NAME_sfdoll_ump45:0 "Riva"
+name_ump45_country:0 "Riva"
+
+NAME_sfdoll_noel:0 "Noel"
+name_noel_country:0 "Noel"
+Name_fleet_sfdoll_noel:0 "Noel"
+Name_ship_sfdoll_noel:0 "Noel"
+name_sfdoll_event_leader_species:0 "Unidentified Creature"
+Name_sfdoll_system_search_zion:0 "Mystery Signal Source"
+
+NAME_sfdoll_triela:0 "Triela"
+name_sfdoll_triela_country:0 "Triela"
+
+sfdoll_human_species:0 "Human"
+sfdoll_human_species_plural::0 "Humans"
+sfdoll_human_species_adjective:0 "Human"
+
+PRESCRIPTED_species_sfdoll_1:0 "SF Doll"
+PRESCRIPTED_species_plural_sfdoll_1:0 "SF Dolls"
+PRESCRIPTED_species_adjective_sfdoll_1:0 "SF Doll"
+
+PRESCRIPTED_sfdoll_1:0 "Sangvis Ferri Republic"
+PRESCRIPTED_adjective_sfdoll_1:0 "$PRESCRIPTED_sfdoll_1$"
+PRESCRIPTED_planet_sfdoll_1:0 "New Earth"
+PRESCRIPTED_system_sfdoll_1:0 "New Solar System"
+
+PRESCRIPTED_ruler_sfdoll_1:0 "Dreamer"

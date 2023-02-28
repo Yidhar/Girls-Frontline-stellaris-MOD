@@ -1,0 +1,143 @@
+#城市舰
+#消费品
+spriteTypes = {
+	spriteType = {
+		name = "GFX_consumer_goods_sfdoll_homeless"
+		texturefile = "gfx/interface/icons/ship_parts/consumer_goods_sfdoll_homeless.dds"
+	}
+}
+spriteTypes = {
+	spriteType = {
+		name = "GFX_consumer_goods_2_sfdoll_homeless"
+		texturefile = "gfx/interface/icons/ship_parts/consumer_goods_sfdoll_homeless.dds"
+	}
+}
+
+#合金
+spriteTypes = {
+	spriteType = {
+		name = "GFX_alloys_sfdoll_homeless"
+		texturefile = "gfx/interface/icons/ship_parts/alloys_sfdoll_homeless.dds"
+	}
+}
+spriteTypes = {
+	spriteType = {
+		name = "GFX_alloys_2_sfdoll_homeless"
+		texturefile = "gfx/interface/icons/ship_parts/alloys_sfdoll_homeless.dds"
+	}
+}
+
+#暗物质
+spriteTypes = {
+	spriteType = {
+		name = "GFX_sr_dark_matter_sfdoll_homeless"
+		texturefile = "gfx/interface/icons/ship_parts/sr_dark_matter_sfdoll_homeless.dds"
+	}
+}
+
+#坍塌液
+spriteTypes = {
+	spriteType = {
+		name = "GFX_collapse_liquid_sfdoll_homeless"
+		texturefile = "gfx/interface/icons/ship_parts/collapse_liquid_sfdoll_homeless.dds"
+	}
+}
+
+#星舰学院
+spriteTypes = {
+	spriteType = {
+		name = "GFX_college_sfdoll_homeless"
+		textureFile = "gfx/interface/icons/ship_parts/college_sfdoll_homeless.dds"
+	}
+}
+spriteTypes = {
+	spriteType = {
+		name = "GFX_exotic_gases_sfdoll_homeless"
+		textureFile = "gfx/interface/icons/ship_parts/exotic_gases_sfdoll_homeless.dds"
+	}
+}
+
+spriteTypes = {
+	spriteType = {
+		name = "GFX_food_sfdoll_homeless"
+		textureFile = "gfx/interface/icons/ship_parts/food_sfdoll_homeless.dds"
+	}
+}
+
+spriteTypes = {
+	spriteType = {
+		name = "GFX_minerals_sfdoll_homeless"
+		textureFile = "gfx/interface/icons/ship_parts/minerals_sfdoll_homeless.dds"
+	}
+}
+
+spriteTypes = {
+	spriteType = {
+		name = "GFX_manpower_sfdoll_homeless"
+		textureFile = "gfx/interface/icons/ship_parts/manpower_sfdoll_homeless.dds"
+	}
+}
+
+spriteTypes = {
+	spriteType = {
+		name = "GFX_rare_crystals_sfdoll_homeless"
+		textureFile = "gfx/interface/icons/ship_parts/rare_crystals_sfdoll_homeless.dds"
+	}
+}
+
+spriteTypes = {
+	spriteType = {
+		name = "GFX_research_sfdoll_homeless"
+		textureFile = "gfx/interface/icons/ship_parts/research_sfdoll_homeless.dds"
+	}
+}
+
+spriteTypes = {
+	spriteType = {
+		name = "GFX_volatile_motes_sfdoll_homeless"
+		textureFile = "gfx/interface/icons/ship_parts/volatile_motes_sfdoll_homeless.dds"
+	}
+}
+
+spriteTypes = {
+	spriteType = {
+		name = "GFX_component_aura_sfdoll_carrier"
+		textureFile = "gfx/interface/icons/ship_parts/component_aura_sfdoll_carrier.dds"
+	}
+}
+
+spriteTypes = {
+	spriteType = {
+		name = "GFX_ship_sfdoll_empty"
+		textureFile = "gfx/interface/icons/ship_parts/ship_sfdoll_empty.dds"
+	}
+}
+
+
+spriteTypes = {
+	spriteType = {
+		name = "GFX_energy_sfdoll_homeless"
+		textureFile = "gfx/interface/icons/ship_parts/energy_sfdoll_homeless.dds"
+	}
+}
+
+spriteTypes = {
+	spriteType = {
+		name = "GFX_nanites_sfdoll_homeless"
+		textureFile = "gfx/interface/icons/ship_parts/nanites_sfdoll_homeless.dds"
+	}
+}
+
+spriteTypes = {
+	spriteType = {
+		name = "GFX_planet_killer_sfdoll_colonizer"
+		textureFile = "gfx/interface/icons/ship_parts/planet_killer_sfdoll_colonizer.dds"
+	}
+}
+
+spriteTypes = {
+	spriteType = {
+		name = "GFX_sfdoll_homeship_exploit"
+		textureFile = "gfx/interface/icons/ship_parts/sfdoll_homeship_exploit.dds"
+	}
+}

@@ -1,0 +1,840 @@
+namespace = gfnytoparadeusancrel
+#首都遗迹阶段1
+fleet_event = {
+	id = gfnytoparadeusancrel.2001
+	title = "gfnytoparadeusancrel.2001.name"
+	desc = "gfnytoparadeusancrel.2001.desc"
+	picture = GFX_evt_nyto_unknown_civilization_202055_1
+	show_sound = event_door_opening
+	location = from
+	archaeology = yes
+	is_triggered_only = yes
+	immediate = {
+		from = {
+			set_site_progress_locked = yes
+		}
+	}
+	option = {
+		name = "gfnytoparadeusancrel.2001.a"
+		owner = {
+			add_resource = {
+				minor_artifacts = 20
+			}
+			home_planet = {
+				enable_special_project = {
+					name = "GF_NYTO_PARADEUS_COLONY_1"
+					location = this
+					owner = root.owner
+				}
+			}
+		}
+	}
+}
+
+#首都遗迹阶段2
+fleet_event = {
+	id = gfnytoparadeusancrel.2002
+	title = "gfnytoparadeusancrel.2002.name"
+	desc = "gfnytoparadeusancrel.2002.desc"
+	picture = GFX_evt_nyto_unknown_civilization_202055_2
+	show_sound = event_psionic
+	location = from
+	archaeology = yes
+	is_triggered_only = yes
+	immediate = {
+		from = {
+			set_site_progress_locked = yes
+		}
+	}
+	option = {
+		name = "gfnytoparadeusancrel.2002.a"
+		owner = {
+			enable_special_project = {
+				name = "GF_NYTO_PARADEUS_COLONY_2"
+				location = home_planet
+				owner = root.owner
+			}
+		}
+	}
+}
+
+#首都遗迹阶段3
+fleet_event = {
+	id = gfnytoparadeusancrel.2003
+	title = "gfnytoparadeusancrel.2003.name"
+	desc = "gfnytoparadeusancrel.2003.desc"
+	picture = GFX_evt_nyto_unknown_civilization_202055_3
+	show_sound = event_ringworld_build_complete
+	location = from
+	archaeology = yes
+	is_triggered_only = yes
+	immediate = {
+		from = {
+			set_site_progress_locked = yes
+		}
+	}
+	option = {
+		name = "gfnytoparadeusancrel.2003.a"
+		owner = {
+			add_resource = {
+				minor_artifacts = 5
+			}
+			enable_special_project = {
+				name = "GF_NYTO_PARADEUS_COLONY_3"
+				location = home_planet
+				owner = root.owner
+			}
+		}
+	}
+}
+
+#首都遗迹阶段4
+fleet_event = {
+	id = gfnytoparadeusancrel.2004
+	title = "gfnytoparadeusancrel.2004.name"
+	desc = "gfnytoparadeusancrel.2004.desc"
+	picture = GFX_evt_nyto_unknown_civilization_202055_4
+	show_sound = event_life_support_fail
+	location = from
+	archaeology = yes
+	is_triggered_only = yes
+	option = {
+		name = "gfnytoparadeusancrel.2004.a"
+	}
+}
+
+#首都遗迹阶段5
+fleet_event = {
+	id = gfnytoparadeusancrel.2005
+	title = "gfnytoparadeusancrel.2005.name"
+	desc = "gfnytoparadeusancrel.2005.desc"
+	picture = GFX_evt_nyto_unknown_civilization_202055_5
+	show_sound = event_structural_collapse
+	location = from
+	archaeology = yes
+	is_triggered_only = yes
+	immediate = {
+		from = {
+			set_site_progress_locked = yes
+		}
+	}
+	option = {
+		name = "gfnytoparadeusancrel.2005.a"
+		owner = {
+			add_resource = {
+				minor_artifacts = 1
+			}
+			enable_special_project = {
+				name = "GF_NYTO_PARADEUS_COLONY_5"
+				location = home_planet
+				owner = root.owner
+			}
+		}
+	}
+}
+
+#首都遗迹阶段6
+fleet_event = {
+	id = gfnytoparadeusancrel.2006
+	title = "gfnytoparadeusancrel.2006.name"
+	desc = "gfnytoparadeusancrel.2006.desc"
+	picture = GFX_evt_nyto_unknown_civilization_202055_6
+	show_sound = event_ringworld_build_complete
+	location = from
+	archaeology = yes
+	is_triggered_only = yes
+	immediate = {
+		from = {
+			set_site_progress_locked = yes
+		}
+	}
+	option = {
+		name = "gfnytoparadeusancrel.2006.a"
+		owner = {
+			add_resource = {
+				minor_artifacts = 10
+			}
+			enable_special_project = {
+				name = "GF_NYTO_PARADEUS_COLONY_6"
+				location = home_planet
+				owner = root.owner
+			}
+		}
+	}
+}
+
+fleet_event = {
+	id = gfnytoparadeusancrel.301
+	title = "gfnytoparadeusancrel.301.name"
+	desc = "gfnytoparadeusancrel.301.desc"
+	picture = GFX_evt_nyto_unknown_civilization_202055_5
+	show_sound = event_structural_collapse
+	location = from
+	archaeology = yes
+	is_triggered_only = yes
+	immediate = {
+		from = {
+			set_site_progress_locked = yes
+		}
+	}
+	option = {
+		name = gfnytoparadeusancrel.301.a
+		owner = {
+			country_event = {
+				id = gfnytoparadeusancrel.30102
+			}
+		}
+	}
+}
+
+country_event = {
+	id = gfnytoparadeusancrel.30102
+	title = "gfnytoparadeusancrel.30102.name"
+	desc = "gfnytoparadeusancrel.30102.desc"
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = NEW_GUI
+	picture_event_data = {
+		room = no_room
+		portrait = owner
+	}
+	immediate = {
+		set_country_flag = GUI_BG_1
+		set_country_flag = Gf_nyto_portrait_02_Lost
+		set_country_flag = small_painting_effct_hide
+		hidden_effect = {
+			clear_variable = GF_nyto_TXT
+			remove_country_flag = Gf_nyto_portrait_02
+		}
+	}
+	option = {
+		allow = {
+			NOR = {
+				has_country_flag = GF_nyto_opt01
+				has_country_flag = GF_nyto_opt02
+				has_country_flag = GF_nyto_opt03
+				has_country_flag = GF_nyto_opt04
+			}
+		}
+		name = gfnytoparadeusancrel.30102.a
+		response_text = gfnytoparadeusancrel.30102.a.response
+		is_dialog_only = yes
+		custom_gui = inv_OPTION
+		hidden_effect = {
+			remove_country_flag = small_painting_effct_hide
+			change_variable = {which = GF_nyto_TXT value = 1 }
+			if = {
+				limit = { 
+					check_variable = {
+						which = GF_nyto_TXT
+						value = 1
+					}
+				}
+				remove_country_flag = Gf_nyto_portrait_02_Lost
+				set_country_flag = Gf_nyto_portrait_02
+				remove_country_flag = small_painting_effct_hide
+				set_country_flag = small_painting_effct2_hide
+			}
+			if = {
+				limit = {
+					check_variable = {
+						which = GF_nyto_TXT
+						value = 3
+					}
+				}
+				set_country_flag = Gf_nyto_portrait_02_Lost
+				remove_country_flag = Gf_nyto_portrait_02
+				set_country_flag = small_painting_effct_hide
+				remove_country_flag = small_painting_effct2_hide
+			}
+			if = {
+				limit = {
+					check_variable = {
+						which = GF_nyto_TXT
+						value = 4
+					}
+				}
+				solar_system = { set_star_class = sc_neutron_star }
+				remove_country_flag = Gf_nyto_portrait_02_Lost
+				set_country_flag = Gf_nyto_portrait_02
+				remove_country_flag = small_patinting_window_hide
+				set_country_flag = small_painting_effct2_hide				
+			}
+			if = {
+				limit = {
+					check_variable = {
+						which = GF_nyto_TXT
+						value = 5
+					}
+				}
+				# remove_country_flag = GUI_BG_1
+				# set_country_flag = GUI_BG_2
+				set_country_flag = GF_nyto_opt01
+				set_country_flag = GF_nyto_opt02
+				set_country_flag = GF_nyto_opt03
+				set_country_flag = GF_nyto_opt04
+				set_country_flag = GF_nyto_opt_01_01
+				set_country_flag = GF_nyto_opt_02_01
+				set_country_flag = GF_nyto_opt_03_01
+				set_country_flag = GF_nyto_opt_04_01
+			}
+			if = {
+				limit = {
+					check_variable = {
+						which = GF_nyto_TXT
+						value = 7
+					}
+					NOT = {
+						has_country_flag = GF_nyto_ui_y
+					}
+				}
+				subtract_variable = {
+					which = GF_nyto_TXT
+					value = 2
+				}
+				remove_country_flag = GUI_BG_1
+				set_country_flag = GF_nyto_opt01
+				set_country_flag = GF_nyto_opt02
+				set_country_flag = GF_nyto_opt03
+				set_country_flag = GF_nyto_opt04
+			}
+		}
+	}
+	option = {
+		custom_gui = "NEW_OPTION"
+		name = degultopt
+		default_hide_option = yes
+		country_event = {
+			id = gfnytoparadeusancrel.30103
+		}
+		remove_country_flag = GUI_BG_1
+		remove_country_flag = GF_nyto_opt01
+		remove_country_flag = GF_nyto_opt02
+		remove_country_flag = GF_nyto_opt03
+		remove_country_flag = GF_nyto_opt04
+		remove_country_flag = small_painting_effct2_hide
+	}
+}
+
+country_event = {
+	id = gfnytoparadeusancrel.30103
+	title = gfnytoparadeusancrel.30103.name
+	desc = gfnytoparadeusancrel.30103.desc
+	is_triggered_only = yes
+	hide_window = no
+	diplomatic = yes
+	picture_event_data = {
+		portrait = owner
+		room = owner
+	}
+	option = {
+		name = gfnytoparadeusancrel.30103.a
+		response_text = "gfnytoparadeusancrel.30103.a.response"
+		set_country_flag = GFnyto_event_flag
+		is_dialog_only = yes
+	}
+	option = {
+		allow = {
+			has_country_flag = GFnyto_event_flag
+		}
+		name = gfnytoparadeusancrel.30103.b
+		response_text = gfnytoparadeusancrel.30103.b.response
+	}
+}
+
+fleet_event = {
+	id = gfnytoparadeusancrel.302
+	title = "gfnytoparadeusancrel.302.name"
+	desc = "gfnytoparadeusancrel.302.desc"
+	picture = GFX_evt_nyto_unknown_civilization_202055_5
+	show_sound = event_structural_collapse
+	location = from
+	archaeology = yes
+	is_triggered_only = yes
+	immediate = {
+	}
+}
+
+fleet_event = {
+	id = gfnytoparadeusancrel.303
+	title = "gfnytoparadeusancrel.303.name"
+	desc = "gfnytoparadeusancrel.303.desc"
+	picture = GFX_evt_nyto_unknown_civilization_202055_5
+	show_sound = event_structural_collapse
+	location = from
+	archaeology = yes
+	is_triggered_only = yes
+	immediate = {
+	}
+}
+
+fleet_event = {
+	id = gfnytoparadeusancrel.304
+	title = "gfnytoparadeusancrel.304.name"
+	desc = "gfnytoparadeusancrel.304.desc"
+	picture = GFX_evt_nyto_unknown_civilization_202055_5
+	show_sound = event_structural_collapse
+	location = from
+	archaeology = yes
+	is_triggered_only = yes
+	immediate = {
+	}
+}
+
+fleet_event = {
+	id = gfnytoparadeusancrel.305
+	title = "gfnytoparadeusancrel.305.name"
+	desc = "gfnytoparadeusancrel.305.desc"
+	picture = GFX_evt_nyto_unknown_civilization_202055_5
+	show_sound = event_structural_collapse
+	location = from
+	archaeology = yes
+	is_triggered_only = yes
+	immediate = {
+	}
+}
+
+
+
+
+
+
+
+#触发
+event = {
+	id = gfnytoparadeusancrel.4001
+	hide_window = yes
+	trigger = {
+		years_passed > 15
+		NOT = { has_global_flag = dc_nyto_evt_start }
+		any_playable_country = {
+			is_cg_country = yes
+			NOT = {
+				has_authority = auth_GF_paradeus
+			}
+		}
+	}
+	is_triggered_only = yes
+	immediate = {
+		random_playable_country = {
+			limit = {
+				is_cg_country = yes
+				is_ai = no	
+				NOT = { has_country_flag = hid_dc_nyto_evt }
+				NOT = { has_authority = auth_GF_paradeus}
+			}
+			country_event = {
+				id = gfnytoparadeusancrel.4002
+				days = 15
+			}
+		}
+	}
+}
+
+
+#信号
+country_event = {
+	id = gfnytoparadeusancrel.4002
+	title = gfnytoparadeusancrel.4002.name
+	desc = gfnytoparadeusancrel.4002.desc 
+	picture = GFX_evt_GF_dc_nyto_10
+	fire_only_once = yes
+	is_triggered_only = yes 
+	option = {
+		name = gfnytoparadeusancrel.4002.a
+		hidden_effect ={
+			set_country_flag = hid_dc_nyto_evt
+		}
+	}
+	option = {
+		name = gfnytoparadeusancrel.4002.b
+		hidden_effect ={
+			set_global_flag = dc_nyto_evt_start
+			enable_special_project = {
+				name = GF_nyto_dc_evt_01
+			}
+		}
+	}
+}
+
+
+#无光之地
+country_event = {
+	id = gfnytoparadeusancrel.4003
+	hide_window = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+		capital_scope.solar_system = {
+			spawn_system = {
+				min_distance >= 40
+				max_distance <= 40
+				min_orientation_angle = 0
+				max_orientation_angle = 90
+				initializer = GF_nyto_end_system
+				hyperlane = yes
+				effect = {
+					save_global_event_target_as = GF_nyto_endler_systeam
+					root = {
+						country_event = {
+							id = gfnytoparadeusancrel.4004
+						}
+					}
+					set_star_flag = GF_nyto_endler_systeam
+				}
+			}
+		}
+	}
+}
+
+
+#创建一个导航项目
+country_event = {
+	id = gfnytoparadeusancrel.4004
+	title = gfnytoparadeusancrel.4004.name
+	desc = gfnytoparadeusancrel.4004.desc 
+	picture = GFX_evt_GF_dc_nyto_9
+	is_triggered_only = yes
+	fire_only_once = yes
+	location = last_created_system
+	option = {
+		name = gfnytoparadeusancrel.4004.a
+		custom_tooltip = gfnytoparadeusancrel.4004.a.text
+		hidden_effect ={
+			enable_special_project = {
+				name = GF_nyto_dc_evt_02
+				owner = root
+				location = last_created_ambient_object
+			}	
+		}					
+	}
+}
+
+
+#进入星系时弹窗
+# Scope = Ship
+# From = System
+# FromFrom = Country
+ship_event = {
+	id = gfnytoparadeusancrel.4005
+	title = gfnytoparadeusancrel.4005.name
+	desc = gfnytoparadeusancrel.4005.desc
+	picture = GFX_evt_GF_dc_nyto_11
+	location = this
+	is_triggered_only = yes 
+	trigger = {
+		from = {
+			has_star_flag = GF_nyto_endler_systeam
+		}
+	}
+	immediate = {
+		owner = {
+			abort_special_project = { type = GF_nyto_dc_evt_02 	}
+		}
+	}
+	option = {
+		name = gfnytoparadeusancrel.4005.a
+	}
+}
+
+ship_event = {
+	id = gfnytoparadeusancrel.4006
+	title = gfnytoparadeusancrel.4006.name
+	desc = gfnytoparadeusancrel.4006.desc
+	picture = GFX_evt_GF_dc_nyto_12
+	location = this
+	is_triggered_only = yes 
+	trigger = {
+		from = {
+			has_star_flag = GF_nyto_endler_systeam
+		}
+	}
+	option = {
+		name = gfnytoparadeusancrel.4006.a
+		event_target:GF_nyto_endler_systeam ={
+			random_system_ambient_object = {
+				create_archaeological_site = site_nyto_unknown_civilization_dc_nyto
+			}
+		}
+	}
+}
+
+
+#阶段1
+fleet_event = {
+	id = gfnytoparadeusancrel.401
+	title = "gfnytoparadeusancrel.401.name"
+	desc = "gfnytoparadeusancrel.401.desc"
+	picture = GFX_evt_GF_dc_nyto_1
+	show_sound = event_structural_collapse
+	location = from
+	archaeology = yes
+	is_triggered_only = yes
+	option = {
+		name = gfnytoparadeusancrel.401.a
+		custom_tooltip = gfnytoparadeusancrel.401.a.text
+		hidden_effect = {
+			owner = {
+				export_resource_stockpile_to_variable = {
+					resource = energy
+					variable = Gf_res
+				}
+				add_resource = {
+					energy = -1
+					multiplier = Gf_res
+				}
+			}
+		}
+	}
+}
+
+#阶段2
+fleet_event = {
+	id = gfnytoparadeusancrel.402
+	title = "gfnytoparadeusancrel.402.name"
+	desc = "gfnytoparadeusancrel.402.desc"
+	picture = GFX_evt_GF_dc_nyto_2
+	show_sound = event_structural_collapse
+	location = from
+	archaeology = yes
+	is_triggered_only = yes
+	option = {
+		name = gfnytoparadeusancrel.402.a
+	}
+}
+fleet_event = {
+	id = gfnytoparadeusancrel.403
+	title = "gfnytoparadeusancrel.403.name"
+	desc = "gfnytoparadeusancrel.403.desc"
+	picture = GFX_evt_GF_dc_nyto_3
+	show_sound = event_structural_collapse
+	location = from
+	archaeology = yes
+	is_triggered_only = yes
+	option = {
+		name = gfnytoparadeusancrel.403.a
+	}
+}
+fleet_event = {
+	id = gfnytoparadeusancrel.404
+	title = "gfnytoparadeusancrel.404.name"
+	desc = "gfnytoparadeusancrel.404.desc"
+	picture = GFX_evt_GF_dc_nyto_4
+	show_sound = event_structural_collapse
+	location = from
+	archaeology = yes
+	is_triggered_only = yes
+	option = {
+		name = gfnytoparadeusancrel.404.a
+	}
+}
+fleet_event = {
+	id = gfnytoparadeusancrel.405
+	title = "gfnytoparadeusancrel.405.name"
+	desc = "gfnytoparadeusancrel.405.desc"
+	picture = GFX_evt_GF_dc_nyto_5
+	show_sound = event_structural_collapse
+	location = from
+	archaeology = yes
+	is_triggered_only = yes
+	option = {
+		name = gfnytoparadeusancrel.405.a
+	}
+}
+fleet_event = {
+	id = gfnytoparadeusancrel.406
+	title = "gfnytoparadeusancrel.406.name"
+	desc = "gfnytoparadeusancrel.406.desc"
+	picture = GFX_evt_GF_dc_nyto_6
+	show_sound = event_structural_collapse
+	location = from
+	archaeology = yes
+	is_triggered_only = yes
+	option = {
+		name = gfnytoparadeusancrel.406.a
+	}
+}
+fleet_event = {
+	id = gfnytoparadeusancrel.407
+	title = "gfnytoparadeusancrel.407.name"
+	desc = "gfnytoparadeusancrel.407.desc"
+	picture = GFX_evt_GF_dc_nyto_7
+	show_sound = event_structural_collapse
+	location = from
+	archaeology = yes
+	is_triggered_only = yes
+	option = {
+		name = gfnytoparadeusancrel.407.a
+	}
+}
+fleet_event = {
+	id = gfnytoparadeusancrel.408
+	title = "gfnytoparadeusancrel.408.name"
+	desc = "gfnytoparadeusancrel.408.desc"
+	picture = GFX_evt_GF_dc_nyto_8
+	show_sound = event_structural_collapse
+	location = from
+	archaeology = yes
+	is_triggered_only = yes
+	option = {
+		name = gfnytoparadeusancrel.408.a
+		hidden_effect ={
+			owner = {
+				
+				country_event = {
+					id = gfnytoparadeusancrel.409
+					days = 15
+					random = 30
+				}
+			}			
+		}
+	}
+}
+
+country_event = {
+	id = gfnytoparadeusancrel.409
+	title = gfnytoparadeusancrel.409.name
+	desc = gfnytoparadeusancrel.409.desc
+	picture = GFX_evt_GF_dc_nyto_13 #a name of a picture to display
+	is_triggered_only = yes #The game will not consider this event for starting on its own. Event will need to be triggered by another event, or by some other effect. Most events will use this.
+	trigger = {
+		
+	}
+	immediate = {
+		
+	}
+	option = {
+		name = gfnytoparadeusancrel.409.a
+		enable_special_project = {
+			name = GF_nyto_dc_evt_03
+			location = root.capital_scope
+			owner = root			
+		}
+	}
+}
+
+country_event = {
+	id = gfnytoparadeusancrel.410
+	title = gfnytoparadeusancrel.410.name
+	desc = gfnytoparadeusancrel.410.desc
+	picture = GFX_evt_GF_dc_nyto_15 #a name of a picture to display
+	is_triggered_only = yes #The game will not consider this event for starting on its own. Event will need to be triggered by another event, or by some other effect. Most events will use this.
+	trigger = {
+		
+	}
+	immediate = {
+		
+	}
+	option = {
+		name = gfnytoparadeusancrel.410.a
+		hidden_effect ={
+			set_country_flag = has_nyto_technology
+			country_event = {
+				id = gfnytoparadeusancrel.411
+				days = 15
+				random = 30
+			}
+		}
+	}
+}
+
+country_event = {
+	id = gfnytoparadeusancrel.411
+	title = gfnytoparadeusancrel.411.name
+	desc = {
+		trigger = {
+			NOT = {
+				has_country_flag = GF_dc_nyto_opt_1
+			}
+		}
+		text = gfnytoparadeusancrel.411.desc
+	} 
+	desc = {
+		trigger = {
+			has_country_flag = GF_dc_nyto_opt_1
+			check_variable ={
+				which = GF_dc_nyto_opt_1_num
+				value < 5
+			}
+		}
+		text = gfnytoparadeusancrel.411.a1	
+	}
+	desc = {
+		trigger = {
+			has_country_flag = GF_dc_nyto_opt_1
+			check_variable ={
+				which = GF_dc_nyto_opt_1_num
+				value = 5
+			}
+		}
+		text = gfnytoparadeusancrel.411.f
+	}
+	diplomatic = yes
+	picture_event_data = {
+		room = evt_nyto_room
+	}
+	is_triggered_only = yes #The game will not consider this event for starting on its own. Event will need to be triggered by another event, or by some other effect. Most events will use this.
+	trigger = {
+		
+	}
+	immediate = {
+		hidden_effect ={
+			random_big_num= {
+				count = 30
+				variable = re_random
+			}
+		}
+	}
+	option = {
+		trigger = {
+			check_variable = {
+				which = GF_dc_nyto_opt_1_num
+				value < 5
+			}
+		}
+		name = gfnytoparadeusancrel.411.a	
+		hidden_effect ={
+			set_country_flag = GF_dc_nyto_opt_1
+			change_variable = {
+				which = GF_dc_nyto_opt_1_num
+				value = 1
+			}	
+			country_event = {
+				id = gfnytoparadeusancrel.411
+			}
+		}
+	}
+	option = {
+		name = gfnytoparadeusancrel.411.b	
+		is_dialog_only = yes
+		response_text = gfnytoparadeusancrel.411.b1
+	}
+	option = {
+		name = gfnytoparadeusancrel.411.c
+		is_dialog_only = yes
+		response_text = gfnytoparadeusancrel.411.c1
+	}
+	option = {		
+		name = gfnytoparadeusancrel.411.d
+		is_dialog_only = yes
+		response_text = gfnytoparadeusancrel.411.d1
+	}
+	option = {
+		default_hide_option = yes
+		name = gfnytoparadeusancrel.411.e		
+		response_text = gfnytoparadeusancrel.411.e1
+	}
+	after = {
+		hidden_effect ={
+			if = {
+				limit = { 
+					NOT = {
+						has_country_flag = GF_dc_nyto_opt_1
+					}
+				}
+				clear_variable = GF_dc_nyto_opt_1_num
+			}	
+	
+		}	
+	}
+}

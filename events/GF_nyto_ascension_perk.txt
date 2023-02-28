@@ -1,0 +1,820 @@
+namespace = GFnyto_ascension_perk
+@techmult = 0
+@popnum = 0
+@collapsenum = 0
+country_event = {
+	id = GFnyto_ascension_perk.1
+	title = "GF_ascension_perk.1.name"
+	desc = "GF_ascension_perk.1.desc"
+	picture = GFX_evt_nyto_ap
+	show_sound = event_engineered_evolution
+	hide_window = no
+	is_triggered_only = yes
+	immediate = {
+		#		shift_ethic = "ethic_paradeus_antecedentnyto"
+		#		country_add_ethic = "ethic_paradeus_antecedentnyto"
+		set_country_flag = GFnyto_ascension_perk_done
+		
+	}
+	option = {
+		name = "GF_ascension_perk.1.a"
+		#		shift_ethic = "ethic_paradeus_antecedentnyto"
+		#		country_add_ethic = "ethic_paradeus_antecedentnyto"
+	}
+}
+
+country_event = {
+	id = GFnyto_ascension_perk.2
+	title = "GF_ascension_perk.2.name"
+	desc = "GF_ascension_perk.2.desc"
+	picture = GFX_evt_GFnyto_bad_ending_1
+	show_sound = event_engineered_evolution
+	hide_window = no
+	is_triggered_only = yes
+	trigger = {
+		owner = { has_ascension_perk = ap_GF_nyto_conquer_hell }
+	}
+	immediate = {
+		#		shift_ethic = "ethic_paradeus_antecedentnyto"
+		#		country_add_ethic =  "ethic_paradeus_antecedentnyto"
+		set_country_flag = GFnyto_ascension_perk_done
+		change_government = {
+			civics = {
+				civic = civic_GF_nyto_see_angel
+			}
+		}
+		add_modifier = {
+			modifier = GFnyto_crisis_see_angel
+		}
+		set_country_flag = GFnyto_crisis_system
+	}
+	option = {
+		name = "GF_ascension_perk.2.a"
+		begin_event_chain = {
+			event_chain = GFnyto_crisis_chain
+		}
+		every_country = {
+			limit = {
+				has_event_chain = "GFnyto_crisis_chain"
+			}
+			add_event_chain_counter = {
+				event_chain = "GFnyto_crisis_chain"
+				counter = "GFnyto_empire_maintenance"
+				amount = 1000
+			}
+			set_variable = {
+				which = "GFnyto_empire_maintenance"
+				value = 1000
+			}
+			#			enable_special_project = {name = "GFnyto_crisis_attack_project"}
+		}
+		#		shift_ethic = "ethic_paradeus_antecedentnyto"
+		#		country_add_ethic = "ethic_paradeus_antecedentnyto"
+	}
+}
+
+#数据挖掘
+country_event = {
+	id = GFnyto_ascension_perk.3
+	title = "GF_ascension_perk.3.name"
+	desc = "GF_ascension_perk.3.desc"
+	picture = GFX_evt_nyto_unknown_civilization_202055_3_1
+	hide_window = no
+	is_triggered_only = yes
+	option = {
+		name = "GFnyto_ascension_perk.3a"
+		hidden_effect = {
+			owner = {
+				begin_event_chain = {
+					event_chain = GFnyto_data_mining_chain
+					target = root
+				}
+				enable_special_project = {
+					name = "GF_NYTO_RE_perk"
+					location = home_planet
+					owner = root.owner
+				}
+			}
+		}
+	}
+}
+
+#获得探测器科研
+country_event = {
+	id = GFnyto_ascension_perk.10
+	title = "gfnytorelics.3.a.name"
+	desc = "gfnytorelics.3.a.desc"
+	picture = GFX_evt_nyto_unknown_civilization_202055_3_1
+	hide_window = no
+	is_triggered_only = yes
+	location = this
+	option = {
+		name = "gfnytorelics.3.b"
+		give_technology = {
+			tech = "tech_GF_nyto_Deep_space"
+		}
+	}
+}
+
+#锡安船 出现
+country_event = {
+	id = GFnyto_ascension_perk.4
+	title = "GFnyto_ascension_perk.4.name"
+	desc = "GFnyto_ascension_perk.4.desc"
+	picture = GFX_evt_GFnyto_lost_contact
+	location = from
+	is_triggered_only = yes
+	option = {
+		name = "GFnyto_ascension_perk.4.a"
+		hidden_effect = {
+			country_event = {
+				id = GFnyto_ascension_perk.11
+				days = 30
+			}
+		}
+	}
+}
+
+#创建调查舰船项目
+country_event = {
+	id = GFnyto_ascension_perk.11
+	title = "GFnyto_ascension_perk.11.name"
+	desc = "GFnyto_ascension_perk.11.desc"
+	picture = GFX_evt_GFnyto_close_ruin_project
+	hide_window = no
+	is_triggered_only = yes
+	option = {
+		name = "GFnyto_ascension_perk.4.project"
+		hidden_effect = {
+			enable_special_project = {
+				name = "GF_NYTO_RE_perk.2"
+				location = home_planet
+				owner = root.owner
+			}
+		}
+	}
+}
+
+#舰船投影项目
+country_event = {
+	id = GFnyto_ascension_perk.5
+	title = "GFnyto_ascension_perk.5.name"
+	desc = "GFnyto_ascension_perk.5.desc"
+	picture = GFX_evt_GFnyto_close_ruin_project
+	hide_window = no
+	is_triggered_only = yes
+	option = {
+		name = "GFnyto_ascension_perk.5.project"
+		hidden_effect = {
+			enable_special_project = {
+				name = "GF_NYTO_RE_perk.3"
+			}
+		}
+	}
+}
+
+#刷船
+country_event = {
+	id = GFnyto_ascension_perk.6
+	title = "GFnyto_ascension_perk.6.name"
+	desc = "GFnyto_ascension_perk.6.desc"
+	picture = GFX_evt_GFnyto_close_ruin_project
+	is_triggered_only = yes
+	hide_window = no
+	option = {
+		name = "GFnyto_ascension_perk.6.a"
+		country_event = {
+			id = GFnyto_ascension_perk.9
+		}
+	}
+}
+
+country_event = {
+	id = GFnyto_ascension_perk.9
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		creat_nyto_ship = yes
+		country_event = {
+			id = GFnyto_ascension_perk.12
+			days = 100
+		}
+	}
+}
+
+country_event = {
+	id = GFnyto_ascension_perk.12
+	title = "GFnyto_ascension_perk.9.a.name"
+	desc = "GFnyto_ascension_perk.9.a.desc"
+	picture = GFX_evt_GFnyto_close_ruin_project
+	is_triggered_only = yes
+	hide_window = no
+	option = {
+		name = "GFnyto_ascension_perk.9.b"
+		enable_special_project = {
+			name = GF_NYTO_RE_perk.4
+		}
+	}
+}
+
+#给特殊项目
+country_event = {
+	id = GFnyto_ascension_perk.7
+	title = "GFnyto_ascension_perk.7.name"
+	desc = "GFnyto_ascension_perk.7.desc"
+	picture = GFX_evt_GFnyto_close_ruin_project
+	is_triggered_only = yes
+	hide_window = no
+	option = {
+		name = "GFnyto_ascension_perk.7.a"
+		hidden_effect = {
+			enable_special_project = {
+				name = GF_NYTO_RE_perk.5
+			}
+		}
+	}
+}
+
+#给科技
+country_event = {
+	id = GFnyto_ascension_perk.8
+	title = "GFnyto_ascension_perk.8.name"
+	desc = "GFnyto_ascension_perk.8.desc"
+	picture = GFX_evt_GFnyto_close_ruin_project
+	is_triggered_only = yes
+	hide_window = no
+	trigger = {
+		AND = {
+			has_country_flag = has_nyto_Prp_flag
+			has_country_flag = has_nyto_ftl_flag
+			has_country_flag = has_nyto_ai_flag
+			has_country_flag = has_nyto_Ex_shield_flag
+		}
+	}
+	immediate = {
+		add_tech_progress = {
+			tech = tech_GF_nyto_repeatable_phys_100
+			progress = 0.1
+		}
+		add_tech_progress = {
+			tech = tech_GF_nyto_repeatable_soc_100
+			progress = 0.1
+		}
+		add_tech_progress = {
+			tech = tech_GF_nyto_repeatable_eng_100
+			progress = 0.1
+		}
+	}
+	option = {
+		name = GFnyto_ascension_perk.8.a
+		end_event_chain = GFnyto_data_mining_chain
+	}
+}
+
+#解锁飞升
+country_event = {
+	id = GFnyto_ascension_perk.999
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		has_country_flag = has_nyto_Prp_flag
+		has_country_flag = has_nyto_ftl_flag
+		has_country_flag = has_nyto_ai_flag
+		has_country_flag = has_nyto_Ex_shield_flag
+	}
+	after = {
+		country_event = {
+			id = GFnyto_ascension_perk.9999
+			days = 1
+		}
+	}
+}
+
+country_event = {
+	id = GFnyto_ascension_perk.9999
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		has_country_flag = has_nyto_Prp_flag
+		has_country_flag = has_nyto_ftl_flag
+		has_country_flag = has_nyto_ai_flag
+		has_country_flag = has_nyto_Ex_shield_flag
+	}
+	immediate = {
+		if = {
+			limit = {
+				last_increased_tech = tech_GF_nyto_repeatable_phys_100
+			}
+			change_variable = {
+				which = techmult
+				value = 1
+			}
+		}
+		if = {
+			limit = {
+				last_increased_tech = tech_GF_nyto_repeatable_soc_100
+			}
+			change_variable = {
+				which = techmult
+				value = 1
+			}
+		}
+		if = {
+			limit = {
+				last_increased_tech = tech_GF_nyto_repeatable_eng_100
+			}
+			change_variable = {
+				which = techmult
+				value = 1
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_country_flag = GF_nyto_complete_research
+				}
+				check_variable = {
+					which = techmult
+					value > 30
+				}
+			}
+			set_country_flag = GF_nyto_complete_research
+		}
+	}
+}
+
+#开幕雷击
+country_event = {
+	id = GFnyto_ascension_perk.666
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		fromfrom = {
+			every_controlled_ship = {
+				if = {
+					limit = {
+						NOT = {
+							has_ship_flag = gfnyto_ship_combat_ing
+						}
+						has_ship_flag = is_Lamentations_ship
+					}
+					add_modifier = {
+						modifier = gfnyto_ship_start_buff
+						days = 3
+					}
+					set_timed_ship_flag = {
+						flag = gfnyto_ship_combat_ing
+						days = 1
+					}
+					fromfromfrom = {
+						add_modifier = {
+							modifier = gfnyto_ship_start_debuff
+							days = 5
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+#创建特殊项目
+country_event = {
+	id = GFnyto_ascension_perk.669
+	title = "GFnyto_ascension_perk.669.name"
+	desc = "GFnyto_ascension_perk.669.desc"
+	is_triggered_only = yes
+	hide_window = no
+	option = {
+		name = GFnyto_ascension_perk.669.a
+		enable_special_project = {
+			name = GF_NYTO_RE_perk.10
+		}
+	}
+	immediate = {
+	}
+}
+
+# #导出人口到变量 更换恒星类型
+# country_event = {
+# 	id = GFnyto_ascension_perk.668
+# 	is_triggered_only = yes
+# 	hide_window = yes
+# 	immediate = {
+# 		export_trigger_value_to_variable = {
+# 			trigger = num_pops
+# 			variable = popnum
+# 		}
+# 		#导出帝国人口
+# 		home_planet = {
+# 			solar_system = {
+# 				every_system_planet = {
+# 					if = {
+# 						limit = {
+# 							is_star = yes
+# 						}
+# 						prev = {
+# 							set_star_class = sc_Portal
+# 						}
+# 						while = {
+# 							count = 10
+# 							create_pop = {
+# 								species = root.owner
+# 								ethos = root.owner
+# 							}
+# 						}
+# 						create_colony = {
+# 							owner = root
+# 						}
+# 						set_planet_name = "约西亚圣殿"
+# 						set_capital = yes
+# 					}
+# 					if = {
+# 						limit = {
+# 							NOT = {
+# 								is_planet_class = pc_GFnyto_portal_star
+# 							}
+# 						}
+# 						remove_planet = yes
+# 					}
+# 					prev = {
+# 						every_system_planet = {
+# 							limit = {
+# 								is_planet_class = pc_GFnyto_portal_star
+# 							}
+# 							save_global_event_target_as = "约西亚圣殿"
+# 						}
+# 					}
+# 				}
+# 			}
+# 		}
+# 		every_owned_megastructure = {
+# 			if = {
+# 				limit = {
+# 					is_megastructure_type = GFnyto_megastructure_collapse_reactor_restored
+# 				}
+# 				prev = {
+# 					change_variable = {
+# 						which = collapsenum
+# 						value = 10
+# 					}
+# 				}
+# 				remove_megastructure = this
+# 			}
+# 			if = {
+# 				limit = {
+# 					is_megastructure_type = GFnyto_megastructure_collapse_reactor_05
+# 				}
+# 				prev = {
+# 					change_variable = {
+# 						which = collapsenum
+# 						value = 5
+# 					}
+# 				}
+# 				remove_megastructure = this
+# 			}
+# 			if = {
+# 				limit = {
+# 					is_megastructure_type = GFnyto_megastructure_collapse_reactor_04
+# 				}
+# 				prev = {
+# 					change_variable = {
+# 						which = collapsenum
+# 						value = 4
+# 					}
+# 				}
+# 				remove_megastructure = this
+# 			}
+# 			if = {
+# 				limit = {
+# 					is_megastructure_type = GFnyto_megastructure_collapse_reactor_03
+# 				}
+# 				prev = {
+# 					change_variable = {
+# 						which = collapsenum
+# 						value = 3
+# 					}
+# 				}
+# 				remove_megastructure = this
+# 			}
+# 			if = {
+# 				limit = {
+# 					is_megastructure_type = GFnyto_megastructure_collapse_reactor_02
+# 				}
+# 				prev = {
+# 					change_variable = {
+# 						which = collapsenum
+# 						value = 2
+# 					}
+# 				}
+# 				remove_megastructure = this
+# 			}
+# 			if = {
+# 				limit = {
+# 					is_megastructure_type = GFnyto_megastructure_collapse_reactor_01
+# 				}
+# 				prev = {
+# 					change_variable = {
+# 						which = collapsenum
+# 						value = 1
+# 					}
+# 				}
+# 				remove_megastructure = this
+# 			}
+# 		}
+# 		#遍历巨构 
+# 		if = {
+# 			limit = {
+# 				has_global_flag = z_pr_installed
+# 				check_variable = {
+# 					which = PR_var_cntr_MAN
+# 					value >= 1
+# 				}
+# 			}
+# 			change_variable = {
+# 				which = popnum
+# 				value = PR_var_cntr_MAN
+# 			}
+# 			set_variable = {
+# 				which = PR_var_cntr_MAN
+# 				value = 0
+# 			}
+# 		}
+# 		#人力加持人口
+# 		divide_variable = {
+# 			which = popnum
+# 			value = 100
+# 		}
+# 		change_variable = {
+# 			which = collapsenum
+# 			value = popnum
+# 		}
+# 		#权重相加
+# 		event_target:约西亚圣殿 = {
+# 			set_variable = {
+# 				which = plantbufflevel
+# 				value = root.collapsenum
+# 			}
+# 			change_variable = {
+# 				which = plantbufflevel
+# 				value = root.popnum
+# 			}
+# 			add_modifier = {
+# 				modifier = gfnyto_portal_buff
+# 				multiplier = plantbufflevel
+# 			}
+# 		}
+# 		#添加buff
+# 		divide_variable = {
+# 			which = collapsenum
+# 			value = 10
+# 		}
+# 		#巨构权重计数
+# 		floor_variable = popnum
+# 		floor_variable = collapsenum
+# 		#变量取整
+# 		change_variable = {
+# 			which = collapsenum
+# 			value = popnum
+# 		}
+# 		floor_variable = collapsenum
+# 		while = {
+# 			count = collapsenum
+# 			random_list = {
+# 				1 = {
+# 					event_target:约西亚圣殿 = {
+# 						add_district = district_GF_nyto_pc_portal_house
+# 					}
+# 				}
+# 				2 = {
+# 					event_target:约西亚圣殿 = {
+# 						add_district = district_GF_nyto_pc_portal_science
+# 					}
+# 				}
+# 				2 = {
+# 					event_target:约西亚圣殿 = {
+# 						add_district = district_GF_nyto_pc_portal_mineral
+# 					}
+# 				}
+# 				2 = {
+# 					event_target:约西亚圣殿 = {
+# 						add_district = district_GF_nyto_pc_portal_alloy
+# 					}
+# 				}
+# 				2 = {
+# 					event_target:约西亚圣殿 = {
+# 						add_district = district_GF_nyto_pc_portal_ship
+# 					}
+# 				}
+# 				2 = {
+# 					event_target:约西亚圣殿 = {
+# 						add_district = district_GF_nyto_pc_portal_refine
+# 					}
+# 				}
+# 				2 = {
+# 					event_target:约西亚圣殿 = {
+# 						add_district = district_GF_nyto_pc_portal_energy
+# 					}
+# 				}
+# 			}
+# 		}
+# 		while = {
+# 			count = 10
+# 			while = {
+# 				count = popnum
+# 				event_target:约西亚圣殿 = {
+# 					create_pop = {
+# 						species = root.owner
+# 					}
+# 				}
+# 			}
+# 		}
+# 		every_owned_planet = {
+# 			limit = {
+# 				is_star = no
+# 			}
+# 			remove_planet = yes
+# 		}
+# 		owner = {
+# 			owner_main_species = {
+# 				set_species_flag = GF_nyto_not_coloniz
+# 			}
+# 		}
+# 		event_target:约西亚圣殿 = {
+# 			remove_building = building_colony_shelter
+# 			add_building = building_imperial_capital
+# 		}
+# 	}
+# }
+
+#复制战败国科技
+#This = destroyed country
+#From = optional, destroyer (country)
+country_event = {
+	id = GFnyto_ascension_perk.130
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		set_update_modifiers_batch = begin
+		this = {
+			save_global_event_target_as = Gfnyto_war_destroyed
+		}
+		from = {
+			save_global_event_target_as = Gfnyto_war_murderer
+		}
+		every_war = {
+			if = {
+				limit = {
+					using_war_goal = {
+						type = wg_GFnyto_assimilation
+						owner = event_target:Gfnyto_war_murderer
+					}
+				}
+				event_target:Gfnyto_war_murderer = {
+					copy_techs_from = {
+						target = event_target:Gfnyto_war_destroyed
+					}
+				}
+				event_target:Gfnyto_war_destroyed = {
+					copy_techs_from = {
+						target = event_target:Gfnyto_war_murderer
+					}
+				}
+			}
+		}
+		set_update_modifiers_batch = end
+	}
+}
+
+#一飞替换特质
+country_event = {
+	id = GFnyto_ascension_perk.777
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		every_owned_pop = {
+			limit = {
+				is_same_species = root
+				OR = {
+					has_trait = trait_GF_nyto_ogas_agreement
+					has_trait = trait_GF_nyto_ogas_agreement_plus
+				}				
+			}
+			modify_species = {
+				species = this
+				remove_trait = trait_GF_nyto_ogas_agreement
+				add_trait = trait_GF_nyto_noussphere
+				effect = {
+					save_event_target_as = noussphere_specoes
+				}
+			}
+		}
+		change_dominant_species = {
+			species = event_target:noussphere_specoes
+			change_all = yes
+		}
+		every_owned_leader = {
+			limit = {
+				is_same_species = root
+				NOR = {
+					has_trait = leader_admiral_trait_GF_nyto_noussphere
+					has_trait = leader_general_trait_GF_nyto_noussphere
+					has_trait = leader_governor_trait_GF_nyto_noussphere
+					has_trait = leader_scientist_trait_GF_nyto_noussphere
+					has_trait = leader_trait_GF_nyto_noussphere
+				}
+			}
+			if = {
+				limit = {
+					leader_class = admiral
+				}
+				remove_trait = leader_admiral_trait_GF_nyto_ogas_agreement
+				add_trait = leader_admiral_trait_GF_nyto_noussphere
+				add_ruler_trait = leader_trait_GF_nyto_noussphere
+			}
+			if = {
+				limit = {
+					leader_class = general
+				}
+				remove_trait = leader_general_trait_GF_nyto_ogas_agreement
+				add_trait = leader_general_trait_GF_nyto_noussphere
+				add_ruler_trait = leader_trait_GF_nyto_noussphere
+			}
+			if = {
+				limit = {
+					leader_class = governor
+				}
+				remove_trait = leader_governor_trait_GF_nyto_ogas_agreement
+				add_trait = leader_governor_trait_GF_nyto_noussphere
+				add_ruler_trait = leader_trait_GF_nyto_noussphere
+			}
+			if = {
+				limit = {
+					leader_class = scientist
+				}
+				remove_trait = leader_scientist_trait_GF_nyto_ogas_agreement
+				add_trait = leader_scientist_trait_GF_nyto_noussphere
+				add_ruler_trait = leader_trait_GF_nyto_noussphere
+			}
+			if = {
+				limit = {
+					leader_class = ruler
+				}
+				remove_trait = leader_trait_GF_nyto_ogas_agreement
+				add_trait = leader_trait_GF_nyto_noussphere
+				add_ruler_trait = leader_trait_GF_nyto_noussphere
+			}
+		}
+		every_pool_leader = {
+			limit = {
+				is_same_species = root
+				NOR = {
+					has_trait = leader_admiral_trait_GF_nyto_noussphere
+					has_trait = leader_general_trait_GF_nyto_noussphere
+					has_trait = leader_governor_trait_GF_nyto_noussphere
+					has_trait = leader_scientist_trait_GF_nyto_noussphere
+					has_trait = leader_trait_GF_nyto_noussphere
+				}
+			}
+			if = {
+				limit = {
+					leader_class = admiral
+				}
+				remove_trait = leader_admiral_trait_GF_nyto_ogas_agreement
+				add_trait = leader_admiral_trait_GF_nyto_noussphere
+				add_ruler_trait = leader_trait_GF_nyto_noussphere
+			}
+			if = {
+				limit = {
+					leader_class = general
+				}
+				remove_trait = leader_general_trait_GF_nyto_ogas_agreement
+				add_trait = leader_general_trait_GF_nyto_noussphere
+				add_ruler_trait = leader_trait_GF_nyto_noussphere
+			}
+			if = {
+				limit = {
+					leader_class = governor
+				}
+				remove_trait = leader_governor_trait_GF_nyto_ogas_agreement
+				add_trait = leader_governor_trait_GF_nyto_noussphere
+			}
+			if = {
+				limit = {
+					leader_class = scientist
+				}
+				remove_trait = leader_scientist_trait_GF_nyto_ogas_agreement
+				add_trait = leader_scientist_trait_GF_nyto_noussphere
+				add_ruler_trait = leader_trait_GF_nyto_noussphere
+			}
+			if = {
+				limit = {
+					leader_class = ruler
+				}
+				remove_trait = leader_trait_GF_nyto_ogas_agreement
+				add_trait = leader_trait_GF_nyto_noussphere
+				add_ruler_trait = leader_trait_GF_nyto_noussphere
+			}
+		}
+	}
+}

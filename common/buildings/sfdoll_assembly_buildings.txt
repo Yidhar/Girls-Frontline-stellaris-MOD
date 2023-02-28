@@ -1,0 +1,105 @@
+#战术人形组装厂,根据机器人制造厂修改
+building_sfdoll_assembly_plant = {
+	base_buildtime = @b1_time
+	base_cap_amount = 1
+	can_be_disabled = yes
+	icon = building_sfdoll_assembly_plant
+
+	category = pop_assembly
+	upgrades = {
+		building_sfdoll_assembly_2
+	}
+	potential = {
+		exists = owner
+		owner = {
+			has_authority = auth_gf_sfdoll
+		}
+	}
+	destroy_trigger = {
+		exists = owner
+		owner = {
+			NOT = {	has_country_flag = sfdoll_empire }
+		}
+	}
+	#不可用时转换为
+	convert_to = {
+		building_drone_storage
+		building_hive_warren
+		building_communal_housing
+	}
+
+	planet_modifier = {
+		planet_pop_assembly_add = 3
+	}
+	
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 250
+		}
+		upkeep = {
+			alloys = 2
+			energy = 2
+		}
+	}
+	
+	#文本可以设置条件，满足条件时显示
+	# triggered_desc = {
+	# 	text = building_sfdoll_assembly_plant_triggered_desc
+	# }	
+	
+	prerequisites = {
+		"tech_gf_sfdoll_assemble_building"
+	}
+}
+
+building_sfdoll_assembly_2= {
+	base_buildtime = @b2_time
+	can_be_disabled = yes
+	icon = building_sfdoll_assembly_2
+	can_build = no
+	category = pop_assembly
+	potential = {
+		exists = owner
+		owner = {
+			has_authority = auth_gf_sfdoll
+		}
+	}
+	destroy_trigger = {
+		exists = owner
+		owner = {
+			NOT = {	has_country_flag = sfdoll_empire }
+		}
+	}
+	#不可用时转换为
+	convert_to = {
+		building_drone_storage
+		building_hive_warren
+		building_communal_housing
+	}
+
+	planet_modifier = {
+		planet_pop_assembly_add = 5
+	}
+	
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @b2_minerals
+			nanites = @b2_rare_cost
+		}
+		upkeep = {
+			nanites = 2
+			energy = 2
+		}
+	}
+	
+	#文本可以设置条件，满足条件时显示
+	# triggered_desc = {
+	# 	text = building_sfdoll_assembly_plant_triggered_desc
+	# }	
+	
+	prerequisites = {
+		tech_sf_doll_modding_2
+	}
+}

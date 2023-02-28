@@ -1,0 +1,97 @@
+﻿l_english:
+###############################
+pc_sfdoll_black_hole:0 "Artificial Black Hole"
+pc_sfdoll_black_hole_desc:0 "$pc_sfdoll_black_hole$ can regulate gravity, slow down time and dispose of space junk, among other things. It's usually used by SF Dolls to build small artificial systems."
+
+sc_sfdoll_mega_system:0 "SF Artificial System"
+sc_sfdoll_ring_world:0 "$sc_sfdoll_mega_system$"
+
+pc_sfdoll_city:0 "Sangvis Ferri Arcology"
+pc_sfdoll_city_desc:0 "This planet can adjust the climate and ecosystem as needed."
+
+district_sfdoll_house:0 "SF City"
+district_sfdoll_house_plural:0 "SF Cities"
+district_sfdoll_house_desc:0 "$district_sfdoll_house$"
+
+# district_sfdoll_goods:0 "轻工业区划"
+# district_sfdoll_goods_plural:0 "轻工业区划"
+# district_sfdoll_goods_desc:0 "这里的产品汇聚了最新设计理念"
+district_sfdoll_rare:0 "Special Industrial District"
+district_sfdoll_rare_plural:0 "Special Industrial Districts"
+district_sfdoll_rare_desc:0 "$district_sfdoll_rare$"
+
+district_sfdoll_alloys:0 "Industrial District"
+district_sfdoll_alloys_plural:0 "Industrial Districts"
+district_sfdoll_alloys_desc:0 "$district_sfdoll_alloys$"
+
+district_sfdoll_science:0 "Science District"
+district_sfdoll_science_plural:0 "Science Districts"
+district_sfdoll_science_desc:0 "$district_sfdoll_science$"
+
+district_generator_sfdoll_city:0 "Resource  District"
+district_generator_sfdoll_city_plural:0 "Resource  Districts"
+district_generator_sfdoll_city_desc:0 "$district_generator_sfdoll_city$"
+
+
+pc_rw_sfdoll:0 "SF Ring World"
+pc_rw_sfdoll_desc:0 "$pc_rw_sfdoll$ is the result of SF Dolls' cutting-edge technology and contains a large number of habitation zones."
+
+tech_sfdoll_ring_world:0 "$pc_rw_sfdoll$"
+tech_sfdoll_ring_world_desc:0 "$pc_rw_sfdoll_desc$"
+
+mega_sfdoll_ring_world_1:0 "$pc_rw_sfdoll$ Site"
+mega_sfdoll_ring_world_1_DESC:0 "To build $pc_rw_sfdoll$, we'll build a small artificial system."
+mega_sfdoll_ring_world_1_MEGASTRUCTURE_DETAILS:0 "$mega_sfdoll_ring_world_1_DESC$"
+
+mega_sfdoll_ring_world_2:0 "$pc_rw_sfdoll$ Frame"
+mega_sfdoll_ring_world_2_DESC:0 "$mega_sfdoll_ring_world_1_DESC$"
+
+mega_sfdoll_ring_world_3:0 "$mega_sfdoll_ring_world_2$"
+mega_sfdoll_ring_world_3_DESC:0 "A large number of self-regulating machines are constantly in operation, creating a grand ring world."
+
+mega_sfdoll_ring_world_4:0 "$pc_rw_sfdoll$"
+mega_sfdoll_ring_world_4_DESC:0 "$mega_sfdoll_ring_world_3_DESC$"
+
+sfdoll_event.3:0 "$pc_rw_sfdoll$"
+sfdoll_event.3_desc:0 "The ring world frame has been built, and the artificial gravity source will escort the follow-up projects. This ring world will be equipped with a perfect energy supply system, without relying on the light of natural stars."
+
+district_rw_city_sfdoll:0 "Star Ring City"
+district_rw_city_sfdoll_plural:0 "Star Ring Cities"
+district_rw_city_sfdoll_desc:0 "$district_rw_city_sfdoll$"
+
+district_rw_science_sfdoll:0 "Science District"
+district_rw_science_sfdoll_plural:0 "Science Districts"
+district_rw_science_sfdoll_desc:0 "$district_rw_science_sfdoll$"
+
+district_rw_industrial_sfdoll:0 "Industrial District"
+district_rw_industrial_sfdoll_plural:0 "Industrial Districts"
+district_rw_industrial_sfdoll_desc:0  "$district_rw_industrial_sfdoll$"
+
+district_rw_rare_sfdoll:0 "Special Industrial District"
+district_rw_rare_sfdoll_plural:0 "Special Industrial Districts"
+district_rw_rare_sfdoll_desc:0 "$district_rw_rare_sfdoll$"
+
+district_rw_generator_sfdoll:0 "Resource  District"
+district_rw_generator_sfdoll_plural:0 "Resource  Districts"
+district_rw_generator_sfdoll_desc:0 "$district_rw_generator_sfdoll$"
+
+tech_build_sfdoll_city:0 "$pc_sfdoll_city$ Project"
+tech_build_sfdoll_city_desc:0 "$pc_sfdoll_city$ incorporates a variety of advanced concepts and technologies."
+
+decision_planet_to_sfdoll_city:0 "Built a $pc_sfdoll_city$"
+decision_planet_to_sfdoll_city_desc:0 "$tech_build_sfdoll_city_desc$"
+decision_planet_to_sfdoll_city_effects_short:0 "The planet type will be changed to $pc_sfdoll_city$, and the original districts will be removed"
+
+decision_planet_to_sfdoll_rw:0 "Built a Sangvis Ferri Star Ring"
+decision_planet_to_sfdoll_rw_desc:0 "$decision_planet_to_sfdoll_rw$"
+decision_planet_to_sfdoll_rw_effects:0 "The ring world will become $pc_rw_sfdoll$, and the original districts will be removed"
+
+TERRAFORM_sfdoll_city:0 "Terraforming completed"
+TERRAFORM_sfdoll_rw:0 "Terraforming completed"
+
+decision_planet_pop_to_sfdoll:0 "SF Doll Remodeling Surgery"
+decision_planet_pop_to_sfdoll_desc:0 "Population which is not SF Doll Species will be changed to SF Dolls."
+decision_planet_pop_to_sfdoll_effects_short:0 "$decision_planet_pop_to_sfdoll_desc$"
+
+pc_gf_sfdoll_embers_gloomy:0 "Dimmed Ashes"
+pc_gf_sfdoll_embers_gloomy_desc:0 "Rocky planet with harsh weather, atmosphere contains  thick clouds of collapse particles and collapsation storms, radiation brought by these is very deadly to both organisms and electronics. High local radiation makes it hard for most organisms to survive, apart from limited strains of mutated aggregated organisms. "

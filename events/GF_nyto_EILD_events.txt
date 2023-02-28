@@ -1,0 +1,1749 @@
+###EILD事件###
+namespace = GFnytoeild
+@Eildtime = 1
+#事件开始
+planet_event = {
+	id = GFnytoeild.1
+	title = "GFnytoeild.1.name"
+	desc = "GFnytoeild.1.desc"
+	picture = GFX_evt_GFnyto_eild_collapse_biosphere
+	show_sound = event_activating_unknown_technology
+	location = ROOT
+	trackable = yes
+	is_triggered_only = yes
+	pre_triggers = {
+		has_owner = yes
+		is_homeworld = yes
+		original_owner = yes
+		has_ground_combat = no
+		is_capital = yes
+		is_occupied_flag = no
+	}
+	trigger = {
+		owner = {
+			has_origin = origin_GF_nyto_the_last_light
+			NOT = {
+				has_civic = civic_GF_nyto_heart_of_suffering
+			}
+		}
+	}
+	immediate = {
+		hidden_effect = {
+			planet_event = {
+				id = GFnytoeild.41
+				random = 30
+				days = 120
+			}
+		}
+		create_army = {
+			owner = ROOT
+			type = GF_nyto_armor_train
+			species = ROOT
+		}
+	}
+	option = {
+		name = GFnytoeild.1.a
+		begin_event_chain = {
+			event_chain = "GFnyto_eild_attack_chain"
+			target = ROOT
+		}
+		enable_special_project = {
+			name = "GFnyto_defense_eild_attack_project"
+			location = ROOT
+			owner = root
+		}
+		add_modifier = {
+			modifier = "GFnyto_eild_attack"
+			days = -1
+		}
+		add_deposit = d_GFnyto_ancient_land_zone
+		add_deposit = d_GFnyto_black_zone
+	}
+}
+
+# EILD特殊项目1整修隔离墙完成
+planet_event = {
+	id = GFnytoeild.2
+	title = "GFnytoeild.2.name"
+	desc = "GFnytoeild.2.desc"
+	picture = GFX_evt_GFnyto_defense_eild_attack_project
+	show_sound = event_construction
+	location = ROOT
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			planet_event = {
+				id = GFnytoeild.3
+				random = 360
+				days = 500
+			}
+		}
+	}
+	option = {
+		name = NYTOWELLDONE
+		remove_deposit = d_GFnyto_ancient_land_zone
+		add_deposit = d_GFnyto_planetary_surface_defense_zone
+		add_deposit = d_GFnyto_planetary_orbit_defense_zone
+		add_modifier = {
+			modifier = GFnyto_planetary_defense_ready
+		}
+	}
+}
+
+#整修大型路基炮塔
+planet_event = {
+	id = GFnytoeild.3
+	title = "GFnytoeild.3.name"
+	desc = "GFnytoeild.3.desc"
+	show_sound = event_construction
+	picture = GFX_evt_GFnyto_defense_eild_attack_project_complete
+	is_triggered_only = yes
+	immediate = {
+		enable_special_project = {
+			name = GFnyto_defense_eild_attack_Land_base_station
+			location = root
+			owner = root
+		}
+	}
+	option = {
+		name = GFnytoeild.3.a
+	}
+}
+
+#修完
+planet_event = {
+	id = GFnytoeild.4
+	title = "GFnytoeild.4.name"
+	desc = "GFnytoeild.4.desc"
+	show_sound = event_construction
+	picture = GFX_evt_GFnyto_defense_eild_attack_project_complete
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			planet_event = {
+				id = GFnytoeild.31
+				random = 360
+				days = 3600
+			}
+			create_army = {
+				name = "城防巨炮"
+				owner = owner
+				species = owner_main_species
+				type = GF_nyto_Land_base_station
+			}
+			create_army = {
+				name = "城防巨炮"
+				owner = owner
+				species = owner_main_species
+				type = GF_nyto_Land_base_station
+			}
+			set_variable = {
+				which = has_Land_base_station
+				value = 2
+			}
+		}
+	}
+	option = {
+		name = GFnytoeild.4a
+	}
+}
+
+#当炮台被摧毁时给与重建炮台项目
+event = {
+	id = GFnytoeild.5
+	hide_window = yes
+	show_sound = event_construction
+	picture = GFX_evt_GFnyto_defense_eild_attack_project_complete
+	trigger = {
+		OR = {
+			AND = {
+				from = {
+					army_type = GF_nyto_Land_base_station
+				}
+				fromfromfrom = {
+					check_variable = {
+						which = has_Land_base_station
+						value > 0
+					}
+				}
+			}
+			from = {
+				army_type = GF_nyto_yaosai
+			}
+		}
+	}
+	is_triggered_only = yes
+	immediate = {
+		if = {
+			limit = {
+				from = {
+					army_type = GF_nyto_Land_base_station
+				}
+			}
+			fromfromfrom = {
+				change_variable = {
+					which = has_Land_base_station
+					value = -1
+				}
+			}
+			if = {
+				limit = {
+					fromfromfrom = {
+						check_variable = {
+							which = has_Land_base_station
+							value < 1
+						}
+					}
+				}
+				fromfromfrom = {
+					planet_event = {
+						id = GFnytoeild.6
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				from = {
+					army_type = GF_nyto_yaosai
+				}
+			}
+			fromfromfrom = {
+				remove_planet_flag = GF_nyto_yaosai
+			}
+		}
+	}
+}
+
+planet_event = {
+	id = GFnytoeild.6
+	title = "GFnytoeild.5.name"
+	desc = "GFnytoeild.5.desc"
+	show_sound = event_construction
+	is_triggered_only = yes
+	picture = GFX_evt_GFnyto_defense_eild_attack_project_complete
+	immediate = {
+		enable_special_project = {
+			name = GFnyto_defense_eild_attack_Land_base_station2
+			location = root
+			owner = root
+		}
+	}
+	option = {
+		name = GFnytoeild.5.a
+	}
+}
+
+#抢修完成
+planet_event = {
+	id = GFnytoeild.7
+	title = "GFnytoeild.6.name"
+	desc = "GFnytoeild.6.desc"
+	show_sound = event_construction
+	picture = GFX_evt_GFnyto_defense_eild_attack_project_complete
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			create_army = {
+				name = "城防巨炮"
+				owner = owner
+				species = owner_main_species
+				type = GF_nyto_Land_base_station
+			}
+			create_army = {
+				name = "城防巨炮"
+				owner = owner
+				species = owner_main_species
+				type = GF_nyto_Land_base_station
+			}
+			set_variable = {
+				which = has_Land_base_station
+				value = 2
+			}
+		}
+	}
+	option = {
+		name = GFnytoeild.6.a
+	}
+}
+
+#建立特殊项目2找到关停方法
+planet_event = {
+	id = GFnytoeild.31
+	title = "GFnytoeild.31.name"
+	desc = "GFnytoeild.31.desc"
+	picture = GFX_evt_GFnyto_find_close_ruin_project
+	show_sound = event_administrative_work
+	location = ROOT
+	trackable = yes
+	is_triggered_only = yes
+	option = {
+		name = GFnytoeild.31.a
+		enable_special_project = {
+			name = "GFnyto_find_close_ruin_project"
+			location = ROOT
+			owner = root
+		}
+	}
+}
+
+# EILD特殊项目2寻找关闭遗迹方法完成
+planet_event = {
+	id = GFnytoeild.32
+	title = "PROJECT_COMPLETE"
+	desc = "GFnytoeild.32.desc"
+	picture = GFX_evt_GFnyto_close_ruin_project
+	show_sound = event_administrative_work
+	location = ROOT
+	is_triggered_only = yes
+	option = {
+		name = NYTOMAYTHEFORCEBEWITHYOU
+		enable_special_project = {
+			name = "GFnyto_close_ruin_project"
+			location = ROOT
+			owner = root
+		}
+	}
+}
+
+# EILD特殊项目3关闭遗迹完成
+planet_event = {
+	id = GFnytoeild.33
+	title = "PROJECT_COMPLETE"
+	desc = "GFnytoeild.33.desc"
+	picture = GFX_evt_GFnyto_eild_attack_end
+	show_sound = event_whispering
+	location = ROOT
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			planet_event = {
+				id = GFnytoeild.34
+				random = 360
+				days = 3600
+			}
+			owner = {
+				create_message = {
+					type = GF_nyto_music_2
+					localization = "MESSAGE_GF_nyto_music_1"
+					days = 999
+					target = prev
+				}
+			}
+		}
+	}
+	option = {
+		name = NYTORECEIVE
+		remove_modifier = "GFnyto_eild_attack"
+		remove_planet_flag = GF_nyto_eild_attack_begin
+		if = {
+			limit = {
+				controller = {
+					is_country = event_target:EILD_country
+				}
+			}
+			set_controller = root
+		}
+		add_modifier = {
+			modifier = "GFnyto_eild_attack_end"
+			years = 10
+		}
+	}
+}
+
+#建立特殊项目4收容EILD
+planet_event = {
+	id = GFnytoeild.34
+	title = "GFnytoeild.34.name"
+	desc = "GFnytoeild.34.desc"
+	picture = GFX_evt_nyto_eild_army
+	show_sound = event_alien_nature
+	location = ROOT
+	trackable = yes
+	is_triggered_only = yes
+	option = {
+		name = GFnytoeild.34.a
+		enable_special_project = {
+			name = "study_GF_nyto_eild_army_project"
+			location = ROOT
+			owner = root
+		}
+	}
+}
+
+# 特殊项目4完成,创建EILD附属种族
+planet_event = {
+	id = GFnytoeild.35
+	title = "PROJECT_COMPLETE"
+	desc = "GFnytoeild.35.desc"
+	picture = GFX_evt_nyto_eild_army
+	show_sound = event_alien_nature
+	location = ROOT
+	is_triggered_only = yes
+	immediate = {
+		create_species = {
+			name = "ELID-infected"
+			class = "eild"
+			portrait = "GFnyto_eild"
+			traits = {
+				trait = trait_GF_nyto_loyal_ELID_infected
+				trait = trait_latent_psionic
+				trait = trait_nerve_stapled
+			}
+			effect = {
+				save_global_event_target_as = GFnyto_ELID_infected
+			}
+		}
+		create_pop = {
+			species = event_target:GFnyto_ELID_infected
+		}
+		create_pop = {
+			species = event_target:GFnyto_ELID_infected
+		}
+		create_pop = {
+			species = event_target:GFnyto_ELID_infected
+		}
+		create_pop = {
+			species = event_target:GFnyto_ELID_infected
+		}
+		create_pop = {
+			species = event_target:GFnyto_ELID_infected
+		}
+		event_target:GFnyto_ELID_infected = {
+			set_citizenship_type = {
+				type = citizenship_limited
+				country = root.owner
+			}
+		}
+	}
+	option = {
+		name = NYTOGETEILD
+		owner = {
+			if = {
+				limit = {
+					NOT = {
+						has_tech_option = tech_GF_nyto_EILD_brain_wave
+					}
+				}
+				add_research_option = tech_GF_nyto_EILD_brain_wave
+			}
+			add_tech_progress = {
+				tech = tech_GF_nyto_EILD_brain_wave
+				progress = 0.2
+			}
+		}
+	}
+}
+
+#花期
+country_event = {
+	id = GFnytoeild.51
+	title = GFnytoeild.51.name
+	desc = GFnytoeild.51.desc
+	message_desc = GFnytoeild.51.message
+	is_triggered_only = yes
+	picture = GFX_evt_GFnyto_global.5
+	trigger = {
+		NOT = {
+			has_country_flag = hide_GFnytoeild52
+		}
+	}
+	immediate = {
+		every_subject = {
+			every_owned_pop = {
+				limit = {
+					has_job = overlord_Epiphyllum
+				}
+				if = {
+					limit = {
+						root = {
+							has_civic = civic_Gf_nyto_tanhua_pluse
+						}
+					}
+					kill_pop = yes
+				}
+				root = {
+					change_variable = {
+						which = kill_pops_Epiphyllum
+						value = 1
+					}
+					set_country_flag = kill_pops_Epiphyllum_true
+				}
+			}
+		}
+		every_owned_planet = {
+			limit = {
+				NAND = {
+					num_assigned_jobs = {
+						job = GFnyto_Epiphyllum_job
+						value < 1
+					}
+					check_variable = {
+						which = GFnyto_plante_wrlv
+						value < 100
+					}
+					NOT = {
+						has_planet_flag = GF_nyto_eild_attack_begin
+					}
+				}
+				OR = {
+					NOT = {
+						has_planet_flag = GFnyto_no_tanhua
+					}
+					num_assigned_jobs = {
+						job = GFnyto_Epiphyllum_job
+						value > 1
+					}
+					has_planet_flag = GF_nyto_eild_attack_begin
+				}
+			}
+			add_modifier = {
+				modifier = GFnyto_flower_period
+				days = 31
+			}
+			if ={
+				limit = {
+					check_variable ={
+						which =  GFnyto_Eild_level
+						value < 50
+					}
+				}
+				change_variable = {
+					which = GFnyto_Eild_level
+					value = 8
+				}
+			} else_if = {
+				limit = {  
+					check_variable ={
+						which = GFnyto_Eild_level
+						value >= 50
+					}
+					check_variable ={
+						which = GFnyto_Eild_level
+						value < 100
+					}
+				}
+				multiply_variable ={
+					which = GFnyto_Eild_level
+					value = 1.3
+				}
+			} else_if = {
+				limit = { 
+					check_variable ={
+						which = GFnyto_Eild_level
+						value >= 100
+					}
+				}
+				multiply_variable ={
+					which = GFnyto_Eild_level
+					value = 1.1
+				}
+			}
+			# if = {
+			# 	limit = {
+			# 		check_variable = {
+			# 			which = GFnyto_Eild_level
+			# 			value > 5
+			# 		}
+			# 		check_variable = {
+			# 			which = GFnyto_Eild_level
+			# 			value < 100
+			# 		}
+			# 	}
+			# 	multiply_variable = {
+			# 		which = GFnyto_Eild_level
+			# 		value = 1.3
+			# 	}
+			# 	round_variable = GFnyto_Eild_level
+			# }
+			# else_if = {
+			# 	limit = {
+			# 		check_variable = {
+			# 			which = GFnyto_Eild_level
+			# 			value <= 50
+			# 		}
+			# 	}
+			# 	change_variable = {
+			# 		which = GFnyto_Eild_level
+			# 		value = 10
+			# 	}
+			# }
+			# else_if = {
+			# 	limit = {
+			# 		check_variable = {
+			# 			which = GFnyto_Eild_level
+			# 			value >= 100
+			# 		}
+			# 	}
+			# 	multiply_variable = {
+			# 		which = GFnyto_Eild_level
+			# 		value = 1.1
+			# 	}
+			# }
+			planet_event ={
+				id = GFnyto_global.5
+			}
+			#如果携带昙花国策
+			owner = {
+				set_country_flag = kill_pops_Epiphyllum_true
+			}			
+			#导出昙花job数量 产生高额污染度
+			if = {
+				limit = {
+					num_assigned_jobs = {
+						job = GFnyto_Epiphyllum_job
+						value > 0
+					}
+				}
+				export_trigger_value_to_variable = {
+					trigger = num_assigned_jobs
+					parameters = {
+						job = GFnyto_Epiphyllum_job
+					}
+					variable = Epiphyllum_job_num
+				}
+				if = {
+					limit = { 
+						is_variable_set = PR_FACTOR_plnt_JOB_GFnyto_Epiphyllum
+					}
+					change_variable = {
+						which = Epiphyllum_job_num
+						value = PR_FACTOR_plnt_JOB_GFnyto_Epiphyllum
+					}
+				}
+				multiply_variable = {
+					which = Epiphyllum_job_num
+					value = 5
+				}
+				change_variable = {
+					which = GFnyto_plante_wrlv
+					value = Epiphyllum_job_num
+				}
+				if = {
+					limit = {
+						NOT = {
+							is_planet_class = pc_GF_nyto_embers_gloomy
+						}
+					}
+					remove_modifier = GF_nyto_Radiation
+					add_modifier = {
+						modifier = GF_nyto_Radiation
+						multiplier = GFnyto_plante_wrlv
+					}
+				}
+				else_if = {
+					limit = {
+						is_planet_class = pc_GF_nyto_embers_gloomy
+					}
+					remove_modifier = GF_nyto_Radiation2
+					add_modifier = {
+						modifier = GF_nyto_Radiation2
+						multiplier = GFnyto_plante_wrlv
+					}
+				}
+			}
+		}
+		if = {
+			limit = { 
+				has_country_flag = kill_pops_Epiphyllum_true				
+			}
+			if = {
+				limit = { 
+					NOT = {
+						has_country_flag = GFnyto_global.5_hide
+					}
+					has_civic = civic_Gf_nyto_tanhua_pluse
+				}
+				country_event = {
+					id = GFnyto_global.501				
+				}
+			} else = {
+				country_event = {
+					id = GFnyto_global.502				
+				}
+			}
+
+		}
+	}
+	option = {
+		name = GFnytoeild.51a
+	}
+	option = {
+		name = GFnytoeild.51b
+		owner = {
+			set_country_flag = hide_GFnytoeild52
+		}
+	}
+}
+
+#隐藏窗口花期
+country_event = {
+	id = GFnytoeild.52
+	message_desc = GFnytoeild.51.message
+	hide_window = yes
+	is_triggered_only = yes
+	picture = GFX_evt_GFnyto_global.5
+	trigger = {
+		owner = {
+			has_country_flag = hide_GFnytoeild52
+		}
+	}
+	immediate = {
+		every_subject = {
+			every_owned_pop = {
+				limit = {
+					has_job = overlord_Epiphyllum
+				}
+				if = {
+					limit = {
+						root = {
+							has_civic = civic_Gf_nyto_tanhua_pluse
+						}
+					}
+					kill_pop = yes
+				}
+				root = {
+					change_variable = {
+						which = kill_pops_Epiphyllum
+						value = 1
+					}
+					set_country_flag = kill_pops_Epiphyllum_true
+				}
+			}
+		}
+		every_owned_planet = {
+			limit = {
+				NAND = {
+					num_assigned_jobs = {
+						job = GFnyto_Epiphyllum_job
+						value < 1
+					}
+					check_variable = {
+						which = GFnyto_plante_wrlv
+						value < 100
+					}
+					NOT = {
+						has_planet_flag = GF_nyto_eild_attack_begin
+					}
+				}
+				OR = {
+					NOT = {
+						has_planet_flag = GFnyto_no_tanhua
+					}
+					num_assigned_jobs = {
+						job = GFnyto_Epiphyllum_job
+						value > 1
+					}
+					has_planet_flag = GF_nyto_eild_attack_begin
+				}
+			}
+			add_modifier = {
+				modifier = GFnyto_flower_period
+				days = 31
+			}
+			if ={
+				limit = {
+					check_variable ={
+						which =  GFnyto_Eild_level
+						value < 50
+					}
+				}
+				change_variable = {
+					which = GFnyto_Eild_level
+					value = 8
+				}
+			} else_if = {
+				limit = {  
+					check_variable ={
+						which = GFnyto_Eild_level
+						value >= 50
+					}
+					check_variable ={
+						which = GFnyto_Eild_level
+						value < 100
+					}
+				}
+				multiply_variable ={
+					which = GFnyto_Eild_level
+					value = 1.3
+				}
+			} else_if = {
+				limit = { 
+					check_variable ={
+						which = GFnyto_Eild_level
+						value >= 100
+					}
+				}
+				multiply_variable ={
+					which = GFnyto_Eild_level
+					value = 1.1
+				}
+			}
+			# if = {
+			# 	limit = {
+			# 		check_variable = {
+			# 			which = GFnyto_Eild_level
+			# 			value > 5
+			# 		}
+			# 		check_variable = {
+			# 			which = GFnyto_Eild_level
+			# 			value < 100
+			# 		}
+			# 	}
+			# 	multiply_variable = {
+			# 		which = GFnyto_Eild_level
+			# 		value = 1.3
+			# 	}
+			# 	round_variable = GFnyto_Eild_level
+			# }
+			# else_if = {
+			# 	limit = {
+			# 		check_variable = {
+			# 			which = GFnyto_Eild_level
+			# 			value <= 50
+			# 		}
+			# 	}
+			# 	change_variable = {
+			# 		which = GFnyto_Eild_level
+			# 		value = 10
+			# 	}
+			# }
+			# else_if = {
+			# 	limit = {
+			# 		check_variable = {
+			# 			which = GFnyto_Eild_level
+			# 			value >= 100
+			# 		}
+			# 	}
+			# 	multiply_variable = {
+			# 		which = GFnyto_Eild_level
+			# 		value = 1.1
+			# 	}
+			# }
+			planet_event ={
+				id = GFnyto_global.5
+			}
+			#如果携带昙花国策
+			owner = {
+				set_country_flag = kill_pops_Epiphyllum_true
+			}			
+			#导出昙花job数量 产生高额污染度
+			if = {
+				limit = {
+					num_assigned_jobs = {
+						job = GFnyto_Epiphyllum_job
+						value > 0
+					}
+				}
+				export_trigger_value_to_variable = {
+					trigger = num_assigned_jobs
+					parameters = {
+						job = GFnyto_Epiphyllum_job
+					}
+					variable = Epiphyllum_job_num
+				}
+				if = {
+					limit = { 
+						is_variable_set = PR_FACTOR_plnt_JOB_GFnyto_Epiphyllum
+					}
+					change_variable = {
+						which = Epiphyllum_job_num
+						value = PR_FACTOR_plnt_JOB_GFnyto_Epiphyllum
+					}
+				}
+				multiply_variable = {
+					which = Epiphyllum_job_num
+					value = 5
+				}
+				change_variable = {
+					which = GFnyto_plante_wrlv
+					value = Epiphyllum_job_num
+				}
+				if = {
+					limit = {
+						NOT = {
+							is_planet_class = pc_GF_nyto_embers_gloomy
+						}
+					}
+					remove_modifier = GF_nyto_Radiation
+					add_modifier = {
+						modifier = GF_nyto_Radiation
+						multiplier = GFnyto_plante_wrlv
+					}
+				}
+				else_if = {
+					limit = {
+						is_planet_class = pc_GF_nyto_embers_gloomy
+					}
+					remove_modifier = GF_nyto_Radiation2
+					add_modifier = {
+						modifier = GF_nyto_Radiation2
+						multiplier = GFnyto_plante_wrlv
+					}
+				}
+			}
+		}
+		if = {
+			limit = { 
+				has_country_flag = kill_pops_Epiphyllum_true				
+			}
+			if = {
+				limit = { 
+					NOT = {
+						has_country_flag = GFnyto_global.5_hide
+					}
+					has_civic = civic_Gf_nyto_tanhua_pluse
+				}
+				country_event = {
+					id = GFnyto_global.501				
+				}
+			} else = {
+				country_event = {
+					id = GFnyto_global.502				
+				}
+			}
+
+		}
+	}
+}
+
+#EILD进攻初始化
+planet_event = {
+	id = GFnytoeild.41
+	title = "GFnytoeild.41.name"
+	desc = "GFnytoeild.41.desc"
+	picture = GFX_evt_GFnyto_eild_attack_begin
+	show_sound = event_ground_battle
+	location = ROOT
+	auto_opens = yes
+	is_triggered_only = yes
+	pre_triggers = {
+		has_owner = yes
+		is_homeworld = yes
+		original_owner = yes
+		has_ground_combat = no
+	}
+	trigger = {
+		owner = {
+			is_ai = no
+			has_origin = origin_GF_nyto_the_last_light
+		}
+	}
+	immediate = {
+		set_planet_flag = GF_nyto_eild_attack_begin
+		planet_event = {
+			id = GFnytoeild.44
+			days = 720
+		}
+		create_country = {
+			name = "EILD"
+			type = faction
+			auto_delete = no
+			effect = {
+				establish_communications_no_message = root.owner
+				establish_contact = {
+					who = root.owner
+					location = root.solar_system
+				}
+				save_global_event_target_as = EILD_country
+				create_species = {
+					name = "EILD"
+					class = eild
+					portrait = random
+					traits = random
+					effect = {
+						save_global_event_target_as = ELID_species
+					}
+				}
+			}
+		}
+		create_army = {
+			name = "EILD"
+			owner = event_target:EILD_country
+			species = event_target:ELID_species
+			type = "GF_nyto_eild_army_1"
+		}
+	}
+	option = {
+		name = GFnytoeild.4.a
+	}
+}
+
+#EIlD头目
+planet_event={
+	id = GFnytoeild.48
+	title = "GFnytoeild.48.nam"
+	desc = "GFnytoeild.48.desc"
+	picture = "xx"
+	is_triggered_only = yes
+	immediate = {
+		#创建头
+	}
+}
+
+
+#依据危险度循环进攻阶段
+planet_event = {
+	id = GFnytoeild.44
+	title = "GFnytoeild.43.name"
+	desc = "GFnytoeild.43.desc"
+	picture = GFX_evt_GFnyto_eild_attack_begin
+	show_sound = event_ground_battle
+	is_triggered_only = yes
+	trigger = {
+		OR = {
+			has_planet_flag = GF_nyto_eild_attack_begin
+			has_planet_flag = GFnyto_colony_eild_attack_begin
+		}
+	}
+	immediate = {
+		if ={
+			limit ={
+				exists = owner
+			}
+			event_target:EILD_country = {
+				if = {
+					limit = {
+						prev = {
+							is_homeworld = yes								
+						}
+						NOT = {
+							has_country_flag = GF_nyto_elid_attack_damge_colodown
+						}
+					}
+					if = {
+						limit = {
+							count_country = {
+								count > 1
+								limit = { has_authority = auth_GF_paradeus }
+							}
+						}
+						set_country_flag = GF_nyto_elid_attack_damge_colodown
+					}
+					change_variable = {
+						which = Elidlevel
+						value = 1.2
+					}
+					remove_modifier = GF_nyto_Elid_level
+					add_modifier = {
+						modifier = GF_nyto_Elid_level
+						multiplier = Elidlevel
+					}
+				}
+				if = {
+					limit = {
+						OR = {
+							has_country_flag = GFnyto_Eild_hunting_S
+							has_country_flag = GFnyto_Eild_hunting_M
+							has_country_flag = GFnyto_Eild_hunting_L
+						}
+					}
+					prev.owner = {
+						prevprev = {
+							planet_event = {
+								id = GFnytoeild.59
+							}
+							event_target:EILD_country = {
+								every_owned_army = {
+									remove_army = yes
+								}
+							}																	
+						}
+					}
+				}
+				if = {
+					limit = {
+						has_country_flag = GF_nyto_elid_attack_damge_colodown
+					}
+					remove_country_flag = GF_nyto_elid_attack_damge_colodown
+				}			
+			}
+			GF_nyto_elid_attack = yes
+		}
+		#每3年检测一次
+		planet_event = {
+			id = GFnytoeild.44
+			days = 720
+			random = 120
+		}
+	}
+}
+
+#每次胜利获得资源  危险度下降0.2  给与陆军将领难度系数的经验
+event = {
+	id = GFnytoeild.441
+	title = "GFnytoeild.44a.name"
+	desc = "GFnytoeild.44a.desc"
+	picture = GFX_evt_GFnyto_eild_attack_begin
+	show_sound = event_ground_battle
+	is_triggered_only = yes
+	trigger = {
+		root = {
+			has_authority = auth_GF_paradeus
+		}
+		from = {
+			is_country = event_target:EILD_country
+			NOT = {
+				has_country_flag = GFnyto_Eild_hunting_S
+				has_country_flag = GFnyto_Eild_hunting_M
+				has_country_flag = GFnyto_Eild_hunting_L
+			}
+		}
+		fromfrom = {
+			check_variable = {
+				which = GFnyto_Eild_level
+				value > 0
+			}
+		}
+	}
+	immediate = {
+		fromfrom = {
+			multiply_variable = {
+				which = GFnyto_Eild_level
+				value = 0.8
+			}
+		}
+	}
+	option = {
+		name = GFnytoeild.44ab
+		root = {
+			if = {
+				limit = {
+					has_civic = civic_GF_nyto_reup
+				}
+				add_resource = {
+					minerals = 300
+					mult = fromfrom.GFnyto_Eild_level
+				}
+				add_resource = {
+					GF_nyto_collapse_liquid = 20
+					mult = fromfrom.GFnyto_Eild_level
+				}
+				add_resource = {
+					unity = 100
+					mult = fromfrom.GFnyto_Eild_level
+				}
+				add_resource = {
+					energy = 100
+					mult = fromfrom.GFnyto_Eild_level
+				}
+				add_resource = {
+					alloys = 20
+					mult = fromfrom.GFnyto_Eild_level
+				}
+			}
+			else = {
+				add_resource = {
+					minerals = 100
+					mult = fromfrom.GFnyto_Eild_level
+				}
+				add_resource = {
+					GF_nyto_collapse_liquid = 20
+					mult = fromfrom.GFnyto_Eild_level
+				}
+				add_resource = {
+					unity = 50
+					mult = fromfrom.GFnyto_Eild_level
+				}
+				add_resource = {
+					alloys = 10
+					mult = fromfrom.GFnyto_Eild_level
+				}
+			}
+		}
+		hidden_effect = {
+			fromfrom = {
+				random_planet_army = {
+					limit = {
+						exists = leader
+					}
+					leader = {
+						set_variable = {
+							which = GFnyto_army_leader_exp
+							value = 100
+						}
+						multiply_variable = {
+							which = GFnyto_army_leader_exp
+							value = prevprev.GFnyto_Eild_level
+						}
+						add_experience = GFnyto_army_leader_exp
+					}
+				}
+			}
+		}
+		ai_chance = {
+			factor = 999
+		}
+	}
+}
+
+#EILD狩猎
+planet_event = {
+	id = GFnytoeild.54
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		random_list = {
+			50 = {
+				planet_event = {
+					id = GFnytoeild.55
+				}
+				modifier = {
+					factor = 0.5
+					check_variable = {
+						which = GFnyto_Eild_level
+						value > 20
+					}
+				}
+				modifier = {
+					factor = 0
+					check_variable = {
+						which = GFnyto_Eild_level
+						value > 50
+					}
+				}
+			}
+			#小
+			30 = {
+				planet_event = {
+					id = GFnytoeild.56
+				}
+				modifier = {
+					factor = 2
+					check_variable = {
+						which = GFnyto_Eild_level
+						value > 20
+					}
+				}
+			}
+			#中
+			20 = {
+				planet_event = {
+					id = GFnytoeild.57
+				}
+				modifier = {
+					factor = 1.5
+					check_variable = {
+						which = GFnyto_Eild_level
+						value > 50
+					}
+				}
+			}
+			#大
+		}
+	}
+}
+
+#小
+planet_event = {
+	id = GFnytoeild.55
+	title = GFnytoeild.55.name
+	desc = GFnytoeild.55.desc
+	picture = GFX_evt_GFnyto_eild_attack_begin
+	is_triggered_only = yes
+	immediate = {
+		event_target:EILD_country = {
+			set_country_flag = GFnyto_Eild_hunting_S
+		}
+		while = {
+			count = GFnyto_Eild_level
+			random_list = {
+				70 = {
+					create_army = {
+						owner = event_target:EILD_country
+						type = GF_nyto_eild_army_1
+						species = event_target:ELID_species
+					}
+				}
+				20 = {
+					create_army = {
+						owner = event_target:EILD_country
+						type = GF_nyto_eild_army_2
+						species = event_target:ELID_species
+					}
+				}
+				10 = {
+					break = yes
+				}
+			}
+		}
+	}
+	option = {
+		name = "GFnytoeild.55.a"
+	}
+}
+
+#中
+planet_event = {
+	id = GFnytoeild.56
+	title = GFnytoeild.56.name
+	desc = GFnytoeild.56.desc
+	picture = GFX_evt_GFnyto_eild_attack_begin
+	is_triggered_only = yes
+	immediate = {
+		event_target:EILD_country = {
+			set_country_flag = GFnyto_Eild_hunting_M
+		}
+		while = {
+			count = GFnyto_Eild_level
+			random_list = {
+				50 = {
+					create_army = {
+						owner = event_target:EILD_country
+						type = GF_nyto_eild_army_1
+						species = event_target:ELID_species
+					}
+				}
+				40 = {
+					create_army = {
+						owner = event_target:EILD_country
+						type = GF_nyto_eild_army_2
+						species = event_target:ELID_species
+					}
+				}
+				10 = {
+					create_army = {
+						owner = event_target:EILD_country
+						type = GF_nyto_eild_army_3
+						species = event_target:ELID_species
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = "GFnytoeild.56.a"
+	}
+}
+
+#大
+planet_event = {
+	id = GFnytoeild.57
+	title = GFnytoeild.57.name
+	desc = GFnytoeild.57.desc
+	picture = GFX_evt_GFnyto_eild_attack_begin
+	is_triggered_only = yes
+	immediate = {
+		event_target:EILD_country = {
+			set_country_flag = GFnyto_Eild_hunting_L
+		}
+		while = {
+			count = GFnyto_Eild_level
+			random_list = {
+				20 = {
+					create_army = {
+						owner = event_target:EILD_country
+						type = GF_nyto_eild_army_1
+						species = event_target:ELID_species
+					}
+				}
+				50 = {
+					create_army = {
+						owner = event_target:EILD_country
+						type = GF_nyto_eild_army_2
+						species = event_target:ELID_species
+					}
+				}
+				30 = {
+					create_army = {
+						owner = event_target:EILD_country
+						type = GF_nyto_eild_army_3
+						species = event_target:ELID_species
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = "GFnytoeild.57a"
+	}
+}
+
+#EILD狩猎成功
+event = {
+	id = GFnytoeild.58
+	title = GFnytoeild.58.name
+	desc = GFnytoeild.58.desc
+	picture = GFX_evt_GFnyto_eild_attack_begin
+	is_triggered_only = yes
+	trigger = {
+		from = {
+			is_country = event_target:EILD_country
+			OR = {
+				has_country_flag = GFnyto_Eild_hunting_S
+				has_country_flag = GFnyto_Eild_hunting_M
+				has_country_flag = GFnyto_Eild_hunting_L
+			}
+		}
+	}
+	immediate = {
+		if = {
+			limit = {
+				from = {
+					has_country_flag = GFnyto_Eild_hunting_S
+				}
+			}
+			fromfrom = {
+				if = {
+					limit = {
+						check_variable = {
+							which = GFnyto_Eild_level
+							value < 10
+						}
+					}
+					multiply_variable = {
+						which = GFnyto_Eild_level
+						value = 0.9
+					}
+				}
+				else = {
+					subtract_variable = {
+						which = GFnyto_Eild_level
+						value = 1
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				from = {
+					has_country_flag = GFnyto_Eild_hunting_M
+				}
+			}
+			fromfrom = {
+				if = {
+					limit = {
+						check_variable = {
+							which = GFnyto_Eild_level
+							value <= 30
+						}
+					}
+					multiply_variable = {
+						which = GFnyto_Eild_level
+						value = 0.9
+					}
+				}
+				else = {
+					subtract_variable = {
+						which = GFnyto_Eild_level
+						value = 4
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				from = {
+					has_country_flag = GFnyto_Eild_hunting_L
+				}
+			}
+			fromfrom = {
+				multiply_variable = {
+					which = GFnyto_Eild_level
+					value = 0.8
+				}
+			}
+		}
+		event_target:EILD_country = {
+			remove_country_flag = GFnyto_Eild_hunting_S
+			remove_country_flag = GFnyto_Eild_hunting_M
+			remove_country_flag = GFnyto_Eild_hunting_L
+		}
+	}
+	option = {
+		name = GFnytoeild.58a
+		root = {
+			if = {
+				limit = {
+					has_civic = civic_GF_nyto_reup
+				}
+				add_resource = {
+					minerals = 300
+					mult = fromfrom.GFnyto_Eild_level
+				}
+				add_resource = {
+					GF_nyto_collapse_liquid = 20
+					mult = fromfrom.GFnyto_Eild_level
+				}
+				add_resource = {
+					unity = 200
+					mult = fromfrom.GFnyto_Eild_level
+				}
+				add_resource = {
+					energy = 50
+					mult = fromfrom.GFnyto_Eild_level
+				}
+			}
+			else = {
+				add_resource = {
+					minerals = 150
+					mult = fromfrom.GFnyto_Eild_level
+				}
+				add_resource = {
+					GF_nyto_collapse_liquid = 10
+					mult = fromfrom.GFnyto_Eild_level
+				}
+				add_resource = {
+					unity = 100
+					mult = fromfrom.GFnyto_Eild_level
+				}
+			}
+			hidden_effect = {
+				fromfrom = {
+					random_planet_army = {
+						limit = {
+							exists = leader
+						}
+						leader = {
+							set_variable = {
+								which = GFnyto_army_leader_exp
+								value = 50
+							}
+							multiply_variable = {
+								which = GFnyto_army_leader_exp
+								value = prevprev.GFnyto_Eild_level
+							}
+							add_experience = GFnyto_army_leader_exp
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+#狩猎中断
+planet_event = {
+	id = GFnytoeild.59
+	picture = GFX_evt_GFnyto_eild_attack_begin
+	title = GFnytoeild.59.name
+	desc = GFnytoeild.59.desc
+	message_desc = GFnytoeild.59.message
+	is_triggered_only = yes
+	hide_window = no
+	immediate = {
+		event_target:EILD_country = {
+			remove_country_flag = GFnyto_Eild_hunting_S
+			remove_country_flag = GFnyto_Eild_hunting_M
+			remove_country_flag = GFnyto_Eild_hunting_L
+		}
+	}
+	option = {
+		name = GFnytoeild.59a
+	}
+}
+
+#第一次抵抗失败
+event = {
+	id = GFnytoeild.45
+	title = "GFnytoeild.45.name"
+	desc = "GFnytoeild.45.desc"
+	picture = GFX_evt_GFnyto_Elid_attack_lose
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		fromfrom = {
+			is_capital = yes
+			has_planet_flag = GF_nyto_eild_attack_begin
+			NOT = {
+				has_planet_flag = GF_nyto_GG
+			}
+		}
+	}
+	immediate = {
+		this = {
+			remove_country_flag = GFnyto_Eild_hunting_S
+			remove_country_flag = GFnyto_Eild_hunting_M
+			remove_country_flag = GFnyto_Eild_hunting_L
+		}
+	}
+	after = {
+		if = {
+			limit = {
+				fromfrom = {
+					controller = {
+						is_country = event_target:EILD_country
+					}
+					NOT = {
+						has_planet_flag = GF_nyto_GG
+					}
+				}
+			}
+			fromfrom = {
+				set_planet_flag = GF_nyto_GG
+				planet_event = {
+					id = GFnytoeild.47
+					days = 120
+					random = 30
+				}
+			}
+		}
+	}
+	option = {
+		trigger = {
+			fromfrom = {
+				NOT = {
+					has_planet_flag = GF_nyto_GG
+				}
+			}
+		}
+		default_hide_option = yes
+		name = "GFnytoeild.45a"
+		ai_chance = {
+			factor = 99999			
+		}
+	}
+}
+
+#第二次失败 GG
+event = {
+	id = GFnytoeild.46
+	title = "GFnytoeild.46.name"
+	desc = "GFnytoeild.46.desc"
+	picture = GFX_evt_GFnyto_Elid_attack_lose
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		fromfrom = {
+			is_capital = yes
+			has_planet_flag = GF_nyto_eild_attack_begin
+			has_planet_flag = GF_nyto_GG
+		}
+	}
+	immediate = {
+		fromfrom = {
+			destroy_colony = yes
+			every_owned_pop = {
+				kill_pop = yes
+			}
+			set_planet_name = "寄了"
+			owner = {
+				create_message = {
+					type = GF_nyto_music_1
+					localization = "MESSAGE_GF_nyto_music_1"
+					days =999
+					target = prev
+				}
+			}
+		}
+	}
+	option = {
+		name = GFnytoeild.46a
+	}
+}
+
+#第一次战败复活
+planet_event = {
+	id = GFnytoeild.47
+	title = "GFnytoeild.47.name"
+	desc = "GFnytoeild.47.desc"
+	fire_only_once = yes
+	picture = GFX_evt_GFnyto_Elid_attack_lose2
+	is_triggered_only = yes
+	pre_triggers = {
+		is_capital = yes
+	}
+	trigger = {
+		controller = {
+			is_country = event_target:EILD_country
+		}
+	}
+	immediate = {
+		set_planet_name = "寄了！但没有完全寄"
+		set_controller = root
+		set_timed_planet_flag = {
+			flag = GFnyto_EIld_aatack_GG
+			years = 3
+		}
+		while = {
+			count = 10
+			random_owned_pop = {
+				kill_pop = yes
+			}
+		}
+		while = {
+			count = 4
+			create_army = {
+				name = "城市守卫军"
+				owner = root
+				type = GF_nyto_armor_train
+			}
+		}
+	}
+	option = {
+		name = "GFnytoeild.47a"
+	}
+}
+
+#殖民被坍缩液轰炸星球
+planet_event = {
+	id = GFnytoeild.10
+	title = "GFnytoeild.10.name"
+	desc = "GFnytoeild.10.desc"
+	picture = GFX_evt_GFnyto_eild_collapse_biosphere
+	show_sound = event_activating_unknown_technology
+	location = ROOT
+	trackable = yes
+	is_triggered_only = yes
+	pre_triggers = {
+		has_owner = yes
+		is_homeworld = no
+		original_owner = yes
+		has_ground_combat = no
+		is_capital = no
+		is_occupied_flag = no
+	}
+	trigger = {
+		owner = {
+			has_origin = origin_GF_nyto_the_last_light
+		}
+		has_planet_flag = gfnyto_collapse_liquid_nuked
+	}
+	immediate = {
+		set_planet_flag = GFnyto_colony_eild_attack_begin
+		set_variable = {
+			which = GFnyto_Eild_level
+			value = 5
+		}
+		add_deposit = d_GFnyto_black_zone
+		add_modifier = {
+			modifier = "GFnyto_eild_attack"
+			days = -1
+		}
+		planet_event = {
+			id = GFnytoeild.44
+			days = 360
+			random = 80
+		}
+	}
+	option = {
+		name = GFnytoeild.10.a
+		begin_event_chain = {
+			event_chain = "GFnyto_colony_eild_attack_chain"
+			target = ROOT
+		}
+		enable_special_project = {
+			name = "defense_colony_GF_nyto_eild_attack_project"
+			location = ROOT
+			owner = root.owner
+		}
+	}
+}
+
+# 殖民地EILD特殊项目完成
+planet_event = {
+	id = GFnytoeild.11
+	title = "PROJECT_COMPLETE"
+	desc = "GFnytoeild.11.desc"
+	picture = GFX_evt_colony_nyto_eild_attack_end
+	show_sound = event_ground_battle
+	location = ROOT
+	is_triggered_only = yes
+	option = {
+		name = NYTTOWELLDONE:
+		remove_modifier = "GFnyto_eild_attack"
+		remove_planet_flag = GFnyto_colony_eild_attack_begin
+		remove_planet_flag = gfnyto_collapse_liquid_nuked
+	}
+}
+

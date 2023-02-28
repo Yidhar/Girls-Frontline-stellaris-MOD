@@ -1,0 +1,113 @@
+﻿l_english:
+###############################
+trait_gf_sfdoll:0"SF Doll"
+trait_gf_sfdoll_desc:0 "SF Dolls are a kind of autonomous dolls, first developed by Sangvis Ferri Company.\n\n Their neural clouds store memory, which can be transferred and backed up."
+
+trait_sfdoll_ogas_protocol:0 "SF All-purpose Antenna"
+trait_sfdoll_ogas_protocol_desc:0 "This external antenna can amplify the communication signal of the SF Dolls, and comes with various functions such as WIFI and remote control."
+
+trait_sfdoll_energy:0"Specializing in energy"
+trait_sfdoll_energy_desc:0"These SF Dolls focus on producing and using energy"
+
+trait_sfdoll_mining:0 "Power Drills"
+trait_sfdoll_mining_desc:0 "SF Dolls are equipped with a drill, so everything is mine"
+
+trait_sfdoll_goods:0 "Specializing in Light Industry"
+trait_sfdoll_goods_desc:0 "These SF Dolls are good at light industrial production" 
+
+trait_sfdoll_alloys:0 "Specializing in Heavy Industry"
+trait_sfdoll_alloys_desc:0 "These SF Dolls are good at heavy industrial production"
+
+trait_sfdoll_asst:0"SF ASST-System"
+trait_sfdoll_asst_desc:0 "SF Dolls are equipped with ASST-System, which allow them to perform High-speed data synchronization with tailor-made devices"
+
+trait_sfdaoll_battle:0"Specializing in fighting"
+trait_sfdaoll_battle_desc:0"These SF Dolls can be equipped with advanced combat systems"
+
+trait_sfdoll_logic_engine:0 "SF Learning Algorithm"
+trait_sfdoll_logic_engine_desc:0 "These SF Dolls can continue to learn knowledge and develop character without being limited by the factory settings."
+
+trait_sfdoll_conservation:0 "Thrifty"
+trait_sfdoll_conservation_desc:0 "Saving is SF Dolls' virtue"
+
+trait_sfdoll_assembly:0"High-speed Assembly"
+trait_sfdoll_assembly_desc:0"The design of their bodies ensures assembly efficiency"
+
+# trait_sfdoll_ogas_command:0"子机指挥系统"
+# trait_sfdoll_ogas_command_desc:0"通过OGAS协议，这些铁血人形可以操作大量机械进行劳动"
+
+trait_light_sfdoll:0 "Light Body"
+trait_light_sfdoll_desc:0 "These SF Dolls have light bodies"
+
+trait_heavy_sfdoll:0 "Heavy Body"
+trait_heavy_sfdoll_desc:0 "These SF Dolls have heavy bodies"
+
+trait_sfdoll_energy_upkeep:0 "High maintenance fee"
+trait_sfdoll_energy_upkeep_desc:0"These SF Dolls' bodies are expensive to maintain"
+
+trait_sfdoll_assembly_slowly:0"Low-speed Assembly"
+trait_sfdoll_assembly_slowly_desc:0 "It takes time to assemble these SF Dolls"
+
+trait_sfdoll_high_bandwidth:0 "Inefficient Communication"
+trait_sfdoll_high_bandwidth_desc:0 "These SF Dolls have insufficient information transmission capabilities"
+
+
+#update
+trait_sfdoll_efficient_produce:0 "New Sangvis Ferri"
+trait_sfdoll_efficient_produce_desc:0 "The body performance of these SF Dolls has been comprehensively improved"
+
+trait_sfdoll_logic_engine_2:0"Evolution of Digi-Mind"
+trait_sfdoll_logic_engine_2_desc:0 "SF Dolls' new digi-mind system integrates various achievements of AI sciences. Now, their logic and learning ability have reached a new height."
+
+trait_sfdoll_engineer:0 "Uncanny Workmanship"
+trait_sfdoll_engineer_desc:0 "These SF Dolls have extraordinary engineering talents"
+
+trait_sfdoll_war_2:0 "Specializing in Military"
+trait_sfdoll_war_2_desc:0 "These SF Dolls have advanced military knowledge and powerful combat capability"
+
+trait_sfdoll_industry:0 "Specializing in Industry"
+trait_sfdoll_industry_desc:0 "These SF Dolls are good at various kinds of industries"
+
+trait_sfdoll_logic_engine_2_modifier:0 "$trait_sfdoll_logic_engine_2$"
+trait_sfdoll_logic_engine_2_modifier_desc:0 "$trait_sfdoll_logic_engine_2_desc$"
+trait_sfdoll_engineer_modifier:0 "$trait_sfdoll_engineer$"
+trait_sfdoll_engineer_modifier_desc:0 "$trait_sfdoll_engineer_desc$"
+trait_sfdoll_war_2_modifier:0 "$trait_sfdoll_war_2$"
+trait_sfdoll_war_2_modifier_desc:0 "$trait_sfdoll_war_2_desc$"
+
+#leader
+leader_governor_trait_gf_sfdoll:0"SF Doll"
+leader_governor_trait_gf_sfdoll_desc:0 "This Governor is a SF Doll who can make full use of the OGAS network to reasonably arrange affairs within his jurisdiction."
+
+leader_scientist_trait_gf_sfdoll:0 "$leader_governor_trait_gf_sfdoll$"
+leader_scientist_trait_gf_sfdoll_desc:0 "This scientist is a SF Doll who can quickly connect to the database for support."
+
+leader_admiral_trait_gf_sfdoll:0 "$leader_governor_trait_gf_sfdoll$"
+leader_admiral_trait_gf_sfdoll_desc:0 "This fleet commander is a SF Doll who can quickly calculate the fleet's battle plan."
+
+leader_general_trait_gf_sfdoll:0 "$leader_governor_trait_gf_sfdoll$"
+leader_general_trait_gf_sfdoll_desc:0 "This general is a SF Doll whose command system can effectively deal with the ever-changing battlefield."
+
+leader_ruler_trait_gf_sfdoll:0 "$leader_governor_trait_gf_sfdoll$"
+leader_ruler_trait_gf_sfdoll_desc:0 "This ruler is an SF Doll capable of using the vast network to aid decision-making."
+
+#####升级特质
+leader_governor_trait_gf_sfdoll_2:0"New Sangvis Ferri"
+leader_governor_trait_gf_sfdoll_2_desc:0 "This leader has been upgraded to do its job better."
+
+leader_scientist_trait_gf_sfdoll_2:0 "$leader_governor_trait_gf_sfdoll_2$"
+leader_scientist_trait_gf_sfdoll_2_desc:0"$leader_governor_trait_gf_sfdoll_2_desc$"
+
+leader_admiral_trait_gf_sfdoll_2:0"$leader_governor_trait_gf_sfdoll_2$"
+leader_admiral_trait_gf_sfdoll_2_desc:0"$leader_governor_trait_gf_sfdoll_2_desc$"
+
+leader_general_trait_gf_sfdoll_2:0"$leader_governor_trait_gf_sfdoll_2$"
+leader_general_trait_gf_sfdoll_2_desc:0"$leader_governor_trait_gf_sfdoll_2_desc$"
+
+leader_ruler_trait_gf_sfdoll_2:0"$leader_governor_trait_gf_sfdoll_2$"
+leader_ruler_trait_gf_sfdoll_2_desc:0"$leader_governor_trait_gf_sfdoll_2_desc$"
+
+
+
+
+

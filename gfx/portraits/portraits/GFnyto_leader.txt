@@ -1,0 +1,17 @@
+portraits = {
+	Yegor = {
+		texturefile = "gfx/models/portraits/GFnyto_nyto/GFnyto_nyto_Yegor.png"
+	}
+	Dandelion001 = {
+		texturefile = "gfx/models/portraits/GFnyto_nyto/GFnyto_nyto_Dandelion001.png"
+	}
+	Dandelion002 = {
+		texturefile = "gfx/models/portraits/GFnyto_nyto/GFnyto_nyto_Dandelion002.png"
+	}
+	Dandelion003 = {
+		texturefile = "gfx/models/portraits/GFnyto_nyto/GFnyto_nyto_Dandelion003.png"
+	}
+	Lycoris = {
+		texturefile = "gfx/models/portraits/GFnyto_nyto/GFnyto_nyto_Lycoris.png"
+	}
+}

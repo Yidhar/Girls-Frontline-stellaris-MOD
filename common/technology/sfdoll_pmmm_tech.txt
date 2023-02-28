@@ -1,0 +1,11 @@
+tech_sfdoll_magic = {
+	cost = @tier5cost3
+	tier = 5
+	area = physics
+	category = { field_manipulation }
+	is_rare = yes
+	is_dangerous = yes
+	icon = tech_repeatable_sfdoll_phy
+	potential = { has_authority = auth_gf_sfdoll }
+	weight = 0
+}

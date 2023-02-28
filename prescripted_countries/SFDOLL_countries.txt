@@ -1,0 +1,65 @@
+"SFDOLL_country" ={
+	ship_prefix=""
+	species={
+		class=  "gf_sfdoll"
+		portrait= "gf_sf_doll_group"
+		name="PRESCRIPTED_species_sfdoll_1"
+		plural="PRESCRIPTED_species_plural_sfdoll_1"
+		adjective="PRESCRIPTED_species_adjective_sfdoll_1"
+		name_list= "HUM4"
+		trait= "trait_gf_sfdoll"
+		trait = "trait_sfdoll_ogas_protocol"
+		trait = "trait_sfdoll_logic_engine"
+		trait = "trait_sfdoll_asst"
+		trait = "trait_sfdoll_energy_upkeep"
+		trait = "trait_heavy_sfdoll"
+		trait = "trait_sfdoll_assembly_slowly"
+	}
+	#key
+	name="PRESCRIPTED_sfdoll_1"
+	adjective="PRESCRIPTED_adjective_sfdoll_1"
+	authority= "auth_gf_sfdoll"
+	government= "gov_civic_sfdoll_commonwealth"
+	planet_name="PRESCRIPTED_planet_sfdoll_1"
+	planet_class = "pc_desert"
+	system_name="PRESCRIPTED_system_sfdoll_1"
+	initializer=""
+	graphical_culture="mammalian_01"
+	city_graphical_culture="mammalian_01"
+	empire_flag={
+		icon={
+			category= "sfdoll_flags"
+			file="sfdoll_flag.dds"
+		}
+		background= {
+			category = "backgrounds"
+			file = "sinus.dds"
+		}
+		colors={
+			"black"
+			"black"
+			"null"
+			"null"
+		}
+	}
+	ruler={
+		gender= indeterminable
+		name="PRESCRIPTED_ruler_sfdoll_1"
+		portrait= "sfdoll_01_sf_4"
+		texture=0
+		clothes=0
+		leader_class="ruler"
+	}
+	spawn_as_fallen=no
+	ignore_portrait_duplication=no
+	room= "room_selector"
+	spawn_enabled=yes
+	ethic = "ethic_militarist"
+	ethic= "ethic_materialist"
+	ethic= "ethic_egalitarian"
+	civics={
+		"civic_sfdoll_research"
+		"civic_sfdoll_ogas_manage"
+	}
+	origin= "origin_sfdoll_country"
+}

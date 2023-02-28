@@ -1,0 +1,7 @@
+part = {
+	location = 0
+	localization = "GF_SFDOLL_START_SCREEN_1"
+	trigger = {
+		has_authority = auth_gf_sfdoll
+	}
+}

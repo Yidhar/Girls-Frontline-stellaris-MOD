@@ -1,0 +1,84 @@
+objectTypes = {
+	pdxparticle = {
+		name = "galaxy_particle"
+		type = "galaxy_particle"
+		scale = 5.0
+	}	
+	pdxparticle = {
+		name = "nyto_black_hole_particle"
+		type = "nyto_black_hole_file"
+		
+		scale = 3.0
+	}
+	pdxparticle = {
+		name = "GFnyto_generic_big_2_5_exhaust_circle_idle"
+		type = "generic_big_exhaust_idle_circle_file"
+		scale = 25
+	}
+	pdxparticle = {
+		name = "GFnyto_generic_1_exhaust_circle_long_moving"
+		type = "generic_exhaust_circle_long_moving_effect_file"
+		scale = 3
+	}
+	pdxparticle = {
+		name = "GFnyto_generic_big_3_exhaust_circle_moving"
+		type = "generic_big_exhaust_circle_moving_effect_file"
+		scale = 30
+	}
+	pdxparticle = {
+		name = "GFnyto_planet_shield_effect"
+		type = "planet_shield_effect"
+		
+		scale = 5
+	}
+	pdxparticle = {
+		name = "GF_nyto_baclround"
+		type = "GF_nyto_baclround"		
+		scale = 0.1
+	}
+	pdxparticle = {
+		name = "GF_star_explosion_1_file"
+		type = "GF_star_explosion_1_file"		
+		scale = 15
+	}
+	pdxparticle = {
+		name = "GF_dragon_fire_effect"
+		type = "GF_dragon_fire_effect"		
+		scale = 1
+	}
+	pdxparticle = {
+		name = "GF_hit_tihs_effect"
+		type = "GF_hit_tihs_effect"		
+		scale = 1
+	}
+	pdxparticle = {
+		name = "GF_aoe_effect"
+		type = "GF_aoe_effect"		
+		scale = 1
+	}
+	pdxparticle = {
+		name = "GF_star_explosion_3_file"
+		type = "GF_star_explosion_3_file"		
+		scale = 1
+	}
+	pdxparticle = {
+		name = "GF_star_explosion_2_file"
+		type = "GF_star_explosion_2_file"		
+		scale = 1
+	}
+	pdxparticle = {
+		name = "testpop_particle"
+		type = "testpopparticle"		
+		scale = 1
+	}	
+	pdxparticle = {
+		name = "nyto_generic_020_exhaust_circle_moving"
+		type = "generic_exhaust_circle_moving_effect_file"
+		scale = 0.02
+	}
+	pdxparticle = {
+		name = "nyto_generic_01_exhaust_circle_moving"
+		type = "generic_exhaust_circle_moving_effect_file"
+		scale = 0.1
+	}
+}

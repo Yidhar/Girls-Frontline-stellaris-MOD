@@ -1,0 +1,52 @@
+namespace = project_sfdoll_event
+
+
+#发起OGAS研究项目
+country_event = {
+	id = project_sfdoll_event.1
+	title = "project_sfdoll_event.1"
+	desc = "project_sfdoll_event.1_desc"
+	hide_window = no
+	is_triggered_only = yes
+	fire_only_once = yes
+	diplomatic = yes
+	picture_event_data = {
+		portrait = GFX_sfdoll_ump45
+		room = this
+		graphical_culture = this
+		planet_background = this
+		city_level = this
+	}	
+	trigger = {
+		has_authority = auth_gf_sfdoll
+		has_technology = tech_self_aware_logic
+	}
+	option = {
+		name = OK
+		capital_scope = {
+			enable_special_project = {
+				name = sfdoll_project_ogas_ai
+			}
+		}
+	}
+}
+#OGAS研究完成提示
+country_event = {
+	id = project_sfdoll_event.2
+	title = "project_sfdoll_event.2"
+	desc = "project_sfdoll_event.2_desc"
+	hide_window = no
+	is_triggered_only = yes
+	fire_only_once = yes
+	picture = GFX_evp_sfdoll_digi_mind_2
+	trigger = {
+		has_authority = auth_gf_sfdoll
+	}
+	after = {
+		hidden_effect = {
+			country_event = {
+				id = sfdoll_ogas_event.2
+			}
+		}
+	}
+}

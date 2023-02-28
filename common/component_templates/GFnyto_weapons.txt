@@ -1,0 +1,2386 @@
+#浮游炮
+strike_craft_component_template = {
+	size = large
+	key = "tech_GFnyto_accelerating_coil1"
+	entity = "bomber_entity"
+	icon = "GFX_ship_part_GFnyto_accelerating_coi2"
+	icon_frame = 1
+	prerequisites = {
+		"tech_GFnyto_war_theory_e3"
+	}
+	component_set = "GFnyto_accelerating_coil2"
+	projectile_gfx = "tachyon_lance"
+	tags = {
+		weapon_type_energy
+		weapon_type_strike_craft
+	}
+	ai_tags = {
+		weapon_role_point_defense
+	}
+	count = 3	#舰载机初始数量
+	regeneration_per_day = 0.1	#每天生产的舰载机数量
+	launch_time = 3	#装填时间
+	damage = {
+		min = 50
+		max = 50
+	}
+	#伤害
+	cooldown = 1.5	#冷却
+	range = 230	#射程,指舰载机的本身射程
+	accuracy = 1
+	health = 75	#舰载机本身的结构血量
+	armor = 75	#装甲
+	shield = 20	#护盾
+	tracking = 1
+	speed = 1000	#舰载机速度
+	rotation_speed = 0.1	#转弯速度
+	acceleration = 1	#加速度
+	evasion = 0	#闪避
+	armor_damage = 1
+	shield_damage = 1
+	ship_behavior = "bombers_behavior"	#舰载机的作战 AI
+	power = -50
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 170
+			GF_nyto_new_fire_control_unit = 2
+			GF_nyto_collapse_liquid = 20
+		}
+		upkeep = {
+			energy = 0.5
+			alloys = 0.5
+			GF_nyto_new_fire_control_unit = 0.05
+			GF_nyto_collapse_liquid = 0.2
+		}
+	}
+	ai_weight = {
+		weight = 50
+	}
+}
+
+#瓦解射线
+weapon_component_template = {
+	size = planet_killer
+	type = planet_killer
+	#size_restriction = {titan}
+	key = "tech_GFnyto_accelerating_coil3"
+	icon = "GFX_ship_part_GFnyto_accelerating_coil"
+	icon_frame = 1
+	prerequisites = {
+		"tech_GFnyto_accelerating_coil1"
+	}
+	component_set = "GFnyto_accelerating_coil3"
+	planet_destruction_gfx = "GFnyto_neutron_planet_gfx"
+	static_rotation = yes
+	use_ship_kill_target = no
+	tags = {
+		weapon_type_energy
+	}
+	ai_tags = {
+		weapon_role_artillery
+	}
+	power = -10000
+	windup = {
+		min = 20
+		max = 30
+	}
+	entity = invisible_turret_entity
+	total_fire_time = 90
+	accuracy = 1
+	range = 0
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 1000
+			GF_nyto_new_fire_control_unit = 10
+			GF_nyto_collapse_liquid = 100
+		}
+		upkeep = {
+			alloys = 10
+			GF_nyto_new_fire_control_unit = 0.1
+			GF_nyto_collapse_liquid = 10
+		}
+	}
+	ai_weight = {
+		weight = 100
+	}
+}
+
+#T 厌世者 粒子炮
+weapon_component_template = {
+	key = "GF_Nyto_T_weapon1"
+	size = titanic
+	type = instant
+	icon = "GFX_ship_part_T_weapons1"
+	icon_frame = 1
+	damage = {
+		min = 7800
+		max = 22800
+	}
+	windup = {
+		min = 0
+		max = 100
+	}
+	total_fire_time = 200
+	range = 275
+	accuracy = 1
+	firing_arc = 5
+	tracking = 0
+	power = -500	#耗能	
+	prerequisites = {
+		"tech_GF_nyto_Stabiliz"
+	}
+	ship_modifier = {
+		custom_tooltip = "GF_Nyto_T_weapon1_modif"
+	}
+	hull_damage = 1.7
+	component_set = "GF_Nyto_T_weapon1"
+	projectile_gfx = "nyto_T_weapon_1"
+	tags = {
+		weapon_type_kinetic
+	}
+	ai_tags = {
+		weapon_role_anti_armor
+		weapon_role_anti_shield
+	}
+	hull_damage = 1.5
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 200
+			GF_nyto_new_fire_control_unit = 30
+			GF_nyto_collapse_liquid = 60
+		}
+		upkeep = {
+			alloys = 1.2
+			GF_nyto_new_fire_control_unit = 1
+			GF_nyto_collapse_liquid = 0.1
+		}
+	}
+	ai_weight = {
+		weight = 100
+	}
+	size_damage_factor = 0.5
+}
+
+#T 终末辉光
+weapon_component_template = {
+	key = "GF_Nyto_T_weapon2"
+	size = titanic
+	type = instant
+	icon = "GFX_ship_part_T_weapons2"
+	icon_frame = 1
+	damage = {
+		min = 2000
+		max = 4000
+	}
+	windup = {
+		min = 0
+		max = 0
+	}
+	total_fire_time = 50
+	range = 300
+	accuracy = 0.8
+	firing_arc = 15
+	tracking = 0.3
+	power = -1000	#耗能	
+	prerequisites = {
+		"tech_GFnyto_accelerating_coil1"
+	}
+	armor_damage = 2
+	firing_arc = 1
+	component_set = "GF_Nyto_T_weapon2"
+	projectile_gfx = "GF_nyto_titan_laser"
+	tags = {
+		weapon_type_energy
+		weapon_type_prism
+	}
+	ai_tags = {
+		weapon_role_anti_hull
+		weapon_role_anti_shield
+	}
+	ship_modifier = {
+		custom_tooltip = "GF_Nyto_T_weapon2_modif"
+	}
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 200
+			GF_nyto_new_fire_control_unit = 15
+			GF_nyto_collapse_liquid = 60
+		}
+		upkeep = {
+			alloys = 1.2
+			GF_nyto_new_fire_control_unit = 5
+			GF_nyto_collapse_liquid = 0.1
+		}
+		upkeep = {
+			trigger = {
+				is_variable_set = ship.GF_nyto_t_damage
+			}
+			energy = 1
+			multiplier = ship.GF_nyto_t_damage
+		}
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#厄琉息斯秘仪 X 
+weapon_component_template = {
+	key = "GF_Nyto_x_weapon1"
+	size = extra_large
+	type = instant
+	icon = "GFX_ship_part_x_weapons1"
+	icon_frame = 1
+	damage = {
+		min = 750
+		max = 1500
+	}
+	windup = {
+		min = 0
+		max = 130
+	}
+	total_fire_time = 30
+	range = 200
+	accuracy = 1
+	firing_arc = 15
+	tracking = 0
+	power = -1000	#耗能	
+	prerequisites = {
+		"tech_GF_nyto_Stabiliz"
+	}
+	firing_arc = 15
+	shield_damage = 1.5
+	armor_penetration = 0.75
+	hull_damage = 0.6
+	component_set = "GF_Nyto_x_weapon1"
+	projectile_gfx = "GF_nyto_x_laser"	#remake 能量束
+	tags = {
+		weapon_type_energy
+		weapon_type_explosive
+	}
+	ai_tags = {
+		weapon_role_anti_armor
+		weapon_role_anti_shield
+	}
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 200
+			GF_nyto_new_fire_control_unit = 5
+			GF_nyto_collapse_liquid = 60
+		}
+		upkeep = {
+			alloys = 1.2
+			GF_nyto_new_fire_control_unit = 0.1
+			GF_nyto_collapse_liquid = 0.1
+		}
+	}
+	ai_weight = {
+		weight = 200
+	}
+}
+
+#阿克索之皿 X  若存在灵蛇权杖  射速 伤害 up20%
+weapon_component_template = {
+	key = "GF_Nyto_x_weapon2"
+	size = extra_large
+	type = instant
+	icon = "GFX_ship_part_x_weapons2"
+	icon_frame = 1
+	damage = {
+		min = 400
+		max = 600
+	}
+	firing_arc = 15
+	windup = {
+		min = 0
+		max = 13
+	}
+	total_fire_time = 30
+	range = 170
+	accuracy = 1
+	tracking = 0
+	power = -1000	#耗能	
+	prerequisites = {
+		"tech_GF_nyto_x"
+	}
+	armor_damage = 0.75
+	ship_modifier = {
+		custom_tooltip = "GF_Nyto_x_weapon2_modif"
+	}
+	component_set = "GF_Nyto_x_weapon2"
+	projectile_gfx = "GFnyto_auto_cannons_s"	#remake 速射炮
+	tags = {
+		weapon_type_energy
+		weapon_type_Akso
+	}
+	ai_tags = {
+		weapon_role_anti_hull
+		weapon_role_anti_shield
+	}
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 200
+			GF_nyto_new_fire_control_unit = 6
+			GF_nyto_collapse_liquid = 60
+		}
+		upkeep = {
+			alloys = 1.2
+			GF_nyto_new_fire_control_unit = 0.12
+			GF_nyto_collapse_liquid = 0.1
+		}
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#灵蛇权杖 L
+weapon_component_template = {
+	key = "GF_Nyto_l_weapon1"
+	size = large
+	type = instant
+	icon = "GFX_ship_part_l_weapons1"
+	icon_frame = 1
+	damage = {
+		min = 60
+		max = 120
+	}
+	windup = {
+		min = 0
+		max = 5
+	}
+	total_fire_time = 10
+	range = 160
+	accuracy = 0.8
+	tracking = 0
+	power = -150	#耗能	
+	prerequisites = {
+		"tech_GF_nyto_x"
+	}
+	shield_damage = 0.5
+	armor_damage = 1.6
+	component_set = "GF_Nyto_l_weapon1"
+	projectile_gfx = "GFnyto_auto_cannons_L"
+	tags = {
+		weapon_type_energy
+		weapon_type_LsScepter
+	}
+	ai_tags = {
+		weapon_role_anti_armor
+	}
+	ship_modifier = {
+		custom_tooltip = "GF_Nyto_x_weapon2_modif"
+	}
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 200
+			GF_nyto_new_fire_control_unit = 3
+			GF_nyto_collapse_liquid = 100
+		}
+		upkeep = {
+			alloys = 1.2
+			GF_nyto_new_fire_control_unit = 0.1
+			GF_nyto_collapse_liquid = 0.1
+		}
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#圣歌风琴 L
+weapon_component_template = {
+	key = "GF_Nyto_l_weapon2"
+	size = large
+	type = instant
+	icon = "GFX_ship_part_l_weapons2"
+	icon_frame = 1
+	damage = {
+		min = 200
+		max = 300
+	}
+	windup = {
+		min = 0
+		max = 300
+	}
+	total_fire_time = 0
+	range = 170
+	accuracy = 1
+	tracking = 0
+	power = -30	#耗能	
+	prerequisites = {
+		"tech_GF_nyto_RAR"
+	}
+	shield_damage = 1.5
+	armor_penetration = 0.75
+	hull_damage = 0.7
+	ship_modifier = {
+		custom_tooltip = "GF_Nyto_l_weapon2_modif"
+	}
+	component_set = "GF_Nyto_l_weapon2"
+	projectile_gfx = "GF_nyto_titan_laser2"	#remake 充能光束
+	tags = {
+		weapon_type_energy
+		weapon_type_son
+	}
+	ai_tags = {
+		weapon_role_anti_hull
+	}
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 200
+			GF_nyto_new_fire_control_unit = 2
+			GF_nyto_collapse_liquid = 80
+		}
+		upkeep = {
+			alloys = 1.2
+			GF_nyto_new_fire_control_unit = 0.05
+			GF_nyto_collapse_liquid = 0.1
+		}
+		upkeep = {
+			trigger = {
+				is_variable_set = ship.GF_nyto_combat_days
+			}
+			energy = 10
+			multiplier = ship.GF_nyto_combat_days
+		}
+	}
+	ai_weight = {
+		weight = 200
+	}
+}
+
+#苍白收割者
+#m
+weapon_component_template = {
+	key = "GF_Nyto_m_weapon1"
+	size = medium
+	icon = "GFX_ship_part_m_weapons1"
+	icon_frame = 1
+	power = -20
+	firing_arc = 15
+	prerequisites = {
+		"tech_GF_nyto_Inverse_collapse_2"
+	}
+	component_set = "GF_Nyto_ms_weapon1"
+	projectile_gfx = "GFnyto_auto_cannons_sm1"
+	tags = {
+		weapon_type_energy
+		weapon_type_nytowith
+	}
+	ai_tags = {
+		weapon_role_artillery
+	}
+	ship_modifier = {
+		custom_tooltip = "GF_Nyto_m_weapon1_modif"
+	}
+	damage = {
+		min = 20
+		max = 40
+	}
+	windup = {
+		min = 20
+		max = 25
+	}
+	total_fire_time = 3
+	range = 150
+	accuracy = 1
+	tracking = 0.2
+	armor_penetration = 0.35
+	shield_damage = 0.35
+	hull_damage = 0.75
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 120
+			GF_nyto_new_fire_control_unit = 2
+			GF_nyto_collapse_liquid = 60
+		}
+		upkeep = {
+			alloys = 0.75
+			GF_nyto_new_fire_control_unit = 0.1
+			GF_nyto_collapse_liquid = 0.1
+		}
+		upkeep = {
+			energy = 1
+			multiplier = GF_nyto_kill_num
+		}
+	}
+	ai_weight = {
+		weight = 75
+	}
+}
+
+#s
+weapon_component_template = {
+	key = "GF_Nyto_s_weapon1"
+	size = small
+	icon = "GFX_ship_part_s_weapons1"
+	icon_frame = 1
+	power = -10
+	firing_arc = 15
+	prerequisites = {
+		"tech_GF_nyto_Inverse_collapse_2"
+	}
+	component_set = "GF_Nyto_ms_weapon1"
+	projectile_gfx = "GFnyto_auto_cannons_sm1"
+	ship_modifier = {
+		custom_tooltip = "GF_Nyto_m_weapon1_modif"
+	}
+	tags = {
+		weapon_type_energy
+		weapon_type_nytowith
+	}
+	ai_tags = {
+		weapon_role_artillery
+	}
+	damage = {
+		min = 10
+		max = 20
+	}
+	windup = {
+		min = 20
+		max = 25
+	}
+	total_fire_time = 1.5
+	range = 150
+	accuracy = 1
+	tracking = 0.2
+	armor_penetration = 0.75
+	shield_damage = 0.75
+	hull_damage = 0.5
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 120
+			GF_nyto_new_fire_control_unit = 1
+			GF_nyto_collapse_liquid = 40
+		}
+		upkeep = {
+			alloys = 0.5
+			GF_nyto_new_fire_control_unit = 0.05
+			GF_nyto_collapse_liquid = 0.1
+		}
+	}
+	ai_weight = {
+		weight = 75
+	}
+}
+
+#M 夜空引领者 接站时给全队提供10点追踪20%命中持续3天
+weapon_component_template = {
+	key = "GF_Nyto_m_weapon2"
+	size = medium
+	icon = "GFX_ship_part_m_weapons2"
+	icon_frame = 1
+	power = -10
+	firing_arc = 15
+	prerequisites = {
+		"tech_GF_nyto_sm"
+	}
+	component_set = "GF_Nyto_ms_weapon2"
+	projectile_gfx = "GFnyto_auto_cannons_sm2"
+	ship_modifier = {
+		custom_tooltip = "GF_Nyto_m_weapon2_modif"
+	}
+	tags = {
+		weapon_type_energy
+	}
+	ai_tags = {
+		weapon_role_anti_shield
+	}
+	damage = {
+		min = 15
+		max = 30
+	}
+	windup = {
+		min = 10
+		max = 25
+	}
+	total_fire_time = 1.5
+	range = 130
+	accuracy = 1
+	tracking = 0.2
+	shield_damage = 1.3
+	armor_damage = 0.7
+	hull_damage = 1.2
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 30
+			GF_nyto_new_fire_control_unit = 1.5
+			GF_nyto_collapse_liquid = 40
+			energy = 50
+		}
+		upkeep = {
+			trigger = {
+				owner = {
+					is_ai = no
+				}
+			}
+			alloys = 0.5
+			GF_nyto_collapse_liquid = 0.4
+			GF_nyto_new_fire_control_unit = 0.02
+			energy = 5
+		}
+	}
+	ai_weight = {
+		weight = 50
+	}
+}
+
+#S
+weapon_component_template = {
+	key = "GF_Nyto_s_weapon2"
+	size = small
+	type = instant
+	icon = "GFX_ship_part_s_weapons2"
+	icon_frame = 1
+	power = -10
+	firing_arc = 15
+	prerequisites = {
+		"tech_GF_nyto_sm"
+	}
+	ship_modifier = {
+		custom_tooltip = "GF_Nyto_m_weapon2_modif"
+	}
+	component_set = "GF_Nyto_ms_weapon2"
+	projectile_gfx = "GFnyto_auto_cannons_sm2"
+	tags = {
+		weapon_type_energy
+	}
+	ai_tags = {
+		weapon_role_artillery
+	}
+	damage = {
+		min = 5
+		max = 10
+	}
+	windup = {
+		min = 5
+		max = 20
+	}
+	total_fire_time = 1.5
+	range = 130
+	accuracy = 1
+	tracking = 0.2
+	shield_damage = 1
+	armor_damage = 0.7
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 30
+			GF_nyto_new_fire_control_unit = 0.5
+			GF_nyto_collapse_liquid = 20
+			energy = 10
+		}
+		upkeep = {
+			trigger = {
+				owner = {
+					is_ai = no
+				}
+			}
+			alloys = 0.5
+			GF_nyto_collapse_liquid = 0.01
+			energy = 1
+		}
+	}
+	ai_weight = {
+		weight = 50
+	}
+}
+
+#双蛇杖
+weapon_component_template = {
+	key = "GF_Nyto_missile_g_weapon1"
+	size = medium
+	type = instant
+	icon = "GFX_ship_part_g_weapons1"
+	icon_frame = 1
+	power = -100
+	prerequisites = {
+		"tech_GF_nyto_G"
+	}
+	ship_modifier = {
+		custom_tooltip = "GF_Nyto_missile_g_weapon1_modif"
+	}
+	component_set = "GF_Nyto_g_weapon1"
+	projectile_gfx = "GF_large_torpedo_03"
+	tags = {
+		weapon_type_explosive
+		weapon_type_fireworks
+	}
+	ai_tags = {
+		weapon_role_anti_armor
+	}
+	damage = {
+		min = 10
+		max = 20
+	}
+	windup = {
+		min = 0
+		max = 0
+	}
+	total_fire_time = 0
+	range = 40
+	shield_damage = 1
+	armor_penetration = 0.25
+	prio_projectile = yes
+	accuracy = 1
+	tracking = 1
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 120
+			GF_nyto_new_fire_control_unit = 0.5
+			GF_nyto_collapse_liquid = 10
+		}
+		upkeep = {
+			alloys = 0.5
+			GF_nyto_collapse_liquid = 0.1
+		}
+	}
+	ai_weight = {
+		weight = 50
+	}
+}
+
+#阿尔忒弥斯
+weapon_component_template = {
+	key = "GF_Nyto_missile_g_weapon2"
+	size = small
+	type = point_defence
+	icon = "GFX_ship_part_g_weapons2"
+	icon_frame = 1
+	power = -35
+	prerequisites = {
+		"tech_GF_nyto_G"
+	}
+	ship_modifier = {
+		custom_tooltip = "GF_Nyto_missile_g_weapon1_modif"
+	}
+	component_set = "GF_Nyto_g_weapon2"
+	projectile_gfx = "GF_large_torpedo_03"
+	tags = {
+		weapon_type_explosive
+		weapon_type_point_defense
+		weapon_type_fireworks
+	}
+	ai_tags = {
+		weapon_role_point_defense
+		weapon_role_anti_hull
+	}
+	damage = {
+		min = 5
+		max = 50
+	}
+	windup = {
+		min = 2
+		max = 20
+	}
+	total_fire_time = 0
+	prio_projectile = yes
+	range = 40
+	accuracy = 1
+	tracking = 1
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 60
+			GF_nyto_collapse_liquid = 10
+		}
+		upkeep = {
+			alloys = 0.5
+			GF_nyto_collapse_liquid = 0.1
+		}
+	}
+	ai_weight = {
+		weight = 50
+	}
+}
+
+
+
+#愚者
+weapon_component_template = {
+	size = torpedo
+	type = missile
+	key = "GF_nyto_fool_weapon"
+	icon = "GFX_GF_nyto_fool_weapon"
+	icon_frame = 1
+	prerequisites = {
+		tech_GFnyto_tansuo2
+	}
+	component_set = "GF_nyto_fool_weapon"
+	tags = {
+		weapon_type_explosive
+	}
+	ai_tags = {
+		weapon_role_anti_hull
+	}
+	damage = {
+		min = 65
+		max = 200
+	}
+	windup = {
+		min = 100
+		max = 200
+	}
+	total_fire_time = 120
+	min_range = 40
+	range = 200
+	missile_speed = 8
+	missile_armor = 120
+	missile_health = 69
+	missile_shield = 20
+	missile_evasion = 0.4
+	missile_retarget_range = 0
+	size_damage_factor = 2.26
+}
+
+
+#H 刻托级舰载无人机 
+strike_craft_component_template = {
+	size = large
+	key = "GF_Nyto_h_weapon1"
+	entity = "bomber_entity"
+	icon = "GFX_ship_part_h_weapons1"
+	icon_frame = 1
+	prerequisites = {
+		"tech_GF_nyto_H"
+	}
+	component_set = "GF_Nyto_h_weapon1"
+	projectile_gfx = "tachyon_lance"
+	tags = {
+		weapon_type_energy
+		weapon_type_keto
+		weapon_type_strike_craft
+	}
+	ai_tags = {
+		weapon_role_anti_hull
+	}
+	count = 2	#舰载机初始数量
+	regeneration_per_day = 0.1	#每天生产的舰载机数量
+	launch_time = 2	#装填时间
+	damage = {
+		min = 345
+		max = 510
+	}
+	#伤害
+	cooldown = 2	#冷却
+	range = 20	#射程,指舰载机的本身射程
+	accuracy = 1
+	health = 200	#舰载机本身的结构血量
+	armor = 100	#装甲
+	shield = 500	#护盾
+	tracking = 1
+	speed = 2700	#舰载机速度
+	rotation_speed = 0.2	#转弯速度
+	acceleration = 1	#加速度
+	evasion = 0.3	#闪避
+	shield_damage = 1
+	armor_damage = 1.25
+	ship_behavior = "fighters_behavior"	#舰载机的作战 AI 冲锋
+	power = -50
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 300
+			GF_nyto_collapse_liquid = 5
+			GF_nyto_new_fire_control_unit = 2
+		}
+		upkeep = {
+			trigger = {
+				owner = {
+					is_ai = no
+				}
+			}
+			energy = 0.5
+			alloys = 0.5
+			GF_nyto_collapse_liquid = 1
+		}
+	}
+	ai_weight = {
+		weight = 50
+	}
+}
+
+#H 戈耳工干扰无人机 给对方提供为期3天的 命中-20% 追踪-10 cd 5天
+strike_craft_component_template = {
+	size = large
+	weapon_type = point_defence
+	key = "GF_Nyto_h_weapon2"
+	entity = "bomber_entity"
+	icon = "GFX_ship_part_h_weapons2"
+	icon_frame = 1
+	prerequisites = {
+		"tech_GF_nyto_H"
+	}
+	component_set = "GF_Nyto_h_weapon2"
+	projectile_gfx = "tachyon_lance"
+	tags = {
+		weapon_type_energy
+		weapon_type_strike_craft
+	}
+	ai_tags = {
+		weapon_role_point_defense
+	}
+	count = 1	#舰载机初始数量
+	regeneration_per_day = 0.1	#每天生产的舰载机数量
+	launch_time = 1	#装填时间	
+	damage = {
+		min = 240
+		max = 330
+	}
+	#伤害
+	cooldown = 1	#冷却
+	range = 40	#射程,指舰载机的本身射程
+	accuracy = 1
+	health = 200	#舰载机本身的结构血量
+	armor = 100	#装甲
+	shield = 600	#护盾
+	tracking = 1
+	speed = 1400	#舰载机速度
+	rotation_speed = 0.2	#转弯速度
+	acceleration = 0.7	#加速度
+	evasion = 0.3	#闪避
+	shield_damage = 4
+	hull_damage = 0.75
+	armor_damage = 0.75
+	ship_behavior = "fighters_behavior"	#舰载机的作战 AI 冲锋
+	power = -50
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 120
+			GF_nyto_collapse_liquid = 5
+			GF_nyto_new_fire_control_unit = 2
+		}
+		upkeep = {
+			trigger = {
+				owner = {
+					is_ai = no
+				}
+			}
+			energy = 5
+			alloys = 1
+		}
+	}
+	ai_weight = {
+		weight = 50
+	}
+}
+
+#P 光影帷幕  交战5天后提供自身 55%的伤害&射速 持续6天 交战触发18天冷却 内圈
+weapon_component_template = {
+	key = "GF_Nyto_p_weapon1"
+	size = point_defence
+	type = point_defence
+	icon = "GFX_ship_part_p_weapons1"
+	icon_frame = 1
+	power = -10
+	firing_arc = 15
+	prerequisites = {
+		"tech_GF_nyto_P"
+	}
+	component_set = "GF_Nyto_p_weapon1"
+	projectile_gfx = "white_laser_pd"
+	tags = {
+		weapon_type_point_defense
+		weapon_type_energy
+		weapon_type_light
+	}
+	ai_tags = {
+		weapon_role_point_defense
+		weapon_type_point_defense
+	}
+	damage = {
+		min = 7
+		max = 14
+	}
+	windup = {
+		min = 0
+		max = 0
+	}
+	total_fire_time = 5
+	range = 30
+	accuracy = 1
+	tracking = 0.2
+	hull_damage = 1.2
+	armor_damage = 0.7
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 30
+			GF_nyto_collapse_liquid = 2
+			GF_nyto_new_fire_control_unit = 1
+		}
+		upkeep = {
+			alloys = 0.5
+			GF_nyto_collapse_liquid = 0.1
+			GF_nyto_new_fire_control_unit = 0.01
+		}
+	}
+	ai_weight = {
+		weight = 10
+	}
+	ai_weight = {
+		modifier = {
+			add = 100
+			is_ship_size = corvette
+		}
+	}
+}
+
+#P 花之锁  外圈点防 提供全场沉默
+weapon_component_template = {
+	key = "GF_Nyto_p_weapon2"
+	size = point_defence
+	type = point_defence
+	icon = "GFX_ship_part_p_weapons2"
+	icon_frame = 1
+	power = -10
+	firing_arc = 15
+	prerequisites = {
+		"tech_GF_nyto_P"
+	}
+	component_set = "GF_Nyto_p_weapon2"
+	projectile_gfx = "white_laser_pd"
+	tags = {
+		weapon_type_point_defense
+		weapon_type_energy
+	}
+	ai_tags = {
+		weapon_role_point_defense
+	}
+	damage = {
+		min = 20
+		max = 40
+	}
+	windup = {
+		min = 0
+		max = 0
+	}
+	total_fire_time = 10
+	range = 60
+	min_range = 20
+	accuracy = 1
+	tracking = 0.4
+	shield_damage = 1
+	armor_damage = 0.7
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 10
+			GF_nyto_collapse_liquid = 1
+			GF_nyto_new_fire_control_unit = 1
+		}
+		upkeep = {
+			alloys = 0.5
+			GF_nyto_collapse_liquid = 0.1
+			GF_nyto_new_fire_control_unit = 0.02
+			energy = 1
+		}
+	}
+	ai_weight = {
+		weight = 30
+	}
+	ai_weight = {
+		modifier = {
+			add = 200
+			OR = {
+				is_ship_size = titan
+				is_ship_size = battleship
+			}
+		}
+	}
+}
+
+#电子对抗
+weapon_component_template = {
+	key = "GF_nyto_Electronic_Warfare"
+	size = small
+	entity = invisible_turret_entity
+	icon = "GFX_nyto_Electronic_Warfare"
+	icon_frame = 1
+	power = -10
+	projectile_gfx = "Electronic"
+	component_set = "GF_nyto_Electronic_Warfare_sop"
+	tags = {
+		weapon_type_Electronic
+	}
+	ai_tags = {
+		weapon_role_artillery
+	}
+	damage = {
+		min = 1
+		max = -1
+	}
+	windup = {
+		min = 10
+		max = 10
+	}
+	total_fire_time = 10
+	ship_modifier = {
+		weapon_type_Electronic_weapon_damage_mult = 1
+		custom_tooltip = ""
+	}
+	range = 500
+	accuracy = 1
+	tracking = 1
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 10
+			GF_nyto_new_fire_control_unit = 5
+		}
+		upkeep = {
+			alloys = 0.1
+			GF_nyto_new_fire_control_unit = 0.05
+		}
+		upkeep = {
+			trigger = {
+				owner = {
+					is_ai = no
+				}
+			}
+			energy = 1
+		}
+	}
+	hidden = yes
+	ai_weight = {
+		weight = 0
+	}
+}
+
+weapon_component_template = {
+	key = "GF_nyto_Electronic_Warfare_m"
+	size = medium
+	entity = invisible_turret_entity
+	icon = "GFX_nyto_Electronic_Warfare"
+	icon_frame = 1
+	power = -15
+	projectile_gfx = "Electronic"
+	component_set = "GF_nyto_Electronic_Warfare_sop"
+	tags = {
+		weapon_type_Electronic
+	}
+	ai_tags = {
+		weapon_role_artillery
+	}
+	damage = {
+		min = 1
+		max = -1
+	}
+	windup = {
+		min = 20
+		max = 20
+	}
+	total_fire_time = 20
+	ship_modifier = {
+		weapon_type_Electronic_weapon_damage_mult = 2
+		custom_tooltip = ""
+	}
+	range = 500
+	accuracy = 1
+	tracking = 1
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 10
+			GF_nyto_new_fire_control_unit = 5
+		}
+		upkeep = {
+			alloys = 0.1
+			GF_nyto_new_fire_control_unit = 0.05
+		}
+		upkeep = {
+			trigger = {
+				owner = {
+					is_ai = no
+				}
+			}
+			energy = 1
+		}
+	}
+	hidden = yes
+	ai_weight = {
+		weight = 0
+	}
+}
+
+weapon_component_template = {
+	key = "GF_nyto_Electronic_Warfare_L"
+	size = large
+	entity = invisible_turret_entity
+	icon = "GFX_nyto_Electronic_Warfare"
+	icon_frame = 1
+	power = -45
+	projectile_gfx = "Electronic"
+	component_set = "GF_nyto_Electronic_Warfare_sop"
+	tags = {
+		weapon_type_Electronic
+	}
+	ai_tags = {
+		weapon_role_artillery
+	}
+	damage = {
+		min = 1
+		max = -1
+	}
+	windup = {
+		min = 30
+		max = 30
+	}
+	total_fire_time = 30
+	ship_modifier = {
+		weapon_type_Electronic_weapon_damage_mult = 3
+		custom_tooltip = ""
+	}
+	range = 500
+	accuracy = 1
+	tracking = 1
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 10
+			GF_nyto_new_fire_control_unit = 5
+		}
+		upkeep = {
+			alloys = 0.1
+			GF_nyto_new_fire_control_unit = 0.05
+			energy = 1
+		}
+	}
+	hidden = yes
+	ai_weight = {
+		weight = 0
+	}
+}
+
+
+
+
+#t1武器
+#脉冲激光
+#冰雹导弹阵列
+####################################################################
+#        下面是 给多彩的                                            #
+####################################################################
+#T 厌世者 粒子炮
+weapon_component_template = {
+	key = "GF_Nyto_T_weapon1_dc"
+	size = titanic
+	type = instant
+	icon = "GFX_ship_part_T_weapons1"
+	icon_frame = 1
+	damage = {
+		min = 7800
+		max = 22800
+	}
+	windup = {
+		min = 0
+		max = 100
+	}
+	total_fire_time = 200
+	range = 275
+	accuracy = 1
+	tracking = 0
+	power = -500	#耗能	
+	prerequisites = {
+		"tech_GF_nyto_Stabiliz_dc"
+	}
+	hull_damage = 1.7
+	component_set = "GF_Nyto_T_weapon1_dc"
+	projectile_gfx = "nyto_T_weapon_1"
+	tags = {
+		weapon_type_kinetic
+	}
+	ai_tags = {
+		weapon_role_anti_armor
+		weapon_role_anti_shield
+	}
+	hull_damage = 1.5
+	ship_modifier = {
+		custom_tooltip = "GF_Nyto_T_weapon1_modif"
+	}
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 200
+			sr_beauty = 30
+			GF_nyto_collapse_liquid = 60
+		}
+		upkeep = {
+			alloys = 1.2
+			sr_beauty = 1
+			GF_nyto_collapse_liquid = 0.1
+		}
+	}
+	ai_weight = {
+		weight = 100
+	}
+}
+
+#T 终末辉光
+weapon_component_template = {
+	key = "GF_Nyto_T_weapon2_dc"
+	size = titanic
+	type = instant
+	icon = "GFX_ship_part_T_weapons2"
+	icon_frame = 1
+	damage = {
+		min = 2000
+		max = 4000
+	}
+	windup = {
+		min = 0
+		max = 0
+	}
+	total_fire_time = 50
+	range = 300
+	accuracy = 0.8
+	firing_arc = 15
+	tracking = 0.3
+	power = -1000	#耗能	
+	prerequisites = {
+		"tech_GF_nyto_Stabiliz_dc"
+	}
+	armor_damage = 2
+	component_set = "GF_Nyto_T_weapon2_dc"
+	projectile_gfx = "GF_nyto_titan_laser"
+	tags = {
+		weapon_type_energy
+		weapon_type_prism
+	}
+	ai_tags = {
+		weapon_role_anti_hull
+		weapon_role_anti_shield
+	}
+	ship_modifier = {
+		custom_tooltip = "GF_Nyto_T_weapon2_modif"
+	}
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 200
+			sr_beauty = 15
+			GF_nyto_collapse_liquid = 60
+		}
+		upkeep = {
+			alloys = 1.2
+			sr_beauty = 5
+			GF_nyto_collapse_liquid = 0.1
+		}
+		upkeep = {
+			trigger = {
+				is_variable_set = ship.GF_nyto_t_damage
+			}
+			energy = 1
+			multiplier = ship.GF_nyto_t_damage
+		}
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#厄琉息斯秘仪 X 
+weapon_component_template = {
+	key = "GF_Nyto_x_weapon1_dc"
+	size = extra_large
+	type = instant
+	icon = "GFX_ship_part_x_weapons1"
+	icon_frame = 1
+	damage = {
+		min = 750
+		max = 1500
+	}
+	windup = {
+		min = 0
+		max = 130
+	}
+	total_fire_time = 30
+	range = 200
+	accuracy = 1
+	firing_arc = 15
+	tracking = 0
+	power = -1000	#耗能	
+	prerequisites = {
+		"tech_GF_nyto_Stabiliz_dc"
+	}
+	shield_damage = 1.5
+	armor_penetration = 0.75
+	hull_damage = 0.6
+	component_set = "GF_Nyto_x_weapon1_dc"
+	projectile_gfx = "GF_nyto_x_laser"	#remake 能量束
+	tags = {
+		weapon_type_energy
+		weapon_type_explosive
+	}
+	ai_tags = {
+		weapon_role_anti_armor
+		weapon_role_anti_shield
+	}
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 200
+			sr_beauty = 5
+			GF_nyto_collapse_liquid = 60
+		}
+		upkeep = {
+			alloys = 1.2
+			sr_beauty = 0.1
+			GF_nyto_collapse_liquid = 0.1
+		}
+	}
+	ai_weight = {
+		weight = 200
+	}
+}
+
+#阿克索之皿 X  若存在灵蛇权杖  射速 伤害 up20%
+weapon_component_template = {
+	key = "GF_Nyto_x_weapon2_dc"
+	size = extra_large
+	type = instant
+	icon = "GFX_ship_part_x_weapons2"
+	icon_frame = 1
+	damage = {
+		min = 400
+		max = 600
+	}
+	windup = {
+		min = 0
+		max = 13
+	}
+	total_fire_time = 30
+	range = 170
+	accuracy = 1
+	tracking = 0
+	power = -1000	#耗能	
+	prerequisites = {
+		"tech_GF_nyto_x_dc"
+	}
+	armor_damage = 0.75
+	ship_modifier = {
+		custom_tooltip = "GF_Nyto_x_weapon2_modif"
+	}
+	component_set = "GF_Nyto_x_weapon2_dc"
+	projectile_gfx = "GFnyto_auto_cannons_s"	#remake 速射炮
+	tags = {
+		weapon_type_energy
+		weapon_type_Akso
+	}
+	ai_tags = {
+		weapon_role_anti_hull
+		weapon_role_anti_shield
+	}
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 200
+			sr_beauty = 6
+			GF_nyto_collapse_liquid = 60
+		}
+		upkeep = {
+			alloys = 1.2
+			sr_beauty = 0.12
+			GF_nyto_collapse_liquid = 0.1
+		}
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#灵蛇权杖 L
+weapon_component_template = {
+	key = "GF_Nyto_l_weapon1_dc"
+	size = large
+	type = instant
+	icon = "GFX_ship_part_l_weapons1"
+	icon_frame = 1
+	damage = {
+		min = 60
+		max = 120
+	}
+	windup = {
+		min = 0
+		max = 5
+	}
+	total_fire_time = 10
+	range = 160
+	accuracy = 0.8
+	tracking = 0
+	power = -150	#耗能	
+	prerequisites = {
+		"tech_GF_nyto_x_dc"
+	}
+	shield_damage = 0.5
+	armor_damage = 1.6
+	component_set = "GF_Nyto_l_weapon1_dc"
+	projectile_gfx = "GFnyto_auto_cannons_L"
+	tags = {
+		weapon_type_energy
+		weapon_type_LsScepter
+	}
+	ai_tags = {
+		weapon_role_anti_armor
+	}
+	ship_modifier = {
+		custom_tooltip = "GF_Nyto_x_weapon2_modif"
+	}
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 200
+			sr_beauty = 3
+			GF_nyto_collapse_liquid = 100
+		}
+		upkeep = {
+			alloys = 1.2
+			sr_beauty = 0.1
+			GF_nyto_collapse_liquid = 0.1
+		}
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#圣歌风琴 L
+weapon_component_template = {
+	key = "GF_Nyto_l_weapon2_dc"
+	size = large
+	type = instant
+	icon = "GFX_ship_part_l_weapons2"
+	icon_frame = 1
+	damage = {
+		min = 200
+		max = 300
+	}
+	windup = {
+		min = 0
+		max = 300
+	}
+	total_fire_time = 0
+	range = 170
+	accuracy = 1
+	tracking = 0
+	power = -30	#耗能	
+	prerequisites = {
+		"tech_GF_nyto_RAR_dc"
+	}
+	shield_damage = 1.5
+	armor_penetration = 0.75
+	hull_damage = 0.7
+	ship_modifier = {
+		custom_tooltip = "GF_Nyto_l_weapon2_modif"
+	}
+	component_set = "GF_Nyto_l_weapon2_dc"
+	projectile_gfx = "GF_nyto_titan_laser2"	#remake 充能光束
+	tags = {
+		weapon_type_energy
+		weapon_type_son
+	}
+	ai_tags = {
+		weapon_role_anti_hull
+	}
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 200
+			sr_beauty = 2
+			GF_nyto_collapse_liquid = 80
+		}
+		upkeep = {
+			alloys = 1.2
+			sr_beauty = 0.05
+			GF_nyto_collapse_liquid = 0.1
+		}
+		upkeep = {
+			trigger = {
+				is_variable_set = ship.GF_nyto_combat_days
+			}
+			energy = 10
+			multiplier = ship.GF_nyto_combat_days
+		}
+	}
+	ai_weight = {
+		weight = 200
+	}
+}
+
+#苍白收割者
+#m
+weapon_component_template = {
+	key = "GF_Nyto_m_weapon1_dc"
+	size = medium
+	icon = "GFX_ship_part_m_weapons1"
+	icon_frame = 1
+	power = -20
+	firing_arc = 15
+	prerequisites = {
+		"tech_GF_nyto_Inverse_collapse_2_dc"
+	}
+	component_set = "GF_Nyto_ms_weapon1_dc"
+	projectile_gfx = "GFnyto_auto_cannons_sm1"
+	tags = {
+		weapon_type_energy
+		weapon_type_nytowith
+	}
+	ai_tags = {
+		weapon_role_artillery
+	}
+	ship_modifier = {
+		custom_tooltip = "GF_Nyto_m_weapon1_modif"
+	}
+	damage = {
+		min = 20
+		max = 40
+	}
+	windup = {
+		min = 20
+		max = 25
+	}
+	total_fire_time = 3
+	range = 150
+	accuracy = 1
+	tracking = 0.2
+	armor_penetration = 0.35
+	shield_damage = 0.35
+	hull_damage = 0.75
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 120
+			sr_beauty = 2
+			GF_nyto_collapse_liquid = 60
+		}
+		upkeep = {
+			alloys = 0.75
+			sr_beauty = 0.1
+			GF_nyto_collapse_liquid = 0.1
+		}
+		upkeep = {
+			energy = 1
+			multiplier = GF_nyto_kill_num
+		}
+	}
+	ai_weight = {
+		weight = 75
+	}
+}
+
+#s
+weapon_component_template = {
+	key = "GF_Nyto_s_weapon1_dc"
+	size = small
+	icon = "GFX_ship_part_s_weapons1"
+	icon_frame = 1
+	power = -10
+	firing_arc = 15
+	prerequisites = {
+		"tech_GF_nyto_Inverse_collapse_2_dc"
+	}
+	component_set = "GF_Nyto_ms_weapon1_dc"
+	projectile_gfx = "GFnyto_auto_cannons_sm1"
+	ship_modifier = {
+		custom_tooltip = "GF_Nyto_m_weapon1_modif"
+	}
+	tags = {
+		weapon_type_energy
+		weapon_type_nytowith
+	}
+	ai_tags = {
+		weapon_role_artillery
+	}
+	damage = {
+		min = 10
+		max = 20
+	}
+	windup = {
+		min = 20
+		max = 25
+	}
+	total_fire_time = 1.5
+	range = 150
+	accuracy = 1
+	tracking = 0.2
+	armor_penetration = 0.75
+	shield_damage = 0.75
+	hull_damage = 0.5
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 120
+			sr_beauty = 1
+			GF_nyto_collapse_liquid = 40
+		}
+		upkeep = {
+			alloys = 0.5
+			sr_beauty = 0.05
+			GF_nyto_collapse_liquid = 0.1
+		}
+	}
+	ai_weight = {
+		weight = 75
+	}
+}
+
+#M 夜空引领者 接站时给全队提供10点追踪20%命中持续3天
+weapon_component_template = {
+	key = "GF_Nyto_m_weapon2_dc"
+	size = medium
+	icon = "GFX_ship_part_m_weapons2"
+	icon_frame = 1
+	power = -10
+	firing_arc = 15
+	prerequisites = {
+		"tech_GF_nyto_sm_dc"
+	}
+	component_set = "GF_Nyto_ms_weapon2_dc"
+	projectile_gfx = "GFnyto_auto_cannons_sm2"
+	ship_modifier = {
+		custom_tooltip = "GF_Nyto_m_weapon2_modif"
+	}
+	tags = {
+		weapon_type_energy
+	}
+	ai_tags = {
+		weapon_role_anti_shield
+	}
+	damage = {
+		min = 15
+		max = 30
+	}
+	windup = {
+		min = 10
+		max = 25
+	}
+	total_fire_time = 1.5
+	range = 130
+	accuracy = 1
+	tracking = 0.2
+	shield_damage = 1.3
+	armor_damage = 0.7
+	hull_damage = 1.2
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 30
+			sr_beauty = 1.5
+			GF_nyto_collapse_liquid = 40
+			energy = 50
+		}
+		upkeep = {
+			trigger = {
+				owner = {
+					is_ai = no
+				}
+			}
+			alloys = 0.5
+			sr_beauty = 0.4
+			GF_nyto_new_fire_control_unit = 0.02
+			energy = 5
+		}
+	}
+	ai_weight = {
+		weight = 50
+	}
+}
+
+#S
+weapon_component_template = {
+	key = "GF_Nyto_s_weapon2_dc"
+	size = small
+	type = instant
+	icon = "GFX_ship_part_s_weapons2"
+	icon_frame = 1
+	power = -10
+	firing_arc = 15
+	prerequisites = {
+		"tech_GF_nyto_sm_dc"
+	}
+	ship_modifier = {
+		custom_tooltip = "GF_Nyto_m_weapon2_modif"
+	}
+	component_set = "GF_Nyto_ms_weapon2_dc"
+	projectile_gfx = "GFnyto_auto_cannons_sm2"
+	tags = {
+		weapon_type_energy
+	}
+	ai_tags = {
+		weapon_role_artillery
+	}
+	damage = {
+		min = 5
+		max = 10
+	}
+	windup = {
+		min = 5
+		max = 20
+	}
+	total_fire_time = 1.5
+	range = 130
+	accuracy = 1
+	tracking = 0.2
+	shield_damage = 1
+	armor_damage = 0.7
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 30
+			sr_beauty = 0.5
+			GF_nyto_collapse_liquid = 20
+			energy = 10
+		}
+		upkeep = {
+			trigger = {
+				owner = {
+					is_ai = no
+				}
+			}
+			alloys = 0.5
+			GF_nyto_collapse_liquid = 0.01
+			energy = 1
+		}
+	}
+	ai_weight = {
+		weight = 50
+	}
+}
+
+#G 双蛇杖
+weapon_component_template = {
+	key = "GF_Nyto_missile_g_weapon1_dc"
+	size = torpedo
+	type = instant
+	icon = "GFX_ship_part_g_weapons1"
+	icon_frame = 1
+	power = -100
+	prerequisites = {
+		"tech_GF_nyto_G_dc"
+	}
+	ship_modifier = {
+		custom_tooltip = "GF_Nyto_missile_g_weapon1_modif"
+	}
+	component_set = "GF_Nyto_g_weapon1_dc"
+	projectile_gfx = "GF_large_torpedo_03"
+	tags = {
+		weapon_type_explosive
+		weapon_type_fire_works
+	}
+	ai_tags = {
+		weapon_role_anti_armor
+	}
+	damage = {
+		min = 200
+		max = 200
+	}
+	windup = {
+		min = 2
+		max = 20
+	}
+	total_fire_time = 50
+	range = 220
+	shield_damage = 1
+	armor_penetration = 0.25
+	prio_projectile = yes
+	accuracy = 1
+	tracking = 1
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 120
+			sr_beauty = 2
+			GF_nyto_collapse_liquid = 10
+		}
+		upkeep = {
+			alloys = 0.5
+			GF_nyto_collapse_liquid = 0.1
+			sr_beauty = 0.1
+		}
+	}
+	ai_weight = {
+		weight = 50
+	}
+}
+
+#G阿尔忒弥斯
+weapon_component_template = {
+	key = "GF_Nyto_missile_g_weapon2_dc"
+	size = torpedo
+	type = point_defence
+	icon = "GFX_ship_part_g_weapons2"
+	icon_frame = 1
+	power = -35
+	prerequisites = {
+		"tech_GF_nyto_G_dc"
+	}
+	ship_modifier = {
+		custom_tooltip = "GF_Nyto_missile_g_weapon1_modif"
+	}
+	component_set = "GF_Nyto_g_weapon2_dc"
+	projectile_gfx = "GF_large_torpedo_03"
+	tags = {
+		weapon_type_explosive
+		weapon_type_point_defense
+		weapon_type_fire_works
+	}
+	ai_tags = { 
+		weapon_role_point_defense
+		weapon_role_anti_hull
+	}
+	damage = {
+		min = 50
+		max = 50
+	}
+	windup = {
+		min = 2
+		max = 20
+	}
+	total_fire_time = 0
+	prio_projectile = yes
+	range = 200
+	accuracy = 1
+	tracking = 1
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 60
+			GF_nyto_collapse_liquid = 10
+			sr_beauty = 5
+		}
+		upkeep = {
+			alloys = 0.5
+			GF_nyto_collapse_liquid = 0.1
+			sr_beauty = 0.1
+		}
+	}
+	ai_weight = {
+		weight = 50
+	}
+}
+
+#H 刻托级舰载无人机 
+strike_craft_component_template = {
+	size = large
+	key = "GF_Nyto_h_weapon1_dc"
+	entity = "bomber_entity"
+	icon = "GFX_ship_part_h_weapons1"
+	icon_frame = 1
+	prerequisites = {
+		"tech_GF_nyto_H_dc"
+	}
+	component_set = "GF_Nyto_h_weapon1_dc"
+	projectile_gfx = "tachyon_lance"
+	tags = {
+		weapon_type_energy
+		weapon_type_keto
+		weapon_type_strike_craft
+	}
+	ai_tags = {
+		weapon_role_anti_hull
+	}
+	count = 2	#舰载机初始数量
+	regeneration_per_day = 0.1	#每天生产的舰载机数量
+	launch_time = 2	#装填时间
+	damage = {
+		min = 345
+		max = 510
+	}
+	#伤害
+	cooldown = 2	#冷却
+	range = 20	#射程,指舰载机的本身射程
+	accuracy = 1
+	health = 200	#舰载机本身的结构血量
+	armor = 100	#装甲
+	shield = 500	#护盾
+	tracking = 1
+	speed = 2700	#舰载机速度
+	rotation_speed = 0.2	#转弯速度
+	acceleration = 1	#加速度
+	evasion = 0.3	#闪避
+	shield_damage = 1
+	armor_damage = 1.25
+	ship_behavior = "fighters_behavior"	#舰载机的作战 AI 冲锋
+	power = -50
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 300
+			GF_nyto_collapse_liquid = 5
+			sr_beauty = 2
+		}
+		upkeep = {
+			trigger = {
+				owner = {
+					is_ai = no
+				}
+			}
+			energy = 0.5
+			alloys = 0.5
+			GF_nyto_collapse_liquid = 1
+		}
+	}
+	ai_weight = {
+		weight = 50
+	}
+}
+
+#H 戈耳工干扰无人机 给对方提供为期3天的 命中-20% 追踪-10 cd 5天
+strike_craft_component_template = {
+	size = large
+	weapon_type = point_defence
+	key = "GF_Nyto_h_weapon2_dc"
+	entity = "bomber_entity"
+	icon = "GFX_ship_part_h_weapons2"
+	icon_frame = 1
+	prerequisites = {
+		"tech_GF_nyto_H_dc"
+	}
+	component_set = "GF_Nyto_h_weapon2_dc"
+	projectile_gfx = "tachyon_lance"
+	tags = {
+		weapon_type_energy
+		weapon_type_strike_craft
+	}
+	ai_tags = {
+		weapon_role_point_defense
+	}
+	count = 1	#舰载机初始数量
+	regeneration_per_day = 0.1	#每天生产的舰载机数量
+	launch_time = 1	#装填时间	
+	damage = {
+		min = 240
+		max = 330
+	}
+	#伤害
+	cooldown = 1	#冷却
+	range = 40	#射程,指舰载机的本身射程
+	accuracy = 1
+	health = 200	#舰载机本身的结构血量
+	armor = 100	#装甲
+	shield = 600	#护盾
+	tracking = 1
+	speed = 1400	#舰载机速度
+	rotation_speed = 0.2	#转弯速度
+	acceleration = 0.7	#加速度
+	evasion = 0.3	#闪避
+	shield_damage = 4
+	hull_damage = 0.75
+	armor_damage = 0.75
+	ship_behavior = "fighters_behavior"	#舰载机的作战 AI 冲锋
+	power = -50
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 120
+			GF_nyto_collapse_liquid = 5
+			sr_beauty = 2
+		}
+		upkeep = {
+			trigger = {
+				owner = {
+					is_ai = no
+				}
+			}
+			energy = 5
+			alloys = 1
+		}
+	}
+	ai_weight = {
+		weight = 50
+	}
+}
+
+#P 光影帷幕  交战5天后提供自身 55%的伤害&射速 持续6天 交战触发18天冷却 内圈
+weapon_component_template = {
+	key = "GF_Nyto_p_weapon1_dc"
+	size = point_defence
+	type = point_defence
+	icon = "GFX_ship_part_p_weapons1"
+	icon_frame = 1
+	power = -10
+	firing_arc = 15
+	prerequisites = {
+		"tech_GF_nyto_P_dc"
+	}
+	component_set = "GF_Nyto_p_weapon1_dc"
+	projectile_gfx = "white_laser_pd"
+	tags = {
+		weapon_type_point_defense
+		weapon_type_energy
+		weapon_type_light
+	}
+	ai_tags = {
+		weapon_role_point_defense
+		weapon_type_point_defense
+	}
+	damage = {
+		min = 7
+		max = 14
+	}
+	windup = {
+		min = 0
+		max = 0
+	}
+	total_fire_time = 5
+	range = 30
+	accuracy = 1
+	tracking = 0.2
+	hull_damage = 1.2
+	armor_damage = 0.7
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 30
+			GF_nyto_collapse_liquid = 2
+			sr_beauty = 1
+		}
+		upkeep = {
+			alloys = 0.5
+			GF_nyto_collapse_liquid = 0.1
+			sr_beauty = 0.01
+		}
+	}
+	ai_weight = {
+		weight = 10
+		modifier = {
+			add = 100
+			is_ship_size = corvette
+		}
+	}
+}
+
+#P 花之锁  外圈点防 提供全场沉默
+weapon_component_template = {
+	key = "GF_Nyto_p_weapon2_dc"
+	size = point_defence
+	type = point_defence
+	icon = "GFX_ship_part_p_weapons2"
+	icon_frame = 1
+	power = -10
+	firing_arc = 15
+	prerequisites = {
+		"tech_GF_nyto_P_dc"
+	}
+	component_set = "GF_Nyto_p_weapon2_dc"
+	projectile_gfx = "white_laser_pd"
+	tags = {
+		weapon_type_point_defense
+		weapon_type_energy
+	}
+	ai_tags = {
+		weapon_role_point_defense
+	}
+	damage = {
+		min = 20
+		max = 40
+	}
+	windup = {
+		min = 0
+		max = 0
+	}
+	total_fire_time = 10
+	range = 60
+	min_range = 20
+	accuracy = 1
+	tracking = 0.4
+	shield_damage = 1
+	armor_damage = 0.7
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 10
+			GF_nyto_collapse_liquid = 1
+			sr_beauty = 1
+		}
+		upkeep = {
+			alloys = 0.5
+			GF_nyto_collapse_liquid = 0.1
+			sr_beauty = 0.02
+			energy = 1
+		}
+	}
+	ai_weight = {
+		weight = 30
+		modifier = {
+			add = 200
+			OR = {
+				is_ship_size = titan
+				is_ship_size = battleship
+			}
+		}
+	}
+}
+
+#支援信标
+# weapon_component_template = {
+# 	key = "GF_nyto_beacon"
+# 	size = titanic
+# 	entity =invisible_turret_entity
+# 	icon = "GFX_nyto_weapon_beacon_sop"
+# 	use_ship_kill_target = yes
+# 	icon_frame = 1
+# 	power = -30
+# 	projectile_gfx = "Electronic"
+# 	component_set = "GF_nyto_weapon_beacon_sop"
+# 	ship_modifier = {
+# 		custom_tooltip = "GF_nyto_beacon_modif"
+# 	}
+# 	tags = {
+# 		weapon_type_beacon
+# 	}
+# 	ai_tags = {
+# 		weapon_role_artillery
+# 	}
+# 	damage = {
+# 		min = 1
+# 		max = 1
+# 	}
+# 	windup = {
+# 		min = 150
+# 		max = 150
+# 	}
+# 	total_fire_time = 150
+# 	range = 500
+# 	accuracy = 1
+# 	tracking = 1
+# 	resources = {
+# 		category = ship_components
+# 		cost = {
+# 			alloys = 300
+# 			GF_nyto_new_fire_control_unit = 20
+# 		}
+# 		upkeep = {
+# 			alloys = 0.1
+# 			GF_nyto_new_fire_control_unit = 0.05
+# 			energy = 10
+# 		}
+# 	}
+# 	size_restriction = {
+# 		GFnyto_Command_ship
+# 	}
+# 	ai_weight = {
+# 		weight = 0
+# 	}
+# 	prerequisites = {
+# 		tech_template_beacon_weapon
+# 	}
+# 	prio_projectile = yes
+# }
+#正向激光
+weapon_component_template = {
+	key = GF_nyto_star_laser_s
+	size = small
+	icon = "GFX_nyto_weapon_beacon_sop"
+	use_ship_kill_target = yes
+	icon_frame = 1
+	power = -30
+	accuracy = 0.8
+	tracking = 0.5
+	# projectile_gfx = "Electronic"
+	projectile_gfx = "GF_nyto_star_laser_pd"
+	component_set = "GF_nyto_weapon_beacon_sop"
+	tags = {
+		weapon_type_energy
+	}
+	ai_tags = {
+		weapon_role_anti_hull
+	}
+	damage = {
+		min = 1
+		max = 600
+	}
+	windup = {
+		min = 250
+		max = 350
+	}
+	total_fire_time = 15
+	range = 120
+	firing_arc = 1
+	ai_weight = {
+		weight = 0
+	}
+	prio_projectile = yes
+}
+weapon_component_template = {
+	key = GF_nyto_star_laser_m
+	size = medium
+	icon = "GFX_nyto_weapon_beacon_sop"
+	use_ship_kill_target = yes
+	icon_frame = 1
+	power = -60
+	accuracy = 0.9
+	tracking = 0.45
+	# projectile_gfx = "Electronic"
+	projectile_gfx = "GF_nyto_star_laser_pd"
+	component_set = "GF_nyto_weapon_beacon_sop"
+	tags = {
+		weapon_type_energy
+	}
+	ai_tags = {
+		weapon_role_anti_hull
+	}
+	damage = {
+		min = 2
+		max = 1100
+	}
+	windup = {
+		min = 250
+		max = 350
+	}
+	total_fire_time = 15
+	range = 220
+	firing_arc = 1
+	ai_weight = {
+		weight = 0
+	}
+	prio_projectile = yes
+}
+weapon_component_template = {
+	key = GF_nyto_star_laser_l
+	size = large
+	icon = "GFX_nyto_weapon_beacon_sop"
+	use_ship_kill_target = yes
+	icon_frame = 1
+	power = -120
+	accuracy = 1
+	tracking = 0.4
+	# projectile_gfx = "Electronic"
+	projectile_gfx = "GF_nyto_star_laser_pd"
+	component_set = "GF_nyto_weapon_beacon_sop"
+	tags = {
+		weapon_type_energy
+	}
+	ai_tags = {
+		weapon_role_anti_hull
+	}
+	damage = {
+		min = 4
+		max = 2000
+	}
+	windup = {
+		min = 250
+		max = 350
+	}
+	total_fire_time = 15
+	range = 400
+	firing_arc = 1
+	ai_weight = {
+		weight = 0
+	}
+	prio_projectile = yes
+}

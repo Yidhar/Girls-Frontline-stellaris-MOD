@@ -1,0 +1,91 @@
+GFnyto_greena_system = {
+	name = "格里芬与克鲁格银河系分基地"
+	class = "sc_g"
+	asteroid_belt = {
+		type = icy_asteroid_belt
+		radius = 250
+	}
+	flags = { GFnyto_greena_system }
+	planet = {
+		class = star
+		orbit_distance = 0
+		orbit_angle = 1
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+	planet = {
+		class = "pc_shattered"
+		orbit_distance = 40
+		orbit_angle = 15
+		size = 15
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+
+	planet = {
+		class = "pc_shattered"
+		orbit_distance = 20
+		orbit_angle = 60
+		size = 17
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+
+	planet = {
+		class = "pc_shattered"
+		orbit_distance = 25
+		orbit_angle = 120
+		size = 12
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+
+	planet = {
+		name = "铁血工造"
+		class = "pc_machine"
+		orbit_distance = 25
+		orbit_angle = 120
+		size = 20
+		init_effect = {
+			prevent_anomaly = yes
+			clear_deposits = yes
+			clear_blockers = yes
+		}
+	}
+}
+
+GF_nyto_end_system ={
+	name = "NAME_GF_nyto_end_system"
+	class = sc_GF_endler
+	asteroid_belt = {
+		type = icy_asteroid_belt
+		radius = 250
+	}
+	planet = {
+		class = star
+		orbit_distance = 0
+		orbit_angle = 1
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+	init_effect = {
+		create_ambient_object = {
+			type = GF_nyto_ender_system
+			use_3d_location = yes
+			entity_offset = { min = 0 max = 0 }
+			entity_offset_angle = { min = 0 max = 360 }
+			entity_offset_height = { min = 0 max = 0 }
+		}
+		last_created_ambient_object = {
+			set_location = {
+				target = star
+				distance = 50
+			}
+		}
+	}
+}

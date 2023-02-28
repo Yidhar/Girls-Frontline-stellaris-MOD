@@ -1,0 +1,4 @@
+entity = {
+	name = "Portal_entity"
+	pdxmesh = "Portal_mesh"
+}

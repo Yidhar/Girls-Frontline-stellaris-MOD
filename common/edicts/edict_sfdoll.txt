@@ -1,0 +1,92 @@
+#坍塌液产出和消耗
+sfdoll_collapse_liquid_more = {
+	length = -1
+	icon = "GFX_edict_type_time"
+	potential = {
+		has_authority = auth_gf_sfdoll
+	}
+	prerequisites = {
+		tech_sfdoll_collapse_liquid_upgrade
+	}
+	ai_weight = {
+		weight = 0
+	}	
+}
+
+#科研产出提高
+sfdoll_research_more = {
+	length = -1
+	icon = "GFX_edict_type_time"
+	potential = {
+		has_authority = auth_gf_sfdoll
+	}
+	prerequisites = {
+		tech_sfdoll_lab_upgrade
+	}
+	ai_weight = {
+		weight = 0
+	}	
+}
+
+#合金产出提高
+sfdoll_alloys_more = {
+	length = -1
+	icon = "GFX_edict_type_time"
+	potential = {
+		has_authority = auth_gf_sfdoll
+	}
+	prerequisites = {	tech_sfdoll_alloys_upgrade	}
+	ai_weight = {
+		weight = 0
+	}	
+}
+
+#航道修改
+sfdoll_change_hyperlane_window = {
+	length = 0
+	icon = "GFX_edict_type_time"
+	potential = {
+		has_authority = auth_gf_sfdoll
+	}
+	prerequisites = {
+		tech_sfdoll_change_hyperlane
+	}
+	effect = {
+		hidden_effect = {
+			country_event = { id = sfdoll_planet_killer_event.6 }
+		}
+	}
+	
+	ai_weight = {
+		weight = 0
+	}	
+}
+
+
+# #船体强化
+# gfsfdoll_ship_hull = {
+# 	length = -1
+# 	icon = "GFX_edict_type_time"
+# 	potential = {
+# 		has_authority = auth_gf_sfdoll
+# 		has_megastructure = mega_change_hyperlane_sfdoll
+# 		is_ai = no
+# 	}
+# 	prerequisites = {	"tech_edict_gfsfdoll_ship_hull"	}
+# 	modifier = {
+# 		shipsize_corvette_build_speed_mult = -0.5
+# 		shipsize_destroyer_build_speed_mult = -0.5
+# 		shipsize_cruiser_build_speed_mult = -0.5
+# 		shipsize_battleship_build_speed_mult = -0.5
+# 		shipsize_titan_build_speed_mult = -0.5
+# 		shipsize_corvette_hull_add = 150000
+# 		shipsize_destroyer_hull_add = 300000
+# 		shipsize_cruiser_hull_add = 600000
+# 		shipsize_battleship_hull_add = 1200000
+# 		shipsize_titan_hull_add = 2400000
+# 	}
+	
+# 	ai_weight = {
+# 		weight = 0
+# 	}	
+# }

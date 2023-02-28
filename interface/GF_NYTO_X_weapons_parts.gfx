@@ -1,0 +1,44 @@
+#x槽武器
+spriteTypes = {
+	spriteType = {
+		name = "GFX_ship_part_GFNyto_x_weapon"
+		textureFile = "gfx/interface/icons/ship_parts/ship_part_32ndchrononCannon.dds"
+	}
+	spriteType = {
+		name = "GFX_ship_part_GFNyto_missile_x_weapon"
+		textureFile = "gfx/interface/icons/ship_parts/GFX_ship_part_GFNyto_sml_missile_weapon.dds"
+	}
+	spriteType = {
+		name = "GFX_ship_part_GF_Nyto_X_Track"
+		textureFile = "gfx/interface/icons/ship_parts/GFX_ship_part_GF_Nyto_X_Track.dds"
+	}
+	#t槽
+	spriteType = {
+		name = "GFX_ship_part_GF_Nyto_T_Erosion"
+		textureFile = "gfx/interface/icons/ship_parts/GFX_ship_part_GF_Nyto_T_Erosion.dds"
+	}
+}
+#sml槽激光武器
+spriteTypes = {
+	spriteType = {
+		name = "GFX_ship_part_GFNyto_L_weapon"
+		textureFile = "gfx/interface/icons/ship_parts/GFX_ship_part_GFNyto_sml_weapon.dds"
+	}
+	spriteType = {
+		name = "GFX_ship_part_GFNyto_S_weapon"
+		textureFile = "gfx/interface/icons/ship_parts/GFX_ship_part_GFNyto_sml_weapon.dds"
+	}
+	spriteType = {
+		name = "GFX_ship_part_GFNyto_M_weapon"
+		textureFile = "gfx/interface/icons/ship_parts/GFX_ship_part_GFNyto_sml_weapon.dds"
+	}
+}
+
+#sml槽导弹武器
+spriteTypes = {
+	spriteType = {
+		name = "GFX_ship_part_GFNyto_missile_weapon"
+		textureFile = "gfx/interface/icons/ship_parts/GFX_ship_part_GFNyto_sml_missile_weapon.dds"
+	}
+}
+

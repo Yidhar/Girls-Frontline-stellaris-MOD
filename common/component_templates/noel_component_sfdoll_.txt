@@ -1,0 +1,92 @@
+#诺耶露能源.和恒星攻击舰共用
+utility_component_template = {
+	key = "sfdoll_noel_REACTOR"
+	size = small
+	icon = "GFX_sfdoll_noel_REACTOR"
+	icon_frame = 1
+	power = 10000000
+	component_set = "power_core"
+	size_restriction = { sfdoll_mobile_starbase ship_sfdoll_noel }
+	ai_weight = {	weight = 20	}
+}
+
+#诺耶露跃迁
+utility_component_template = {
+	key = "sfdoll_noel_jump_drive"
+	size = small
+	icon = "GFX_sfdoll_noel_jump_drive"
+	icon_frame = 1
+	power = -40
+	size_restriction = {
+		ship_sfdoll_noel
+	}
+	resources = {
+		category = ship_components
+		cost = {
+			GF_nyto_collapse_liquid = 2
+			alloys = 15
+		}
+	}
+	ftl = yes
+	jumpdrive = yes
+	ship_modifier = {
+		ship_windup_mult = -1.0
+		ship_jumpdrive_cooldown_mult = -1
+		ship_ftl_jumpdrive_range_mult = 16
+		ship_emergency_ftl_min_days_mult = -1.0
+		ship_emergency_ftl_mult = -1
+	}
+	component_set = "ftl_components"
+}
+#诺耶露传感器
+utility_component_template = {
+	key = "sfdoll_ship_sensors_noel"
+	size = medium
+	icon = "GFX_sfdoll_ship_sensors_noel"
+	icon_frame = 1
+	component_set = "sensor_components"
+	size_restriction = { 	ship_sfdoll_noel }
+	sensor_range = 8
+	hyperlane_range = 13
+	ship_modifier = {
+		ship_tracking_add = 40
+		ship_evasion_add = 40
+	}
+}
+
+#诺耶露推进器
+utility_component_template = {
+	key = "thruster_sfdoll_noel"
+	size = small
+	icon = "GFX_thruster_sfdoll_noel"
+	icon_frame = 1
+	size_restriction = { 	ship_sfdoll_noel }
+	modifier = {
+		ship_base_speed_mult = 12
+	}
+	component_set = "thruster_components"
+}
+
+#诺耶露作战电脑
+# utility_component_template = {
+# 	key = "sfdoll_combat_computer_noel"
+# 	size = small
+# 	icon = "GFX_sfdoll_combat_computer_noel"
+# 	icon_frame = 1
+# 	power = -30
+# 	size_restriction = { 	ship_sfdoll_noel }
+# 	ship_modifier = {
+# 		ship_weapon_damage = 0.15
+# 		ship_tracking_add = 50
+# 		ship_evasion_add = 40
+# 	}
+# 	resources = {
+# 		category = ship_components
+# 		cost = {
+# 			alloys = 30
+# 		}
+# 	}
+# 	ship_behavior = "artillery"
+# 	component_set = "combat_computers"
+# }
+

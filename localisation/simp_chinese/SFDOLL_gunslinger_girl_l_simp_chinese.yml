@@ -1,0 +1,48 @@
+﻿l_simp_chinese:
+##gunslinger girl
+# sfdoll_gunslinger_girl_event_1:0 "来自地球的飞船"
+# sfdoll_gunslinger_girl_event_1_desc:0 "我们意外发现了一个疑似源自人类的信号.我们追踪该信号，找到了一艘宇宙飞船.\n 对该飞船的初步鉴定表明，这是一艘由地球人制造的飞船. 我们的人员已经回收了飞船,正在对其进行调查."
+
+sfdoll_gunslinger_girl_event_2:0 "遗迹中的心智"
+sfdoll_gunslinger_girl_event_2_desc:0 "在对行星上的遗迹进行探索的过程中，我们发现了许多古老的计算机，它们可能是遗迹的防御系统的一部分。这些计算机中包含了数台心智服务器。\n 我们将开始一个特殊项目，对它们进行研究。"
+
+sfdoll_gunslinger_girl_project:0 "梦间剧"
+sfdoll_gunslinger_girl_project_DESC:0 "$sfdoll_gunslinger_girl_event_2_desc$"
+
+sfdoll_gunslinger_girl_event_3:0 "梦间剧"
+sfdoll_gunslinger_girl_event_3_desc:0 "我们成功访问了心智服务器的内容，并发现了数个智能体。\n§Y<你现在可以通过伊莱莎与崔耶拉交流。>§!"
+
+# sfdoll_gunslinger_girl_event_4:0 "大梦初醒"
+# sfdoll_gunslinger_girl_event_4_desc:0 "义体少女们的服务器随时可能报废.我们和她们沟通,将她们上传到人形素体中.\n 义体少女们就此结束了她们的梦境,以铁血人形的身份获得了重生."
+
+sfdoll_gunslinger_girl_event_5:0 "和智能体的代表通信"
+sfdoll_gunslinger_girl_event_5_desc:0 "这里的智能体有着不同的来历。我是崔耶拉，曾经是人类。\n\n出于研究的目的，我的心智被上传到机器中。后来，外面的世界发生了诸多变故，我被迫转移到这些心智服务器里，并遇见了许多其他的智能体。\n\n我们一直没能离开这里，直到遇到你们。"
+sfdoll_gunslinger_girl_event_5_option:0 "你们对遗迹有何了解？"
+sfdoll_gunslinger_girl_event_5_response:0 "遗迹计算机的内容，有许多是我们无法访问的。我们进行过多次调查，但结果寥寥无几。"
+
+sfdoll_gunslinger_girl_event_6:0 "与崔耶拉通讯中"
+sfdoll_gunslinger_girl_event_6_desc:0 "有新任务吗？"
+
+triela_become_governor:0 "请参与政务吧"
+triela_become_scientist:0 "请协助研究吧"
+triela_become_admiral:0 "请指挥舰队吧"
+triela_become_general:0 "请指挥陆军部队吧"
+triela_has_this_job_now:0 "崔耶拉已经在进行这项工作"
+
+response_text_triela_become_governor:0 "包在我身上"
+response_text_triela_become_scientist:0 "看起来很复杂，我要学的还有很多."
+response_text_triela_become_admiral:0 "我会让大家平安回来的。"
+response_text_triela_become_general:0 "我会让大家平安回来的。"
+
+#Let life be beautiful like summer flowers and death like autumn leaves
+leader_trait_governor_sfdoll_triela:0 "义体人"
+leader_trait_governor_sfdoll_triela_desc:0 "生如夏花之绚烂，死如秋叶之静美"
+
+leader_trait_scientist_sfdoll_triela:0 "$leader_trait_governor_sfdoll_triela$"
+leader_trait_scientist_sfdoll_triela_desc:0 "$leader_trait_governor_sfdoll_triela_desc$"
+
+leader_trait_admiral_sfdoll_triela:0 "$leader_trait_governor_sfdoll_triela$"
+leader_trait_admiral_sfdoll_triela_desc:0 "$leader_trait_governor_sfdoll_triela_desc$"
+
+leader_trait_general_sfdoll_triela:0 "$leader_trait_governor_sfdoll_triela$"
+leader_trait_general_sfdoll_triela_desc:0 "$leader_trait_governor_sfdoll_triela_desc$"

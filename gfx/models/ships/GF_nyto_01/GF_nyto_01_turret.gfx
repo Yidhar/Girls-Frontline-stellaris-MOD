@@ -1,0 +1,23 @@
+objectTypes = {
+	pdxmesh = {
+		name = "GF_nyto_01_turret_mesh"
+		file = "gfx/models/ships/GF_nyto_01/GF_nyto_01_turret.mesh"
+		scale = 1.0
+
+		meshsettings = {
+			name = "g_1Shape"
+			index = 0
+			texture_diffuse = "W_Laser_03_d_tex_lod_0.dds"
+			texture_normal = "W_Laser_03_n_tex_lod_0.dds"
+			texture_specular = "W_Laser_03_s_tex_lod_0.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+}
+objectTypes ={
+	pdxmesh ={
+		name = "GF_nyto_01_turret_null_mesh"
+		file = "gfx/models/ships/GF_nyto_01/GF_nyto_01_null_turret.mesh"
+		scale = 1.0
+	}
+}

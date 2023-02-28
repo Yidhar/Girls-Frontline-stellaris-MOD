@@ -1,0 +1,99 @@
+spriteTypes = {
+	#Megastructures
+	spriteType = {
+		name = "GFX_sfdoll_star_exploit_01_outliner_icon"
+		textureFile = "gfx/interface/icons/megastructures/sfdoll/sfdoll_dyson_sphere.dds"
+	}
+	spriteType = {
+		name = "GFX_sfdoll_star_exploit_02_outliner_icon"
+		textureFile = "gfx/interface/icons/megastructures/sfdoll/sfdoll_dyson_sphere.dds"
+	}
+
+	spriteType = {
+		name = "GFX_sfdoll_blackhole_mining_01_outliner_icon"
+		textureFile = "gfx/interface/icons/megastructures/sfdoll/sfdoll_matter_decompressor.dds"
+	}
+	spriteType = {
+		name = "GFX_sfdoll_blackhole_mining_02_outliner_icon"
+		textureFile = "gfx/interface/icons/megastructures/sfdoll/sfdoll_matter_decompressor.dds"
+	}
+	spriteType = {
+		name = "GFX_sfdoll_blackhole_mining_03_outliner_icon"
+		textureFile = "gfx/interface/icons/megastructures/sfdoll/sfdoll_matter_decompressor.dds"
+	}
+	
+	
+	spriteType = {
+		name = "GFX_sfdoll_mobile_gateway_01_outliner_icon"
+		textureFile = "gfx/interface/icons/megastructures/sfdoll/sfdoll_gateway.dds"
+	}
+	spriteType = {
+		name = "GFX_sfdoll_mobile_gateway_02_outliner_icon"
+		textureFile = "gfx/interface/icons/megastructures/sfdoll/sfdoll_gateway.dds"
+	}
+
+	spriteType = {
+		name = "GFX_mega_sfdoll_starport_01_outliner_icon"
+		textureFile = "gfx/interface/icons/megastructures/sfdoll/mega_sfdoll_starport.dds"
+	}
+	spriteType = {
+		name = "GFX_mega_sfdoll_starport_02_outliner_icon"
+		textureFile = "gfx/interface/icons/megastructures/sfdoll/mega_sfdoll_starport.dds"
+	}
+
+	spriteType = {
+		name = "GFX_sfdoll_mega_shipyard_1_outliner_icon"
+		textureFile = "gfx/interface/icons/megastructures/sfdoll/mega_sfdoll_starport.dds"
+	}
+	spriteType = {
+		name = "GFX_sfdoll_mega_shipyard_2_outliner_icon"
+		textureFile = "gfx/interface/icons/megastructures/sfdoll/mega_sfdoll_starport.dds"
+	}
+	spriteType = {
+		name = "GFX_sfdoll_mega_shipyard_3_outliner_icon"
+		textureFile = "gfx/interface/icons/megastructures/sfdoll/mega_sfdoll_starport.dds"
+	}
+	spriteType = {
+		name = "GFX_sfdoll_mega_shipyard_4_outliner_icon"
+		textureFile = "gfx/interface/icons/megastructures/sfdoll/mega_sfdoll_starport.dds"
+	}
+	spriteType = {
+		name = "GFX_sfdoll_mega_shipyard_5_outliner_icon"
+		textureFile = "gfx/interface/icons/megastructures/sfdoll/mega_sfdoll_starport.dds"
+	}
+
+	spriteType = {
+		name = "GFX_sfdoll_habitat_01_outliner_icon"
+		textureFile = "gfx/interface/icons/megastructures/sfdoll/sfdoll_habitat.dds"
+	}
+	spriteType = {
+		name = "GFX_sfdoll_habitat_02_outliner_icon"
+		textureFile = "gfx/interface/icons/megastructures/sfdoll/sfdoll_habitat.dds"
+	}
+
+	spriteType = {
+		name = "GFX_mega_sfdoll_mobile_starbase_1_outliner_icon"
+		textureFile = "gfx/interface/icons/megastructures/sfdoll/mega_sfdoll_mobile_starbase.dds"
+	}
+	spriteType = {
+		name = "GFX_mega_sfdoll_mobile_starbase_2_outliner_icon"
+		textureFile = "gfx/interface/icons/megastructures/sfdoll/mega_sfdoll_mobile_starbase.dds"
+	}
+	spriteType = {
+		name = "GFX_mega_sfdoll_mobile_starbase_3_outliner_icon"
+		textureFile = "gfx/interface/icons/megastructures/sfdoll/mega_sfdoll_mobile_starbase.dds"
+	}
+	spriteType = {
+		name = "GFX_mega_sfdoll_mobile_starbase_4_outliner_icon"
+		textureFile = "gfx/interface/icons/megastructures/sfdoll/mega_sfdoll_mobile_starbase.dds"
+	}
+	
+	# spriteType = {
+	# 	name = "GFX_starbase_outliner"
+	# 	textureFile = "gfx/interface/icons/starbase_outliner.dds"
+	# 	noOfFrames = 9
+	# }
+}
+
+
+

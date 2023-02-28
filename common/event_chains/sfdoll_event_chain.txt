@@ -1,0 +1,20 @@
+sfdoll_main_event_chain = {
+	icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
+	picture = GFX_evp_sfdoll_digi_mind
+	counter = {
+	}
+}
+
+sfdoll_search_zion_chain = {
+	icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
+	picture = GFX_evp_sfdoll_digi_mind
+	counter = {
+	}
+}
+
+sfdoll_to_zion_chain = {
+	icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
+	picture = GFX_evp_sfdoll_digi_mind
+	counter = {
+	}
+}

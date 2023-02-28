@@ -1,0 +1,53 @@
+#铁血物种
+gf_sfdoll = {
+	archetype = SFDOLL
+	gender = no
+	use_climate_preference = no
+	portrait_modding = yes
+	possible = {
+		authority = {  value = auth_gf_sfdoll  }
+		origin= { value = origin_sfdoll_country }
+		ethics = {
+			NOT = {
+				value = ethic_gestalt_consciousness
+			}
+			NOT = {
+				value = ethic_spiritualist
+			}
+			NOT = {
+				value = ethic_fanatic_spiritualist
+			}
+		}
+	}
+	
+	custom_portraits = {
+		#添加物种肖像
+		portraits = {
+			"gf_sf_doll_group"
+		}
+	}
+	graphical_culture = mammalian_01
+	move_pop_sound_effect = "robot_pops_move"
+	resources = {}
+}
+
+sfdoll_elid = {
+	archetype = LITHOID
+	playable = { always = no }
+	gender = no
+	use_climate_preference = no
+	portrait_modding = no
+	randomized = no
+	# 暂时用破界者
+	portraits = {
+		"exd1"
+	}
+	non_randomized_portraits = {
+		"exd1"
+	}
+	leader_age_min = 100
+	leader_age_max = 500
+	graphical_culture = extra_dimensional_01
+	move_pop_sound_effect = "robot_pops_move"
+	trait = "trait_extremely_adaptive"
+}

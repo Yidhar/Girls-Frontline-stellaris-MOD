@@ -1,0 +1,58 @@
+#doll traits modding
+tech_sf_doll_modding_system= {
+	cost = @tier2cost3
+	area = engineering
+	tier = 1
+	category = { industry }
+	prerequisites = { "tech_gf_sfdoll_assemble_building" }
+	potential = {	has_authority = auth_gf_sfdoll	}
+	weight = @tier2weight3
+	
+	gateway = robotics
+	feature_flags = {	modify_robots	}
+	modifier = {
+		SFDOLL_species_trait_points_add = 2
+		# pop_assembly_speed = 0.25
+		planet_pop_assembly_mult = 0.25
+	}
+	weight_modifier = {
+		modifier = {
+			factor = 10
+			years_passed > 10
+		}
+	}
+}
+
+tech_sf_doll_modding_1 = {
+	cost = @tier3cost1
+	area = engineering
+	tier = 3
+	category = { industry }
+	prerequisites = { "tech_sf_doll_modding_system" }
+	potential = {	has_authority = auth_gf_sfdoll	}
+	weight = 1000
+	modifier = {
+		SFDOLL_species_trait_points_add = 4
+		modify_species_cost_mult = -0.25
+		planet_pop_assembly_mult = 0.25
+	}
+	weight_modifier = {
+		modifier = {
+			factor = 2
+			years_passed > 10
+		}
+	}
+}
+
+#铁血二段改造，通过飞升添加
+tech_sf_doll_modding_2 = {
+	cost = @tier4cost1
+	area = engineering
+	tier = 4
+	category = { industry }
+	weight = 0
+	potential = {
+		has_authority = auth_gf_sfdoll
+	}
+	modifier = {	SFDOLL_species_trait_points_add = 8	}
+}

@@ -1,0 +1,28 @@
+utility_component_template = {
+	key = "sfdoll_ship_sensors"
+	size = medium
+	icon = "GFX_sfdoll_ship_sensors"
+	icon_frame = 1
+	prerequisites = { "tech_sfdoll_ship_sensors" }
+	component_set = "sensor_components"
+	power = -30
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 32
+		}
+	}
+	sensor_range = 6
+	hyperlane_range = 12
+	ship_modifier = {
+		ship_tracking_add = 20
+		ship_evasion_mult = 0.25
+	}
+	ai_weight = {
+		weight = 2000
+		modifier = {
+			factor = -4
+			NOT = {	has_authority = auth_gf_sfdoll	}
+		}
+	}
+}

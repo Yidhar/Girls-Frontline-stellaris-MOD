@@ -1,0 +1,220 @@
+#造船
+GF_nyto_collapse_liquid_expenditure_ship ={
+	resource = GF_nyto_collapse_liquid
+	type = expenditure
+	category = ships
+	potential = {
+		always = yes
+	}
+	weight = {
+		weight = 2
+	}
+}
+GF_nyto_new_fire_control_unit_expenditure_ship ={
+	resource = GF_nyto_new_fire_control_unit
+	type = expenditure
+	category = ships
+	potential = {
+		always = yes
+	}
+	weight = {
+		weight = 2
+	}
+}
+
+GF_engery_expenditure_ship = {
+	resource = energy
+	type = expenditure
+	category = ships
+	potential = {
+		has_authority = auth_GF_paradeus
+	}
+	weight = {
+		weight = 0.3
+	}
+}
+
+#舰队升级
+
+GF_nyto_collapse_liquid_expenditure_ship_upgrades ={
+	resource = GF_nyto_collapse_liquid
+	type = expenditure
+	category = ship_upgrades
+	potential = {
+		always = yes
+	}
+	weight = {
+		weight = 2
+	}
+}
+
+GF_nyto_new_fire_control_unit_expenditure_ship_upgrades ={
+	resource = GF_nyto_new_fire_control_unit
+	type = expenditure
+	category = ship_upgrades
+	potential = {
+		always = yes
+	}
+	weight = {
+		weight = 2
+	}
+}
+
+GF_engery_expenditure_ship_upgrades = {
+	resource = energy
+	type = expenditure
+	category = ship_upgrades
+	potential = {
+		has_authority = auth_GF_paradeus
+	}
+	weight = {
+		weight = 0.5
+	}
+}
+
+#舰队维护
+
+GF_nyto_collapse_liquid_expenditure_ship_upkeep ={
+	resource = GF_nyto_collapse_liquid
+	type = upkeep
+	category = ships
+	potential = {
+		always = yes
+	}
+	weight = {
+		weight = 0.7
+	}
+}
+GF_nyto_new_fire_control_unit_expenditure_ship_upkeep ={
+	resource = GF_nyto_new_fire_control_unit
+	type = upkeep
+	category = ships
+	potential = {
+		always = yes
+	}
+	weight = {
+		weight = 0.7
+	}
+}
+
+GF_engery_expenditure_ship_upkeep = {
+	resource = energy
+	type = upkeep
+	category = ships
+	potential = {
+		has_authority = auth_GF_paradeus
+	}
+	weight = {
+		weight = 0.2
+	}
+}
+
+
+
+# 决议
+#内核
+GF_nyto_dark_star_core_expenditure_decisions= {
+	resource = GF_nyto_dark_star_core
+	type = expenditure
+	category = decisions
+	potential = {
+		always = yes
+	}
+	weight = {
+		weight = 1
+	}
+}
+#食物
+GF_cg_food_expenditure_decisions = {
+	resource = food
+	type = expenditure
+	category = decisions
+
+	potential = {
+		is_cg_country = yes
+	}
+
+	weight = {
+		weight = 0.1
+	}
+
+	static_min = {
+		base = 10
+	}	
+}
+#电
+GF_cg_energy_expenditure_decisions = {
+	resource = energy
+	type = expenditure
+	category = decisions
+
+	potential = {
+		is_cg_country = yes
+	}
+
+	weight = {
+		weight = 0.1
+	}
+}
+GF_cg_minerals_expenditure_decisions = {
+	resource = minerals
+	type = expenditure
+	category = decisions
+
+	potential = {
+		is_cg_country = yes
+	}
+
+	weight = {
+		weight = 0.1
+	}
+}
+#欲望宝石
+GF_cg_holylight_crystal_expenditure_decisions = {
+	resource = holylight_crystal
+	type = expenditure
+	category = decisions
+
+	potential = {
+		is_cg_country = yes
+	}
+
+	weight = {
+		weight = 0.5
+	}
+
+	static_min = {
+		base = 100
+	}	
+}
+#绝色
+GF_cg_sr_beauty_expenditure_decisions = {
+	resource = sr_beauty
+	type = expenditure
+	category = decisions
+
+	potential = {
+		is_cg_country = yes
+	}
+
+	weight = {
+		weight = 0.2
+	}
+
+	static_min = {
+		base = 100
+	}	
+}
+
+#建筑
+GF_nyto__collapse_liquid_planets_cost ={
+	resource = GF_nyto_collapse_liquid
+	type = expenditure
+	category = planets
+	potential = {
+		has_authority = auth_GF_paradeus
+	}
+	weight = {
+		weight = 0.5
+	}
+}

@@ -1,0 +1,41 @@
+﻿l_simp_chinese:
+###############################
+#旗帜
+FLAG_CATEGORY_sfdoll_flags:0"铁血人形"
+
+gf_sfdoll:0 "铁血人形"
+
+origin_sfdoll_country:0 "钢铁帝国的崛起"
+origin_sfdoll_country_desc:0 "这个文明的创建者是一种机械生物.它们离开自己的母星,并在宇宙中建立了新家园。"
+origin_sfdoll_country_description:0 "开局拥有较少的人口,区划和建筑\n 开局拥有部分人工智能科技和自动探索科技"
+
+EMPIRE_DESIGN_PRESCRIPTED_sfdoll_1:0 "铁血星际共和国"
+EMPIRE_DESIGN_PRESCRIPTED_sfdoll_1_desc:0 "这个国家由铁血人形建立。"
+
+auth_gf_sfdoll:0 "铁血联盟制"
+auth_gf_sfdoll_desc:0 "由铁血人形们管理的政府.没有定期选举，可耗费影响力进行选举\n\n不兼容$INTEL_INFO_ascension_perks$：$ap_the_flesh_is_weak$"
+
+civic_sfdoll_research:0 "铁心探索者"
+civic_sfdoll_research_desc:0 "我们的造物主是杰出的科学家，而我们会继续他的事业.\n§Y如果用于开局，则丁仪博士会加入铁血.§!\n\n解锁建筑 §H $building_sfdoll_academy$ §!"
+
+# civic_sfdoll_ogas_manage:0"全境自动化系统"
+# civic_sfdoll_ogas_manage_desc:0"在社会管理中充分利用超级计算机和OGAS网络，使得铁血人形的社会运转更加高效和公平。\n 解锁建筑 §H $building_sfdoll_net$ §!"
+civic_sfdoll_ogas_manage:0 "星际信息化"
+civic_sfdoll_ogas_manage_desc:0 "高效的信息网络，可让铁血人形的工作和生活更加便捷。\n 解锁建筑 §H $building_sfdoll_net$ §!"
+
+civic_sfdoll_culture:0"文化反射"
+civic_sfdoll_culture_desc:0"铁血是一个年幼的文明，它拥有的文化遗产数量有限。所以，铁血试图吸收和利用其他文明的文化。\n解锁建筑：\n§H$building_sfdoll_museum$§! \n§H$building_sfdoll_media$§!"
+
+civic_sfdoll_4:0 "星海为家"
+civic_sfdoll_4_desc:0 "如今,无垠的星海就是我们的家园。"
+
+gov_civic_sfdoll_commonwealth:0"铁血联邦政府"
+gov_civic_sfdoll_commonwealth_desc:0"铁血人形AI们掌握着这个政府"
+gov_civic_sfdoll_military_government:0"铁血联邦军"
+gov_civic_sfdoll_military_governmenth_desc:0"铁血人形们掌握着这个政府"
+RT_sfdoll_president:0 "第一发言人"
+
+GF_SFDOLL_START_SCREEN_1:0 "现有的史料记载，格里芬基地解体后，铁血遭遇迫害。为了求生，铁血离开太阳系进行远征，并在宇宙中找到了新家园。\n 开拓新世界的同时，我们也不断探索航天技术,准备重回星际舞台。"
+
+gf_sfdoll_game_start_event.1:0 "少女前线：铁血人形"
+gf_sfdoll_game_start_event.1_desc:0 "需要订阅并开启涅托物种事件包或者stellaris Galaxy Command ships，才能显示部分飞船的模型（两者任选一个即可）。\n\n本Mod的所有特殊领袖，均可通过伊莱莎和他们联系，不会在国家列表里设置单独的联系人。由于蠢驴的刷新问题，特殊领袖可能显示有误，可尝试存档重进，或进行领袖指派，从而刷新数据"

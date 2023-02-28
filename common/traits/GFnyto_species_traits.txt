@@ -1,0 +1,737 @@
+###不可替换的种族特质###
+#最后的曙光
+trait_GF_nyto_the_last_light= {
+    cost = 0
+	sorting_priority = 20
+	potential_crossbreeding_chance = 0 #潜在杂交概率
+	initial = no #是否初始特质,指是否开局可选
+	randomized = no #是否随机特质（指生成ai时是否会有此特性）
+	species_possible_remove = {
+		always = no
+	}
+	species_potential_add = {
+		always = no
+	}
+	immortal_leaders = no
+	improves_leaders = yes #是否会影响领袖
+	advanced_trait=no #是否高级特质
+	icon="gfx/interface/icons/traits/nyto/trait_GF_nyto_the_last_light.dds"
+	allowed_archetypes = {NYTO}#物种限制（涅托）
+    # 设置效果
+    modifier = {
+		planet_jobs_engineering_research_produces_mult = 0.15
+		planet_jobs_physics_research_produces_mult = 0.15
+		planet_jobs_society_research_produces_mult = 0.15				
+	}
+	assembling_modifier = {
+		planet_pop_assembly_add = 2
+	}
+	slave_cost = {energy = 50}
+}
+#OGAS脑抑制器
+trait_GF_nyto_ogas_agreement= {
+    cost = 0
+	sorting_priority = 20
+	potential_crossbreeding_chance = 1 #潜在杂交概率
+	initial = no #是否初始特质,指是否开局可选
+	randomized = no #是否随机特质（指生成ai时是否会有此特性）
+	species_possible_remove = {
+		always = no
+	}
+	species_possible_merge_remove = {
+		owner = {
+			has_ascension_perk = ap_GF_nyto_noussphere
+		}
+		
+	}
+	species_potential_add = {
+		always = no
+	}
+	immortal_leaders = no
+	improves_leaders = yes #是否会影响领袖
+	advanced_trait=no #是否高级特质
+	icon="gfx/interface/icons/traits/nyto/trait_GF_nyto_ogas_agreement_plus.dds"
+	allowed_archetypes = {NYTO}#物种限制（涅托）
+    modifier = {
+		planet_jobs_produces_mult = -0.2
+		country_unity_produces_mult = -0.3
+		all_technology_research_speed = 0.3
+	}
+	slave_cost = {energy = 50}
+}
+
+
+#OGAS协议
+trait_GF_nyto_ogas_agreement_plus= {
+    cost = 0
+	sorting_priority = 20
+	potential_crossbreeding_chance = 4
+	initial = no #是否初始特质,指是否开局可选
+	randomized = no #是否随机特质（指生成ai时是否会有此特性）
+	species_potential_remove = {
+		always = yes
+	}
+	species_possible_merge_add = {
+		OR = {
+			has_trait = trait_GF_nyto_ogas_agreement
+			has_trait = trait_GF_nyto_noussphere
+		}
+	}
+	species_potential_add = {
+		always = no
+	}
+	immortal_leaders = no
+	improves_leaders = yes #是否会影响领袖
+	advanced_trait= yes #是否高级特质
+	icon="gfx/interface/icons/traits/nyto/trait_GF_nyto_OGAS_system.dds"
+	allowed_archetypes = {NYTO}#物种限制（涅托）
+    modifier = {
+		planet_jobs_engineering_research_produces_mult = 0.3
+		planet_jobs_physics_research_produces_mult = 0.3
+		planet_jobs_society_research_produces_mult = 0.3
+	}
+	slave_cost = {energy = 50}
+}
+
+#Noussphere
+trait_GF_nyto_noussphere = {
+	icon = "gfx/interface/icons/traits/nyto/trait_GF_nyto_noussphere.dds"
+	cost = 0
+	sorting_priority = 20
+	potential_crossbreeding_chance = 5
+	initial = no #是否初始特质,指是否开局可选
+	randomized = no #是否随机特质（指生成ai时是否会有此特性）
+	improves_leaders = yes #是否会影响领袖
+	advanced_trait= yes #是否高级特质
+	allowed_archetypes = {NYTO }#物种限制（涅托）
+	species_potential_remove = {
+		always = no
+	}
+	species_potential_add = {
+		always = no
+	}
+	modifier = {
+		planet_jobs_produces_mult = 0.15
+	}
+	slave_cost = {energy = 50}
+}
+
+#未卜先知的人造神明
+
+
+#屑指
+
+
+
+
+#昙花种植者
+trait_GFnyto_tanhua = {
+	icon = "gfx/interface/icons/traits/nyto/trait_GFnyto_tanhua.dds"
+	cost = 2
+	sorting_priority = 20
+	potential_crossbreeding_chance = 0 #潜在杂交概率
+	species_possible_remove = {
+		always = no
+	}
+	randomized = no #是否随机特质（指生成ai时是否会有此特性）
+	improves_leaders = no #是否会影响领袖
+	advanced_trait= no #是否高级特质
+	allowed_archetypes =  { NYTO }#物种限制（涅托）
+	modifier = {
+		pop_happiness = -0.05
+	}
+}
+#坍缩辐射适应
+trait_GF_nyto_collapse_radiation_adaptation= {
+    cost = 0
+	sorting_priority = 20
+	potential_crossbreeding_chance = 0 #潜在杂交概率
+	initial = no #是否初始特质,指是否开局可选
+	randomized = no #是否随机特质（指生成ai时是否会有此特性）
+	immortal_leaders = no
+	improves_leaders = no #是否会影响领袖
+	advanced_trait=no #是否高级特质
+	species_potential_add = {
+		always = no
+	}
+	species_possible_remove = {
+		always = no
+	}
+	icon="gfx/interface/icons/traits/nyto/trait_GF_nyto_collapse_radiation_adaptation.dds"
+	allowed_archetypes = {NYTO}#物种限制（涅托）
+    modifier = {
+		pc_GF_nyto_embers_gloomy_habitability = 10
+		pc_GF_nyto_devil_furnace_habitability = 7.8
+		pc_nuked_habitability = 0.8
+		pop_environment_tolerance = 0.2
+	}
+	slave_cost = {energy = 50}
+}
+#忠诚的ELID-infected
+trait_GF_nyto_loyal_ELID_infected= {
+	cost = 0
+	potential_crossbreeding_chance = 0 #潜在杂交概率
+	initial = no #是否初始特质,指是否开局可选
+	randomized = no #是否随机特质（指生成ai时是否会有此特性）
+	improves_leaders = no #是否会影响领袖
+	advanced_trait= no #是否高级特质
+	species_possible_remove = {
+		always = no
+	}
+	species_potential_add = {
+		always = no
+	}
+	icon="gfx/interface/icons/traits/nyto/trait_GF_nyto_loyal_ELID_infected.dds"
+	allowed_archetypes = { EILD }
+	modifier = {
+		pc_GF_nyto_devil_furnace_habitability = 11
+		pc_GF_nyto_embers_gloomy_habitability = 11
+		pc_nuked_habitability = 1
+		# planet_jobs_worker_produces_mult = 1
+		planet_jobs_produces_mult = 0.15
+		planet_jobs_consumer_goods_upkeep_mult = -0.2
+		army_health = 2
+	}
+}
+
+
+
+
+
+###涅托天灾特质###暂时搁置###
+#野兽之源
+trait_GF_nyto_savage_origin= {
+	cost = 0
+	potential_crossbreeding_chance = 0 #潜在杂交概率
+	initial =no #是否初始特质,指是否开局可选
+	species_potential_add = {
+		always = no
+	}
+	species_possible_remove = {
+		always = no
+	}
+	randomized =no #是否随机特质（指生成ai时是否会有此特性）
+	improves_leaders = yes #是否会影响领袖
+	advanced_trait=no #是否高级特质
+	icon="gfx/interface/icons/traits/nyto/trait_GF_nyto_savage_origin.dds"
+	allowed_archetypes = {NYTO}
+	modifier = {
+		pc_GF_nyto_devil_furnace_habitability = 11
+		pc_GF_nyto_embers_gloomy_habitability = 11
+		pc_nuked_habitability = 1
+	}
+}
+#暴食
+trait_GF_nyto_gluttony= {
+	cost = 0
+	potential_crossbreeding_chance = 0 #潜在杂交概率
+	initial =no #是否初始特质,指是否开局可选
+	species_potential_add = {
+		always = no
+	}
+	species_possible_remove = {
+		always = no
+	}
+	randomized =no #是否随机特质（指生成ai时是否会有此特性）
+	improves_leaders = yes #是否会影响领袖
+	advanced_trait=no #是否高级特质
+	icon="gfx/interface/icons/traits/nyto/trait_GF_nyto_gluttony.dds"
+	allowed_archetypes = {NYTO}
+	modifier = {planet_jobs_food_produces_mult = 1}
+}
+#色欲
+trait_GF_nyto_lust= {
+	cost = 0
+	potential_crossbreeding_chance = 0 #潜在杂交概率
+	initial =no #是否初始特质,指是否开局可选	
+	species_potential_add = {
+		always = no
+	}
+	species_possible_remove = {
+		always = no
+	}
+	randomized =no #是否随机特质（指生成ai时是否会有此特性）
+	improves_leaders = yes #是否会影响领袖
+	advanced_trait=no #是否高级特质
+	icon="gfx/interface/icons/traits/nyto/trait_GF_nyto_lust.dds"
+	allowed_archetypes = {NYTO}
+	modifier = {planet_jobs_consumer_goods_produces_mult = 1}
+}
+#贪婪
+trait_GF_nyto_greedy= {
+	cost = 0
+	potential_crossbreeding_chance = 0 #潜在杂交概率
+	initial =no #是否初始特质,指是否开局可选
+	species_potential_add = {
+		always = no
+	}
+	species_possible_remove = {
+		always = no
+	}
+	randomized =no #是否随机特质（指生成ai时是否会有此特性）
+	improves_leaders = yes #是否会影响领袖
+	advanced_trait=no #是否高级特质
+	icon="gfx/interface/icons/traits/nyto/trait_GF_nyto_greedy.dds"
+	allowed_archetypes = {NYTO}
+	modifier = {planet_jobs_energy_produces_mult = 1}
+}
+#傲慢
+trait_GF_nyto_arrogant= {
+	cost = 0
+	potential_crossbreeding_chance = 0 #潜在杂交概率
+	initial =no #是否初始特质,指是否开局可选
+	species_potential_add = {
+		always = no
+	}
+	species_possible_remove = {
+		always = no
+	}
+	randomized =no #是否随机特质（指生成ai时是否会有此特性）
+	improves_leaders = yes #是否会影响领袖
+	advanced_trait=no #是否高级特质
+	icon="gfx/interface/icons/traits/nyto/trait_GF_nyto_arrogant.dds"
+	allowed_archetypes = {NYTO}
+	modifier = {planet_researchers_produces_mult = 1}
+}
+#怠惰
+trait_GF_nyto_laziness= {
+	cost = 0
+	potential_crossbreeding_chance = 0 #潜在杂交概率
+	initial =no #是否初始特质,指是否开局可选
+	species_potential_add = {
+		always = no
+	}
+	species_possible_remove = {
+		always = no
+	}
+	randomized =no #是否随机特质（指生成ai时是否会有此特性）
+	improves_leaders = yes #是否会影响领袖
+	advanced_trait=no #是否高级特质
+	icon="gfx/interface/icons/traits/nyto/trait_GF_nyto_laziness.dds"
+	allowed_archetypes = {NYTO}
+	modifier = {planet_jobs_minerals_produces_mult = 1}
+}
+#愤怒
+trait_GF_nyto_anger= {
+	cost = 0
+	potential_crossbreeding_chance = 0 #潜在杂交概率
+	initial =no #是否初始特质,指是否开局可选
+	species_potential_add = {
+		always = no
+	}
+	species_possible_remove = {
+		always = no
+	}
+	randomized =no #是否随机特质（指生成ai时是否会有此特性）
+	improves_leaders = yes #是否会影响领袖
+	advanced_trait=no #是否高级特质
+	icon="gfx/interface/icons/traits/nyto/trait_GF_nyto_anger.dds"
+	allowed_archetypes = {NYTO}
+	modifier = {
+		army_health = 1
+		army_damage_mult = 1
+	}
+}
+#嫉妒
+trait_GF_nyto_envy= {
+	cost = 0
+	potential_crossbreeding_chance = 0 #潜在杂交概率
+	initial =no #是否初始特质,指是否开局可选
+	species_potential_add = {
+		always = no
+	}
+	species_possible_remove = {
+		always = no
+	}
+	randomized =no #是否随机特质（指生成ai时是否会有此特性）
+	improves_leaders = yes #是否会影响领袖
+	advanced_trait=no #是否高级特质
+	icon="gfx/interface/icons/traits/nyto/trait_GF_nyto_envy.dds"
+	allowed_archetypes = {NYTO}
+	modifier = {planet_jobs_unity_produces_mult=1}
+}
+
+
+
+
+###普通特质##
+#地底居者
+trait_GF_nyto_underground_dweller= {
+	cost = 2
+	potential_crossbreeding_chance = 0 #潜在杂交概率
+	initial = yes #是否初始特质,指是否开局可选
+	randomized = yes #是否随机特质（指生成ai时是否会有此特性）
+	improves_leaders = yes #是否会影响领袖
+	advanced_trait= no #是否高级特质
+	icon="gfx/interface/icons/traits/nyto/trait_GF_nyto_underground_dweller.dds"
+	allowed_archetypes = {NYTO}
+	modifier = {
+		pc_GF_nyto_embers_gloomy_habitability = 0.1
+		pc_GF_nyto_devil_furnace_habitability = 0.05
+		pop_housing_usage_mult = 0.2
+		leader_age = -10
+	}
+}
+#抗逆药物
+trait_GF_nyto_anti_stress_drugs= {
+	cost = 2
+	potential_crossbreeding_chance = 0 #潜在杂交概率
+	initial = yes #是否初始特质,指是否开局可选
+	randomized = yes #是否随机特质（指生成ai时是否会有此特性）
+	improves_leaders = yes #是否会影响领袖
+	advanced_trait= no #是否高级特质
+	icon="gfx/interface/icons/traits/nyto/trait_GF_nyto_anti_stress_drugs.dds"
+	allowed_archetypes = {NYTO}
+	modifier = {
+		pc_GF_nyto_embers_gloomy_habitability = 0.1
+		pc_GF_nyto_devil_furnace_habitability = 0.05
+		planet_pops_consumer_goods_upkeep_mult = 0.2
+	}
+}
+#细胞重生
+trait_GF_nyto_cell_regeneration= {
+	cost = 2
+	potential_crossbreeding_chance = 0 #潜在杂交概率
+	initial = yes #是否初始特质,指是否开局可选
+	randomized = yes #是否随机特质（指生成ai时是否会有此特性）
+	improves_leaders = yes #是否会影响领袖
+	advanced_trait=no #是否高级特质
+	icon="gfx/interface/icons/traits/nyto/trait_GF_nyto_cell_regeneration.dds"
+	allowed_archetypes = {NYTO}
+	modifier = {
+		pc_GF_nyto_embers_gloomy_habitability = 0.2
+		pc_GF_nyto_devil_furnace_habitability = 0.1
+		planet_pops_consumer_goods_upkeep_mult = 0.1
+		planet_jobs_produces_mult = 0.1
+		leader_age = 40
+	}
+}
+#硅化表皮
+trait_GF_nyto_silicified_epidermis= {
+	cost = 3
+	potential_crossbreeding_chance = 0 #潜在杂交概率
+	initial = yes #是否初始特质,指是否开局可选
+	randomized = yes #是否随机特质（指生成ai时是否会有此特性）
+	improves_leaders = yes #是否会影响领袖
+	advanced_trait=no #是否高级特质
+	icon="gfx/interface/icons/traits/nyto/trait_GF_nyto_silicified_epidermis.dds"
+	allowed_archetypes = {NYTO}
+	modifier = {
+		army_health = 1
+		pop_happiness = -0.05
+	}
+}
+
+
+#高度义体化
+trait_GF_nyto_ingenious = {
+	cost = 2
+	slave_cost = {
+		energy = 50
+	}
+	potential_crossbreeding_chance = 1.0
+	icon="gfx/interface/icons/traits/nyto/trait_GF_nyto_ingenious.dds"
+	allowed_archetypes = {NYTO}
+	modifier = { 
+		planet_pops_robotics_alloys_upkeep_mult = 0.1
+		army_damage_mult = 0.15
+		army_health = 0.15
+		planet_jobs_minerals_produces_mult = 0.15
+	}
+	assembling_modifier = {
+		planet_pop_assembly_mult = -0.1
+	}
+	slave_cost = {energy = 50}
+	opposites = {
+		trait_GF_nyto_natural_physicists
+	}
+}
+
+#不稳定精神体
+trait_GF_nyto_industrious = {
+	cost = -2
+	slave_cost = {
+		energy = 50
+	}
+	potential_crossbreeding_chance = 1.0
+	icon="gfx/interface/icons/traits/nyto/trait_GF_nyto_industrious.dds"
+	allowed_archetypes = {NYTO}
+	modifier = {
+		planet_jobs_unity_produces_mult = -0.15
+		planet_jobs_consumer_goods_produces_mult =-0.1
+	}
+	slave_cost = {energy = 50}
+}
+
+#冷淡
+trait_GF_nyto_agrarian = {
+	cost = -1
+	slave_cost = {
+		energy = 30
+	}
+	potential_crossbreeding_chance = 1.0	
+	icon="gfx/interface/icons/traits/nyto/trait_GF_nyto_agrarian.dds"
+	allowed_archetypes = {NYTO}
+	modifier = {
+		NYTO_pop_happiness = -0.1
+		country_trust_growth = -0.25
+	}
+	slave_cost = {energy = 50}
+}
+#废弃实验体
+trait_GF_nyto_intelligent = {
+	cost = -3
+	slave_cost = {
+		energy = 80
+	}
+	potential_crossbreeding_chance = 1.0
+	icon="gfx/interface/icons/traits/nyto/trait_GF_nyto_intelligent.dds"
+	allowed_archetypes = {NYTO}
+	modifier = {
+		planet_jobs_GF_nyto_collapse_liquid_produces_mult = -0.10
+		pc_GF_nyto_embers_gloomy_habitability = -0.05
+	}
+}
+
+#废弃异构体
+trait_GF_nyto_natural_engineers = {
+	cost = -3
+	potential_crossbreeding_chance = 1.0
+	icon="gfx/interface/icons/traits/nyto/trait_GF_nyto_natural_engineers.dds"
+	allowed_archetypes = {NYTO}
+	modifier = { 
+		leader_age = -10
+		planet_pops_food_upkeep_mult = -0.15
+		army_health = -0.2
+		pc_GF_nyto_embers_gloomy_habitability = -0.1
+	 }
+}
+
+#高仿生躯体
+trait_GF_nyto_natural_physicists = {
+	cost = 2
+	slave_cost = {
+		energy = 50
+	}
+	potential_crossbreeding_chance = 1.0
+	icon="gfx/interface/icons/traits/nyto/trait_GF_nyto_natural_physicists.dds"
+	allowed_archetypes = {NYTO}
+	modifier = {
+		planet_jobs_food_produces_mult = 0.1
+		planet_pops_minerals_upkeep_add = 0.05
+		army_health = -0.1
+		pop_housing_usage_mult = -0.15
+		country_trust_growth = 0.25		
+	}
+	opposites = {
+		trait_GF_nyto_ingenious
+	}
+}
+
+#缺陷的科研模块
+trait_GF_nyto_week_research ={
+	cost = -3
+	slave_cost = {
+		energy = 100
+	}
+	icon="gfx/interface/icons/traits/nyto/trait_GF_nyto_week_research.dds"
+	potential_crossbreeding_chance = 1.0
+	allowed_archetypes = { NYTO }
+	modifier = {
+		planet_researchers_produces_mult = -0.2
+		planet_jobs_unity_produces_mult = -0.1
+		army_damage_mult = 0.15
+	}
+}
+
+#减免的学习模块
+trait_GF_nyto_modesty ={
+	cost = -2
+	slave_cost = {
+		energy = 50
+	}
+	icon="gfx/interface/icons/traits/nyto/trait_GF_nyto_modesty.dds"
+	allowed_archetypes = { NYTO }
+	modifier = {
+		leaders_cost_mult = 0.25
+		planet_jobs_unity_produces_mult = -0.05
+		planet_jobs_worker_produces_mult = 0.05
+	}
+}
+
+#简陋构造
+trait_GF_nyto_Simple_structure ={
+	cost = -2
+	slave_cost = { energy = 50 }
+	icon="gfx/interface/icons/traits/nyto/trait_GF_nyto_Simple_structure.dds"
+	allowed_archetypes = { NYTO }
+	modifier = {
+		army_defense_health_mult = -0.15
+		habitability_ceil_add = -0.1
+	}
+	assembling_modifier = {
+		planet_pop_assembly_mult = 0.15
+	}
+}
+
+#低本地存储
+trait_GF_nyto_Low_local_storage = {
+	cost = -3
+	slave_cost = { energy = 80 }
+	allowed_archetypes = { NYTO }
+	icon="gfx/interface/icons/traits/nyto/trait_GF_nyto_Low_local_storage.dds"
+	modifier = {
+		planet_jobs_physics_research_produces_mult =-0.15
+		planet_jobs_society_research_produces_mult = -0.15
+		planet_jobs_engineering_research_produces_mult = -0.15		
+	}
+}
+
+#活体适应接口
+trait_GF_nyto_adaptive_interface = {
+	cost = 3
+	slave_cost = {
+		energy = 80
+	}
+	icon="gfx/interface/icons/traits/nyto/trait_GF_nyto_adaptive_interface.dds"
+	allowed_archetypes = { NYTO }
+	modifier = {
+		army_health = 0.5
+		armies_upkeep_mult = 0.2
+		planet_jobs_worker_produces_mult = 0.15
+	}
+	opposites = {
+		trait_GF_NYTO_Abstract_interface
+	}
+}
+
+#开源协议
+trait_GF_nyto_Open_source_licenses = {
+	improves_leaders = yes
+	cost = 2
+	slave_cost = {
+		energy = 80
+	}
+	icon="gfx/interface/icons/traits/nyto/trait_GF_nyto_Open_source_licenses.dds"
+	allowed_archetypes = {
+		NYTO
+	}
+	modifier = {
+		planet_jobs_produces_mult = 0.05
+		leaders_upkeep_mult = -0.1
+		species_leader_exp_gain = 0.5
+	}
+}
+
+#外置逻辑硬件
+trait_GF_nyto_External_logic_hardware = {
+	cost = 3
+	slave_cost = {
+		energy = 100
+	}
+	icon="gfx/interface/icons/traits/nyto/trait_GF_nyto_External_logic_hardware.dds"
+	allowed_archetypes = {
+		NYTO
+	}
+	modifier = {
+		leader_skill_levels = 2
+		species_leader_exp_gain = 0.5
+		planet_jobs_produces_mult = 0.1
+		army_health = -0.05
+		planet_pops_upkeep_mult = 0.05
+	}
+	opposites = {
+		trait_GF_nyto_week_research
+		trait_GF_nyto_modesty
+	}
+}
+#自主学习拓展
+trait_GF_nyto_Self_directed_development = {
+	cost = 4
+	slave_cost = {
+		energy = 100
+	}
+	allowed_archetypes = {
+		NYTO
+	}
+	icon="gfx/interface/icons/traits/nyto/trait_GF_nyto_Self_directed_development.dds"
+	modifier = {
+		planet_researchers_produces_mult = 0.25
+		planet_jobs_unity_produces_mult = 0.2
+	}
+	opposites = {
+		trait_GF_nyto_modesty
+		trait_GF_nyto_week_research
+	}
+}
+
+#抽象类接口 
+trait_GF_nyto_Abstract_interface = {
+	cost = 3
+	slave_cost = {
+		energy = 80
+	}
+	allowed_archetypes = {
+		NYTO
+	}
+	icon="gfx/interface/icons/traits/nyto/trait_GF_nyto_Abstract_interface.dds"
+	modifier = {
+		planet_jobs_worker_produces_mult = 0.15
+		army_attack_damage_mult = 0.25
+	}
+	opposites = {
+		trait_GF_nyto_adaptive_interface
+	}
+}
+
+#高级特质
+#云端阵列
+trait_GF_nyto_cloud_array = {
+	cost = 4
+	slave_cost = {
+		energy = 100
+	}
+	allowed_archetypes = {
+		NYTO
+	}
+	initial = no
+	icon="gfx/interface/icons/traits/nyto/trait_GF_nyto_cloud_array.dds"
+	modifier = {
+		planet_pops_upkeep_mult = 0.15
+		country_produces_mult = 0.2
+		empire_size_mult = -0.3		
+	}
+	opposites = {
+		trait_GF_nyto_Low_local_storage
+		trait_GF_nyto_Simple_structure
+		trait_GF_nyto_modesty
+		trait_GF_nyto_week_research
+	}
+}
+
+#生命自动机
+trait_GF_nyto_Life_life_automata = {
+	cost = 4
+	slave_cost = {
+		energy = 100
+	}
+	allowed_archetypes = {
+		NYTO
+	}
+	icon="gfx/interface/icons/traits/nyto/trait_GF_nyto_Life_life_automata.dds"
+	immortal_leaders = yes
+	initial = no
+	modifier = {		
+		planet_colony_development_speed_mult = 1
+		planet_building_build_speed_mult = 0.5
+	}
+	assembling_modifier = {
+		planet_pop_assembly_add = 5
+	}
+	opposites = {
+		trait_GF_nyto_Low_local_storage
+		trait_GF_nyto_Simple_structure
+		trait_GF_nyto_modesty
+		trait_GF_nyto_week_research
+	}
+}

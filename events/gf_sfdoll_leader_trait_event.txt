@@ -1,0 +1,156 @@
+namespace = gf_sfdoll_leader_trait_event
+#id标准写法为namespace的值加上编号
+
+#铁血领袖招募
+country_event = {
+	id = gf_sfdoll_leader_trait_event.0
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {from = {species = { has_trait = trait_gf_sfdoll }}}
+	immediate = {
+		from = {
+			if = {
+				limit = { leader_class = governor }
+				add_trait = leader_governor_trait_gf_sfdoll
+				add_ruler_trait = leader_ruler_trait_gf_sfdoll
+				break = yes
+			}
+			if = {
+				limit = { leader_class = scientist }
+				add_trait = leader_scientist_trait_gf_sfdoll
+				add_ruler_trait = leader_ruler_trait_gf_sfdoll
+				break = yes
+			}
+			if = {
+				limit = { leader_class = admiral }
+				add_trait = leader_admiral_trait_gf_sfdoll
+				add_ruler_trait = leader_ruler_trait_gf_sfdoll
+				break = yes
+			}
+			if = {
+				limit = { leader_class = general }
+				add_trait = leader_general_trait_gf_sfdoll
+				add_ruler_trait = leader_ruler_trait_gf_sfdoll
+				break = yes
+			}
+			if = {
+				limit = { leader_class = ruler }
+				add_trait = leader_ruler_trait_gf_sfdoll
+				add_ruler_trait = leader_ruler_trait_gf_sfdoll
+				break = yes
+			}
+		}
+	}
+}
+
+#铁血领袖招募时，为其加上升级特性
+country_event = {
+	id = gf_sfdoll_leader_trait_event.1
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		from = {species = { has_trait = trait_gf_sfdoll }}
+		owner =  {	has_country_flag = sfdoll_country_can_update_leader }
+	}
+	immediate = {
+		from = {
+			if = {
+				limit = { leader_class = governor }
+				add_trait = leader_governor_trait_gf_sfdoll_2
+				add_ruler_trait = leader_ruler_trait_gf_sfdoll_2
+				break = yes
+			}
+			if = {
+				limit = { leader_class = scientist }
+				add_trait = leader_scientist_trait_gf_sfdoll_2
+				add_ruler_trait = leader_ruler_trait_gf_sfdoll_2
+				break = yes
+			}
+			if = {
+				limit = { leader_class = admiral }
+				add_trait = leader_admiral_trait_gf_sfdoll_2
+				add_ruler_trait = leader_ruler_trait_gf_sfdoll_2
+				break = yes
+			}
+			if = {
+				limit = { leader_class = general }
+				add_trait = leader_general_trait_gf_sfdoll_2
+				add_ruler_trait = leader_ruler_trait_gf_sfdoll_2
+				break = yes
+			}
+			if = {
+				limit = { leader_class = ruler }
+				add_trait = leader_ruler_trait_gf_sfdoll_2
+				add_ruler_trait = leader_ruler_trait_gf_sfdoll_2
+				break = yes
+			}
+		}
+	}
+}
+
+#ruler退位回到岗位，为其添加铁血领袖特质
+country_event = {
+	id = gf_sfdoll_leader_trait_event.2
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {from = {species = { has_trait = trait_gf_sfdoll }}}
+	immediate = {
+		from = {
+			if = {
+				limit = { leader_class = governor }
+				add_trait = leader_governor_trait_gf_sfdoll
+				break = yes
+			}
+			if = {
+				limit = { leader_class = scientist }
+				add_trait = leader_scientist_trait_gf_sfdoll
+				break = yes
+			}
+			if = {
+				limit = { leader_class = admiral }
+				add_trait = leader_admiral_trait_gf_sfdoll
+				break = yes
+			}
+			if = {
+				limit = { leader_class = general }
+				add_trait = leader_general_trait_gf_sfdoll
+				break = yes
+			}
+		}
+	}
+}
+
+#点了飞升后，ruler退位回到岗位，为其添加铁血升级特质
+country_event = {
+	id = gf_sfdoll_leader_trait_event.3
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		from = {species = { has_trait = trait_gf_sfdoll }}
+		owner = { has_country_flag = sfdoll_country_can_update_leader }
+	}
+	immediate = {
+		from = {
+			if = {
+				limit = { leader_class = governor }
+				add_trait = leader_governor_trait_gf_sfdoll_2
+				break = yes
+			}
+			if = {
+				limit = { leader_class = scientist }
+				add_trait = leader_scientist_trait_gf_sfdoll_2
+				break = yes
+			}
+			if = {
+				limit = { leader_class = admiral }
+				add_trait = leader_admiral_trait_gf_sfdoll_2
+				break = yes
+			}
+			if = {
+				limit = { leader_class = general }
+				add_trait = leader_general_trait_gf_sfdoll_2
+				break = yes
+			}
+		}
+	}
+}

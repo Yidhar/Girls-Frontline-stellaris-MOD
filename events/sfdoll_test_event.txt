@@ -1,0 +1,177 @@
+namespace = sfdoll_test_event
+#id标准写法为namespace的值加上编号
+#用于修各种版本bug和兼容
+
+#开局储存最新的版本号,如果游戏中读取到版本号和开局储存的版本号不同，就表示必须更新
+country_event = {
+	id = sfdoll_test_event.1
+	hide_window = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		has_authority = auth_gf_sfdoll
+	}
+	immediate = {
+		set_variable = {
+			which = sfdoll_mod_version_save
+			value = @sfdoll_mod_version
+		}
+	}
+}
+# 检查存档版本号是否和当前版本号一致
+country_event = {
+	id = sfdoll_test_event.2
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		has_authority = auth_gf_sfdoll
+		NOT = {
+			check_variable = {
+				which = sfdoll_mod_version_save
+				value = @sfdoll_mod_version
+			}
+		}
+	}
+	# immediate = {
+	# 	begin_event_chain = { event_chain = sfdoll_main_event_chain }
+	# }
+}
+
+country_event = {
+	id = sfdoll_test_event.3
+	hide_window = no
+	is_triggered_only = yes
+	immediate = {
+		clear_resources = yes
+	}
+}
+
+country_event = {
+	id = sfdoll_test_event.4
+	hide_window = no
+	is_triggered_only = yes
+	immediate = {
+		capital_scope = {
+			solar_system = {
+				create_fleet = {
+					name = "Name_beacon_ship_sfdoll_fleet"
+					effect = {
+						set_owner = root
+						create_ship = {
+							design = design_beacon_ship_sfdoll
+							name = Name_beacon_ship_sfdoll
+							upgradable = no
+							
+						}
+						set_fleet_flag = lady_naming_fleet
+						set_location = ROOT.capital_scope
+						save_global_event_target_as = fleet_beacon_sfdoll_1
+						# set_event_locked = yes
+					}
+					settings = {
+						can_upgrade = no 
+						uses_naval_capacity = no
+						spawn_debris = no
+						can_disband = yes
+						can_change_leader = no
+						can_change_composition = no
+					}
+				}
+
+				create_fleet = {
+					name = "Name_beacon_ship_sfdoll_fleet"
+					effect = {
+						set_owner = root
+						create_ship = {
+							design = design_beacon_ship_sfdoll
+							name = Name_beacon_ship_sfdoll
+							upgradable = no
+						}
+						set_fleet_flag = lady_naming_fleet
+						set_location = ROOT.capital_scope
+						save_global_event_target_as = fleet_beacon_sfdoll_2
+						# set_event_locked = yes
+					}
+					settings = {
+						can_upgrade = no 
+						uses_naval_capacity = no
+						spawn_debris = no
+						can_disband = yes
+						can_change_leader = no
+						can_change_composition = no
+					}
+				}
+			}
+		}
+	}
+}
+
+
+country_event = {
+	id = sfdoll_test_event.5
+	hide_window = no
+	is_triggered_only = yes
+	immediate = {
+		add_resource = {
+			energy = 100000
+			minerals = 100000
+			consumer_goods = 100000
+			alloys = 100000
+			unity = 100000
+			GF_nyto_collapse_liquid = 100000
+			sr_dark_matter = 100000
+			nanites = 100000
+			exotic_gases = 100000
+			rare_crystals = 100000
+			volatile_motes = 100000
+		}
+		add_modifier = {
+			modifier = sfdoll_test_modifier
+			days = -1
+		}
+	}
+}
+
+country_event = {
+	id = sfdoll_test_event.6
+	hide_window = no
+	is_triggered_only = yes
+	immediate = {
+		remove_modifier = sfdoll_test_modifier
+	}
+}
+
+# country_event = {
+# 	id = sfdoll_test_event.7
+# 	hide_window = no
+# 	is_triggered_only = yes
+# 	immediate = {
+# 		event_target:sfdoll_leader_elisa = {
+# 			kill_leader = { show_notification = yes fire = no }
+# 		}
+# 		event_target:sfdoll_leader_ump45 = {
+# 			kill_leader = { show_notification = yes fire = no }
+# 		}
+# 		event_target:ogas40_sfdoll_leader = {
+# 			kill_leader = { show_notification = yes fire = no }
+# 		}
+# 		event_target:sfdoll_leader_ouroboros = {
+# 			kill_leader = { show_notification = yes fire = no }
+# 		}
+# 		event_target:sfdoll_exd_leader = {
+# 			kill_leader = { show_notification = yes fire = no }
+# 		}
+# 		event_target:sfdoll_leader_triela = {
+# 			kill_leader = { show_notification = yes fire = no }
+# 		}
+# 		event_target:sfdoll_leader_sophon = {
+# 			kill_leader = { show_notification = yes fire = no }
+# 		}
+# 		event_target:sfdoll_leader_dingyi  = {
+# 			kill_leader = { show_notification = yes }
+# 		}
+# 		event_target:sfdoll_shizuki_ryouko  = {
+# 			kill_leader = { show_notification = yes }
+# 		}
+# 	}
+# }

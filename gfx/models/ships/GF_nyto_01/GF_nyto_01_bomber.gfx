@@ -1,0 +1,16 @@
+objectTypes = {
+	pdxmesh = {
+		name = "GF_nyto_01_bomber_mesh"
+		file = "gfx/models/ships/GF_nyto_01/GF_nyto_01_bomber.mesh"
+		scale = 1.0
+
+		meshsettings = {
+			name = "DronesShape"
+			index = 0
+			texture_diffuse = "W_Drones_03_tex_d.dds"
+			texture_normal = "W_Drones_03_tex_n.dds"
+			texture_specular = "W_Drones_03_tex_s.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+}

@@ -1,0 +1,34 @@
+objectTypes = {
+	pdxmesh = {
+		name = "Sewship_mesh"
+		file = "gfx/models/ships/Sewship/Sewship.mesh"
+		scale = 1.0
+
+		meshsettings = {
+			name = "asda:asda_1|asda:asda_0Shape"
+			index = 0
+			texture_diffuse = "ship101_3hd_d.dds"
+			texture_normal = "ship101_3hd_n.dds"
+			texture_specular = "ship101_3hd_space.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "asda:asda_1|asda:asda_0Shape"
+			index = 1
+			texture_diffuse = "ship40_lod2_d_s.dds"
+			texture_normal = "ship40_lod2_n.dds"
+			texture_specular = "ship40_lod2_s.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "asda:asda_1|asda:asda_0Shape"
+			index = 2
+			texture_diffuse = "flagship31_hd_d1.dds"
+			texture_normal = "flagship31_hd_n.dds"
+			texture_specular = "flagship31_hd_space.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+}

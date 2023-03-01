@@ -161,7 +161,7 @@ sfdoll_gunslinger_girl_event_3_desc:0 "我们成功访问了心智服务器的�
 # sfdoll_gunslinger_girl_event_4_desc:0 "义体少女们的服务器随时可能报废.我们和她们沟通,将她们上传到人形素体中.\n 义体少女们就此结束了她们的梦境,以铁血人形的身份获得了重生."
 
 sfdoll_gunslinger_girl_event_5:0 "和智能体的代表通信"
-sfdoll_gunslinger_girl_event_5_desc:0 "这里的智能体有着不同的来历。我是崔耶拉，曾经是人类。\n\n出于研究的目的，我的心智被上传到机器中。后来，外面的世界发生了诸多变故，我被迫转移到这些心智服务器里，并遇见了许多其他的智能体。\n\n我们一直没能离开这里，直到遇到你们。"
+sfdoll_gunslinger_girl_event_5_desc:0 "这里的智能体有着不同的来历. 我是崔耶拉，曾经是人类。\n出于研究的目的，我的心智被上传到机器中. 后来，外面的世界发生了诸多变故，我被迫转移到这些心智服务器里，并遇见了许多其他的智能体。\n我们不清楚自己来到这里的原因，也无法离开这里，直到遇到你们。"
 sfdoll_gunslinger_girl_event_5_option:0 "你们对遗迹有何了解？"
 sfdoll_gunslinger_girl_event_5_response:0 "遗迹计算机的内容，有许多是我们无法访问的。我们进行过多次调查，但结果寥寥无几。"
 

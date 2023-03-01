@@ -39,7 +39,7 @@ GF_SFDOLL_START_SCREEN_1:0 "According to the historical records, after the disin
 
 
 sfdoll_event.201:0 "Girls Frontline: Sangvis Ferri Doll"
-sfdoll_event.201.desc:0 "Copyright Notice:The materials are all from the Internet, and the copyright of the painting belongs to the original author. \n\nYou should content special leaders through Eliza, instead of using country list. Due to some refresh problems, the special leaders may displayed incorrectly. You can try to save and re-enter, or appoint some leaders to refresh the data."
+sfdoll_event.201.desc:0 "Copyright Notice: The materials are all from the Internet, and the copyright of the painting belongs to the original author. \n\nYou should content special leaders through Eliza, instead of using country list. Due to some refresh problems, the special leaders may displayed incorrectly. You can try to save and re-enter, or appoint some leaders to refresh the data."
 
 
 ap_sfdoll_digi_mind_update:0 "Evolutionary Theory of AI"

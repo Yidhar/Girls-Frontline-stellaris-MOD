@@ -1,0 +1,960 @@
+#研究
+building_sfdoll_research = {
+	base_buildtime =  @b2_time
+	category = research
+	icon = building_sfdoll_research
+	potential = {
+		# 铁血帝国才能造
+		owner = { has_authority = auth_gf_sfdoll }
+	}
+	prerequisites = { "tech_sfdoll_lab" }
+	# upgrades = {
+	# 	building_sfdoll_research_2
+	# }
+
+	destroy_trigger = {
+		free_building_slots = 0
+		exists = owner
+		owner = { 	not = { has_authority = auth_gf_sfdoll }	}
+	}
+
+	#限定铁血国家生效
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_country_flag = sfdoll_empire	}
+		}
+		modifier = { 	job_sfdoll_researcher_add = 2	}
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @b3_minerals
+			GF_nyto_collapse_liquid = @b3_rare_cost
+		}
+		upkeep = {
+			energy = @b3_upkeep
+			GF_nyto_collapse_liquid = @b3_rare_upkeep
+		}
+	}
+
+	ai_resource_production = {
+		physics_research = 100
+		society_research = 100
+		engineering_research = 100
+		trigger = {
+			owner = {
+				has_authority = auth_gf_sfdoll
+			}
+		}
+	}
+}
+
+# 生产建筑
+#坍塌液生产
+building_sfdoll_collapse_liquid_plant = {
+	base_buildtime = @b1_time 
+	category = manufacturing
+	icon = building_sfdoll_collapse_liquid_plant
+	potential = {
+		# 铁血帝国才能造
+		owner = { has_authority = auth_gf_sfdoll }
+	}
+	prerequisites = { "tech_sfdoll_collapse_liquid_produce" }
+	destroy_trigger = {
+		free_building_slots = 0
+		exists = owner
+		owner = { 	not = { has_authority = auth_gf_sfdoll }	}
+	}
+
+	#限定铁血国家生效
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_country_flag = sfdoll_empire	}
+		}
+		modifier = {	job_sfdoll_collapse_liquid_maker_add = 2	}
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {	minerals = @b3_minerals	}
+		upkeep = {	energy = @b3_upkeep		}
+	}
+
+	ai_resource_production = {
+		GF_nyto_collapse_liquid = 20
+		trigger = {
+			owner = {
+				has_authority = auth_gf_sfdoll
+			}
+		}
+	}
+}
+
+#暗物质合成厂
+building_sfdoll_dark_matter_plant = {
+	base_buildtime =  @b2_time
+	category = manufacturing
+	#待修改
+	icon = building_sfdoll_dark_matter_plant
+	potential = {
+		# 铁血帝国才能造
+		owner = { has_authority = auth_gf_sfdoll }
+	}
+	prerequisites = { "tech_sfdoll_dark_matter_plant" }
+	destroy_trigger = {
+		free_building_slots = 0
+		exists = owner
+		owner = { 	not = { has_authority = auth_gf_sfdoll }	}
+	}
+
+	triggered_desc = {	text = job_sfdoll_dark_matter_maker_effect_desc	}
+	#限定铁血国家生效
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_country_flag = sfdoll_empire	}
+		}
+		modifier = { job_sfdoll_dark_matter_maker_add = 2	}
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @b3_minerals
+		}
+		upkeep = {
+			energy = @b3_upkeep
+		}
+	}
+
+	ai_resource_production = {
+		sr_dark_matter = 20
+		trigger = {
+			owner = {
+				has_authority = auth_gf_sfdoll
+			}
+		}
+	}
+}
+
+#铁血纳米机械厂
+building_sfdoll_nanites_plant = {
+	base_buildtime = @b1_time
+	category = manufacturing
+
+	potential = {
+		# 铁血帝国才能造
+		owner = {		has_country_flag = sfdoll_empire	}
+	}
+
+	prerequisites = {	"tech_sfdoll_nanites" }
+	destroy_trigger = {
+		free_building_slots = 0
+		exists = owner
+		owner = {
+			is_ai = yes
+			has_monthly_income = {
+				resource = nanites
+				value > 9
+			}
+		}
+	}
+
+	#限定铁血国家生效
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_country_flag = sfdoll_empire	}
+		}
+		modifier = {	job_sfdoll_nanites_maker_add = 2	} }
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @b3_minerals
+		}
+		upkeep = {
+			energy = @b3_upkeep
+		}
+	}
+	triggered_desc = {	text = job_sfdoll_nanites_maker_effect_desc	}
+
+	ai_resource_production = {
+		nanites = 20
+		trigger = {
+			owner = {
+				has_authority = auth_gf_sfdoll
+			}
+		}
+	}
+}
+
+#合金生产
+building_sfdoll_alloys = {
+	base_buildtime =  @b2_time
+	category = manufacturing
+	icon = building_sfdoll_alloys_2
+	potential = {
+		# 铁血帝国才能造
+		owner = { has_authority = auth_gf_sfdoll }
+	}
+	prerequisites = { tech_sfdoll_alloys_produce}
+	# upgrades = {	building_sfdoll_alloys_2	}
+	destroy_trigger = {
+		free_building_slots = 0
+		exists = owner
+		owner = { 	not = { has_authority = auth_gf_sfdoll }	}
+	}
+
+	#限定铁血国家生效
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_country_flag = sfdoll_empire	}
+		}
+		modifier = { job_sfdoll_alloys_maker_add = 2	}
+	}
+	triggered_desc = {	text = job_sfdoll_alloys_maker_effect_desc	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @b3_minerals
+			GF_nyto_collapse_liquid = @b3_rare_cost
+		}
+		upkeep = {
+			energy = @b3_upkeep
+			GF_nyto_collapse_liquid = @b3_rare_upkeep
+		}
+	}
+
+	ai_resource_production = {
+		alloys = 250
+		trigger = {
+			owner = {
+				has_authority = auth_gf_sfdoll
+			}
+		}
+	}
+}
+
+#铁血消费品工厂
+building_sfdoll_goods_plant = {
+	base_buildtime = @b2_time
+	category = manufacturing
+	icon = building_sfdoll_goods_plant
+	potential = {
+		# 铁血帝国才能造
+		owner = {		has_country_flag = sfdoll_empire	}
+	}
+	prerequisites = {	tech_sfdoll_goods }
+	# upgrades = {	building_sfdoll_goods_plant_2	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_country_flag = sfdoll_empire	}
+		}
+		modifier = {		job_sfdoll_goods_maker_add = 2	}
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @b3_minerals
+			GF_nyto_collapse_liquid = @b3_rare_cost
+		}
+		upkeep = {
+			energy = @b3_upkeep
+			GF_nyto_collapse_liquid = @b3_rare_upkeep
+		}
+	}
+	ai_resource_production = {
+		consumer_goods  = 250
+		trigger = {
+			owner = {
+				has_authority = auth_gf_sfdoll
+			}
+		}
+	}
+}
+
+#化工建筑
+building_sfdoll_gases_plant = {
+	base_buildtime = 360
+	category = manufacturing
+	icon = building_sfdoll_gases_plant
+	potential = {
+		# 铁血帝国才能造
+		owner = {	has_country_flag = sfdoll_empire	}
+	}
+	prerequisites = {	tech_sfdoll_chemical }
+	destroy_trigger = {
+		free_building_slots = 0
+		exists = owner
+		owner = {
+			is_ai = yes
+			has_monthly_income = {
+				resource = exotic_gases
+				value > 6
+			}
+			has_monthly_income = {
+				resource = rare_crystals
+				value > `6
+			}
+			has_monthly_income = {
+				resource = volatile_motes
+				value > 6
+			}
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_authority = auth_gf_sfdoll	}
+		}
+		modifier = {	job_sfdoll_gases_maker_add = 2	}
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @b3_minerals
+			GF_nyto_collapse_liquid = @b3_rare_cost
+		}
+		upkeep = {
+			energy = @b3_upkeep
+			GF_nyto_collapse_liquid = @b3_rare_upkeep
+		}
+	}
+
+	ai_resource_production = {
+		exotic_gases = 30
+		rare_crystals = 30
+		volatile_motes = 30
+		trigger = {
+			owner = {
+				has_authority = auth_gf_sfdoll
+			}	
+		}
+	}
+}
+
+#奇点发电厂
+building_sfdoll_energy_plant = {
+	base_buildtime =   @b2_time
+	category = manufacturing
+	icon = building_sfdoll_energy_plant
+	potential = {
+		# 铁血帝国才能造
+		owner = { has_authority = auth_gf_sfdoll }
+	}
+	prerequisites = { tech_sfdoll_energy_plant }
+	destroy_trigger = {
+		free_building_slots = 0
+		exists = owner
+		owner = { 	not = { has_authority = auth_gf_sfdoll }	}
+	}
+	triggered_desc = {		text = job_sfdoll_energy_maker_effect_desc	}
+	#在铁血国家提供岗位
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_country_flag = sfdoll_empire	}
+		}
+		modifier = { job_sfdoll_energy_maker_add = 2	}
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @b3_minerals
+			sr_dark_matter = @b3_rare_cost
+		}
+		upkeep = {
+			energy = @b3_upkeep
+			sr_dark_matter = @b3_rare_upkeep
+		}
+	}
+
+	ai_resource_production = {
+		energy = 250
+		trigger = {
+			owner = {
+				has_authority = auth_gf_sfdoll
+			}	
+		}
+	}
+}
+
+#矿物合成厂
+building_sfdoll_mineral = {
+	base_buildtime =   @b2_time
+	category = manufacturing
+	icon = building_sfdoll_mineral
+	potential = {
+		# 铁血帝国才能造
+		owner = { has_authority = auth_gf_sfdoll }
+	}
+	prerequisites = { tech_building_sfdoll_mineral }
+	destroy_trigger = {
+		free_building_slots = 0
+		exists = owner
+		owner = { 	not = { has_authority = auth_gf_sfdoll }	}
+	}
+	triggered_desc = {		text = job_sfdoll_mineral_maker_effect_desc	}
+	#在铁血国家提供岗位
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_country_flag = sfdoll_empire	}
+		}
+		modifier = { job_sfdoll_mineral_maker_add = 2	}
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @b3_minerals
+			GF_nyto_collapse_liquid = @b3_rare_cost
+		}
+		upkeep = {
+			energy = @b3_upkeep
+			GF_nyto_collapse_liquid = @b3_rare_upkeep
+		}
+	}
+
+	ai_resource_production = {
+		minerals = 250
+		trigger = {
+			owner = {
+				has_authority = auth_gf_sfdoll
+			}	
+		}
+	}
+}
+
+
+#战术人形组装厂,根据机器人制造厂修改
+building_sfdoll_assembly_plant = {
+	base_buildtime = @b1_time
+	base_cap_amount = 1
+	can_be_disabled = yes
+	icon = building_sfdoll_assembly_plant
+
+	category = pop_assembly
+	upgrades = {
+		building_sfdoll_assembly_2
+	}
+	potential = {
+		exists = owner
+		owner = {
+			has_authority = auth_gf_sfdoll
+		}
+	}
+	destroy_trigger = {
+		exists = owner
+		owner = {
+			NOT = {	has_country_flag = sfdoll_empire }
+		}
+	}
+	#不可用时转换为
+	convert_to = {
+		building_drone_storage
+		building_hive_warren
+		building_communal_housing
+	}
+
+	planet_modifier = {
+		planet_pop_assembly_add = 3
+	}
+	
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 250
+		}
+		upkeep = {
+			alloys = 2
+			energy = 2
+		}
+	}
+	
+	#文本可以设置条件，满足条件时显示
+	# triggered_desc = {
+	# 	text = building_sfdoll_assembly_plant_triggered_desc
+	# }	
+	
+	prerequisites = {
+		"tech_gf_sfdoll_assemble_building"
+	}
+}
+
+building_sfdoll_assembly_2= {
+	base_buildtime = @b2_time
+	can_be_disabled = yes
+	icon = building_sfdoll_assembly_2
+	can_build = no
+	category = pop_assembly
+	potential = {
+		exists = owner
+		owner = {
+			has_authority = auth_gf_sfdoll
+		}
+	}
+	destroy_trigger = {
+		exists = owner
+		owner = {
+			NOT = {	has_country_flag = sfdoll_empire }
+		}
+	}
+	#不可用时转换为
+	convert_to = {
+		building_drone_storage
+		building_hive_warren
+		building_communal_housing
+	}
+
+	planet_modifier = {
+		planet_pop_assembly_add = 5
+	}
+	
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @b2_minerals
+			nanites = @b2_rare_cost
+		}
+		upkeep = {
+			nanites = 2
+			energy = 2
+		}
+	}
+	
+	#文本可以设置条件，满足条件时显示
+	# triggered_desc = {
+	# 	text = building_sfdoll_assembly_plant_triggered_desc
+	# }	
+	
+	prerequisites = {
+		tech_sf_doll_modding_2
+	}
+}
+
+#铁血军事基地
+# building_sfdoll_army = {
+# 	base_buildtime = @b1_time
+# 	can_be_disabled = yes
+# 	icon = building_sfdoll_army
+# 	category = army
+# 	potential = {
+# 		exists = owner
+# 		owner = {
+# 			has_country_flag = sfdoll_empire
+# 		}
+# 	}
+# 	destroy_trigger = {
+# 		exists = owner
+# 		owner = {
+# 			NOT = {	has_country_flag = sfdoll_empire }
+# 		}
+# 	}
+
+# 	triggered_desc = {
+# 		text = job_sfdoll_tactical_effect_desc
+# 	}
+# 	triggered_planet_modifier = {
+# 		potential = {
+# 			exists = owner
+# 			owner = { has_authority = auth_gf_sfdoll }
+# 		}
+# 		modifier = {
+# 			job_sfdoll_tactical_add = 2
+# 		}
+# 	}
+# 	resources = {
+# 		category = planet_buildings
+# 		cost = {
+# 			minerals = @b2_minerals
+# 		}
+# 		upkeep = {
+# 			energy = @b2_upkeep
+# 		}
+# 	}
+# 	upgrades = {
+# 		building_sfdoll_army_2
+# 	}
+# 	#文本可以设置条件，满足条件时显示
+# 	# triggered_desc = {
+# 	# 	text = building_sfdoll_assembly_plant_triggered_desc
+# 	# }	
+# }
+
+#升级军事基地
+building_sfdoll_army_2 = {
+	base_buildtime = @b2_time
+	can_be_disabled = yes
+	icon = building_sfdoll_army_2
+	category = army
+	planetary_ftl_inhibitor = yes
+	prerequisites = { tech_sfdoll_heavy_army }
+	potential = {
+		exists = owner
+		owner = {
+			has_country_flag = sfdoll_empire
+		}
+	}
+	destroy_trigger = {
+		exists = owner
+		owner = {
+			NOT = {	has_country_flag = sfdoll_empire }
+		}
+	}
+	#不可用时转换为
+	# convert_to = {
+	# 	building_drone_storage
+	# 	building_hive_warren
+	# 	building_communal_housing
+	# }
+	triggered_desc = {
+		text = job_sfdoll_tactical_effect_desc
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_authority = auth_gf_sfdoll }
+		}
+		modifier = {
+			job_sfdoll_tactical_add = 6
+		}
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @b3_minerals
+		}
+		upkeep = {
+			energy = @b3_upkeep
+		}
+	}
+}
+
+#国策建筑
+#铁血学园
+building_sfdoll_academy = {
+	base_buildtime =  @b1_time
+	category = unity
+	icon = building_sfdoll_academy
+	potential = {
+		exists = owner
+		owner = {	has_authority = auth_gf_sfdoll	}
+	}
+	allow = {	owner = {	has_civic = civic_sfdoll_research	}	}
+
+	destroy_trigger = {
+		OR = {
+			has_modifier = slave_colony
+			has_modifier = resort_colony
+		}
+	}
+	triggered_desc = {
+		text = job_sfdoll_educator_effect_desc
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_country_flag = sfdoll_empire }
+		}
+		modifier = {
+			job_sfdoll_educator_add = 2
+		}
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @b2_minerals
+		}
+		upkeep = {
+			energy = @b2_upkeep
+		}
+	}
+}
+
+
+#星际互联网，行政，舒适度，国策解锁
+building_sfdoll_net = {
+	base_buildtime = @b1_time
+	can_be_disabled = yes
+	base_cap_amount = 1
+	icon = building_sfdoll_net
+	category = amenity
+	potential = {
+		exists = owner
+		owner = {	has_country_flag = sfdoll_empire	}
+	}
+	#需要国策
+	allow = {	owner = {	has_civic = civic_sfdoll_ogas_manage	}	}
+	destroy_trigger = {
+		exists = owner
+		owner = {
+			NOT = {	has_country_flag = sfdoll_empire }
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_country_flag = sfdoll_empire }
+		}
+		modifier = {	
+			planet_crime_add = -20
+			planet_amenities_add = 25
+			planet_building_build_speed_mult = 0.3
+			planet_decision_enact_speed_mult = 0.3
+			planet_jobs_produces_mult = 0.25
+		}
+	}
+	country_modifier = {
+		country_admin_cap_add = 60
+	}
+	# triggered_desc = {
+	# 	text = job_sfdoll_it_doll_effect_desc
+	# }
+	
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @b2_minerals
+		}
+		upkeep = {
+			energy = @b2_upkeep
+		}
+	}
+}
+
+building_sfdoll_net_2 = {
+	base_buildtime = @b2_time
+	can_be_disabled = yes
+	base_cap_amount = 1
+	icon = building_sfdoll_net
+	category = amenity
+	potential = {
+		always = no
+		exists = owner
+		owner = {	has_country_flag = sfdoll_empire	}
+	}
+	#需要国策
+	destroy_trigger = {
+		exists = owner
+		owner = {
+			NOT = {	has_country_flag = sfdoll_empire }
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_country_flag = sfdoll_empire }
+		}
+		modifier = {	
+			planet_crime_add = -30
+			planet_amenities_add = 30
+			planet_building_build_speed_mult = 0.5
+			planet_decision_enact_speed_mult = 0.5
+			planet_jobs_produces_mult = 0.4
+		}
+	}
+	country_modifier = {
+		country_admin_cap_add = 60
+	}
+	# triggered_desc = {
+	# 	text = job_sfdoll_it_doll_effect_desc
+	# }
+	
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @b2_minerals
+		}
+		upkeep = {
+			energy = @b2_upkeep
+		}
+	}
+}
+
+#job_sfdoll_it_doll:0 "IT工作者"
+# job_sfdoll_it_doll_plural:0 "IT工作者"
+# job_sfdoll_it_doll_desc:0 "信息技术人员搭建起庞大的星际互联网"
+# job_sfdoll_it_doll_effect_desc:0 "IT工作者提高星球舒适度，提高 §Y$unity$§! 的产出"
+# mod_job_sfdoll_it_doll_add:0 "IT工作者岗位"
+
+#莱柯博物院
+building_sfdoll_museum = {
+	base_buildtime = @b3_time
+	can_be_disabled = yes
+	empire_limit = {	base = 1	}
+	icon = building_sfdoll_museum
+	category = unity
+	potential = {
+		exists = owner
+		owner = {	has_authority = auth_gf_sfdoll	}
+	}
+	#需要国策
+	allow = {	owner = {	has_civic = civic_sfdoll_culture	}	}
+	destroy_trigger = {
+		exists = owner
+		owner = {
+			NOT = {	has_country_flag = sfdoll_empire }
+		}
+	}
+	#不可用时转换为
+	# convert_to = {
+	# 	building_drone_storage
+	# 	building_hive_warren
+	# 	building_communal_housing
+	# }
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_country_flag = sfdoll_empire }
+		}
+	}
+	country_modifier = { pop_government_ethic_attraction = 0.50 }
+	
+	resources = {
+		category = planet_buildings
+		produces = {
+			unity = 30
+			minor_artifacts = 2
+		}
+		cost = {
+			minerals = @b3_minerals
+		}
+		upkeep = {
+			energy = @b2_upkeep
+		}
+	}
+}
+
+building_sfdoll_media= {
+	base_buildtime =  @b1_time
+	category = amenity
+	icon = building_sfdoll_media
+	potential = {
+		exists = owner
+		owner = {	has_authority = auth_gf_sfdoll	}
+	}
+	allow = {	owner = {	has_civic = civic_sfdoll_culture	}	}
+
+	destroy_trigger = {
+		OR = {
+			has_modifier = slave_colony
+			has_modifier = resort_colony
+		}
+	}
+	triggered_desc = {
+		text = job_sfdoll_artist_effect_desc
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_country_flag = sfdoll_empire }
+		}
+		modifier = {
+			job_sfdoll_artist_add = 2
+		}
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @b1_minerals
+		}
+		upkeep = {
+			energy = @b1_upkeep
+		}
+	}
+}
+
+
+#铁血公司
+building_sfdoll_amusement_park = {
+	base_buildtime =  @b1_time
+	base_cap_amount = 1
+	empire_limit = 3
+	category = amenity
+	icon = building_sfdoll_amusement_park
+	potential = {
+		exists = owner
+		owner = {	has_country_flag =  unlock_sfdoll_amusement_park	}
+	}
+
+	destroy_trigger = {
+		OR = {
+			has_modifier = slave_colony
+			has_modifier = resort_colony
+		}
+	}
+	# triggered_desc = {
+	# 	text = job_sfdoll_artist_effect_desc
+	# }
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_country_flag = unlock_sfdoll_amusement_park }
+		}
+		modifier = {
+			job_culture_worker_add = 2
+			job_entertainer_add = 6
+			pop_job_trade_mult = 0.2
+			planet_amenities_add = 10
+		}
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @b1_minerals
+		}
+		upkeep = {
+			energy = @b1_upkeep
+		}
+	}
+}
+
+# 博览会
+building_sfdoll_exposition = {
+	base_buildtime =  @b1_time
+	empire_limit = 1
+	category = unity
+	icon = building_sfdoll_exposition
+	potential = {
+		exists = owner
+		owner = {	has_country_flag =  unlock_sfdoll_exposition	}
+	}
+
+	destroy_trigger = {
+		OR = {
+			has_modifier = slave_colony
+			has_modifier = resort_colony
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_country_flag = unlock_sfdoll_exposition  }
+		}
+		modifier = {
+			job_culture_worker_add = 1
+			job_merchant_add = 2
+			planet_jobs_engineering_research_produces_mult = 0.3
+		}
+	}
+	resources = {
+		category = planet_buildings
+		produces = { influence = 0.5 }
+		cost = {
+			minerals = @b1_minerals
+		}
+		upkeep = {
+			energy = @b1_upkeep
+		}
+	}
+}

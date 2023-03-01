@@ -1,5 +1,10 @@
 ﻿l_simp_chinese:
-###############################
+GF_nyto_collapse_liquid:0 "坍塌液"
+GF_nyto_collapse_liquid_desc:0 "坍塌液是一类粒子波,被未知文明用于微观物质的加工."
+
+GF_nyto_collapse_liquid_deficit:0 "坍缩液匮乏"
+GF_nyto_collapse_liquid_deficit_desc:0 "坍缩液匮乏,无论日常生活还是生产建造都陷入瘫痪。"
+
 #army
 tech_sfdoll_army:0"火控更新"
 tech_sfdoll_army_desc:0 "先进的武器必须搭配更好的火控系统"
@@ -17,7 +22,7 @@ bombardment_sfdoll_1_name:0 "$bombardment_sfdoll_1$"
 bombardment_sfdoll_1_desc:0 "铁血人形们将利用尖端探测器和高能武器来攻击星球。\n\n对陆军，星球和人口造成巨大伤害。"
 
 NAME_SFDOLL_ELID:0 "E.L.I.D生物"
-sfdoll_elid:0 "$NAME_SFDOLL_ELID$"
+eild:0 "受洗者"
 
 SFDOLL_eild_army_1:0 "$NAME_SFDOLL_ELID$"
 SFDOLL_eild_army_1_desc:0 "$NAME_SFDOLL_ELID$"

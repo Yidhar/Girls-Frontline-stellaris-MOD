@@ -1,5 +1,10 @@
 ﻿l_english:
-###############################
+GF_nyto_collapse_liquid:0 "Collapse Fluid"
+GF_nyto_collapse_liquid_desc:0 "Collapse Fluid is a kind of particle-wave, which was used by unknown civilizations to process microscopic matter."
+
+GF_nyto_collapse_liquid_deficit:0 "Collapse fluid Deficit"
+GF_nyto_collapse_liquid_deficit_desc:0 "Collapse fluid is in deficit, whether it be daily life or productions are now in paralysis."
+
 #army
 tech_sfdoll_army:0 "Fire Control Core Update"
 tech_sfdoll_army_desc:0 "New fire control cores will improve armies performance"
@@ -20,7 +25,7 @@ GF_sfdoll_eild_army_1:0 "Broadband Heavy level infected organism"
 GF_sfdoll_eild_army_1_desc:0 "Immune system enters extraordinary state of activity, unable to confirm patient brainwave situations. Rising bone density, further silicidation of organs and skins stil."
 
 NAME_SFDOLL_ELID:0 "E.L.I.D Creatures"
-sfdoll_elid:0 "$NAME_SFDOLL_ELID$"
+eild:0 "Baptized"
 
 SFDOLL_eild_army_1:0 "$NAME_SFDOLL_ELID$"
 SFDOLL_eild_army_1_desc:0 "$NAME_SFDOLL_ELID$"

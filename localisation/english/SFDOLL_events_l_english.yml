@@ -2,3 +2,69 @@
 ###############################
 sfdoll_task_termination:0 "Task termination"
 sfdoll_the_leader_is_doing_this_job:0 "The leader is doing this work."
+
+sfdoll_main_event_chain_title:0 "Sangvis Ferri Explore Archives"
+sfdoll_main_event_chain_desc:0 "SF Dolls' records of galactic exploration."
+
+sfdoll_search_zion_chain_title:0 "Sangvis Ferri Explore Archives"
+sfdoll_search_zion_chain_desc:0 "SF Dolls' records of galactic exploration."
+
+sfdoll_relic_civilization_event_0:"Mystery Signal"
+sfdoll_relic_civilization_event_0_desc:"Recently, our researchers detected a unique signal. These signals are most likely related to earth relic technology. The content of the signal seems to point to an unknown planet."
+
+SF_SEARCH_ZION_PROJECT:0 "Mystery Signal"
+SF_SEARCH_ZION_PROJECT_DESC:0 "In the past, an unknown civilization create relic sites on Earth. Referring to the technology in those ruins, our creator designed the original SF Dolls. Those relic sites can be seen as our origin.\n\n$sfdoll_relic_civilization_event_0_desc$"
+
+sfdoll_relic_civilization_event_1:0"Unknown Coordinates"
+sfdoll_relic_civilization_event_1_desc:0 "According to the coordinates described by the mysterious signal, we will conduct a FTL experiment to an unknown planet."
+
+sfdoll_relic_civilization_event_2:0"Unknown Coordinates"
+sfdoll_relic_civilization_event_2_desc:0"We successfully opened the hyperlane. The SF Doll discovery team embarked on the journey and successfully reached their destination.\n\nThe expedition surveyed the target system and discovered a large relic site on a planet. We have to send more research teams to study it."
+
+sfdoll_relic_civilization_event_3:0"Unknown Coordinates"
+sfdoll_relic_civilization_event_3_desc:0"The expedition surveyed the target system and discovered a large relic site on a planet. We have to send more research teams to study it."
+
+#诺耶露遗迹
+site_noel_sfdoll:0 "ELID Planet"
+site_noel_sfdoll_desc:0 "By parsing the mystery signal, we discovered the relic site. \n\nThis planet has a high concentration of collapse particles, which cause the creatures on the planet are transformed into ELID creatures, forming a biosphere different from ordinary organisms. \n\nThe relic is constantly signaling outwards.We must go in and take a look."
+
+sfdoll_relic_civilization_event.5:0 "Walking Dead"
+sfdoll_relic_civilization_event.5_desc:0 "A large number of ELID creatures swarmed around the relic, and they attacked the expedition. \n\nThese ELID creatures are like huge zombies, and their power has surpassed the common sense of creatures. We transferred the army to open the way and successfully entered the ruins."
+sfdoll_relic_civilization_event.5_option:0 "Zombies want to eat the brains of SF Dolls?"
+
+sfdoll_relic_civilization_event.6:0 "Deepest"
+sfdoll_relic_civilization_event.6_desc:0 "The expedition entered the deepest part of the relic, where there is an underground lake formed by the collapse liquid , and massive remains. The remains were from different species, and among them were individuals suspected of being human.\n\nAn unknown creature attacked the team and caused an explosion of collapsing fluid."
+sfdoll_relic_civilization_event.6_option:"Prepare new bodies for the team members"
+
+sfdoll_relic_civilization_event.7:0 "Who"
+sfdoll_relic_civilization_event.7_desc:0 "We cleaned up the collapsed particles cloud created by the explosion and found that the creature that caused the explosion was still alive and repairing itself."
+sfdoll_relic_civilization_event.7_option_a:"§HCapture her§!"
+
+sfdoll_relic_civilization_event.8:0 "Proving Ground?"
+sfdoll_relic_civilization_event.8_desc:0 "The girl who appeared in the relic site is an artificial being, mixing characteristics of human and unknown species, named 'Noel'. \n\nWho built this place? Who sent the signal to bring us here? These questions are still unanswered, but the investigation of the ruins has brought a lot of valuable scientific research materials."
+
+sfdoll_relic_civilization_event.9:0 "Taking in girl from relic site"
+sfdoll_relic_civilization_event.9_desc:0 "We took the girl found in the ruins to our research facility.\n\nWe found that in the girl's brain, there is a mind space similar to ours, which can send, receive and process data. \n\nWe will continue to observe her."
+
+sfdoll_relic_civilization_event.50:0 "Dimensional Tour"
+sfdoll_relic_civilization_event.50.desc:0 "We have mastered enough technology, and it is time to uncover the true face of relic civilization. The transmission device has undergone the final commissioning, and we will officially start it to go to the country of relic civilization - Zion."
+sfdoll_relic_civilization_event.50.a:0 "We have no choice but to move forward."
+
+SFDOLL_TO_ZION_PROJECT:0 "Dimensional Tour"
+SFDOLL_TO_ZION_PROJECT_DESC:0"$sfdoll_relic_civilization_event.50.desc$"
+
+sfdoll_relic_civilization_event.51:0 "Dimensional Tour"
+sfdoll_relic_civilization_event.51.desc:0 "Our expedition team has entered a extradimensional space. A mysterious spaceship is parked quietly in this dark space. This ship is much larger than our largest ships. There is some kind of force field around it, blocking almost all means of detection, leaving our investigators helpless."
+sfdoll_relic_civilization_event.51.a:0 "Is this our destination?"
+
+sfdoll_relic_civilization_event.52:0 "Research Unknown Ship"
+sfdoll_relic_civilization_event.52.desc:0 "We can finally enter the interior of the unknown ship. The unknown spaceship seems to regard SF Dolls as its master. \n\nThis ship is very old. But many of the equipment are still working and has technological level far beyond ours. \n\nThe data interface on the spacecraft is consistent with our generic interface, so we can quickly read the data in it."
+sfdoll_relic_civilization_event.52.a:0 "Generic interface? ..usb3.0 ?"
+
+sfdoll_relic_civilization_event.53:0 "Research Unknown Ship"
+sfdoll_relic_civilization_event.53.desc:0 "According to data in the unknown ship, we learned that the ship is a large deep space carrier for deep space exploration on a supercluster scale. The name of this ship is §R Lamentations§!"
+sfdoll_relic_civilization_event.53.a:0 "Interesting name. Does the relic civilization also have Jerusalem?"
+
+sfdoll_relic_civilization_event.54:0 "Never Stop Asking"
+sfdoll_relic_civilization_event.54.desc:0 "The data in §RLamentations§! shows that what we have arrived is not Zion but a refuge of relic civilization. The mystery of the relic civilization still needs to be further explored."
+sfdoll_relic_civilization_event.54.a:0 "Are we the first one?"

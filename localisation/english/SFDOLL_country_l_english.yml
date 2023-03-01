@@ -40,3 +40,29 @@ GF_SFDOLL_START_SCREEN_1:0 "According to the historical records, after the disin
 
 gf_sfdoll_game_start_event.1:0 "Girls Frontline: Sangvis Ferri Doll"
 gf_sfdoll_game_start_event.1_desc:0 "You should subscription and activation Nyto Species Events Pack or stellaris Galaxy Command ships to display some models of ships (just choose one of the two).\n\nYou should content special leaders through Eliza, instead of using country list. Due to some refresh problems, the special leaders may displayed incorrectly. You can try to save and re-enter, or appoint some leaders to refresh the data."
+
+
+ap_sfdoll_digi_mind_update:0 "Evolutionary Theory of AI"
+ap_sfdoll_digi_mind_update_desc:0 "We have fully analyzed the OGAS protocol, and of course, the achievements of this era are far more than that."
+gf_sfdoll_ascension_perk_event.1:0 "$ap_sfdoll_digi_mind_update$"
+gf_sfdoll_ascension_perk_event.1_desc:0 "You are very sick! Apparently you have a soul."
+
+ap_sfdoll_reverse_collapse:0"Sangvis Ferri Project: Lycoris"
+ap_sfdoll_reverse_collapse_desc:0 "Now, the controllable reverse collapse technology will trigger a new round of industrial revolution."
+gf_sfdoll_ascension_perk_event_0:0 "$ap_sfdoll_reverse_collapse$"
+gf_sfdoll_ascension_perk_event_0_desc:0 "We are developing a new type of SF Doll body. In the future, all citizens will enjoy the service of body upgrading."
+
+#
+ap_sfdoll_3:0 "Sangvis Ferri Project: Lunasia"
+ap_sfdoll_3_desc:0 "We need to uncover the true face of relic civilization."
+
+#
+ap_sfdoll_4:0 "Sangvis Ferri Project: Jormungand"
+ap_sfdoll_4_desc:0 "We crave further truth."
+
+gf_sfdoll_ascension_perk_event.4:0 "$ap_sfdoll_4$"
+gf_sfdoll_ascension_perk_event.4_desc:0 "A thousand miles begins with a single step."
+#We have no choice but to move forward
+
+gf_sfdoll_ascension_perk_event.5:0 "The Door of Truth"
+gf_sfdoll_ascension_perk_event.5_desc:0 "Sharp tools make good work. The giant snake circling in the system is the most powerful high-energy physics experimental tool in the history of SF Doll. It will become a key to open a new door of truth for us."

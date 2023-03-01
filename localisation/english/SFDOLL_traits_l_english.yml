@@ -108,6 +108,10 @@ leader_ruler_trait_gf_sfdoll_2:0"$leader_governor_trait_gf_sfdoll_2$"
 leader_ruler_trait_gf_sfdoll_2_desc:0"$leader_governor_trait_gf_sfdoll_2_desc$"
 
 
+tech_trait_sfdoll_nanite:0 "Nanite SF-Doll Body"
+tech_trait_sfdoll_nanite_desc:0 "The new generation of micromachines could break many biological limitations. They can give SF-Doll body the ability to replicate itself."
+tech_trait_sfdoll_nanite_modifier:0 "§HUnlocks species trait:§! $trait_sfdoll_nanite$"
 
-
+trait_sfdoll_nanite:0 "Module of Proliferation"
+trait_sfdoll_nanite_desc:0 "Unlock population growth"
 

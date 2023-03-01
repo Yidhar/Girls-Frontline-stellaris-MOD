@@ -582,10 +582,12 @@ country_event = {
 				days = 5
 			}
 		}
+		#污染度计算
 		country_event = {
 			id = GFnyto_global.14
 			days = 150
 		}
+		#自动居住站
 		country_event = {
 			id = GFnyto_global.18
 			days = 15

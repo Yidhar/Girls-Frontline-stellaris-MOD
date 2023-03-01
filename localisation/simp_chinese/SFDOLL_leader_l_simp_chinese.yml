@@ -90,7 +90,7 @@ response_ogas40_to_general:0 "注意点,不要轻易送死哦。"
 ogas40_has_this_job_now:0 "OGAS已经在做这项工作"
 
 leader_trait_governor_ogas40:0 "OGAS人工智能"
-leader_trait_governor_ogas40_desc:0 "OGAS是利用遗迹科学创造的超级AI。"
+leader_trait_governor_ogas40_desc:0 "UMP40是利用遗迹科学创造的OGAS AI。"
 
 leader_trait_scientist_ogas40:0 "$leader_trait_governor_ogas40$"
 leader_trait_scientist_ogas40_desc:0 "$leader_trait_governor_ogas40_desc$"

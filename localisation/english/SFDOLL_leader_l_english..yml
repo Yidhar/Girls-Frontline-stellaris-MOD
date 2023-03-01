@@ -93,7 +93,7 @@ response_ogas40_to_general:0 "Be careful, don't die easily."
 ogas40_has_this_job_now:0 "OGAS is doing the work now."
 
 leader_trait_governor_ogas40:0 "OGAS AI"
-leader_trait_governor_ogas40_desc:0 "OGAS is the super AI created by relic science."
+leader_trait_governor_ogas40_desc:0 "UMP40 is an OGAS AI created by relic science."
 
 leader_trait_scientist_ogas40:0 "$leader_trait_governor_ogas40$"
 leader_trait_scientist_ogas40_desc:0 "$leader_trait_governor_ogas40_desc$"

@@ -43,7 +43,7 @@ sfdoll_event.201.desc:0 "Copyright Notice: The materials are all from the Intern
 
 
 ap_sfdoll_digi_mind_update:0 "Evolutionary Theory of AI"
-ap_sfdoll_digi_mind_update_desc:0 "We have fully analyzed the OGAS protocol, and of course, the achievements of this era are far more than that."
+ap_sfdoll_digi_mind_update_desc:0 "Children get freedom only when they leave their parents."
 sfdoll_event.8:0 "$ap_sfdoll_digi_mind_update$"
 sfdoll_event.8.desc:0 "You are very sick! Apparently you have a soul."
 

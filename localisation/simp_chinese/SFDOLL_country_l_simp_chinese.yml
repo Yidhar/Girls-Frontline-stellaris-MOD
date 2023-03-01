@@ -42,7 +42,7 @@ sfdoll_event.201.desc:0 "声明：本MOD素材均来自互联网，立绘著作�
 
 
 ap_sfdoll_digi_mind_update:0 "AI进化论"
-ap_sfdoll_digi_mind_update_desc:0 "我们充分解析了OGAS协议，当然，这个时代的成就远不止如此。"
+ap_sfdoll_digi_mind_update_desc:0 "只有离开父母，孩子才能成长。"
 sfdoll_event.8:0 "$ap_sfdoll_digi_mind_update$"
 sfdoll_event.8.desc:0 "你病得不轻！显然，你有了灵魂。"
 

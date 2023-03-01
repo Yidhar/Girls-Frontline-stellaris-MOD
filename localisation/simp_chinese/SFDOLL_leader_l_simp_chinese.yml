@@ -39,7 +39,7 @@ sfdoll_leader_event.2:0 "与衔尾蛇通讯"
 sfdoll_leader_event.2_desc_a:0 "学无止境。"
 sfdoll_leader_event.2_desc_b:0 "你休息一下。任务交给我就可以了。"
 sfdoll_leader_event.2_desc_c:0 "我们需要把知识和实践结合起来。"
-sfdoll_leader_event.2_desc_d:0 "我们的造物主说过：‘只有离开父母，孩子才能成长。’毫无疑问，铁血现在自由了。"
+sfdoll_leader_event.2_desc_d:0 "不要把重担都放在自己身上. 人形之间，应该相互扶持。"
 
 sfdoll_ouroboros_to_governor:0 "请担任总督"
 sfdoll_ouroboros_to_governor_response:0 "嗯？你需要我？我这就来。"

@@ -167,6 +167,14 @@ component_set = {
 	icon_frame = 1
 }
 
+# 殖民
+component_set = {
+	key = "planet_killer_sfdoll_colonizer"
+	icon = GFX_planet_killer_sfdoll_colonizer
+	icon_frame = 1
+}
+
+
 component_set = {
 	key = "sfdoll_aux_rebuild_2"
 	icon = GFX_sfdoll_aux_rebuild_2

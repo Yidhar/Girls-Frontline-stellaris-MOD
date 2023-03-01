@@ -77,19 +77,6 @@ mega_sfdoll_mobile_starbase_4_DESC:0 "$sfdoll_mobile_starbase$将获得完整的
 sfdoll_event.2:0 "$sfdoll_mobile_starbase$启航"
 sfdoll_event.2_desc:0 "随着亚光速航行系统的启动，$sfdoll_mobile_starbase$向宇宙迈出了第一步。在惯性干涉装置的作用下，这一庞然巨物如同蝴蝶般轻盈。$sfdoll_mobile_starbase$的巨大质量和能量被隐藏起来，这让它和宇宙的背景辐射融为一体。"
 
-sfdoll_star_exploit_01:0 "铁血戴森云基址"
-sfdoll_star_exploit_01_DESC:0 "$sfdoll_star_exploit_02_DESC$"
-sfdoll_star_exploit_01_MEGASTRUCTURE_DETAILS:0 "$sfdoll_star_exploit_02_DESC$"
-
-sfdoll_star_exploit_02:0 "铁血戴森云"
-sfdoll_star_exploit_02_DESC:0 "戴森云通过复数电池板收集太阳能,并保持行星接收到足够的光照"
-
-tech_sfdoll_star_exploit:0 "$sfdoll_star_exploit_02$"
-tech_sfdoll_star_exploit_desc:0 "$sfdoll_star_exploit_02_DESC$"
-
-build_sfdoll_star_exploit_01:0 "我们建造了一座$sfdoll_star_exploit_01$"
-build_sfdoll_star_exploit_02:0 "我们建造了一座$sfdoll_star_exploit_02$"
-
 
 sfdoll_mining_station_01:0 "铁血小行星开采站基址"
 sfdoll_mining_station_01_DESC:0 "$sfdoll_mining_station_02_DESC$"

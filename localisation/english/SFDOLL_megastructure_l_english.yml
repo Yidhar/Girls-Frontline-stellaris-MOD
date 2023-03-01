@@ -77,20 +77,6 @@ sfdoll_event.2:0 "$sfdoll_mobile_starbase$ Sailing"
 sfdoll_event.2_desc:0 "With the launch of the sublight speed navigation system, $sfdoll_mobile_starbase$ has taken the first step towards the universe. Under the action of inertial interference device, this huge object is as light as a butterfly. The huge mass and energy of $sfdoll_mobile_starbase$ are hidden, which makes it integrate with the background radiation of the universe."
 
 
-sfdoll_star_exploit_01:0 "SF Dyson Cloud Site"
-sfdoll_star_exploit_01_DESC:0 "$sfdoll_star_exploit_02_DESC$"
-sfdoll_star_exploit_01_MEGASTRUCTURE_DETAILS:0 "$sfdoll_star_exploit_02_DESC$"
-
-sfdoll_star_exploit_02:0 "SF Dyson Cloud"
-sfdoll_star_exploit_02_DESC:0 "The Dyson cloud collects solar energy through a complex array of panels and keeps the planet receiving enough light"
-
-tech_sfdoll_star_exploit:0 "$sfdoll_star_exploit_02$"
-tech_sfdoll_star_exploit_desc:0 "$sfdoll_star_exploit_02_DESC$"
-
-build_sfdoll_star_exploit_01:0 "$sfdoll_star_exploit_01$ completed"
-build_sfdoll_star_exploit_02:0 "$sfdoll_star_exploit_02$ completed"
-
-
 sfdoll_mining_station_01:0 "SF Asteroid Mining Station Site"
 sfdoll_mining_station_01_DESC:0 "$sfdoll_mining_station_02_DESC$"
 sfdoll_mining_station_01_MEGASTRUCTURE_DETAILS:0 "$sfdoll_mining_station_02_DESC$"

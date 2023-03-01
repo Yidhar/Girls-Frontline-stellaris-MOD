@@ -37,8 +37,8 @@ RT_sfdoll_president:0 "第一发言人"
 
 GF_SFDOLL_START_SCREEN_1:0 "现有的史料记载，格里芬基地解体后，铁血遭遇迫害。为了求生，铁血离开太阳系进行远征，并在宇宙中找到了新家园。\n 开拓新世界的同时，我们也不断探索航天技术,准备重回星际舞台。"
 
-gf_sfdoll_game_start_event.1:0 "少女前线：铁血人形"
-gf_sfdoll_game_start_event.1_desc:0 "需要订阅并开启涅托物种事件包或者stellaris Galaxy Command ships，才能显示部分飞船的模型（两者任选一个即可）。\n\n本Mod的所有特殊领袖，均可通过伊莱莎和他们联系，不会在国家列表里设置单独的联系人。由于蠢驴的刷新问题，特殊领袖可能显示有误，可尝试存档重进，或进行领袖指派，从而刷新数据"
+sfdoll_event.201:0 "少女前线：铁血人形"
+sfdoll_event.201.desc:0 "需要订阅并开启涅托物种事件包或者stellaris Galaxy Command ships，才能显示部分飞船的模型（两者任选一个即可）。\n\n本Mod的所有特殊领袖，均可通过伊莱莎和他们联系，不会在国家列表里设置单独的联系人。由于蠢驴的刷新问题，特殊领袖可能显示有误，可尝试存档重进，或进行领袖指派，从而刷新数据"
 
 
 ap_sfdoll_digi_mind_update:0 "AI进化论"

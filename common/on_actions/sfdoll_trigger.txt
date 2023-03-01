@@ -2,7 +2,8 @@
 
 on_game_start_country={
 	events = {
-		gf_sfdoll_game_start_event.0 
+		sfdoll_event.200
+		# gf_sfdoll_game_start_event.0 
 	}
 }
 
@@ -24,8 +25,9 @@ on_custom_diplomacy = {
 
 on_leader_spawned = {
 	events = {
-		gf_sfdoll_leader_trait_event.0
-		gf_sfdoll_leader_trait_event.1
+		sfdoll_leader_event.3
+		# gf_sfdoll_leader_trait_event.0
+		# gf_sfdoll_leader_trait_event.1
 		sfdoll_leader_revive_event.5
 	}
 }
@@ -66,8 +68,9 @@ on_leader_level_up = {
 # This = Country
 on_ruler_back_to_pre_ruler_class = {
 	events = {
-		gf_sfdoll_leader_trait_event.2
-		gf_sfdoll_leader_trait_event.3
+		sfdoll_leader_event.4
+		# gf_sfdoll_leader_trait_event.2
+		# gf_sfdoll_leader_trait_event.3
 	}
 }
 

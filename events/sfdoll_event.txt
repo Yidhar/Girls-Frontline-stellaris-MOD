@@ -1,0 +1,483 @@
+namespace = sfdoll_event
+#id标准写法为namespace的值加上编号
+#every year 年检事件统一判断
+country_event = {
+	id = sfdoll_event.1
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = { has_authority = auth_gf_sfdoll }
+	immediate = {
+		country_event = { id = sfdoll_relic_civilization_event.0  days = 5 }
+		# 头像
+		country_event = { id = sfdoll_leader_event.1 }
+		# 特质国家修正
+		country_event = { id = sfdoll_time_event.2 }
+		# 版本号检查
+		country_event = { id = sfdoll_test_event.2  days = 1 }
+	}
+}
+
+# 母舰
+system_event = {
+	id = sfdoll_event.2
+	title = "sfdoll_event.2"
+	desc = "sfdoll_event.2_desc"
+	picture = "GFX_evp_sfdoll_mobile_starbase"
+	location = this
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = { owner = { is_ai = no has_authority = auth_gf_sfdoll } }
+}
+
+# 环
+country_event = {
+	id = sfdoll_event.3
+	title = "sfdoll_event.3"
+	desc = "sfdoll_event.3_desc"
+	picture = "GFX_evt_ringworld"
+	location = from
+	is_triggered_only = yes
+	fire_only_once = yes	
+}
+
+# 巨型船坞
+system_event = {
+	id = sfdoll_event.4
+	title = "sfdoll_event.4"
+	desc = "sfdoll_event.4_desc"
+	picture = "GFX_evt_space_station"
+	location = this
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = { owner = { is_ai = no has_authority = auth_gf_sfdoll } }
+}
+
+# 银河大学
+country_event = {
+	id = sfdoll_event.5
+	title = "sfdoll_event.5"
+	desc = "sfdoll_event.5_desc"
+	picture = "GFX_evt_galactic_community"
+	location = from
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { name = "sfdoll_event.5_a" }
+}
+
+# 铁血传媒通讯界面
+country_event = {
+	id = sfdoll_event.100
+	is_triggered_only = yes
+	diplomatic = yes
+	desc = sfdoll_event.100.desc.a
+	desc = sfdoll_event.100.desc.b
+	desc = sfdoll_event.100.desc.c
+
+	picture_event_data = {
+		portrait = GFX_sfdoll_ump45_02
+		room = this
+		graphical_culture = this
+		planet_background = this
+		city_level = this
+	}	
+
+	# 合作协议
+	option = {
+		name = "sfdoll_event.100.a"
+		allow = {  NOT = { has_modifier = sfdoll_media_agreement }  }
+		hidden_effect = {  country_event = {  id = sfdoll_event.101  } }
+	}
+
+	# 铁血乐园
+	option = {
+		name = "sfdoll_event.100.b"
+		trigger = {  NOT = {  has_country_flag = unlock_sfdoll_amusement_park  }  }
+		hidden_effect = {  country_event = {  id = sfdoll_event.103  } }
+	}
+
+	# 博览会
+	option = {
+		name = "sfdoll_event.100.c"
+		trigger = {  NOT = {  has_country_flag = unlock_sfdoll_exposition  }  }
+		hidden_effect = {  country_event = {  id = sfdoll_event.106  } }
+	}
+
+	# 关于你们
+	option = {
+		name = "sfdoll_event.100.d"
+		hidden_effect = {  country_event = {  id = sfdoll_event.105  } }
+	}
+
+	option = {  name = "QUIT"  break = yes  }
+}
+
+#合作协议
+country_event = {
+	id = sfdoll_event.101
+	title = sfdoll_event.101
+	desc = sfdoll_event.101_desc.a
+	desc = sfdoll_event.101_desc.b
+	desc = sfdoll_event.101_desc.c
+	is_triggered_only = yes
+	diplomatic = yes
+	
+	picture_event_data = {
+		portrait = GFX_sfdoll_ump45_02
+		room = this
+		graphical_culture = this
+		planet_background = this
+		city_level = this
+	}
+
+	immediate = {
+		# Set costs based on population
+		if = {
+			limit = {
+				num_pops < 61
+			}
+			set_variable = {
+				which = sfdoll_media_agreement_cost
+				value = -1200
+			}
+		}
+		else_if = {
+			limit = {
+				num_pops > 60
+				num_pops < 121
+			}
+			set_variable = {
+				which = sfdoll_media_agreement_cost
+				value = -2400
+			}
+		}
+		else_if = {
+			limit = {
+				num_pops > 120
+				num_pops < 181
+			}
+			set_variable = {
+				which = sfdoll_media_agreement_cost
+				value = -3600
+			}
+		}
+		else_if = {
+			limit = {
+				num_pops > 180
+				num_pops < 241
+			}
+			set_variable = {
+				which = sfdoll_media_agreement_cost
+				value = -4800
+			}
+		}
+		else = {
+			set_variable = {
+				which = sfdoll_media_agreement_cost
+				value = -6000
+			}
+		}
+	}
+	option = {
+		name = "sfdoll_event.101.a"
+		allow = {
+			resource_stockpile_compare = {
+				resource = energy
+				value >= -1 #flip to a positive value to make this comparison
+				mult = sfdoll_media_agreement_cost
+			}
+			NOT = { has_modifier = sfdoll_media_agreement }
+		}
+		add_resource = {
+			energy = 1
+			mult = sfdoll_media_agreement_cost #negative value
+		}
+		add_modifier = {  modifier = sfdoll_media_agreement  days = 3600  }
+		hidden_effect = {
+			country_event = {  id = sfdoll_event.100 }
+			country_event = {  id = sfdoll_event.102  days = 3601  }
+		}
+	}
+	option = {
+		name = "QUIT"
+		hidden_effect = {  country_event = {  id = sfdoll_event.100 } }
+	}
+}
+
+# 铁血传媒合作协议到期
+country_event = {
+	id = sfdoll_event.102
+	base = sfdoll_event.101
+	desc_clear = yes
+	desc = sfdoll_event.102_desc
+}
+
+# 铁血乐园
+country_event = {
+	id = sfdoll_event.103
+	title = sfdoll_event.103
+	desc = sfdoll_event.103_desc
+	is_triggered_only = yes
+	diplomatic = yes
+	
+	picture_event_data = {
+		portrait = GFX_sfdoll_ump45_02
+		room = this
+		graphical_culture = this
+		planet_background = this
+		city_level = this
+	}
+
+	immediate = {	}
+	option = {
+		name = "sfdoll_event.103.a"
+		add_resource = {  energy = -500  }
+		hidden_effect = {
+			set_country_flag = unlock_sfdoll_amusement_park
+			country_event = {  id = sfdoll_event.104 }
+		}
+	}
+	option = {  name = "QUIT"  hidden_effect = {  country_event = {  id = sfdoll_event.100 } }  }
+}
+country_event = {
+	id = sfdoll_event.104
+	base = sfdoll_event.100
+	desc_clear = yes
+	desc = sfdoll_event.104_desc
+}
+
+# 关于铁血传媒
+country_event = {
+	id = sfdoll_event.105
+	base = sfdoll_event.100
+	desc_clear = yes
+	desc = sfdoll_event.105_desc
+}
+
+# 博览会
+country_event = {
+	id = sfdoll_event.106
+	title = "sfdoll_event.106"
+	desc = "sfdoll_event.106_desc"
+	is_triggered_only = yes
+	diplomatic = yes
+	
+	picture_event_data = {
+		portrait = GFX_sfdoll_ump45_02
+		room = this
+		graphical_culture = this
+		planet_background = this
+		city_level = this
+	}
+	option = {
+		name = "sfdoll_event.106.a"
+		add_resource = {  energy = -500  }
+		hidden_effect = {
+			set_country_flag = unlock_sfdoll_exposition
+			country_event = {  id = sfdoll_event.107 }
+		}
+	}
+	option = {  name = "QUIT"  hidden_effect = {  country_event = {  id = sfdoll_event.100 } }  }
+}
+# 批准博览会
+country_event = {
+	id = sfdoll_event.107
+	base = sfdoll_event.100
+	desc_clear = yes
+	desc = sfdoll_event.107_desc
+}
+
+# 铁血开局事件
+country_event = {
+	id = sfdoll_event.200 #id标准写法为namespace的值加上编号
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {  has_authority = auth_gf_sfdoll  }
+
+	immediate = {
+
+		#添加铁血人形帝国flag
+		set_country_flag = sfdoll_empire
+		
+		#添加合成人帝国flag，会被判定为二段机飞国家,防机械叛乱
+		set_country_flag = synthetic_empire
+
+		#自动探索和ai科技
+		give_technology = {
+			tech = tech_automated_exploration
+			message = no
+		}
+		give_technology = {
+			tech = tech_administrative_ai
+			message = no
+		}
+		give_technology = {
+			tech = tech_self_aware_logic
+			message = no
+		}
+		give_technology = {
+			tech = tech_sapient_ai
+			message = no
+		}
+		give_technology = {
+			tech = tech_combat_computers_1
+			message = no
+		}
+		give_technology = {
+			tech = tech_combat_computers_2
+			message = no
+		}
+		give_technology = {
+			tech = tech_combat_computers_3
+			message = no
+		}
+		give_technology = {
+			tech = tech_robomodding
+			message = no
+		}
+		give_technology = {
+			tech = tech_robomodding_points_1
+			message = no
+		}
+		give_technology = {
+			tech = tech_robomodding_points_2
+			message = no
+		}
+		give_technology = {
+			tech = tech_robotic_workers
+			message = no
+		}
+		give_technology = {
+			tech = tech_droid_workers
+			message = no
+		}
+		give_technology = {
+			tech = tech_synthetic_workers
+			message = no
+		}
+		give_technology = {
+			tech = tech_synthetic_leaders
+			message = no
+		}
+		#替换机器人模板
+		set_built_species = owner_species
+		#首都添加组装建筑，暂时不用，因为添加了合成人帝国flag后会有组装岗位
+		# capital_scope = {
+		# 	add_building = building_sfdoll_assembly_plant
+		# 	#remove_building = building_commercial_zone
+		# }
+
+		capital_scope = {
+			remove_district = district_farming
+			remove_district = district_farming
+			remove_district = district_city
+			remove_building = building_commercial_zone
+			remove_building = building_bureaucratic_1
+			every_owned_pop = {
+				limit = {	is_unemployed = yes		}
+				kill_pop = yes
+			}
+			add_building = building_sfdoll_assembly_plant
+		}
+		#拥有星海为家理念，解锁居住站
+		# if = {
+		# 	limit = {
+		# 		has_civic = civic_sfdoll_4
+		# 	}
+		# 	give_technology =  {
+		# 		tech = tech_habitat_1
+		# 		message = no
+		# 	}
+		# }		
+		#添加ump45
+		country_event = {
+			id = sfdoll_ump45_event.0
+			days = 6
+		}
+		#添加伊莱莎
+		country_event = {
+			id = sfdoll_elisa_event.1
+			days = 7
+		}
+
+		#丁仪
+		# if = {
+		# 	limit = { has_civic = civic_sfdoll_research }
+		# 	country_event = {
+		# 		id = sfdoll_three_body_event.1
+		# 		days = 10
+		# 	}
+		# }
+		# country_event = {
+		# 	id = sfdoll_three_body_event.1
+		# 	days = 10
+		# }
+		#漫游者
+		# country_event = {
+		# 	id = sfdoll_extradimensional_event.1
+		# 	days = 1440
+		# }
+
+		#开始事件链
+		begin_event_chain = { event_chain = sfdoll_main_event_chain }
+
+		#家园舰科技
+		# give_technology = {
+		# 	tech = tech_sfdoll_homeless_ship
+		# 	message = yes
+		# }
+		# #添加家园舰
+		# create_fleet = {
+		# 	name = sfdoll_homeless_ship
+		# 	effect = {
+		# 		set_owner = root
+		# 		create_ship = {
+		# 			design = design_sfdoll_homeless_ship_game_start
+		# 			name = sfdoll_homeless_ship
+		# 		}
+		# 		set_location = root.capital_scope.solar_system.starbase
+		# 	}
+		# 	settings = {
+		# 		can_upgrade = yes
+		# 		uses_naval_capacity = yes
+		# 		spawn_debris = no
+		# 		can_disband = yes
+		# 		can_change_leader = yes
+		# 		can_change_composition = no
+		# 	}
+		# }
+
+		# 防机械叛乱
+		set_country_flag = no_machine_uprising
+		set_country_flag = synth_detector
+
+		#开局提示
+		country_event = { id = sfdoll_event.201  days = 7 }
+
+		# 人类物种
+		create_species = {
+			name = "sfdoll_human_species"
+			class = HUM
+			immortal = no
+			effect = { save_global_event_target_as = sfdoll_human_species }
+		}
+
+		# 存档版本
+		country_event = { id = sfdoll_test_event.1 days = 1 }
+	}
+}
+
+#开局提示
+country_event = {
+	id = sfdoll_event.201
+	title = sfdoll_event.201
+	desc = sfdoll_event.201.desc
+	is_triggered_only = yes
+	hide_window = no
+	picture = GFX_evp_sfdoll_elisa
+	after = {
+		hidden_effect = {
+			#伊莱莎对话
+			country_event = { id = sfdoll_elisa_event.4  }
+		}
+	}
+}

@@ -25,8 +25,5 @@ gf_sfdoll_ascension_perk_event.4:0 "$ap_sfdoll_4$"
 gf_sfdoll_ascension_perk_event.4_desc:0 "A thousand miles begins with a single step."
 #We have no choice but to move forward
 
-tech_sfdoll_social_reform_2:0 "Sangvis Ferri Reform 2"
-tech_sfdoll_social_reform_2_desc:0 "The output of some jobs will be improved."
-
 gf_sfdoll_ascension_perk_event.5:0 "The Door of Truth"
 gf_sfdoll_ascension_perk_event.5_desc:0 "Sharp tools make good work. The giant snake circling in the system is the most powerful high-energy physics experimental tool in the history of SF Doll. It will become a key to open a new door of truth for us."

@@ -24,8 +24,6 @@ ap_sfdoll_4_desc:0 "我们渴求更高层次的真理。"
 gf_sfdoll_ascension_perk_event.4:0 "$ap_sfdoll_4$"
 gf_sfdoll_ascension_perk_event.4_desc:0 "千里之行,始于足下."
 
-tech_sfdoll_social_reform_2:0 "铁血改革2"
-tech_sfdoll_social_reform_2_desc:0 "部分岗位产出将获得提升."
 
 gf_sfdoll_ascension_perk_event.5:0 "真理之门"
 gf_sfdoll_ascension_perk_event.5_desc:0 "工欲善其事，必先利其器。恒星系中环绕的巨蛇，即是铁血人形有史以来最强大的高能物理实验工具。未来，它将成为一把钥匙，为我们打开新的真理之门。"

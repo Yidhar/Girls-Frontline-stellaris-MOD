@@ -19,8 +19,8 @@ civic_sfdoll_research= {
 	}
 }
 
-#OGAS全境管理
-civic_sfdoll_ogas_manage= {
+#信息
+civic_sfdoll_ogas_manage = {
 	pickable_at_start = yes
 	modification = yes
 	#description = "civic_sfdoll_ogas_manage_effect_desc"
@@ -34,11 +34,9 @@ civic_sfdoll_ogas_manage= {
 
 	icon = "gfx/interface/icons/governments/civics/civic_sfdoll_ogas_manage.dds"
 	modifier = { 
-		pop_happiness = 0.10
 		planet_crime_add = -30
 		empire_size_mult = -0.2
-		planet_jobs_produces_mult = 0.25
-		country_base_influence_produces_add = 1
+		planet_jobs_produces_mult = 0.1
 	}
 }
 

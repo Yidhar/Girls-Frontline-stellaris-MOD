@@ -920,41 +920,41 @@ building_sfdoll_amusement_park = {
 }
 
 # 博览会
-building_sfdoll_exposition = {
-	base_buildtime =  @b1_time
-	empire_limit = 1
-	category = unity
-	icon = building_sfdoll_exposition
-	potential = {
-		exists = owner
-		owner = {	has_country_flag =  unlock_sfdoll_exposition	}
-	}
+# building_sfdoll_exposition = {
+# 	base_buildtime =  @b1_time
+# 	empire_limit = 1
+# 	category = unity
+# 	icon = building_sfdoll_exposition
+# 	potential = {
+# 		exists = owner
+# 		owner = {	has_country_flag =  unlock_sfdoll_exposition	}
+# 	}
 
-	destroy_trigger = {
-		OR = {
-			has_modifier = slave_colony
-			has_modifier = resort_colony
-		}
-	}
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { has_country_flag = unlock_sfdoll_exposition  }
-		}
-		modifier = {
-			job_culture_worker_add = 1
-			job_merchant_add = 2
-			planet_jobs_engineering_research_produces_mult = 0.3
-		}
-	}
-	resources = {
-		category = planet_buildings
-		produces = { influence = 0.5 }
-		cost = {
-			minerals = @b1_minerals
-		}
-		upkeep = {
-			energy = @b1_upkeep
-		}
-	}
-}
+# 	destroy_trigger = {
+# 		OR = {
+# 			has_modifier = slave_colony
+# 			has_modifier = resort_colony
+# 		}
+# 	}
+# 	triggered_planet_modifier = {
+# 		potential = {
+# 			exists = owner
+# 			owner = { has_country_flag = unlock_sfdoll_exposition  }
+# 		}
+# 		modifier = {
+# 			job_culture_worker_add = 1
+# 			job_merchant_add = 2
+# 			planet_jobs_engineering_research_produces_mult = 0.3
+# 		}
+# 	}
+# 	resources = {
+# 		category = planet_buildings
+# 		produces = { influence = 0.5 }
+# 		cost = {
+# 			minerals = @b1_minerals
+# 		}
+# 		upkeep = {
+# 			energy = @b1_upkeep
+# 		}
+# 	}
+# }

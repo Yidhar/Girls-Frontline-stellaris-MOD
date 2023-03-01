@@ -26,9 +26,7 @@ on_custom_diplomacy = {
 on_leader_spawned = {
 	events = {
 		sfdoll_leader_event.3
-		# gf_sfdoll_leader_trait_event.0
-		# gf_sfdoll_leader_trait_event.1
-		sfdoll_leader_revive_event.5
+		sfdoll_leader_event.12
 	}
 }
 
@@ -37,7 +35,7 @@ on_leader_spawned = {
 # From = Leader
 on_leader_death = {
 	events = {
-		sfdoll_leader_revive_event.0
+		sfdoll_leader_event.10
 	}
 } 
 

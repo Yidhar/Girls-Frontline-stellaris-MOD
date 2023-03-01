@@ -1,17 +1,21 @@
 namespace = sfdoll_event
 #id标准写法为namespace的值加上编号
-#every year 年检事件统一判断
+
+#every year 铁血年检
 country_event = {
 	id = sfdoll_event.1
 	hide_window = yes
 	is_triggered_only = yes
 	trigger = { has_authority = auth_gf_sfdoll }
 	immediate = {
+		# 谜之信号，事件触发
 		country_event = { id = sfdoll_relic_civilization_event.0  days = 5 }
-		# 头像
+		# 头像更正
 		country_event = { id = sfdoll_leader_event.1 }
 		# 特质国家修正
 		country_event = { id = sfdoll_event.6 }
+		# 添加铁血人形领袖flag
+		country_event = { id = sfdoll_leader_event.12 }
 		# 版本号检查
 		country_event = { id = sfdoll_test_event.2  days = 1 }
 	}

@@ -136,9 +136,7 @@ country_event = {
 	id = sfdoll_test_event.6
 	hide_window = no
 	is_triggered_only = yes
-	immediate = {
-		remove_modifier = sfdoll_test_modifier
-	}
+	immediate = {  remove_modifier = sfdoll_test_modifier  }
 }
 
 # country_event = {
@@ -175,3 +173,10 @@ country_event = {
 # 		}
 # 	}
 # }
+
+country_event = {
+	id = sfdoll_test_event.8
+	hide_window = no
+	is_triggered_only = yes
+	immediate = {   every_owned_leader = {  kill_leader = {  show_notification = yes  }  } }
+}

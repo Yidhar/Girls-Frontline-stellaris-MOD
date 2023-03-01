@@ -361,8 +361,8 @@ leader_trait_sfdoll_sophon_admiral_desc:0 "$leader_trait_sfdoll_sophon_scientist
 
 
 #领袖修复
-sfdoll_leader_revive_event_1_title:0"铁血领袖的修复工作"
-sfdoll_leader_revive_event_1_desc:0"我们的铁血人形领袖遭到了不可逆的损毁。\n，幸运的是，这位领袖最近备份了心智云图，并保存了和工作有关的数据。我们已经将它的备份心智云图转移到新素体上，它很快就能重回岗位。"
+sfdoll_leader_event.11:0"铁血领袖的修复工作"
+sfdoll_leader_event.11.desc:0"我们的铁血人形领袖遭到了不可逆的损毁。\n，幸运的是，这位领袖最近备份了心智云图，并保存了和工作有关的数据。我们已经将它的备份心智云图转移到新素体上，它很快就能重回岗位。"
 
 sfdoll_leader_revive_event_3_title:0"诺耶露的修复"
 sfdoll_leader_revive_event_3_desc:0"诺耶露受到了严重损伤，她不得不进行传送和自我重组，从而恢复健康状态。"

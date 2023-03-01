@@ -33,7 +33,7 @@ sfdoll_elisa_event_3_a_desc:0 "要找谁？"
 # sfdoll_elisa_event.3_option_8:0 "智子"
 
 sfdoll_elisa_event.4:0 "和伊莱莎通讯"
-sfdoll_elisa_event_4_a_desc:0 "我已经要退休了，只能帮忙打电话. 共和国的未来，掌握在你们手里。\n\nOAGS-UMP40是结合了遗迹文明和铁血人形的技术而诞生的超级人工智能，它的能力远远在我之上，你可以完全信任它。\n\n§Y<你现在可以通过通讯菜单与伊莱莎交流。>§!"
+sfdoll_elisa_event_4_a_desc:0 "我已经要退休了，只能帮忙打电话. 共和国的未来，掌握在你们手里。\n\nOAGS是结合了遗迹文明和铁血人形的技术而诞生的人工智能，它的能力远远在我之上，你可以完全信任它。\n\n§Y<你现在可以通过通讯菜单与伊莱莎交流。>§!"
 
 sfdoll_leader_event.2:0 "与衔尾蛇通讯"
 sfdoll_leader_event.2_desc_a:0 "学无止境。"

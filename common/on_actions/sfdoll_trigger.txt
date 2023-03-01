@@ -93,7 +93,8 @@ on_monthly_pulse_country = {
 on_modification_complete = {
 	events = {
 		sfdoll_leader_event.1
-		sfdoll_time_event.2
+		sfdoll_event.6
+		# sfdoll_time_event.2
 	}
 }
 

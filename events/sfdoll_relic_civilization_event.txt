@@ -241,7 +241,7 @@ planet_event = {
 		}
 		create_species = {
 			name = "NAME_SFDOLL_ELID"
-			class = sfdoll_elid
+			class = eild
 			portrait = random
 			effect = { save_global_event_target_as = sfdoll_elid_species }
 		}

@@ -64,6 +64,27 @@ country_event = {
 	option = { name = "sfdoll_event.5_a" }
 }
 
+# 添加特质对应的国家修正
+country_event = {
+	id = sfdoll_event.6
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = { has_authority = auth_gf_sfdoll }
+	immediate = {
+		remove_modifier = trait_sfdoll_engineer_modifier
+		if = {		
+			limit = { any_owned_pop = { has_trait = trait_sfdoll_engineer } }
+			add_modifier = {   modifier = trait_sfdoll_engineer_modifier  days = -1  }
+		} 
+
+		remove_modifier = trait_sfdoll_war_2_modifier
+		if = {		
+			limit = { any_owned_pop = { has_trait = trait_sfdoll_war_2 } }
+			add_modifier = {  modifier = trait_sfdoll_war_2_modifier  days = -1  }
+		} 
+	}
+}
+
 # 铁血传媒通讯界面
 country_event = {
 	id = sfdoll_event.100

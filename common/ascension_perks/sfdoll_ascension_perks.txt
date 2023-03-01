@@ -15,7 +15,7 @@ ap_sfdoll_digi_mind_update ={
 		add_research_option = tech_sfdoll_mining_station
 		add_research_option = tech_sfdoll_reverse_collapse_1
 		hidden_effect = {
-			country_event = { id = gf_sfdoll_ascension_perk_event.1 }
+			country_event = { id = sfdoll_event.8 }
 		}
 	}
 
@@ -47,7 +47,7 @@ ap_sfdoll_reverse_collapse ={
 		#add_research_option = tech_dark_matter_power_core
 		hidden_effect = {
 			country_event = {
-				id = gf_sfdoll_ascension_perk_event.0
+				id = sfdoll_event.7
 			}
 		}
 	}
@@ -110,11 +110,7 @@ ap_sfdoll_4= {
 		country_resource_max_add = 80000
 	}
 	on_enabled = {
-		hidden_effect = {
-			country_event = {
-				id = gf_sfdoll_ascension_perk_event.4
-			}
-		}
+		hidden_effect = {  country_event = {  id = sfdoll_event.9  } }
 		add_research_option = tech_sfdoll_energy_plant
 	}
 	ai_weight = {	factor = 1	}

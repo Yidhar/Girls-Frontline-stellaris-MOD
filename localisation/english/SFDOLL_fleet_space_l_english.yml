@@ -462,6 +462,9 @@ sfdoll_mega_lab_3_DESC:0 "Huge accelerators and supporting facilities have been 
 sfdoll_mega_lab_4:0 "SF Stellar Proving Ground"
 sfdoll_mega_lab_4_DESC:0 "In order to explore the basic laws of the Galaxy, Sangvis Ferri Civilization built this megastructure."
 
+sfdoll_event.10:0 "The Door of Truth"
+sfdoll_event.10.desc:0 "Sharp tools make good work. The giant snake circling in the system is the most powerful high-energy physics experimental tool in the history of SF Doll. It will become a key to open a new door of truth for us."
+
 mega_sfdoll_university_1:0 "$mega_sfdoll_university_2$ Site"
 mega_sfdoll_university_1_DESC:0 "$mega_sfdoll_university_2_DESC$"
 mega_sfdoll_university_1_MEGASTRUCTURE_DETAILS:0 "$requires_only_one_mega_sfdoll_university$"

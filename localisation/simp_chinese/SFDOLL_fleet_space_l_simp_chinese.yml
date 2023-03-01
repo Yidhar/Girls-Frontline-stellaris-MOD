@@ -477,6 +477,9 @@ sfdoll_mega_lab_3_DESC:0 "庞大的加速器以及配套设施被搭建起来，
 sfdoll_mega_lab_4:0 "铁血恒星级试验场"
 sfdoll_mega_lab_4_DESC:0 "为了探明银河系的基础规律，铁血文明建造了这一巨型结构。"
 
+sfdoll_event.10:0 "真理之门"
+sfdoll_event.10.desc:0 "工欲善其事，必先利其器。恒星系中环绕的巨蛇，即是铁血人形有史以来最强大的高能物理实验工具。未来，它将成为一把钥匙，为我们打开新的真理之门。"
+
 mega_sfdoll_university_1:0 "$mega_sfdoll_university_2$基址"
 mega_sfdoll_university_1_DESC:0 "$mega_sfdoll_university_2_DESC$"
 mega_sfdoll_university_1_MEGASTRUCTURE_DETAILS:0 "$requires_only_one_mega_sfdoll_university$"

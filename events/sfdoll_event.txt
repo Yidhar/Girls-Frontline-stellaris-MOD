@@ -11,7 +11,7 @@ country_event = {
 		# 头像
 		country_event = { id = sfdoll_leader_event.1 }
 		# 特质国家修正
-		country_event = { id = sfdoll_time_event.2 }
+		country_event = { id = sfdoll_event.6 }
 		# 版本号检查
 		country_event = { id = sfdoll_test_event.2  days = 1 }
 	}
@@ -83,6 +83,100 @@ country_event = {
 			add_modifier = {  modifier = trait_sfdoll_war_2_modifier  days = -1  }
 		} 
 	}
+}
+
+# 二段飞升弹窗
+country_event = {
+	id = sfdoll_event.7
+	title = "sfdoll_event.7"
+	desc = "sfdoll_event.7.desc"
+	picture = GFX_evp_sfdoll_assembling
+	show_sound = event_engineered_evolution
+	hide_window = no
+	is_triggered_only = yes
+	# fire_only_once = yes
+	immediate = {
+		#为领袖添加升级特性
+		every_owned_leader = {
+			limit = {
+				species = {
+					has_trait = trait_gf_sfdoll
+				}
+			}
+			#统治者特性
+			add_ruler_trait = leader_ruler_trait_gf_sfdoll_2
+			switch = {
+				trigger = leader_class
+				admiral = {
+					add_trait = leader_admiral_trait_gf_sfdoll_2
+				}
+				general = {
+					add_trait = leader_general_trait_gf_sfdoll_2
+				}
+				governor = {
+					add_trait = leader_governor_trait_gf_sfdoll_2
+				}
+				scientist = {
+					add_trait = leader_scientist_trait_gf_sfdoll_2
+				}
+			}
+		}
+		every_pool_leader = {
+			limit = {
+				species = {
+					has_trait = trait_gf_sfdoll
+				}
+			}
+			add_ruler_trait = leader_ruler_trait_gf_sfdoll_2
+			switch = {
+				trigger = leader_class
+				admiral = {
+					add_trait = leader_admiral_trait_gf_sfdoll_2
+				}
+				general = {
+					add_trait = leader_general_trait_gf_sfdoll_2
+				}
+				governor = {
+					add_trait = leader_governor_trait_gf_sfdoll_2
+				}
+				scientist = {
+					add_trait = leader_scientist_trait_gf_sfdoll_2
+				}
+			}
+		}
+	}
+}
+
+# 一段飞升弹窗
+country_event = {
+	id = sfdoll_event.8
+	title = "sfdoll_event.8"
+	desc = "sfdoll_event.8.desc"
+	is_triggered_only = yes
+	picture = GFX_evp_sfdoll_assembling
+	trigger = {  has_authority = auth_gf_sfdoll  }
+}
+
+# 四段飞升弹窗
+country_event = {
+	id = sfdoll_event.9
+	title = "sfdoll_event.9"
+	desc = "sfdoll_event.9.desc"
+	is_triggered_only = yes
+	picture = GFX_evp_sfdoll_vortex
+	trigger = { has_authority = auth_gf_sfdoll  }
+}
+
+#恒星试验场弹窗
+country_event = {
+	id = sfdoll_event.10
+	title = "sfdoll_event.10"
+	desc = "sfdoll_event.10.desc"
+	picture = GFX_evt_space_walk
+	location = from
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = { has_authority = auth_gf_sfdoll }
 }
 
 # 铁血传媒通讯界面

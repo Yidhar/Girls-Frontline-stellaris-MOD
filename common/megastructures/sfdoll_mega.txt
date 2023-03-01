@@ -1383,7 +1383,7 @@ sfdoll_mega_lab_2 = {
 			days = 30
 			target = THIS
 		}
-		owner = { country_event = { id = gf_sfdoll_ascension_perk_event.5 } }
+		owner = { country_event = { id = sfdoll_event.10 } }
 	}
 }
 sfdoll_mega_lab_3 = {

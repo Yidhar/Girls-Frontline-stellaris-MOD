@@ -48,9 +48,11 @@ country_event = {
 #和45的通讯界面
 country_event = {
 	id = sfdoll_ump45_event.1
-	title = "sfdoll_ump45_event_1"
-	desc = "sfdoll_ump45_event_1_a_desc"
-	desc = "sfdoll_ump45_event_1_b_desc"	
+	title = "sfdoll_ump45_event.1"
+	desc = "sfdoll_ump45_event.desc.a"
+	desc = "sfdoll_ump45_event.desc.b"
+	desc = "sfdoll_ump45_event.desc.c"
+	desc = "sfdoll_ump45_event.desc.d"	
 	diplomatic = yes
 
 	picture_event_data = {
@@ -61,25 +63,6 @@ country_event = {
 		city_level = this
 	}	
 	is_triggered_only = yes
-
-	# trigger = {
-	# 	AND = {
-	# 		from = {  NOT = {has_country_flag = gray_country }	}
-	# 		from = {
-	# 			is_country_type = country_type_sfdoll_event_leader
-	# 			has_country_flag = sfdoll_ump45_country
-	# 		}
-	# 		has_country_flag = sfdoll_ump45_owner
-	# 		NOT = { has_country_flag = contract_diplomacy_engaged }
-	# 	}
-	# }
-
-	immediate = {
-		set_country_flag = contract_diplomacy_engaged
-	}
-	after = {
-		hidden_effect = { remove_country_flag = contract_diplomacy_engaged }
-	}
 
 	#选项，45总督
 	option = {
@@ -101,33 +84,9 @@ country_event = {
 				}
 			}			 
 		}
-		hidden_effect = {
-			country_event = { id = sfdoll_ump45_event.2 }
-		}
+		hidden_effect = {  country_event = { id = sfdoll_ump45_event.2 }  }
 		response_text = "response_text_ump45_become_governor"
 	}
-
-	#45科学家
-	# option = {
-	# 	name =  "ump45_become_scientist"
-	# 	# allow = { NOT = { has_country_flag = ump45_is_scientist } }
-	# 	allow = { 
-	# 		custom_tooltip ={
-	# 			fail_text = "sfdoll_the_leader_is_doing_this_job"
-	# 			NOR = {
-	# 				AND = {
-	# 					exists = event_target:sfdoll_leader_ump45
-	# 					event_target:sfdoll_leader_ump45 = { leader_class = scientist }
-	# 				}
-					
-	# 			}
-	# 		}			 
-	# 	}
-	# 	hidden_effect = {
-	# 		country_event = { id = sfdoll_ump45_event.3 }
-	# 	}
-	# 	response_text = "response_text_ump45_become_scientist"
-	# }
 
 	#45舰队司令
 	option = {

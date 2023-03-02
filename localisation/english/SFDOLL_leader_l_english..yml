@@ -112,22 +112,21 @@ sfdoll_ogas_event.2.desc:0 "Hello, I'm OGAS AI. UMP40 is not only my code, but a
 NAME_sfdoll_ump40:0 "UMP40"
 
 #和ump45通讯
-sfdoll_ump45_event_1:0"Communicating with UMP45"
-sfdoll_ump45_event_1_a_desc:0"Need my help?"
-
-sfdoll_ump45_event_1_b_desc:0 "You can also call me Riva."
+sfdoll_ump45_event.1:0"Communicating with UMP45"
+sfdoll_ump45_event.desc.a:0"Need my help?"
+sfdoll_ump45_event.desc.b:0 "You can also call me Riva."
+sfdoll_ump45_event.desc.c:0 "Long time no see, do you miss me?"
+sfdoll_ump45_event.desc.d:0"I want to take a holiday occasionally."
 
 ump45_become_governor:0 "Serve as governor"
 response_text_ump45_become_governor:0 "Oops, it's time to start work, is it too late..."
-
 ump45_become_admiral:0 "Serve as admiral"
 response_text_ump45_become_admiral:0 "Is the state of the space body OK? Then let's go to the universe."
-
 ump45_become_general:0 "Serve as general"
 response_text_ump45_become_general:0 "Want me to do my old job? So, what kind of monster is this time?"
 
 #45特性
-leader_trait_governor_sfdoll_ump45:0 "Code:ump45"
+leader_trait_governor_sfdoll_ump45:0 "Steel Plate"
 leader_trait_governor_sfdoll_ump45_desc:0 "This leader is battle-hardened."
 
 leader_trait_admiral_sfdoll_ump45:0"$leader_trait_governor_sfdoll_ump45$"

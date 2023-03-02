@@ -109,21 +109,21 @@ sfdoll_ogas_event.2.desc:0 "你们好啊，我是OGAS人工智能. UMP40既是�
 NAME_sfdoll_ump40:0 "UMP40"
 
 #和ump45通讯
-sfdoll_ump45_event_1:0"和UMP45通讯中"
-sfdoll_ump45_event_1_a_desc:0"需要我帮忙吗？"
-sfdoll_ump45_event_1_b_desc:0"想叫我莉娃也可以哦。"
+sfdoll_ump45_event.1:0"和UMP45通讯中"
+sfdoll_ump45_event.desc.a:0"需要我帮忙吗？"
+sfdoll_ump45_event.desc.b:0"想叫我莉娃也可以哦。"
+sfdoll_ump45_event.desc.c:0"好久不见，是不是很想我？"
+sfdoll_ump45_event.desc.d:0"我偶尔也想放个假嘛。"
 
 ump45_become_governor:0"请你出任总督。"
-response_text_ump45_become_governor:0"哎呀，要开始工作了，还来得及吗……"
-ump45_become_scientist:0"请你协助我们的科学研究"
-response_text_ump45_become_scientist:0"云端数据库连接完成，让我们开始解谜吧~"
+response_text_ump45_become_governor:0"哎呀，要开始工作了，还来得及吗..."
 ump45_become_admiral:0"请你指挥太空舰队"
 response_text_ump45_become_admiral:0"太空素体状态OK？那就出发吧，去宇宙。"
 ump45_become_general:0"请你率领陆军部队"
 response_text_ump45_become_general:0"要我干我的老本行？那么，这次又是什么样的怪物？"
 
 #45特性
-leader_trait_governor_sfdoll_ump45:0"代号ump45"
+leader_trait_governor_sfdoll_ump45:0"钢板"
 leader_trait_governor_sfdoll_ump45_desc:0"这位领袖可谓久经沙场"
 
 

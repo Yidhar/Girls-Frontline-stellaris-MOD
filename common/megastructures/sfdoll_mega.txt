@@ -1,0 +1,1646 @@
+#黑洞开采器基址
+sfdoll_blackhole_mining_01 = {
+	entity = "construction_platform_entity"
+	entity_offset = { x = -20 y = -20 }
+	construction_entity = "construction_platform_entity"
+	show_galactic_map_icon = yes
+	show_in_outliner = yes
+	build_time = 360
+	show_prereqs = yes
+	prerequisites = { 	tech_sfdoll_blackhole_mining	}
+	potential = { is_ai = no	has_authority = auth_gf_sfdoll	}
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 1000
+			unity = 200
+		}
+		upkeep = {
+			energy = 2
+		}
+	}
+	possible = {
+		exists = starbase
+		custom_tooltip = {
+			fail_text = "requires_inside_border"
+			is_inside_border = from
+		}
+		custom_tooltip = {
+			fail_text = "requires_surveyed_system"
+			NOT = {
+				any_system_planet = {
+					is_surveyed = {
+						who = prev.from
+						status = no
+					}
+				}
+			}
+		}
+		#不是联星
+		# custom_tooltip = { 
+		# 	fail_text = "requires_no_binary_trinary"
+		# 	NOR = {
+		# 		is_star_class = sc_binary_1
+		# 		is_star_class = sc_binary_2
+		# 		is_star_class = sc_binary_3
+		# 		is_star_class = sc_binary_4
+		# 		is_star_class = sc_binary_5
+		# 		is_star_class = sc_binary_6
+		# 		is_star_class = sc_binary_7
+		# 		is_star_class = sc_binary_8
+		# 		is_star_class = sc_binary_9
+		# 		is_star_class = sc_binary_10
+		# 		is_star_class = sc_trinary_1
+		# 		is_star_class = sc_trinary_2
+		# 		is_star_class = sc_trinary_3
+		# 		is_star_class = sc_trinary_4
+		# 	}
+		# }
+	}
+	placement_rules = {
+		planet_possible = {
+			is_planet_class = pc_black_hole
+			custom_tooltip = {
+				fail_text = "must_build_around_star"
+				is_star = yes
+			}
+			custom_tooltip = {
+				fail_text = "requires_no_anomaly"
+				NOT = { has_anomaly = yes }
+			}
+			custom_tooltip = {
+				fail_text = "requires_no_existing_megastructure"
+				NOT = {
+					has_any_megastructure = yes
+				}
+			}
+		}
+	}
+
+	on_build_complete = {
+		create_message = {
+			type = MEGASTRUCTURE_BUILT
+			localization = sfdoll_blackhole_mining_01
+			days = 90
+			target = this
+		}
+	}
+}
+
+#黑洞开采器初级
+sfdoll_blackhole_mining_02 = {
+	entity = "construction_platform_entity"
+	entity_offset = { x = -20 y = -20 }
+	construction_entity = "construction_platform_entity"
+	portrait = "GFX_megastructure_sfdoll_star_collapse"
+	build_time = 720
+	show_galactic_map_icon = yes
+	prerequisites = { 	tech_sfdoll_blackhole_mining	}
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 5000
+			GF_nyto_collapse_liquid = 1000
+			unity = 1000
+		}
+		produces = {
+			minerals = 600
+		}
+		upkeep = { energy = 20 GF_nyto_collapse_liquid = 2 }
+	}
+	upgrade_from = { sfdoll_blackhole_mining_01 	}
+	on_build_complete = {
+		create_message = {
+			type = MEGASTRUCTURE_BUILT
+			localization = sfdoll_blackhole_mining_02
+			days = 30
+			target = this
+		}
+	}
+}
+
+# 黑洞开采器完成
+sfdoll_blackhole_mining_03 = {
+	entity = "nova_ring_entity"
+	construction_entity = "nova_ring_entity"
+	portrait = "GFX_megastructure_sfdoll_star_collapse"
+	build_time = 1800
+	show_galactic_map_icon = no
+	show_in_outliner = no
+	prerequisites = { 	tech_sfdoll_blackhole_mining	}
+	potential = {	has_authority = auth_gf_sfdoll	}
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 30000
+			GF_nyto_collapse_liquid = 7000
+			unity = 6000
+		}
+		produces = {
+			minerals = 3000
+			sr_dark_matter = 60
+		}
+		upkeep = { energy = 100 GF_nyto_collapse_liquid = 10 }
+	}
+	upgrade_from = { sfdoll_blackhole_mining_02 	}
+	on_build_complete = {
+		from = { set_country_flag = has_built_or_repaired_megastructure }
+		fromfrom.planet = {
+			set_planet_size = 12
+			if = {
+				limit = {
+					NOT = {
+						is_planet_class = pc_black_hole
+					}
+				}
+				change_pc = pc_black_hole
+			}
+		}
+		solar_system = {
+			if = {
+				limit = {
+					not = {
+						any_system_planet = {
+							is_star = yes
+							NOT = {	is_planet_class = pc_black_hole	}
+						}
+					}
+				}
+				set_star_class = sc_black_hole
+			}
+		}
+		create_message = {
+			type = MEGASTRUCTURE_BUILT
+			localization = sfdoll_blackhole_mining_03
+			days = 30
+			target = this
+		}
+	}
+}
+
+
+#铁血轨道城
+sfdoll_habitat_01 ={
+	entity = "construction_platform_entity"
+	construction_entity = "construction_platform_entity"
+	show_galactic_map_icon = yes
+	show_in_outliner = yes
+	place_entity_on_planet_plane = no
+	build_outside_gravity_well = no
+	build_time = 720
+	construction_blocks_and_blocked_by = multi_stage_type
+	potential = { is_ai = no	has_authority = auth_gf_sfdoll }
+	show_prereqs = yes
+	prerequisites = { tech_sfdoll_habitat_01 }
+	possible = {
+		exists = starbase
+		custom_tooltip = {
+			fail_text = "requires_inside_border"
+			is_inside_border = from
+		}
+		custom_tooltip = {
+			fail_text = "requires_surveyed_system"
+			NOT = {
+				any_system_planet = {
+					is_surveyed = {
+						who = prev.from
+						status = no
+					}
+				}
+			}
+		}
+
+		#不能有环世界
+		NOT = {
+			OR = {
+				has_star_flag = ring_world_built
+				any_system_planet = {
+					is_planet_class = pc_ringworld_habitable
+					is_planet_class = pc_ringworld_habitable_damaged
+					is_planet_class = pc_ringworld_tech
+					is_planet_class = pc_ringworld_tech_damaged
+					is_planet_class = pc_ringworld_seam
+					is_planet_class = pc_ringworld_seam_damaged
+				}
+			}
+		}
+	}
+	placement_rules = {
+		planet_possible = {
+			custom_tooltip = {
+				fail_text = "requires_surveyed_planet"
+				is_surveyed = {			# prevent leaking habitability information
+					who = prev.from
+					status = yes
+				}
+			}
+			custom_tooltip = {
+				fail_text = "requires_no_anomaly"
+				NOT = { has_anomaly = yes }
+			}
+			custom_tooltip = {
+				fail_text = "requires_no_existing_megastructure"
+				#can_build_megastructure_on_planet = yes
+				NOR = {
+					has_planet_flag = megastructure
+					has_planet_flag = has_megastructure
+					solar_system = {
+						has_star_flag = ring_world_built
+					}
+					is_planet_class = pc_rw_sfdoll
+					is_planet_class = pc_ringworld_habitable
+					is_planet_class = pc_ringworld_habitable_damaged
+					is_planet_class = pc_ringworld_tech
+					is_planet_class = pc_ringworld_tech_damaged
+					is_planet_class = pc_ringworld_seam
+					is_planet_class = pc_ringworld_seam_damaged
+					is_planet_class = pc_habitat
+				}
+			}
+
+			# balance for habitats
+			custom_tooltip = {
+				fail_text = "requires_not_minor_planetary_body"
+				NOR = {
+					is_asteroid = yes
+					is_moon = yes
+				}
+			}
+			custom_tooltip = {
+				fail_text = "requires_not_star"
+				is_star = no
+			}
+		} # use these for all non-star megastructures
+	}
+
+	resources = {
+		category = megastructures_habitat
+		cost = {
+			alloys = 5000
+			unity = 1000
+			GF_nyto_collapse_liquid = 1000
+		}
+	}
+	#Solar System scope, FROM = builder empire, FROMFROM = the megastructure
+	on_build_complete = {
+		from = {
+			#set_country_flag = has_built_or_repaired_megastructure
+			create_message = {
+				type = MEGASTRUCTURE_BUILT
+				localization = sfdoll_habitat_01_complete
+				days = 30
+				target= prev
+			}
+		}
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#太空城
+sfdoll_habitat_02 ={
+	entity = ""
+	entity_offset = { x = -7 y = -7 }
+	construction_entity = "construction_platform_entity"
+	portrait = "GFX_sfdoll_habitat_01"
+	place_entity_on_planet_plane = no
+	build_time = 1080
+	construction_blocks_and_blocked_by = multi_stage_type
+	potential = { has_authority = auth_gf_sfdoll }
+	upgrade_from = { sfdoll_habitat_01 }
+	# ship_modifier = { ship_starting_experience_add = 600 }
+	# station_modifier = {
+	# 	starbase_shipyard_capacity_add = 20
+	# 	starbase_shipyard_build_speed_mult = 2
+	# }
+	resources = {
+		category = megastructures_habitat
+		cost = {
+			alloys = 10000
+			unity = 1000
+			GF_nyto_collapse_liquid = 2000
+		}
+	}
+	#Solar System scope, FROM = builder empire, FROMFROM = the megastructure
+	on_build_complete = {
+		if = {
+			limit = { owner = { has_authority = auth_gf_sfdoll } }
+			spawn_planet = {
+				class = pc_sfdoll_habitat
+				size = 6
+				location = fromfrom.planet
+				orbit_location = yes
+				orbit_angle_offset = 45
+				orbit_distance_offset = 9.899
+				has_ring = yes
+				init_effect = {
+					set_name = "HABITAT_PLANET_NAME"
+					set_surveyed = {
+						surveyed = yes
+						surveyor = FROM
+					}
+					set_all_comms_surveyed = yes
+					clear_blockers = yes
+					start_colony = {
+						owner = root
+						species = owner_main_species
+					}
+					set_planet_entity = {
+						entity = sf_GF_nyto_habita_entity
+					}
+					save_event_target_as = this_planet_habiti
+					set_planet_flag = megastructure
+					set_planet_flag = habitat
+					# 禁止一部分事件
+					set_planet_flag = colony_event
+				}
+			}
+			from = {
+				set_country_flag = has_built_or_repaired_megastructure 
+				create_message = {
+					type = MEGASTRUCTURE_BUILT
+					localization = sfdoll_habitat_02_complete
+					days = 30
+					target = root
+				}
+			}
+			fromfrom.planet = { set_planet_flag = has_megastructure }
+		}
+		remove_megastructure = fromfrom
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}
+
+
+# 采矿站基址
+sfdoll_mining_station_01 = {
+	entity = "humanoid_01_mining_station_section_entity"
+	construction_entity = "humanoid_01_mining_station_section_entity"
+	entity_offset = { x = 5 y = -5 }
+	show_galactic_map_icon = yes
+	show_in_outliner = yes
+	build_time = 360
+	show_prereqs = yes
+	prerequisites = { tech_sfdoll_mining_station }
+
+	potential = { is_ai = no  has_authority = auth_gf_sfdoll }
+	possible = {
+		custom_tooltip = {
+			fail_text = "requires_inside_border"
+			exists = starbase
+			is_inside_border = from
+		}
+		custom_tooltip = {
+			fail_text = "requires_surveyed_system"
+			NOT = {
+				any_system_planet = {
+					is_surveyed = {
+						who = prev.from
+						status = no
+					}
+				}
+			}
+		}
+	}
+	placement_rules = {
+		planet_possible = {
+			custom_tooltip = { fail_text = "requires_no_anomaly" NOT = { has_anomaly = yes }}
+			custom_tooltip = {
+				fail_text = "requires_no_existing_megastructure"
+				NOR = {
+					has_planet_flag = megastructure
+					has_planet_flag = has_megastructure
+					solar_system = { has_star_flag = ring_world_built }
+					planet = {
+						has_any_megastructure = yes
+					}
+				}
+			}
+			# custom_tooltip = {
+			# 	fail_text = "requires_asteroid"
+			# 	is_asteroid = yes
+			# }
+			is_asteroid = yes		
+		}
+	}
+	resources = {
+		category = megastructures
+		cost = { alloys = 1000 unity = 50 }
+		produces = { minerals = 100 }
+		upkeep = { energy = 15 }
+	}
+
+	on_build_complete = {
+		create_message = {
+			type = MEGASTRUCTURE_BUILT
+			localization = sfdoll_mining_station_01
+			days = 90
+			target = this
+		}
+	}
+}
+
+#小行星采矿站完成
+sfdoll_mining_station_02 = {
+	entity = "sfdoll_mining_station_section_entity"
+	construction_entity = ""
+	portrait = "GFX_sfdoll_habitat_01"
+	build_time = 360
+	entity_offset = { x = 5 y = -5 }
+	show_galactic_map_icon = no
+	show_in_outliner = no
+	prerequisites = { tech_sfdoll_mining_station }
+	potential = { has_authority = auth_gf_sfdoll }
+	resources = {
+		category = megastructures
+		cost = { alloys = 2000 unity = 50 }
+		produces = { minerals = 300 }
+		upkeep = { energy = 50 }
+	}
+	upgrade_from = { sfdoll_mining_station_01 }
+	on_build_complete = {
+		from = { set_country_flag = has_built_or_repaired_megastructure }
+		create_message = {
+			type = MEGASTRUCTURE_BUILT
+			localization = sfdoll_mining_station_02
+			days = 30
+			target = this
+		}
+	}
+}
+
+# 移动星门
+sfdoll_mobile_gateway_01 = {
+	entity = "gateway_entity"
+	construction_entity = "construction_platform_entity"
+	portrait = "GFX_background_mega_sfdoll_gateway"
+	place_entity_on_planet_plane = no
+	build_outside_gravity_well = yes
+	show_galactic_map_icon = yes
+	show_in_outliner = yes
+	show_prereqs = yes
+	prerequisites = { tech_sfdoll_mobile_gateway	}
+	construction_blocks_and_blocked_by = none
+	potential = { is_ai = no 	has_country_flag = sfdoll_empire	}
+	build_time = 360
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 5000
+			energy = 5000
+			GF_nyto_collapse_liquid = 100
+			influence = 75
+		}
+	}
+
+	bypass_type = gateway
+	on_build_complete = {
+		activate_gateway = fromfrom
+		from = { set_country_flag = has_built_or_repaired_megastructure }
+		create_message = {
+			type = MEGASTRUCTURE_BUILT
+			localization = sfdoll_mobile_gateway_01
+			days = 30
+			target = this
+		}
+	}
+}
+sfdoll_mobile_gateway_02 = {
+	entity = "gateway_entity"
+	construction_entity = ""
+	portrait = "GFX_background_mega_sfdoll_gateway"
+	place_entity_on_planet_plane = no
+	show_galactic_map_icon = no
+	show_in_outliner = no
+	construction_blocks_and_blocked_by = self_type
+	show_prereqs = no
+	prerequisites = { tech_sfdoll_mobile_gateway	}
+	build_time = 0
+	upgrade_from = {	sfdoll_mobile_gateway_01	}
+	on_build_complete = {
+		create_fleet = {
+			name = "sfdoll_gateway_ship"
+			effect = {
+				set_owner = prev.from
+				set_fleet_flag = flag_sfdoll_gateway_ship
+				set_location = prev.fromfrom
+				create_ship = {
+					design = design_sfdoll_gateway_ship
+					name = sfdoll_gateway_ship
+					prefix = no
+					upgradable = no
+				}
+			}
+		}
+		fromfrom = { remove_megastructure = this }
+	}
+}
+
+
+#深空母舰
+mega_sfdoll_mobile_starbase_1 = {
+	entity = "construction_platform_entity"
+	construction_entity = "construction_platform_entity"
+	show_galactic_map_icon = yes
+	show_in_outliner = yes
+	place_entity_on_planet_plane = no
+	build_outside_gravity_well = yes
+	build_time = 720
+	construction_blocks_and_blocked_by = multi_stage_type
+	potential = { is_ai = no has_authority = auth_gf_sfdoll }
+	show_prereqs = yes
+	prerequisites = { tech_sfdoll_mobile_starbase }
+	possible = {
+		exists = starbase
+		custom_tooltip = {
+			fail_text = "requires_inside_border"
+			is_inside_border = from
+		}
+		custom_tooltip = {
+			fail_text = "requires_surveyed_system"
+			NOT = {
+				any_system_planet = {
+					is_surveyed = {
+						who = prev.from
+						status = no
+					}
+				}
+			}
+		}
+	}
+
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 10000
+			unity = 1000
+			GF_nyto_collapse_liquid = 1000
+		}
+		upkeep = {  energy = 5 }
+	}
+	#Solar System scope, FROM = builder empire, FROMFROM = the megastructure
+
+	on_build_complete = {
+		from = {
+			create_message = {
+				type = MEGASTRUCTURE_BUILT
+				localization = "mega_sfdoll_mobile_starbase_1"
+				days = 30
+				target=  root
+			}
+		}
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+mega_sfdoll_mobile_starbase_2 = {
+	entity = "construction_platform_entity"
+	construction_entity = "construction_platform_entity"
+	show_galactic_map_icon = yes
+	show_in_outliner = yes
+	place_entity_on_planet_plane = no
+	build_time = 1080
+	construction_blocks_and_blocked_by = multi_stage_type
+	prerequisites = { tech_sfdoll_mobile_starbase }
+	upgrade_from = { mega_sfdoll_mobile_starbase_1 }
+
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 20000
+			unity = 1000
+			GF_nyto_collapse_liquid = 2000
+		}
+		upkeep = {  energy = 10 }
+	}
+	#Solar System scope, FROM = builder empire, FROMFROM = the megastructure
+	on_build_complete = {
+		create_message = {
+			type = MEGASTRUCTURE_BUILT
+			localization = "mega_sfdoll_mobile_starbase_2"
+			days = 30
+			target = root
+		}
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+mega_sfdoll_mobile_starbase_3 = {
+	entity = "mega_sfdoll_Sewship_entity"
+	construction_entity = "mega_sfdoll_Sewship_entity"
+	show_galactic_map_icon = yes
+	show_in_outliner = yes
+	place_entity_on_planet_plane = no
+	build_time = 1800
+	construction_blocks_and_blocked_by = multi_stage_type
+	prerequisites = { tech_sfdoll_mobile_starbase }
+	upgrade_from = { mega_sfdoll_mobile_starbase_2 }
+
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 30000
+			GF_nyto_collapse_liquid = 3000
+		}
+		upkeep = {  energy = 15 }
+	}
+	#Solar System scope, FROM = builder empire, FROMFROM = the megastructure
+	on_build_complete = {
+		create_message = {
+			type = MEGASTRUCTURE_BUILT
+			localization = "mega_sfdoll_mobile_starbase_3"
+			days = 30
+			target = root
+		}
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+mega_sfdoll_mobile_starbase_4 = {
+	entity = ""
+	construction_entity = ""
+	show_galactic_map_icon = no
+	place_entity_on_planet_plane = no
+	build_time = 1800
+	construction_blocks_and_blocked_by = multi_stage_type
+	prerequisites = { tech_sfdoll_mobile_starbase }
+	potential = { has_authority = auth_gf_sfdoll }
+	upgrade_from = { mega_sfdoll_mobile_starbase_3 }
+
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 40000
+			sr_dark_matter = 1000
+			GF_nyto_collapse_liquid = 3000
+		}
+	}
+	#Solar System scope, FROM = builder empire, FROMFROM = the megastructure
+	on_build_complete = {
+		if = { limit = { owner = { has_authority = auth_gf_sfdoll } }
+			create_fleet = {
+				name = "sfdoll_mobile_starbase"
+				effect = {
+					set_owner = from
+					create_ship = {
+						random_existing_design = sfdoll_mobile_starbase
+						name = "sfdoll_mobile_starbase"
+						prefix = no
+						upgradable = yes
+					}
+					set_location = fromfrom
+				}
+				settings = {
+					can_upgrade = yes
+					uses_naval_capacity = yes
+					spawn_debris = no
+					can_disband = yes
+					can_change_leader = yes
+					can_change_composition = yes 
+				}
+			}
+			system_event = { id = sfdoll_event.2 }
+			from = {
+				set_country_flag = has_built_or_repaired_megastructure
+				create_message = {
+					type = MEGASTRUCTURE_BUILT
+					localization = "mega_sfdoll_mobile_starbase_4"
+					days = 30
+					target = root
+				}
+			}
+			
+		}
+		fromfrom = { remove_megastructure = this }
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#铁血环世界
+mega_sfdoll_ring_world_1 = {
+	entity = "construction_platform_entity"
+	construction_entity = "construction_platform_entity"
+	show_galactic_map_icon = yes
+	show_in_outliner = yes
+	place_entity_on_planet_plane = no
+	build_outside_gravity_well = yes
+	build_time = 360
+	construction_blocks_and_blocked_by = multi_stage_type
+	potential = {	is_ai = no  has_authority = auth_gf_sfdoll }
+	show_prereqs = yes
+	prerequisites = {	tech_sfdoll_ring_world	}
+	possible = {
+		exists = starbase
+		custom_tooltip = {
+			fail_text = "requires_inside_border"
+			is_inside_border = from
+		}
+		custom_tooltip = {
+			fail_text = "requires_surveyed_system"
+			NOT = {
+				any_system_planet = {
+					is_surveyed = {
+						who = prev.from
+						status = no
+					}
+				}
+			}
+		}
+	}
+
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 20000
+			unity = 2000
+			GF_nyto_collapse_liquid = 1000
+		}
+		upkeep = {	energy = 5	}
+	}
+	on_build_complete = {
+		create_message = {
+			type = MEGASTRUCTURE_BUILT
+			localization = "mega_sfdoll_ring_world_1"
+			days = 30
+			target = this
+		}
+	}
+}
+mega_sfdoll_ring_world_2 = {
+	entity = ""
+	construction_entity = "ringworld_seam_entity_01_full_entity"
+	portrait = "GFX_megastructure_construction_background"
+	build_time = 3600
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 20000
+			unity = 1000
+			GF_nyto_collapse_liquid = 3000
+		}
+	}
+	prerequisites = { tech_sfdoll_ring_world }
+	show_prereqs = no
+	upgrade_from = { mega_sfdoll_ring_world_1 }
+	on_build_complete = {
+		# 建立人工星系
+		spawn_system = {
+			initializer = sfdoll_system_mega_world
+			hyperlane = no
+			is_discovered = yes
+			max_distance = 10
+			min_distance = 50
+			effect = {
+				set_surveyed = {	surveyed = yes	}
+				add_hyperlane = {	from = THIS	to = root	}
+				# 改sc从而改背景
+				set_star_class = sc_sfdoll_ring_world
+				set_name = "pc_rw_sfdoll"
+				create_starbase = {
+					size = starbase_outpost
+					effect = { set_owner = root.owner }
+				}
+				spawn_megastructure = {
+					name = "NAME_Ring_Section_A"
+					type = "mega_sfdoll_ring_world_3"
+					orbit_angle = 0
+					orbit_distance = 45
+					owner = from
+					graphical_culture = fromfrom
+					planet = star
+				}
+				spawn_megastructure = {
+					name = "NAME_Ring_Section_B"
+					type = "mega_sfdoll_ring_world_3"
+					orbit_angle = 90
+					orbit_distance = 45
+					owner = from
+					graphical_culture = fromfrom
+					planet = star
+				}
+				spawn_megastructure = {
+					name = "NAME_Ring_Section_C"
+					type = "mega_sfdoll_ring_world_3"
+					orbit_angle = 180
+					orbit_distance = 45
+					owner = from
+					graphical_culture = fromfrom
+					planet = star
+				}
+				spawn_megastructure = {
+					name = "NAME_Ring_Section_D"
+					type = "mega_sfdoll_ring_world_3"
+					orbit_angle = 270
+					orbit_distance = 45
+					owner = from
+					graphical_culture = fromfrom
+					planet = star
+				}
+				from = {
+					create_message = {
+						type = MEGASTRUCTURE_BUILT
+						localization = "mega_sfdoll_ring_world_2"
+						days = 30
+						target = prev
+					}
+				}
+			}
+		}
+		remove_megastructure = fromfrom
+	}
+}
+mega_sfdoll_ring_world_3 = {
+	entity = "ringworld_3x_seams_entity"
+	portrait = "GFX_megastructure_construction_background"
+	show_galactic_map_icon = yes
+	show_in_outliner = yes
+	upgrade_from = { mega_sfdoll_ring_world_2 }
+	# used from script only
+	upgrade_desc = hide
+	potential = { always = no }
+}
+mega_sfdoll_ring_world_4 = {
+	entity = ""
+	construction_entity = "ringworld_phase_3_construction_entity"
+	portrait = "GFX_megastructure_construction_background"
+	build_time = 3600
+	show_galactic_map_icon = no
+	show_in_outliner = no
+	prerequisites = { tech_sfdoll_ring_world }
+	show_prereqs = no
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 20000
+			unity = 1000
+			GF_nyto_collapse_liquid = 2000
+		}
+	}
+
+	upgrade_from = {	mega_sfdoll_ring_world_3	}
+	# prereq_name = "RING_WORLD_SHOW_NAME"
+	on_build_complete = {
+		from = {
+			set_country_flag = has_built_or_repaired_megastructure
+			country_event = { id = sfdoll_event.3 }
+		}
+		fromfrom.planet = {	set_planet_flag = has_megastructure }
+		spawn_planet = {
+			class = "pc_ringworld_tech"
+			location = fromfrom
+			orbit_angle_offset = 30
+			init_effect = {
+				set_name = "NAME_Ring_Section"
+				set_planet_entity = {
+					entity = "ringworld_tech_entity_01_entity"
+					graphical_culture = fromfrom
+				}
+				set_surveyed = {
+					surveyed = yes
+					surveyor = FROM
+				}
+				set_all_comms_surveyed = yes
+				set_planet_flag = megastructure
+			}
+		}
+		spawn_planet = {
+			class = "pc_ringworld_seam"
+			location = fromfrom
+			init_effect = {
+				set_name = "NAME_Ring_Section"
+				set_planet_entity = {
+					entity = "ringworld_seam_entity_01_entity"
+					graphical_culture = fromfrom
+				}
+				set_surveyed = {
+					surveyed = yes
+					surveyor = FROM
+				}
+				set_all_comms_surveyed = yes
+				set_planet_flag = megastructure
+			}
+		}
+		spawn_planet = {
+			class = "pc_rw_sfdoll"
+			location = fromfrom
+			orbit_angle_offset = -30
+			init_effect = {
+				set_name = "mega_sfdoll_ring_world_4"
+				set_planet_entity = {
+					entity = "ringworld_habitable_entity_01_entity"
+					graphical_culture = fromfrom
+				}
+				set_surveyed = {
+					surveyed = yes
+					surveyor = FROM
+				}
+				set_all_comms_surveyed = yes
+				clear_blockers = yes
+				save_event_target_as = ring_section
+				trigger_megastructure_icon = yes
+				set_planet_flag = megastructure
+				# 禁止一部分事件
+				set_planet_flag = colony_event
+				if = {
+					limit = { from = { has_authority = auth_gf_sfdoll }}
+					start_colony = {
+						owner = root
+						species = owner_main_species
+					}
+				}
+			}
+		}
+		remove_megastructure = fromfrom
+	}
+}
+
+# 智子工程
+mega_sfdoll_sophon_1 = {
+	entity = "construction_platform_entity"
+	construction_entity = "construction_platform_entity"
+	show_galactic_map_icon = yes
+	show_in_outliner = yes
+	place_entity_on_planet_plane = no
+	build_outside_gravity_well = yes
+	build_time = 360
+	construction_blocks_and_blocked_by = multi_stage_type
+	potential = {
+		is_ai = no
+		has_authority = auth_gf_sfdoll
+		# 已有智子则无法建造
+		NOT = { has_country_flag = sfdoll_sophon_owner }
+	}
+	show_prereqs = yes
+	prerequisites = { tech_sfdoll_sophon }
+	possible = {
+		exists = starbase
+		custom_tooltip = {
+			fail_text = "requires_inside_border"
+			is_inside_border = from
+		}
+		custom_tooltip = {
+			fail_text = "requires_surveyed_system"
+			NOT = {
+				any_system_planet = {
+					is_surveyed = {
+						who = prev.from
+						status = no
+					}
+				}
+			}
+		}
+	}
+
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 10000
+			unity = 1000
+		}
+		upkeep = {  energy = 5 }
+	}
+	#Solar System scope, FROM = builder empire, FROMFROM = the megastructure
+
+	on_build_complete = {
+		from = {
+			create_message = {
+				type = MEGASTRUCTURE_BUILT
+				localization = "mega_sfdoll_sophon_1"
+				days = 30
+				target=  root
+			}
+		}
+	}
+	ai_weight = { weight = 0 }
+}
+mega_sfdoll_sophon_2 = {
+	entity = "construction_platform_entity"
+	construction_entity = "construction_platform_entity"
+	show_galactic_map_icon = yes
+	show_in_outliner = yes
+	place_entity_on_planet_plane = no
+	build_time = 1080
+	construction_blocks_and_blocked_by = multi_stage_type
+	show_prereqs = no
+	upgrade_from = { mega_sfdoll_sophon_1 }
+	prerequisites = { tech_sfdoll_sophon }
+
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 10000
+			unity = 1000
+		}
+		upkeep = {  energy = 5 }
+	}
+	on_build_complete = {
+		from = {
+			create_message = {
+				type = MEGASTRUCTURE_BUILT
+				localization = "mega_sfdoll_sophon_2"
+				days = 30
+				target=  root
+			}
+		}
+	}
+	ai_weight = { weight = 0 }
+}
+mega_sfdoll_sophon_3 = {
+	entity = "sfdoll_planet_shield_effect_entity"
+	construction_entity = "sfdoll_planet_shield_effect_entity"
+	show_galactic_map_icon = yes
+	show_in_outliner = yes
+	place_entity_on_planet_plane = no
+	build_time = 1800
+	construction_blocks_and_blocked_by = multi_stage_type
+	show_prereqs = no
+	upgrade_from = { mega_sfdoll_sophon_2 }
+	prerequisites = { tech_sfdoll_sophon }
+
+	resources = {
+		category = megastructures
+		cost = {
+			energy = 60000
+			GF_nyto_collapse_liquid = 7000
+		}
+		upkeep = {  energy = 50 }
+	}
+	on_build_complete = {
+		from = {
+			create_message = {
+				type = MEGASTRUCTURE_BUILT
+				localization = "mega_sfdoll_sophon_3"
+				days = 30
+				target=  root
+			}
+		}
+	}
+	ai_weight = { weight = 0 }
+}
+mega_sfdoll_sophon_4 = {
+	entity = ""
+	construction_entity = ""
+	show_galactic_map_icon = no
+	show_in_outliner = no
+	place_entity_on_planet_plane = no
+	build_time = 3600
+	construction_blocks_and_blocked_by = multi_stage_type
+	potential = { has_authority = auth_gf_sfdoll }
+	show_prereqs = no
+	upgrade_from = { mega_sfdoll_sophon_3 }
+	prerequisites = { tech_sfdoll_sophon }
+	potential = { has_authority = auth_gf_sfdoll }
+
+	resources = {
+		category = megastructures
+		cost = { energy = 60000 GF_nyto_collapse_liquid = 6000 }
+	}
+	on_build_complete = {
+		if = {
+			limit = {
+				owner = {
+					has_authority = auth_gf_sfdoll
+					NOT = { has_country_flag = sfdoll_sophon_owner }
+				}
+			}
+			owner = {
+				set_country_flag = has_built_or_repaired_megastructure
+				set_country_flag = sfdoll_sophon_owner
+				country_event = { id = sfdoll_three_body_event.4 }
+			}
+		}
+		remove_megastructure = fromfrom
+	}
+	ai_weight = { weight = 0 }
+}
+
+# 银河大学
+mega_sfdoll_university_1 = {
+	entity = "construction_platform_entity" #"stions_entity"
+	construction_entity = "construction_platform_entity"
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = no
+	build_outside_gravity_well = yes
+	entity_offset = { x = -7 y = -7 }
+	build_time = 720
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 10000
+			influence = 100
+			unity = 2000
+		}
+
+		upkeep = { energy = 5 }
+	}
+	show_prereqs = yes
+	prerequisites = { "tech_mega_sfdoll_university" }
+	potential = {
+		is_ai = no
+		NOT = { has_megastructure = mega_sfdoll_university_2 }
+		has_authority = auth_gf_sfdoll
+	}
+	possible = {
+		exists = starbase
+		custom_tooltip = {
+			fail_text = "requires_inside_border"
+			is_inside_border = from
+		}
+		custom_tooltip = {
+			fail_text = "requires_surveyed_system"
+			NOT = {
+				any_system_planet = {
+					is_surveyed = {
+						who = prev.from
+						status = no
+					}
+				}
+			}
+		}
+	}
+
+	# placement_rules = {
+	# 	planet_possible = {
+	# 		custom_tooltip = {
+	# 			fail_text = "requires_no_anomaly"
+	# 			NOT = { has_anomaly = yes }
+	# 		}
+	# 	}
+	# 	custom_tooltip = {
+	# 		fail_text = "requires_no_existing_megastructure"
+	# 		NOR = {
+	# 			has_planet_flag = megastructure
+	# 			has_planet_flag = has_megastructure
+	# 			solar_system = { has_star_flag = ring_world_built }
+	# 		}
+	# 	}
+	# }
+
+	on_build_complete = {
+		fromfrom.planet = { set_planet_flag = has_megastructure }
+		create_message = {
+			type =  MEGASTRUCTURE_BUILT
+			localization = "mega_sfdoll_university_1"
+			days = 30
+			target = THIS
+		}
+	}
+}
+mega_sfdoll_university_2 = {
+	entity = "stions_entity"
+	construction_entity = "stions_entity"
+	portrait = "GFX_background_mega_sfdoll_starport"
+	place_entity_on_planet_plane = no
+	entity_offset = { x = -7 y = -7 }
+	show_in_outliner = no
+	build_time = 3600
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 20000
+			unity = 2500
+			GF_nyto_collapse_liquid = 1500
+		}
+		produces = {
+			society_research = 5000
+			engineering_research = 5000
+			physics_research = 5000
+			unity = 3000
+			influence = 3
+		}
+		upkeep = { energy = 200 alloys = 20 GF_nyto_collapse_liquid = 10 }
+	}
+	upgrade_from = { mega_sfdoll_university_1 }
+	prerequisites = { "tech_mega_sfdoll_university" }
+	country_modifier = { all_technology_research_speed = 0.2 }
+	on_build_complete = {
+		from = {
+			if = {
+				limit = {
+					any_megastructure = {
+						is_megastructure_type = mega_sfdoll_university_2
+						NOT = { is_same_value = root.fromfrom }
+					}
+				}
+				remove_megastructure = root.fromfrom
+			}
+			else = {
+				set_country_flag = has_built_or_repaired_megastructure
+				country_event = { id = sfdoll_event.5 }
+				create_message = {
+					type =  MEGASTRUCTURE_BUILT
+					localization = "mega_sfdoll_university_2"
+					days = 30
+					target = root
+				}
+			}
+		}
+	}
+}
+
+# 恒星系实验室
+sfdoll_mega_lab_1 = {
+	entity = "construction_platform_entity"
+	construction_entity = "construction_platform_entity"
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = no
+	entity_offset = { x = -7 y = -7 }
+	build_time = 360
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 5000
+			unity = 500
+		}
+
+		upkeep = { energy = 5 }
+	}
+	show_prereqs = yes
+	prerequisites = { "tech_sfdoll_mega_lab" }
+	potential = { is_ai = no  has_authority = auth_gf_sfdoll }
+	possible = {
+		exists = starbase
+		custom_tooltip = {
+			fail_text = "requires_inside_border"
+			is_inside_border = from
+		}
+		custom_tooltip = {
+			fail_text = "requires_surveyed_system"
+			NOT = {
+				any_system_planet = {
+					is_surveyed = {
+						who = prev.from
+						status = no
+					}
+				}
+			}
+		}
+		custom_tooltip = {
+			fail_text = "requires_no_habitable_planets"
+			NOT = {
+				any_system_planet = {
+					colonizable_planet = yes
+				}
+			}
+		}
+		# custom_tooltip = {
+		# 	fail_text = "requires_no_black_hole"
+		# 	NOT = { is_star_class = sc_black_hole }
+		# }
+		custom_tooltip = {
+			fail_text = "requires_no_binary_trinary"
+			NOR = {
+				is_star_class = sc_binary_1
+				is_star_class = sc_binary_2
+				is_star_class = sc_binary_3
+				is_star_class = sc_binary_4
+				is_star_class = sc_binary_5
+				is_star_class = sc_binary_6
+				is_star_class = sc_binary_7
+				is_star_class = sc_binary_8
+				is_star_class = sc_binary_9
+				is_star_class = sc_binary_10
+				is_star_class = sc_trinary_1
+				is_star_class = sc_trinary_2
+				is_star_class = sc_trinary_3
+				is_star_class = sc_trinary_4
+			}
+		}
+
+		custom_tooltip = {
+			fail_text = "requires_no_existing_megastructure"
+			#NOT = { has_any_megastructure = yes }
+			has_no_non_gate_megastructure = yes
+		}
+	}
+
+	placement_rules = {
+		planet_possible = {
+			custom_tooltip = {
+				fail_text = "must_build_around_star"
+				is_star = yes
+			}
+			custom_tooltip = {
+				fail_text = "requires_no_anomaly"
+				NOT = { has_anomaly = yes }
+			}
+			# 需要作为材料的星球
+			# custom_tooltip = {
+			# 	fail_text = "requires_planets_for_material"
+			# 	hidden:solar_system = { any_system_planet = { NOT = { is_star = yes } } }
+			# }
+		}
+	}
+
+	ai_weight = { weight = -10 }
+
+	on_build_complete = {
+		create_message = {
+			type =  MEGASTRUCTURE_BUILT
+			localization = "sfdoll_mega_lab_1"
+			days = 30
+			target = THIS
+		}
+	}
+}
+sfdoll_mega_lab_2 = {
+	entity = "SF_Portal2_frame2_entity"
+	construction_entity = "SF_Portal2_frame2_entity"
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = no
+	build_time = 1080
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 10000
+			GF_nyto_collapse_liquid = 1000
+			unity = 500
+		}
+
+		upkeep = { energy = 5 }
+	}
+	upgrade_from = { sfdoll_mega_lab_1 }
+	prerequisites = { "tech_sfdoll_mega_lab" }
+	ai_weight = { weight = -10 }
+
+	on_build_complete = {
+		every_system_planet = { limit = { is_star = no } remove_planet = yes }
+		set_asteroid_belt = { radius = 0 }
+		create_message = {
+			type =  MEGASTRUCTURE_BUILT
+			localization = "sfdoll_mega_lab_2"
+			days = 30
+			target = THIS
+		}
+		owner = { country_event = { id = sfdoll_event.10 } }
+	}
+}
+sfdoll_mega_lab_3 = {
+	entity = "SF_Portal2_frame_entity"
+	construction_entity = "SF_Portal2_frame_entity"
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = no
+	build_time = 1080
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 15000
+			GF_nyto_collapse_liquid = 1000
+		}
+		produces = {
+			physics_research = 200
+			society_research = 200
+			engineering_research = 200
+		}
+		upkeep = { energy = 20 }
+	}
+	upgrade_from = { "sfdoll_mega_lab_2" }
+	prerequisites = { "tech_sfdoll_mega_lab" }
+	ai_weight = { weight = -10 }
+
+	on_build_complete = {
+		create_message = {
+			type =  MEGASTRUCTURE_BUILT
+			localization = "sfdoll_mega_lab_3"
+			days = 30
+			target = THIS
+		}
+	}
+}
+sfdoll_mega_lab_4 = {
+	entity = "SF_Portal2_frame_entity"
+	construction_entity = ""
+	portrait = "GFX_background_sfdoll_mega_lab"
+	place_entity_on_planet_plane = no
+	show_in_outliner = no
+	show_galactic_map_icon = yes
+	build_time = 1800
+
+	upgrade_from = { "sfdoll_mega_lab_3" }
+	prerequisites = { "tech_sfdoll_mega_lab" }
+	potential = { has_authority = auth_gf_sfdoll }
+	ai_weight = { weight = -10 }
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 15000
+			GF_nyto_collapse_liquid = 1500
+		}
+		produces = {
+			physics_research = 800
+			society_research = 800
+			engineering_research = 800
+		}
+		upkeep = { energy = 100 GF_nyto_collapse_liquid = 10 }
+	}
+
+	on_build_complete = {
+		create_message = {
+			type =  MEGASTRUCTURE_BUILT
+			localization = "sfdoll_mega_lab_4"
+			days = 180
+			target = THIS
+		}
+	}
+}
+
+#铁血巨型船坞
+sfdoll_mega_shipyard_1 = {
+	entity = "construction_platform_entity"
+	construction_entity = "construction_platform_entity"
+	show_galactic_map_icon = yes
+	place_entity_on_planet_plane = no
+	build_outside_gravity_well = yes
+	build_time = 720
+	construction_blocks_and_blocked_by = multi_stage_type
+	potential = {	is_ai = no	 has_authority = auth_gf_sfdoll}
+	show_prereqs = yes
+	prerequisites = {	tech_sfdoll_mega_shipyard	}
+	possible = {
+		exists = starbase
+		custom_tooltip = {
+			fail_text = "requires_inside_border"
+			is_inside_border = from
+		}
+		custom_tooltip = {
+			fail_text = "requires_surveyed_system"
+			NOT = {
+				any_system_planet = {
+					is_surveyed = {
+						who = prev.from
+						status = no
+					}
+				}
+			}
+		}
+	}
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 10000
+			unity = 1000
+			GF_nyto_collapse_liquid = 1000
+		}
+		upkeep = {	energy = 5	}
+	}
+	on_build_complete = {
+		create_message = {
+			type = MEGASTRUCTURE_BUILT
+			localization = "sfdoll_mega_shipyard_1"
+			days = 30
+			target = this
+		}
+	}
+}
+sfdoll_mega_shipyard_2 = {
+	entity = ""
+	construction_entity = ""
+	portrait = "GFX_megastructure_construction_background"
+	build_time = 1800
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 30000
+			unity = 3000
+			GF_nyto_collapse_liquid = 3000
+		}
+	}
+	prerequisites = { tech_sfdoll_mega_shipyard }
+	show_prereqs = no
+	upgrade_from = { sfdoll_mega_shipyard_1 }
+	on_build_complete = {
+		# 建立人工星系
+		spawn_system = {
+			initializer = sfdoll_system_mega_world
+			hyperlane = no
+			is_discovered = yes
+			max_distance = 10
+			min_distance = 50
+			effect = {
+				set_surveyed = {	surveyed = yes	}
+				add_hyperlane = {	from = THIS	to = root	}
+				set_name = "sfdoll_mega_shipyard"
+				create_starbase = {
+					size = starbase_outpost
+					effect = { set_owner = root.owner }
+				}
+				spawn_megastructure = {
+					# name = "NAME_Ring_Section_A"
+					type = "sfdoll_mega_shipyard_3"
+					orbit_angle = 0
+					orbit_distance = 0
+					owner = from
+					graphical_culture = fromfrom
+					planet = star
+				}
+				from = {
+					create_message = {
+						type = MEGASTRUCTURE_BUILT
+						localization = "sfdoll_mega_shipyard_2"
+						days = 30
+						target = prev
+					}
+				}
+			}
+		}
+		remove_megastructure = fromfrom
+	}
+}
+sfdoll_mega_shipyard_3 = {
+	entity = "construction_platform_entity"
+	entity_offset = { x = -20 y = -20 }
+	portrait = "GFX_megastructure_construction_background"
+	upgrade_from = { sfdoll_mega_shipyard_2 }
+	# used from script only
+	upgrade_desc = hide
+	potential = { always = no }
+	resources = {
+		category = megastructures
+		upkeep = { energy = 20 alloys = 2 }
+	}
+}
+sfdoll_mega_shipyard_4  = {
+	entity = "sfdoll_Portal_frame_entity"
+	construction_entity = "sfdoll_Portal_frame_entity"
+	portrait = "GFX_megastructure_sfdoll_star_collapse"
+	build_time = 3600
+	show_galactic_map_icon = yes
+	prerequisites = { 	tech_sfdoll_mega_shipyard	}
+	country_modifier = { 	country_naval_cap_add = 1000 }
+	ship_modifier = { ship_starting_experience_add = 200 }
+	
+	station_modifier = {
+		starbase_shipyard_capacity_add = 100
+		starbase_shipyard_build_cost_mult = -0.10
+		starbase_shipyard_build_speed_mult = 2		
+	}
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 40000
+			unity = 4000
+			GF_nyto_collapse_liquid = 4000
+		}
+		upkeep = { energy = 200 alloys = 20 GF_nyto_collapse_liquid = 2 }
+	}
+	upgrade_from = { sfdoll_mega_shipyard_3 }
+	on_build_complete = {
+		create_message = {
+			type = MEGASTRUCTURE_BUILT
+			localization = "sfdoll_mega_shipyard_4"
+			days = 30
+			target = this
+		}
+	}
+}
+sfdoll_mega_shipyard_5 = {
+	entity = "sfdoll_Portal_frame_entity"
+	construction_entity = "sfdoll_Portal_frame_entity"
+	portrait = "GFX_megastructure_sfdoll_mega_shipyard"
+	build_time = 3600
+	show_galactic_map_icon = yes
+	show_in_outliner = no
+	prerequisites = { 	tech_sfdoll_mega_shipyard	}
+	upgrade_from = { "sfdoll_mega_shipyard_4" }
+	potential = {	has_authority = auth_gf_sfdoll }
+	country_modifier = { 	country_naval_cap_add = 5000 }
+	ship_modifier = { ship_starting_experience_add = 1000 }
+	
+	station_modifier = {
+		starbase_shipyard_capacity_add = 300
+		starbase_shipyard_build_cost_mult = -0.10
+		starbase_shipyard_build_speed_mult = 8.0		
+	}
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 40000
+			unity = 4000
+			GF_nyto_collapse_liquid = 4000
+		}
+		upkeep = { energy = 1000 alloys = 100 GF_nyto_collapse_liquid = 10 }
+	}
+	
+	on_build_complete = {
+		from = { set_country_flag = has_built_or_repaired_megastructure }
+		fromfrom.planet = {	set_planet_flag = has_megastructure }
+		system_event = { id = sfdoll_event.4 }
+		create_message = {
+			type = MEGASTRUCTURE_BUILT
+			localization = "sfdoll_mega_shipyard_5"
+			days = 30
+			target = this
+		}
+	}
+}

@@ -14,6 +14,17 @@ job_sfdoll_dark_matter_maker_desc:0"$job_sfdoll_dark_matter_maker$"
 job_sfdoll_dark_matter_maker_effect_desc:0 "$job_sfdoll_dark_matter_maker$ consumes §Y$energy$§! producees §Y$sr_dark_matter$§!"
 mod_job_sfdoll_dark_matter_maker_add:0"$job_sfdoll_dark_matter_maker$ jobs"
 
+tech_sfdoll_nanites:0 "Super Micro AI"
+tech_sfdoll_nanites_desc:0 "Tiny structures can also run complex programs"
+
+building_sfdoll_nanites_plant:0 "SF Nanites Factory"
+building_sfdoll_nanites_plant_desc:0 "$tech_sfdoll_nanites_desc$"
+job_sfdoll_nanites_maker:0"Nanites Mechanician"
+job_sfdoll_nanites_maker_plural:0"Nanites Mechanicians"
+job_sfdoll_nanites_maker_desc:0"$building_sfdoll_nanites_plant_desc$"
+job_sfdoll_nanites_maker_effect_desc:0 " $job_sfdoll_nanites_maker$ consumes §Y$minerals$§! , produces §Y$nanites$§!"
+mod_job_sfdoll_nanites_maker_add:0 "$job_sfdoll_nanites_maker$ jobs"
+
 #collapse
 tech_sfdoll_collapse_liquid_produce:0"Collapse Particle Manufacture"
 tech_sfdoll_collapse_liquid_produce_desc:0 "Collapse particles are a class of micromachines that are used in the processing of matter."

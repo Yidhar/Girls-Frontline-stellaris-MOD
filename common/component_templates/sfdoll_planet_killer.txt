@@ -96,7 +96,7 @@ weapon_component_template = {
 	}
     total_fire_time = 5
     range = 0
-	size_restriction = {  sfdoll_constructor sfdoll_mobile_starbase sfdoll_homeless_ship sfdoll_large_homeship }
+	size_restriction = {  sfdoll_constructor sfdoll_mobile_starbase   }
 	component_set = "planet_killer_sfdoll_colonizer"
 	planet_destruction_gfx = "star_destroyer_effect_gfx"	
 }

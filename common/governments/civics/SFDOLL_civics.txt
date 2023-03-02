@@ -1,0 +1,79 @@
+#战术人形国策
+#科研
+civic_sfdoll_research= {
+	pickable_at_start = yes #开局可以使用
+	modification = yes
+	icon = "gfx/interface/icons/governments/civics/civic_sfdoll_tech.dds"
+	potential = { 
+		authority = { value = auth_gf_sfdoll }
+	}
+	
+	random_weight = {
+		base = 1
+	}
+
+	#description = "civic_sfdoll_tech_effect_desc"
+	modifier = { 
+		num_tech_alternatives_add = 1
+		all_technology_research_speed = 0.15		
+	}
+}
+
+#信息
+civic_sfdoll_ogas_manage = {
+	pickable_at_start = yes
+	modification = yes
+	#description = "civic_sfdoll_ogas_manage_effect_desc"
+	potential = { 
+		authority = { value = auth_gf_sfdoll }
+	}
+	
+	random_weight = {
+		base = 1
+	}
+
+	icon = "gfx/interface/icons/governments/civics/civic_sfdoll_ogas_manage.dds"
+	modifier = { 
+		planet_crime_add = -30
+		empire_size_mult = -0.2
+		planet_jobs_produces_mult = 0.1
+	}
+}
+
+civic_sfdoll_culture = {
+	pickable_at_start = yes
+	modification = yes
+	#description = "civic_sfdoll_ogas_manage_effect_desc"
+	potential = { 
+		authority = { value = auth_gf_sfdoll }
+	}
+	random_weight = {
+		base = 1
+	}
+
+	icon = "gfx/interface/icons/governments/civics/civic_sfdoll_culture.dds"
+	modifier = { 
+		pop_government_ethic_attraction = 0.50
+		planet_jobs_unity_produces_mult = 0.10
+	}
+}
+
+civic_sfdoll_4 = {
+	pickable_at_start = yes #开局可以使用
+	modification = yes
+	icon = "gfx/interface/icons/governments/civics/civic_sfdoll_4.dds"
+	potential = { 
+		authority = { value = auth_gf_sfdoll }
+	}
+	
+	random_weight = {
+		base = 1
+	}
+	modifier = { 
+		country_naval_cap_mult = 0.25
+		starbase_upgrade_speed_mult = 0.3
+		starbase_module_build_speed_mult = 0.3
+		starbase_building_build_speed_mult = 0.3
+		empire_size_mult = -0.1
+	}
+}

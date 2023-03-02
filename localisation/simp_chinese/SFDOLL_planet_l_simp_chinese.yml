@@ -92,3 +92,59 @@ decision_planet_pop_to_sfdoll_effects_short:0 "星球上的非铁血人口会转
 
 pc_gf_sfdoll_embers_gloomy:0 "余烬黯然"
 pc_gf_sfdoll_embers_gloomy_desc:0 "气候恶劣的岩态行星,大气中含有浓厚的坍缩云,有坍塌风暴造访,带来的坍塌辐射对所有的生物和电子设备都非常致命。区域辐射浓度高,除了少数变异聚集性动植物以外,其他生物很难生存。"
+
+
+#planet_killer
+message_system_destroyed_sfdoll:0 "一个星系被摧毁了"
+message_planet_destroyed_sfdoll:0 "一个星球被摧毁了"
+
+#清除星系
+planet_killer_sfdoll_1:0 "消除装置"
+planet_killer_sfdoll_1_DESC:0 "该设备会将星系中的所有存在消灭,仅有己方舰队可以免受影响."
+tech_planet_killer_sfdoll_1:0 "$planet_killer_sfdoll_1$"
+tech_planet_killer_sfdoll_1_desc:0 "$planet_killer_sfdoll_1_DESC$"
+
+planet_killer_sfdoll_1_ACTION:0 "$planet_killer_sfdoll_1$"
+
+FLEETORDER_DESTROY_PLANET_WITH_planet_killer_sfdoll_1:0 "$planet_killer_sfdoll_1$"
+
+MESSAGE_DESC_FOR_planet_killer_sfdoll_1:0 "摧毁"
+
+#摧毁恒星
+planet_killer_sfdoll_2:0 "对恒星炮"
+planet_killer_sfdoll_2_DESC:0 "这种武器可以摧毁整个星球.摧毁恒星会波及周围的天体"
+
+planet_killer_sfdoll_2_ACTION:0 "$planet_killer_sfdoll_2$"
+FLEETORDER_DESTROY_PLANET_WITH_planet_killer_sfdoll_2:0 "$planet_killer_sfdoll_2$"
+MESSAGE_DESC_FOR_planet_killer_sfdoll_2:0 "摧毁"
+
+# 转化为黑洞
+planet_killer_sfdoll_3:0 "视界之剑"
+planet_killer_sfdoll_3_DESC:0 "这种武器可以令恒星坍缩为黑洞，并引发超新星爆发。这一事件释放的能量会被用于制造暗物质。$planet_killer_sfdoll_3$也能够摧毁行星。"
+
+planet_killer_sfdoll_3_ACTION:0 "$planet_killer_sfdoll_3$"
+FLEETORDER_DESTROY_PLANET_WITH_planet_killer_sfdoll_3:0 "$planet_killer_sfdoll_3$"
+MESSAGE_DESC_FOR_planet_killer_sfdoll_3:0 "塌缩"
+
+tech_planet_killer_sfdoll_3:0 "$planet_killer_sfdoll_3$"
+tech_planet_killer_sfdoll_3_desc:0 "$planet_killer_sfdoll_3_DESC$"
+
+planet_killer_sfdoll_4:0 "视界消除装置"
+planet_killer_sfdoll_4_DESC:0 "这种设备可以将黑洞转化为恒星。"
+
+planet_killer_sfdoll_4_ACTION:0 "$planet_killer_sfdoll_4$"
+FLEETORDER_DESTROY_PLANET_WITH_planet_killer_sfdoll_4:0 "$planet_killer_sfdoll_4$"
+MESSAGE_DESC_FOR_planet_killer_sfdoll_4:0 "转化"
+
+tech_planet_killer_sfdoll_4:0 "$planet_killer_sfdoll_4$"
+tech_planet_killer_sfdoll_4_desc:0 "$planet_killer_sfdoll_4_DESC$"
+
+sfdoll_planet_killer_event.17:0 "$planet_killer_sfdoll_4$"
+sfdoll_planet_killer_event.17_desc:0 "在$planet_killer_sfdoll_4$的作用下，[from.GetName]被转化为恒星。我们详细地记录了这一过程。"
+
+planet_killer_sfdoll_colonizer:0 "殖民太空梭"
+planet_killer_sfdoll_colonizer_DESC:0 "$planet_killer_sfdoll_colonizer$可以向星球上运输人员和物资,支持对星球的初步开发。"
+
+planet_killer_sfdoll_colonizer_ACTION:0 "$planet_killer_sfdoll_colonizer$"
+FLEETORDER_DESTROY_PLANET_WITH_planet_killer_sfdoll_colonizer:0 "$planet_killer_sfdoll_colonizer$"
+MESSAGE_DESC_FOR_planet_killer_sfdoll_colonizer:0 "开始殖民"

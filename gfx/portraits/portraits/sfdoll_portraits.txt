@@ -69,7 +69,7 @@ portrait_groups = {
 	#战术人形肖像的集合设定
 	gf_sf_doll_group = {
 		#默认显示
-		default = sfdoll_01_sf_0
+		default = sfdoll_01_sf_24
 		#开局选择的统治者头像
 		game_setup = { 
 			add = {

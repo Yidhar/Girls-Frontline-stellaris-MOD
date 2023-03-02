@@ -413,8 +413,3 @@ sfdoll_fleet_rebuild = {
 	}
 }
 
-#this = new fleet , prev = a ship destroyed , root = country , root.fromfrom = old fleet
-sfdoll_warship_rebuild_2 = {
-	
-}
-

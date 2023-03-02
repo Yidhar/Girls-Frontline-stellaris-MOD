@@ -108,7 +108,10 @@ leader_general_trait_gf_sfdoll_2_desc:0"$leader_governor_trait_gf_sfdoll_2_desc$
 leader_ruler_trait_gf_sfdoll_2:0"$leader_governor_trait_gf_sfdoll_2$"
 leader_ruler_trait_gf_sfdoll_2_desc:0"$leader_governor_trait_gf_sfdoll_2_desc$"
 
+tech_trait_sfdoll_nanite:0 "纳米铁血机体"
+tech_trait_sfdoll_nanite_desc:0 "新一代的微型机械足以打破多种关于生物的限制。它们可以为铁血人形素体带来自我复制的功能。"
+tech_trait_sfdoll_nanite_modifier:0 "§H解锁物种特质:§! $trait_sfdoll_nanite$"
 
-
-
+trait_sfdoll_nanite:0 "增殖模块"
+trait_sfdoll_nanite_desc:0 "解锁人口增长"
 

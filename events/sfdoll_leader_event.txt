@@ -263,3 +263,354 @@ country_event = {
 	option = { name =  "EXIT" hidden_effect = { country_event = { id = sfdoll_elisa_event.3 } } }
 	after = { hidden_effect = { remove_country_flag = contract_diplomacy_engaged } }
 }
+
+
+# #铁血领袖招募时添加特质
+country_event = {
+	id = sfdoll_leader_event.3
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {from = {species = { has_trait = trait_gf_sfdoll }}}
+	immediate = {
+		from = {
+			if = {
+				limit = { leader_class = governor }
+				add_trait = leader_governor_trait_gf_sfdoll
+				add_ruler_trait = leader_ruler_trait_gf_sfdoll
+			}
+			else_if = {
+				limit = { leader_class = scientist }
+				add_trait = leader_scientist_trait_gf_sfdoll
+				add_ruler_trait = leader_ruler_trait_gf_sfdoll
+			}
+			else_if = {
+				limit = { leader_class = admiral }
+				add_trait = leader_admiral_trait_gf_sfdoll
+				add_ruler_trait = leader_ruler_trait_gf_sfdoll
+			}
+			else_if = {
+				limit = { leader_class = general }
+				add_trait = leader_general_trait_gf_sfdoll
+				add_ruler_trait = leader_ruler_trait_gf_sfdoll
+			}
+			else_if = {
+				limit = { leader_class = ruler }
+				add_trait = leader_ruler_trait_gf_sfdoll
+				add_ruler_trait = leader_ruler_trait_gf_sfdoll
+			}
+		}
+
+		# 添加升级特质
+		if = {
+			limit = {  has_country_flag = sfdoll_country_can_update_leader  }
+			from = {
+				if = {
+					limit = { leader_class = governor }
+					add_trait = leader_governor_trait_gf_sfdoll_2
+					add_ruler_trait = leader_ruler_trait_gf_sfdoll_2
+				}
+				else_if = {
+					limit = { leader_class = scientist }
+					add_trait = leader_scientist_trait_gf_sfdoll_2
+					add_ruler_trait = leader_ruler_trait_gf_sfdoll_2
+				}
+				else_if = {
+					limit = { leader_class = admiral }
+					add_trait = leader_admiral_trait_gf_sfdoll_2
+					add_ruler_trait = leader_ruler_trait_gf_sfdoll_2
+				}
+				else_if = {
+					limit = { leader_class = general }
+					add_trait = leader_general_trait_gf_sfdoll_2
+					add_ruler_trait = leader_ruler_trait_gf_sfdoll_2
+				}
+				else_if = {
+					limit = { leader_class = ruler }
+					add_trait = leader_ruler_trait_gf_sfdoll_2
+					add_ruler_trait = leader_ruler_trait_gf_sfdoll_2
+				}
+			}
+		}
+
+	}
+}
+
+#ruler退位回到岗位，为其添加铁血领袖特质
+country_event = {
+	id = sfdoll_leader_event.4
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {from = { species = { has_trait = trait_gf_sfdoll }}}
+	immediate = {
+		from = {
+			if = {
+				limit = { leader_class = governor }
+				add_trait = leader_governor_trait_gf_sfdoll
+			}
+			else_if = {
+				limit = { leader_class = scientist }
+				add_trait = leader_scientist_trait_gf_sfdoll
+			}
+			else_if = {
+				limit = { leader_class = admiral }
+				add_trait = leader_admiral_trait_gf_sfdoll
+			}
+			else_if = {
+				limit = { leader_class = general }
+				add_trait = leader_general_trait_gf_sfdoll
+			}
+		}
+
+		# 满足条件时，为退位的ruler添加升级特质
+		if = {
+			limit = {  has_country_flag = sfdoll_country_can_update_leader  }
+			from = {
+				if = {
+					limit = { leader_class = governor }
+					add_trait = leader_governor_trait_gf_sfdoll_2
+				}
+				else_if = {
+					limit = { leader_class = scientist }
+					add_trait = leader_scientist_trait_gf_sfdoll_2
+				}
+				else_if = {
+					limit = { leader_class = admiral }
+					add_trait = leader_admiral_trait_gf_sfdoll_2
+				}
+				else_if = {
+					limit = { leader_class = general }
+					add_trait = leader_general_trait_gf_sfdoll_2
+				}
+			}
+		}
+
+	}
+}
+
+
+#铁血领袖死亡修复
+#领袖死亡时触发，判断是否为特殊领袖，触发对应的复活事件
+country_event = {
+	id = sfdoll_leader_event.10
+	is_triggered_only = yes
+	hide_window = yes
+
+	#所在国为铁血帝国，且为玩家操控
+	trigger = {  has_country_flag = sfdoll_empire  is_ai = no  }
+	immediate = {
+		from = {
+			#event_target可以传递给事件触发的事件
+			save_event_target_as = leader_revive_sfdoll	
+		}
+
+		#判断是否为一般铁血领袖
+		if = {
+			limit = { 
+
+				event_target:leader_revive_sfdoll = {
+					# 有铁血人形领袖flag才能复活，避免领袖池中的领袖死亡触发复活
+					has_leader_flag = sfdoll_leader
+					# 特殊领袖
+					NOR = {
+						has_leader_flag = sfdoll_leader_noel
+						has_leader_flag = sfdoll_shizuki_ryouko
+						has_trait = leader_trait_governor_gray
+					}
+				}
+			}
+			country_event = { id = sfdoll_leader_event.11 }
+		}
+		# else_if = {
+		# 	# 是凉子
+		# 	limit = {
+		# 		event_target:leader_revive_sfdoll = { has_leader_flag = sfdoll_shizuki_ryouko }
+		# 	}
+		# 	country_event = { id = sfdoll_leader_revive_event.6 }
+		# }
+	}
+}
+
+#一般领袖的复活事件
+country_event = {
+	id = sfdoll_leader_event.11
+	title = "sfdoll_leader_event.11"
+	desc = "sfdoll_leader_event.11.desc"
+	picture = GFX_evp_sfdoll_robot_assembly_plant
+	is_triggered_only = yes
+	hide_window = no
+
+	immediate = {
+		event_target:leader_revive_sfdoll = {
+
+			if = {
+				limit = { leader_class = governor }
+				owner = {
+					clone_leader = {
+						target = event_target:leader_revive_sfdoll
+						class = governor	
+						effect = {
+							save_event_target_as = new_leader_revive_sfdoll
+							set_leader_flag = sfdoll_leader
+						}
+					}
+				}
+			}
+			if = {
+				limit = { leader_class = scientist }
+				owner = {
+					clone_leader = {
+						target = event_target:leader_revive_sfdoll
+						class = scientist	
+						effect = {
+							save_event_target_as = new_leader_revive_sfdoll
+							set_leader_flag = sfdoll_leader
+						}
+					}
+				}
+			}
+			if = {
+				limit = { leader_class = admiral }
+				owner = {
+					clone_leader = {
+						target = event_target:leader_revive_sfdoll
+						class = admiral	
+						effect = {
+							save_event_target_as = new_leader_revive_sfdoll
+							set_leader_flag = sfdoll_leader
+						}
+					}
+				}
+			}
+			if = {
+				limit = { leader_class = general }
+				owner = {
+					clone_leader = {
+						target = event_target:leader_revive_sfdoll
+						class = general	
+						effect = {
+							save_event_target_as = new_leader_revive_sfdoll
+							set_leader_flag = sfdoll_leader
+						}
+					}
+				}
+			}
+
+			#复活统治者，直接set_leader
+			if = {
+				limit = { leader_class = ruler 	}
+				owner = {
+					clone_leader = {
+						target = event_target:leader_revive_sfdoll
+						class = ruler
+						effect = {
+							set_leader_flag = sfdoll_leader
+							save_event_target_as = sfdoll_ruler_revive
+							save_event_target_as = new_leader_revive_sfdoll
+						}
+					}
+					set_leader = event_target:sfdoll_ruler_revive
+				}
+			}
+
+			#复活的特殊领袖添加标识
+			if = {
+				limit = { has_leader_flag = sfdoll_leader_elisa }
+				clear_global_event_target = sfdoll_leader_elisa
+				event_target:new_leader_revive_sfdoll = {
+					set_leader_flag = sfdoll_leader_elisa
+					save_global_event_target_as = sfdoll_leader_elisa
+				}
+			}
+			else_if = {
+				limit = { has_leader_flag = sfdoll_leader_ump45 }
+				clear_global_event_target = sfdoll_leader_ump45
+				event_target:new_leader_revive_sfdoll = {
+					set_leader_flag = sfdoll_leader_ump45
+					save_global_event_target_as = sfdoll_leader_ump45
+				}
+			}
+			else_if = {
+				limit = { has_leader_flag = sfdoll_leader_ouroboros }
+				clear_global_event_target = sfdoll_leader_ouroboros
+				event_target:new_leader_revive_sfdoll = {
+					set_leader_flag = sfdoll_leader_ouroboros
+					save_global_event_target_as = sfdoll_leader_ouroboros
+				}
+			}
+			else_if = {
+				limit = { has_leader_flag = ogas40_sfdoll_leader }
+				clear_global_event_target = ogas40_sfdoll_leader
+				event_target:new_leader_revive_sfdoll = {
+					set_leader_flag = ogas40_sfdoll_leader
+					save_global_event_target_as = ogas40_sfdoll_leader
+				}
+			}
+			else_if = {
+				limit = { has_leader_flag = sfdoll_leader_triela }
+				clear_global_event_target = sfdoll_leader_triela
+				event_target:new_leader_revive_sfdoll = {
+					set_leader_flag = sfdoll_leader_triela
+					save_global_event_target_as = sfdoll_leader_triela
+				}
+			}
+			else_if = {
+				limit = { has_leader_flag = sfdoll_exd_leader }
+				clear_global_event_target = sfdoll_exd_leader
+				event_target:new_leader_revive_sfdoll = {
+					set_leader_flag = sfdoll_exd_leader
+					save_global_event_target_as = sfdoll_exd_leader
+				}
+			}
+			else_if = {
+				limit = {  has_leader_flag = sfdoll_leader_hari_seldon }
+				clear_global_event_target = sfdoll_leader_hari_seldon
+				event_target:new_leader_revive_sfdoll = {
+					set_leader_flag = sfdoll_leader_hari_seldon
+					save_global_event_target_as = sfdoll_leader_hari_seldon
+				}
+			}
+			else_if = {
+				limit = {  has_leader_flag = sfdoll_leader_dingyi }
+				clear_global_event_target = sfdoll_leader_dingyi
+				event_target:new_leader_revive_sfdoll = {
+					set_leader_flag = sfdoll_leader_dingyi
+					save_global_event_target_as = sfdoll_leader_dingyi
+				}
+			}
+			else_if = {
+				limit = {  has_leader_flag = sfdoll_leader_sophon }
+				clear_global_event_target = sfdoll_leader_sophon
+				event_target:new_leader_revive_sfdoll = {
+					set_leader_flag = sfdoll_leader_sophon
+					save_global_event_target_as = sfdoll_leader_sophon
+				}
+			}
+
+		}
+	}
+}
+
+#招募领袖和过年时，为所有铁血领袖添加flag用于复活
+country_event = {
+	id = sfdoll_leader_event.12
+	is_triggered_only = yes
+	hide_window = yes
+
+	trigger = { has_country_flag = sfdoll_empire }
+	after = {
+		every_owned_leader = {
+			if = {
+				limit = {
+					OR = {
+						has_trait = leader_ruler_trait_gf_sfdoll
+						has_trait = leader_governor_trait_gf_sfdoll
+						has_trait = leader_scientist_trait_gf_sfdoll
+						has_trait = leader_admiral_trait_gf_sfdoll
+						has_trait = leader_general_trait_gf_sfdoll
+					}					
+				}
+				set_leader_flag = sfdoll_leader
+			}			
+		}
+	}
+}

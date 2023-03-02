@@ -1,0 +1,1236 @@
+#逆向坍塌
+tech_sfdoll_reverse_collapse_1 = {
+	cost = @tier4cost1
+	area = physics
+	tier = 4
+	is_rare = yes
+	category = { field_manipulation }
+	icon = tech_sfdoll_reverse_collapse_1
+	prerequisites = { "tech_sfdoll_ogas_ai" }
+	potential = {		has_authority = auth_gf_sfdoll	}
+	modifier = { all_technology_research_speed = 0.25 }
+	weight = 0
+}
+tech_sfdoll_reverse_collapse_2 = {
+	cost = @tier3cost3
+	area = society
+	tier = 3
+	is_rare = yes
+	category = { military_theory }
+	icon = tech_sfdoll_reverse_collapse_2
+	potential = {	has_authority = auth_gf_sfdoll }
+	prerequisites = { tech_sfdoll_reverse_collapse_1	}
+	modifier = { num_tech_alternatives_add = 1 }
+	weight = 500
+}
+tech_sfdoll_reverse_collapse_3 = {
+	cost = @tier3cost3
+	area = engineering
+	tier = 3
+	is_rare = yes
+	category = { voidcraft }
+	icon = tech_sfdoll_reverse_collapse_3
+	prerequisites = { tech_sfdoll_reverse_collapse_2	}
+	potential = { has_authority = auth_gf_sfdoll }
+	weight = 1000
+}
+
+#四飞前置
+tech_sfdoll_ap_phy = {
+	# cost = 2000
+	# cost_per_level = @repeatableTechLevelCost
+	# tier = 2
+	# levels = 3
+	cost = @tier5cost3
+	tier = 5
+	area = physics
+	category = { field_manipulation }
+	is_rare = yes
+	is_dangerous = yes
+	icon = tech_repeatable_sfdoll_phy
+	potential = {
+		has_authority = auth_gf_sfdoll
+	}
+	weight = 0
+}
+
+tech_sfdoll_ap_soc = {
+	cost = @tier5cost3
+	tier = 5
+	area = society
+	category = { military_theory }
+	is_rare = yes
+	is_dangerous = yes
+	icon = tech_repeatable_sfdoll_soc
+	prerequisites = {
+		tech_sfdoll_ap_phy
+	}
+	potential = {
+		has_authority = auth_gf_sfdoll
+	}
+	weight = 1000
+}
+
+tech_sfdoll_ap_eng = {
+	cost = @tier5cost3
+	tier = 5
+	area = engineering
+	category = { materials }
+	is_rare = yes
+	is_dangerous = yes
+	icon = tech_repeatable_sfdoll_eng
+	potential = {
+		has_authority = auth_gf_sfdoll
+	}
+	prerequisites = {
+		tech_sfdoll_ap_soc
+	}
+	weight = 1000
+}
+
+#纳米物种特质
+tech_trait_sfdoll_nanite = {
+	cost = @tier4cost1
+	tier = 4
+	is_rare = yes
+	area = society
+	category = { biology }
+	icon = tech_trait_sfdoll_nanite
+	potential = {	has_authority = auth_gf_sfdoll	}
+	prerequisites = {	"tech_sfdoll_nanites"	}
+	modifier = {
+		planet_jobs_produces_mult = 0.1
+		pop_environment_tolerance = 1
+		army_health = 1
+		custom_tooltip = tech_trait_sfdoll_nanite_modifier
+	}
+	weight = 1000
+}
+
+#坍塌液合成
+tech_sfdoll_collapse_liquid_produce = {
+	cost = @tier4cost2
+	area = physics
+	tier = 4
+	is_rare = yes
+	category = { particles }
+	icon = tech_sfdoll_collapse_liquid_produce
+	potential = {	has_authority = auth_gf_sfdoll	}
+	weight = 0
+}
+#暗物质合成科技
+tech_sfdoll_dark_matter_plant = {
+	cost = @tier4cost3
+	area = physics
+	tier = 4
+	is_rare = yes
+	category = { particles }
+	#需要铁血政体
+	prerequisites = {	 tech_sfdoll_collapse_liquid_produce	}
+	potential = {
+		has_authority = auth_gf_sfdoll
+	}
+	weight = @tier4weight3
+	weight_modifier = {
+		modifier = {
+			factor = 10
+			years_passed > 40
+		}
+	}
+}
+#解锁铁血纳米生产
+tech_sfdoll_nanites = {
+	cost = @tier3cost2
+	area = engineering
+	tier = 3
+	is_rare = yes
+	category = { industry }
+	icon = tech_sfdoll_nanites
+	weight = 1000
+	potential = {	has_authority = auth_gf_sfdoll	}
+	prerequisites = {
+		tech_sfdoll_collapse_liquid_produce
+	}
+}
+
+#研究所
+tech_sfdoll_lab = {
+	cost = @tier3cost1
+	area = physics
+	icon = tech_sfdoll_lab
+	tier = 3
+	is_rare = yes
+	category = { computing }
+	potential = {
+		has_authority = auth_gf_sfdoll
+	}
+	prerequisites = {
+		tech_sfdoll_collapse_liquid_produce
+	}
+	weight = 500
+}
+#合金制造
+tech_sfdoll_alloys_produce = {
+	cost = @tier4cost2
+	area = engineering
+	tier = 4
+	is_rare = yes
+	category = { industry }
+	icon = tech_sfdoll_alloys_produce
+	prerequisites = { tech_sfdoll_collapse_liquid_produce }
+	weight = 1000
+	potential = {	has_authority = auth_gf_sfdoll	}
+}
+#解锁消费品建筑
+tech_sfdoll_goods = {
+	cost = @tier4cost2
+	area = society
+	tier = 4
+	icon = tech_sfdoll_goods
+	is_rare = yes
+	category = { statecraft }
+	prerequisites = { "tech_sfdoll_collapse_liquid_produce" }
+	weight = 1000
+	potential = {	has_authority = auth_gf_sfdoll	}
+}
+
+#奇点能源
+tech_sfdoll_energy_plant = {
+	cost = @tier5cost3
+	area = physics
+	tier = 5
+	is_rare = yes
+	category = { field_manipulation  }
+	icon = tech_sfdoll_energy_plant
+	potential = {	has_authority = auth_gf_sfdoll }
+	weight = 0
+}
+#矿物合成,解锁铁血T3科技
+tech_building_sfdoll_mineral = {
+	cost = @tier5cost3
+	area = physics
+	tier = 5
+	is_rare = yes
+	category = { particles }
+	icon = tech_building_sfdoll_mineral
+	prerequisites = {
+		tech_sfdoll_energy_plant
+	}
+	potential = {	has_authority = auth_gf_sfdoll }
+	weight = 1000
+}
+
+#化工
+tech_sfdoll_chemical = {
+	cost = @tier3cost1
+	area = engineering
+	tier = 3
+	is_rare = yes
+	category = { industry }
+	prerequisites = { tech_sfdoll_nanites }
+	weight = 1000
+	potential = {	has_authority = auth_gf_sfdoll	}
+}
+
+#高级坍塌液合成
+tech_sfdoll_collapse_liquid_upgrade = {
+	cost = @tier5cost3
+	area = physics
+	tier = 5
+	is_rare = yes
+	category = { particles }
+	icon = tech_sfdoll_collapse_liquid_upgrade
+	potential = {	has_authority = auth_gf_sfdoll	}
+	prerequisites = {
+		tech_building_sfdoll_mineral
+		tech_sfdoll_collapse_liquid_produce
+	}
+	# modifier = { custom_tooltip = tech_sfdoll_collapse_liquid_upgrade_mod }
+	weight = 1500
+}
+
+#科研升级
+tech_sfdoll_lab_upgrade = {
+	cost = @tier5cost3
+	area = society
+	icon = tech_sfdoll_lab
+	tier = 5
+	is_rare = yes
+	category = { statecraft }
+	potential = {
+		has_authority = auth_gf_sfdoll
+	}
+	prerequisites = {
+		tech_building_sfdoll_mineral
+		tech_sfdoll_lab
+	}
+	# modifier = {	custom_tooltip = tech_sfdoll_lab_upgrade_mod	}
+	weight = 1500
+}
+
+#合金升级1
+tech_sfdoll_alloys_upgrade = {
+	cost = @tier5cost3
+	area = society
+	tier = 5
+	is_rare = yes
+	category = { statecraft }
+	icon = tech_sfdoll_alloys_produce
+	prerequisites = {
+		tech_building_sfdoll_mineral
+		tech_sfdoll_alloys_produce
+	}
+	# modifier = {	custom_tooltip = tech_sfdoll_alloys_upgrade_mod	}
+	weight = 1500
+	potential = {	has_authority = auth_gf_sfdoll	}
+}
+
+#组装厂，初始科技
+tech_gf_sfdoll_assemble_building= {
+	area = engineering
+	start_tech = yes
+	tier = 0
+	category = { industry }	 	
+	gateway = robotics	
+	potential = {	has_authority = auth_gf_sfdoll	}
+}
+
+#舰船相关
+# 特殊战舰装配厂
+tech_starbase_building_sfdoll_assembly = {
+	cost = @tier5cost3
+	tier = 5
+	area = engineering
+	is_rare = yes
+	category = { voidcraft }
+	icon = tech_starbase_building_sfdoll_assembly
+	potential = {	has_authority = auth_gf_sfdoll	}
+	prerequisites = {	tech_sfdoll_warship_1	}
+	weight = 1000
+}
+
+#巨构
+#智子工程
+tech_sfdoll_sophon = {
+	area = physics
+	tier = 5
+	cost = @tier5cost3
+	is_rare = yes
+	is_dangerous = yes
+	category = { particles }
+	icon = tech_sfdoll_sophon
+	prerequisites = {	tech_sfdoll_change_hyperlane	}
+	potential = {	has_authority = auth_gf_sfdoll	}
+	weight = @tier5weight1
+}
+
+#移动船坞
+tech_sfdoll_mobile_starbase = {
+	area = engineering
+	start_tech = no
+	tier = 5
+	cost = @tier5cost3
+	category = { voidcraft }
+	is_rare = yes
+	icon = tech_sfdoll_mobile_starbase
+	prerequisites = {	tech_sfdoll_warship_6	}
+	potential = {
+		has_authority = auth_gf_sfdoll
+	}
+	modifier = { country_resource_max_add = 40000 }
+	weight = 1500
+}
+
+#星港
+tech_mega_sfdoll_starport = {
+	area = engineering
+	start_tech = no
+	tier = 5
+	cost = @tier5cost3
+	category = { voidcraft }
+	is_rare = yes
+	icon = tech_mega_sfdoll_starport
+	prerequisites = { 	tech_building_sfdoll_mineral	}	
+	potential = {
+		has_authority = auth_gf_sfdoll
+	}
+	modifier = {
+		# country_resource_max_add = 40000
+	}
+	weight = 0
+}
+
+#太空城市
+tech_sfdoll_habitat_01 = {
+	area = engineering
+	start_tech = no
+	tier = 5
+	cost = @tier5cost1
+	category = { voidcraft }
+	is_rare = yes
+	icon = tech_sfdoll_habitat_01
+	potential = {	has_authority = auth_gf_sfdoll }
+	prerequisites = { tech_build_sfdoll_city }
+	# modifier = {	country_resource_max_add = 40000	}
+	weight = @tier4weight2
+}
+
+tech_sfdoll_mining_station = {
+	area = engineering
+	start_tech = no
+	tier = 3
+	cost = @tier3cost1
+	category = { voidcraft }
+	is_rare = yes
+	icon = tech_sfdoll_habitat_01
+	potential = {
+		has_authority = auth_gf_sfdoll
+	}
+	feature_flags = {
+		megaengineering
+	}
+	weight = 0
+}
+
+
+#恒星坍塌器
+tech_sfdoll_star_collapse = {
+	area = physics
+	start_tech = no
+	tier = 4
+	cost = @tier4cost3
+	category = { field_manipulation }
+	is_rare = yes
+	icon = tech_sfdoll_star_exploit
+	potential = {	always = no has_authority = auth_gf_sfdoll }
+	prerequisites = {
+		tech_sfdoll_dark_matter_plant
+	}
+	feature_flags = {	megaengineering	}
+	weight = 0
+}
+#黑洞解压器
+tech_sfdoll_blackhole_mining  = {
+	area = physics
+	start_tech = no
+	tier = 4
+	cost = @tier4cost2
+	category = { field_manipulation }
+	is_rare = yes
+	icon = tech_sfdoll_star_exploit
+	potential = { has_authority = auth_gf_sfdoll }
+	prerequisites = {	tech_sfdoll_collapse_liquid_produce	}
+	feature_flags = {	megaengineering	}
+	# modifier = { country_resource_max_add = 40000 }
+	weight = @tier4weight1
+}
+tech_sfdoll_mobile_gateway = {
+	area = physics
+	start_tech = no
+	tier = 4
+	cost = @tier4cost3
+	category = { field_manipulation }
+	is_rare = yes
+	icon = tech_gateway_construction
+	potential = { has_authority = auth_gf_sfdoll }
+	prerequisites = {
+		tech_gateway_construction
+		tech_gateway_activation
+		tech_sfdoll_jump_drive
+	}
+	feature_flags = { gateway_activation	gateway_construction	}
+	# modifier = { country_resource_max_add = 40000 }
+	weight = @tier4weight3
+	weight_modifier = {
+		modifier = {
+			factor = 3
+			has_technology = tech_mega_engineering
+		}
+	}
+}
+tech_sfdoll_mega_system = {
+	area = physics
+	start_tech = no
+	tier = 5
+	cost = @tier5cost3
+	category = { field_manipulation }
+	is_rare = yes
+	prerequisites = {	tech_building_sfdoll_mineral	}	
+	potential = { always = no has_authority = auth_gf_sfdoll	}
+	# modifier = {	country_resource_max_add = 40000	}
+	weight = 0
+}
+tech_sfdoll_ring_world = {
+	area = society
+	start_tech = no
+	tier = 5
+	cost = @tier5cost3
+	category = { new_worlds }
+	is_rare = yes
+	icon = tech_ring_world
+	prerequisites = { tech_sfdoll_change_hyperlane	}	
+	potential = { has_authority = auth_gf_sfdoll	}
+	modifier = { country_resource_max_add = 40000 }
+	weight = @tier5weight3
+}
+tech_sfdoll_mega_shipyard  = {
+	area = society
+	start_tech = no
+	tier = 5
+	cost = @tier5cost3
+	category = { military_theory }
+	is_rare = yes
+	icon = tech_mega_sfdoll_starport
+	prerequisites = { tech_sfdoll_change_hyperlane	}	
+	potential = { has_authority = auth_gf_sfdoll	}
+	modifier = { country_resource_max_add = 40000 }
+	weight = @tier5weight1
+}
+tech_sfdoll_mega_lab = {
+	area = physics
+	tier = 5
+	cost = @tier5cost1
+	is_rare = yes
+	category = { field_manipulation }
+	icon = tech_sfdoll_mega_lab
+	potential = { has_ascension_perk = ap_sfdoll_3	}
+	weight = 500
+}
+tech_mega_sfdoll_university = {
+	area = society
+	start_tech = no
+	tier = 5
+	cost = @tier5cost3
+	category = { statecraft }
+	is_rare = yes
+	icon = tech_mega_sfdoll_university
+	prerequisites = { tech_sfdoll_psychohistory	}	
+	potential = { has_authority = auth_gf_sfdoll	}
+	weight = @tier5weight2
+}
+
+
+#舰船科技
+#component
+#作为前置解锁其他武器
+tech_sfdoll_weapon_S_1 = {
+	cost = @tier4cost3
+	area = society
+	tier = 4
+	category = { military_theory }
+	is_rare = yes
+	is_reverse_engineerable = no
+	icon = tech_sfdoll_weapon_S_1
+	potential = { has_authority = auth_gf_sfdoll }
+	prerequisites = { tech_sfdoll_collapse_liquid_produce tech_sfdoll_dark_matter_plant tech_cruisers }
+	weight = @tier4weight1
+}
+
+#X,T槽
+tech_sfdoll_weapon_T_1 = {
+	cost = @tier4cost3
+	area = society
+	tier = 4
+	category = { military_theory }
+	is_rare = yes
+	is_reverse_engineerable = no
+	icon = tech_sfdoll_weapon_T_1
+	prerequisites = { tech_sfdoll_weapon_S_1 }
+	potential = { has_authority = auth_gf_sfdoll }
+	weight = @tier4weight1
+}
+
+tech_sfdoll_weapon_G_1 = {
+	cost = @tier4cost3
+	area = society
+	tier = 4
+	category = { military_theory }
+	is_rare = yes
+	is_reverse_engineerable = no
+	icon = tech_sfdoll_weapon_G_1
+	potential = { has_authority = auth_gf_sfdoll }
+	prerequisites = { tech_sfdoll_weapon_S_1	}
+	weight = @tier4weight1
+}
+
+
+#二级武器
+tech_sfdoll_weapon_S_2 = {
+	cost = @tier5cost3
+	area = physics
+	tier = 5
+	category = { field_manipulation }
+	is_rare = yes
+	is_reverse_engineerable = no
+	icon = tech_sfdoll_weapon_S_2
+	prerequisites = { tech_sfdoll_warship_1	}
+	potential = { has_authority = auth_gf_sfdoll }
+	weight = @tier5weight1
+}
+tech_sfdoll_weapon_L_2 = {
+	cost = @tier5cost3
+	area = physics
+	tier = 5
+	category = { field_manipulation }
+	is_rare = yes
+	is_reverse_engineerable = no
+	icon = tech_sfdoll_weapon_L_2
+	prerequisites = { tech_sfdoll_weapon_S_2	}
+	potential = {
+		has_authority = auth_gf_sfdoll
+	}
+	weight = @tier5weight2
+}
+# tech_sfdoll_weapon_X_2 = {
+# 	cost = @tier5cost2
+# 	area = physics
+# 	tier = 5
+# 	category = { field_manipulation }
+# 	is_rare = yes
+# 	is_reverse_engineerable = no
+# 	icon = tech_sfdoll_weapon_X_2
+# 	prerequisites = { tech_sfdoll_weapon_L_2	}
+# 	potential = {
+# 		has_authority = auth_gf_sfdoll
+# 	}
+# 	weight = @tier5weight2
+# }
+tech_sfdoll_weapon_T_2 = {
+	cost = @tier5cost3
+	area = physics
+	tier = 5
+	is_rare = yes
+	category = { field_manipulation }
+	is_reverse_engineerable = no
+	icon = tech_sfdoll_weapon_T_2
+	prerequisites = {	tech_sfdoll_weapon_L_2	}
+	potential = {
+		has_authority = auth_gf_sfdoll
+	}
+	weight = 1500
+}
+tech_sfdoll_weapon_T_SP = {
+	cost = @tier5cost3
+	area = physics
+	tier = 5
+	is_rare = yes
+	category = { field_manipulation }
+	is_reverse_engineerable = no
+	icon = tech_sfdoll_weapon_T_SP
+	prerequisites = {	tech_sfdoll_weapon_T_2 }
+	potential = {
+		has_authority = auth_gf_sfdoll
+	}
+	weight = 1500
+}
+
+tech_sfdoll_weapon_G_2 = {
+	cost = @tier5cost3
+	area = physics
+	tier = 5
+	is_rare = yes
+	category = { particles }
+	is_reverse_engineerable = no
+	icon = tech_sfdoll_weapon_G_2
+	prerequisites = {	tech_sfdoll_weapon_T_SP	}
+	potential = {
+		has_authority = auth_gf_sfdoll
+	}
+	weight = 1500
+}
+tech_sfdoll_weapon_H_2 = {
+	cost = @tier5cost3
+	area = engineering
+	tier = 5
+	is_rare = yes
+	category = { voidcraft }
+	is_reverse_engineerable = no
+	icon = tech_sfdoll_weapon_H_2
+	prerequisites = {	tech_sfdoll_weapon_L_2	}
+	potential = {
+		has_authority = auth_gf_sfdoll
+	}
+	weight = @tier5weight1
+}
+#W槽
+tech_planet_killer_sfdoll_1 = {
+	cost = @tier5cost3
+	area = physics
+	tier = 5
+	is_rare = yes
+	is_dangerous = yes
+	category = { particles }
+	is_reverse_engineerable = no
+	icon = tech_planet_killer_sfdoll_1
+	prerequisites = {	tech_sfdoll_weapon_T_SP	}
+	potential = {
+		always = no
+		has_authority = auth_gf_sfdoll
+	}
+	weight = 0
+}
+#转化为黑洞
+tech_planet_killer_sfdoll_3 = {
+	cost = @tier5cost3
+	area = physics
+	tier = 5
+	is_rare = yes
+	is_dangerous = yes
+	category = { field_manipulation }
+	is_reverse_engineerable = no
+	icon = tech_planet_killer_sfdoll_3
+	prerequisites = {	tech_sfdoll_mobile_starbase }
+	potential = {	has_authority = auth_gf_sfdoll	}
+	weight = 1000
+}
+# 黑洞转恒星
+tech_planet_killer_sfdoll_4 = {
+	cost = @tier5cost3
+	area = physics
+	tier = 5
+	is_rare = yes
+	category = { field_manipulation }
+	is_reverse_engineerable = no
+	icon = tech_planet_killer_sfdoll_4
+	prerequisites = {	tech_planet_killer_sfdoll_3	}
+	potential = {	has_authority = auth_gf_sfdoll	}
+	weight = 0
+}
+
+#shield
+tech_sfdoll_ship_defense_s = {
+	cost = @tier5cost1
+	area = engineering
+	icon = tech_sfdoll_ship_defense_s
+	category = { voidcraft }
+	is_reverse_engineerable = no
+	prerequisites = { tech_sfdoll_weapon_S_1 }
+	potential = {	has_authority = auth_gf_sfdoll	}
+	tier = 5
+	weight = 0
+}
+tech_sfdoll_ship_armor_L = {
+	cost = @tier5cost1
+	area = engineering
+	icon = tech_sfdoll_ship_armor_L
+	category = { voidcraft }
+	is_reverse_engineerable = no
+	prerequisites = { tech_sfdoll_weapon_S_1	}
+	potential = {	has_authority = auth_gf_sfdoll	}
+	tier = 5
+	weight = 0
+}
+
+tech_sfdoll_ship_armor_2 = {
+	cost = @tier5cost3
+	area = engineering
+	icon = tech_sfdoll_ship_armor_2
+	category = { voidcraft }
+	is_rare = yes
+	is_reverse_engineerable = no
+	prerequisites = { tech_sfdoll_weapon_S_2	}
+	potential = {	has_authority = auth_gf_sfdoll	}
+	tier = 5
+	weight = @tier5weight1
+}
+
+
+#铁血跃迁引擎
+tech_sfdoll_jump_drive = {
+	cost = @tier5cost2
+	area = physics
+	tier = 5
+	is_rare = yes
+	is_dangerous = yes
+	is_reverse_engineerable = no
+	category = { field_manipulation }
+	icon = tech_sfdoll_jump_drive
+	prerequisites = {  tech_building_sfdoll_mineral  }
+	potential = { has_authority = auth_gf_sfdoll }
+	weight = @tier5weight2
+}
+#推进器
+tech_sfdoll_thruster = {
+	cost = @tier4cost1
+	area = physics
+	tier = 4
+	category = { field_manipulation }
+	is_reverse_engineerable = no
+	icon = tech_sfdoll_thruster
+	potential = {	has_authority = auth_gf_sfdoll }
+	prerequisites = {  tech_building_sfdoll_mineral	}
+	weight = @tier4weight1
+}
+#作战电脑
+tech_sfdoll_ship_computer = {
+	cost = @tier3cost3
+	area = physics
+	tier = 3
+	category = { computing }
+	is_rare = yes
+	is_reverse_engineerable = no
+	icon = tech_sfdoll_ship_computer
+	prerequisites = { tech_sfdoll_ogas_ai }
+	potential = { has_authority = auth_gf_sfdoll }
+	weight = 1000
+}
+
+#能源
+tech_aux_sfdoll_collapse_power= {
+	cost = @tier4cost3
+	tier = 4
+	area = physics
+	is_rare = yes
+	icon = tech_aux_sfdoll_collapse_power
+	category = { particles }
+	is_reverse_engineerable = no
+	prerequisites = {	tech_sfdoll_collapse_liquid_produce }
+	potential = {	has_authority = auth_gf_sfdoll	}
+	weight = 1500
+}
+
+#二级能源
+tech_sfdoll_ship_power_2 = {
+	cost = @tier5cost3
+	tier = 5
+	area = physics
+	icon = tech_sfdoll_ship_power_2
+	category = { particles }
+	is_reverse_engineerable = no
+	prerequisites = { tech_sfdoll_energy_plant }
+	potential = {	has_authority = auth_gf_sfdoll	}
+	weight = @tier5weight3
+}
+
+#舰船修复A槽
+tech_sfdoll_aux_repair_ship = {
+	cost = @tier3cost1
+	area = engineering
+	icon = tech_sfdoll_aux_repair_ship
+	category = { voidcraft }
+	is_reverse_engineerable = no
+	prerequisites = {	tech_sfdoll_collapse_liquid_produce	}
+	potential = {	has_authority = auth_gf_sfdoll	}
+	tier = 3
+	weight = @tier3weight1
+}
+
+tech_sfdoll_aux_fire_range = {
+	cost = @tier5cost1
+	area = society
+	is_rare = yes
+	icon = tech_sfdoll_aux_fire_range
+	category = { military_theory }
+	is_reverse_engineerable = no
+	prerequisites = {	tech_sfdoll_weapon_S_2	}
+	potential = {	has_authority = auth_gf_sfdoll	}
+	tier = 5
+	weight = @tier4weight2
+}
+
+#质量再生系统
+tech_sfdoll_aux_quality_rebuilding = {
+	cost = @tier5cost2
+	area = engineering
+	icon = tech_sfdoll_aux_quality_rebuilding 
+	category = { voidcraft }
+	is_reverse_engineerable = no
+	prerequisites = {	"tech_sfdoll_collapse_liquid_produce"	}
+	potential = {	has_authority = auth_gf_sfdoll	}
+	tier = 5
+	weight = 0
+}
+
+#SF空间滤网
+tech_sfdoll_aux_rebuild_2 = {
+	cost = @tier5cost3
+	area = physics
+	icon = tech_sfdoll_aux_rebuild_2
+	category = { field_manipulation }
+	is_rare = yes
+	is_reverse_engineerable = no
+	prerequisites = {	"tech_sfdoll_collapse_liquid_produce"	}
+	potential = {	always = no	}
+	tier = 5
+	weight = 0
+}
+#复活
+tech_sfdoll_aux_rebuild = {
+	cost = @tier5cost3
+	area = physics
+	icon = tech_sfdoll_aux_rebuild
+	category = { field_manipulation }
+	is_rare = yes
+	is_reverse_engineerable = no
+	prerequisites = { tech_sfdoll_mobile_starbase	}
+	potential = { always = no has_authority = auth_gf_sfdoll	}
+	tier = 5
+	weight = 0
+}
+
+#传感器，需要原版传感器前置
+tech_sfdoll_ship_sensors = {
+	cost = @tier4cost1
+	area = society
+	tier = 4
+	category = { military_theory }
+	is_reverse_engineerable = no
+	icon = tech_sfdoll_ship_sensors
+	prerequisites = {	tech_building_sfdoll_mineral	}
+	potential = {
+		has_authority = auth_gf_sfdoll
+		has_technology = tech_sensors_4
+	}
+	#prerequisites = { 	}
+	weight = @tier4weight1
+}
+
+
+#ship
+#更多区段
+tech_sfdoll_battleship_bow_x2 = {
+	cost = @tier5cost1
+	area = engineering
+	start_tech = no
+	icon = tech_sfdoll_battleship_bow_x2
+	category = { voidcraft }
+	potential = {
+		has_authority = auth_gf_sfdoll
+		has_technology = tech_battleships
+	}
+	modifier = {
+		description = description_tech_sfdoll_battleship_bow_x2
+	}
+	tier = 5
+	weight = @tier5weight1
+}
+
+
+#系列战舰
+tech_sfdoll_warship_1 = {
+	cost = @tier5cost3
+	tier = 5
+	area = engineering
+	is_rare = yes
+	category = { voidcraft }
+	icon = tech_sfdoll_titan
+	potential = {	has_authority = auth_gf_sfdoll	}
+	prerequisites = {
+		tech_building_sfdoll_mineral
+		tech_sfdoll_thruster
+		tech_sfdoll_ship_power_2
+		tech_sfdoll_ship_computer
+	}
+	weight = 1000
+}
+tech_sfdoll_warship_2 = {
+	cost = @tier5cost2
+	tier = 5
+	area = engineering
+	is_rare = yes
+	category = { voidcraft }
+	icon = tech_sfdoll_titan
+	potential = {	has_authority = auth_gf_sfdoll	}
+	prerequisites = {	tech_sfdoll_warship_1	}
+	weight = 1000
+}
+tech_sfdoll_warship_3 = {
+	cost = @tier5cost3
+	tier = 5
+	area = engineering
+	is_rare = yes
+	category = { voidcraft }
+	icon = tech_sfdoll_titan
+	potential = {	has_authority = auth_gf_sfdoll	}
+	prerequisites = {	tech_sfdoll_warship_2	}
+	modifier = {
+		country_command_limit_add = 200
+	}
+	weight = 1000
+}
+tech_sfdoll_warship_4 = {
+	cost = @tier5cost3
+	tier = 5
+	area = engineering
+	start_tech = no
+	icon = tech_sfdoll_titan
+	is_rare = yes
+	category = { voidcraft }
+	prerequisites = {	tech_sfdoll_warship_3	}
+	potential = {
+		has_authority = auth_gf_sfdoll
+	}
+	weight = 1000
+}
+tech_sfdoll_warship_5 = {
+	cost = @tier5cost3
+	tier = 5
+	area = engineering
+	start_tech = no
+	icon = tech_sfdoll_titan
+	is_rare = yes
+	category = { voidcraft }
+	prerequisites = {	tech_sfdoll_warship_4	}
+	potential = { has_authority = auth_gf_sfdoll }
+	modifier = { country_command_limit_add = 200 }
+	weight = 1000
+}
+tech_sfdoll_warship_6 = {
+	cost = @tier5cost3
+	area = engineering
+	start_tech = no
+	icon = tech_sfdoll_titan
+	is_rare = yes
+	category = { voidcraft }
+	prerequisites = {	tech_sfdoll_warship_5	}
+	potential = { has_authority = auth_gf_sfdoll }
+	modifier = { country_command_limit_add = 200 }
+	tier = 5
+	weight = 1000
+}
+#铁血巨像
+tech_sfdoll_star_eater = {
+	area = engineering
+	start_tech = no
+	tier = 5
+	cost = @tier5cost3
+	category = { voidcraft }
+	is_rare = yes
+	icon = tech_sfdoll_mobile_starbase
+	prerequisites = {	tech_sfdoll_warship_6	}
+	potential = { always = no	has_authority = auth_gf_sfdoll }
+	weight = 0
+}
+#铁血工程船
+tech_sfdoll_constructor = {
+	cost = @tier1cost3
+	area = engineering
+	start_tech = no
+	icon = tech_space_construction
+	is_rare = yes
+	is_reverse_engineerable = no
+	category = { voidcraft }
+	potential = {
+		always = no
+		has_authority = auth_gf_sfdoll
+	}
+	tier = 1
+	weight = 0 #1500
+}
+
+
+#铁血物种特质
+tech_sf_doll_modding_system= {
+	cost = @tier2cost3
+	area = engineering
+	tier = 1
+	category = { industry }
+	prerequisites = { "tech_gf_sfdoll_assemble_building" }
+	potential = {	has_authority = auth_gf_sfdoll	}
+	weight = @tier2weight3
+	
+	gateway = robotics
+	feature_flags = {	modify_robots	}
+	modifier = {
+		SFDOLL_species_trait_points_add = 2
+		# pop_assembly_speed = 0.25
+		planet_pop_assembly_mult = 0.25
+	}
+	weight_modifier = {
+		modifier = {
+			factor = 10
+			years_passed > 10
+		}
+	}
+}
+tech_sf_doll_modding_1 = {
+	cost = @tier3cost1
+	area = engineering
+	tier = 3
+	category = { industry }
+	prerequisites = { "tech_sf_doll_modding_system" }
+	potential = {	has_authority = auth_gf_sfdoll	}
+	weight = 1000
+	modifier = {
+		SFDOLL_species_trait_points_add = 4
+		modify_species_cost_mult = -0.25
+		planet_pop_assembly_mult = 0.25
+	}
+	weight_modifier = {
+		modifier = {
+			factor = 2
+			years_passed > 10
+		}
+	}
+}
+#铁血二段改造，通过飞升添加
+tech_sf_doll_modding_2 = {
+	cost = @tier4cost1
+	area = engineering
+	tier = 4
+	category = { industry }
+	weight = 0
+	potential = {
+		has_authority = auth_gf_sfdoll
+	}
+	modifier = {	SFDOLL_species_trait_points_add = 8	}
+}
+
+# 循环科技
+tech_repeatable_weapon_type_sfdoll = {
+	cost = @repeatableTechBaseCost #@repeatableTechBaseCost 50000
+	cost_per_level = @repeatableTechLevelCost # @repeatableTechLevelCost 5000
+	tier = @repeatableTechTier
+	levels = -1
+	area = society
+	category = { military_theory }
+	icon = tech_repeatable_weapon_type_sfdoll
+	prerequisites = {	tech_sfdoll_weapon_T_2	}
+	weight = @repeatableTechWeight
+	potential = { has_authority = auth_gf_sfdoll }
+	modifier = {
+		weapon_type_sfdoll_weapon_damage_mult = 0.05
+	}
+}
+
+#AI tech
+tech_sfdoll_ogas_ai = {
+	area = physics
+	tier = 3
+	cost = @tier3cost3
+	category = { computing }
+	icon = tech_sfdoll_ogas_ai
+	is_rare = yes
+	weight = @tier4weight1
+	prerequisites = {	"tech_self_aware_logic"	}
+	potential = {	has_authority = auth_gf_sfdoll	}
+	modifier = {	num_tech_alternatives_add = 1	}
+	weight = @tier3weight3
+	weight_modifier = {
+		modifier = {
+			factor = 10
+			years_passed > 15
+		}
+	}
+}
+
+tech_sfdoll_planet_computer = {
+	area = physics
+	tier = 3
+	cost = @tier3cost2
+	category = { computing }
+	icon = tech_sfdoll_planet_computer
+	is_rare = yes
+	weight = @tier4weight1
+	potential = {	has_authority = auth_gf_sfdoll	}
+	weight = 0
+
+}
+
+#五级奇点
+tech_sfdoll_singularity = {
+	area = physics
+	tier = 5
+	cost = @tier5cost3
+	is_rare = yes
+	is_dangerous = yes
+	category = { field_manipulation }
+	icon = tech_sfdoll_singularity
+	weight = 0
+	potential = {	has_authority = auth_gf_sfdoll	}
+}
+
+tech_sfdoll_change_hyperlane = {
+	area = physics
+	tier = 5
+	cost = @tier5cost3
+	is_rare = yes
+	category = { field_manipulation }
+	icon = tech_sfdoll_change_hyperlane
+	weight = @tier5weight3
+	weight_modifier = {
+		factor = 8
+	}
+	prerequisites = {	tech_sfdoll_energy_plant	}
+	potential = {	has_authority = auth_gf_sfdoll	}
+} 
+
+tech_sfdoll_magic = {
+	cost = @tier5cost3
+	tier = 5
+	area = physics
+	category = { field_manipulation }
+	is_rare = yes
+	is_dangerous = yes
+	icon = tech_repeatable_sfdoll_phy
+	potential = { has_authority = auth_gf_sfdoll }
+	weight = 0
+}
+
+
+#soc
+#心理历史学
+tech_sfdoll_psychohistory = {
+	area = society
+	tier = 5
+	cost = @tier5cost3
+	is_rare = yes
+	category = { statecraft }
+	icon = tech_sfdoll_psychohistory
+	weight = @tier5weight2
+	potential = {	has_authority = auth_gf_sfdoll	}
+	prerequisites = { tech_sfdoll_energy_plant }
+	modifier = {
+		empire_size_mult = -0.15
+	}
+}
+
+#陆军
+tech_sfdoll_army = {
+	cost = @tier2cost1
+	area = society
+	tier = 2
+	category = { military_theory }
+	icon = tech_sfdoll_army
+	potential = { has_authority = auth_gf_sfdoll }
+	weight = @tier2weight1
+}
+#陆军和基地
+tech_sfdoll_heavy_army = {
+	cost = @tier4cost2 
+	area = society
+	tier = 4
+	category = { military_theory }
+	icon = tech_sfdoll_army
+	potential = { has_authority = auth_gf_sfdoll }
+	weight = @tier4weight2
+}
+#解锁槽位，建立铁血星球
+tech_build_sfdoll_city = {
+	cost = @tier4cost3
+	area = society
+	tier = 4
+	category = { statecraft }
+	icon = tech_sfdoll_max_buildings
+	potential = { has_authority = auth_gf_sfdoll }
+	prerequisites = { tech_building_sfdoll_mineral }
+	modifier = { empire_size_mult = -0.1	}
+	weight = @tier4weight1
+}
+
+#铁血社会变革
+tech_sfdoll_social_reform = {
+	cost = @tier3cost3
+	area = society
+	tier = 3
+	category = { new_worlds }
+	icon = tech_sfdoll_social_reform
+	potential = {	has_authority = auth_gf_sfdoll	}
+	modifier = {
+		country_government_civic_points_add = 1
+		empire_size_mult = -0.15
+	}
+
+	weight = 0
+}
+

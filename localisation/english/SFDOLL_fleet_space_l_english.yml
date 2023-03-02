@@ -1,0 +1,498 @@
+﻿l_english:
+###############################
+#componet
+tech_sfdoll_weapon_S_1:0"SF Small Arms"
+tech_sfdoll_weapon_S_1_desc:0"We need more reliable space weapons."
+sfdoll_weapon_S_1:0"SF Salamander Fire System"
+sfdoll_weapon_S_1_DESC:0 "With the help of dark matter and collapse particle, the new fire system can be competent for multiple range combat tasks."
+sfdoll_weapon_M_1:0 "$sfdoll_weapon_S_1$"
+sfdoll_weapon_L_1:0 "$sfdoll_weapon_S_1$"
+
+sfdoll_weapon_P_1:0"SF P-6 Point-Defense"
+sfdoll_weapon_P_1_DESC:0"$sfdoll_weapon_P_1$"
+
+tech_sfdoll_weapon_T_1:0 "SF Large Arms"
+tech_sfdoll_weapon_T_1_desc:0 "These large weapons can provide stronger firepower support for the SF fleet."
+
+sfdoll_weapon_X_1:0 "SF X-23 Positron Gun"
+sfdoll_weapon_X_1_DESC:0 "This weapon can accelerate positrons, resulting in a significant increase in their mass. Under such shelling, the shield generator is often vulnerable."
+sfdoll_weapon_T_1:0"SF Iron Dragon Gun"
+sfdoll_weapon_T_1_DESC:0 "$sfdoll_weapon_T_1$"
+
+tech_sfdoll_weapon_G_1:0 "Substance Transfer Weapon"
+tech_sfdoll_weapon_G_1_desc:0 "The application of substance transfer technology to missiles and strike craft gave birth to new weapons of SF Doll."
+
+sfdoll_weapon_G_1:0 "Reverse Collapse Missile"
+sfdoll_weapon_G_1_DESC:0 "The $sfdoll_weapon_G_1$ is transmitted to the enemy ship with a small FTL device, and does not need to fly as slowly as a conventional missile, so it will not be intercepted by the enemy's anti-aircraft fire."
+
+sfdoll_weapon_H_1:0 "SF Paddlefish Strike Craft"
+sfdoll_weapon_H_1_DESC:0 "$sfdoll_weapon_H_1$ is good at intercepting enemy fighters."
+
+tech_sfdoll_weapon_S_2:0 "SF Experimental Small Arms"
+tech_sfdoll_weapon_S_2_desc:0 "Improving the ftl transmission efficiency of fire-control systems could make small arms more powerful."
+
+sfdoll_weapon_P_2:0 "SF P-8 Point-Defense"
+sfdoll_weapon_P_2_DESC:0 "$sfdoll_weapon_P_2$ can destroy enemy aircraft more quickly than the old point-defense."
+
+sfdoll_weapon_S_2:0 "SF S-10 Antineutron-Gun"
+sfdoll_weapon_S_2_DESC:0 "This small weapon uses a stream of high-energy antiparticles to penetrate enemy defenses."
+
+tech_sfdoll_weapon_L_2:0 "SF Medium Weapons Upgrade"
+tech_sfdoll_weapon_L_2_desc:0 "The new medium weapons will be fitted to some of SF Dolls' ships."
+component_set_sfdoll_weapon_L_2:0 "SF Venomous Fang System"
+component_set_sfdoll_weapon_L_2_DESC:0 "$component_set_sfdoll_weapon_L_2$ combines high power with the ability to strike in all directions"
+sfdoll_weapon_L_2:0 "$component_set_sfdoll_weapon_L_2$"
+sfdoll_weapon_M_2:0 "SF M-12 Spruce Gun"
+sfdoll_weapon_M_2_DESC:0 "$sfdoll_weapon_M_2$ will complement our short range firepower."
+
+sfdoll_weapon_X_2:0 "SF X-25 Gun"
+sfdoll_weapon_X_2_DESC:0 "$tech_sfdoll_weapon_T_2_desc$"
+sfdoll_weapon_T_2:0 "SF T-24 Ship Gun"
+sfdoll_weapon_T_2_DESC:0 "$sfdoll_weapon_T_2$ is designed for ship-to-ship attacks, and it can be loaded fast with great power."
+tech_sfdoll_weapon_T_2:0 "SF Experimental Spinal Mounted Weapon"
+tech_sfdoll_weapon_T_2_desc:0 "These spinal mounted weapons sacrifice part of its steering function to increase range and power."
+
+sfdoll_weapon_T_SP:0 "Starlight Roaring"
+sfdoll_weapon_T_SP_DESC:0 "This long-range weapon is specifically designed for medium and heavy destroyers."
+tech_sfdoll_weapon_T_SP:0 "$sfdoll_weapon_T_SP$"
+tech_sfdoll_weapon_T_SP_desc:0 "$sfdoll_weapon_T_SP_DESC$"
+
+sfdoll_weapon_G_2:0 "SF Leaper Missile"
+sfdoll_weapon_G_2_DESC:0 "$sfdoll_weapon_G_2$ can transfer matter within a certain range to other coordinates. $sfdoll_weapon_G_2$ will approach the target by short-distance FTL, which means it cannot be intercepted by anti-aircraft weapons."
+tech_sfdoll_weapon_G_2:0 "$sfdoll_weapon_G_2$"
+tech_sfdoll_weapon_G_2_desc:0 "$sfdoll_weapon_G_2_DESC$"
+
+tech_sfdoll_weapon_H_2:0 "SF Experimental Strike Craft"
+tech_sfdoll_weapon_H_2_desc:0 "SF Dolls' new generation of strike craft will be more versatile."
+sfdoll_weapon_H_2:0 "SF killer Whale Bomber"
+sfdoll_weapon_H_2_DESC:0 "$sfdoll_weapon_H_2$ is used for ship and ground attacks."
+sfdoll_weapon_H_2_PD:0 "SF Black Swan Escort"
+sfdoll_weapon_H_2_PD_DESC:0 "$sfdoll_weapon_H_2_PD$ is a new aircraft focused on air defense operations."
+
+tech_sfdoll_jump_drive:0 "$sfdoll_jump_drive$"
+tech_sfdoll_jump_drive_desc:0 "The gradual improvement of the mass rebuild reveals the development direction of FTL technology."
+sfdoll_jump_drive:0"SF Jump Drive"
+
+tech_sfdoll_aux_repair_ship:0"$sfdoll_aux_repair_ship$"
+tech_sfdoll_aux_repair_ship_desc:0 "$component_set_sfdoll_aux_repair_ship_DESC$"
+
+sfdoll_aux_repair_ship:0"Damage Control System"
+component_set_sfdoll_aux_repair_ship:0"$sfdoll_aux_repair_ship$"
+component_set_sfdoll_aux_repair_ship_DESC:0"Damage control system improves ship survivability"
+
+sfdoll_aux_fire_range:0 "Tactical Drone"
+sfdoll_aux_fire_range_DESC:0 "$sfdoll_aux_fire_range$ can enhance radar and communication functions."
+tech_sfdoll_aux_fire_range:0 "$sfdoll_aux_fire_range$"
+tech_sfdoll_aux_fire_range_desc:0 "$sfdoll_aux_fire_range_DESC$"
+
+sfdoll_aux_rebuild_2:0 "SF Space Filter"
+sfdoll_aux_rebuild_2_DESC:0 "§Y$sfdoll_aux_rebuild_2$§! will resist the fatal attack of the ship, stop the ship's own attacks, and repair the hull. §Y$sfdoll_aux_rebuild_2$§! requires a 30-day cooldown after each effect, and cannot be activated during the cooldown of §Y$sfdoll_aux_rebuild$§!. Its effect cannot be stacked."
+
+tech_sfdoll_aux_rebuild_2:0 "$sfdoll_aux_rebuild_2$"
+tech_sfdoll_aux_rebuild_2_desc:0 "$sfdoll_aux_rebuild_2$ can block some hostile attacks"
+
+sfdoll_aux_rebuild:0 "SF Dimensional-Anchor"
+sfdoll_aux_rebuild_DESC:0 "When a ship equipped with $sfdoll_aux_rebuild$ is destroyed, a ship of the same type will be spawned based on a existing ship design. It will take 30 days for the new ship to use $sfdoll_aux_rebuild$ again."
+
+tech_sfdoll_aux_rebuild:0 "$sfdoll_aux_rebuild$"
+tech_sfdoll_aux_rebuild_desc:0 "Using the $sfdoll_aux_rebuild$, the ship can protect the core function when it is fatally attacked, and sneak into other dimensions briefly, and then use the redundant backup to repair the ship.."
+
+
+tech_sfdoll_thruster:0 "Inertial Interference"
+tech_sfdoll_thruster_desc:0 "Nature is our good friend."
+sfdoll_thruster:0"SF Advanced Thruster"
+sfdoll_thruster_2:0"$sfdoll_thruster$"
+sfdoll_thruster_3:0 "$sfdoll_thruster$"
+sfdoll_thruster_4:0 "$sfdoll_thruster$"
+sfdoll_thruster_5:0 "$sfdoll_thruster$"
+sfdoll_thruster_6:0 "$sfdoll_thruster$"
+
+#computer
+tech_sfdoll_ship_computer:0 "SF Warship AI"
+tech_sfdoll_ship_computer_desc:0 "The early SF Dolls was a group of combat AI. However, it takes more than old knowledge to adapt to space warfare."
+sfdoll_combat_computer_1:0 "SF Warship AI (Manual Control)"
+sfdoll_combat_computer_SWARM:0 "SF Warship AI (Swarm)"
+sfdoll_combat_computer_PICKET:0 "SF Warship AI (Picke)"
+sfdoll_combat_computer_line:0 "SF Warship AI (Line)"
+sfdoll_combat_computer_artillery:0 "SF Warship AI (Mrtillery)"
+sfdoll_combat_computer_carrier:0 "SF Warship AI (Carrier)"
+
+#aura
+sfdoll_aura_components:0 "$component_aura_sfdoll_1$"
+component_aura_sfdoll_1:0 "Jamming System"
+component_aura_sfdoll_1_text:0 "§YActivated at the beginning of the combat, the effect cannot stack, lasts for 30 days.§!\n$AURA_APPLY_ON_HOSTILE$\n$MOD_SHIP_WEAPON_DAMAGE$ §R-800%§!\n$MOD_SHIP_FIRE_RATE_MULT$ §R-1600%§!\n$MOD_SHIP_WEAPON_RANGE_MULT$ §R-800%§!"
+# The effect lasts for 20 days. When the effect is finished, it must be cooled to start again.
+
+component_aura_sfdoll_2:0 "Space Prism"
+component_aura_sfdoll_2_text:0 "§YEffect does not stack. The effect lasts for 10 days. When the effect is finished, it must be cooled to start again. \nCooldown time: 20 days§!\n$AURA_APPLY_ON_HOSTILE$\n$MOD_SHIP_ACCURACY_MULT$ §R-1000%§!"
+
+#defense
+sfdoll_ship_defense_s:0 "Enhanced Forcefield Shield"
+sfdoll_ship_defense_m:0"$sfdoll_ship_defense_s$"
+sfdoll_ship_defense_L:0"$sfdoll_ship_defense_s$"
+
+component_set_sfdoll_ship_defense_s:0"$sfdoll_ship_defense_s$"
+component_set_sfdoll_ship_defense_s_DESC:0 "$sfdoll_ship_defense_s$ can efficiently deflect enemy fire."
+
+tech_sfdoll_ship_defense_s:0"$sfdoll_ship_defense_s$"
+tech_sfdoll_ship_defense_s_desc:0"$component_set_sfdoll_ship_defense_s_DESC$"
+
+sfdoll_ship_armor_L:0 "Collapse Matter Armor"
+sfdoll_ship_armor_m:0 "$sfdoll_ship_armor_L$"
+sfdoll_ship_armor_s:0 "$sfdoll_ship_armor_L$"
+
+component_set_sfdoll_ship_armor_L:0"$sfdoll_ship_armor_L$"
+component_set_sfdoll_ship_armor_L_DESC:0 "Armor treated with collapse technology for increased strength"
+
+tech_sfdoll_ship_armor_L:0"$sfdoll_ship_defense_s$"
+tech_sfdoll_ship_armor_L_desc:0"$component_set_sfdoll_ship_defense_s_DESC$"
+
+sfdoll_ship_armor_2:0 "SF Dynamic Defense System"
+sfdoll_ship_armor_2_DESC:0 "The new defense system can provide all-round protection. It can repair the hull according to the conditions of the war."
+sfdoll_ship_armor_2_S:0 "$sfdoll_ship_armor_2$"
+sfdoll_ship_armor_2_M:0 "$sfdoll_ship_armor_2$"
+sfdoll_ship_armor_2_L:0 "$sfdoll_ship_armor_2$"
+tech_sfdoll_ship_armor_2:0 "$sfdoll_ship_armor_2$"
+tech_sfdoll_ship_armor_2_desc:0 "$sfdoll_ship_armor_2_DESC$"
+
+sfdoll_ship_sensors:0"SF Advanced Sensors"
+tech_sfdoll_ship_sensors:0 "$sfdoll_ship_sensors$"
+tech_sfdoll_ship_sensors_desc:0 "$sfdoll_ship_sensors$"
+
+tech_aux_sfdoll_collapse_power:0 "$CORVETTE_sfdoll_collapse_REACTOR$"
+tech_aux_sfdoll_collapse_power_desc:0 "Use collapse technology to improve the efficiency of energy supply"
+aux_sfdoll_collapse_power:0 "Collapse Auxiliary Power"
+aux_sfdoll_collapse_power_DESC:0 "Efficient auxiliary energy for compressing volume through collapse technology"
+
+CORVETTE_sfdoll_collapse_REACTOR:0"Reverse-Collapse Reactor"
+DESTROYER_sfdoll_collapse_REACTOR:0 "$CORVETTE_sfdoll_collapse_REACTOR$"
+CRUISER_sfdoll_collapse_REACTOR:0"$CORVETTE_sfdoll_collapse_REACTOR$"
+BATTLESHIP_sfdoll_collapse_REACTOR:0"$CORVETTE_sfdoll_collapse_REACTOR$"
+TITAN_sfdoll_collapse_REACTOR:0"$CORVETTE_sfdoll_collapse_REACTOR$"
+COLOSSUS_sfdoll_collapse_REACTOR:0"$CORVETTE_sfdoll_collapse_REACTOR$"
+PLATFORM_sfdoll_collapse_REACTOR:0"$CORVETTE_sfdoll_collapse_REACTOR$"
+ION_CANNON_sfdoll_collapse_REACTOR:0"$CORVETTE_sfdoll_collapse_REACTOR$"
+STARBASE_sfdoll_collapse_REACTOR:0"$CORVETTE_sfdoll_collapse_REACTOR$"
+Mobile_Starbase_sfdoll_collapse_REACTOR:0 "$CORVETTE_sfdoll_collapse_REACTOR$"
+
+tech_sfdoll_ship_power_2:0 "Reverse-Collapse Reactor Class-2"
+tech_sfdoll_ship_power_2_desc:0 "Powered by tiny singularities formed by dark matter"
+sfdoll_REACTOR_2_1:0 "$tech_sfdoll_ship_power_2$"
+sfdoll_REACTOR_2_2:0 "$tech_sfdoll_ship_power_2$"
+sfdoll_REACTOR_2_3:0 "$tech_sfdoll_ship_power_2$"
+sfdoll_REACTOR_2_4:0 "$tech_sfdoll_ship_power_2$"
+sfdoll_REACTOR_2_5:0 "$tech_sfdoll_ship_power_2$"
+sfdoll_REACTOR_2_6:0 "$tech_sfdoll_ship_power_2$"
+
+sfdoll_warship_1:0 "SF Light Corvette"
+sfdoll_warship_1_plural:0 "$sfdoll_warship_1$s"
+tech_sfdoll_warship_1:0 "$sfdoll_warship_1$"
+tech_sfdoll_warship_1_desc:0 "As an experimental ship, $sfdoll_warship_1$ is equipped with a mass regeneration system, which greatly improves self-sustaining power.\n$place_build_sfdoll_special_ship$"
+
+
+sfdoll_warship_1_MID_L1M1:0 "A"
+sfdoll_warship_1_MID_L1MISSILE:0 "B"
+sfdoll_warship_1_MID_L1S2:0 "C"
+sfdoll_warship_1_MID_L1P2:0 "D"
+sfdoll_warship_1_MID_M2S2:0 "E"
+sfdoll_warship_1_MID_M2P2:0 "F"
+sfdoll_warship_1_MID_MISSILE:0 "G"
+
+sfdoll_warship_2:0 "SF Medium Corvette"
+sfdoll_warship_2_plural:0 "$sfdoll_warship_2$s"
+tech_sfdoll_warship_2:0 "$sfdoll_warship_2$"
+tech_sfdoll_warship_2_desc:0 "The efficient inertial neutralizer allows ships to accelerate greatly at sublight speed.\n$place_build_sfdoll_special_ship$"
+
+sfdoll_warship_2_bowL2:0 "A"
+sfdoll_warship_2_bow_M4:0 "B"
+sfdoll_warship_2_bow_L1M2:0 "E"
+sfdoll_warship_2_STERN_M2:0 "C"
+sfdoll_warship_2_STERN_S2P2:0 "D"
+
+sfdoll_warship_3:0 "SF Heavy Corvette"
+sfdoll_warship_3_plural:0 "$sfdoll_warship_3$s"
+tech_sfdoll_warship_3:0 "$sfdoll_warship_3$"
+tech_sfdoll_warship_3_desc:0 "$sfdoll_warship_3$ is equipped with spinal mounted weapons for greater firepower.\n$place_build_sfdoll_special_ship$"
+
+GF_sfdoll_warship_3_bow_X1:0 "A"
+GF_sfdoll_warship_3_bow_L2:0 "B"
+GF_sfdoll_warship_3_mid_L3:0 "C"
+GF_sfdoll_warship_3_mid_L2S2P2:0 "D"
+GF_sfdoll_warship_3_stern_L1:0 "E"
+GF_sfdoll_warship_3_stern_M2:0 "F"
+GF_sfdoll_warship_3_stern_MISSILE:0 "G"
+
+sfdoll_warship_4:0 "SF Light Destroyer"
+sfdoll_warship_4_plural:0 "$sfdoll_warship_4$s"
+tech_sfdoll_warship_4:0 "$sfdoll_warship_4$"
+tech_sfdoll_warship_4_desc:0 "Space Prism can change the curvature of space around ships, which causes changes in how the waves travel.\n$place_build_sfdoll_special_ship$"
+
+GF_sfdoll_warship_4_bow_T1:0 "A"
+GF_sfdoll_warship_4_bow_X2:0 "B"
+GF_sfdoll_warship_4_mid_L6:0 "C"
+GF_sfdoll_warship_4_mid_M2:0 "D"
+GF_sfdoll_warship_4_mid_M1S1P1:0 "H"
+GF_sfdoll_warship_4_stern_L1:0 "E"
+GF_sfdoll_warship_4_stern_P2:0 "F"
+GF_sfdoll_warship_4_stern_H1:0 "G"
+
+sfdoll_warship_5:0 "SF Medium Destroyer"
+sfdoll_warship_5_plural:0 "$sfdoll_warship_5$s"
+tech_sfdoll_warship_5:0 "$sfdoll_warship_5$"
+tech_sfdoll_warship_5_desc:0 "The efficient ship management system allows this large ship to maintain the best condition.\n$place_build_sfdoll_special_ship$"
+
+sfdoll_warship_5_bow_4M:0 "A"
+sfdoll_warship_5_bow_6L:0 "B"
+sfdoll_warship_5_core_M4:0 "C"
+sfdoll_warship_5_core_G4:0 "D"
+sfdoll_warship_5_core:0 "E"
+sfdoll_warship_5_stern:0 "F"
+sfdoll_warship_5_stern_H:0 "G"
+
+sfdoll_warship_6:0 "SF Heavy Destroyer"
+sfdoll_warship_6_plural:0 "$sfdoll_warship_6$s"
+tech_sfdoll_warship_6:0 "$sfdoll_warship_6$"
+tech_sfdoll_warship_6_desc:0 "Jamming system can weaken enemy fire for a certain amount of time.\n$place_build_sfdoll_special_ship$"
+
+sfdoll_warship_6_bow_M4:0 "A"
+sfdoll_warship_6_bow_G4:0 "B"
+sfdoll_warship_6_bow:0 "C"
+sfdoll_warship_6_mid_M4:0 "D"
+sfdoll_warship_6_mid_G4:0 "E"
+sfdoll_warship_6_mid_H:0 "F"
+sfdoll_warship_6_mid:0 "G"
+sfdoll_warship_6_stern:0 "H"
+sfdoll_warship_6_stern_H1:0 "I"
+
+sfdoll_warship_S1:0 "SF Light Support Ship"
+sfdoll_warship_S1_plural:0 "$sfdoll_warship_S1$s"
+tech_sfdoll_warship_S1:0 "$sfdoll_warship_S1$"
+tech_sfdoll_warship_S1_desc:0 "$sfdoll_warship_S1$ can carry jamming systems and a large number of anti-aircraft weapons. Its jamming system has a limited duration, so it is better suited for team combat.\n$place_build_sfdoll_special_ship$"
+
+sfdoll_warship_S1_BOW:0 "A"
+sfdoll_warship_S1_MID:0 "B"
+sfdoll_warship_S1_MID_P:0 "C"
+sfdoll_warship_S1_STERN:0 "D"
+sfdoll_warship_S1_STERN_H:0 "E"
+sfdoll_warship_S1_STERN_P:0 "F"
+
+sfdoll_warship_S2:0 "SF Heavy Support Ship"
+sfdoll_warship_S2_plural:0 "$sfdoll_warship_S2$s"
+tech_sfdoll_warship_S2:0 "$sfdoll_warship_S2$"
+tech_sfdoll_warship_S2_desc:0 "$sfdoll_warship_S2$ can not only interfere with enemy ships, but also use powerful firepower to cover friendly forces.\n$place_build_sfdoll_special_ship$"
+
+sfdoll_warship_S2_bow:0 "A"
+sfdoll_warship_S2_mid:0 "B"
+sfdoll_warship_S2_stern:0 "C"
+sfdoll_warship_S2_stern_H:0 "D"
+
+sm_starbase_building_sfdoll_assembly:0 "SF Super AI Assembly Yards"
+sm_starbase_building_sfdoll_assembly_desc:0 "Under the control of SF Dolls' supercomputers, starbases can mass-produce a variety of advanced equipment"
+tech_starbase_building_sfdoll_assembly:0 "$sm_starbase_building_sfdoll_assembly$"
+tech_starbase_building_sfdoll_assembly_desc:0 "$sm_starbase_building_sfdoll_assembly_desc$"
+
+place_build_sfdoll_special_ship:0 "The following facilities are required: $mega_shipyard_3$, $sfdoll_mega_shipyard$, $sfdoll_mobile_starbase$, $sm_starbase_building_sfdoll_assembly$"
+
+fail_build_sfdoll_special_ship:0 "£trigger_no£ $place_build_sfdoll_special_ship$"
+
+sfdoll_star_eater:0 "SF Star Destroyer"
+sfdoll_star_eater_plural:0 "$sfdoll_star_eater$s"
+tech_sfdoll_star_eater:0 "$sfdoll_star_eater$"
+tech_sfdoll_star_eater_desc:0 "$sfdoll_star_eater$"
+sfdoll_star_eater_bow:0 "A"
+sfdoll_star_eater_mid:0 "B"
+sfdoll_star_eater_stern:0 "C"
+sfdoll_star_eater_stern_H:0 "D"
+
+ship_sfdoll_noel:0 "Noel"
+ship_sfdoll_noel_plural:0 "$ship_sfdoll_noel$"
+section_sfdoll_noel:0 "$ship_sfdoll_noel$"
+design_ship_sfdoll_noel:0 "$ship_sfdoll_noel$"
+
+#section
+tech_sfdoll_battleship_bow_x2:0 "SF Military Industry:Lightweight Weapon"
+tech_sfdoll_battleship_bow_x2_desc:0 "Lightweight heavy weapons to make them compatible with more ship types"
+description_tech_sfdoll_battleship_bow_x2:0 "§HUnlocks Sections:§! $sfdoll_CRUISER_BOW_X1$,$sfdoll_battleship_bow_T1$\n\n§HUnlocks Orbital Bombardment:§! $bombardment_sfdoll_1$"
+# Orbital Bombardment
+sfdoll_CRUISER_BOW_X1:0 "Lightweight Weapon Bow"
+sfdoll_battleship_bow_T1:0 "Lightweight Weapon Bow"
+
+sfdoll_constructor:0 "SF Doll Constructor"
+sfdoll_constructor_plural:0 "$sfdoll_constructor$s"
+sfdoll_constructor_SECTION:0 "$sfdoll_constructor$"
+
+tech_sfdoll_constructor:0 "$sfdoll_constructor$"
+tech_sfdoll_constructor_desc:0 "In order to survive in the universe, SF Dolls  have to spend a lot of effort to study space engineering."
+
+sfdoll_constructor_thruster:0 "$sfdoll_constructor$ Thruster"
+sfdoll_constructor_REACTOR:0 "$sfdoll_constructor$ Reactor"
+
+weapon_type_sfdoll:0 "§YTachyon§!"
+tech_repeatable_weapon_type_sfdoll:0 "Improvement of Sangvis Ferri Tachyon Weapon"
+tech_repeatable_weapon_type_sfdoll_desc:0 "Sangvis Ferri's FTL weapon systems still need further improvement."
+mod_weapon_type_sfdoll_weapon_damage_mult:0 "$weapon_type_sfdoll$ Weapon Damage"
+
+
+sfdoll_mega_should_outside_gravity_well:0 "This megastructure should be built outside gravity well."
+
+sfdoll_mega_shipyard:0 "SF Mega Shipyard"
+tech_sfdoll_mega_shipyard:0 "$sfdoll_mega_shipyard$"
+tech_sfdoll_mega_shipyard_desc:0 "We have to build an artificial system to complete the construction of $sfdoll_mega_shipyard$."
+sfdoll_mega_shipyard_1:0 "$sfdoll_mega_shipyard$ Site"
+sfdoll_mega_shipyard_1_DESC:0 "$sfdoll_mega_shipyard_1$ needs to be built outside the gravity well."
+sfdoll_mega_shipyard_1_MEGASTRUCTURE_DETAILS:0 "$sfdoll_mega_shipyard_1_DESC$"
+sfdoll_mega_shipyard_2:0 "$sfdoll_mega_shipyard$ Frame"
+sfdoll_mega_shipyard_2_DESC:0 "$tech_sfdoll_mega_shipyard_desc$"
+sfdoll_mega_shipyard_3:0 "$sfdoll_mega_shipyard$ Frame"
+sfdoll_mega_shipyard_3_DESC:0 "$tech_sfdoll_mega_shipyard_desc$"
+sfdoll_mega_shipyard_4:0 "$sfdoll_mega_shipyard$ Main Part"
+sfdoll_mega_shipyard_4_DESC:0 "Part of $sfdoll_mega_shipyard$'s shipyards has been completed and is ready for trial operation."
+sfdoll_mega_shipyard_5:0 "$sfdoll_mega_shipyard$"
+sfdoll_mega_shipyard_5_DESC:0 "This huge space port contains a large number of shipyard and nanites, which can build and maintain a huge fleet."
+
+sfdoll_event.4:0 "$sfdoll_mega_shipyard$"
+sfdoll_event.4_desc:0 "$sfdoll_mega_shipyard$ in the artificial system has been officially completed. With its support, the size of our fleet will be significantly improved."
+
+pc_sfdoll_habitat:0 "SF Orbital City"
+pc_sfdoll_habitat_desc:0 "Through advanced engineering techniques, $pc_sfdoll_habitat$ is able to accommodate a large number of residents."
+tech_sfdoll_habitat_01:0 "$pc_sfdoll_habitat$"
+tech_sfdoll_habitat_01_desc:0 "$pc_sfdoll_habitat_desc$"
+
+sfdoll_habitat_01:0 "$pc_sfdoll_habitat$ Site"
+sfdoll_habitat_01_DESC:0 "$pc_sfdoll_habitat_desc$"
+sfdoll_habitat_01_MEGASTRUCTURE_DETAILS:0 "$pc_sfdoll_habitat_desc$"
+sfdoll_habitat_02:0 "$pc_sfdoll_habitat$ Site"
+sfdoll_habitat_02_DESC:0 "$pc_sfdoll_habitat_desc$"
+
+
+sfdoll_mobile_starbase:0 "Deep Space Carrier"
+sfdoll_mobile_starbase_plural:0 "$sfdoll_mobile_starbase$s"
+sfdoll_mobile_starbase_section_1:0 "A"
+sfdoll_mobile_starbase_section_2:0 "B"
+sfdoll_mobile_starbase_section_3:0 "C"
+sfdoll_mobile_starbase_section_4:0 "D"
+thruster_sfdoll_mobile_starbase:0 "Thruster"
+
+tech_sfdoll_mobile_starbase:0 "$sfdoll_mobile_starbase$"
+tech_sfdoll_mobile_starbase_desc:0 "$sfdoll_mobile_starbase$ is a mobile base with shipyards. In the future, it will participate in the exploration of extragalactic. §Y$sfdoll_mobile_starbase$ needs to be built through mega-engineering.§!"
+
+# mega_sfdoll_mobile_starbase_1:0 "$sfdoll_mobile_starbase$ Site"
+# mega_sfdoll_mobile_starbase_1_DESC:0 "$sfdoll_mobile_starbase_plural$ need to be built outside the gravity well."
+# mega_sfdoll_mobile_starbase_1_MEGASTRUCTURE_DETAILS:0 "$sfdoll_mobile_starbase_plural$ need to be built outside the gravity well."
+# mega_sfdoll_mobile_starbase_1_complete:0 "$mega_sfdoll_mobile_starbase_1$ completed"
+
+# mega_sfdoll_mobile_starbase_2:0 "$sfdoll_mobile_starbase$ Stage 2"
+# mega_sfdoll_mobile_starbase_2_DESC:0 "You need to have at least one  design of $sfdoll_mobile_starbase$ to complete construction."
+
+# mega_sfdoll_mobile_starbase_3:0 "$sfdoll_mobile_starbase$ Stage 3"
+# mega_sfdoll_mobile_starbase_3_DESC:0 "The $sfdoll_mobile_starbase$ base frame has been built using the dimensional anchor as the base."
+
+# mega_sfdoll_mobile_starbase_4:0 "$sfdoll_mobile_starbase$ Final Stage"
+# mega_sfdoll_mobile_starbase_4_DESC:0 "$sfdoll_mobile_starbase$ will get full functionality."
+
+mega_sfdoll_mobile_starbase_1:0 "$sfdoll_mobile_starbase$ Site"
+mega_sfdoll_mobile_starbase_1_DESC:0 "We need to have at least one design of $sfdoll_mobile_starbase$ to complete construction."
+mega_sfdoll_mobile_starbase_1_MEGASTRUCTURE_DETAILS:0 "$sfdoll_mega_should_outside_gravity_well$"
+
+mega_sfdoll_mobile_starbase_2:0 "$sfdoll_mobile_starbase$ Stage 2"
+mega_sfdoll_mobile_starbase_2_DESC:0 "$mega_sfdoll_mobile_starbase_1_DESC$"
+
+# mega_sfdoll_mobile_starbase_3:0 "$sfdoll_mobile_starbase$ Stage 3"
+# mega_sfdoll_mobile_starbase_3_DESC:0 "SF Dolls distort and process space to create framework of $sfdoll_mobile_starbase$. It is not made of some substance, but space."
+
+mega_sfdoll_mobile_starbase_3:0 "$sfdoll_mobile_starbase$ Stage 3"
+mega_sfdoll_mobile_starbase_3_DESC:0 "The framework of $sfdoll_mobile_starbase$ is not made of matter, but of 'space' itself. SF Dolls distort and process space to create these structures."
+
+mega_sfdoll_mobile_starbase_4:0 "$sfdoll_mobile_starbase$ Final Stage"
+mega_sfdoll_mobile_starbase_4_DESC:0 "$sfdoll_mobile_starbase$ will get full functionality."
+
+sfdoll_event.2:0 "$sfdoll_mobile_starbase$ Sailing"
+sfdoll_event.2_desc:0 "With the launch of the sublight speed navigation system, $sfdoll_mobile_starbase$ has taken the first step towards the universe. Under the action of inertial interference device, this huge object is as light as a butterfly. The huge mass and energy of $sfdoll_mobile_starbase$ are hidden, which makes it integrate with the background radiation of the universe."
+
+
+sfdoll_mining_station_01:0 "SF Asteroid Mining Station Site"
+sfdoll_mining_station_01_DESC:0 "$sfdoll_mining_station_02_DESC$"
+sfdoll_mining_station_01_MEGASTRUCTURE_DETAILS:0 "$sfdoll_mining_station_02_DESC$"
+
+sfdoll_mining_station_02:0 "SF Asteroid Mining Station"
+sfdoll_mining_station_02_DESC:0 "These mining stations can extract minerals from the asteroid belt"
+
+tech_sfdoll_mining_station:0 "$sfdoll_mining_station_02$"
+tech_sfdoll_mining_station_desc:0 "$sfdoll_mining_station_02_DESC$"
+
+
+sfdoll_blackhole_mining_01:0 "SF Black-Hole Decompressor Site"
+sfdoll_blackhole_mining_01_DESC:0 "$sfdoll_blackhole_mining_03_DESC$"
+sfdoll_blackhole_mining_01_MEGASTRUCTURE_DETAILS:0 "$sfdoll_blackhole_mining_03_DESC$"
+
+sfdoll_blackhole_mining_02:0 "SF Black-Hole Decompressor Stage 2"
+sfdoll_blackhole_mining_02_DESC:0 "$sfdoll_blackhole_mining_03_DESC$"
+
+sfdoll_blackhole_mining_03:0 "SF Black-Hole Decompressor"
+sfdoll_blackhole_mining_03_DESC:0 "Black-Hole Decompressor controls the gravity of the black hole to mining the matter inside"
+
+tech_sfdoll_blackhole_mining:0 "$sfdoll_blackhole_mining_03$"
+tech_sfdoll_blackhole_mining_desc:0 "$sfdoll_blackhole_mining_03_DESC$"
+
+sfdoll_mobile_gateway_01:0 "SF Mobile Gateway"
+sfdoll_mobile_gateway_01_DESC:0 "A Mobile Gateway can upgrade to a Gateway Ship. \n\nHow to use Gateway Ship: \nClick on §Y'disband fleet'§! to turn a Gateway Ship to a Mobile Gateway. Click on §Y'disband ship'§! will not generate a Mobile Gateway."
+sfdoll_mobile_gateway_01_MEGASTRUCTURE_DETAILS:0 "$sfdoll_mobile_gateway_01_DESC$"
+
+sfdoll_mobile_gateway_02:0 "SF Gateway Ship"
+sfdoll_mobile_gateway_02_DESC:0 "$sfdoll_mobile_gateway_01_DESC$"
+
+tech_sfdoll_mobile_gateway:0 "$sfdoll_mobile_gateway_01$"
+tech_sfdoll_mobile_gateway_desc:0 "Mobile gateway is a FTL tool. It is interconnected with ordinary gateway."
+
+sfdoll_gateway_ship:0 "$sfdoll_mobile_gateway_02$"
+sfdoll_gateway_ship_plural:0 "$sfdoll_mobile_gateway_02$s"
+sfdoll_gateway_ship_SECTION:0 "$sfdoll_mobile_gateway_02$"
+design_sfdoll_gateway_ship:0 "$sfdoll_mobile_gateway_02$"
+
+tech_sfdoll_mega_lab:0 "$sfdoll_mega_lab_4$"
+tech_sfdoll_mega_lab_desc:0 "In order to break through the limit of the Class-4 Singularity, we need to build a star scale test site. Perhaps, when this unprecedented megastructure starts to work, the baby age of our civilization will end."
+
+sfdoll_mega_lab_1:0 "$sfdoll_mega_lab_4$ Site"
+sfdoll_mega_lab_1_DESC:0 "Celestial bodies other than stars in the system will be dismantled as materials for this project."
+sfdoll_mega_lab_1_MEGASTRUCTURE_DETAILS:0 "$sfdoll_mega_lab_1_DESC$"
+sfdoll_mega_lab_2:0 "$sfdoll_mega_lab_4$ Frame"
+sfdoll_mega_lab_2_DESC:0 "$sfdoll_mega_lab_1_DESC$"
+sfdoll_mega_lab_3:0 "$sfdoll_mega_lab_4$ Core"
+sfdoll_mega_lab_3_DESC:0 "Huge accelerators and supporting facilities have been built, with boundless energy that dwarfs even the stars."
+sfdoll_mega_lab_4:0 "SF Stellar Proving Ground"
+sfdoll_mega_lab_4_DESC:0 "In order to explore the basic laws of the Galaxy, Sangvis Ferri Civilization built this megastructure."
+
+sfdoll_event.10:0 "The Door of Truth"
+sfdoll_event.10.desc:0 "Sharp tools make good work. The giant snake circling in the system is the most powerful high-energy physics experimental tool in the history of SF Doll. It will become a key to open a new door of truth for us."
+
+mega_sfdoll_university_1:0 "$mega_sfdoll_university_2$ Site"
+mega_sfdoll_university_1_DESC:0 "$mega_sfdoll_university_2_DESC$"
+mega_sfdoll_university_1_MEGASTRUCTURE_DETAILS:0 "$requires_only_one_mega_sfdoll_university$"
+
+mega_sfdoll_university_2:0 "SF Galactic University"
+mega_sfdoll_university_2_DESC:0 "$mega_sfdoll_university_2$ is open to all intelligent creatures. Great minds from all over the galaxy gather here."
+
+tech_mega_sfdoll_university:0 "$mega_sfdoll_university_2$"
+tech_mega_sfdoll_university_desc:0 "The body will be destroyed, and the mind will be eternal."
+requires_only_one_mega_sfdoll_university:0 "We can only have one $mega_sfdoll_university_2$."
+sfdoll_event.5:0 "$mega_sfdoll_university_2$ Construction Complete"
+sfdoll_event.5_desc:0 "We have built $mega_sfdoll_university_2$. Its light will illuminate the road of development of the Galaxy civilization."
+sfdoll_event.5_a:0 "Good good study, day day up"
+
+
+# 航道改造
+sfdoll_change_hyperlane_ship:0 "Hyperlane Modification Beacon"
+sfdoll_change_hyperlane_section:0 "$sfdoll_change_hyperlane_ship$"
+design_sfdoll_change_hyperlane_ship:0 "$sfdoll_change_hyperlane_ship$"
+
+sfdoll_planet_killer_event.6:0 "Hyperlane Modification Project"
+sfdoll_planet_killer_event.6_desc:0 "Click to generate two beacons, move them to two systems respectively, then you can modify the Hyperlane between the two systems.\n\n Between the systems where the two beacons are located, if there is a Hyperlane, the Hyperlane will be deleted; if there is no Hyperlane, a new Hyperlane will be generated."
+sfdoll_planet_killer_event.6_option_a:0 "Generate two beacons, and delete the old beacons."
+sfdoll_planet_killer_event.6_option_b:0 "Modify Hyperlane"
+create_sfdoll_change_hyperlane_ship_wait:0 "It takes 60 days to cool down after generating the beacon"
+
+edict_sfdoll_change_hyperlane_window:0 "$sfdoll_planet_killer_event.6$"
+edict_sfdoll_change_hyperlane_window_desc:0 "$sfdoll_planet_killer_event.6_desc$"
+
+tech_sfdoll_change_hyperlane:0 "$sfdoll_planet_killer_event.6$"
+tech_sfdoll_change_hyperlane_desc:0 "With the in-depth study of Hyperlanes, SF Dolls mastered the method of building Hyperlanes."

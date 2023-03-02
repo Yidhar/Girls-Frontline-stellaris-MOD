@@ -95,3 +95,56 @@ decision_planet_pop_to_sfdoll_effects_short:0 "$decision_planet_pop_to_sfdoll_de
 
 pc_gf_sfdoll_embers_gloomy:0 "Dimmed Ashes"
 pc_gf_sfdoll_embers_gloomy_desc:0 "Rocky planet with harsh weather, atmosphere contains  thick clouds of collapse particles and collapsation storms, radiation brought by these is very deadly to both organisms and electronics. High local radiation makes it hard for most organisms to survive, apart from limited strains of mutated aggregated organisms. "
+
+
+#planet_killer
+message_system_destroyed_sfdoll:0 "a system was destroyed"
+message_planet_destroyed_sfdoll:0 "a planet was destroyed"
+
+planet_killer_sfdoll_1:0 "Elimination Device"
+planet_killer_sfdoll_1_DESC:0 "This device will wipe out all existence in the system, only your own fleet will not be affected."
+tech_planet_killer_sfdoll_1:0 "$planet_killer_sfdoll_1$"
+tech_planet_killer_sfdoll_1_desc:0 "$planet_killer_sfdoll_1_DESC$"
+
+planet_killer_sfdoll_1_ACTION:0 "$planet_killer_sfdoll_1$"
+
+FLEETORDER_DESTROY_PLANET_WITH_planet_killer_sfdoll_1:0 "$planet_killer_sfdoll_1$"
+
+MESSAGE_DESC_FOR_planet_killer_sfdoll_1:0 "destroyed"
+
+planet_killer_sfdoll_2:0 "Anti-Star Gun"
+planet_killer_sfdoll_2_DESC:0 "This weapon can destroy a planet or a star. Destroying a star will spread to surrounding celestial bodies."
+
+planet_killer_sfdoll_2_ACTION:0 "$planet_killer_sfdoll_2$"
+FLEETORDER_DESTROY_PLANET_WITH_planet_killer_sfdoll_2:0 "$planet_killer_sfdoll_2$"
+MESSAGE_DESC_FOR_planet_killer_sfdoll_2:0 "destroyed"
+
+planet_killer_sfdoll_3:0 "Horizon Sword"
+planet_killer_sfdoll_3_DESC:0 "This weapon can make the star collapse into a black hole, which will trigger a supernova explosion. The energy released by this event is then used to generate dark matter. $planet_killer_sfdoll_3$ can also destroy planets."
+
+planet_killer_sfdoll_3_ACTION:0 "$planet_killer_sfdoll_3$"
+FLEETORDER_DESTROY_PLANET_WITH_planet_killer_sfdoll_3:0 "$planet_killer_sfdoll_3$"
+MESSAGE_DESC_FOR_planet_killer_sfdoll_3:0 "collapsed"
+
+tech_planet_killer_sfdoll_3:0 "$planet_killer_sfdoll_3$"
+tech_planet_killer_sfdoll_3_desc:0 "$planet_killer_sfdoll_3_DESC$"
+
+planet_killer_sfdoll_4:0 "Horizon Elimination Device"
+planet_killer_sfdoll_4_DESC:0 "This device could turn a black hole into a star."
+
+planet_killer_sfdoll_4_ACTION:0 "$planet_killer_sfdoll_4$"
+FLEETORDER_DESTROY_PLANET_WITH_planet_killer_sfdoll_4:0 "$planet_killer_sfdoll_4$"
+MESSAGE_DESC_FOR_planet_killer_sfdoll_4:0 "Transformed"
+
+tech_planet_killer_sfdoll_4:0 "$planet_killer_sfdoll_4$"
+tech_planet_killer_sfdoll_4_desc:0 "$planet_killer_sfdoll_4_DESC$"
+
+sfdoll_planet_killer_event.17:0 "$planet_killer_sfdoll_4$"
+sfdoll_planet_killer_event.17_desc:0 "Under the action of $planet_killer_sfdoll_4$, [from.GetName] is converted to a star. We have recorded this process in detail."
+
+planet_killer_sfdoll_colonizer:0 "Colonial Space Shuttle"
+planet_killer_sfdoll_colonizer_DESC:0 "$planet_killer_sfdoll_colonizer$ can transport personnel and materials to the planet and support the initial development of the planet."
+
+planet_killer_sfdoll_colonizer_ACTION:0 "$planet_killer_sfdoll_colonizer$"
+FLEETORDER_DESTROY_PLANET_WITH_planet_killer_sfdoll_colonizer:0 "$planet_killer_sfdoll_colonizer$"
+MESSAGE_DESC_FOR_planet_killer_sfdoll_colonizer:0 "start colonization"

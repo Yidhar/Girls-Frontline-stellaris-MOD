@@ -285,7 +285,7 @@ sfdoll_three_body_event.2_desc_d:0 "外面的花很美。"
 sfdoll_three_body_event.2_option_a:0 "请担任科学家"
 sfdoll_three_body_event.2_option_a_response:0 "好极了."
 
-leader_trait_sfdoll_dingyi:0 "丁仪"
+leader_trait_sfdoll_dingyi:0 "六分仪"
 leader_trait_sfdoll_dingyi_desc:0 "从前，丁仪是一位杰出的人类科学家。"
 
 NAME_sfdoll_dingyi:0 "丁仪"
@@ -416,7 +416,6 @@ sfdoll_foundation_event.3_desc_b:0 "有什么事吗?"
 hari_seldon_become_scientist:0 "请担任科学家"
 hari_seldon_has_this_job_now:0 "谢顿已经在担任这个职务"
 response_text_sfd_hari_seldon_become_scientist:0 "终于有事情干了."
-
 
 Name_sfd_hari_seldon:0 "哈里·谢顿"
 leader_trait_scientist_sfd_hari_seldon:0 "$Name_sfd_hari_seldon$"

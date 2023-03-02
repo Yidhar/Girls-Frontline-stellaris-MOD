@@ -285,9 +285,8 @@ sfdoll_three_body_event.2_desc_d:0 "The flowers outside are beautiful."
 sfdoll_three_body_event.2_option_a:0 "Please serve as scientist"
 sfdoll_three_body_event.2_option_a_response:0 "I have been waiting for a long time."
 
-leader_trait_sfdoll_dingyi:0 "Ding Yi"
+leader_trait_sfdoll_dingyi:0 "Sextant"
 leader_trait_sfdoll_dingyi_desc:0 "In the past, Ding Yi was an outstanding human scientist."
-# Death in the evening is acceptable if the truth is learned in the morning.
 
 NAME_sfdoll_dingyi:0 "Ding Yi"
 

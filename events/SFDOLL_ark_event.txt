@@ -20,7 +20,7 @@ country_event = {
 		city_level = this
 	}
 
-	# 衔尾蛇担任总督
+	# 塔露拉担任总督
 	option = {
 		name = "sfdoll_ark_event.1.a"
 		response_text = "sfdoll_ark_event.1.a.response"
@@ -52,6 +52,46 @@ country_event = {
 				traits = {
 					trait = leader_trait_sfdoll_talulah_governor
 					trait = leader_trait_righteous
+				}
+				effect = {
+					change_leader_portrait = GFX_sfdoll_talulah
+					set_leader_flag = sfdoll_leader_talulah
+					save_global_event_target_as = sfdoll_leader_talulah
+				}
+			}
+		}
+	}
+
+	# 塔露拉担任科学家
+	option = {
+		name = "sfdoll_ark_event.1.b"
+		response_text = "sfdoll_ark_event.1.b.response"
+		allow = {
+			custom_tooltip = {
+				fail_text = "sfdoll_the_leader_is_doing_this_job"
+				NAND = {
+					exists = event_target:sfdoll_leader_talulah
+					event_target:sfdoll_leader_talulah = {
+						leader_class = scientist
+						owner = { is_same_value = root }
+					}
+				}
+			}
+		}
+		hidden_effect = {
+			if = {
+				limit = { exists = event_target:sfdoll_leader_talulah }
+				event_target:sfdoll_leader_talulah = { kill_leader = { show_notification = no fire = yes } }
+			}
+			create_leader = {
+				class = scientist
+				species = owner_species
+				name = "Name_sfdoll_talulah"
+				skill = 1
+				set_age = 20
+				immortal = yes
+				event_leader = yes	# prevents this leader from leading factions and winning elections
+				traits = {
 				}
 				effect = {
 					change_leader_portrait = GFX_sfdoll_talulah

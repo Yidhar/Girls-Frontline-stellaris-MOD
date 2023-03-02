@@ -421,3 +421,16 @@ response_text_sfd_hari_seldon_become_scientist:0 "终于有事情干了."
 Name_sfd_hari_seldon:0 "哈里·谢顿"
 leader_trait_scientist_sfd_hari_seldon:0 "$Name_sfd_hari_seldon$"
 leader_trait_scientist_sfd_hari_seldon_desc:0 "$Name_sfd_hari_seldon$"
+
+
+Name_sfdoll_talulah:0 "塔露拉"
+sfdoll_ark_event.1
+sfdoll_ark_event.1.desc.a
+sfdoll_ark_event.1.desc.b
+sfdoll_ark_event.1.desc.c
+sfdoll_ark_event.1.desc.d
+sfdoll_ark_event.1.a
+sfdoll_ark_event.1.a.response
+
+leader_trait_sfdoll_talulah_governor
+leader_trait_sfdoll_talulah_governor_desc

@@ -1,4 +1,4 @@
-"SFDOLL_country" ={
+"GF_SFDOLL_country" ={
 	ship_prefix=""
 	species={
 		class=  "gf_sfdoll"

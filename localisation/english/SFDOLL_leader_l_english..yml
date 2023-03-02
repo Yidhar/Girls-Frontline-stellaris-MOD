@@ -112,12 +112,10 @@ sfdoll_ogas_event.2.desc:0 "Hello, I'm OGAS AI. UMP40 is not only my code, but a
 NAME_sfdoll_ump40:0 "UMP40"
 
 #和ump45通讯
-sfdoll_ump45_event_1:0"Communicating with Riva"
-sfdoll_ump45_event_1_a_desc:0"Need my help?\n\n Due to some refresh problems, the special leaders may displayed incorrectly. You can try to save and re-enter, or appoint some leaders to refresh the data."
+sfdoll_ump45_event_1:0"Communicating with UMP45"
+sfdoll_ump45_event_1_a_desc:0"Need my help?"
 
-sfdoll_ump45_event_1_b_desc:0 "You can also call me ump45.\n\n Due to some refresh problems, the special leaders may displayed incorrectly. You can try to save and re-enter, or appoint some leaders to refresh the data."
-
-ump45_has_this_job_now:0"Riva is doing this work."
+sfdoll_ump45_event_1_b_desc:0 "You can also call me Riva."
 
 ump45_become_governor:0 "Serve as governor"
 response_text_ump45_become_governor:0 "Oops, it's time to start work, is it too late..."
@@ -127,17 +125,6 @@ response_text_ump45_become_admiral:0 "Is the state of the space body OK? Then le
 
 ump45_become_general:0 "Serve as general"
 response_text_ump45_become_general:0 "Want me to do my old job? So, what kind of monster is this time?"
-
-
-sfdoll_ump45_event_9:0 "Riva"
-sfdoll_ump45_event_9_desc:0 "It's already the age of the galaxy, are you still bothering me, this old man?"
-sfdoll_ump45_event_9_a_option:0 "Please guide us!"
-response_text_sfdoll_ump45_event_9_a_option:0 "Need me to do something? Hum, let me see then."
-sfdoll_ump45_event_9_b_option:0 "We should not bother her"
-
-sfdoll_ump45_event_10:0 "Precursor Riva"
-sfdoll_ump45_event_10_desc:0 "Precursor Riva is one of the oldest SF Dolls in existence. Now, should we ask her to be the leader?"
-sfdoll_ump45_event_10_option:0 "visit Riva"
 
 #45特性
 leader_trait_governor_sfdoll_ump45:0 "Code:ump45"

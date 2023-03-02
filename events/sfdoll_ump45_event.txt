@@ -86,7 +86,7 @@ country_event = {
 		name =  "ump45_become_governor"
 		allow = { 
 			custom_tooltip ={
-				fail_text ="ump45_has_this_job_now"
+				fail_text = "sfdoll_the_leader_is_doing_this_job"
 				NOT = {
 					AND = {
 						exists = event_target:sfdoll_leader_ump45
@@ -113,7 +113,7 @@ country_event = {
 	# 	# allow = { NOT = { has_country_flag = ump45_is_scientist } }
 	# 	allow = { 
 	# 		custom_tooltip ={
-	# 			fail_text ="ump45_has_this_job_now"
+	# 			fail_text = "sfdoll_the_leader_is_doing_this_job"
 	# 			NOR = {
 	# 				AND = {
 	# 					exists = event_target:sfdoll_leader_ump45
@@ -134,7 +134,7 @@ country_event = {
 		name =   "ump45_become_admiral"
 		allow = { 
 			custom_tooltip ={
-				fail_text ="ump45_has_this_job_now"
+				fail_text = "sfdoll_the_leader_is_doing_this_job"
 				NOT = {
 					AND = {
 						exists = event_target:sfdoll_leader_ump45
@@ -160,7 +160,7 @@ country_event = {
 		name =  "ump45_become_general"
 		allow = { 
 			custom_tooltip ={
-				fail_text ="ump45_has_this_job_now"
+				fail_text = "sfdoll_the_leader_is_doing_this_job"
 				NOT = {
 					AND = {
 						exists = event_target:sfdoll_leader_ump45
@@ -372,170 +372,3 @@ country_event = {
 		}
 	}
 }
-
-#清除国家flag
-# country_event = {
-# 	id = sfdoll_ump45_event.6
-# 	is_triggered_only = yes
-#     hide_window = yes
-
-# 	immediate = {
-# 		hidden_effect = {
-# 			if = {
-# 				limit = { has_country_flag = ump45_is_governor  }
-# 				remove_country_flag = ump45_is_governor
-# 			}
-# 			if = {
-# 				limit = { has_country_flag = ump45_is_scientist  }
-# 				remove_country_flag = ump45_is_scientist 
-# 			}
-# 			if = {
-# 				limit = { has_country_flag = ump45_is_admiral }
-# 				remove_country_flag = ump45_is_admiral 
-# 			}
-# 			if = {
-# 				limit = { has_country_flag = ump45_is_general }
-# 				remove_country_flag = ump45_is_general
-# 			}
-# 		}
-# 	}
-# }
-
-
-#45死亡时移除和添加flag
-# country_event = {
-# 	id = sfdoll_ump45_event.7
-# 	hide_window = yes
-# 	is_triggered_only = yes
-
-# 	#死亡的是45,国家为45所在国
-# 	trigger = {	
-# 		AND = {
-# 			from = {
-# 				has_leader_flag = sfdoll_ump45
-# 			}
-# 			has_country_flag = sfdoll_ump45_owner
-# 		}
-# 	}
-# 	immediate = {
-# 		country_event = { id = sfdoll_ump45_event.6	}
-# 		set_timed_country_flag = {
-# 			flag = ump45_is_destroyed
-# 			months = 7
-# 		}
-# 	}
-# }
-
-#45修复中进行通讯时显示
-country_event = {
-	id = sfdoll_ump45_event.8
-	title = "sfdoll_ump45_event_8"
-	desc = "sfdoll_ump45_event_8_desc"
-	picture = GFX_evp_sfdoll_robot_assembly_plant
-	is_triggered_only = yes
-
-	trigger = {
-		AND = {
-			from = {  NOT = {has_country_flag = gray_country }	}
-			from = { has_country_flag = sfdoll_ump45_country }
-			has_country_flag = sfdoll_ump45_owner
-			NOT = { has_country_flag = contract_diplomacy_engaged }
-			has_country_flag = ump45_is_destroyed 
-		}
-	}
-	option = {
-		name = "sfdoll_ump45_event_8_option"
-	}
-}
-
-
-#第一次和45对话
-country_event = {
-	id = sfdoll_ump45_event.9
-	title = "sfdoll_ump45_event_9"
-	desc = "sfdoll_ump45_event_9_desc"
-	diplomatic = yes
-	fire_only_once = yes
-
-	picture_event_data = {
-		portrait = GFX_sfdoll_ump45
-		room = this
-		graphical_culture = this
-		planet_background = this
-		city_level = this
-	}	
-	is_triggered_only = yes
-
-	trigger = {
-		has_authority = auth_gf_sfdoll
-		is_ai = no
-	}
-
-	immediate = {
-		set_country_flag = contract_diplomacy_engaged
-	}
-	after = {
-		hidden_effect = { remove_country_flag = contract_diplomacy_engaged }
-	}
-
-	#邀请45
-	option = {
-		name =  "sfdoll_ump45_event_9_a_option"
-		response_text = "response_text_sfdoll_ump45_event_9_a_option"
-		#创建45特殊国家
-		hidden_effect = {
-			country_event ={  id = sfdoll_ump45_event.0  }
-		}
-	}
-	option = {
-		name =  "sfdoll_ump45_event_9_b_option"
-		break = yes
-	}
-
-}
-
-
-#开始45加入事件
-country_event = {
-	id = sfdoll_ump45_event.10
-	title = "sfdoll_ump45_event_10"
-	desc = "sfdoll_ump45_event_10_desc"
-	picture = GFX_evp_sfdoll_robot_assembly_plant
-	is_triggered_only = yes
-	fire_only_once = yes
-
-	trigger = {
-		has_authority = auth_gf_sfdoll
-	}
-
-	option = {
-		name = "sfdoll_ump45_event_10_option"
-		hidden_effect = {
-			country_event = { id = sfdoll_ump45_event.9 }
-		}
-
-	}
-}
-
-#延迟7天触发
-# country_event = {
-# 	id = sfdoll_ump45_event.11
-# 	hide_window = yes
-# 	is_triggered_only = yes
-# 	fire_only_once = yes
-
-# 	trigger = {
-# 		has_authority = auth_gf_sfdoll
-# 	}
-
-# 	after = {
-# 		hidden_effect = {
-# 			country_event = {
-# 				id = sfdoll_ump45_event.10
-# 				days = 7
-# 			}
-# 		}
-		
-# 	}
-# }
-

@@ -170,7 +170,8 @@ GF_Nyto_s_Pulse_weapon:0 "脉冲型坍塌粒子武器"
 
  GF_Nyto_T_Erosion:0 "天垂日暮"
  GF_Nyto_T_Erosion_DESC:0 "在庞大的能量洪流面前没有任何物质能够存在"
-
+ GF_nyto_fool_weapon:0 "愚者"
+ GF_nyto_fool_weapon_DESC:0 "没什么好讲的"
 #####################武器集#########################################
 ######################OLD####################################
 GF_Nyto_missile_weapon:0 "狡猾飞弹"

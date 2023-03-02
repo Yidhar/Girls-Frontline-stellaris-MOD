@@ -217,6 +217,14 @@ trait_sfdoll_high_bandwidth = {
 	modifier = {	planet_jobs_unity_produces_mult = -0.10	}
 }
 
+trait_sfdoll_uncanny = {
+	cost = -1
+	initial = no
+	randomized = yes
+	opposites = { "trait_robot_emotion_emulators" }
+	allowed_archetypes = { SFDOLL }
+	modifier = {  pop_job_amenities_mult = -2  }
+}
 
 #
 # trait_sfdoll_ogas_ai = {

@@ -423,6 +423,7 @@ sfdoll_artist = {
 	possible_precalc = can_fill_specialist_job
 	planet_modifier = {
 		planet_amenities_add = 25
+		mult = value:scripted_modifier_mult|MODIFIER|pop_job_amenities_mult|
 	}
 	resources = {
 		category = planet_culture_workers

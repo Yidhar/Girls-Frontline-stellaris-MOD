@@ -219,8 +219,9 @@ trait_sfdoll_high_bandwidth = {
 
 trait_sfdoll_uncanny = {
 	cost = -1
-	initial = no
+	initial = yes
 	randomized = yes
+	icon = "gfx/interface/icons/traits/sfdoll/trait_sfdoll_uncanny.dds"
 	allowed_archetypes = { SFDOLL }
 	modifier = {  pop_job_amenities_mult = -0.2  }
 }

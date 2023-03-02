@@ -51,6 +51,8 @@ trait_sfdoll_assembly_slowly_desc:0 "It takes time to assemble these SF Dolls"
 trait_sfdoll_high_bandwidth:0 "Inefficient Communication"
 trait_sfdoll_high_bandwidth_desc:0 "These SF Dolls have insufficient information transmission capabilities"
 
+trait_sfdoll_uncanny:0 "Uncanny"
+trait_sfdoll_uncanny_desc:0 "The shape of these SF Dolls is uncanny"
 
 #update
 trait_sfdoll_efficient_produce:0 "New Sangvis Ferri"

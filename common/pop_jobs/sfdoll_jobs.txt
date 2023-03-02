@@ -421,7 +421,8 @@ sfdoll_artist = {
 		is_sapient = yes
 	}
 	possible_precalc = can_fill_specialist_job
-	planet_modifier = {
+	triggered_planet_modifier = {
+		potential = {  always = yes  }
 		planet_amenities_add = 25
 		mult = value:scripted_modifier_mult|MODIFIER|pop_job_amenities_mult|
 	}

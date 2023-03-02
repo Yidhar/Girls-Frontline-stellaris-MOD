@@ -162,25 +162,8 @@ leader_trait_governor_sfdoll_ump45 = {
 	randomized = no
 	#requires_traits={ trait_gf_sfdoll } #拥有哪个特质的人口可以生成带有这个特质的领袖 
 	icon="gfx/interface/icons/traits/sfdoll/leader_traits/leader_trait_sfdoll_ump45.dds"
-	modifier = {
-		planet_crime_add = -25
-		planet_jobs_unity_produces_mult = 0.15
-	}
 	leader_trait = { governor }
 	leader_class = { governor }
-	leader_potential_add = {from = { has_authority = auth_gf_sfdoll }}
-}
-#45科学家
-leader_trait_scientist_sfdoll_ump45 = {
-	cost = 0
-	randomized = no
-	#requires_traits={ trait_gf_sfdoll } #拥有哪个特质的人口可以生成带有这个特质的领袖 
-	icon="gfx/interface/icons/traits/sfdoll/leader_traits/leader_trait_sfdoll_ump45.dds"
-	modifier = {
-		ship_anomaly_generation_chance_mult = 0.25
-	}
-	leader_trait = { scientist }
-	leader_class = { scientist }
 	leader_potential_add = {from = { has_authority = auth_gf_sfdoll }}
 }
 
@@ -189,13 +172,6 @@ leader_trait_admiral_sfdoll_ump45 = {
 	cost = 0
 	randomized = no
 	#requires_traits={ trait_gf_sfdoll } #拥有哪个特质的人口可以生成带有这个特质的领袖 
-	icon="gfx/interface/icons/traits/sfdoll/leader_traits/leader_trait_sfdoll_ump45.dds"
-	modifier = {
-		#紧急超光速损失风险
-		ship_emergency_ftl_mult = -0.30
-		#emergency_measures_cooldown_mult = -0.15
-
-	}
 	leader_trait = { admiral }
 	leader_class = { admiral }
 	leader_potential_add = {from = { has_authority = auth_gf_sfdoll }}
@@ -207,7 +183,6 @@ leader_trait_general_sfdoll_ump45 = {
 	randomized = no
 	#requires_traits={ trait_gf_sfdoll } #拥有哪个特质的人口可以生成带有这个特质的领袖 
 	icon="gfx/interface/icons/traits/sfdoll/leader_traits/leader_trait_sfdoll_ump45.dds"
-	modifier = { army_health = 0.15	}
 	leader_trait = { general }
 	leader_class = { general }
 	leader_potential_add = {from = { has_authority = auth_gf_sfdoll }}

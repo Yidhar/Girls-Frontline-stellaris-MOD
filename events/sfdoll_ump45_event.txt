@@ -177,7 +177,7 @@ country_event = {
 				set_age = 20
 				immortal = yes
 				event_leader = yes	# prevents this leader from leading factions and winning elections
-				traits = { trait = leader_trait_army_veteran }
+				traits = { trait = leader_trait_governor_sfdoll_ump45 }
 				effect = {
 					change_leader_portrait = GFX_sfdoll_ump45
 					set_leader_flag = sfdoll_leader_ump45
@@ -187,54 +187,6 @@ country_event = {
 			#移除flag
 			#country_event = { id = sfdoll_ump45_event.6  }
 			#set_country_flag  = ump45_is_governor
-		}
-	}
-}
-
-#ump45担任科学家
-country_event = {
-	id = sfdoll_ump45_event.3
-	is_triggered_only = yes
-    hide_window = yes
-
-	#判断45是否战损，针对45在事件显示期间战损的情况
-	trigger = { NOT = {	has_country_flag = ump45_is_destroyed	}}
-	immediate = {
-		hidden_effect = {
-			every_owned_leader = {
-				limit = {
-					has_leader_flag = sfdoll_leader_ump45
-				}
-				kill_leader = {
-					show_notification = no
-					fire = yes
-				}
-			}
-			event_target:sfdoll_leader_ump45 = {
-				kill_leader = {
-					show_notification = no
-					fire = yes
-				}
-			}
-			create_leader = {
-				class = scientist
-				species = owner_species
-				name = "NAME_sfdoll_ump45"
-				skill = 1
-				set_age = 20
-				immortal = yes
-
-				event_leader = yes	# prevents this leader from leading factions and winning elections
-				traits = { trait =  leader_trait_scientist_sfdoll_ump45	}
-				effect = {
-					change_leader_portrait = GFX_sfdoll_ump45_03
-					set_leader_flag = sfdoll_leader_ump45
-					save_global_event_target_as = sfdoll_leader_ump45
-				}
-			}
-			#移除flag
-			#country_event = { id = sfdoll_ump45_event.6  }
-			#set_country_flag  = ump45_is_scientist
 		}
 	}
 }
@@ -270,10 +222,7 @@ country_event = {
 				set_age = 20
 				immortal = yes
 				event_leader = yes	# prevents this leader from leading factions and winning elections
-				traits = {
-					trait = leader_trait_trickster
-					trait = leader_trait_cautious
-				}
+				traits = { trait = leader_trait_admiral_sfdoll_ump45 }
 				effect = {
 					change_leader_portrait = GFX_sfdoll_ump45_03
 					set_leader_flag = sfdoll_leader_ump45
@@ -314,20 +263,17 @@ country_event = {
 				class = general
 				species = owner_species
 				name = "NAME_sfdoll_ump45"
-				skill = 5
+				skill = 3
 				set_age = 20
 				immortal = yes
 				event_leader = yes	# prevents this leader from leading factions and winning elections
-				traits = { trait = leader_trait_restrained trait = leader_trait_parts_cannibalizer }
+				traits = { trait = leader_trait_general_sfdoll_ump45 }
 				effect = {
 					change_leader_portrait = GFX_sfdoll_ump45_03
 					set_leader_flag = sfdoll_leader_ump45
 					save_global_event_target_as = sfdoll_leader_ump45
 				}
 			}
-			#移除flag
-			#country_event = { id = sfdoll_ump45_event.6  }
-			#set_country_flag  = ump45_is_general
 		}
 	}
 }

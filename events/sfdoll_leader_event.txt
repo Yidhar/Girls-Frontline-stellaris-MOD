@@ -88,7 +88,6 @@ country_event = {
 		planet_background = this
 		city_level = this
 	}
-	immediate = { set_country_flag = contract_diplomacy_engaged }
 
 	# 衔尾蛇担任总督
 	option = {
@@ -261,7 +260,6 @@ country_event = {
 	}
 
 	option = { name =  "EXIT" hidden_effect = { country_event = { id = sfdoll_elisa_event.3 } } }
-	after = { hidden_effect = { remove_country_flag = contract_diplomacy_engaged } }
 }
 
 

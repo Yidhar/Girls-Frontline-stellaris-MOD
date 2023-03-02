@@ -19,7 +19,6 @@ weapon_component_template = {
 		cost = {
 			minerals = 1000
 			alloys = 500
-			GF_nyto_dark_star_core = 5
 		}		
 		upkeep = {
 			food = 100
@@ -50,7 +49,6 @@ weapon_component_template = {
 		cost = {
 			minerals = 1000
 			alloys = 500
-			GF_nyto_dark_star_core = 5
 		}		
 		upkeep = {
 			food = 100
@@ -82,7 +80,6 @@ weapon_component_template = {
 		cost = {
 			minerals = 1000
 			alloys = 500
-			GF_nyto_dark_star_core = 5
 		}		
 		upkeep = {
 			food = 100
@@ -115,7 +112,6 @@ weapon_component_template = {
 		cost = {
 			minerals = 2000
 			rare_crystals=10
-			GF_nyto_dark_star_core = 5			 
 		}		
 		upkeep = {
 			food = 100
@@ -181,7 +177,6 @@ weapon_component_template = {
 		cost = {
 			minerals = 2000
 			rare_crystals=10
-			GF_nyto_dark_star_core = 5			 
 		}		
 		upkeep = {
 			food = 100

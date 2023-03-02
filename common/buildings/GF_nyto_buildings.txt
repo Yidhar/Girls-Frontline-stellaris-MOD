@@ -361,7 +361,7 @@ building_GFnyto_transportation_hub = {
 		weight = 999
 	}
 	country_modifier = {
-		country_resource_max_add = 1000
+		country_resource_max_add = 5000
 	}
 	ai_resource_production = {
 		trigger = {

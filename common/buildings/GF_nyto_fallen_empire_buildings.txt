@@ -253,7 +253,6 @@ building_GFnyto_fe_stronghold = {
 		category = planet_buildings
 		cost = {
 			minerals = @b2_minerals
-			GF_nyto_dark_star_core = 5
 		}
 		upkeep = {
 			energy = 10

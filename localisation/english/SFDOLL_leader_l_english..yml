@@ -144,7 +144,7 @@ sfdoll_gunslinger_girl_project:0 "Dream Theatre"
 sfdoll_gunslinger_girl_project_DESC:0 "$sfdoll_gunslinger_girl_event_2_desc$"
 
 sfdoll_gunslinger_girl_event_3:0 "Dream Theatre"
-sfdoll_gunslinger_girl_event_3_desc:0 "We successfully accessed the contents of the servers and found several intelligent bodies.\n\n§Y<You can now communicate with Triela through Elisa.>§!"
+sfdoll_gunslinger_girl_event_3_desc:0 "We successfully accessed the contents of the servers and found several intelligent bodies."
 sfdoll_gunslinger_girl_event_3_option:0 "Get them out"
 
 # sfdoll_gunslinger_girl_event_4:0 "Waking up from a big dream"
@@ -153,7 +153,7 @@ sfdoll_gunslinger_girl_event_3_option:0 "Get them out"
 sfdoll_gunslinger_girl_event_5:0 "Communicate with the representative of intelligent bodies"
 sfdoll_gunslinger_girl_event_5_desc:0 "Intelligent bodies here have different origins. I'm Triela, and I used to be human. \n\nFor the purpose of research, my mind is uploaded to the machine. Later, many changes took place in the outside world. I was forced to move to these digi-mind servers and met many other intelligent bodies. \n\nWe didn't know why we were here, and we couldn't leave until we met you."
 sfdoll_gunslinger_girl_event_5_option:0 "What do you know about the relics?"
-sfdoll_gunslinger_girl_event_5_response:0 "Much of the relic computers' content is inaccessible to us. We have conducted many investigations, but the results are few and far between."
+sfdoll_gunslinger_girl_event_5_response:0 "Much of the relic computers' content is inaccessible to us. We have conducted many investigations, but the results are few and far between.\n\n§Y<You can now communicate with Triela through Elisa.>§!"
 
 sfdoll_gunslinger_girl_event_6:0 "in communication with Triela"
 sfdoll_gunslinger_girl_event_6_desc:0 "Have a new mission?"
@@ -169,8 +169,8 @@ response_text_triela_become_scientist:0 "It looks complicated. I have to learn m
 response_text_triela_become_admiral:0 "I'll get everyone back safely."
 response_text_triela_become_general:0 "I'll get everyone back safely."
 
-leader_trait_governor_sfdoll_triela:0 "Cyborg"
-leader_trait_governor_sfdoll_triela_desc:0 "Let life be beautiful like summer flowers and death like autumn leaves."
+leader_trait_governor_sfdoll_triela:0 "Heroine"
+leader_trait_governor_sfdoll_triela_desc:0 "The leader was once a cyborg."
 
 leader_trait_scientist_sfdoll_triela:0 "$leader_trait_governor_sfdoll_triela$"
 leader_trait_scientist_sfdoll_triela_desc:0 "$leader_trait_governor_sfdoll_triela_desc$"

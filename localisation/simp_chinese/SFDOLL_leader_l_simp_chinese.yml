@@ -142,7 +142,7 @@ sfdoll_gunslinger_girl_project:0 "梦间剧"
 sfdoll_gunslinger_girl_project_DESC:0 "$sfdoll_gunslinger_girl_event_2_desc$"
 
 sfdoll_gunslinger_girl_event_3:0 "梦间剧"
-sfdoll_gunslinger_girl_event_3_desc:0 "我们成功访问了心智服务器的内容，并发现了数个智能体。\n§Y<你现在可以通过伊莱莎与崔耶拉交流。>§!"
+sfdoll_gunslinger_girl_event_3_desc:0 "我们成功访问了心智服务器的内容，并发现了数个智能体。"
 
 # sfdoll_gunslinger_girl_event_4:0 "大梦初醒"
 # sfdoll_gunslinger_girl_event_4_desc:0 "义体少女们的服务器随时可能报废.我们和她们沟通,将她们上传到人形素体中.\n 义体少女们就此结束了她们的梦境,以铁血人形的身份获得了重生."
@@ -150,7 +150,7 @@ sfdoll_gunslinger_girl_event_3_desc:0 "我们成功访问了心智服务器的�
 sfdoll_gunslinger_girl_event_5:0 "和智能体的代表通信"
 sfdoll_gunslinger_girl_event_5_desc:0 "这里的智能体有着不同的来历. 我是崔耶拉，曾经是人类。\n出于研究的目的，我的心智被上传到机器中. 后来，外面的世界发生了诸多变故，我被迫转移到这些心智服务器里，并遇见了许多其他的智能体。\n我们不清楚自己来到这里的原因，也无法离开这里，直到遇到你们。"
 sfdoll_gunslinger_girl_event_5_option:0 "你们对遗迹有何了解？"
-sfdoll_gunslinger_girl_event_5_response:0 "遗迹计算机的内容，有许多是我们无法访问的。我们进行过多次调查，但结果寥寥无几。"
+sfdoll_gunslinger_girl_event_5_response:0 "遗迹计算机的内容，有许多是我们无法访问的。我们进行过多次调查，但结果寥寥无几。\n§Y<你现在可以通过伊莱莎与崔耶拉交流。>§!"
 
 sfdoll_gunslinger_girl_event_6:0 "与崔耶拉通讯中"
 sfdoll_gunslinger_girl_event_6_desc:0 "有新任务吗？"
@@ -162,13 +162,13 @@ triela_become_general:0 "请指挥陆军部队吧"
 triela_has_this_job_now:0 "崔耶拉已经在进行这项工作"
 
 response_text_triela_become_governor:0 "包在我身上"
-response_text_triela_become_scientist:0 "看起来很复杂，我要学的还有很多."
+response_text_triela_become_scientist:0 "看起来很复杂，我要学的还有很多。"
 response_text_triela_become_admiral:0 "我会让大家平安回来的。"
 response_text_triela_become_general:0 "我会让大家平安回来的。"
 
 #Let life be beautiful like summer flowers and death like autumn leaves
-leader_trait_governor_sfdoll_triela:0 "义体人"
-leader_trait_governor_sfdoll_triela_desc:0 "生如夏花之绚烂，死如秋叶之静美"
+leader_trait_governor_sfdoll_triela:0 "女主角"
+leader_trait_governor_sfdoll_triela_desc:0 "这位领袖曾经是一位义体人。"
 
 leader_trait_scientist_sfdoll_triela:0 "$leader_trait_governor_sfdoll_triela$"
 leader_trait_scientist_sfdoll_triela_desc:0 "$leader_trait_governor_sfdoll_triela_desc$"

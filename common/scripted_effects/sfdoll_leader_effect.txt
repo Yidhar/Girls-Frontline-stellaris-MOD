@@ -2,15 +2,6 @@
 triela_become_governor_sfdoll_effect = {
 	optimize_memory
 	hidden_effect = {
-		every_owned_leader = {
-			limit = {
-				has_leader_flag = sfdoll_leader_triela
-			}
-			kill_leader = {
-				show_notification = no
-				fire = yes
-			}
-		}
 		event_target:sfdoll_leader_triela = {
 			kill_leader = {
 				show_notification = no
@@ -26,7 +17,7 @@ triela_become_governor_sfdoll_effect = {
 			immortal = yes
 			event_leader = yes	# prevents this leader from leading factions and winning elections
 			traits = {
-				trait = leader_trait_adaptable
+				trait = leader_trait_governor_sfdoll_triela
 				trait = leader_trait_righteous
 			}
 			effect = {
@@ -41,16 +32,6 @@ triela_become_governor_sfdoll_effect = {
 triela_become_scientist_sfdoll_effect = {
 	optimize_memory
 	hidden_effect = {
-		every_owned_leader = {
-			limit = {
-				has_leader_flag = sfdoll_leader_triela
-			}
-			kill_leader = {
-				show_notification = no
-				fire = yes
-			}
-		}
-
 		event_target:sfdoll_leader_triela = {
 			kill_leader = {
 				show_notification = no
@@ -65,9 +46,7 @@ triela_become_scientist_sfdoll_effect = {
 			set_age = 20
 			immortal = yes
 			event_leader = yes	# prevents this leader from leading factions and winning elections
-			traits = {
-				trait = leader_trait_adaptable
-			}
+			traits = {  trait = leader_trait_scientist_sfdoll_triela  }
 			effect = {
 				change_leader_portrait = GFX_sfdoll_triela
 				set_leader_flag = sfdoll_leader_triela
@@ -80,16 +59,6 @@ triela_become_scientist_sfdoll_effect = {
 triela_become_admiral_sfdoll_effect = {
 	optimize_memory
 	hidden_effect = {
-		every_owned_leader = {
-			limit = {
-				has_leader_flag = sfdoll_leader_triela
-			}
-			kill_leader = {
-				show_notification = no
-				fire = yes
-			}
-		}
-
 		event_target:sfdoll_leader_triela = {
 			kill_leader = {
 				show_notification = no
@@ -104,7 +73,7 @@ triela_become_admiral_sfdoll_effect = {
 			set_age = 20
 			immortal = yes
 			event_leader = yes	# prevents this leader from leading factions and winning elections
-			traits = {	trait = leader_trait_adaptable	}
+			traits = {	trait = leader_trait_admiral_sfdoll_triela	}
 			effect = {
 				change_leader_portrait = GFX_sfdoll_triela
 				set_leader_flag = sfdoll_leader_triela
@@ -117,16 +86,6 @@ triela_become_admiral_sfdoll_effect = {
 triela_become_general_sfdoll_effect = {
 	optimize_memory
 	hidden_effect = {
-		every_owned_leader = {
-			limit = {
-				has_leader_flag = sfdoll_leader_triela
-			}
-			kill_leader = {
-				show_notification = no
-				fire = yes
-			}
-		}
-
 		event_target:sfdoll_leader_triela = {
 			kill_leader = {
 				show_notification = no
@@ -142,9 +101,8 @@ triela_become_general_sfdoll_effect = {
 			immortal = yes
 			event_leader = yes	# prevents this leader from leading factions and winning elections
 			traits = {
-				trait = leader_trait_adaptable
+				trait = leader_trait_general_sfdoll_triela
 				trait = leader_trait_charismatic
-				trait = leader_trait_glory_seeker
 			}
 			effect = {
 				change_leader_portrait = GFX_sfdoll_triela

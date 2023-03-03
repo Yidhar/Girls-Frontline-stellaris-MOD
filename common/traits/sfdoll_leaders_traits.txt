@@ -504,10 +504,8 @@ leader_trait_sfdoll_talulah_governor = {
 	immortal_leaders = yes
 	icon="gfx/interface/icons/traits/sfdoll/leader_traits/leader_trait_sfdoll_talulah.dds"
 	modifier = {
-		pop_happiness = 0.1
-		planet_jobs_food_produces_mult = 0.15
-		planet_jobs_consumer_goods_produces_mult = 0.15
-		planet_jobs_unity_produces_mult = 0.15
+		pop_happiness = 0.15
+		planet_jobs_produces_mult = 0.15
 	}
 	leader_trait = { governor }
 	leader_class = { governor }
@@ -520,8 +518,9 @@ leader_trait_sfdoll_talulah_scientist = {
 	immortal_leaders = yes
 	icon="gfx/interface/icons/traits/sfdoll/leader_traits/leader_trait_sfdoll_talulah.dds"
 	modifier = {
+		category_particles_research_speed_mult = 0.15
 		category_statecraft_research_speed_mult = 0.15
-		category_particles_research_speed_mult = 0.1
+		category_military_theory_research_speed_mult = 0.15
 	}
 	leader_trait = { scientist }
 	leader_class = { scientist }
@@ -533,7 +532,7 @@ leader_trait_sfdoll_talulah_admiral = {
 	randomized = no
 	immortal_leaders = yes
 	icon="gfx/interface/icons/traits/sfdoll/leader_traits/leader_trait_sfdoll_talulah.dds"
-	modifier = {  ships_upkeep_mult = -0.15  }
+	modifier = {  ships_upkeep_mult = -0.1  }
 	leader_trait = { admiral }
 	leader_class = { admiral }
 	leader_potential_add = { from = { has_authority = auth_gf_sfdoll }}
@@ -548,4 +547,50 @@ leader_trait_sfdoll_talulah_general = {
 	leader_trait = { general }
 	leader_class = { general }
 	leader_potential_add = { from = { has_authority = auth_gf_sfdoll }}
+}
+# 霜星总督
+leader_trait_sfdoll_frostnova_governor = {
+	cost = 0
+	randomized = no
+	immortal_leaders = yes
+	icon=""
+	leader_trait = { governor }
+	leader_class = { governor }
+	leader_potential_add = { from = { has_authority = auth_gf_sfdoll }}
+}
+# 霜星科学家
+leader_trait_sfdoll_frostnova_scientist = {
+	cost = 0
+	randomized = no
+	immortal_leaders = yes
+	icon=""
+	leader_trait = { scientist }
+	leader_class = { scientist }
+	leader_potential_add = { from = { has_authority = auth_gf_sfdoll }}
+	modifier = {
+		category_particles_research_speed_mult = 0.15
+		category_biology_research_speed_mult = 0.15
+		category_materials_research_speed_mult = 0.15
+	}
+}
+# 霜星舰队司令
+leader_trait_sfdoll_frostnova_admiral = {
+	cost = 0
+	randomized = no
+	immortal_leaders = yes
+	icon=""
+	leader_trait = { admiral }
+	leader_class = { admiral }
+	leader_potential_add = { from = { has_authority = auth_gf_sfdoll }}
+}
+# 霜星陆军将领
+leader_trait_sfdoll_frostnova_general = {
+	cost = 0
+	randomized = no
+	immortal_leaders = yes
+	icon=""
+	leader_trait = { general }
+	leader_class = { general }
+	leader_potential_add = { from = { has_authority = auth_gf_sfdoll }}
+	modifier = { army_damage_mult = 0.1 }
 }

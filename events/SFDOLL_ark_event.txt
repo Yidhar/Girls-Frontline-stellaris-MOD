@@ -91,7 +91,88 @@ country_event = {
 				set_age = 20
 				immortal = yes
 				event_leader = yes	# prevents this leader from leading factions and winning elections
+				traits = {  trait = leader_trait_sfdoll_talulah_scientist  }
+				effect = {
+					change_leader_portrait = GFX_sfdoll_talulah
+					set_leader_flag = sfdoll_leader_talulah
+					save_global_event_target_as = sfdoll_leader_talulah
+				}
+			}
+		}
+	}
+
+	# 塔露拉担任舰队司令
+	option = {
+		name = "sfdoll_ark_event.1.c"
+		response_text = "sfdoll_ark_event.1.c.response"
+		allow = {
+			custom_tooltip = {
+				fail_text = "sfdoll_the_leader_is_doing_this_job"
+				NAND = {
+					exists = event_target:sfdoll_leader_talulah
+					event_target:sfdoll_leader_talulah = {
+						leader_class = admiral
+						owner = { is_same_value = root }
+					}
+				}
+			}
+		}
+		hidden_effect = {
+			if = {
+				limit = { exists = event_target:sfdoll_leader_talulah }
+				event_target:sfdoll_leader_talulah = { kill_leader = { show_notification = no fire = yes } }
+			}
+			create_leader = {
+				class = admiral
+				species = owner_species
+				name = "Name_sfdoll_talulah"
+				skill = 1
+				set_age = 20
+				immortal = yes
+				event_leader = yes	# prevents this leader from leading factions and winning elections
+				traits = {  trait = leader_trait_sfdoll_talulah_admiral  }
+				effect = {
+					change_leader_portrait = GFX_sfdoll_talulah
+					set_leader_flag = sfdoll_leader_talulah
+					save_global_event_target_as = sfdoll_leader_talulah
+				}
+			}
+		}
+	}
+	# 塔露拉担任陆军将领
+	option = {
+		name = "sfdoll_ark_event.1.d"
+		response_text = "sfdoll_ark_event.1.d.response"
+		allow = {
+			custom_tooltip = {
+				fail_text = "sfdoll_the_leader_is_doing_this_job"
+				NAND = {
+					exists = event_target:sfdoll_leader_talulah
+					event_target:sfdoll_leader_talulah = {
+						leader_class = general
+						owner = { is_same_value = root }
+					}
+				}
+			}
+		}
+		hidden_effect = {
+			if = {
+				limit = { exists = event_target:sfdoll_leader_talulah }
+				event_target:sfdoll_leader_talulah = { kill_leader = { show_notification = no fire = yes } }
+			}
+			create_leader = {
+				class = general
+				species = owner_species
+				name = "Name_sfdoll_talulah"
+				skill = 1
+				set_age = 20
+				immortal = yes
+				event_leader = yes	# prevents this leader from leading factions and winning elections
 				traits = {
+					trait = leader_trait_sfdoll_talulah_general
+					trait = leader_trait_restrained
+					trait = leader_trait_charismatic
+					trait = leader_trait_glory_seeker
 				}
 				effect = {
 					change_leader_portrait = GFX_sfdoll_talulah

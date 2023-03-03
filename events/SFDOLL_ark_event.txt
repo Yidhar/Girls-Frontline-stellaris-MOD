@@ -186,3 +186,75 @@ country_event = {
 
 	option = { name =  "EXIT" hidden_effect = { country_event = { id = sfdoll_elisa_event.3 } } }
 }
+# 塔露拉初次通讯
+country_event = {
+	id = sfdoll_ark_event.2
+	base = sfdoll_ark_event.1
+	desc_clear = yes
+	desc = sfdoll_ark_event.2.desc
+}
+
+# 霜星通讯界面
+country_event = {
+	id = sfdoll_ark_event.3
+	title = "sfdoll_ark_event.1"
+	desc = "sfdoll_ark_event.1.desc.a"
+	desc = "sfdoll_ark_event.1.desc.b"
+	desc = "sfdoll_ark_event.1.desc.c"
+	desc = "sfdoll_ark_event.1.desc.d"
+	is_triggered_only = yes
+	trigger = { has_authority = auth_gf_sfdoll }
+	diplomatic = yes
+	picture_event_data = {
+		portrait = GFX_sfdoll_talulah
+		room = this
+		graphical_culture = this
+		planet_background = this
+		city_level = this
+	}
+
+	# 塔露拉担任总督
+	option = {
+		name = "sfdoll_ark_event.1.a"
+		response_text = "sfdoll_ark_event.1.a.response"
+		allow = {
+			custom_tooltip = {
+				fail_text = "sfdoll_the_leader_is_doing_this_job"
+				NAND = {
+					exists = event_target:sfdoll_leader_talulah
+					event_target:sfdoll_leader_talulah = {
+						leader_class = governor
+						owner = { is_same_value = root }
+					}
+				}
+			}
+		}
+		hidden_effect = {
+			if = {
+				limit = { exists = event_target:sfdoll_leader_talulah }
+				event_target:sfdoll_leader_talulah = { kill_leader = { show_notification = no fire = yes } }
+			}
+			create_leader = {
+				class = governor
+				species = owner_species
+				name = "Name_sfdoll_talulah"
+				skill = 1
+				set_age = 20
+				immortal = yes
+				event_leader = yes	# prevents this leader from leading factions and winning elections
+				traits = {
+					trait = leader_trait_sfdoll_talulah_governor
+					trait = leader_trait_righteous
+				}
+				effect = {
+					change_leader_portrait = GFX_sfdoll_talulah
+					set_leader_flag = sfdoll_leader_talulah
+					save_global_event_target_as = sfdoll_leader_talulah
+				}
+			}
+		}
+	}
+
+	
+	option = { name =  "EXIT" hidden_effect = { country_event = { id = sfdoll_elisa_event.3 } } }
+}

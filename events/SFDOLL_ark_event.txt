@@ -9,6 +9,7 @@ country_event = {
 	desc = "sfdoll_ark_event.1.desc.b"
 	desc = "sfdoll_ark_event.1.desc.c"
 	desc = "sfdoll_ark_event.1.desc.d"
+	desc = {  text = "sfdoll_ark_event.1.desc.e"  trigger = {  has_country_flag = sfdoll_dingyi_owner  } }
 	is_triggered_only = yes
 	trigger = { has_authority = auth_gf_sfdoll }
 	diplomatic = yes

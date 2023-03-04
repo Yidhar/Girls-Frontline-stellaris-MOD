@@ -6,9 +6,7 @@ special_project = {
 	# cost = @tier3cost1
 	days_to_research = 30
 	tech_department = physics_technology
-
-	#待修改
-	picture = GFX_evp_sfdoll_digi_mind
+	picture = GFX_evt_mysterious_signal
 
 	event_scope = planet_event
 	requirements = {
@@ -26,7 +24,6 @@ special_project = {
 
 	on_fail = { }
 }
-
 
 #迈向锡安
 special_project = {
@@ -213,7 +210,7 @@ special_project = {
 	cost = 0
 	days_to_research = 360
 	tech_department = society_technology
-	picture = GFX_evp_sfdoll_mind_server
+	picture = GFX_evt_relic_world_building
 	event_scope = ship_event
 	requirements = {
 		shipclass_science_ship = 1

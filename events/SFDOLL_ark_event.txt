@@ -394,7 +394,7 @@ country_event = {
 	desc = "sfdoll_ark_event.5.desc"
 	hide_window = no
 	is_triggered_only = yes
-	picture = "GFX_evp_sfdoll_mind_server"
+	picture = "GFX_evt_mysterious_signal"
 	trigger = {	has_authority = auth_gf_sfdoll	}
 	immediate = {
 		# 刷诺耶露旁边
@@ -403,7 +403,7 @@ country_event = {
 				spawn_system = {
 					initializer = sfdoll_system_ark
 					hyperlane = no
-					is_discovered = yes
+					is_discovered = no
 					min_distance >= 25
 					max_distance <= 35
 					effect = {
@@ -416,7 +416,6 @@ country_event = {
 				}
 			}
 		}
-
 	}
 }
 # 星球项目完成
@@ -426,7 +425,7 @@ country_event = {
 	desc = "sfdoll_ark_event.6.desc"
 	hide_window = no
 	is_triggered_only = yes
-	picture = "GFX_evp_sfdoll_mind_server"
+	picture = "GFX_evt_relic_world_building"
 	trigger = { has_authority = auth_gf_sfdoll }
 	immediate = { country_event = {  id = sfdoll_ark_event.7  days = 720  } }
 	option = {

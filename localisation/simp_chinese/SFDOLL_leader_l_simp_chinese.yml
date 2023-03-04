@@ -23,14 +23,6 @@ leader_trait_elisa_sfd_scientist_desc:0 "伊莱莎曾经是一个搭载OGAS的�
 
 sfdoll_elisa_event.3:0 "联系一些领袖"
 sfdoll_elisa_event_3_a_desc:0 "要找谁？"
-# sfdoll_elisa_event.3_option_1:0 "莉娃"
-# sfdoll_elisa_event.3_option_2:0 "崔耶拉"
-# sfdoll_elisa_event.3_option_3:0 "诺耶露"
-# sfdoll_elisa_event.3_option_4:0 "OGAS"
-# sfdoll_elisa_event.3_option_5:0 "谢顿"
-# sfdoll_elisa_event.3_option_6:0 "丁仪"
-# sfdoll_elisa_event.3_option_7:0 "漫游者"
-# sfdoll_elisa_event.3_option_8:0 "智子"
 
 sfdoll_elisa_event.4:0 "和伊莱莎通讯"
 sfdoll_elisa_event_4_a_desc:0 "我已经要退休了，只能帮忙打电话. 共和国的未来，掌握在你们手里。\n\nOAGS是结合了遗迹文明和铁血人形的技术而诞生的人工智能，它的能力远远在我之上，你可以完全信任它。\n\n§Y<你现在可以通过通讯菜单与伊莱莎交流。>§!"

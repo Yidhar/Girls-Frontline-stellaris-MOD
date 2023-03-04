@@ -2,7 +2,7 @@
 site_noel_sfdoll = {
 	desc = "site_noel_sfdoll_desc"
 
-	picture = GFX_evp_sfdoll_toxic
+	picture = "GFX_evt_toxic"
 	stages = 4
 	weight = 0
 	allow = {

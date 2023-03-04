@@ -50,59 +50,6 @@ special_project = {
 	}
 }
 
-#发掘锡安中的数据
-# special_project = {
-# 	key = "SFDOLL_ZION_DIGI_PROJECT"
-# 	event_chain =sfdoll_main_event_chain
-# 	cost = @tier5cost3
-# 	days_to_research = 0
-# 	tech_department = society_technology
-
-# 	#待修改
-# 	picture = GFX_evp_sfdoll_unknown_civilization
-# 	event_scope = planet_event
-# 	requirements = {
-# 		leader = scientist
-# 		#skill = 3
-# 	}
-
-# 	#成功发掘数据
-# 	on_success = {
-# 		owner = {
-# 			country_event = {
-# 				id = sfdoll_relic_civilization_event.52
-# 			}
-# 		}
-# 	}
-# }
-
-# #解析飞船中的数据
-# special_project = {
-# 	key = "SFDOLL_ZION_SHIP_DIGI_PROJECT"
-# 	event_chain = sfdoll_main_event_chain
-# 	cost = @tier5cost3
-# 	# days_to_research = 60
-# 	tech_department = engineering_technology
-
-# 	#待修改
-# 	picture = GFX_evp_sfdoll_sapient_AI
-# 	event_scope = planet_event
-# 	requirements = {
-# 		leader = scientist
-# 		#skill = 3
-# 	}
-# 	on_success = {
-# 		owner = {
-# 			country_event = {
-# 				id = sfdoll_relic_civilization_event.55
-# 			}
-# 		}
-# 		# enable_special_project = {
-# 		# 	name = SFDOLL_CREATE_MOTHER_SHIP_PROJECT
-# 		# }
-# 	}
-# }
-
 #义体少女
 special_project = {
 	key = "sfdoll_gunslinger_girl_project"

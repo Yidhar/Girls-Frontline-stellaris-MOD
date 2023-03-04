@@ -167,7 +167,7 @@ country_event = {
 	title = "sfdoll_event.9"
 	desc = "sfdoll_event.9.desc"
 	is_triggered_only = yes
-	picture = GFX_evp_sfdoll_vortex
+	picture = "GFX_evt_vortex"
 	trigger = { has_authority = auth_gf_sfdoll  }
 }
 

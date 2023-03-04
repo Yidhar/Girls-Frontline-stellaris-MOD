@@ -23,14 +23,6 @@ leader_trait_elisa_sfd_scientist_desc:0 "Elisa used to be a super AI and the mas
 
 sfdoll_elisa_event.3:0 "Contact some leaders"
 sfdoll_elisa_event_3_a_desc:0 "Who to look for?"
-# sfdoll_elisa_event.3_option_1:0 "Riva"
-# sfdoll_elisa_event.3_option_2:0 "Triela"
-# sfdoll_elisa_event.3_option_3:0 "Noel"
-# sfdoll_elisa_event.3_option_4:0 "OGAS"
-# sfdoll_elisa_event.3_option_5:0 "Hari Seldon"
-# sfdoll_elisa_event.3_option_6:0 "Ding Yi"
-# sfdoll_elisa_event.3_option_7:0 "Roamer"
-# sfdoll_elisa_event.3_option_8:0 "Sophon"
 
 sfdoll_elisa_event.4:0 "Communication with Elisa"
 sfdoll_elisa_event_4_a_desc:0 "I'm retiring and can only help with phone calls. The future of the Republic is in your hands. \n\nOAGS is a AI that combines the technology of relic civilization and SF Doll. Its ability is far above mine, and you can fully trust it. \n\n§Y<You can now communicate with Elisa through the Contacts menu.>§!"

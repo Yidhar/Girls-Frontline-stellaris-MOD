@@ -2,10 +2,9 @@
 ###############################
 #旗帜
 FLAG_CATEGORY_sfdoll_flags:0"Sangvis Ferri Dolls"
-
 gf_sfdoll:0 "Sangvis Ferri Doll"
 
-origin_sfdoll_country:0 "Rise of Iron Empire"
+origin_sfdoll_country:0 "Doll Dawn"
 origin_sfdoll_country_desc:0 "The founders of this civilization were mechanical creatures. They left their home planet and established a new home in the universe."
 origin_sfdoll_country_description:0 "Starts with less population, divisions and buildings.\n\nStarts with some AI technology and auto-exploration technology."
 

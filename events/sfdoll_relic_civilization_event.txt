@@ -33,7 +33,7 @@ country_event = {
 	desc = "sfdoll_relic_civilization_event_1_desc"
 	is_triggered_only = yes
 	hide_window = no
-	picture = GFX_evp_sfdoll_ftl
+	picture = GFX_evt_federation_fleet
 	after = {
 		hidden_effect = {
 			country_event = {
@@ -51,7 +51,7 @@ country_event = {
 	desc = "sfdoll_relic_civilization_event_2_desc"
 	is_triggered_only = yes
 	hide_window = no
-	picture = GFX_evp_sfdoll_archaeo
+	picture = GFX_evt_archaeological_dig
 
 	after = {
 		capital_scope ={
@@ -85,7 +85,7 @@ fleet_event = {
 	is_triggered_only = yes
 	hide_window = no
 	archaeology = yes
-	picture = "GFX_evp_sfdoll_toxic"
+	picture = "GFX_evt_toxic"
 	immediate = { from = { set_site_progress_locked = yes } }
 
 	after = {
@@ -109,7 +109,7 @@ fleet_event = {
 	is_triggered_only = yes
 	hide_window = no
 	archaeology = yes
-	picture = "GFX_evp_sfdoll_toxic"
+	picture = "GFX_evt_toxic"
 	immediate = { from = { set_site_progress_locked = yes } }
 	after = {  from = { set_site_progress_locked = no }  }
 	
@@ -245,7 +245,7 @@ country_event = {
 	desc = "sfdoll_relic_civilization_event.51.desc"
 	is_triggered_only = yes
 	hide_window = no
-	picture = GFX_evp_sfdoll_physics_research
+	picture = "GFX_evt_physics_research"
 	option = {  name = "sfdoll_relic_civilization_event.51.a"  }
 	after = {  hidden_effect = { country_event = {  id = sfdoll_relic_civilization_event.52  } } }
 }
@@ -257,7 +257,7 @@ country_event = {
 	desc = "sfdoll_relic_civilization_event.52.desc"
 	is_triggered_only = yes
 	hide_window = no
-	picture = "GFX_evp_sfdoll_sapient_AI"
+	picture = "GFX_evt_sapient_AI"
 	option = {  name = "sfdoll_relic_civilization_event.52.a"  }
 	after = {  hidden_effect = { country_event = {  id = sfdoll_relic_civilization_event.53  }  }  }
 }
@@ -269,7 +269,7 @@ country_event = {
 	desc = "sfdoll_relic_civilization_event.53.desc"
 	is_triggered_only = yes
 	hide_window = no
-	picture = "GFX_evp_sfdoll_intelligence_report"
+	picture = "GFX_evt_intelligence_report"
 	option = {	name = "sfdoll_relic_civilization_event.53.a"	}
 	after = {
 		hidden_effect = {
@@ -287,7 +287,7 @@ country_event = {
 	desc = "sfdoll_relic_civilization_event.54.desc"
 	is_triggered_only = yes
 	hide_window = no
-	picture = "GFX_evp_sfdoll_intelligence_report"
+	picture = "GFX_evt_intelligence_report"
 	option = {
 		name = "sfdoll_relic_civilization_event.54.a"
 		add_research_option = tech_sfdoll_ap_phy
@@ -295,132 +295,3 @@ country_event = {
 		add_research_option = tech_sfdoll_ap_eng
 	}
 }
-
-# country_event = {
-# 	id = sfdoll_relic_civilization_event.51
-# 	title = "sfdoll_relic_civilization_event.51"
-# 	desc = "sfdoll_relic_civilization_event.51.desc"
-# 	is_triggered_only = yes
-# 	hide_window = no
-# 	picture = GFX_evp_sfdoll_physics_research
-# 	immediate = {
-# 		# hidden_effect = {
-# 		# 	country_event = {
-# 		# 		id = sfdoll_to_zion_event.3
-# 		# 		days = 60
-# 		# 	}
-# 		# }
-# 	}
-# 	option = {
-# 		name = sfdoll_relic_civilization_event.51.a
-# 		# capital_scope = {	enable_special_project = {	name = SFDOLL_ZION_DIGI_PROJECT		}	}
-# 		hidden_effect = {
-# 			country_event = {
-# 				id = sfdoll_relic_civilization_event.52
-# 			}
-# 		}
-# 	}
-# }
-
-# #进入母舰
-# # country_event = {
-# # 	id = sfdoll_relic_civilization_event.52
-# # 	title = "sfdoll_relic_civilization_event.52"
-# # 	desc = "sfdoll_relic_civilization_event.52.desc"
-# # 	is_triggered_only = yes
-# # 	hide_window = no
-# # 	picture = GFX_evp_sfdoll_physics_research
-# # 	option = {
-# # 		name = OK
-# # 		add_resource = {
-# # 			physics_research = 30000
-# # 			society_research = 5000
-# # 			engineering_research = 30000
-# # 		}
-# # 	}
-# # 	after = {
-# # 		country_event = {
-# # 			id = sfdoll_relic_civilization_event.53
-# # 			days = 60
-# # 		}
-# # 	}
-# # }
-
-# # 获取母舰中的信息
-# # country_event = {
-# # 	id = sfdoll_relic_civilization_event.53
-# # 	title = "sfdoll_relic_civilization_event.53"
-# # 	desc = "sfdoll_relic_civilization_event.53.desc"
-# # 	is_triggered_only = yes
-# # 	hide_window = no
-# # 	picture = GFX_evp_sfdoll_sapient_AI
-# # 	# option = {	name = sfdoll_to_zion_event_4_option	}
-# # 	after = {
-# # 		hidden_effect = {
-# # 			country_event = {
-# # 				id = sfdoll_relic_civilization_event.54
-# # 			}
-# # 		}
-# # 	}
-# # }
-
-# # 解读母舰中的信息
-# # country_event = {
-# # 	id = sfdoll_relic_civilization_event.54
-# # 	title = "sfdoll_relic_civilization_event.54"
-# # 	desc = "sfdoll_relic_civilization_event.54.desc"
-# # 	is_triggered_only = yes
-# # 	hide_window = no
-# # 	picture = GFX_evp_sfdoll_sapient_AI
-# # 	option = {
-# # 		name = sfdoll_relic_civilization_event.54.a
-# # 		capital_scope = {	enable_special_project = {	name = SFDOLL_ZION_SHIP_DIGI_PROJECT	}	}
-# # 	}
-# # }
-
-# # 次元巡礼，结局
-# country_event = {
-# 	id = sfdoll_relic_civilization_event.55
-# 	title = "sfdoll_relic_civilization_event.55"
-# 	desc = "sfdoll_relic_civilization_event.55.desc"
-# 	is_triggered_only = yes
-# 	hide_window = no
-# 	picture = GFX_evp_sfdoll_intelligence_report
-# 	option = {	name = sfdoll_relic_civilization_event.55.a }
-# 	after = {
-# 		hidden_effect = {
-# 			#进一步解析飞船数据，获得科技
-# 			country_event = {
-# 				id = sfdoll_relic_civilization_event.57
-# 			}
-# 		}
-# 	}
-# }
-
-# # 开始项目
-# country_event = {
-# 	id = sfdoll_relic_civilization_event.56
-# 	title = "sfdoll_relic_civilization_event.56"
-# 	desc = "sfdoll_relic_civilization_event.56.desc"
-# 	is_triggered_only = yes
-# 	hide_window = no
-# 	picture = GFX_evp_sfdoll_unknown_civilization
-# 	after = {
-# 		capital_scope = { enable_special_project = {	name = SFDOLL_TO_ZION_PROJECT	}	}
-# 	}
-# }
-
-# #次元巡礼，结局
-# country_event = {
-# 	id= sfdoll_relic_civilization_event.57
-# 	title = sfdoll_relic_civilization_event.57
-# 	desc = sfdoll_relic_civilization_event.57.desc
-# 	picture = GFX_evp_sfdoll_intelligence_report
-# 	is_triggered_only = yes
-# 	option = {
-# 		name = sfdoll_relic_civilization_event.57.a
-# 		add_research_option = tech_sfdoll_ap_phy
-# 		add_research_option = tech_sfdoll_ap_soc
-# 		add_research_option = tech_sfdoll_ap_eng
-# 	}
-# }

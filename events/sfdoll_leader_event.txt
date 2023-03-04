@@ -441,7 +441,7 @@ country_event = {
 	id = sfdoll_leader_event.11
 	title = "sfdoll_leader_event.11"
 	desc = "sfdoll_leader_event.11.desc"
-	picture = GFX_evp_sfdoll_robot_assembly_plant
+	picture = GFX_evt_robot_assembly_plant
 	is_triggered_only = yes
 	hide_window = no
 

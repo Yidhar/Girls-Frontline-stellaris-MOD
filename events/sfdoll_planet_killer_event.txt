@@ -92,7 +92,7 @@ country_event = {
 	title = "sfdoll_planet_killer_event.3"
 	desc = "sfdoll_planet_killer_event_3_desc"
 	is_triggered_only = yes
-	picture = GFX_evp_sfdoll_ship_in_orbit
+	picture = GFX_evt_ship_in_orbit
 	location = event_target:ship_sfdoll_noel
 	immediate = {
 		#清除之前留下的event target
@@ -431,7 +431,7 @@ country_event = {
 	title = sfdoll_planet_killer_event.6
 	desc = sfdoll_planet_killer_event.6_desc
 	is_triggered_only = yes
-	picture = GFX_evp_sfdoll_ship_in_orbit
+	picture = GFX_evt_ship_in_orbit
 	#刷新信标船
 	option = {
 		name = sfdoll_planet_killer_event.6_option_a
@@ -567,102 +567,7 @@ fleet_event = {
 		# }
 	}
 }
-#fromfrom is planet
-# fleet_event = {
-# 	id = sfdoll_planet_killer_event.10
-# 	title = sfdoll_planet_killer_event.10
-# 	desc = sfdoll_planet_killer_event.10.desc
-# 	picture = GFX_evp_sfdoll_planet_beam
-# 	location = this
-# 	hide_window = no
-# 	is_triggered_only = yes
-# 	trigger = {
-# 		owner = {	has_edict = sfdoll_weapon_T_PK_control	}
-# 		any_owned_ship = {	has_component = sfdoll_weapon_T_PK	}
-# 		fromfrom = {
-# 			NOT = {
-# 				OR = {
-# 					is_star = yes
-# 					is_planet_class = pc_shattered
-# 					is_planet_class = pc_shattered_2
-# 					is_planet_class = pc_shattered_ring_habitable
-# 				}
-# 			}
-# 		}
-# 	}
-# 	#摧毁星球
-# 	option = {
-# 		name = sfdoll_planet_killer_event.10_a
-# 		hidden_effect = {
-# 			fromfrom = {
-# 				planet_event = {
-# 					id = sfdoll_planet_killer_event.11
-# 				}
-# 			}
-# 		# 	#威慑值和得分
-# 		# 	owner = {
-# 		# 		add_threat = { who = from.owner amount = 3 }
-# 		# 		#save_event_target_as = crisis_country
-# 		# 		add_victory_score = {
-# 		# 			source = destroyed_stars_score
-# 		# 			score = 5
-# 		# 		}
-# 		# 	}
-			
-# 		# 	#planet
-# 		# 	fromfrom = {
-# 		# 		#处理殖民地
-# 		# 		if = {
-# 		# 			limit = { is_colony = yes }
-# 		# 			every_owned_pop = {
-# 		# 				kill_pop = yes
-# 		# 			}
-# 		# 			destroy_colony = yes
-# 		# 		}
-# 		# 		#炸的是恒星
-# 		# 		# if = {
-# 		# 		# 	limit =  { is_star = yes }
-# 		# 		# 	root = {
-# 		# 		# 		owner = {
-# 		# 		# 			#初次炸恒星
-# 		# 		# 			if = {
-# 		# 		# 				limit = {
-# 		# 		# 					NOT = { has_country_flag = cracked_first_star }
-# 		# 		# 				}
-# 		# 		# 				set_country_flag = cracked_first_star
-# 		# 		# 			}
-# 		# 		# 		}
-# 		# 		# 	}
-# 		# 		# 	#变成黑洞
-# 		# 		# 	change_pc = pc_black_hole
-# 		# 		# 	clear_deposits = yes
-# 		# 		# 	reset_planet = yes
-# 		# 		# }
-# 		# 		if = {
-# 		# 			#环世界
-# 		# 			limit  = {
-# 		# 				is_ringworld = yes
-# 		# 			}
-# 		# 			change_pc = pc_shattered_ring_habitable
-# 		# 			clear_deposits = yes
-# 		# 		}
-# 		# 		else = {
-# 		# 			change_pc = pc_shattered
-# 		# 			clear_deposits = yes
-# 		# 		}
-# 		# 	}
-# 		# 	create_message = {
-# 		# 		type = PLANET_DESTROYED
-# 		# 		localization = message_planet_destroyed_sfdoll
-# 		# 		days = 30
-# 		# 		target = fromfrom
-# 		# 	}
-# 		}
-# 	}
-# 	option = {
-# 		name = QUIT
-# 	}
-# }
+
 
 #T槽对星武器,from = fleet，和W槽触发时的作用域保持一致
 planet_event = {

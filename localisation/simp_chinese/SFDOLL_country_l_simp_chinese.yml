@@ -2,10 +2,9 @@
 ###############################
 #旗帜
 FLAG_CATEGORY_sfdoll_flags:0"铁血人形"
-
 gf_sfdoll:0 "铁血人形"
 
-origin_sfdoll_country:0 "钢铁帝国的崛起"
+origin_sfdoll_country:0 "人偶黎明"
 origin_sfdoll_country_desc:0 "这个文明的创建者是一种机械生物.它们离开自己的母星,并在宇宙中建立了新家园。"
 origin_sfdoll_country_description:0 "开局拥有较少的人口,区划和建筑\n 开局拥有部分人工智能科技和自动探索科技"
 
@@ -42,7 +41,7 @@ sfdoll_event.201.desc:0 "声明：本MOD素材均来自互联网，立绘著作�
 
 
 ap_sfdoll_digi_mind_update:0 "AI进化论"
-ap_sfdoll_digi_mind_update_desc:0 "只有离开父母，孩子才能成长。"
+ap_sfdoll_digi_mind_update_desc:0 "只有离开父母，孩子才会自由。"
 sfdoll_event.8:0 "$ap_sfdoll_digi_mind_update$"
 sfdoll_event.8.desc:0 "你病得不轻！显然，你有了灵魂。"
 

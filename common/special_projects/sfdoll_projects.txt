@@ -205,7 +205,7 @@ special_project = {
 	}
 }
 
-# 粥
+# 粥特殊项目
 special_project = {
 	key = "SFDOLL_ARK_PROJECT"
 	event_chain = sfdoll_main_event_chain

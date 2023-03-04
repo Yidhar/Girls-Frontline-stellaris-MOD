@@ -57,6 +57,7 @@ country_event = {
 		capital_scope ={
 			spawn_system = {
 				initializer = sfdoll_system_search_zion
+				hyperlane = no
 				is_discovered = yes
 				min_distance >= 25
 				max_distance <= 35

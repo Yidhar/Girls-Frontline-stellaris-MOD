@@ -392,23 +392,20 @@ country_event = {
 	picture = "GFX_evp_sfdoll_mind_server"
 	trigger = {	has_authority = auth_gf_sfdoll	}
 	immediate = {
+		# 刷诺耶露旁边
 		event_target:planet_sfdoll_embers_gloomy_1 = {
 			solar_system = {
 				spawn_system = {
 					initializer = sfdoll_system_ark
-					hyperlane = yes
+					hyperlane = no
 					is_discovered = yes
 					min_distance >= 25
 					max_distance <= 35
 					effect = {
-						set_surveyed = {
-							surveyed = yes
-						}
-						solar_system = {
-							add_hyperlane = {
-								from = THIS
-								to = root.capital_scope.solar_system
-							}
+						# set_surveyed = {  surveyed = yes  }
+						add_hyperlane = {
+							from = THIS
+							to = PREV
 						}
 					}
 				}
@@ -429,4 +426,25 @@ country_event = {
 	immediate = {
 		
 	}
+}
+
+# 角色加入
+country_event = {
+	id = sfdoll_ark_event.7
+	title = "sfdoll_ark_event.7"
+	desc = "sfdoll_ark_event.7.desc"
+	diplomatic = yes
+	picture_event_data = {
+		portrait = GFX_sfdoll_elisa
+		room = this
+		graphical_culture = this
+		planet_background = this
+		city_level = this
+	}	
+	is_triggered_only = yes
+	immediate = {
+		set_country_flag = sfdoll_talulah_owner
+		set_country_flag = sfdoll_frostnova_owner		
+	}
+	option = {  name = "REMARKABLE"  break = yes  }
 }

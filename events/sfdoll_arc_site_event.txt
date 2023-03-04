@@ -1,2 +1,0 @@
-namespace = sfdoll_arc_site_event
-#id标准写法为namespace的值加上编号

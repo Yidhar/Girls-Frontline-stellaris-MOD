@@ -24,8 +24,7 @@ special_project = {
 		}
 	}
 
-	on_fail = {
-	}
+	on_fail = { }
 }
 
 
@@ -204,4 +203,21 @@ special_project = {
 	}
 	on_fail = {
 	}
+}
+
+# 粥
+special_project = {
+	key = "SFDOLL_ARK_PROJECT"
+	event_chain = sfdoll_main_event_chain
+	#待修改
+	cost = 0
+	days_to_research = 360
+	tech_department = society_technology
+	picture = GFX_evp_sfdoll_mind_server
+	event_scope = ship_event
+	requirements = {
+		shipclass_science_ship = 1
+		leader = scientist
+	}
+	on_success = {  owner = { country_event = { id = sfdoll_ark_event.6 } } }
 }

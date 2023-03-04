@@ -381,3 +381,52 @@ country_event = {
 	desc_clear = yes
 	desc = sfdoll_ark_event.4.desc
 }
+
+# 粥事件开始
+country_event = {
+	id = sfdoll_ark_event.5
+	title = "sfdoll_ark_event.5"
+	desc = "sfdoll_ark_event.5.desc"
+	hide_window = no
+	is_triggered_only = yes
+	picture = "GFX_evp_sfdoll_mind_server"
+	trigger = {	has_authority = auth_gf_sfdoll	}
+	immediate = {
+		event_target:planet_sfdoll_embers_gloomy_1 = {
+			solar_system = {
+				spawn_system = {
+					initializer = sfdoll_system_ark
+					hyperlane = yes
+					is_discovered = yes
+					max_distance = 10
+					min_distance = 30
+					effect = {
+						set_surveyed = {
+							surveyed = yes
+						}
+						solar_system = {
+							add_hyperlane = {
+								from = THIS
+								to = root.capital_scope.solar_system
+							}
+						}
+					}
+				}
+			}
+		}
+
+	}
+}
+# 星球项目完成
+country_event = {
+	id = sfdoll_ark_event.6
+	title = "sfdoll_ark_event.6"
+	desc = "sfdoll_ark_event.6.desc"
+	hide_window = no
+	is_triggered_only = yes
+	picture = "GFX_evp_sfdoll_mind_server"
+	trigger = {	has_authority = auth_gf_sfdoll	}
+	immediate = {
+		
+	}
+}

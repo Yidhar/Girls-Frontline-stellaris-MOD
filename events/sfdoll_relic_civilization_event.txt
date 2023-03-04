@@ -55,10 +55,8 @@ country_event = {
 
 	after = {
 		capital_scope ={
-			#create_archaeological_site = site_noel_sfdoll
 			spawn_system = {
 				initializer = sfdoll_system_search_zion
-				hyperlane = yes
 				is_discovered = yes
 				max_distance = 10
 				min_distance = 30
@@ -77,39 +75,6 @@ country_event = {
 		}
 	}
 }
-
-#生成星系和诺耶露坟头
-country_event = {
-	id = sfdoll_relic_civilization_event.3
-	title = "sfdoll_relic_civilization_event_3"
-	desc = "sfdoll_relic_civilization_event_3_desc"
-	is_triggered_only = yes
-	hide_window = no
-	picture = GFX_evp_sfdoll_archaeo
-	
-	immediate = {
-		capital_scope ={
-			#create_archaeological_site = site_noel_sfdoll
-			spawn_system = {
-				initializer = sfdoll_system_search_zion
-				hyperlane = no
-				is_discovered = yes
-				max_distance = 10
-				min_distance = 30
-				effect = {
-					set_surveyed = {	surveyed = yes	}
-					solar_system = {
-						add_hyperlane = {
-							from = THIS
-							to = root.capital_scope.solar_system
-						}
-					}
-				}
-			}
-		}
-	}
-}
-
 
 #诺耶露坟头 stage1
 fleet_event = {

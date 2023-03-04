@@ -437,7 +437,7 @@ sfdoll_ark_event.1.c:0 "请担任舰队司令"
 sfdoll_ark_event.1.c.response:0 "宇宙可能吞噬我们中的任何人，我也不保证所有人都能平安回来。但是，请大家务必活下去！"
 sfdoll_ark_event.1.d:0 "请担任陆军将领"
 sfdoll_ark_event.1.d.response:0 "我们不该打没准备的仗. 把军事行动的情报传给我."
-sfdoll_ark_event.2.desc:0 "我是塔露拉，原本是普通的土著，现在是普通的铁血人形. 让我们开始工作吧."
+sfdoll_ark_event.2.desc:0 "我是塔露拉，原本是普通的土著，现在是普通的铁血人形."
 
 leader_trait_sfdoll_talulah_governor:0 "火焰"
 leader_trait_sfdoll_talulah_governor_desc:0 "这位领袖曾经是一位土著."
@@ -457,7 +457,7 @@ sfdoll_ark_event.3.desc.d:0 "和平是可贵的. 我可不希望天天打仗."
 sfdoll_ark_event.3.a:0 "请担任总督"
 sfdoll_ark_event.3.a.response:0 "真是沉重的担子。"
 sfdoll_ark_event.3.b:0 "请担任科学家"
-sfdoll_ark_event.3.b.response:0 "大自然的复杂，超出了我过去的想象. 这很有趣."
+sfdoll_ark_event.3.b.response:0 "物质结构的复杂，超出了我过去的想象. 这很有趣."
 sfdoll_ark_event.3.c:0 "请担任舰队司令"
 sfdoll_ark_event.3.c.response:0 "上太空前，我们务必做好充分的防护."
 sfdoll_ark_event.3.d:0 "请担任陆军将领"
@@ -472,3 +472,8 @@ leader_trait_sfdoll_frostnova_admiral:0 "$leader_trait_sfdoll_frostnova_governor
 leader_trait_sfdoll_frostnova_admiral_desc:0 "$leader_trait_sfdoll_frostnova_governor_desc$"
 leader_trait_sfdoll_frostnova_general:0 "$leader_trait_sfdoll_frostnova_governor$"
 leader_trait_sfdoll_frostnova_general_desc:0 "$leader_trait_sfdoll_frostnova_governor_desc$"
+
+Name_sfdoll_system_ark
+
+sfdoll_ark_event.5
+sfdoll_ark_event.5.desc

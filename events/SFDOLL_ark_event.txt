@@ -362,7 +362,12 @@ country_event = {
 				set_age = 20
 				immortal = yes
 				event_leader = yes	# prevents this leader from leading factions and winning elections
-				traits = {  trait = leader_trait_sfdoll_frostnova_general  }
+				traits = {
+					trait = leader_trait_sfdoll_frostnova_general
+					trait = leader_trait_restrained
+					trait = leader_trait_charismatic
+					trait = leader_trait_glory_seeker
+				}
 				effect = {
 					change_leader_portrait = GFX_sfdoll_Frostnova
 					set_leader_flag = sfdoll_leader_frostnova

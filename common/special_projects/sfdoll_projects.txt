@@ -68,7 +68,6 @@ special_project = {
 	on_success = {  owner = { country_event = { id = sfdoll_gunslinger_girl_event.3 } } }
 }
 
-
 #研究OGAS意志，获得OGAS人工智能科技和ump40领袖
 special_project = {
 	key = "sfdoll_project_ogas_ai"

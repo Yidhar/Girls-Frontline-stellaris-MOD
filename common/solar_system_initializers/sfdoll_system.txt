@@ -22,13 +22,14 @@ sfdoll_system_search_zion = {
 		init_effect = {
 			create_archaeological_site = site_noel_sfdoll
 			save_global_event_target_as = planet_sfdoll_embers_gloomy_1
+			set_name = "GF_new_type"
 		}
 	}
 }
 
 # 粥
 sfdoll_system_ark = {
-	name = Name_sfdoll_system_ark
+	name = "NAME_Terra"
 	class = sc_k
 	#usage = sfdoll_system_init
 	planet = {

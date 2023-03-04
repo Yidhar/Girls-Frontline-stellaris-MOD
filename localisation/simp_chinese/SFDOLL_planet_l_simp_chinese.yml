@@ -93,7 +93,6 @@ decision_planet_pop_to_sfdoll_effects_short:0 "星球上的非铁血人口会转
 pc_gf_sfdoll_embers_gloomy:0 "余烬黯然"
 pc_gf_sfdoll_embers_gloomy_desc:0 "气候恶劣的岩态行星,大气中含有浓厚的坍缩云,有坍塌风暴造访,带来的坍塌辐射对所有的生物和电子设备都非常致命。区域辐射浓度高,除了少数变异聚集性动植物以外,其他生物很难生存。"
 
-
 #planet_killer
 message_system_destroyed_sfdoll:0 "一个星系被摧毁了"
 message_planet_destroyed_sfdoll:0 "一个星球被摧毁了"

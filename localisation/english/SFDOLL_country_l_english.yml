@@ -3,6 +3,7 @@
 #旗帜
 FLAG_CATEGORY_sfdoll_flags:0"Sangvis Ferri Dolls"
 gf_sfdoll:0 "Sangvis Ferri Doll"
+GF_new_type:0 "New Type"
 
 origin_sfdoll_country:0 "Doll Dawn"
 origin_sfdoll_country_desc:0 "The founders of this civilization were mechanical creatures. They left their home planet and established a new home in the universe."

@@ -201,7 +201,6 @@ leader_trait_governor_sfdoll_noel = {
 		planet_jobs_physics_research_produces_mult = 0.5
 		planet_jobs_society_research_produces_mult = 0.5
 		planet_jobs_engineering_research_produces_mult = 0.5
-		leaders_upkeep_mult = -1
 	}
 	leader_trait = { governor }
 	leader_class = { governor }
@@ -236,8 +235,7 @@ leader_trait_admiral_sfdoll_noel = {
 	modifier = {
 		ship_fire_rate_mult = 0.5
 		ship_evasion_mult = 0.7
-		ship_tracking_mult = 0.7
-		leaders_upkeep_mult = -1		
+		ship_tracking_mult = 0.7	
 	}
 	leader_trait = { admiral }
 	leader_class = { admiral }
@@ -254,7 +252,6 @@ leader_trait_general_sfdoll_noel = {
 		army_health = 1
 		army_morale = 1
 		army_damage_mult = 1
-		leaders_upkeep_mult = -1
 	}
 	leader_trait = { general }
 	leader_class = { general }
@@ -266,7 +263,7 @@ leader_trait_governor_sfdoll_triela = {
 	cost = 0
 	randomized = no
 	icon="gfx/interface/icons/traits/sfdoll/leader_traits/leader_trait_sfdoll_triela.dds"
-	modifier = {  pop_happiness = 0.05 }
+	modifier = {  pop_happiness = 0.1 }
 	leader_trait = { governor }
 	leader_class = { governor }
 	leader_potential_add = {from = { has_authority = auth_gf_sfdoll }}
@@ -297,7 +294,7 @@ leader_trait_general_sfdoll_triela = {
 	cost = 0
 	randomized = no
 	icon="gfx/interface/icons/traits/sfdoll/leader_traits/leader_trait_sfdoll_triela.dds"
-	modifier = {  army_experience_gain_mult = 0.1 }
+	modifier = {  army_experience_gain_mult = 0.25 }
 	leader_trait = { general }
 	leader_class = { general }
 	leader_potential_add = {from = { has_authority = auth_gf_sfdoll }}
@@ -328,9 +325,8 @@ leader_trait_governor_ogas40 = {
 	randomized = no
 	icon="gfx/interface/icons/traits/sfdoll/leader_traits/leader_trait_ogas40.dds"
 	modifier = {
-		planet_jobs_physics_research_produces_mult = 0.5
-		planet_jobs_society_research_produces_mult = 0.5
-		planet_jobs_engineering_research_produces_mult = 0.5
+		pop_happiness = 0.15
+		planet_jobs_produces_mult = 0.15
 	}
 	leader_trait = { governor }
 	leader_class = { governor }
@@ -343,7 +339,8 @@ leader_trait_scientist_ogas40 = {
 	randomized = no
 	icon="gfx/interface/icons/traits/sfdoll/leader_traits/leader_trait_ogas40.dds"
 	modifier = {
-		all_technology_research_speed = 0.40
+		all_technology_research_speed = 0.15
+		ship_archaeological_site_excavation_speed_mult = 0.25
 	}
 	leader_trait = { scientist }
 	leader_class = { scientist }
@@ -378,7 +375,7 @@ leader_trait_scientist_sfd_hari_seldon = {
 	randomized = no
 	icon="gfx/interface/icons/traits/sfdoll/leader_traits/leader_trait_sfd_hari_seldon.dds"
 	modifier = {
-		all_technology_research_speed = 0.30
+		all_technology_research_speed = 0.1
 	}
 	leader_trait = { scientist }
 	leader_class = { scientist }
@@ -392,8 +389,8 @@ leader_trait_sfdoll_dingyi = {
 	icon="gfx/interface/icons/traits/sfdoll/leader_traits/leader_trait_sfdoll_dingyi.dds"
 	modifier = {
 		all_technology_research_speed = 0.1
-		category_field_manipulation_research_speed_mult = 0.15
-		category_particles_research_speed_mult = 0.15
+		category_field_manipulation_research_speed_mult = 0.2
+		category_particles_research_speed_mult = 0.2
 	}
 	leader_trait = { scientist }
 	leader_class = { scientist }
@@ -557,6 +554,10 @@ leader_trait_sfdoll_frostnova_governor = {
 	leader_trait = { governor }
 	leader_class = { governor }
 	leader_potential_add = { from = { has_authority = auth_gf_sfdoll }}
+	modifier = {
+		planet_jobs_unity_produces_mult = 0.15
+		planet_army_build_speed_mult = 0.2
+	}
 }
 # 霜星科学家
 leader_trait_sfdoll_frostnova_scientist = {
@@ -582,7 +583,6 @@ leader_trait_sfdoll_frostnova_admiral = {
 	leader_trait = { admiral }
 	leader_class = { admiral }
 	leader_potential_add = { from = { has_authority = auth_gf_sfdoll }}
-	modifier = { ship_hull_mult = 0.1 }
 }
 # 霜星陆军将领
 leader_trait_sfdoll_frostnova_general = {

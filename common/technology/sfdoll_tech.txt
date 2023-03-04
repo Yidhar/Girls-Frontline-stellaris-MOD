@@ -770,7 +770,7 @@ tech_sfdoll_ship_computer = {
 	is_rare = yes
 	is_reverse_engineerable = no
 	icon = tech_sfdoll_ship_computer
-	prerequisites = { tech_sfdoll_ogas_ai }
+	prerequisites = { tech_sfdoll_collapse_liquid_produce }
 	potential = { has_authority = auth_gf_sfdoll }
 	weight = 1000
 }

@@ -423,9 +423,7 @@ country_event = {
 	is_triggered_only = yes
 	picture = "GFX_evp_sfdoll_mind_server"
 	trigger = {	has_authority = auth_gf_sfdoll	}
-	immediate = {
-		
-	}
+	immediate = {  country_event = {  id = sfdoll_ark_event.7  days = 720  }  }
 }
 
 # 角色加入
@@ -444,7 +442,9 @@ country_event = {
 	is_triggered_only = yes
 	immediate = {
 		set_country_flag = sfdoll_talulah_owner
-		set_country_flag = sfdoll_frostnova_owner		
+		set_country_flag = sfdoll_frostnova_owner
+		set_country_flag = sfdoll_talulah_not_know
+		set_country_flag = sfdoll_frostnova_not_know
 	}
 	option = {  name = "REMARKABLE"  break = yes  }
 }

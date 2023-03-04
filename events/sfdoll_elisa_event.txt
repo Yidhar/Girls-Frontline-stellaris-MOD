@@ -208,18 +208,39 @@ country_event = {
 	}
 
 	# 找凉子
+	# option = {
+	# 	name = "NAME_SHIZUKI_RYOUKO"
+	# 	trigger = {	has_country_flag = sfdoll_shizuki_ryouko_owner	}
+	# 	hidden_effect = { country_event = { id = sfdoll_pmmm_event.1 } }
+	# }
+
+	# 找塔露拉
 	option = {
-		name = "NAME_SHIZUKI_RYOUKO"
-		trigger = {	has_country_flag = sfdoll_shizuki_ryouko_owner	}
-		hidden_effect = { country_event = { id = sfdoll_pmmm_event.1 } }
+		name = "Name_sfdoll_talulah"
+		trigger = {	has_country_flag = sfdoll_talulah_owner	}
+		hidden_effect = {
+			if = {
+				limit = { has_country_flag = sfdoll_talulah_not_know }
+				remove_country_flag = sfdoll_talulah_not_know
+				country_event = { id = sfdoll_ark_event.2 }
+			}
+			else = {  country_event = { id = sfdoll_ark_event.1 } }
+		}
+	}
+	# 找霜星
+	option = {
+		name = "Name_sfdoll_Frostnova"
+		trigger = {	has_country_flag = sfdoll_frostnova_owner	}
+		hidden_effect = {
+			if = {
+				limit = { has_country_flag = sfdoll_frostnova_not_know }
+				remove_country_flag = sfdoll_frostnova_not_know
+				country_event = { id = sfdoll_ark_event.4 }
+			}
+			else = { country_event = { id = sfdoll_ark_event.3 } }
+		}
 	}
 
-	# 联系智子
-	# option = {
-	# 	name = "sfdoll_elisa_event.3_option_8"
-	# 	trigger = {	has_country_flag = sfdoll_sophon_owner	}
-	# 	hidden_effect = { country_event = { id = sfdoll_three_body_event.3 } }
-	# }
 
 	#退出
 	option = { name =  "EXIT" break = yes }

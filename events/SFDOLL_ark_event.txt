@@ -14,7 +14,7 @@ country_event = {
 	trigger = { has_authority = auth_gf_sfdoll }
 	diplomatic = yes
 	picture_event_data = {
-		portrait = GFX_sfdoll_talulah
+		portrait = GFX_sfdoll_talulah_2
 		room = this
 		graphical_culture = this
 		planet_background = this
@@ -422,8 +422,13 @@ country_event = {
 	hide_window = no
 	is_triggered_only = yes
 	picture = "GFX_evp_sfdoll_mind_server"
-	trigger = {	has_authority = auth_gf_sfdoll	}
-	immediate = {  country_event = {  id = sfdoll_ark_event.7  days = 720  }  }
+	trigger = { has_authority = auth_gf_sfdoll }
+	immediate = { country_event = {  id = sfdoll_ark_event.7  days = 720  } }
+	option = {
+		name = "DISTURBING"
+		add_resource = { society_research = 10000 }
+		event_target:sfdoll_ark_planet = { add_deposit = d_society_8 }
+	}
 }
 
 # 角色加入

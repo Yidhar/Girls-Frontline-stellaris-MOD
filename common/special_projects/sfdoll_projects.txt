@@ -219,5 +219,8 @@ special_project = {
 		shipclass_science_ship = 1
 		leader = scientist
 	}
-	on_success = {  owner = { country_event = { id = sfdoll_ark_event.6 } } }
+	on_success = {
+		FROM = { save_event_target_as = sfdoll_ark_planet }
+		owner = {  country_event = { id = sfdoll_ark_event.6 } }
+	}
 }

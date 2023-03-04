@@ -430,9 +430,9 @@ sfdoll_ark_event.1.desc.c:0 "创造历史的，不是一两个领袖，而是全
 sfdoll_ark_event.1.desc.d:0 "过去的疮疤，也是我的燃料. 我会一直走下去，直到我的未来，将我的过去燃尽。"
 sfdoll_ark_event.1.desc.e:0 "丁仪博士，需要我帮你点个火吗？等等，酒精开始燃烧了？"
 sfdoll_ark_event.1.a:0 "请担任总督"
-sfdoll_ark_event.1.a.response:0 "温暖，光明，万家灯火，欢声笑语，这是无数人的共同追求。我乐意为他们鞠躬尽瘁。"
+sfdoll_ark_event.1.a.response:0 "温暖，光明，万家灯火，欢声笑语。人们追求美好生活，而我愿为他们鞠躬尽瘁。"
 sfdoll_ark_event.1.b:0 "请担任科学家"
-sfdoll_ark_event.1.b.response:0 "成为铁血人形之后，我学到了很多东西. 但我更加意识到，我们面对世界的规律，只是无知的孩童罢了。"
+sfdoll_ark_event.1.b.response:0 "面对世界的规律，我们仍是无知的孩童。"
 sfdoll_ark_event.1.c:0 "请担任舰队司令"
 sfdoll_ark_event.1.c.response:0 "宇宙可能吞噬我们中的任何人，我也不保证所有人都能平安回来。但是，请大家务必活下去！"
 sfdoll_ark_event.1.d:0 "请担任陆军将领"
@@ -473,10 +473,13 @@ leader_trait_sfdoll_frostnova_admiral_desc:0 "$leader_trait_sfdoll_frostnova_gov
 leader_trait_sfdoll_frostnova_general:0 "$leader_trait_sfdoll_frostnova_governor$"
 leader_trait_sfdoll_frostnova_general_desc:0 "$leader_trait_sfdoll_frostnova_governor_desc$"
 
-Name_sfdoll_system_ark
-sfdoll_ark_event.5
-sfdoll_ark_event.5.desc
-SFDOLL_ARK_PROJECT
-SFDOLL_ARK_PROJECT_DESC
-sfdoll_ark_event.6
-sfdoll_ark_event.6.desc
+Name_sfdoll_system_ark:0 "亚人"
+sfdoll_ark_event.5:0 "人类之谜"
+sfdoll_ark_event.5.desc:0 "遗迹文明和人类文明发生了什么？这个问题越来越令铁血人形感到困扰。\n在解析遗迹中的数据时，我们找到了某个不明舰队的活动痕迹，并获得了一些新的超空间航道信息. 追踪这些信息，我们也许能有新的发现。"
+SFDOLL_ARK_PROJECT:0 "亚人"
+SFDOLL_ARK_PROJECT_DESC:0 "这颗星球受到了严重污染。星球上的土著生物混合了人类和其他动物的特征。"
+sfdoll_ark_event.6:0 "亚人"
+sfdoll_ark_event.6.desc:0 "我们对亚人土著们的调查有了收获。土著们的生命长期受到危险物质‘源石’的威胁. 并且，星球受到了不明来源的坍塌液的污染. 这让行星的生态和社会产生了种种问题。"
+
+sfdoll_ark_event.7:0 "和伊莱莎通讯"
+sfdoll_ark_event.7.desc:0 "这几年，我在亚人土著的行星上考察时，凑巧捡到过几个有趣的年轻人。我给了它们一些无法拒绝的条件，让它们到我们的学校深造。\n§Y<你现在可以通过伊莱莎与塔露拉交流。>§\n§Y<你现在可以通过伊莱莎与霜星交流。>§"

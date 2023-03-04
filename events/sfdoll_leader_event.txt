@@ -66,6 +66,14 @@ country_event = {
 			limit = { exists = event_target:sfdoll_shizuki_ryouko }
 			event_target:sfdoll_shizuki_ryouko = { change_leader_portrait = GFX_sfdoll_Shizuki_Ryouko }
 		}
+		if = {
+			limit = { exists = event_target:sfdoll_leader_talulah }
+			event_target:sfdoll_leader_talulah = { change_leader_portrait = GFX_sfdoll_talulah }
+		}
+		if = {
+			limit = { exists = event_target:sfdoll_leader_frostnova }
+			event_target:sfdoll_leader_frostnova = { change_leader_portrait = GFX_sfdoll_Frostnova }
+		}
 	}
 }
 
@@ -583,7 +591,22 @@ country_event = {
 					save_global_event_target_as = sfdoll_leader_sophon
 				}
 			}
-
+			else_if = {
+				limit = {  has_leader_flag = sfdoll_leader_talulah }
+				clear_global_event_target = sfdoll_leader_talulah
+				event_target:new_leader_revive_sfdoll = {
+					set_leader_flag = sfdoll_leader_talulah
+					save_global_event_target_as = sfdoll_leader_talulah
+				}
+			}
+			else_if = {
+				limit = {  has_leader_flag = sfdoll_leader_frostnova }
+				clear_global_event_target = sfdoll_leader_frostnova
+				event_target:new_leader_revive_sfdoll = {
+					set_leader_flag = sfdoll_leader_frostnova
+					save_global_event_target_as = sfdoll_leader_frostnova
+				}
+			}
 		}
 	}
 }

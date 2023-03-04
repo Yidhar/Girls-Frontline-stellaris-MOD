@@ -143,40 +143,11 @@ country_event = {
 # 	id = sfdoll_test_event.7
 # 	hide_window = no
 # 	is_triggered_only = yes
-# 	immediate = {
-# 		event_target:sfdoll_leader_elisa = {
-# 			kill_leader = { show_notification = yes fire = no }
-# 		}
-# 		event_target:sfdoll_leader_ump45 = {
-# 			kill_leader = { show_notification = yes fire = no }
-# 		}
-# 		event_target:ogas40_sfdoll_leader = {
-# 			kill_leader = { show_notification = yes fire = no }
-# 		}
-# 		event_target:sfdoll_leader_ouroboros = {
-# 			kill_leader = { show_notification = yes fire = no }
-# 		}
-# 		event_target:sfdoll_exd_leader = {
-# 			kill_leader = { show_notification = yes fire = no }
-# 		}
-# 		event_target:sfdoll_leader_triela = {
-# 			kill_leader = { show_notification = yes fire = no }
-# 		}
-# 		event_target:sfdoll_leader_sophon = {
-# 			kill_leader = { show_notification = yes fire = no }
-# 		}
-# 		event_target:sfdoll_leader_dingyi  = {
-# 			kill_leader = { show_notification = yes }
-# 		}
-# 		event_target:sfdoll_shizuki_ryouko  = {
-# 			kill_leader = { show_notification = yes }
-# 		}
-# 	}
 # }
 
-country_event = {
-	id = sfdoll_test_event.8
-	hide_window = no
-	is_triggered_only = yes
-	immediate = {   every_owned_leader = {  kill_leader = {  show_notification = yes  }  } }
-}
+# country_event = {
+# 	id = sfdoll_test_event.8
+# 	hide_window = no
+# 	is_triggered_only = yes
+# 	immediate = {   every_owned_leader = {  kill_leader = {  show_notification = yes  }  } }
+# }

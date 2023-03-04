@@ -799,8 +799,8 @@ mega_sfdoll_ring_world_2 = {
 			initializer = sfdoll_system_mega_world
 			hyperlane = no
 			is_discovered = yes
-			max_distance = 10
-			min_distance = 50
+			min_distance >= 25
+			max_distance <= 35
 			effect = {
 				set_surveyed = {	surveyed = yes	}
 				add_hyperlane = {	from = THIS	to = root	}
@@ -1525,8 +1525,8 @@ sfdoll_mega_shipyard_2 = {
 			initializer = sfdoll_system_mega_world
 			hyperlane = no
 			is_discovered = yes
-			max_distance = 10
-			min_distance = 50
+			min_distance >= 25
+			max_distance <= 35
 			effect = {
 				set_surveyed = {	surveyed = yes	}
 				add_hyperlane = {	from = THIS	to = root	}

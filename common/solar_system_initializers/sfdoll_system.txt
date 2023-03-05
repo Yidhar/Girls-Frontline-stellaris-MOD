@@ -44,9 +44,7 @@ sfdoll_system_ark = {
 		orbit_distance = 25
 		size = 25
 		flags = { }
-		init_effect = {
-			enable_special_project = {  name = "SFDOLL_ARK_PROJECT"  }
-		}
+		init_effect = { enable_special_project = {  name = "SFDOLL_ARK_PROJECT"  } }
 	}
 }
 

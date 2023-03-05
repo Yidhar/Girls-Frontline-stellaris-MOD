@@ -431,7 +431,7 @@ sfdoll_ark_event.1.c:0 "Please serve as admiral"
 sfdoll_ark_event.1.c.response:0 "The universe may devour any of us, and I can't guarantee that all of us will come back safely. But, please keep on living!"
 sfdoll_ark_event.1.d:0 "Please serve as general"
 sfdoll_ark_event.1.d.response:0 "Give me the information. We can't start a war we're not prepared for."
-sfdoll_ark_event.2.desc:0 "Hello, first time to meet. I am Tarulah, just an ordinary aborigine."
+sfdoll_ark_event.2.desc:0 "Hello, I am Tarulah, an ordinary aborigine."
 
 leader_trait_sfdoll_talulah_governor:0 "Flame"
 leader_trait_sfdoll_talulah_governor_desc:0 "The leader is a half dragon."
@@ -457,7 +457,7 @@ sfdoll_ark_event.3.c.response:0 "Before going into space, we must make full prot
 sfdoll_ark_event.3.d:0 "Please serve as general"
 sfdoll_ark_event.3.d.response:0 "On the battlefield, we should be more united."
 sfdoll_ark_event.4.desc:0 "I'm Frostnova. You can also call me Yelena. Please keep your distance, my temperature may be too low..."
-# yelena
+
 leader_trait_sfdoll_frostnova_governor:0 "Frostnova"
 leader_trait_sfdoll_frostnova_governor_desc:0 "The leader is a rabbit."
 leader_trait_sfdoll_frostnova_scientist:0 "$leader_trait_sfdoll_frostnova_governor$"
@@ -477,4 +477,4 @@ sfdoll_ark_event.6:0 "Demi-Human"
 sfdoll_ark_event.6.desc:0 "Our investigation of planets has yielded results. \n\nThe genes of indigenous people contain human and many non-human elements, which may be the result of artificial modification. \n\nThe lives of indigenous people have been threatened by dangerous substances 'originium' for a long time. Moreover, the planet was contaminated by the collapse fluid from unknown sources. Therefore, the ecology and society of the planet face various problems."
 
 sfdoll_ark_event.7:0 "Communication with Elisa"
-sfdoll_ark_event.7.desc:0 "In recent years, I met several interesting young people when I was investigating in Terra. I made them some offers they couldn't refuse, so that they could go to our school for further study. \n\n§Y<You can now communicate with Talulah through Elisa.>§ \n\n§Y<You can now communicate with Frostnova through Elisa.>§"
+sfdoll_ark_event.7.desc:0 "In recent years, I have met two interesting young men in Terra. I cured them and made them some offers they couldn't refuse, so they came to us for study. \n\n§Y<You can now communicate with Talulah through Elisa.>§ \n\n§Y<You can now communicate with Frostnova through Elisa.>§"

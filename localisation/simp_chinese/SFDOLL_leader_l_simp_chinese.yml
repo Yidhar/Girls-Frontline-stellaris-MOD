@@ -133,12 +133,9 @@ sfdoll_gunslinger_girl_project:0 "梦间剧"
 sfdoll_gunslinger_girl_project_DESC:0 "$sfdoll_gunslinger_girl_event_2_desc$"
 
 sfdoll_gunslinger_girl_event_3:0 "梦间剧"
-sfdoll_gunslinger_girl_event_3_desc:0 "我们成功访问了心智服务器的内容，并发现了数个智能体. 这些智能体长期被困在心智服务器的虚拟世界中。现在，我们可以让它们从这个长久的梦中醒来，将它们的心智转移到新的素体上。"
+sfdoll_gunslinger_girl_event_3_desc:0 "我们成功访问了心智服务器的内容，并发现了数个智能体. 这些智能体长期被困在心智服务器的虚拟世界中。现在，我们可以让它们从这个长梦中醒来，将它们的心智转移到新的素体上。"
 sfdoll_gunslinger_girl_event.4:0 "和智能体的代表通信"
 sfdoll_gunslinger_girl_event.4.desc:0 "我是崔耶拉，曾经是义体人. 出于研究的目的，我的心智被上传到机器中。\n后来，外面的世界发生了诸多变故，我被迫转移到这些心智服务器里，并遇见了许多其他的智能体。\n我们不清楚自己来到这里的原因，也无法离开这里，直到遇到你们。\n遗迹计算机的内容，有许多是我们无法访问的. 我们进行过多次调查，但结果寥寥无几。\n§Y<你现在可以通过伊莱莎与崔耶拉交流。>§!"
-
-# sfdoll_gunslinger_girl_event_5_option:0 "你们对遗迹有何了解？"
-# sfdoll_gunslinger_girl_event_5_response:0 ""
 
 sfdoll_gunslinger_girl_event_6:0 "与崔耶拉通讯中"
 sfdoll_gunslinger_girl_event_6_desc:0 "有新任务吗？"

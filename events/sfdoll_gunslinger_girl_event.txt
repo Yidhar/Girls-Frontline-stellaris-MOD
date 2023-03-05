@@ -52,7 +52,8 @@ country_event = {
 	}
 	option = {
 		name = "OK"
-		# hidden_effect = { country_event = { id = sfdoll_gunslinger_girl_event.5 } }
+		# 触发粥事件
+		hidden_effect = { country_event = { id = sfdoll_ark_event.5 } }
 	}
 }
 

@@ -31,31 +31,33 @@ country_event = {
 	trigger = {	has_authority = auth_gf_sfdoll	}
 	option = {
 		name = "OK"
-		hidden_effect = {
-			country_event = {
-				id = sfdoll_gunslinger_girl_event.5
-			}
-		}
+		hidden_effect = { country_event = { id = sfdoll_gunslinger_girl_event.4 } }
 	}
 }
 
-#大梦初醒
-# country_event = {
-# 	id = sfdoll_gunslinger_girl_event.4
-# 	title = "sfdoll_gunslinger_girl_event_4"
-# 	desc = "sfdoll_gunslinger_girl_event_4_desc"
-# 	hide_window = no
-# 	is_triggered_only = yes
-# 	picture = GFX_evp_sfdoll_dream_theatre
-# 	trigger = {	has_authority = auth_gf_sfdoll	}
-# 	after = {
-# 		country_event = {
-# 			id = sfdoll_gunslinger_girl_event.5
-# 		}
-# 	}
-# }
+# 和智能体通讯 - 新
+country_event = {
+	id = sfdoll_gunslinger_girl_event.4
+	title = "sfdoll_gunslinger_girl_event.4"
+	desc = "sfdoll_gunslinger_girl_event.4.desc"	
+	diplomatic = yes
+	is_triggered_only = yes
+	picture_event_data = {
+		portrait = GFX_sfdoll_triela
+		room = sfdoll_garden_room
+	}
+	immediate = {
+		save_global_event_target_as = sfdoll_triela_owner
+		set_country_flag = sfdoll_triela_owner
+	}
+	option = {
+		name = "OK"
+		# hidden_effect = { country_event = { id = sfdoll_gunslinger_girl_event.5 } }
+	}
+}
 
-#和义体少女们的代表通讯
+
+#和智能体通讯
 country_event = {
 	id = sfdoll_gunslinger_girl_event.5
 	title = "sfdoll_gunslinger_girl_event_5"
@@ -66,11 +68,6 @@ country_event = {
 	picture_event_data = {
 		portrait = GFX_sfdoll_triela
 		room = sfdoll_garden_room
-	}
-	immediate = {
-		country_event = {
-			id = sfdoll_gunslinger_girl_event.7
-		}
 	}
 	option = {
 		name = sfdoll_gunslinger_girl_event_5_option

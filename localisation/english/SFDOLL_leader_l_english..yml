@@ -136,16 +136,12 @@ sfdoll_gunslinger_girl_project:0 "Dream Theatre"
 sfdoll_gunslinger_girl_project_DESC:0 "$sfdoll_gunslinger_girl_event_2_desc$"
 
 sfdoll_gunslinger_girl_event_3:0 "Dream Theatre"
-sfdoll_gunslinger_girl_event_3_desc:0 "We successfully accessed the contents of the servers and found several intelligent bodies."
-sfdoll_gunslinger_girl_event_3_option:0 "Get them out"
+sfdoll_gunslinger_girl_event_3_desc:0 "We successfully accessed the contents of the servers and found several intelligent bodies. \n\nThese intelligent bodies are permanently trapped in a virtual world of digi-mind servers. Now, we can wake them up from this long dream and transfer their digi-mind to new bodies."
+sfdoll_gunslinger_girl_event.4:0 "Communicate with the representative of intelligent bodies"
+sfdoll_gunslinger_girl_event.4.desc:0 "Intelligent bodies here have different origins. I'm Triela, and I used to be human. \n\nFor the purpose of research, my mind is uploaded to the machine. Later, many changes took place in the outside world. I was forced to move to these digi-mind servers and met many other intelligent bodies. \n\nWe didn't know why we were here, and we couldn't leave until we met you. \n\nMuch of the relic computers' content is inaccessible to us. We have conducted many investigations, but the results are few and far between.\n\n§Y<You can now communicate with Triela through Elisa.>§!"
 
-# sfdoll_gunslinger_girl_event_4:0 "Waking up from a big dream"
-# sfdoll_gunslinger_girl_event_4_desc:0 "Cyborg girls's server may be scrapped at any time. We communicated with them and uploaded them to the Sangvis Ferri body.\n\nCyborg girls ended their dreams and were reborn as Sangvis Ferri Dolls."
-
-sfdoll_gunslinger_girl_event_5:0 "Communicate with the representative of intelligent bodies"
-sfdoll_gunslinger_girl_event_5_desc:0 "Intelligent bodies here have different origins. I'm Triela, and I used to be human. \n\nFor the purpose of research, my mind is uploaded to the machine. Later, many changes took place in the outside world. I was forced to move to these digi-mind servers and met many other intelligent bodies. \n\nWe didn't know why we were here, and we couldn't leave until we met you."
-sfdoll_gunslinger_girl_event_5_option:0 "What do you know about the relics?"
-sfdoll_gunslinger_girl_event_5_response:0 "Much of the relic computers' content is inaccessible to us. We have conducted many investigations, but the results are few and far between.\n\n§Y<You can now communicate with Triela through Elisa.>§!"
+# sfdoll_gunslinger_girl_event_5_option:0 "What do you know about the relics?"
+# sfdoll_gunslinger_girl_event_5_response:0 "Much of the relic computers' content is inaccessible to us. We have conducted many investigations, but the results are few and far between.\n\n§Y<You can now communicate with Triela through Elisa.>§!"
 
 sfdoll_gunslinger_girl_event_6:0 "in communication with Triela"
 sfdoll_gunslinger_girl_event_6_desc:0 "Have a new mission?"
@@ -162,7 +158,7 @@ response_text_triela_become_admiral:0 "I'll get everyone back safely."
 response_text_triela_become_general:0 "I'll get everyone back safely."
 
 leader_trait_governor_sfdoll_triela:0 "Heroine"
-leader_trait_governor_sfdoll_triela_desc:0 "The leader was once a cyborg."
+leader_trait_governor_sfdoll_triela_desc:0 "This leader was once a cyborg."
 
 leader_trait_scientist_sfdoll_triela:0 "$leader_trait_governor_sfdoll_triela$"
 leader_trait_scientist_sfdoll_triela_desc:0 "$leader_trait_governor_sfdoll_triela_desc$"
@@ -434,7 +430,7 @@ sfdoll_ark_event.1.d.response:0 "Give me the information. We can't start a war w
 sfdoll_ark_event.2.desc:0 "Hello, I am Tarulah, an ordinary aborigine."
 
 leader_trait_sfdoll_talulah_governor:0 "Flame"
-leader_trait_sfdoll_talulah_governor_desc:0 "The leader is a half dragon."
+leader_trait_sfdoll_talulah_governor_desc:0 "This leader is a half dragon."
 leader_trait_sfdoll_talulah_scientist:0 "$leader_trait_sfdoll_talulah_governor$"
 leader_trait_sfdoll_talulah_scientist_desc:0 "$leader_trait_sfdoll_talulah_governor_desc$"
 leader_trait_sfdoll_talulah_admiral:0 "$leader_trait_sfdoll_talulah_governor$"
@@ -459,7 +455,7 @@ sfdoll_ark_event.3.d.response:0 "On the battlefield, we should be more united."
 sfdoll_ark_event.4.desc:0 "I'm Frostnova. You can also call me Yelena. Please keep your distance, my temperature may be too low..."
 
 leader_trait_sfdoll_frostnova_governor:0 "Frostnova"
-leader_trait_sfdoll_frostnova_governor_desc:0 "The leader is a rabbit."
+leader_trait_sfdoll_frostnova_governor_desc:0 "This leader is a rabbit."
 leader_trait_sfdoll_frostnova_scientist:0 "$leader_trait_sfdoll_frostnova_governor$"
 leader_trait_sfdoll_frostnova_scientist_desc:0 "$leader_trait_sfdoll_frostnova_governor_desc$"
 leader_trait_sfdoll_frostnova_admiral:0 "$leader_trait_sfdoll_frostnova_governor$"

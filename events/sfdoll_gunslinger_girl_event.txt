@@ -27,7 +27,7 @@ country_event = {
 	desc = "sfdoll_gunslinger_girl_event_3_desc"
 	hide_window = no
 	is_triggered_only = yes
-	picture = GFX_evp_sfdoll_dream_theatre
+	picture = GFX_evp_sfdoll_digi_mind
 	trigger = {	has_authority = auth_gf_sfdoll	}
 	option = {
 		name = "OK"

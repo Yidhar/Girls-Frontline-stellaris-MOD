@@ -450,7 +450,7 @@ sfdoll_ark_event.3.d.response:0 "在战场上，大家更要懂得团结。"
 sfdoll_ark_event.4.desc:0 "我是霜星，你们也可以叫我叶莲娜."
 
 leader_trait_sfdoll_frostnova_governor:0 "霜星"
-leader_trait_sfdoll_frostnova_governor_desc:0 "这位领袖曾经是一位土著."
+leader_trait_sfdoll_frostnova_governor_desc:0 "这位领袖是一只兔子。"
 leader_trait_sfdoll_frostnova_scientist:0 "$leader_trait_sfdoll_frostnova_governor$"
 leader_trait_sfdoll_frostnova_scientist_desc:0 "$leader_trait_sfdoll_frostnova_governor_desc$"
 leader_trait_sfdoll_frostnova_admiral:0 "$leader_trait_sfdoll_frostnova_governor$"

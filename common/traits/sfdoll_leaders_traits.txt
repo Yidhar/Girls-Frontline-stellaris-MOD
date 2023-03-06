@@ -80,8 +80,6 @@ leader_ruler_trait_gf_sfdoll= {
 	leader_potential_add = {from = { has_authority = auth_gf_sfdoll }}
 }
 
-
-
 #################升级特质
 #总督心智升级
 leader_governor_trait_gf_sfdoll_2 = {

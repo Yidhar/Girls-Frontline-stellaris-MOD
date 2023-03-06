@@ -459,12 +459,12 @@ leader_trait_sfdoll_frostnova_general:0 "$leader_trait_sfdoll_frostnova_governor
 leader_trait_sfdoll_frostnova_general_desc:0 "$leader_trait_sfdoll_frostnova_governor_desc$"
 
 NAME_Terra:0 "泰拉"
-sfdoll_ark_event.5:0 "人类之谜"
-sfdoll_ark_event.5.desc:0 "遗迹文明和人类文明发生了什么？这个问题越来越令铁血人形感到困扰。\n在解析遗迹中的数据时，我们找到了一些超空间航道和星球的信息. 探索这些地方，我们也许能有新的发现。"
+sfdoll_ark_event.5:0 "下一站"
+sfdoll_ark_event.5.desc:0 "在解析遗迹中的数据时，我们发现了一些异常星球的信息, 并找到了前往那里的超空间航道."
 SFDOLL_ARK_PROJECT:0 "亚人"
 SFDOLL_ARK_PROJECT_DESC:0 "这颗星球受到了严重污染。星球上的土著生物混合了人类和其他动物的特征。"
-sfdoll_ark_event.6:0 "亚人"
-sfdoll_ark_event.6.desc:0 "我们对行星的调查有了收获。土著们的基因包含了人类和多种非人类的成分，这很可能是人为改造的结果。土著们的生命长期受到危险物质‘源石’的威胁. 并且，星球受到了不明来源的坍塌液的污染. 所以，行星的生态和社会面临种种问题。"
+sfdoll_ark_event.7:0 "亚人"
+sfdoll_ark_event.7.desc:0 "我们对行星的调查有了收获。土著们的基因包含了人类和多种非人类的成分，这很可能是人为改造的结果。土著们的生命长期受到有害矿石的威胁. 并且，星球受到了不明来源的坍塌液的污染. 所以，行星的生态和社会面临种种问题。"
 
-sfdoll_ark_event.7:0 "和伊莱莎通讯"
-sfdoll_ark_event.7.desc:0 "这几年，我在泰拉遇到了两个有趣的年轻人. 我治愈了它们，并给了它们一些无法拒绝的条件，从而让它们到我们这里学习。\n§Y<你现在可以通过伊莱莎与塔露拉交流。>§\n§Y<你现在可以通过伊莱莎与霜星交流。>§"
+sfdoll_ark_event.8:0 "和伊莱莎通讯"
+sfdoll_ark_event.8.desc:0 "这几年，我在泰拉遇到了两个有趣的年轻人. 我治愈了它们，并给了它们一些无法拒绝的条件，从而让它们到我们这里学习。\n§Y<你现在可以通过伊莱莎与塔露拉交流。>§\n§Y<你现在可以通过伊莱莎与霜星交流。>§"

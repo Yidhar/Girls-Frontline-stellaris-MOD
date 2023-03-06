@@ -53,7 +53,7 @@ country_event = {
 	option = {
 		name = "OK"
 		# 触发粥事件
-		hidden_effect = { country_event = { id = sfdoll_ark_event.5 } }
+		hidden_effect = { country_event = { id = sfdoll_ark_event.5 days = 60 } }
 	}
 }
 

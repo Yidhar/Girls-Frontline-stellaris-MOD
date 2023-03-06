@@ -420,14 +420,14 @@ country_event = {
 }
 # 星球项目完成
 country_event = {
-	id = sfdoll_ark_event.6
-	title = "sfdoll_ark_event.6"
-	desc = "sfdoll_ark_event.6.desc"
+	id = sfdoll_ark_event.7
+	title = "sfdoll_ark_event.7"
+	desc = "sfdoll_ark_event.7.desc"
 	hide_window = no
 	is_triggered_only = yes
 	picture = "GFX_evt_relic_world_building"
 	trigger = { has_authority = auth_gf_sfdoll }
-	immediate = { country_event = {  id = sfdoll_ark_event.7  days = 720  } }
+	immediate = { country_event = {  id = sfdoll_ark_event.8  days = 720  } }
 	option = {
 		name = "DISTURBING"
 		add_resource = { society_research = 10000 }
@@ -437,9 +437,9 @@ country_event = {
 
 # 角色加入
 country_event = {
-	id = sfdoll_ark_event.7
-	title = "sfdoll_ark_event.7"
-	desc = "sfdoll_ark_event.7.desc"
+	id = sfdoll_ark_event.8
+	title = "sfdoll_ark_event.8"
+	desc = "sfdoll_ark_event.8.desc"
 	diplomatic = yes
 	picture_event_data = {
 		portrait = GFX_sfdoll_elisa

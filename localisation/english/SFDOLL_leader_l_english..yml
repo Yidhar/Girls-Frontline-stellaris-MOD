@@ -464,13 +464,13 @@ leader_trait_sfdoll_frostnova_general:0 "$leader_trait_sfdoll_frostnova_governor
 leader_trait_sfdoll_frostnova_general_desc:0 "$leader_trait_sfdoll_frostnova_governor_desc$"
 
 NAME_Terra:0 "Terra"
-sfdoll_ark_event.5:0 "The Mystery of Mankind"
-sfdoll_ark_event.5.desc:0 "What happened to relic civilization and human civilization? This problem is increasingly troubling SF Dolls.\n\nWhen analyzing the data in the relics, we found some information about hyperlanes and planets. Exploring these places, we may have new discoveries."
+sfdoll_ark_event.5:0 "Next Station"
+sfdoll_ark_event.5.desc:0 "When analyzing the data in the relics, we found some information about hyperlanes and planets. Exploring these places, we may have new discoveries."
 
 SFDOLL_ARK_PROJECT:0 "Demi-Human"
 SFDOLL_ARK_PROJECT_DESC:0 "This planet is seriously polluted. The planet's native creatures are a mixture of human and other animal characteristics."
-sfdoll_ark_event.6:0 "Demi-Human"
-sfdoll_ark_event.6.desc:0 "Our investigation of planets has yielded results. \n\nThe genes of indigenous people contain human and many non-human elements, which may be the result of artificial modification. \n\nThe lives of indigenous people have been threatened by dangerous substances 'originium' for a long time. Moreover, the planet was contaminated by the collapse fluid from unknown sources. Therefore, the ecology and society of the planet face various problems."
+sfdoll_ark_event.7:0 "Demi-Human"
+sfdoll_ark_event.7.desc:0 "Our investigation of planets has yielded results. \n\nThe genes of indigenous people contain human and many non-human elements, which may be the result of artificial modification. \n\nThe lives of indigenous people have been threatened by harmful ore for a long time. Moreover, the planet was contaminated by the collapse fluid from unknown sources. Therefore, the ecology and society of the planet face various problems."
 
-sfdoll_ark_event.7:0 "Communication with Elisa"
-sfdoll_ark_event.7.desc:0 "In recent years, I have met two interesting young men in Terra. I cured them and made them some offers they couldn't refuse, so they came to us for study. \n\n§Y<You can now communicate with Talulah through Elisa.>§ \n\n§Y<You can now communicate with Frostnova through Elisa.>§"
+sfdoll_ark_event.8:0 "Communication with Elisa"
+sfdoll_ark_event.8.desc:0 "In recent years, I have met two interesting young men in Terra. I cured them and made them some offers they couldn't refuse, so they came to us for study. \n\n§Y<You can now communicate with Talulah through Elisa.>§ \n\n§Y<You can now communicate with Frostnova through Elisa.>§"

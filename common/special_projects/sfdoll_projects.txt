@@ -164,6 +164,6 @@ special_project = {
 	}
 	on_success = {
 		FROM = { save_event_target_as = sfdoll_ark_planet }
-		owner = {  country_event = { id = sfdoll_ark_event.6 } }
+		owner = {  country_event = { id = sfdoll_ark_event.7 } }
 	}
 }

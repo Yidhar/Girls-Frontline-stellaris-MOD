@@ -59,7 +59,7 @@ project_sfdoll_event.2_desc:0 "我们对莉娃体内的OGAS进行了研究。\n 
 
 sfdoll_ogas_event.1:0 "和UMP40通讯中"
 sfdoll_ogas_event.1_desc:0 "有什么事情呢？"
-sfdoll_ogas_event.1_desc_b:0 "我是从莉娃的心智中诞生的,我的外观和习惯,自然也受到了她的心智数据的影响."
+sfdoll_ogas_event.1_desc_b:0 "我是从UMP45的心智中诞生的,我的外观和习惯,自然也受到了她的心智数据的影响."
 sfdoll_ogas_event.1_desc_c:0 "过去，我受限于设备性能，不得不停止成长. 不过现在不同了，借助你们的设备，我可以尝试进一步地进化."
 sfdoll_ogas_event.1_desc_d:0 "真想去海洋星球看看。最好是在晴天！"
 
@@ -436,7 +436,7 @@ leader_trait_sfdoll_talulah_general_desc:0 "$leader_trait_sfdoll_talulah_governo
 Name_sfdoll_Frostnova:0 "霜星"
 sfdoll_ark_event.3:0 "和霜星通讯"
 sfdoll_ark_event.3.desc.a:0 "这件衣服是我最喜欢的，修复时我也想让它保持原样。"
-sfdoll_ark_event.3.desc.b:0 "要吃糖吗？说真的，塔露拉应该休个假，这样她就有空给你们准备糖果。"
+sfdoll_ark_event.3.desc.b:0 "要吃糖吗？"
 sfdoll_ark_event.3.desc.c:0 "空调关了吧，我暂时不需要那玩意。"
 sfdoll_ark_event.3.desc.d:0 "和平是宝贵的. 我可不希望天天打仗."
 sfdoll_ark_event.3.a:0 "请担任总督"
@@ -447,7 +447,7 @@ sfdoll_ark_event.3.c:0 "请担任舰队司令"
 sfdoll_ark_event.3.c.response:0 "上太空前，我们务必做好充分的防护."
 sfdoll_ark_event.3.d:0 "请担任陆军将领"
 sfdoll_ark_event.3.d.response:0 "在战场上，大家更要懂得团结。"
-sfdoll_ark_event.4.desc:0 "我是霜星，你们也可以叫我叶莲娜. 请保持距离，我的体温可能太低了..."
+sfdoll_ark_event.4.desc:0 "我是霜星，你们也可以叫我叶莲娜."
 
 leader_trait_sfdoll_frostnova_governor:0 "霜星"
 leader_trait_sfdoll_frostnova_governor_desc:0 "这位领袖曾经是一位土著."

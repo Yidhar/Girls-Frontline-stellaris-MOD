@@ -222,7 +222,6 @@ planet_event = {
 	}
 }
 
-
 #次元巡礼，事件开始
 country_event = {
 	id = sfdoll_relic_civilization_event.50

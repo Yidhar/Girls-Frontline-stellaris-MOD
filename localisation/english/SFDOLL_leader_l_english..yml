@@ -61,7 +61,7 @@ project_sfdoll_event.2_desc:0 "We studied OGAS in Riva. \n At the same time, we 
 
 sfdoll_ogas_event.1:0 "Communicating with UMP40"
 sfdoll_ogas_event.1_desc:0 "What is the mission?"
-sfdoll_ogas_event.1_desc_b:0 "I was born from Riva's digi-mind, and my appearance and habits are naturally influenced by her mind data."
+sfdoll_ogas_event.1_desc_b:0 "I was born from UMP45's digi-mind, and my appearance and habits are naturally influenced by her mind data."
 sfdoll_ogas_event.1_desc_c:0 "In the past, I was limited by the performance of the equipment and had to stop growing. But now it is different, with your equipment, I can try evolve further."
 sfdoll_ogas_event.1_desc_d:0 "I really want to go to Ocean Planet. Preferably on a sunny day!"
 
@@ -136,7 +136,7 @@ sfdoll_gunslinger_girl_project:0 "Dream Theatre"
 sfdoll_gunslinger_girl_project_DESC:0 "$sfdoll_gunslinger_girl_event_2_desc$"
 
 sfdoll_gunslinger_girl_event_3:0 "Dream Theatre"
-sfdoll_gunslinger_girl_event_3_desc:0 "We successfully accessed the contents of the servers and found several intelligent bodies. \n\nThese intelligent bodies are permanently trapped in a virtual world of digi-mind servers. Now, we can wake them up from this long dream and transfer their digi-mind to new bodies."
+sfdoll_gunslinger_girl_event_3_desc:0 "We successfully accessed the contents of the servers and found several intelligent bodies. \n\nThese intelligent bodies are permanently trapped in a virtual world in digi-mind servers. Now, we can wake them up from this long dream and transfer their digi-mind to new bodies."
 sfdoll_gunslinger_girl_event.4:0 "Communicate with the representative of intelligent bodies"
 sfdoll_gunslinger_girl_event.4.desc:0 "I'm Triela, and I used to be a cyborg. \n\nFor the purpose of research, my mind is uploaded to the machine. Later, many changes took place in the outside world. I was forced to move to these digi-mind servers and met many other intelligent bodies. \n\nWe didn't know why we were here, and we couldn't leave until we met you. \n\nMuch of the relic computers' content is inaccessible to us. We have conducted many investigations, but the results are few and far between.\n\n§Y<You can now communicate with Triela through Elisa.>§!"
 
@@ -441,7 +441,7 @@ leader_trait_sfdoll_talulah_general_desc:0 "$leader_trait_sfdoll_talulah_governo
 Name_sfdoll_Frostnova:0 "Frostnova"
 sfdoll_ark_event.3:0 "Communication with Frostnova"
 sfdoll_ark_event.3.desc.a:0 "This dress is my favorite. I also want to keep it as it is when repairing it."
-sfdoll_ark_event.3.desc.b:0 "Want some sugar? Seriously, Tarula should take a vacation so that she can prepare candy for you."
+sfdoll_ark_event.3.desc.b:0 "Want some sugar?"
 sfdoll_ark_event.3.desc.c:0 "Turn off the air conditioner. I don't need it for the time being."
 sfdoll_ark_event.3.desc.d:0 "Peace is precious. I don't want to fight every day."
 sfdoll_ark_event.3.a:0 "Please serve as admiral"
@@ -452,7 +452,7 @@ sfdoll_ark_event.3.c:0 "Please serve as admiral"
 sfdoll_ark_event.3.c.response:0 "Before going into space, we must make full protection."
 sfdoll_ark_event.3.d:0 "Please serve as general"
 sfdoll_ark_event.3.d.response:0 "On the battlefield, we should be more united."
-sfdoll_ark_event.4.desc:0 "I'm Frostnova. You can also call me Yelena. Please keep your distance, my temperature may be too low..."
+sfdoll_ark_event.4.desc:0 "I'm Frostnova. You can also call me Yelena."
 
 leader_trait_sfdoll_frostnova_governor:0 "Frostnova"
 leader_trait_sfdoll_frostnova_governor_desc:0 "This leader is a rabbit."

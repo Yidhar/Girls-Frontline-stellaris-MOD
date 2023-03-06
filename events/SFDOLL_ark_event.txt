@@ -14,7 +14,7 @@ country_event = {
 	trigger = { has_authority = auth_gf_sfdoll }
 	diplomatic = yes
 	picture_event_data = {
-		portrait = GFX_sfdoll_talulah_2
+		portrait = GFX_sfdoll_talulah
 		room = this
 		graphical_culture = this
 		planet_background = this

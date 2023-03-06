@@ -102,10 +102,7 @@ country_event = {
 				NOT = {	has_country_flag = sfdoll_noel_is_destroyed }
 			}
 		}
-		hidden_effect = {
-			effect_noel_become_governor = yes
-			#country_event = { id = sfdoll_noel_event.2 }
-		}
+		hidden_effect = { effect_noel_become_governor = yes }
 		response_text = "response_text_noel_become_governor"
 	}
 

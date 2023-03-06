@@ -11,12 +11,10 @@ portraits = {
 	GFX_sfdoll_ump40_3 = { textureFile = "gfx/models/portraits/gf_sfdoll_02/ump40_3.dds" }
 	GFX_sfdoll_hari_seldon = { textureFile = "gfx/models/portraits/gf_sfdoll_02/gf_sfdoll_hari_seldon.dds" }
 	GFX_sfdoll_dingyi = { textureFile = "gfx/models/portraits/gf_sfdoll_02/dingyi.dds" }
-	GFX_sfdoll_jefuty = { textureFile = "gfx/models/portraits/gf_sfdoll_02/jefuty.dds" }
 	GFX_sfdoll_Tokiwa_Nanaka = { textureFile = "gfx/models/portraits/gf_sfdoll_02/Tokiwa_Nanaka.dds" }
 	GFX_sfdoll_Ouroboros = { textureFile = "gfx/models/portraits/gf_sfdoll_02/ouroboros.dds" }
 	GFX_sfdoll_Ouroboros_2 = { textureFile = "gfx/models/portraits/gf_sfdoll_02/ouroboros_2.dds" }
 	GFX_sfdoll_Shizuki_Ryouko = { textureFile = "gfx/models/portraits/gf_sfdoll_02/shizuki_ryouko.dds" }
 	GFX_sfdoll_talulah = { textureFile = "gfx/models/portraits/gf_sfdoll_02/talulah.dds" }
-	GFX_sfdoll_talulah_2 = { textureFile = "gfx/models/portraits/gf_sfdoll_02/talulah_2.dds" }
 	GFX_sfdoll_Frostnova = { textureFile = "gfx/models/portraits/gf_sfdoll_02/Frostnova.dds" }
 }

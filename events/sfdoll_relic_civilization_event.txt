@@ -170,7 +170,6 @@ country_event = {
 	is_triggered_only = yes
 	hide_window = no
 	picture = GFX_evp_sfdoll_noel_sleep
-
 	after = {  hidden_effect = { country_event = {  id = sfdoll_noel_event.2  days = 3600  } } }
 }
 

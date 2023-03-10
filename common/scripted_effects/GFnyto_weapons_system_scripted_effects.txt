@@ -289,53 +289,53 @@ GF_nyto_weapons_system ={
 			}
 		}
 	}
-	#护盾效果
-	if = {
-		limit = { 
-			any_owned_ship = {
-				OR = {
-					has_component = GFnyto_force_shield_L_3
-					has_component = GFnyto_force_shield_M_3
-					has_component = GFnyto_force_shield_S_3
-					has_component = GFnyto_force_shield_L_3_dc
-					has_component = GFnyto_force_shield_M_3_dc
-					has_component = GFnyto_force_shield_S_3_dc
-				}
-			}
-			fromfromfrom = { NOT = { has_fleet_flag = GF_nyto_shield_lv3_flag } }
-		}
-		fromfromfrom = { set_fleet_flag = GF_nyto_shield_lv3 }		
-	} else_if = {
-		limit = { 
-			any_owned_ship = {
-				OR = {
-					has_component = GFnyto_force_shield_L_2
-					has_component = GFnyto_force_shield_M_2
-					has_component = GFnyto_force_shield_S_2
-					has_component = GFnyto_force_shield_L_2_dc
-					has_component = GFnyto_force_shield_M_2_dc
-					has_component = GFnyto_force_shield_S_2_dc
-				}
-			}
-			fromfromfrom = { NOT = { has_fleet_flag = GF_nyto_shield_lv2_flag } }
-		}
-		fromfromfrom = { set_fleet_flag = GF_nyto_shield_lv2 }		
-	} else_if = {
-		limit = { 
-			any_owned_ship = {
-				OR = {
-					has_component = GFnyto_force_shield_L_1
-					has_component = GFnyto_force_shield_M_1
-					has_component = GFnyto_force_shield_S_1
-					has_component = GFnyto_force_shield_L_1_dc
-					has_component = GFnyto_force_shield_M_1_dc
-					has_component = GFnyto_force_shield_S_1_dc
-				}
-			}
-			fromfromfrom = { NOT = { has_fleet_flag = GF_nyto_shield_lv2_flag } }
-		}
-		fromfromfrom = { set_fleet_flag = GF_nyto_shield_lv1 }		
-	}
+	# #护盾效果
+	# if = {
+	# 	limit = { 
+	# 		any_owned_ship = {
+	# 			OR = {
+	# 				has_component = GFnyto_force_shield_L_3
+	# 				has_component = GFnyto_force_shield_M_3
+	# 				has_component = GFnyto_force_shield_S_3
+	# 				has_component = GFnyto_force_shield_L_3_dc
+	# 				has_component = GFnyto_force_shield_M_3_dc
+	# 				has_component = GFnyto_force_shield_S_3_dc
+	# 			}
+	# 		}
+	# 		fromfromfrom = { NOT = { has_fleet_flag = GF_nyto_shield_lv3_flag } }
+	# 	}
+	# 	fromfromfrom = { set_fleet_flag = GF_nyto_shield_lv3 }		
+	# } else_if = {
+	# 	limit = { 
+	# 		any_owned_ship = {
+	# 			OR = {
+	# 				has_component = GFnyto_force_shield_L_2
+	# 				has_component = GFnyto_force_shield_M_2
+	# 				has_component = GFnyto_force_shield_S_2
+	# 				has_component = GFnyto_force_shield_L_2_dc
+	# 				has_component = GFnyto_force_shield_M_2_dc
+	# 				has_component = GFnyto_force_shield_S_2_dc
+	# 			}
+	# 		}
+	# 		fromfromfrom = { NOT = { has_fleet_flag = GF_nyto_shield_lv2_flag } }
+	# 	}
+	# 	fromfromfrom = { set_fleet_flag = GF_nyto_shield_lv2 }		
+	# } else_if = {
+	# 	limit = { 
+	# 		any_owned_ship = {
+	# 			OR = {
+	# 				has_component = GFnyto_force_shield_L_1
+	# 				has_component = GFnyto_force_shield_M_1
+	# 				has_component = GFnyto_force_shield_S_1
+	# 				has_component = GFnyto_force_shield_L_1_dc
+	# 				has_component = GFnyto_force_shield_M_1_dc
+	# 				has_component = GFnyto_force_shield_S_1_dc
+	# 			}
+	# 		}
+	# 		fromfromfrom = { NOT = { has_fleet_flag = GF_nyto_shield_lv2_flag } }
+	# 	}
+	# 	fromfromfrom = { set_fleet_flag = GF_nyto_shield_lv1 }		
+	# }
 	random_controlled_ship = {
 		#配件
 		if = {

@@ -14,5 +14,3 @@ weapon_type_Electronic
 weapon_type_beacon
 weapon_type_aoe
 weapon_type_fireworks
-weapon_type_GF_collapsed
-weapon_type_sfdoll

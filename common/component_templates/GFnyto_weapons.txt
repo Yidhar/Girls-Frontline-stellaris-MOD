@@ -709,9 +709,6 @@ weapon_component_template = {
 	prerequisites = {
 		"tech_GF_nyto_G"
 	}
-	ship_modifier = {
-		custom_tooltip = "GF_Nyto_missile_g_weapon1_modif"
-	}
 	component_set = "GF_Nyto_g_weapon1"
 	projectile_gfx = "GF_large_torpedo_03"
 	tags = {
@@ -722,15 +719,16 @@ weapon_component_template = {
 		weapon_role_anti_armor
 	}
 	damage = {
-		min = 10
-		max = 20
+		min = 2
+		max = 10
 	}
 	windup = {
 		min = 0
 		max = 0
 	}
-	total_fire_time = 0
-	range = 40
+	total_fire_time = 1
+	range = 50
+	min_range = 20
 	shield_damage = 1
 	armor_penetration = 0.25
 	prio_projectile = yes
@@ -767,6 +765,7 @@ weapon_component_template = {
 	ship_modifier = {
 		custom_tooltip = "GF_Nyto_missile_g_weapon1_modif"
 	}
+	point_defence_targets = { "missile" "strike_craft" }
 	component_set = "GF_Nyto_g_weapon2"
 	projectile_gfx = "GF_large_torpedo_03"
 	tags = {
@@ -777,18 +776,19 @@ weapon_component_template = {
 	ai_tags = {
 		weapon_role_point_defense
 		weapon_role_anti_hull
+		screen
 	}
 	damage = {
-		min = 5
-		max = 50
+		min = 10
+		max = 10
 	}
 	windup = {
-		min = 2
-		max = 20
+		min = 0
+		max = 0
 	}
-	total_fire_time = 0
+	total_fire_time = 1
 	prio_projectile = yes
-	range = 40
+	range = 20
 	accuracy = 1
 	tracking = 1
 	resources = {
@@ -932,7 +932,9 @@ strike_craft_component_template = {
 	}
 	ai_tags = {
 		weapon_role_point_defense
+		screen
 	}
+	point_defence_targets = { "missile" "strike_craft" }
 	count = 1	#舰载机初始数量
 	regeneration_per_day = 0.1	#每天生产的舰载机数量
 	launch_time = 1	#装填时间	
@@ -1001,7 +1003,9 @@ weapon_component_template = {
 	ai_tags = {
 		weapon_role_point_defense
 		weapon_type_point_defense
+		screen
 	}
+	point_defence_targets = { "missile" "strike_craft" }
 	damage = {
 		min = 7
 		max = 14
@@ -1060,7 +1064,9 @@ weapon_component_template = {
 	}
 	ai_tags = {
 		weapon_role_point_defense
+		screen
 	}
+	point_defence_targets = { "missile" "strike_craft" }
 	damage = {
 		min = 20
 		max = 40

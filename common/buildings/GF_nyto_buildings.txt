@@ -10,19 +10,46 @@ building_GFnyto_collapse_exploit_plant_1 = {
 	}
 	triggered_desc = {
 		trigger = {
-			check_variable = {
-				which = GFnyto_plante_wrlv
-				value > 200
+			or = {
+				and = {
+					check_variable = {
+						which = GFnyto_plante_wrlv
+						value > 200
+					}
+					not = {
+						has_district = district_GF_nyto_pc_toxic_science
+					}
+				}
+				and = {
+					check_variable = {
+						which = GFnyto_plante_wrlv
+						value > 700
+					}
+					has_district = district_GF_nyto_pc_toxic_science
+				}
 			}
 		}
 		text = "GF_nyto_plante_build_off"
 	}
 	triggered_planet_modifier = {
 		potential = {
-
-			check_variable = {
-				which = GFnyto_plante_wrlv
-				value < 200
+			or = {
+				and = {
+					check_variable = {
+						which = GFnyto_plante_wrlv
+						value < 200
+					}
+					not = {
+						has_district = district_GF_nyto_pc_toxic_science
+					}
+				}
+				and = {
+					check_variable = {
+						which = GFnyto_plante_wrlv
+						value < 700
+					}
+					has_district = district_GF_nyto_pc_toxic_science
+				}
 			}
 		}
 		job_GFnyto_collapse_particle_researcher_add = 2
@@ -34,9 +61,18 @@ building_GFnyto_collapse_exploit_plant_1 = {
 		}
 		upkeep = {
 			trigger = {
-				check_variable = {
-					which = GFnyto_plante_wrlv
-					value < 200
+				or = {
+					check_variable = {
+						which = GFnyto_plante_wrlv
+						value < 200
+					}
+					and = {
+						check_variable = {
+							which = GFnyto_plante_wrlv
+							value < 700
+						}
+						has_district = district_GF_nyto_pc_toxic_science
+					}
 				}
 			}
 			energy = 4
@@ -48,10 +84,20 @@ building_GFnyto_collapse_exploit_plant_1 = {
 					which = GFnyto_plante_wrlv
 					value > 0
 				}
-				check_variable = {
-					which = GFnyto_plante_wrlv
-					value < 200
+				or = {
+					check_variable = {
+						which = GFnyto_plante_wrlv
+						value < 200
+					}
+					and = {
+						check_variable = {
+							which = GFnyto_plante_wrlv
+							value < 700
+						}
+						has_district = district_GF_nyto_pc_toxic_science
+					}
 				}
+
 			}
 			energy = 0.07
 			multiplier = planet.GFnyto_plante_wrlv
@@ -91,9 +137,23 @@ building_GFnyto_collapse_exploit_plant_2 = {
 	}
 	triggered_desc = {
 		trigger = {
-			check_variable = {
-				which = GFnyto_plante_wrlv
-				value > 500
+			or = {
+				and = {
+					check_variable = {
+						which = GFnyto_plante_wrlv
+						value > 500
+					}
+					not = {
+						has_district = district_GF_nyto_pc_toxic_science
+					}
+				}
+				and = {
+					check_variable = {
+						which = GFnyto_plante_wrlv
+						value > 700
+					}
+					has_district = district_GF_nyto_pc_toxic_science
+				}
 			}
 		}
 		text = "GF_nyto_plante_build_off"
@@ -101,10 +161,23 @@ building_GFnyto_collapse_exploit_plant_2 = {
 	
 	triggered_planet_modifier = {
 		potential = {
-
-			check_variable = {
-				which = GFnyto_plante_wrlv
-				value < 500
+			or = {
+				and = {
+					check_variable = {
+						which = GFnyto_plante_wrlv
+						value < 500
+					}
+					not = {
+						has_district = district_GF_nyto_pc_toxic_science
+					}
+				}
+				and = {
+					check_variable = {
+						which = GFnyto_plante_wrlv
+						value < 700
+					}
+					has_district = district_GF_nyto_pc_toxic_science
+				}
 			}
 		}
 		job_GFnyto_collapse_particle_researcher_add = 3
@@ -117,9 +190,18 @@ building_GFnyto_collapse_exploit_plant_2 = {
 		upkeep = {
 			trigger = {
 				is_variable_set = GFnyto_plante_wrlv
-				check_variable = {
-					which = GFnyto_plante_wrlv
-					value < 500
+				or = {
+					check_variable = {
+						which = GFnyto_plante_wrlv
+						value < 500
+					}
+					and = {
+						check_variable = {
+							which = GFnyto_plante_wrlv
+							value < 700
+						}
+						has_district = district_GF_nyto_pc_toxic_science
+					}
 				}
 			}
 			energy = 6
@@ -129,11 +211,20 @@ building_GFnyto_collapse_exploit_plant_2 = {
 				is_variable_set = GFnyto_plante_wrlv
 				check_variable = {
 					which = GFnyto_plante_wrlv
-					value < 500
-				}
-				check_variable = {
-					which = GFnyto_plante_wrlv
 					value > 10
+				}
+				or = {
+					check_variable = {
+						which = GFnyto_plante_wrlv
+						value < 500
+					}
+					and = {
+						check_variable = {
+							which = GFnyto_plante_wrlv
+							value < 700
+						}
+						has_district = district_GF_nyto_pc_toxic_science
+					}
 				}
 			}
 			energy = 0.05
@@ -480,9 +571,21 @@ building_GFnyto_algorithm = {
 	triggered_desc = {
 		trigger = {
 			or = {
-				check_variable = {
-					which = GFnyto_plante_wrlv
-					value > 500
+				and = {
+					check_variable = {
+						which = GFnyto_plante_wrlv
+						value > 500
+					}
+					not = {
+						has_district = district_GF_nyto_pc_toxic_science
+					}
+				}
+				and = {
+					check_variable = {
+						which = GFnyto_plante_wrlv
+						value > 700
+					}
+					has_district = district_GF_nyto_pc_toxic_science
 				}
 			}
 		}
@@ -537,9 +640,21 @@ building_GFnytp_framework_core = {
 	triggered_desc = {
 		trigger = {
 			or = {
-				check_variable = {
-					which = GFnyto_plante_wrlv
-					value > 500
+				and = {
+					check_variable = {
+						which = GFnyto_plante_wrlv
+						value > 500
+					}
+					not = {
+						has_district = district_GF_nyto_pc_toxic_alloy
+					}
+				}
+				and = {
+					check_variable = {
+						which = GFnyto_plante_wrlv
+						value > 700
+					}
+					has_district = district_GF_nyto_pc_toxic_alloy
 				}
 			}
 		}
@@ -547,9 +662,23 @@ building_GFnytp_framework_core = {
 	}
 	triggered_planet_modifier = {
 		potential = {
-			check_variable = {
-				which = GFnyto_plante_wrlv
-				value < 500
+			or = {
+				and = {
+					check_variable = {
+						which = GFnyto_plante_wrlv
+						value < 500
+					}
+					not = {
+						has_district = district_GF_nyto_pc_toxic_alloy
+					}
+				}
+				and = {
+					check_variable = {
+						which = GFnyto_plante_wrlv
+						value < 700
+					}
+					has_district = district_GF_nyto_pc_toxic_alloy
+				}
 			}
 		}
 		job_GFnyto_framework_add = 2
@@ -596,9 +725,21 @@ building_GFnytp_framework_core2 = {
 	triggered_desc = {
 		trigger = {
 			or = {
-				check_variable = {
-					which = GFnyto_plante_wrlv
-					value > 400
+				and = {
+					check_variable = {
+						which = GFnyto_plante_wrlv
+						value > 400
+					}
+					not = {
+						has_district = district_GF_nyto_pc_toxic_alloy
+					}
+				}
+				and = {
+					check_variable = {
+						which = GFnyto_plante_wrlv
+						value > 700
+					}
+					has_district = district_GF_nyto_pc_toxic_alloy
 				}
 			}
 		}
@@ -606,9 +747,23 @@ building_GFnytp_framework_core2 = {
 	}
 	triggered_planet_modifier = {
 		potential = {
-			check_variable = {
-				which = GFnyto_plante_wrlv
-				value < 400
+			or = {
+				and = {
+					check_variable = {
+						which = GFnyto_plante_wrlv
+						value < 400
+					}
+					not = {
+						has_district = district_GF_nyto_pc_toxic_alloy
+					}
+				}
+				and = {
+					check_variable = {
+						which = GFnyto_plante_wrlv
+						value < 700
+					}
+					has_district = district_GF_nyto_pc_toxic_alloy
+				}
 			}
 		}
 		job_GFnyto_framework_add = 4
@@ -682,19 +837,46 @@ building_GFnyto_nourishment_center = {
 	}
 	triggered_desc = {
 		trigger = {
-			check_variable = {
-				which = GFnyto_plante_wrlv
-				value > 600
+			or = {
+				and = {
+					check_variable = {
+						which = GFnyto_plante_wrlv
+						value > 600
+					}
+					not = {
+						has_district = district_GF_nyto_pc_toxic_alloy
+					}
+				}
+				and = {
+					check_variable = {
+						which = GFnyto_plante_wrlv
+						value > 700
+					}
+					has_district = district_GF_nyto_pc_toxic_alloy
+				}
 			}
 		}
 		text = "GF_nyto_plante_build_off"
 	}
 	triggered_planet_modifier = {
 		potential = {
-
-			check_variable = {
-				which = GFnyto_plante_wrlv
-				value < 600
+			or = {
+				and = {
+					check_variable = {
+						which = GFnyto_plante_wrlv
+						value < 600
+					}
+					not = {
+						has_district = district_GF_nyto_pc_toxic_alloy
+					}
+				}
+				and = {
+					check_variable = {
+						which = GFnyto_plante_wrlv
+						value < 700
+					}
+					has_district = district_GF_nyto_pc_toxic_alloy
+				}
 			}
 		}
 		job_GFnyto_collapse_particle_zip_add = 2
@@ -737,19 +919,46 @@ building_GFnyto_nourishment_center2 = {
 	}
 	triggered_desc = {
 		trigger = {
-			check_variable = {
-				which = GFnyto_plante_wrlv
-				value > 600
+			or = {
+				and = {
+					check_variable = {
+						which = GFnyto_plante_wrlv
+						value > 600
+					}
+					not = {
+						has_district = district_GF_nyto_pc_toxic_leisure
+					}
+				}
+				and = {
+					check_variable = {
+						which = GFnyto_plante_wrlv
+						value > 700
+					}
+					has_district = district_GF_nyto_pc_toxic_leisure
+				}
 			}
 		}
 		text = "GF_nyto_plante_build_off"
 	}
 	triggered_planet_modifier = {
 		potential = {
-
-			check_variable = {
-				which = GFnyto_plante_wrlv
-				value < 600
+			or = {
+				and = {
+					check_variable = {
+						which = GFnyto_plante_wrlv
+						value < 600
+					}
+					not = {
+						has_district = district_GF_nyto_pc_toxic_leisure
+					}
+				}
+				and = {
+					check_variable = {
+						which = GFnyto_plante_wrlv
+						value < 700
+					}
+					has_district = district_GF_nyto_pc_toxic_leisure
+				}
 			}
 		}
 		job_GFnyto_collapse_particle_zip_add = 4
@@ -802,19 +1011,46 @@ building_GFnyto_dimensional_fabricator = {
 	}
 	triggered_desc = {
 		trigger = {
-			check_variable = {
-				which = GFnyto_plante_wrlv
-				value > 600
+			or = {
+				and = {
+					check_variable = {
+						which = GFnyto_plante_wrlv
+						value > 600
+					}
+					not = {
+						has_district = district_GF_nyto_pc_toxic_alloy
+					}
+				}
+				and = {
+					check_variable = {
+						which = GFnyto_plante_wrlv
+						value > 700
+					}
+					has_district = district_GF_nyto_pc_toxic_alloy
+				}
 			}
 		}
 		text = "GF_nyto_plante_build_off"
 	}
 	triggered_planet_modifier = {
 		potential = {
-
-			check_variable = {
-				which = GFnyto_plante_wrlv
-				value < 600
+			or = {
+				and = {
+					check_variable = {
+						which = GFnyto_plante_wrlv
+						value < 600
+					}
+					not = {
+						has_district = district_GF_nyto_pc_toxic_alloy
+					}
+				}
+				and = {
+					check_variable = {
+						which = GFnyto_plante_wrlv
+						value < 700
+					}
+					has_district = district_GF_nyto_pc_toxic_alloy
+				}
 			}
 		}
 		job_GFnyto_collapse_particle_rar_add = 2
@@ -877,19 +1113,46 @@ building_GFnyto_dimensional_fabricator2 = {
 	}
 	triggered_desc = {
 		trigger = {
-			check_variable = {
-				which = GFnyto_plante_wrlv
-				value > 600
+			or = {
+				and = {
+					check_variable = {
+						which = GFnyto_plante_wrlv
+						value > 600
+					}
+					not = {
+						has_district = district_GF_nyto_pc_toxic_leisure
+					}
+				}
+				and = {
+					check_variable = {
+						which = GFnyto_plante_wrlv
+						value > 700
+					}
+					has_district = district_GF_nyto_pc_toxic_leisure
+				}
 			}
 		}
 		text = "GF_nyto_plante_build_off"
 	}
 	triggered_planet_modifier = {
 		potential = {
-
-			check_variable = {
-				which = GFnyto_plante_wrlv
-				value < 600
+			or = {
+				and = {
+					check_variable = {
+						which = GFnyto_plante_wrlv
+						value < 600
+					}
+					not = {
+						has_district = district_GF_nyto_pc_toxic_leisure
+					}
+				}
+				and = {
+					check_variable = {
+						which = GFnyto_plante_wrlv
+						value < 700
+					}
+					has_district = district_GF_nyto_pc_toxic_leisure
+				}
 			}
 		}
 		job_GFnyto_collapse_particle_rar_add = 4

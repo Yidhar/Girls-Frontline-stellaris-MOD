@@ -94,6 +94,12 @@ tech_GFnyto_tansuo={
 	prerequisites = {
 		tech_GF_nyto_Inverse_collapse_1
 	}
+	weight_modifier = {
+		modifier = {
+			factor = 10
+			has_technology = tech_climate_restoration
+		}
+	}
 }
 
 #粒子解离

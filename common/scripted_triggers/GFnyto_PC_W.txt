@@ -13,17 +13,25 @@ can_destroy_planet_with_tech_GFnyto_accelerating_coil3= {
 	}
 }
 
-is_kuat_faction_empire = { 
+is_kuat_fallen_empire = {
 	OR = {
 		is_country_type = kuat_fallen_empire
 		is_country_type = kuat_awakened_fallen_empire
 		is_country_type = awakened_return_kuat_empire
-		is_country_type = kuate_fleet
+		is_country_type = kuat_shipyard
+		is_country_type = kuat_support
+		is_country_type = kuat_fleet
+		is_country_type = kuat_fleet_hostile
 		is_country_type = kuat_fire_base
 		is_country_type = kuat_fire_base_hositle
-		is_country_type = ag_kuat_invasion_country
+		is_country_type = ag_kae_ge_invasion_country
+		is_country_type = ag_kae_e_area_guardian
 	}
 }
+is_invisable_faction ={
+	always = no
+}
+
 
 is_cg_country ={
 	OR = {

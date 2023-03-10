@@ -85,3 +85,18 @@ GF_nyto_drp_modifer ={
 		mult = 1
 	}
 }
+
+
+
+GFnyto_Emergency_pollution_control_res ={
+	base = 1
+	complex_trigger_modifier = {
+		trigger = resource_revenue_compare
+		trigger_scope = owner
+		parameters = {
+			resource = $res$
+		}
+		mode = add
+		mult = 6
+	}
+}

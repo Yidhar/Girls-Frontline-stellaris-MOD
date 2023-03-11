@@ -71,28 +71,28 @@ ogas_consciousness = {
 	trait = "trait_mechanical"
 }
 
-aggressive_elid = {
-	archetype = LITHOID
+# aggressive_elid = {
+# 	archetype = LITHOID
 
-	playable = { always = no }
+# 	playable = { always = yes }
 
-	gender = no
-	use_climate_preference = no
-	portrait_modding = no
-	randomized = no
+# 	gender = no
+# 	use_climate_preference = no
+# 	portrait_modding = no
+# 	randomized = no
 
-	portraits = {
-		"exd1"
-	}
-	non_randomized_portraits = {
-		"exd1"
-	}
-	leader_age_min = 100
-	leader_age_max = 500
-	graphical_culture = extra_dimensional_01
-	move_pop_sound_effect = "robot_pops_move"
-	trait = "trait_extremely_adaptive"
-}
+# 	portraits = {
+# 		"exd1"
+# 	}
+# 	non_randomized_portraits = {
+# 		"exd1"
+# 	}
+# 	leader_age_min = 100
+# 	leader_age_max = 500
+# 	graphical_culture = extra_dimensional_01
+# 	move_pop_sound_effect = "robot_pops_move"
+# 	trait = "trait_extremely_adaptive"
+# }
 
 #铁血物种
 gf_sfdoll = {
@@ -124,7 +124,6 @@ gf_sfdoll = {
 	}
 	graphical_culture = mammalian_01
 	move_pop_sound_effect = "robot_pops_move"
-	resources = {}
 }
 
 
@@ -137,16 +136,18 @@ eild= {
 	portrait_modding = yes	
 	possible = {always=no}
 	portraits = {"GFnyto_eild"}
-	leader_age_min = 5
-	leader_age_max = 50
-	graphical_culture = humanoid_01
+	leader_age_min = 100
+	leader_age_max = 500
+	graphical_culture = extra_dimensional_01
 	move_pop_sound_effect = "robot_pops_move"
+	trait = "trait_extremely_adaptive"
 	resources = {
 		category = planet_pops
 		upkeep = {
 			GF_nyto_collapse_liquid = 0.1
 		}
 	}
+
 	playable = {
 		always = no
 	}

@@ -32,18 +32,17 @@ country_event = {
 			}
 		}
 	}
-	# immediate = {
-	# 	begin_event_chain = { event_chain = sfdoll_main_event_chain }
-	# }
+	immediate = { country_event = { id = sfdoll_test_event.3 } }
 }
-
+# 提示，存档版本号与mod不一致
 country_event = {
 	id = sfdoll_test_event.3
+	title = "sfdoll_test_event.3"
+	desc = "sfdoll_test_event.3.desc"
 	hide_window = no
+	picture = "GFX_evp_sfdoll_mod_update"
 	is_triggered_only = yes
-	immediate = {
-		clear_resources = yes
-	}
+	fire_only_once = yes
 }
 
 country_event = {

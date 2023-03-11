@@ -16,12 +16,11 @@ trait_gf_sfdoll = {
 		pop_environment_tolerance = 2
 		pop_demotion_time_mult = -1
 		empire_size_pops_mult = -0.1
-		planet_jobs_produces_mult = 0.05
-		army_damage_mult = 0.5
+		army_damage_mult = 0.4
 	}
 }
 
-#OGAS通讯扩展
+#凝聚力
 trait_sfdoll_ogas_protocol = {
 	cost=  1
 	initial = yes
@@ -226,27 +225,6 @@ trait_sfdoll_uncanny = {
 	modifier = {  pop_job_amenities_mult = -0.2  }
 }
 
-#
-# trait_sfdoll_ogas_ai = {
-# 	cost = 4
-# 	initial = no
-# 	forced_happiness = no
-# 	advanced_trait = no
-# 	immortal_leaders = yes
-# 	icon = "gfx/interface/icons/traits/sfdoll/trait_sfdoll_ogas_ai.dds"
-# 	opposites = {	trait_sfdoll_logic_engine trait_sfdoll_logic_engine_2	}
-# 	allowed_archetypes = { SFDOLL }
-# 	modifier = {
-# 		planet_jobs_physics_research_produces_mult = 0.40
-# 		planet_jobs_society_research_produces_mult = 0.40
-# 		planet_jobs_engineering_research_produces_mult = 0.40
-# 		species_leader_exp_gain = 0.50
-# 		leader_skill_levels = 2
-# 	}
-# }
-# trait_sfdoll_ogas_ai:0 "OGAS心智系统"
-# trait_sfdoll_ogas_ai_desc:0 "OGAS心智系统为这些铁血带来了强大的算力"
-
 #update
 trait_sfdoll_efficient_produce= {
 	cost = 0
@@ -275,7 +253,7 @@ trait_sfdoll_logic_engine_2 = {
 		planet_jobs_physics_research_produces_mult = 0.50
 		planet_jobs_society_research_produces_mult = 0.50
 		planet_jobs_engineering_research_produces_mult = 0.50
-		species_leader_exp_gain = 0.50
+		species_leader_exp_gain = 0.5
 		leader_skill_levels = 2
 	}
 }
@@ -311,7 +289,6 @@ trait_sfdoll_war_2 = {
 		army_damage_mult = 0.5
 		planet_army_build_speed_mult = 0.5
 		ship_weapon_damage = 0.5
-		starbase_shipyard_build_speed_mult = 0.25
 	}
 }
 

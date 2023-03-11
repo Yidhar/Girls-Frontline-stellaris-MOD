@@ -101,6 +101,12 @@ country_event = {
 		hidden_effect = { country_event = { id = sfdoll_three_body_event.3 } }
 	}
 
+	#说明
+	option = {
+		name = "sfdoll_elisa_event.2.explain"
+		hidden_effect = { country_event = { id = sfdoll_elisa_event.5 } }
+	}
+
 	#选项，伊莱莎变科学家
 	# option = {
 	# 	name =  "elisa_to_scientist"
@@ -272,4 +278,21 @@ country_event = {
 			}
 		}
 	}
+}
+
+# 关于特殊领袖的说明
+country_event = {
+	id = sfdoll_elisa_event.5
+	title = "sfdoll_elisa_event.5"
+	desc = "sfdoll_elisa_event.5.desc"
+	diplomatic = yes
+	picture_event_data = {
+		portrait = GFX_sfdoll_elisa
+		room = this
+		graphical_culture = this
+		planet_background = this
+		city_level = this
+	}	
+	is_triggered_only = yes
+	option = { name = "OK"  }
 }

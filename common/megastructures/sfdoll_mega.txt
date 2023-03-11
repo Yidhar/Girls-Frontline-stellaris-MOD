@@ -1223,7 +1223,10 @@ mega_sfdoll_university_2 = {
 	}
 	upgrade_from = { mega_sfdoll_university_1 }
 	prerequisites = { "tech_mega_sfdoll_university" }
-	country_modifier = { all_technology_research_speed = 0.2 }
+	country_modifier = {
+		all_technology_research_speed = 0.2
+		species_leader_exp_gain = 1
+	}
 	on_build_complete = {
 		from = {
 			if = {
@@ -1581,7 +1584,7 @@ sfdoll_mega_shipyard_4  = {
 	ship_modifier = { ship_starting_experience_add = 200 }
 	
 	station_modifier = {
-		starbase_shipyard_capacity_add = 100
+		starbase_shipyard_capacity_add = 20
 		starbase_shipyard_build_cost_mult = -0.10
 		starbase_shipyard_build_speed_mult = 2		
 	}
@@ -1618,7 +1621,7 @@ sfdoll_mega_shipyard_5 = {
 	ship_modifier = { ship_starting_experience_add = 1000 }
 	
 	station_modifier = {
-		starbase_shipyard_capacity_add = 300
+		starbase_shipyard_capacity_add = 200
 		starbase_shipyard_build_cost_mult = -0.10
 		starbase_shipyard_build_speed_mult = 8.0		
 	}

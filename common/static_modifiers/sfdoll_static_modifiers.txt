@@ -20,15 +20,11 @@ trait_sfdoll_engineer_modifier = {
 	megastructure_build_speed_mult = 0.5
 	country_megastructure_build_cap_add = 2
 	starbase_shipyard_build_speed_mult = 0.5
-	starbase_upgrade_speed_mult = 0.5
-	starbase_module_build_speed_mult = 0.5
-	starbase_building_build_speed_mult = 0.5
 }
 
 trait_sfdoll_war_2_modifier = {
 	planet_army_build_speed_mult = 0.5
 	ship_weapon_damage = 0.5
-	starbase_shipyard_build_speed_mult = 0.5
 }
 
 add_hp_1500000_times = {

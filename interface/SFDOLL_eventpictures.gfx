@@ -4,6 +4,13 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/evp_sfdoll_mind_server.dds"
 		alwaystransparent = yes
 	}
+
+	spriteType = {
+		name = "GFX_evp_sfdoll_mod_update"
+		texturefile = "gfx/event_pictures/evp_sfdoll_mod_update.dds"
+		alwaystransparent = yes
+	}
+
 }
 
 spriteTypes = {	

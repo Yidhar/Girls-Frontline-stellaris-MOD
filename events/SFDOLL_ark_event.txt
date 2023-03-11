@@ -407,7 +407,7 @@ country_event = {
 					min_distance >= 25
 					max_distance <= 35
 					effect = {
-						# set_surveyed = {  surveyed = yes  }
+						set_surveyed = {  surveyed = yes  }
 						add_hyperlane = {
 							from = THIS
 							to = PREV
@@ -425,9 +425,10 @@ country_event = {
 	desc = "sfdoll_ark_event.7.desc"
 	hide_window = no
 	is_triggered_only = yes
+	location = event_target:sfdoll_ark_planet
 	picture = "GFX_evt_relic_world_building"
 	trigger = { has_authority = auth_gf_sfdoll }
-	immediate = { country_event = {  id = sfdoll_ark_event.8  days = 720  } }
+	immediate = { country_event = {  id = sfdoll_ark_event.8  days = 1080  } }
 	option = {
 		name = "DISTURBING"
 		add_resource = { society_research = 10000 }

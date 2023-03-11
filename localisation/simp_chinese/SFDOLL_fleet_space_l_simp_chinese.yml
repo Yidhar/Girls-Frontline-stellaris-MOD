@@ -91,14 +91,8 @@ sfdoll_aux_quality_rebuilding_DESC:0 "通过逆向坍塌技术操纵微观粒子
 tech_sfdoll_aux_quality_rebuilding:0 "$sfdoll_aux_quality_rebuilding$"
 tech_sfdoll_aux_quality_rebuilding_desc:0 "$sfdoll_aux_quality_rebuilding_DESC$"
 
-
-sfdoll_aux_rebuild_2:0 "SF空间滤网"
-sfdoll_aux_rebuild_2_DESC:0 "§Y$sfdoll_aux_rebuild_2$§!会抵挡飞船受到的致命攻击,同时停止飞船自身攻击,并修复船体.§Y$sfdoll_aux_rebuild_2$§!每次生效后需要30天的冷却,不能在§Y$sfdoll_aux_rebuild$§!冷却期间启动,效果无法叠加."
-tech_sfdoll_aux_rebuild_2:0 "$sfdoll_aux_rebuild_2$"
-tech_sfdoll_aux_rebuild_2_desc:0 "$sfdoll_aux_rebuild_2$可以隔绝部分敌对攻击"
-
 sfdoll_aux_rebuild:0 "铁血次元锚"
-sfdoll_aux_rebuild_DESC:0 "装备$sfdoll_aux_rebuild$的舰船被摧毁时,会根据现有的舰船设计生成一艘同类型舰船.新的舰船需要经过30天才能再次使用$sfdoll_aux_rebuild$。"
+sfdoll_aux_rebuild_text:0 "装备$sfdoll_aux_rebuild$的舰船被摧毁时,会根据现有的舰船设计生成一艘同类型舰船.新的舰船需要经过30天才能再次使用$sfdoll_aux_rebuild$。"
 
 tech_sfdoll_aux_rebuild:0 "$sfdoll_aux_rebuild$"
 tech_sfdoll_aux_rebuild_desc:0 "利用$sfdoll_aux_rebuild$,飞船可在受到致命攻击时保护核心机能,并短暂潜入其他维度,再利用冗余备份来修复舰船."
@@ -500,7 +494,7 @@ sfdoll_change_hyperlane_ship:0 "航道改造信标"
 sfdoll_change_hyperlane_section:0 "$sfdoll_change_hyperlane_ship$"
 design_sfdoll_change_hyperlane_ship:0 "$sfdoll_change_hyperlane_ship$"
 
-sfdoll_planet_killer_event.6:0 "航道改造工程"
+sfdoll_planet_killer_event.6:0 "修改航道"
 sfdoll_planet_killer_event.6_desc:0 "点击生成两个信标,将它们分别移动到两个星系中,即可修改两个星系间的航道.\n\n两个信标所在的星系之间，如果有航道，则航道会被删除；如果没有航道，则会生成新的航道"
 sfdoll_planet_killer_event.6_option_a:0 "生成两个信标,并删除旧的信标"
 sfdoll_planet_killer_event.6_option_b:0 "修改航道"

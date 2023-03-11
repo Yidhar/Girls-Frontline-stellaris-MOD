@@ -1,2 +1,6 @@
 #开局储存最新的版本号,如果游戏中读取到版本号和开局储存的版本号不同，就表示必须更新
-@sfdoll_mod_version = 1
+@sfdoll_mod_version = 2
+
+@sfdoll_tech_cost1 = 64000
+@sfdoll_tech_cost2 = 80000
+@sfdoll_tech_cost3 = 96000

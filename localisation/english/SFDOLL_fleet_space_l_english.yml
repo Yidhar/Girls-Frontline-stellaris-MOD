@@ -85,14 +85,8 @@ sfdoll_aux_fire_range_DESC:0 "$sfdoll_aux_fire_range$ can enhance radar and comm
 tech_sfdoll_aux_fire_range:0 "$sfdoll_aux_fire_range$"
 tech_sfdoll_aux_fire_range_desc:0 "$sfdoll_aux_fire_range_DESC$"
 
-sfdoll_aux_rebuild_2:0 "SF Space Filter"
-sfdoll_aux_rebuild_2_DESC:0 "§Y$sfdoll_aux_rebuild_2$§! will resist the fatal attack of the ship, stop the ship's own attacks, and repair the hull. §Y$sfdoll_aux_rebuild_2$§! requires a 30-day cooldown after each effect, and cannot be activated during the cooldown of §Y$sfdoll_aux_rebuild$§!. Its effect cannot be stacked."
-
-tech_sfdoll_aux_rebuild_2:0 "$sfdoll_aux_rebuild_2$"
-tech_sfdoll_aux_rebuild_2_desc:0 "$sfdoll_aux_rebuild_2$ can block some hostile attacks"
-
 sfdoll_aux_rebuild:0 "SF Dimensional-Anchor"
-sfdoll_aux_rebuild_DESC:0 "When a ship equipped with $sfdoll_aux_rebuild$ is destroyed, a ship of the same type will be spawned based on a existing ship design. It will take 30 days for the new ship to use $sfdoll_aux_rebuild$ again."
+sfdoll_aux_rebuild_text:0 "When a ship equipped with $sfdoll_aux_rebuild$ is destroyed, a ship of the same type will be spawned based on a existing ship design. It will take 30 days for the new ship to use $sfdoll_aux_rebuild$ again."
 
 tech_sfdoll_aux_rebuild:0 "$sfdoll_aux_rebuild$"
 tech_sfdoll_aux_rebuild_desc:0 "Using the $sfdoll_aux_rebuild$, the ship can protect the core function when it is fatally attacked, and sneak into other dimensions briefly, and then use the redundant backup to repair the ship.."
@@ -485,7 +479,7 @@ sfdoll_change_hyperlane_ship:0 "Hyperlane Modification Beacon"
 sfdoll_change_hyperlane_section:0 "$sfdoll_change_hyperlane_ship$"
 design_sfdoll_change_hyperlane_ship:0 "$sfdoll_change_hyperlane_ship$"
 
-sfdoll_planet_killer_event.6:0 "Hyperlane Modification Project"
+sfdoll_planet_killer_event.6:0 "Hyperlane Modification"
 sfdoll_planet_killer_event.6_desc:0 "Click to generate two beacons, move them to two systems respectively, then you can modify the Hyperlane between the two systems.\n\n Between the systems where the two beacons are located, if there is a Hyperlane, the Hyperlane will be deleted; if there is no Hyperlane, a new Hyperlane will be generated."
 sfdoll_planet_killer_event.6_option_a:0 "Generate two beacons, and delete the old beacons."
 sfdoll_planet_killer_event.6_option_b:0 "Modify Hyperlane"

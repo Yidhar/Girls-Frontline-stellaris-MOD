@@ -270,12 +270,6 @@ spriteTypes = {
 
 spriteTypes = {
 	spriteType = {
-		name = "GFX_sfdoll_aux_rebuild_2"
-		texturefile = "gfx/interface/icons/ship_parts/sfdoll_aux_rebuild_2.dds"
-	}
-}
-spriteTypes = {
-	spriteType = {
 		name = "GFX_sfdoll_aux_rebuild"
 		texturefile = "gfx/interface/icons/ship_parts/sfdoll_aux_rebuild.dds"
 	}

@@ -35,7 +35,7 @@ civic_sfdoll_ogas_manage = {
 	icon = "gfx/interface/icons/governments/civics/civic_sfdoll_ogas_manage.dds"
 	modifier = { 
 		planet_crime_add = -30
-		empire_size_mult = -0.2
+		empire_size_mult = -0.15
 		planet_jobs_produces_mult = 0.1
 	}
 }

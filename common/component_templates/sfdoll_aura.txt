@@ -1,4 +1,4 @@
-#开战压制
+#压制部件，已停用
 utility_component_template = {
 	key = "component_aura_sfdoll_1"
 	size = medium
@@ -17,12 +17,9 @@ utility_component_template = {
 	# 		priority = 1
 	# 	}
 	# }
-	ai_weight = {
-		weight = 1
-	}
 }
 
-# 持续压制
+# 压制部件
 utility_component_template = {
 	key = "component_aura_sfdoll_2"
 	size = medium
@@ -31,10 +28,22 @@ utility_component_template = {
 	power = 0
 	component_set = "component_aura_sfdoll_2"
 	ship_modifier = {	custom_tooltip = "component_aura_sfdoll_2_text"	}
-	
-	ai_weight = {
-		weight = 1
+}
+
+# 复活
+utility_component_template = {
+	key = "sfdoll_aux_rebuild"
+	size = medium
+	icon = "GFX_sfdoll_aux_rebuild"
+	icon_frame = 1
+	power = -600
+	resources = {
+		category = ship_components
+		cost = { GF_nyto_collapse_liquid = 60 }
 	}
+	# prerequisites = { "tech_sfdoll_aux_rebuild" }
+	component_set = "sfdoll_aux_rebuild"
+	ship_modifier = { custom_tooltip = "sfdoll_aux_rebuild_text" }
 }
 
 utility_component_template = {

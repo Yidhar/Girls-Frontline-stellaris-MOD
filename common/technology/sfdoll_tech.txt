@@ -196,7 +196,7 @@ tech_sfdoll_goods = {
 
 #奇点能源
 tech_sfdoll_energy_plant = {
-	cost = @tier5cost3
+	cost = @sfdoll_tech_cost3
 	area = physics
 	tier = 5
 	is_rare = yes
@@ -207,7 +207,7 @@ tech_sfdoll_energy_plant = {
 }
 #矿物合成,解锁铁血T3科技
 tech_building_sfdoll_mineral = {
-	cost = @tier5cost3
+	cost = @sfdoll_tech_cost1
 	area = physics
 	tier = 5
 	is_rare = yes
@@ -251,7 +251,7 @@ tech_sfdoll_collapse_liquid_upgrade = {
 
 #科研升级
 tech_sfdoll_lab_upgrade = {
-	cost = @tier5cost3
+	cost = @sfdoll_tech_cost1
 	area = society
 	icon = tech_sfdoll_lab
 	tier = 5
@@ -270,7 +270,7 @@ tech_sfdoll_lab_upgrade = {
 
 #合金升级1
 tech_sfdoll_alloys_upgrade = {
-	cost = @tier5cost3
+	cost = @sfdoll_tech_cost1
 	area = society
 	tier = 5
 	is_rare = yes
@@ -298,7 +298,7 @@ tech_gf_sfdoll_assemble_building= {
 #舰船相关
 # 特殊战舰装配厂
 tech_starbase_building_sfdoll_assembly = {
-	cost = @tier5cost3
+	cost = @sfdoll_tech_cost1
 	tier = 5
 	area = engineering
 	is_rare = yes
@@ -314,7 +314,7 @@ tech_starbase_building_sfdoll_assembly = {
 tech_sfdoll_sophon = {
 	area = physics
 	tier = 5
-	cost = @tier5cost3
+	cost = @sfdoll_tech_cost3
 	is_rare = yes
 	is_dangerous = yes
 	category = { particles }
@@ -329,7 +329,7 @@ tech_sfdoll_mobile_starbase = {
 	area = engineering
 	start_tech = no
 	tier = 5
-	cost = @tier5cost3
+	cost = @sfdoll_tech_cost3
 	category = { voidcraft }
 	is_rare = yes
 	icon = tech_sfdoll_mobile_starbase
@@ -341,38 +341,19 @@ tech_sfdoll_mobile_starbase = {
 	weight = 1500
 }
 
-#星港
-tech_mega_sfdoll_starport = {
-	area = engineering
-	start_tech = no
-	tier = 5
-	cost = @tier5cost3
-	category = { voidcraft }
-	is_rare = yes
-	icon = tech_mega_sfdoll_starport
-	prerequisites = { 	tech_building_sfdoll_mineral	}	
-	potential = {
-		has_authority = auth_gf_sfdoll
-	}
-	modifier = {
-		# country_resource_max_add = 40000
-	}
-	weight = 0
-}
-
 #太空城市
 tech_sfdoll_habitat_01 = {
 	area = engineering
 	start_tech = no
 	tier = 5
-	cost = @tier5cost1
+	cost = @sfdoll_tech_cost1
 	category = { voidcraft }
 	is_rare = yes
 	icon = tech_sfdoll_habitat_01
 	potential = {	has_authority = auth_gf_sfdoll }
 	prerequisites = { tech_build_sfdoll_city }
 	# modifier = {	country_resource_max_add = 40000	}
-	weight = @tier4weight2
+	weight = 500
 }
 
 tech_sfdoll_mining_station = {
@@ -448,23 +429,12 @@ tech_sfdoll_mobile_gateway = {
 		}
 	}
 }
-tech_sfdoll_mega_system = {
-	area = physics
-	start_tech = no
-	tier = 5
-	cost = @tier5cost3
-	category = { field_manipulation }
-	is_rare = yes
-	prerequisites = {	tech_building_sfdoll_mineral	}	
-	potential = { always = no has_authority = auth_gf_sfdoll	}
-	# modifier = {	country_resource_max_add = 40000	}
-	weight = 0
-}
+
 tech_sfdoll_ring_world = {
 	area = society
 	start_tech = no
 	tier = 5
-	cost = @tier5cost3
+	cost = @sfdoll_tech_cost2
 	category = { new_worlds }
 	is_rare = yes
 	icon = tech_ring_world
@@ -477,7 +447,7 @@ tech_sfdoll_mega_shipyard  = {
 	area = society
 	start_tech = no
 	tier = 5
-	cost = @tier5cost3
+	cost = @sfdoll_tech_cost2
 	category = { military_theory }
 	is_rare = yes
 	icon = tech_mega_sfdoll_starport
@@ -489,7 +459,7 @@ tech_sfdoll_mega_shipyard  = {
 tech_sfdoll_mega_lab = {
 	area = physics
 	tier = 5
-	cost = @tier5cost1
+	cost = @tier5cost3
 	is_rare = yes
 	category = { field_manipulation }
 	icon = tech_sfdoll_mega_lab
@@ -500,7 +470,7 @@ tech_mega_sfdoll_university = {
 	area = society
 	start_tech = no
 	tier = 5
-	cost = @tier5cost3
+	cost = @sfdoll_tech_cost1
 	category = { statecraft }
 	is_rare = yes
 	icon = tech_mega_sfdoll_university
@@ -556,7 +526,7 @@ tech_sfdoll_weapon_G_1 = {
 
 #二级武器
 tech_sfdoll_weapon_S_2 = {
-	cost = @tier5cost3
+	cost = @sfdoll_tech_cost1
 	area = physics
 	tier = 5
 	category = { field_manipulation }
@@ -565,10 +535,10 @@ tech_sfdoll_weapon_S_2 = {
 	icon = tech_sfdoll_weapon_S_2
 	prerequisites = { tech_sfdoll_warship_1	}
 	potential = { has_authority = auth_gf_sfdoll }
-	weight = @tier5weight1
+	weight = 500
 }
 tech_sfdoll_weapon_L_2 = {
-	cost = @tier5cost3
+	cost = @sfdoll_tech_cost1
 	area = physics
 	tier = 5
 	category = { field_manipulation }
@@ -579,24 +549,11 @@ tech_sfdoll_weapon_L_2 = {
 	potential = {
 		has_authority = auth_gf_sfdoll
 	}
-	weight = @tier5weight2
+	weight = 500
 }
-# tech_sfdoll_weapon_X_2 = {
-# 	cost = @tier5cost2
-# 	area = physics
-# 	tier = 5
-# 	category = { field_manipulation }
-# 	is_rare = yes
-# 	is_reverse_engineerable = no
-# 	icon = tech_sfdoll_weapon_X_2
-# 	prerequisites = { tech_sfdoll_weapon_L_2	}
-# 	potential = {
-# 		has_authority = auth_gf_sfdoll
-# 	}
-# 	weight = @tier5weight2
-# }
+
 tech_sfdoll_weapon_T_2 = {
-	cost = @tier5cost3
+	cost = @sfdoll_tech_cost1
 	area = physics
 	tier = 5
 	is_rare = yes
@@ -607,10 +564,10 @@ tech_sfdoll_weapon_T_2 = {
 	potential = {
 		has_authority = auth_gf_sfdoll
 	}
-	weight = 1500
+	weight = 500
 }
 tech_sfdoll_weapon_T_SP = {
-	cost = @tier5cost3
+	cost = @sfdoll_tech_cost2
 	area = physics
 	tier = 5
 	is_rare = yes
@@ -621,11 +578,11 @@ tech_sfdoll_weapon_T_SP = {
 	potential = {
 		has_authority = auth_gf_sfdoll
 	}
-	weight = 1500
+	weight = 500
 }
 
 tech_sfdoll_weapon_G_2 = {
-	cost = @tier5cost3
+	cost = @sfdoll_tech_cost1
 	area = physics
 	tier = 5
 	is_rare = yes
@@ -636,10 +593,10 @@ tech_sfdoll_weapon_G_2 = {
 	potential = {
 		has_authority = auth_gf_sfdoll
 	}
-	weight = 1500
+	weight = 500
 }
 tech_sfdoll_weapon_H_2 = {
-	cost = @tier5cost3
+	cost = @sfdoll_tech_cost1
 	area = engineering
 	tier = 5
 	is_rare = yes
@@ -650,11 +607,11 @@ tech_sfdoll_weapon_H_2 = {
 	potential = {
 		has_authority = auth_gf_sfdoll
 	}
-	weight = @tier5weight1
+	weight = 500
 }
 #W槽
 tech_planet_killer_sfdoll_1 = {
-	cost = @tier5cost3
+	cost = @sfdoll_tech_cost3
 	area = physics
 	tier = 5
 	is_rare = yes
@@ -671,7 +628,7 @@ tech_planet_killer_sfdoll_1 = {
 }
 #转化为黑洞
 tech_planet_killer_sfdoll_3 = {
-	cost = @tier5cost3
+	cost = @sfdoll_tech_cost2
 	area = physics
 	tier = 5
 	is_rare = yes
@@ -681,7 +638,7 @@ tech_planet_killer_sfdoll_3 = {
 	icon = tech_planet_killer_sfdoll_3
 	prerequisites = {	tech_sfdoll_mobile_starbase }
 	potential = {	has_authority = auth_gf_sfdoll	}
-	weight = 1000
+	weight = 500
 }
 # 黑洞转恒星
 tech_planet_killer_sfdoll_4 = {
@@ -722,7 +679,7 @@ tech_sfdoll_ship_armor_L = {
 }
 
 tech_sfdoll_ship_armor_2 = {
-	cost = @tier5cost3
+	cost = @sfdoll_tech_cost1
 	area = engineering
 	icon = tech_sfdoll_ship_armor_2
 	category = { voidcraft }
@@ -731,13 +688,13 @@ tech_sfdoll_ship_armor_2 = {
 	prerequisites = { tech_sfdoll_weapon_S_2	}
 	potential = {	has_authority = auth_gf_sfdoll	}
 	tier = 5
-	weight = @tier5weight1
+	weight = 500
 }
 
 
 #铁血跃迁引擎
 tech_sfdoll_jump_drive = {
-	cost = @tier5cost2
+	cost = @sfdoll_tech_cost3
 	area = physics
 	tier = 5
 	is_rare = yes
@@ -747,11 +704,11 @@ tech_sfdoll_jump_drive = {
 	icon = tech_sfdoll_jump_drive
 	prerequisites = {  tech_building_sfdoll_mineral  }
 	potential = { has_authority = auth_gf_sfdoll }
-	weight = @tier5weight2
+	weight = 1000
 }
 #推进器
 tech_sfdoll_thruster = {
-	cost = @tier4cost1
+	cost = @sfdoll_tech_cost2
 	area = physics
 	tier = 4
 	category = { field_manipulation }
@@ -759,7 +716,7 @@ tech_sfdoll_thruster = {
 	icon = tech_sfdoll_thruster
 	potential = {	has_authority = auth_gf_sfdoll }
 	prerequisites = {  tech_building_sfdoll_mineral	}
-	weight = @tier4weight1
+	weight = 500
 }
 #作战电脑
 tech_sfdoll_ship_computer = {
@@ -786,12 +743,12 @@ tech_aux_sfdoll_collapse_power= {
 	is_reverse_engineerable = no
 	prerequisites = {	tech_sfdoll_collapse_liquid_produce }
 	potential = {	has_authority = auth_gf_sfdoll	}
-	weight = 1500
+	weight = 500
 }
 
 #二级能源
 tech_sfdoll_ship_power_2 = {
-	cost = @tier5cost3
+	cost = @sfdoll_tech_cost1
 	tier = 5
 	area = physics
 	icon = tech_sfdoll_ship_power_2
@@ -799,7 +756,7 @@ tech_sfdoll_ship_power_2 = {
 	is_reverse_engineerable = no
 	prerequisites = { tech_sfdoll_energy_plant }
 	potential = {	has_authority = auth_gf_sfdoll	}
-	weight = @tier5weight3
+	weight = 500
 }
 
 #舰船修复A槽
@@ -841,19 +798,6 @@ tech_sfdoll_aux_quality_rebuilding = {
 	weight = 0
 }
 
-#SF空间滤网
-tech_sfdoll_aux_rebuild_2 = {
-	cost = @tier5cost3
-	area = physics
-	icon = tech_sfdoll_aux_rebuild_2
-	category = { field_manipulation }
-	is_rare = yes
-	is_reverse_engineerable = no
-	prerequisites = {	"tech_sfdoll_collapse_liquid_produce"	}
-	potential = {	always = no	}
-	tier = 5
-	weight = 0
-}
 #复活
 tech_sfdoll_aux_rebuild = {
 	cost = @tier5cost3
@@ -882,7 +826,7 @@ tech_sfdoll_ship_sensors = {
 		has_technology = tech_sensors_4
 	}
 	#prerequisites = { 	}
-	weight = @tier4weight1
+	weight = 500
 }
 
 
@@ -894,21 +838,17 @@ tech_sfdoll_battleship_bow_x2 = {
 	start_tech = no
 	icon = tech_sfdoll_battleship_bow_x2
 	category = { voidcraft }
-	potential = {
-		has_authority = auth_gf_sfdoll
-		has_technology = tech_battleships
-	}
-	modifier = {
-		description = description_tech_sfdoll_battleship_bow_x2
-	}
+	potential = { has_authority = auth_gf_sfdoll }
+	prerequisites = { tech_battleships }
+	modifier = { description = description_tech_sfdoll_battleship_bow_x2 }
 	tier = 5
-	weight = @tier5weight1
+	weight = 500
 }
 
 
 #系列战舰
 tech_sfdoll_warship_1 = {
-	cost = @tier5cost3
+	cost = @sfdoll_tech_cost1
 	tier = 5
 	area = engineering
 	is_rare = yes
@@ -924,7 +864,7 @@ tech_sfdoll_warship_1 = {
 	weight = 1000
 }
 tech_sfdoll_warship_2 = {
-	cost = @tier5cost2
+	cost = @sfdoll_tech_cost1
 	tier = 5
 	area = engineering
 	is_rare = yes
@@ -935,7 +875,7 @@ tech_sfdoll_warship_2 = {
 	weight = 1000
 }
 tech_sfdoll_warship_3 = {
-	cost = @tier5cost3
+	cost = @sfdoll_tech_cost1
 	tier = 5
 	area = engineering
 	is_rare = yes
@@ -949,7 +889,7 @@ tech_sfdoll_warship_3 = {
 	weight = 1000
 }
 tech_sfdoll_warship_4 = {
-	cost = @tier5cost3
+	cost = @sfdoll_tech_cost2
 	tier = 5
 	area = engineering
 	start_tech = no
@@ -963,7 +903,7 @@ tech_sfdoll_warship_4 = {
 	weight = 1000
 }
 tech_sfdoll_warship_5 = {
-	cost = @tier5cost3
+	cost = @sfdoll_tech_cost2
 	tier = 5
 	area = engineering
 	start_tech = no
@@ -976,7 +916,7 @@ tech_sfdoll_warship_5 = {
 	weight = 1000
 }
 tech_sfdoll_warship_6 = {
-	cost = @tier5cost3
+	cost = @sfdoll_tech_cost2
 	area = engineering
 	start_tech = no
 	icon = tech_sfdoll_titan
@@ -1143,16 +1083,13 @@ tech_sfdoll_singularity = {
 tech_sfdoll_change_hyperlane = {
 	area = physics
 	tier = 5
-	cost = @tier5cost3
+	cost = @sfdoll_tech_cost2
 	is_rare = yes
 	category = { field_manipulation }
 	icon = tech_sfdoll_change_hyperlane
-	weight = @tier5weight3
-	weight_modifier = {
-		factor = 8
-	}
-	prerequisites = {	tech_sfdoll_energy_plant	}
 	potential = {	has_authority = auth_gf_sfdoll	}
+	prerequisites = {	tech_sfdoll_energy_plant	}
+	weight = 500	
 } 
 
 tech_sfdoll_magic = {
@@ -1177,12 +1114,10 @@ tech_sfdoll_psychohistory = {
 	is_rare = yes
 	category = { statecraft }
 	icon = tech_sfdoll_psychohistory
-	weight = @tier5weight2
 	potential = {	has_authority = auth_gf_sfdoll	}
 	prerequisites = { tech_sfdoll_energy_plant }
-	modifier = {
-		empire_size_mult = -0.15
-	}
+	modifier = { empire_size_mult = -0.15 }
+	weight = @tier5weight1
 }
 
 #陆军
@@ -1207,14 +1142,13 @@ tech_sfdoll_heavy_army = {
 }
 #解锁槽位，建立铁血星球
 tech_build_sfdoll_city = {
-	cost = @tier4cost3
+	cost = @sfdoll_tech_cost1
 	area = society
 	tier = 4
 	category = { statecraft }
 	icon = tech_sfdoll_max_buildings
 	potential = { has_authority = auth_gf_sfdoll }
 	prerequisites = { tech_building_sfdoll_mineral }
-	modifier = { empire_size_mult = -0.1	}
 	weight = @tier4weight1
 }
 
@@ -1228,7 +1162,7 @@ tech_sfdoll_social_reform = {
 	potential = {	has_authority = auth_gf_sfdoll	}
 	modifier = {
 		country_government_civic_points_add = 1
-		empire_size_mult = -0.15
+		empire_size_mult = -0.1
 	}
 
 	weight = 0

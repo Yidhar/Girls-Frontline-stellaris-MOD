@@ -83,7 +83,6 @@ ap_sfdoll_3 = {
 		add_research_option = tech_gateway_activation
 	}
 	modifier = {
-		empire_size_mult = -0.1
 		megastructure_build_speed_mult = 0.5
 		country_megastructure_build_cap_add = 2
 		country_resource_max_add = 40000

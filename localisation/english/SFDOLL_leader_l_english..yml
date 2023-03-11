@@ -1,18 +1,18 @@
 ﻿l_english:
 ###############################
+sfdoll_the_leader_is_doing_this_job:0 "The leader is doing this work."
 sfdoll_elisa_event.2:0 "Communication with Elisa"
 sfdoll_elisa_event_2_a_desc:0 "Would you like a cup of coffee?"
 sfdoll_elisa_event_2_b_desc:0 "Don't just sit, exercise more!"
 sfdoll_elisa_event_2_c_desc:0 "Schedule your time reasonably."
-sfdoll_elisa_event_2_d_desc:0 "One day, we can meet Lunasia again."
-# sfdoll_elisa_event_2.desc.e:0 "Although Ding Yi is a disheveled human, but his heart, as soft as a young girl."
-# sfdoll_elisa_event_2.desc.f:0 "UMP45 was originally an SF Doll. Later, she and I were on opposite sides. And then we came together again. Fate is such a miracle."
-# sfdoll_elisa_event_2.desc.g:0 "I was a bad parent to Ouroboros. Ouroboros has been a great predecessor to you."
-# sfdoll_elisa_event_2.desc.h:0 "Triela is certainly a talent."
+sfdoll_elisa_event_2_d_desc:0 "Don't stare too long at the screen, don't get too close to the screen!"
 
 sfdoll_elisa_event.2_option_leader:0 "Contact some leaders"
 sfdoll_elisa_event.2_option_sophon:0 "Access Sophon Computer Group"
 sfdoll_elisa_event.2_option_ogas:0 "Access OGAS AI"
+sfdoll_elisa_event.2.explain:0 "About special leaders"
+sfdoll_elisa_event.5:0 "About special leaders"
+sfdoll_elisa_event.5.desc:0 "Through Elisa, you can contact all special leaders. \n\nDue to some refresh problems, the special leaders may displayed incorrectly. You can try to save and re-enter, or appoint some leaders to refresh the data."
 
 elisa_to_scientist:0 "Please lead research work"
 elisa_has_this_job_now:0 "Elisa doing this job now."
@@ -138,13 +138,16 @@ sfdoll_gunslinger_girl_project_DESC:0 "$sfdoll_gunslinger_girl_event_2_desc$"
 sfdoll_gunslinger_girl_event_3:0 "Dream Theatre"
 sfdoll_gunslinger_girl_event_3_desc:0 "We successfully accessed the contents of the servers and found several intelligent bodies. \n\nThese intelligent bodies are permanently trapped in a virtual world in digi-mind servers. Now, we can wake them up from this long dream and transfer their digi-mind to new bodies."
 sfdoll_gunslinger_girl_event.4:0 "Communicate with the representative of intelligent bodies"
-sfdoll_gunslinger_girl_event.4.desc:0 "I'm Triela, and I used to be a cyborg. \n\nFor the purpose of research, my mind is uploaded to the machine. Later, many changes took place in the outside world. I was forced to move to these digi-mind servers and met many other intelligent bodies. \n\nWe didn't know why we were here, and we couldn't leave until we met you. \n\nMuch of the relic computers' content is inaccessible to us. We have conducted many investigations, but the results are few and far between.\n\n§Y<You can now communicate with Triela through Elisa.>§!"
+sfdoll_gunslinger_girl_event.4.desc:0 "I'm Triela, and I used to be a human. \n\nFor the purpose of research, my mind is uploaded to the machine. Later, many changes took place in the outside world. I was forced to move to these digi-mind servers and met many other intelligent bodies. \n\nWe didn't know why we were here, and we couldn't leave until we met you. \n\nMuch of the relic computers' content is inaccessible to us. We have conducted many investigations, but the results are few and far between.\n\n§Y<You can now communicate with Triela through Elisa.>§!"
 
 # sfdoll_gunslinger_girl_event_5_option:0 "What do you know about the relics?"
 # sfdoll_gunslinger_girl_event_5_response:0 "Much of the relic computers' content is inaccessible to us. We have conducted many investigations, but the results are few and far between.\n\n§Y<You can now communicate with Triela through Elisa.>§!"
 
-sfdoll_gunslinger_girl_event_6:0 "in communication with Triela"
-sfdoll_gunslinger_girl_event_6_desc:0 "Have a new mission?"
+sfdoll_gunslinger_girl_event.6:0 "in communication with Triela"
+sfdoll_gunslinger_girl_event.6.desc.a:0 "Have a new mission?"
+sfdoll_gunslinger_girl_event.6.desc.b:0 "In our work, we should learn to cooperate."
+sfdoll_gunslinger_girl_event.6.desc.c:0 "I seem to have a dream... Even if I become a doll, will I still dream?"
+sfdoll_gunslinger_girl_event.6.desc.d:0 "Black tea and cake, is the magic to bring happiness!"
 
 triela_become_governor:0 "Serve as governor"
 triela_become_scientist:0 "Participate in research"
@@ -158,7 +161,7 @@ response_text_triela_become_admiral:0 "I'll get everyone back safely."
 response_text_triela_become_general:0 "I'll get everyone back safely."
 
 leader_trait_governor_sfdoll_triela:0 "Heroine"
-leader_trait_governor_sfdoll_triela_desc:0 "This leader was once a cyborg."
+leader_trait_governor_sfdoll_triela_desc:0 "This leader was once a human being."
 
 leader_trait_scientist_sfdoll_triela:0 "$leader_trait_governor_sfdoll_triela$"
 leader_trait_scientist_sfdoll_triela_desc:0 "$leader_trait_governor_sfdoll_triela_desc$"
@@ -171,12 +174,13 @@ leader_trait_general_sfdoll_triela_desc:0 "$leader_trait_governor_sfdoll_triela_
 
 
 #诺耶露
-sfdoll_noel_event_1_title:0 "In communication with Noel"
-sfdoll_noel_event_1_a_desc:0 "I can transform my shape freely.Why I became this image? Because I want to commemorate certain days..."
-sfdoll_noel_event_1_c_desc:0 "What's matter?"
-noel_has_this_job_now:0 "Noel is in this role."
-sfdoll_noel_is_destroyed:0 "Noel can't do this work now."
+sfdoll_noel_event.1:0 "In communication with Noel"
+sfdoll_noel_event.1.desc.a:0 "I can transform my shape freely.Why I became this image? Because I want to commemorate certain days..."
+sfdoll_noel_event.1.desc.b:0 "Is there anything I can do for you?"
+sfdoll_noel_event.1.desc.c:0 "One day, I'll find my sister."
+sfdoll_noel_event.1.desc.d:0 "I have to be stronger..."
 
+sfdoll_noel_is_destroyed:0 "Noel can't do this work now."
 noel_become_governor:0 "Please serve as governor"
 noel_become_scientist:0 "Please serve as scientist"
 noel_become_admiral:0 "Please serve as admiral"
@@ -185,10 +189,10 @@ option_noel_become_ship:0 "Become a space unit"
 option_noel_become_ship_desc:0 "Requires at least one Noel ship design"
 timed_flag_noel_become_ship:0 "Noel'll have to wait a while before she can turn again."
 
-response_text_noel_become_governor:0 "Let's start building the new world!"
-response_text_noel_become_scientist:0 "We need more knowledge."
-response_text_noel_become_admiral:0 "Make a reasonable strategy first."
-response_text_noel_become_general:0 "Prepare to fight."
+response_text_noel_become_governor:0 "I'll try my best!"
+response_text_noel_become_scientist:0 "I'll try my best!"
+response_text_noel_become_admiral:0 "I'll try my best!"
+response_text_noel_become_general:0 "I'll try my best!"
 response_option_noel_become_ship:0 "Please note that from now on, after 360 days, I can become like this again."
 
 sfdoll_noel_event.2:0 "Noel's Recent Status"
@@ -266,7 +270,7 @@ sfdoll_three_body_event.1_desc:0 "I value Dr. Ding Yi very much. So when I was o
 
 sfdoll_three_body_event.2:0 "Communication with Ding Yi"
 sfdoll_three_body_event.2_desc_a:0 "...... (He looks drunk)"
-sfdoll_three_body_event.2_desc_b:0 "A trip to the desert planet would be great. Look, are those sand dunes very like women's bodies?"
+sfdoll_three_body_event.2_desc_b:0 "A trip to the desert would be great. Look, are those sand dunes very like women's bodies?"
 sfdoll_three_body_event.2_desc_c:0 "My pipe needs recharging."
 sfdoll_three_body_event.2_desc_d:0 "The flowers outside are beautiful."
 
@@ -470,7 +474,7 @@ sfdoll_ark_event.5.desc:0 "When analyzing the data in the relics, we found some 
 SFDOLL_ARK_PROJECT:0 "Demi-Human"
 SFDOLL_ARK_PROJECT_DESC:0 "This planet is seriously polluted. The planet's native creatures are a mixture of human and other animal characteristics."
 sfdoll_ark_event.7:0 "Demi-Human"
-sfdoll_ark_event.7.desc:0 "Our investigation of planets has yielded results. \n\nThe genes of indigenous people contain human and many non-human elements, which may be the result of artificial modification. \n\nThe lives of indigenous people have been threatened by harmful ore for a long time. Moreover, the planet was contaminated by the collapse fluid from unknown sources. Therefore, the ecology and society of the planet face various problems."
+sfdoll_ark_event.7.desc:0 "Our investigation of Terra has yielded results. \n\nThe genes of indigenous people contain human and many non-human elements, which may be the result of artificial modification. \n\nThe lives of indigenous people have been threatened by harmful ore for a long time. Moreover, the planet was contaminated by the collapse fluid from unknown sources. Therefore, the ecology and society of the planet face various problems."
 
 sfdoll_ark_event.8:0 "Communication with Elisa"
-sfdoll_ark_event.8.desc:0 "In recent years, I have met two interesting young men in Terra. I cured them and made them some offers they couldn't refuse, so they came to us for study. \n\n§Y<You can now communicate with Talulah through Elisa.>§ \n\n§Y<You can now communicate with Frostnova through Elisa.>§"
+sfdoll_ark_event.8.desc:0 "In recent years, I have met two interesting young men in Terra. At that time, they were dying because of injuries and diseases. I cured them and made them some offers they couldn't refuse, so they came to us for study. \n\n§Y<You can now communicate with Talulah through Elisa.>§ \n\n§Y<You can now communicate with Frostnova through Elisa.>§"

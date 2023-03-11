@@ -682,9 +682,9 @@ building_sfdoll_academy = {
 }
 
 
-#星际互联网，行政，舒适度，国策解锁
+#星际互联网，国策解锁
 building_sfdoll_net = {
-	base_buildtime = @b1_time
+	base_buildtime = @b2_time
 	can_be_disabled = yes
 	base_cap_amount = 1
 	icon = building_sfdoll_net
@@ -709,13 +709,12 @@ building_sfdoll_net = {
 		modifier = {	
 			planet_crime_add = -20
 			planet_amenities_add = 25
-			planet_building_build_speed_mult = 0.3
-			planet_decision_enact_speed_mult = 0.3
-			planet_jobs_produces_mult = 0.25
+			planet_decision_enact_speed_mult = 0.5
+			planet_jobs_produces_mult = 0.1
 		}
 	}
 	country_modifier = {
-		country_admin_cap_add = 60
+		country_admin_cap_add = 30
 	}
 	# triggered_desc = {
 	# 	text = job_sfdoll_it_doll_effect_desc
@@ -732,54 +731,54 @@ building_sfdoll_net = {
 	}
 }
 
-building_sfdoll_net_2 = {
-	base_buildtime = @b2_time
-	can_be_disabled = yes
-	base_cap_amount = 1
-	icon = building_sfdoll_net
-	category = amenity
-	potential = {
-		always = no
-		exists = owner
-		owner = {	has_country_flag = sfdoll_empire	}
-	}
-	#需要国策
-	destroy_trigger = {
-		exists = owner
-		owner = {
-			NOT = {	has_country_flag = sfdoll_empire }
-		}
-	}
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { has_country_flag = sfdoll_empire }
-		}
-		modifier = {	
-			planet_crime_add = -30
-			planet_amenities_add = 30
-			planet_building_build_speed_mult = 0.5
-			planet_decision_enact_speed_mult = 0.5
-			planet_jobs_produces_mult = 0.4
-		}
-	}
-	country_modifier = {
-		country_admin_cap_add = 60
-	}
-	# triggered_desc = {
-	# 	text = job_sfdoll_it_doll_effect_desc
-	# }
+# building_sfdoll_net_2 = {
+# 	base_buildtime = @b2_time
+# 	can_be_disabled = yes
+# 	base_cap_amount = 1
+# 	icon = building_sfdoll_net
+# 	category = amenity
+# 	potential = {
+# 		always = no
+# 		exists = owner
+# 		owner = {	has_country_flag = sfdoll_empire	}
+# 	}
+# 	#需要国策
+# 	destroy_trigger = {
+# 		exists = owner
+# 		owner = {
+# 			NOT = {	has_country_flag = sfdoll_empire }
+# 		}
+# 	}
+# 	triggered_planet_modifier = {
+# 		potential = {
+# 			exists = owner
+# 			owner = { has_country_flag = sfdoll_empire }
+# 		}
+# 		modifier = {	
+# 			planet_crime_add = -30
+# 			planet_amenities_add = 30
+# 			planet_building_build_speed_mult = 0.5
+# 			planet_decision_enact_speed_mult = 0.5
+# 			planet_jobs_produces_mult = 0.4
+# 		}
+# 	}
+# 	country_modifier = {
+# 		country_admin_cap_add = 60
+# 	}
+# 	# triggered_desc = {
+# 	# 	text = job_sfdoll_it_doll_effect_desc
+# 	# }
 	
-	resources = {
-		category = planet_buildings
-		cost = {
-			minerals = @b2_minerals
-		}
-		upkeep = {
-			energy = @b2_upkeep
-		}
-	}
-}
+# 	resources = {
+# 		category = planet_buildings
+# 		cost = {
+# 			minerals = @b2_minerals
+# 		}
+# 		upkeep = {
+# 			energy = @b2_upkeep
+# 		}
+# 	}
+# }
 
 #job_sfdoll_it_doll:0 "IT工作者"
 # job_sfdoll_it_doll_plural:0 "IT工作者"

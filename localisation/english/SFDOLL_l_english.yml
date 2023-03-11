@@ -5,6 +5,9 @@ GF_nyto_collapse_liquid_desc:0 "Collapse Fluid is a kind of particle-wave, which
 GF_nyto_collapse_liquid_deficit:0 "Collapse fluid Deficit"
 GF_nyto_collapse_liquid_deficit_desc:0 "Collapse fluid is in deficit, whether it be daily life or productions are now in paralysis."
 
+sfdoll_test_event.3:0 "SF Doll: Version Update"
+sfdoll_test_event.3.desc:0 "SF Doll MOD has been updated. This may cause some bugs in the old archive!"
+
 #army
 tech_sfdoll_army:0 "Fire Control Core Update"
 tech_sfdoll_army_desc:0 "New fire control cores will improve armies performance"

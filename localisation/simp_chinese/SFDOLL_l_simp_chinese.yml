@@ -5,6 +5,9 @@ GF_nyto_collapse_liquid_desc:0 "坍塌液是一类粒子波,被未知文明用�
 GF_nyto_collapse_liquid_deficit:0 "坍缩液匮乏"
 GF_nyto_collapse_liquid_deficit_desc:0 "坍缩液匮乏,无论日常生活还是生产建造都陷入瘫痪。"
 
+sfdoll_test_event.3:0 "铁血人形：版本更新"
+sfdoll_test_event.3.desc:0 "铁血人形MOD已经进行了更新。这可能导致旧的存档出现BUG！"
+
 #army
 tech_sfdoll_army:0"火控更新"
 tech_sfdoll_army_desc:0 "先进的武器必须搭配更好的火控系统"

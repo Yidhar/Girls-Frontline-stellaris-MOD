@@ -10,11 +10,7 @@ country_event = {
 	fire_only_once = yes
 	hide_window = no
 	picture = GFX_evt_mysterious_signal
-	trigger = {
-		is_ai = no
-		has_authority = auth_gf_sfdoll
-		has_technology = tech_sensors_2
-	}
+	trigger = { is_ai = no has_authority = auth_gf_sfdoll }
 
 	#添加分析谜之信号项目
 	immediate = {
@@ -174,53 +170,53 @@ country_event = {
 }
 
 #生成ELID
-planet_event = {
-	id = sfdoll_relic_civilization_event.10
-	is_triggered_only = yes
-	hide_window = no
-	immediate = {
-		create_country = {
-			name = "NAME_SFDOLL_ELID "
-			type = SFDOLL_elid_country
-			effect = {
-				establish_communications_no_message = from
-				establish_contact = { who = from location = root.solar_system }
-				save_global_event_target_as = sfdoll_elid_country
-			}
-			flag = {
-				icon = {
-					category = "SidesFlag"
-					file = "Unknown.dds"
-				}
-				background = {
-					category = "backgrounds"
-					file = "sinus.dds"
-				}
-				colors = {
-					"black"
-					"black"
-					"null"
-					"null"
-				}
-			}
-		}
-		create_species = {
-			name = "NAME_SFDOLL_ELID"
-			class = eild
-			portrait = random
-			effect = { save_global_event_target_as = sfdoll_elid_species }
-		}
-		while = {
-			count = 10
-			create_army = {
-				name = "NAME_SFDOLL_ELID"
-				owner = event_target:sfdoll_elid_country
-				species = event_target:sfdoll_elid_species
-				type = "SFDOLL_eild_army_1"
-			}
-		}
-	}
-}
+# planet_event = {
+# 	id = sfdoll_relic_civilization_event.10
+# 	is_triggered_only = yes
+# 	hide_window = no
+# 	immediate = {
+# 		create_country = {
+# 			name = "NAME_SFDOLL_ELID "
+# 			type = SFDOLL_elid_country
+# 			effect = {
+# 				establish_communications_no_message = from
+# 				establish_contact = { who = from location = root.solar_system }
+# 				save_global_event_target_as = sfdoll_elid_country
+# 			}
+# 			flag = {
+# 				icon = {
+# 					category = "SidesFlag"
+# 					file = "Unknown.dds"
+# 				}
+# 				background = {
+# 					category = "backgrounds"
+# 					file = "sinus.dds"
+# 				}
+# 				colors = {
+# 					"black"
+# 					"black"
+# 					"null"
+# 					"null"
+# 				}
+# 			}
+# 		}
+# 		create_species = {
+# 			name = "NAME_SFDOLL_ELID"
+# 			class = eild
+# 			portrait = random
+# 			effect = { save_global_event_target_as = sfdoll_elid_species }
+# 		}
+# 		while = {
+# 			count = 10
+# 			create_army = {
+# 				name = "NAME_SFDOLL_ELID"
+# 				owner = event_target:sfdoll_elid_country
+# 				species = event_target:sfdoll_elid_species
+# 				type = "SFDOLL_eild_army_1"
+# 			}
+# 		}
+# 	}
+# }
 
 #次元巡礼，事件开始
 country_event = {

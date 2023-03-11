@@ -56,10 +56,11 @@ country_event = {
 #和诺耶露通讯界面
 country_event = {
 	id = sfdoll_noel_event.1
-	title = "sfdoll_noel_event_1_title"
-	desc = "sfdoll_noel_event_1_a_desc"
-	# desc = "sfdoll_noel_event_1_b_desc"
-	desc = "sfdoll_noel_event_1_c_desc"
+	title = "sfdoll_noel_event.1"
+	desc = "sfdoll_noel_event.1.desc.a"
+	desc = "sfdoll_noel_event.1.desc.b"
+	desc = "sfdoll_noel_event.1.desc.c"
+	desc = "sfdoll_noel_event.1.desc.d"
 	diplomatic = yes
 
 	picture_event_data = {
@@ -84,7 +85,7 @@ country_event = {
 		name =  "noel_become_governor"
 		allow = { 
 			custom_tooltip ={
-				fail_text ="noel_has_this_job_now"
+				fail_text ="sfdoll_the_leader_is_doing_this_job"
 				NOR = {
 					AND = {
 						exists = event_target:sfdoll_leader_noel
@@ -111,7 +112,7 @@ country_event = {
 		name =  "noel_become_scientist"
 		allow = { 
 			custom_tooltip ={
-				fail_text ="noel_has_this_job_now"
+				fail_text ="sfdoll_the_leader_is_doing_this_job"
 				NOR = {
 					AND = {
 						exists = event_target:sfdoll_leader_noel
@@ -141,7 +142,7 @@ country_event = {
 		name =  "noel_become_admiral"
 		allow = { 
 			custom_tooltip ={
-				fail_text ="noel_has_this_job_now"
+				fail_text ="sfdoll_the_leader_is_doing_this_job"
 				NOR = {
 					AND = {
 						exists = event_target:sfdoll_leader_noel
@@ -171,7 +172,7 @@ country_event = {
 		name =  "noel_become_general"
 		allow = { 
 			custom_tooltip ={
-				fail_text ="noel_has_this_job_now"
+				fail_text ="sfdoll_the_leader_is_doing_this_job"
 				NOR = {
 					AND = {
 						exists = event_target:sfdoll_leader_noel
@@ -201,7 +202,7 @@ country_event = {
 		name = option_noel_become_ship
 		allow = {
 			custom_tooltip = {
-				fail_text =  "noel_has_this_job_now"
+				fail_text =  "sfdoll_the_leader_is_doing_this_job"
 				NOT = {
 					exists = event_target:fleet_sfdoll_noel
 				}
@@ -253,7 +254,7 @@ country_event = {
 
 	#退出
 	option = {
-		name =  "sfdoll_break_option"
+		name =  "QUIT"
 		country_event = { id = sfdoll_elisa_event.3 }
 	}
 }

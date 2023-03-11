@@ -10,21 +10,7 @@
 #	potential_home_base = yes/no		# Default no, if yes starbase may be used as homebase for fleets
 #}
 
-starbase_level_sfdoll_homeless_ship = {
-	ship_size = sfdoll_homeless_ship
-	potential_home_base = yes
-	show_in_outliner = yes #no
-	collects_trade = no
-}
 
-starbase_level_sfdoll_large_homeship = {
-	ship_size = sfdoll_large_homeship
-	potential_home_base = yes
-	show_in_outliner = yes #no
-	collects_trade = no
-}
-
-#
 starbase_level_sfdoll_mobile_starbase = {
 	ship_size = sfdoll_mobile_starbase
 	potential_home_base = yes

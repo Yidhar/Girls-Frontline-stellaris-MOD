@@ -53,7 +53,7 @@ country_event = {
 	option = {
 		name = "OK"
 		# 触发粥事件
-		hidden_effect = { country_event = { id = sfdoll_ark_event.5 days = 60 } }
+		hidden_effect = { country_event = { id = sfdoll_ark_event.5 days = 360 } }
 	}
 }
 
@@ -79,8 +79,11 @@ country_event = {
 #崔耶拉通讯界面
 country_event = {
 	id = sfdoll_gunslinger_girl_event.6
-	title = "sfdoll_gunslinger_girl_event_6"
-	desc = "sfdoll_gunslinger_girl_event_6_desc"	
+	title = "sfdoll_gunslinger_girl_event.6"
+	desc = "sfdoll_gunslinger_girl_event.6.desc.a"
+	desc = "sfdoll_gunslinger_girl_event.6.desc.b"
+	desc = "sfdoll_gunslinger_girl_event.6.desc.c"
+	desc = "sfdoll_gunslinger_girl_event.6.desc.d"
 	diplomatic = yes
 
 	picture_event_data = {

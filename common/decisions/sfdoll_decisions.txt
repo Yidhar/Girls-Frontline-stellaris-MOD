@@ -3,13 +3,7 @@ decision_planet_pop_to_sfdoll = {
 	owned_planets_only = yes
 	sound = event_administrative_work
 	icon = pop_to_sfdoll
-	
-	resources = {
-		category = decisions
-		cost = {
-			nanites = 30
-		}
-	}	
+	enactment_time = 30
 	prerequisites = { tech_trait_sfdoll_nanite }
 	potential = {
 		owner = { 
@@ -17,10 +11,10 @@ decision_planet_pop_to_sfdoll = {
 			has_authority = auth_gf_sfdoll
 		}
 	}
-	allow = {
-		any_owned_pop = {
-			NOT ={ has_trait = trait_gf_sfdoll }	
-		}
+	# allow = { any_owned_pop = { NOT ={ has_trait = trait_gf_sfdoll }	 } }
+	resources = {
+		category = decisions
+		cost = { nanites = 50 }
 	}	
 	effect = {
 		custom_tooltip = decision_planet_pop_to_sfdoll_effects_short
@@ -41,35 +35,6 @@ decision_planet_pop_to_sfdoll = {
 			}
 		}		
 	}
-	# effect = {
-	# 	custom_tooltip = decision_planet_pop_to_sfdoll_effects_short
-	# 	hidden_effect = {
-	# 		save_event_target_as = planet_decision_planet_pop_to_sfdoll
-	# 		every_owned_pop = {
-	# 			limit = {
-	# 				NOT ={ has_trait = trait_gf_sfdoll }			
-	# 			}	
-	# 			owner = {
-	# 				change_variable = {
-	# 					which = count_pop_to_sfdoll
-	# 					value = 1
-	# 				}
-	# 			}
-	# 			kill_pop = yes
-	# 		}
-	# 		owner = {
-	# 			while = {
-	# 				count = count_pop_to_sfdoll
-	# 				event_target:planet_decision_planet_pop_to_sfdoll = {
-	# 					create_pop = {
-	# 						species = owner
-	# 					}
-	# 				}
-	# 			}
-	# 			clear_variable = count_pop_to_sfdoll
-	# 		}
-	# 	}		
-	# }
 }
 
 #铁血星球

@@ -219,7 +219,7 @@ planet_event = {
 			}
 			create_species = {
 				name = "NAME_GF_aggressive_elid"
-				class = aggressive_elid
+				class = eild
 				portrait = random
 				effect = {
 					save_global_event_target_as = aggressive_elid_species
@@ -713,7 +713,7 @@ planet_event = {
 			}
 			create_species = {
 				name = "NAME_GF_aggressive_elid"
-				class = aggressive_elid
+				class = eild
 				portrait = random
 				effect = {
 					save_global_event_target_as = aggressive_elid_species
@@ -946,7 +946,7 @@ planet_event = {
 			}
 			create_species = {
 				name = "NAME_GF_aggressive_elid"
-				class = aggressive_elid
+				class = eild
 				portrait = random
 				effect = {
 					save_global_event_target_as = aggressive_elid_species
@@ -1139,7 +1139,7 @@ planet_event = {
 			}
 			create_species = {
 				name = "NAME_GF_aggressive_elid"
-				class = aggressive_elid
+				class = eild
 				portrait = random
 				effect = {
 					save_global_event_target_as = aggressive_elid_species

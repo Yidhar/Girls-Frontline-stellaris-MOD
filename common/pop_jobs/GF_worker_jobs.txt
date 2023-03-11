@@ -104,9 +104,6 @@ GF_command_doll = {
 
 	pop_modifier = {
 	}
-	planet_modifier = {
-		job_GF_assemble_doll_weight_mult = 0.5
-	}
 	triggered_planet_modifier = {
 		planet_amenities_add = 4
 		mult = value:scripted_modifier_mult|MODIFIER|pop_job_amenities_mult|
@@ -144,6 +141,10 @@ GF_command_doll = {
 	
 	weight = {
 		weight = @ruler_job_weight
+		modifier = {
+			factor = 0
+			has_job = GF_assemble_doll
+		}
 	}
 }
 GF_maintain_doll = {
@@ -260,13 +261,6 @@ GF_assemble_doll = {
 	}
 	weight = {
 		weight = @specialist_job_weight
-		modifier = {
-			factor = value:scripted_modifier_mult|MODIFIER|job_GF_assemble_doll_weight_mult|
-		}
-		modifier = {
-			factor = 0
-			has_job = GF_command_doll
-		}
 		modifier = {
 			set = @ruler_job_weight
 			planet = {

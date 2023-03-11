@@ -92,7 +92,7 @@ tech_sfdoll_aux_quality_rebuilding:0 "$sfdoll_aux_quality_rebuilding$"
 tech_sfdoll_aux_quality_rebuilding_desc:0 "$sfdoll_aux_quality_rebuilding_DESC$"
 
 sfdoll_aux_rebuild:0 "铁血次元锚"
-sfdoll_aux_rebuild_text:0 "装备$sfdoll_aux_rebuild$的舰船被摧毁时,会根据现有的舰船设计生成一艘同类型舰船.新的舰船需要经过30天才能再次使用$sfdoll_aux_rebuild$。"
+sfdoll_aux_rebuild_text:0 "装备$sfdoll_aux_rebuild$的船只被摧毁时，会生成一艘相同配置的船只。新的船需要经过30天才能再次使用$sfdoll_aux_rebuild$。"
 
 tech_sfdoll_aux_rebuild:0 "$sfdoll_aux_rebuild$"
 tech_sfdoll_aux_rebuild_desc:0 "利用$sfdoll_aux_rebuild$,飞船可在受到致命攻击时保护核心机能,并短暂潜入其他维度,再利用冗余备份来修复舰船."

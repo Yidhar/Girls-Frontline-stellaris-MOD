@@ -86,7 +86,7 @@ tech_sfdoll_aux_fire_range:0 "$sfdoll_aux_fire_range$"
 tech_sfdoll_aux_fire_range_desc:0 "$sfdoll_aux_fire_range_DESC$"
 
 sfdoll_aux_rebuild:0 "SF Dimensional-Anchor"
-sfdoll_aux_rebuild_text:0 "When a ship equipped with $sfdoll_aux_rebuild$ is destroyed, a ship of the same type will be spawned based on a existing ship design. It will take 30 days for the new ship to use $sfdoll_aux_rebuild$ again."
+sfdoll_aux_rebuild_text:0 "When a ship equipped with $sfdoll_aux_rebuild$ is destroyed, a ship with the same configuration will be spawned. It will take 30 days for the new ship to use $sfdoll_aux_rebuild$ again."
 
 tech_sfdoll_aux_rebuild:0 "$sfdoll_aux_rebuild$"
 tech_sfdoll_aux_rebuild_desc:0 "Using the $sfdoll_aux_rebuild$, the ship can protect the core function when it is fatally attacked, and sneak into other dimensions briefly, and then use the redundant backup to repair the ship.."

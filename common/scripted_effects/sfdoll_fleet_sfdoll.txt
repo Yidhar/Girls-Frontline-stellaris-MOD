@@ -43,13 +43,16 @@ aura_sfdoll_2_set_mod_effect = {
 
 # this = ship destroyed , root = ship , root.fromfrom = ship destroyed
 sfdoll_warship_rebuild = {
+
+	#船数>1则在同一舰队内刷船
 	if = {
-		limit = { is_ship_size = sfdoll_mobile_starbase }
+		limit = { fleet = { num_ships > 1 } }
 		fleet = {
 			create_ship = {
-				name = prev
-				random_existing_design = sfdoll_mobile_starbase
+				name = root.fromfrom
+				design = root.fromfrom
 				effect = {
+					# 复活冷却
 					set_timed_ship_flag = {
 						flag = flag_sfdoll_aux_rebuild
 						days = 30
@@ -58,115 +61,19 @@ sfdoll_warship_rebuild = {
 			}
 		}
 	}
-	else_if = {
-		limit = { is_ship_size = sfdoll_warship_1 }
-		fleet = {
-			create_ship = {
-				name = prev
-				random_existing_design = sfdoll_warship_1
-				effect = {
-					set_timed_ship_flag = {
-						flag = flag_sfdoll_aux_rebuild
-						days = 30
-					}
-				}
-			}
-		}
-	}
-	else_if = {
-		limit = { is_ship_size = sfdoll_warship_2 }
-		fleet = {
-			create_ship = {
-				name = prev
-				random_existing_design = sfdoll_warship_2
-				effect = {
-					set_timed_ship_flag = {
-						flag = flag_sfdoll_aux_rebuild
-						days = 30
-					}
-				}
-			}
-		}
-	}
-	else_if = {
-		limit = { is_ship_size = sfdoll_warship_3 }
-		fleet = {
-			create_ship = {
-				name = prev
-				random_existing_design = sfdoll_warship_3
-				effect = {
-					set_timed_ship_flag = {
-						flag = flag_sfdoll_aux_rebuild
-						days = 30
-					}
-				}
-			}
-		}
-	}
-	else_if = {
-		limit = { is_ship_size = sfdoll_warship_4 }
-		fleet = {
-			create_ship = {
-				name = prev
-				random_existing_design = sfdoll_warship_4
-				effect = {
-					set_timed_ship_flag = {
-						flag = flag_sfdoll_aux_rebuild
-						days = 30
-					}
-				}
-			}
-		}
-	}
-	else_if = {
-		limit = { is_ship_size = sfdoll_warship_5 }
-		fleet = {
-			create_ship = {
-				name = prev
-				random_existing_design = sfdoll_warship_5
-				effect = {
-					set_timed_ship_flag = {
-						flag = flag_sfdoll_aux_rebuild
-						days = 30
-					}
-				}
-			}
-		}
-	}
-	else_if = {
-		limit = { is_ship_size = sfdoll_warship_6 }
-		fleet = {
-			create_ship = {
-				name = prev
-				random_existing_design = sfdoll_warship_6
-				effect = {
-					set_timed_ship_flag = {
-						flag = flag_sfdoll_aux_rebuild
-						days = 30
-					}
-				}
-			}
-		}
-	}
-}
-#剩余1舰，新建舰队进行复活
-sfdoll_warship_rebuild_num1 = {
-	create_fleet = {
-		name = root.fromfrom.fleet
-		effect = {
-			set_owner = root
-			set_location = root.fromfrom
-			#复活的新舰队不能立刻触发压制光环
-			set_timed_fleet_flag = {
-				flag = aura_sfdoll_2_friendly
-				days = 10
-			}
-			if = {
-				limit = {
-					root.fromfrom = { is_ship_size = sfdoll_mobile_starbase }
+	else = {
+		create_fleet = {
+			name = root.fromfrom.fleet
+			effect = {
+				set_owner = root
+				set_location = root.fromfrom
+				#复活的新舰队不能立刻触发压制光环
+				set_timed_fleet_flag = {
+					flag = aura_sfdoll_2_friendly
+					days = 10
 				}
 				create_ship = {
-					random_existing_design = sfdoll_mobile_starbase
+					design = root.fromfrom
 					name = root.fromfrom
 					effect = {
 						set_timed_ship_flag = {
@@ -177,110 +84,9 @@ sfdoll_warship_rebuild_num1 = {
 				}
 				set_mia = yes
 			}
-			else_if = {
-				limit = {
-					root.fromfrom = {
-						is_ship_size = sfdoll_warship_1
-					}
-				}
-				create_ship = {
-					random_existing_design = sfdoll_warship_1
-					name = root.fromfrom
-					effect = {
-						set_timed_ship_flag = {
-							flag = flag_sfdoll_aux_rebuild
-							days = 30
-						}
-					}
-				}
-			}
-			else_if = {
-				limit = {
-					root.fromfrom = {
-						is_ship_size = sfdoll_warship_2
-					}
-				}
-				create_ship = {
-					random_existing_design = sfdoll_warship_2
-					name = root.fromfrom
-					effect = {
-						set_timed_ship_flag = {
-							flag = flag_sfdoll_aux_rebuild
-							days = 30
-						}
-					}
-				}
-			}
-			else_if = {
-				limit = {
-					root.fromfrom = {
-						is_ship_size = sfdoll_warship_3
-					}
-				}
-				create_ship = {
-					random_existing_design = sfdoll_warship_3
-					name = root.fromfrom
-					effect = {
-						set_timed_ship_flag = {
-							flag = flag_sfdoll_aux_rebuild
-							days = 30
-						}
-					}
-				}
-			}
-			else_if = {
-				limit = {
-					root.fromfrom = {
-						is_ship_size = sfdoll_warship_4
-					}
-				}
-				create_ship = {
-					random_existing_design = sfdoll_warship_4
-					name = root.fromfrom
-					effect = {
-						set_timed_ship_flag = {
-							flag = flag_sfdoll_aux_rebuild
-							days = 30
-						}
-					}
-				}
-			}
-			else_if = {
-				limit = {
-					root.fromfrom = {
-						is_ship_size = sfdoll_warship_5
-					}
-				}
-				create_ship = {
-					random_existing_design = sfdoll_warship_5
-					name = root.fromfrom
-					effect = {
-						set_timed_ship_flag = {
-							flag = flag_sfdoll_aux_rebuild
-							days = 30
-						}
-					}
-				}
-			}
-			else_if = {
-				limit = {
-					root.fromfrom = {
-						is_ship_size = sfdoll_warship_6
-					}
-				}
-				create_ship = {
-					random_existing_design = sfdoll_warship_6
-					name = root.fromfrom
-					effect = {
-						set_timed_ship_flag = {
-							flag = flag_sfdoll_aux_rebuild
-							days = 30
-						}
-					}
-				}
-			}
 		}
 	}
+
 }
 
 # This root = owner of fleet 1 (destroyed)

@@ -1,7 +1,0 @@
-#坍缩液
-GF_nyto_collapse_liquid = {
-	tradable = no
-	max = 15000
-	deficit_modifier = GF_nyto_collapse_liquid_deficit
-	ai_weight = { weight = 10 }
-}

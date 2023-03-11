@@ -107,51 +107,17 @@ country_event = {
 	id = sfdoll_fleet_event.5
 	hide_window = yes
 	is_triggered_only = yes
-	trigger = {
-		has_authority = auth_gf_sfdoll
-	}
+	trigger = { has_authority = auth_gf_sfdoll }
 	immediate = {
 		fromfrom = {
-			#诺耶露受损
-			# if = {
-			# 	limit = {	is_ship_size = ship_sfdoll_noel	}
-			# 	root = {
-			# 		set_timed_country_flag = {
-			# 			flag = sfdoll_noel_is_destroyed
-			# 			days = 360
-			# 		}
-			# 	}
-			# }
-
-			#高维船受损
-			# if = {
-			# 	limit = {	is_ship_size = sfdoll_exd_science_ship	}
-			# 	root = {
-			# 		set_timed_country_flag = {
-			# 			flag = sfdoll_exd_science_ship_destroyed
-			# 			days = 360
-			# 		}
-			# 	}
-			# }
-			
+			# 拥有复活部件
 			if = {
 				limit = {
 					has_component = sfdoll_aux_rebuild
 					NOT = { has_ship_flag = flag_sfdoll_aux_rebuild }
 				}
-
-				#船数>1则在同一舰队内刷船
-				if = {
-					limit = {
-						fleet = {
-							num_ships > 1
-						}
-					}
-					sfdoll_warship_rebuild = yes
-				}
-				else = {
-					sfdoll_warship_rebuild_num1 = yes
-				}
+				# save_event_target_as = sfdoll_ship_rebuild
+				sfdoll_warship_rebuild = yes
 			}
 		}
 	}

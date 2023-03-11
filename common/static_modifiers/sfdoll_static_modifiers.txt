@@ -27,13 +27,6 @@ trait_sfdoll_war_2_modifier = {
 	ship_weapon_damage = 0.5
 }
 
-add_hp_1500000_times = {
-	ship_hull_add = 10
-}
-
-weapon_damage_test = {
-	weapon_type_kinetic_weapon_damage_mult = 1
-}
 
 #¿ªÕ½Ñ¹ÖÆ
 aura_sfdoll_1_modifier = {
@@ -97,6 +90,12 @@ sfdoll_test_modifier = {
 	country_base_influence_produces_add = 100
 	megastructure_build_speed_add = 1000
 	starbase_shipyard_build_speed_mult = 100
+}
+
+sfdoll_test_mod_2 = {
+	ship_armor_add = 1000000
+	ship_shield_add = 1000000
+	ship_hull_mult = -0.99
 }
 
 # xxx= {

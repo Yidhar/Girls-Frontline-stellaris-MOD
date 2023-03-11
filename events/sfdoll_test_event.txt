@@ -138,11 +138,20 @@ country_event = {
 	immediate = {  remove_modifier = sfdoll_test_modifier  }
 }
 
-# country_event = {
-# 	id = sfdoll_test_event.7
-# 	hide_window = no
-# 	is_triggered_only = yes
-# }
+country_event = {
+	id = sfdoll_test_event.7
+	hide_window = no
+	is_triggered_only = yes
+	immediate = {
+		every_owned_ship = {
+			if = {
+				limit = { is_ship_size = sfdoll_mobile_starbase }
+				destroy_ship = this
+				break = yes
+			}
+		}
+	}
+}
 
 # country_event = {
 # 	id = sfdoll_test_event.8

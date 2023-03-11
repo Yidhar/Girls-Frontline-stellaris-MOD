@@ -3,14 +3,4 @@
 # Component Tags can be given scripted in component_templates and is used to group components together for the use of common modifiers
 # They are also used in component_slot_templates for selecting approperative GFX
 
-weapon_type_nytowith
-weapon_type_light
-weapon_type_keto
-weapon_type_Akso
-weapon_type_LsScepter
-weapon_type_son
-weapon_type_prism
-weapon_type_Electronic
-weapon_type_beacon
-weapon_type_aoe
-weapon_type_fireworks
+weapon_type_GF_collapsed

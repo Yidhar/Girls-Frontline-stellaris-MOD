@@ -40,9 +40,3 @@ GF_doll_assembly_speed_mult = {
 	good = yes
 	category = pop
 }
-
-job_GF_assemble_doll_weight_mult = {
-	percentage = yes
-	good = yes
-	category = planet
-}

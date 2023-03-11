@@ -20,8 +20,6 @@ entity = {
 	state = {
 		name = "moving"
 		event = { trigger_once = yes sound = { soundeffect = "moving_out_battleship" } }
-		event = { node = "Engine_Large_01" entity = "GFnyto_planet_shield_effect_entity" trigger_once = yes  }
-		start_event = {  node = "Engine_Large_01" particle = "GFnyto_planet_shield_effect"  keep_particle = yes trigger_once = yes }
 		start_event = { node = "Engine_Large_01" particle = GFnyto_generic_big_3_exhaust_circle_moving keep_particle = yes trigger_once = yes }
 		
 	}
@@ -38,8 +36,6 @@ entity = {
 			}
 	}
 	state = { name = "combat_idle" animation = shiledship_idle animation_blend_time = 0  looping = no next_state = "combat_idle" animation_speed = 0.1
-		event = { node = "Engine_Large_01" entity = "GFnyto_planet_shield_effect_entity" trigger_once = yes  }
-		event = {  node = "Engine_Large_01" entity = "cube_shiled" trigger_once = yes }
 		chance = {
 			if_current_state = {
 				"idle" = 0
@@ -51,8 +47,6 @@ entity = {
 		}
 	}
 	state = { name = "combat_moving" animation = shiledship_idle animation_blend_time = 0 looping = no next_state = "combat_moving" animation_speed = 0.1
-		event = { node = "Engine_Large_01" entity = "GFnyto_planet_shield_effect_entity" trigger_once = yes }
-		event = {  node = "Engine_Large_01" entity = "cube_shiled" trigger_once = yes }
 		chance = {
 			if_current_state = {
 				"idle" = 0

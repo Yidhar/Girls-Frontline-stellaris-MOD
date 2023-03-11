@@ -58,6 +58,7 @@ GF_army_elid_2 = {
 
 
 # hostile elid, event only
+#感染者
 GF_army_hostile_elid = {
 	icon = GFX_army_type_gene_warrior
 	defensive = yes
@@ -75,6 +76,7 @@ GF_army_hostile_elid = {
 	potential = { always = no }
 }
 
+#感染者头目
 GF_army_hostile_elid_boss = {
 	icon = GFX_army_type_undead
 	defensive = yes
@@ -90,4 +92,113 @@ GF_army_hostile_elid_boss = {
 
 
 	potential = { always = no }
+}
+
+#EILD生物
+#鶸
+GF_nyto_eild_army_1 = {
+	defensive = yes
+	damage = 2.0
+	health = 2.40
+	has_morale = no
+	icon = GFX_army_type_xenomorph
+	has_species = no
+	morale_damage = 0.8
+	potential = {
+		always = no
+	}
+}
+#中
+GF_nyto_eild_army_2 = {
+	defensive = yes
+	damage = 2.4
+	health = 2.80
+	has_morale = no
+	morale_damage = 1.2
+	icon = GFX_army_type_xenomorph
+	has_species = no
+	
+	potential = {
+		always = no
+	}
+}
+#强
+GF_nyto_eild_army_3 = {
+	defensive = yes
+	damage = 2.8
+	health = 3.2
+	morale_damage = 1.4
+	
+	has_morale = no
+	icon = GFX_army_type_xenomorph
+	has_species = no
+	
+	potential = {
+		always = no
+	}
+}
+
+#小型硅化动物
+GF_nyto_eild_army_4 ={
+	defensive = yes
+	damage = 2.8
+	health = 3.4
+	morale = 2.0
+	morale_damage = 0.5
+	icon = GFX_army_type_xenomorph
+	has_species = no
+	potential = {
+		always = no
+	}
+}
+#中
+GF_nyto_eild_army_5 ={
+	defensive = yes
+	damage = 3.6
+	health = 4.2
+	morale = 5.0
+	morale_damage = 1.5
+	icon = GFX_army_type_xenomorph
+	has_species = no
+	potential = {
+		always = no
+	}
+}
+#大
+GF_nyto_eild_army_6={
+	defensive = yes
+	damage = 4.4
+	health = 5.0
+	has_morale = no
+	morale_damage = 2
+	icon = GFX_army_type_xenomorph
+	has_species = no
+	potential = {
+		always = no
+	}
+}
+#巨
+GF_nyto_eild_army_7={
+	defensive = yes
+	damage = 5.2
+	health = 5.8
+	has_morale = no
+	morale_damage = 5
+	icon = GFX_army_type_xenomorph
+	has_species = no
+	potential = {
+		always = no
+	}
+}
+#头目
+GF_nyto_eild_army_8 ={
+	defensive = no
+	damage = 35
+	morale_damage = 50
+	health = 55
+	has_morale = no
+	icon = GFX_army_type_undead
+	potential = {
+		always = no
+	}
 }

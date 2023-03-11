@@ -8,19 +8,16 @@ utility_component_template = {
 	icon_frame = 1
 	power = 0
 	modifier = {
-		ship_armor_add = 1140
-		#		ship_base_speed_mult = 0.3
+		ship_hull_add = 1140
 	}
 	component_set = "GFnyto_body_armor_1"
 	resources = {
 		category = ship_components
-		cost = {
-			
+		cost = {		
 			alloys = 112
 			GF_nyto_collapse_liquid = 11.2
 		}
-		upkeep = {
-			
+		upkeep = {			
 			GF_nyto_collapse_liquid = 0.224
 		}
 	}
@@ -39,14 +36,13 @@ utility_component_template = {
 	icon_frame = 1
 	power = 0
 	modifier = {
-		ship_armor_add = 1860
+		ship_hull_add = 1860
 		#		ship_base_speed_mult = 0.6
 	}
 	component_set = "GFnyto_body_armor_2"
 	resources = {
 		category = ship_components
-		cost = {
-			
+		cost = {			
 			alloys = 172
 			GF_nyto_collapse_liquid = 17.2
 		}
@@ -70,7 +66,7 @@ utility_component_template = {
 	icon_frame = 1
 	power = 0
 	modifier = {
-		ship_armor_add = 2820
+		ship_hull_add = 2820
 		#		ship_base_speed_mult = 0.9
 	}
 	component_set = "GFnyto_body_armor_3"
@@ -100,7 +96,7 @@ utility_component_template = {
 	icon_frame = 1
 	power = 0
 	modifier = {
-		ship_armor_add = 485
+		ship_hull_add = 485
 		#		ship_base_speed_mult = 0.2
 	}
 	component_set = "GFnyto_body_armor_1"
@@ -130,7 +126,7 @@ utility_component_template = {
 	icon_frame = 1
 	power = 0
 	modifier = {
-		ship_armor_add = 815
+		ship_hull_add = 815
 		#		ship_base_speed_mult = 0.5
 	}
 	component_set = "GFnyto_body_armor_2"
@@ -160,7 +156,7 @@ utility_component_template = {
 	icon_frame = 1
 	power = 0
 	modifier = {
-		ship_armor_add = 1265
+		ship_hull_add = 1265
 		#		ship_base_speed_mult = 0.8
 	}
 	component_set = "GFnyto_body_armor_3"
@@ -190,7 +186,7 @@ utility_component_template = {
 	icon_frame = 1
 	power = 0
 	modifier = {
-		ship_armor_add = 190
+		ship_hull_add = 190
 	}
 	component_set = "GFnyto_body_armor_1"
 	resources = {
@@ -219,7 +215,7 @@ utility_component_template = {
 	icon_frame = 1
 	power = 0
 	modifier = {
-		ship_armor_add = 310
+		ship_hull_add = 310
 	}
 	component_set = "GFnyto_body_armor_2"
 	resources = {
@@ -248,7 +244,7 @@ utility_component_template = {
 	icon_frame = 1
 	power = 0
 	modifier = {
-		ship_armor_add = 470
+		ship_hull_add = 470
 	}
 	component_set = "GFnyto_body_armor_3"
 	resources = {

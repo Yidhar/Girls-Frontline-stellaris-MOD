@@ -99,11 +99,10 @@ mod_job_sfdoll_goods_maker_add:0 "$job_sfdoll_goods_maker$岗位"
 # job_sfdoll_goods_producer_2_effect_desc:0 "生产消费品"
 # mod_job_sfdoll_goods_producer_2_add:0 "$job_sfdoll_goods_producer_2$岗位"
 
-
-tech_sfdoll_energy_plant:0"铁血奇点能源"
-tech_sfdoll_energy_plant_desc:0"奇点能源打破了多种物理法则"
-building_sfdoll_energy_plant:0"铁血奇点发电厂"
-building_sfdoll_energy_plant_desc:0"$building_sfdoll_energy_plant$"
+tech_sfdoll_energy_plant:0 "四级奇点"
+tech_sfdoll_energy_plant_desc:0 "模仿堕落帝国的科技，铁血人形们建造了四级奇点。"
+building_sfdoll_energy_plant:0 "铁血四级奇点"
+building_sfdoll_energy_plant_desc:0 "$tech_sfdoll_energy_plant_desc$"
 
 job_sfdoll_energy_maker:0"奇点技师"
 job_sfdoll_energy_maker_plural:0"$job_sfdoll_energy_maker_maker$"

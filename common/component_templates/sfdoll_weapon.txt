@@ -536,7 +536,7 @@ weapon_component_template = {
 	firing_arc = 80
 	static_rotation = yes
 	use_ship_kill_target = no
-	damage = { min = 30000 max = 36000 }
+	damage = { min = 24000 max = 30000 }
 	#冷却时间要除以10
 	total_fire_time = 91
 	windup = { min = 8 max = 8 }
@@ -588,7 +588,7 @@ weapon_component_template = {
 	min_range = 10.0
 	static_rotation = yes
 	use_ship_kill_target = yes
-	damage = { min = 190000 max = 200000 }
+	damage = { min = 110000 max = 150000 }
 	#冷却时间要除以10
 	total_fire_time = 121
 	windup = { min = 11 max = 11 }
@@ -638,7 +638,7 @@ weapon_component_template = {
 	min_range = 20.0
 	static_rotation = yes
 	use_ship_kill_target = yes
-	damage = { min = 500000 max = 530000 }
+	damage = { min = 260000 max = 260000 }
 	#冷却时间要除以10
 	total_fire_time = 121
 	windup = { min = 11 max = 11 }

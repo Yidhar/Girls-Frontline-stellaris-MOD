@@ -261,37 +261,6 @@ sfdoll_goods_maker = {
 	}
 	weight = { weight = 20 }
 }
-#T2消费品
-# sfdoll_goods_producer_2 = {
-# 	category = specialist
-# 	#用于检测工作是否可用的一系列逻辑
-# 	condition_string = SPECIALIST_JOB_TRIGGER
-# 	building_icon = building_sfdoll_goods_plant
-# 	icon = sfdoll_goods_maker
-# 	clothes_texture_index = 3
-# 	possible_pre_triggers = {
-# 		has_owner = yes
-# 		is_being_purged = no
-# 		is_being_assimilated = no
-# 		is_sapient = yes
-# 	}
-# 	possible_precalc = can_fill_specialist_job
-# 	resources = {
-# 		category = planet_artisans
-# 		produces = {
-# 			consumer_goods = 120
-# 			engineering_research = 6
-# 		}
-# 		upkeep = {
-# 			minerals = 96
-# 		}
-# 	}
-# 	weight = {
-# 		weight = 20
-# 	}
-# }
-
-
 
 #奇点能源岗位
 sfdoll_energy_maker = {
@@ -311,7 +280,7 @@ sfdoll_energy_maker = {
 	possible_precalc = can_fill_specialist_job
 	resources = {
 		category = planet_technician
-		produces = { energy = 250 }
+		produces = { energy = 50 }
 		upkeep = { sr_dark_matter = 2 }
 	}
 	weight = {	weight = 20	}
@@ -335,10 +304,8 @@ sfdoll_mineral_maker = {
 	possible_precalc = can_fill_specialist_job
 	resources = {
 		category = planet_sfdoll_sp_industry
-		produces = {	minerals = 150  }
-		upkeep = {
-			energy = 250
-		}
+		produces = {	minerals = 50  }
+		upkeep = { energy = 50 }
 	}
 	weight = {	weight = 20	}
 }

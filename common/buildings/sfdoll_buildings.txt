@@ -714,7 +714,7 @@ building_sfdoll_net = {
 		}
 	}
 	country_modifier = {
-		country_admin_cap_add = 30
+		country_admin_cap_add = 20
 	}
 	# triggered_desc = {
 	# 	text = job_sfdoll_it_doll_effect_desc

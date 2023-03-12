@@ -92,17 +92,16 @@ mod_job_sfdoll_goods_maker_add:0 "$job_sfdoll_goods_maker$ jobs"
 # mod_job_sfdoll_goods_producer_2_add:0 "$job_sfdoll_goods_producer_2$ jobs"
 
 
-tech_sfdoll_energy_plant:0"Singularity Energy"
-tech_sfdoll_energy_plant_desc:0"Singularity Energy breaks multiple laws of physics"
-building_sfdoll_energy_plant:0"SF Singularity Energy Plant"
-building_sfdoll_energy_plant_desc:0"$building_sfdoll_energy_plant$"
+tech_sfdoll_energy_plant:0 "Class-4 Singularity"
+tech_sfdoll_energy_plant_desc:0 "Imitating the technology of the fallen empire, SF Doll built the Class-4 Singularity."
+building_sfdoll_energy_plant:0 "SF Class-4 Singularity"
+building_sfdoll_energy_plant_desc:0 "$tech_sfdoll_energy_plant_desc$"
 
 job_sfdoll_energy_maker:0 "Singularity Technician"
 job_sfdoll_energy_maker_plural:0 "Singularity Technicians"
 job_sfdoll_energy_maker_desc:0 "$job_sfdoll_energy_maker$"
 job_sfdoll_energy_maker_effect_desc:0 "$job_sfdoll_energy_maker$ consumes §Y$sr_dark_matter$§!, produces §Y$energy$§! "
 mod_job_sfdoll_energy_maker_add:0"$job_sfdoll_energy_maker$ jobs"
-
 
 tech_building_sfdoll_mineral:0 "Quality Generate Project"
 tech_building_sfdoll_mineral_desc:0 "As long as there is enough energy, we can generate all matter we need."

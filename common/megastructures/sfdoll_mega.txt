@@ -1617,13 +1617,13 @@ sfdoll_mega_shipyard_5 = {
 	prerequisites = { 	tech_sfdoll_mega_shipyard	}
 	upgrade_from = { "sfdoll_mega_shipyard_4" }
 	potential = {	has_authority = auth_gf_sfdoll }
-	country_modifier = { 	country_naval_cap_add = 5000 }
+	country_modifier = { 	country_naval_cap_add = 3000 }
 	ship_modifier = { ship_starting_experience_add = 1000 }
 	
 	station_modifier = {
-		starbase_shipyard_capacity_add = 200
+		starbase_shipyard_capacity_add = 100
 		starbase_shipyard_build_cost_mult = -0.10
-		starbase_shipyard_build_speed_mult = 8.0		
+		starbase_shipyard_build_speed_mult = 1		
 	}
 	resources = {
 		category = megastructures

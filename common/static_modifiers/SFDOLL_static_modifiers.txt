@@ -1,16 +1,16 @@
-#Ì®ËõÒºØÑ·¦
+#åç¼©æ¶²åŒ®ä¹
 GF_nyto_collapse_liquid_deficit = {
 	planet_stability_add=-200
 	country_produces_mult = -0.25
 }
 
-# ÌúÑª´«Ã½ºÏ×÷Ğ­Òé
+# é“è¡€ä¼ åª’åˆä½œåè®®
 sfdoll_media_agreement = {
 	country_unity_produces_mult = 0.10
 	pop_happiness = 0.15
 }
 
-##ÌØÖÊÏµÍ³
+##ç‰¹è´¨ç³»ç»Ÿ
 # trait_sfdoll_logic_engine_2_modifier = {
 # 	num_tech_alternatives_add = 1
 # }
@@ -28,14 +28,14 @@ trait_sfdoll_war_2_modifier = {
 }
 
 
-#¿ªÕ½Ñ¹ÖÆ
+#å¼€æˆ˜å‹åˆ¶
 aura_sfdoll_1_modifier = {
 	ship_weapon_damage = -8
 	ship_fire_rate_mult = -16
 	ship_weapon_range_mult = -8
 }
 
-#³ÖĞøÑ¹ÖÆ
+#æŒç»­å‹åˆ¶
 aura_sfdoll_2_hostile_mod = {
 	ship_accuracy_mult = -10
 	# ship_fire_rate_mult = -4
@@ -44,7 +44,7 @@ aura_sfdoll_2_hostile_mod = {
 	# ship_armor_penetration_mult = -1
 }
 
-# ogasÌá¹©µÄĞŞÕı
+# ogasæä¾›çš„ä¿®æ­£
 sfdoll_ogas_economic_mod = {
 	planet_decision_enact_speed_mult = 0.5
 	planet_building_build_speed_mult = 0.25
@@ -59,7 +59,7 @@ sfdoll_ogas_intel_mod = {
 }
 
 
-# ÖÇ×ÓÌá¹©µÄĞŞÕı
+# æ™ºå­æä¾›çš„ä¿®æ­£
 sfdoll_sophon_intel_mod = {
 	add_base_country_intel = 40
 	intel_encryption_add = 20
@@ -68,7 +68,7 @@ sfdoll_sophon_intel_mod = {
 sfdoll_sophon_research_mod = { all_technology_research_speed = 0.15 }
 # sfdoll_sophon_engineering_mod
 
-# Ä¸½¢
+# æ¯èˆ°
 sfdoll_mobile_starbase_mod = {
 	ship_starting_experience_add = 1000	
 }

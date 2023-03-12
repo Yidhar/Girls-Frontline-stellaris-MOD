@@ -1,0 +1,54 @@
+#跨星系攻击的星球列表，会添加检查过该星系的flag。移除该flag
+remove_flag_sfdoll_planet_killer_target_effect = {
+	optimize_memory
+	hidden_effect = {
+		every_system = {
+			limit = {
+				has_star_flag = flag_sfdoll_planet_killer_target
+			}
+			remove_star_flag = flag_sfdoll_planet_killer_target
+		}
+	}
+}
+#跨星系攻击的星球列表，每个选项对应的global event target，清除
+
+clear_target_of_pk_sfdoll_effect = {
+	optimize_memory
+	if = {
+		limit = {
+			exists = event_target:target_1_of_pk_sfdoll
+		}
+		clear_global_event_target = target_1_of_pk_sfdoll
+	}
+	if = {
+		limit = {
+			exists = event_target:target_2_of_pk_sfdoll
+		}
+		clear_global_event_target = target_2_of_pk_sfdoll
+	}
+	if = {
+		limit = {
+			exists = event_target:target_3_of_pk_sfdoll
+		}
+		clear_global_event_target = target_3_of_pk_sfdoll
+	}
+	if = {
+		limit = {
+			exists = event_target:target_4_of_pk_sfdoll
+		}
+		clear_global_event_target = target_4_of_pk_sfdoll
+	}
+	if = {
+		limit = {
+			exists = event_target:target_5_of_pk_sfdoll
+		}
+		clear_global_event_target = target_5_of_pk_sfdoll
+	}
+	if = {
+		limit = {
+			exists = event_target:target_6_of_pk_sfdoll
+		}
+		clear_global_event_target = target_6_of_pk_sfdoll
+	}
+	
+}

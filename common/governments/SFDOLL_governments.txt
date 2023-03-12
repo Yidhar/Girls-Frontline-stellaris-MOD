@@ -1,0 +1,18 @@
+#联邦
+gov_civic_sfdoll_commonwealth = {
+	ruler_title = RT_sfdoll_president
+	possible = {
+		has_authority = auth_gf_sfdoll
+		NOT = {	has_ethic = ethic_fanatic_militarist	}
+	}
+	weight = {base = 5}
+}
+#军政府
+gov_civic_sfdoll_military_government = {
+	ruler_title = RT_sfdoll_president
+	possible = {
+		has_authority = auth_gf_sfdoll
+		has_ethic = ethic_fanatic_militarist
+	}
+	weight = {base = 5}
+}

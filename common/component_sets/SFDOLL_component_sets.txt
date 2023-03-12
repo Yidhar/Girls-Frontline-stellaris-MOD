@@ -1,0 +1,203 @@
+component_set = {
+	key = "sfdoll_weapon_X_1"
+	icon = "GFX_sfdoll_weapon_X_1"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "component_set_sfdoll_aux_repair_ship"
+	icon = GFX_sfdoll_aux_repair_ship
+	icon_frame = 1
+}
+
+component_set = {
+	key = "sfdoll_aux_fire_range"
+	icon = "GFX_sfdoll_aux_fire_range"
+	icon_frame = 1
+}
+
+#辅助能源
+component_set = {
+	key = "aux_sfdoll_collapse_power"
+	icon = GFX_aux_sfdoll_collapse_power
+	icon_frame = 1
+}
+
+component_set = {
+	key = "sfdoll_weapon_S_1"
+	icon = GFX_sfdoll_weapon_S_1
+	icon_frame = 1
+}
+
+component_set = {
+	key = "sfdoll_weapon_P_1"
+	icon = GFX_sfdoll_weapon_P_1
+	icon_frame = 1
+}
+
+component_set = {
+	key = "sfdoll_weapon_T_1"
+	icon = GFX_sfdoll_weapon_T_1
+	icon_frame = 1
+}
+
+component_set = {
+	key = "sfdoll_weapon_T_SP"
+	icon = "GFX_sfdoll_weapon_T_SP"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "sfdoll_weapon_T_2"
+	icon ="GFX_sfdoll_weapon_T_2"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "sfdoll_weapon_X_2"
+	icon = "GFX_sfdoll_weapon_X_2"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "component_set_sfdoll_weapon_L_2"
+	icon = "GFX_sfdoll_weapon_L_2"
+	icon_frame = 1
+}
+component_set = {
+	key = "sfdoll_weapon_M_2"
+	icon = "GFX_sfdoll_weapon_M_2"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "sfdoll_weapon_S_2"
+	icon = "GFX_sfdoll_weapon_S_2"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "sfdoll_weapon_P_2"
+	icon = "GFX_sfdoll_weapon_P_2"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "sfdoll_weapon_G_1"
+	icon = "GFX_sfdoll_weapon_G_1"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "sfdoll_weapon_H_2"
+	icon = "GFX_sfdoll_weapon_H_2"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "sfdoll_weapon_H_2_PD"
+	icon = "GFX_sfdoll_weapon_H_2_PD"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "sfdoll_weapon_G_2"
+	icon = "GFX_sfdoll_weapon_G_2"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "sfdoll_weapon_H_1"
+	icon = GFX_sfdoll_weapon_H_1
+	icon_frame = 1
+}
+
+component_set = {
+	key = "component_set_sfdoll_ship_defense_s"
+	icon = GFX_sfdoll_ship_defense_s
+	icon_frame = 1
+}
+
+component_set = {
+	key = "component_set_sfdoll_ship_armor_L"
+	icon = GFX_sfdoll_ship_armor_L
+	icon_frame = 1
+}
+
+component_set = {
+	key = "sfdoll_ship_armor_2"
+	icon = GFX_sfdoll_ship_armor_2
+	icon_frame = 1
+}
+
+#质量再生系统
+component_set = {
+	key = "sfdoll_aux_quality_rebuilding"
+	icon = GFX_sfdoll_aux_quality_rebuilding
+	icon_frame = 1
+}
+
+
+
+#铁血巨像武器
+component_set = {
+	key = "planet_killer_sfdoll_1"
+	icon = GFX_planet_killer_sfdoll_1
+	icon_frame = 1
+}
+
+#
+component_set = {
+	key = "planet_killer_sfdoll_2"
+	icon = GFX_planet_killer_sfdoll_2
+	icon_frame = 1
+}
+
+#转化为黑洞
+component_set = {
+	key = "planet_killer_sfdoll_3"
+	icon = GFX_planet_killer_sfdoll_3
+	icon_frame = 1
+}
+
+#黑洞转化为恒星
+component_set = {
+	key = "planet_killer_sfdoll_4"
+	icon = GFX_planet_killer_sfdoll_4
+	icon_frame = 1
+}
+
+# 殖民
+component_set = {
+	key = "planet_killer_sfdoll_colonizer"
+	icon = GFX_planet_killer_sfdoll_colonizer
+	icon_frame = 1
+}
+
+component_set = {
+	key = "sfdoll_aux_rebuild"
+	icon = GFX_sfdoll_aux_rebuild
+	icon_frame = 1
+	required_component_set = yes
+}
+
+component_set = {
+	key = "sfdoll_aura_components"
+	required_component_set = yes
+	icon = "GFX_ship_part_sensor"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "component_aura_sfdoll_2"
+	required_component_set = yes
+	icon = "GFX_component_aura_sfdoll_2"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "component_sfdoll_ship_disable"
+	required_component_set = yes
+	icon = "GFX_component_sfdoll_ship_disable"
+	icon_frame = 1
+}

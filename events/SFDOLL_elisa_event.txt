@@ -1,0 +1,298 @@
+namespace = sfdoll_elisa_event
+
+#建立伊莱莎特殊国家
+country_event = {
+	id = sfdoll_elisa_event.1
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {	has_authority = auth_gf_sfdoll	}
+	
+	immediate = {
+		create_country = {
+			name = "name_elisa_country"
+			type = country_type_sfdoll_event_leader
+			flag = root
+			# flag = {
+			# 	icon= {
+			# 		category = "sfdoll_flags"
+			# 		file = "sfdoll_flag.dds"
+			# 	}
+			# 	background= {
+			# 		category = "backgrounds"
+			# 		file = "sinus.dds"
+			# 	}
+			# 	colors={
+			# 		"black"
+			# 		"black"
+			# 		"null"
+			# 		"null"
+			# 	}
+			# }
+			effect = {
+				#设置target和flag
+				save_global_event_target_as = sfdoll_elisa_country
+				set_country_flag = sfdoll_elisa_country
+			}
+		}
+		event_target:sfdoll_elisa_country= {
+			establish_communications_no_message = root
+		}
+		save_global_event_target_as = sfdoll_elisa_owner
+		set_country_flag = sfdoll_elisa_owner
+	}
+}
+
+#伊莱莎通信界面
+country_event = {
+	id = sfdoll_elisa_event.2
+	title = "sfdoll_elisa_event.2"
+	desc = "sfdoll_elisa_event_2_a_desc"
+	desc = "sfdoll_elisa_event_2_b_desc"
+	desc = "sfdoll_elisa_event_2_c_desc"
+	desc = "sfdoll_elisa_event_2_d_desc"
+	diplomatic = yes
+
+	picture_event_data = {
+		portrait = GFX_sfdoll_elisa
+		room = this
+		graphical_culture = this
+		planet_background = this
+		city_level = this
+	}	
+	is_triggered_only = yes
+
+	trigger = {
+		AND = {
+			from = {  NOT = {has_country_flag = gray_country }	}
+			from = {
+				is_country_type = country_type_sfdoll_event_leader
+				has_country_flag = sfdoll_elisa_country
+			}
+			has_country_flag = sfdoll_elisa_owner
+			NOT = { has_country_flag = contract_diplomacy_engaged }
+		}
+	}
+
+	# immediate = { set_country_flag = contract_diplomacy_engaged }
+	# after = { hidden_effect = { remove_country_flag = contract_diplomacy_engaged } }
+
+	# 联系领袖界面
+	option = {
+		name = sfdoll_elisa_event.2_option_leader
+		hidden_effect = { country_event = { id = sfdoll_elisa_event.3 } }
+	}
+
+	# 访问ogas
+	option = {
+		name = "sfdoll_elisa_event.2_option_ogas"
+		hidden_effect = {
+			if = {
+				limit = { has_country_flag = ump40_owner_sfdoll }
+				country_event = { id = sfdoll_ogas_event.1 }
+			}
+			else = {  country_event = { id = sfdoll_ogas_event.2 }  }
+		}
+	}
+
+	#访问智子
+	option = {
+		name = "sfdoll_elisa_event.2_option_sophon"
+		trigger = {	has_country_flag = sfdoll_sophon_owner }
+		hidden_effect = { country_event = { id = sfdoll_three_body_event.3 } }
+	}
+
+	#说明
+	option = {
+		name = "sfdoll_elisa_event.2.explain"
+		hidden_effect = { country_event = { id = sfdoll_elisa_event.5 } }
+	}
+
+	#选项，伊莱莎变科学家
+	# option = {
+	# 	name =  "elisa_to_scientist"
+	# 	allow = { 
+	# 		custom_tooltip ={
+	# 			fail_text ="elisa_has_this_job_now"
+	# 			NOT = {
+	# 				AND = {
+	# 					exists = event_target:sfdoll_leader_elisa
+	# 					event_target:sfdoll_leader_elisa = {
+	# 						leader_class = scientist
+	# 						owner = {
+	# 							is_same_value = root
+	# 						}
+	# 					}
+	# 				}			
+	# 			}
+	# 		}			 
+	# 	}
+	# 	elisa_to_scientist_sfd_effect =  yes
+	# 	response_text = "response_text_elisa_to_scientist"
+	# }
+
+	#退出
+	option = {
+		name =  "EXIT"
+		break = yes
+	}
+}
+
+#伊莱莎通讯，联系其他特殊领袖
+country_event = {
+	id = sfdoll_elisa_event.3
+	title = "sfdoll_elisa_event.3"
+	desc = "sfdoll_elisa_event_3_a_desc"
+	diplomatic = yes
+	picture_event_data = {
+		portrait = GFX_sfdoll_elisa
+		room = this
+		graphical_culture = this
+		planet_background = this
+		city_level = this
+	}	
+	is_triggered_only = yes
+
+	#找衔尾蛇
+	option = {
+		name =  "Name_sfdoll_Ouroboros"
+		hidden_effect = { country_event = { id = sfdoll_leader_event.2 } }
+	}
+	#找ump45
+	option = {
+		name =  "NAME_sfdoll_ump45"
+		hidden_effect = {  country_event = {  id = sfdoll_ump45_event.1  }  }
+	}
+	#找崔耶拉
+	option = {
+		name =  "NAME_sfdoll_triela"
+		trigger = {
+			has_country_flag = sfdoll_triela_owner
+		}
+		hidden_effect = {
+			country_event = { id = sfdoll_gunslinger_girl_event.6 }
+		}
+	}
+	#找诺耶露
+	option = {
+		name =  "NAME_sfdoll_noel"
+		trigger = {
+			has_country_flag = sfdoll_noel_owner
+		}
+		hidden_effect = {
+			country_event = {
+				id = sfdoll_noel_event.1
+			}
+		}
+	}
+
+	#找谢顿
+	option = {
+		name = "Name_sfd_hari_seldon"
+		trigger = {	has_country_flag = sfdoll_hari_seldon_owner	}
+		hidden_effect = {
+			country_event = {
+				id = sfdoll_foundation_event.3
+			}
+		}
+	}
+	#找丁仪
+	option = {
+		name = "NAME_sfdoll_dingyi"
+		trigger = {	has_country_flag = sfdoll_dingyi_owner	}
+		hidden_effect = { country_event = { id = sfdoll_three_body_event.2 } }
+	}
+
+	#找高维人
+	option = {
+		name = "NAME_sfdoll_exd_leader"
+		trigger = {	has_country_flag = sfdoll_exd_leader_owner	}
+		hidden_effect = {
+			country_event = {
+				id = sfdoll_extradimensional_event.5
+			}
+		}
+	}
+
+	# 找凉子
+	# option = {
+	# 	name = "NAME_SHIZUKI_RYOUKO"
+	# 	trigger = {	has_country_flag = sfdoll_shizuki_ryouko_owner	}
+	# 	hidden_effect = { country_event = { id = sfdoll_pmmm_event.1 } }
+	# }
+
+	# 找塔露拉
+	option = {
+		name = "Name_sfdoll_talulah"
+		trigger = {	has_country_flag = sfdoll_talulah_owner	}
+		hidden_effect = {
+			if = {
+				limit = { has_country_flag = sfdoll_talulah_not_know }
+				remove_country_flag = sfdoll_talulah_not_know
+				country_event = { id = sfdoll_ark_event.2 }
+			}
+			else = {  country_event = { id = sfdoll_ark_event.1 } }
+		}
+	}
+	# 找霜星
+	option = {
+		name = "Name_sfdoll_Frostnova"
+		trigger = {	has_country_flag = sfdoll_frostnova_owner	}
+		hidden_effect = {
+			if = {
+				limit = { has_country_flag = sfdoll_frostnova_not_know }
+				remove_country_flag = sfdoll_frostnova_not_know
+				country_event = { id = sfdoll_ark_event.4 }
+			}
+			else = { country_event = { id = sfdoll_ark_event.3 } }
+		}
+	}
+
+	#退出
+	option = { name =  "EXIT" break = yes }
+}
+
+#伊莱莎通讯界面，开局
+country_event = {
+	id = sfdoll_elisa_event.4
+	title = "sfdoll_elisa_event.4"
+	desc = "sfdoll_elisa_event_4_a_desc"
+	diplomatic = yes
+	picture_event_data = {
+		portrait = GFX_sfdoll_elisa
+		room = this
+		graphical_culture = this
+		planet_background = this
+		city_level = this
+	}	
+	is_triggered_only = yes
+	option = {
+		name = OK
+		break = yes
+	}
+	after = {
+		hidden_effect = {
+			# 丁仪加入
+			if = {
+				limit = { has_civic = civic_sfdoll_research }
+				country_event = { id = sfdoll_three_body_event.1 }
+			}
+		}
+	}
+}
+
+# 关于特殊领袖的说明
+country_event = {
+	id = sfdoll_elisa_event.5
+	title = "sfdoll_elisa_event.5"
+	desc = "sfdoll_elisa_event.5.desc"
+	diplomatic = yes
+	picture_event_data = {
+		portrait = GFX_sfdoll_elisa
+		room = this
+		graphical_culture = this
+		planet_background = this
+		city_level = this
+	}	
+	is_triggered_only = yes
+	option = { name = "OK"  }
+}

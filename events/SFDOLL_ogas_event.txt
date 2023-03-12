@@ -1,0 +1,226 @@
+namespace = sfdoll_ogas_event
+
+#和ump40的通讯界面
+country_event = {
+	id = sfdoll_ogas_event.1
+	title = "sfdoll_ogas_event.1"
+	desc = "sfdoll_ogas_event.1_desc"
+	desc = "sfdoll_ogas_event.1_desc_b"
+	desc = "sfdoll_ogas_event.1_desc_c"
+	desc = "sfdoll_ogas_event.1_desc_d"
+	diplomatic = yes
+
+	picture_event_data = {
+		portrait = GFX_sfdoll_ump40
+		room = this
+		graphical_culture = this
+		planet_background = this
+		city_level = this
+	}	
+	is_triggered_only = yes
+	immediate = { set_country_flag = contract_diplomacy_engaged }
+	after = { hidden_effect = { remove_country_flag = contract_diplomacy_engaged } }
+
+	# 经济修正
+	option = {
+		name =  "option_sfdoll_ogas_economic_mod"
+		allow = {
+			custom_tooltip = {
+				fail_text = "sfdoll_task_is_in_progress"
+				NOT = { has_modifier = sfdoll_ogas_economic_mod }
+			}
+		}
+		hidden_effect = {
+			if = {
+				limit = { has_modifier = sfdoll_ogas_economic_mod }
+				remove_modifier = sfdoll_ogas_economic_mod
+			}
+			else_if = {
+				limit = { has_modifier = sfdoll_ogas_research_mod }
+				remove_modifier = sfdoll_ogas_research_mod
+			}
+			else_if = {
+				limit = { has_modifier = sfdoll_ogas_intel_mod }
+				remove_modifier = sfdoll_ogas_intel_mod
+			}
+		}
+		add_modifier = { modifier = sfdoll_ogas_economic_mod days = -1 }
+		hidden_effect = { country_event = { id = sfdoll_ogas_event.1 } }
+	}
+	# 科技
+	option = {
+		name =  "option_sfdoll_ogas_research_mod"
+		allow = {
+			custom_tooltip = {
+				fail_text = "sfdoll_task_is_in_progress"
+				NOT = { has_modifier = sfdoll_ogas_research_mod }
+			}
+		}
+		hidden_effect = {
+			if = {
+				limit = { has_modifier = sfdoll_ogas_economic_mod }
+				remove_modifier = sfdoll_ogas_economic_mod
+			}
+			else_if = {
+				limit = { has_modifier = sfdoll_ogas_research_mod }
+				remove_modifier = sfdoll_ogas_research_mod
+			}
+			else_if = {
+				limit = { has_modifier = sfdoll_ogas_intel_mod }
+				remove_modifier = sfdoll_ogas_intel_mod
+			}
+		}
+		add_modifier = { modifier = sfdoll_ogas_research_mod days = -1 }
+		hidden_effect = { country_event = { id = sfdoll_ogas_event.1 } }
+	}
+	#情报
+	option = {
+		name =  "option_sfdoll_ogas_intel_mod"
+		allow = {
+			custom_tooltip = {
+				fail_text = "sfdoll_task_is_in_progress"
+				NOT = { has_modifier = sfdoll_ogas_intel_mod }
+			}
+		}
+		hidden_effect = {
+			if = {
+				limit = { has_modifier = sfdoll_ogas_economic_mod }
+				remove_modifier = sfdoll_ogas_economic_mod
+			}
+			else_if = {
+				limit = { has_modifier = sfdoll_ogas_research_mod }
+				remove_modifier = sfdoll_ogas_research_mod
+			}
+			else_if = {
+				limit = { has_modifier = sfdoll_ogas_intel_mod }
+				remove_modifier = sfdoll_ogas_intel_mod
+			}
+		}
+		add_modifier = { modifier = sfdoll_ogas_intel_mod days = -1 }
+		hidden_effect = { country_event = { id = sfdoll_ogas_event.1 } }
+	}
+
+	option = {
+		name = "sfdoll_task_termination"
+		hidden_effect = {
+			# 移除旧的修正，但不会删除领袖
+			if = {
+				limit = { has_modifier = sfdoll_ogas_economic_mod }
+				remove_modifier = sfdoll_ogas_economic_mod
+			}
+			else_if = {
+				limit = { has_modifier = sfdoll_ogas_research_mod }
+				remove_modifier = sfdoll_ogas_research_mod
+			}
+			else_if = {
+				limit = { has_modifier = sfdoll_ogas_intel_mod }
+				remove_modifier = sfdoll_ogas_intel_mod
+			}
+			country_event = { id = sfdoll_ogas_event.1 }
+		}
+	}
+
+	#选项，40变总督
+	option = {
+		name =  "ogas40_to_governor"
+		allow = { 
+			custom_tooltip ={
+				fail_text ="ogas40_has_this_job_now"
+				NOT = {
+					AND = {
+						exists = event_target:ogas40_sfdoll_leader
+						event_target:ogas40_sfdoll_leader = {
+							leader_class = governor
+							owner = {
+								is_same_value = root
+							}
+						}
+					}
+				}
+			}			 
+		}
+		ogas40_become_governor_effect =  yes
+		response_text = "response_ogas40_to_governor"
+	}
+
+	#ogas40变科学家
+	option = {
+		name =  "ogas40_to_scientist"
+		allow = { 
+			custom_tooltip ={
+				fail_text ="ogas40_has_this_job_now"
+				NOT = {
+					AND = {
+						exists = event_target:ogas40_sfdoll_leader
+						event_target:ogas40_sfdoll_leader = {
+							leader_class = scientist
+							owner = {
+								is_same_value = root
+							}
+						}
+					}
+				}
+			}			 
+		}
+		ogas40_become_scientist_effect = yes
+		response_text = "response_ogas40_to_scientist"
+	}
+
+	#ump40变舰队司令
+	option = {
+		name =  "ogas40_to_admiral"
+		allow = { 
+			custom_tooltip ={
+				fail_text ="ogas40_has_this_job_now"
+				NOT = {
+					AND = {
+						exists = event_target:ogas40_sfdoll_leader
+						event_target:ogas40_sfdoll_leader = {
+							leader_class = admiral
+							owner = {
+								is_same_value = root
+							}
+						}
+					}
+				}
+			}			 
+		}
+		ogas40_become_admiral_effect = yes
+		response_text = "response_ogas40_to_admiral"
+	}
+
+	#ump40变陆军指挥
+	option = {
+		name =  "ogas40_to_general"
+		allow = { 
+			custom_tooltip ={
+				fail_text ="ogas40_has_this_job_now"
+				NOT = {
+					AND = {
+						exists = event_target:ogas40_sfdoll_leader
+						event_target:ogas40_sfdoll_leader = {
+							leader_class = general
+							owner = {
+								is_same_value = root
+							}
+						}
+					}
+				}
+			}			 
+		}
+		ogas40_become_general_effect = yes
+		response_text = "response_ogas40_to_general"
+	}
+
+	#退出
+	option = { name =  "EXIT" hidden_effect = { break = yes } }
+}
+
+#ogas ump40加入
+country_event = {
+	id = sfdoll_ogas_event.2
+	base = sfdoll_ogas_event.1
+	desc_clear = yes
+	desc = sfdoll_ogas_event.2.desc
+	immediate = {  set_country_flag = ump40_owner_sfdoll  }
+}

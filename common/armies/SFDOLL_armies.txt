@@ -1,0 +1,59 @@
+#铁血部队
+sfdoll_army = {
+	damage = 2.5
+	has_morale = no
+	morale_damage = 2.3
+	collateral_damage = 0.8
+	war_exhaustion = 0.15
+	health = 2.2
+	time = 150
+	icon = GFX_army_type_assault
+	prerequisites = {	tech_sfdoll_army }
+
+	resources = {
+		category = armies
+		cost = { minerals = 200 }
+		upkeep = { energy = 3 }
+	}
+
+	potential = {
+		owner = { has_authority = auth_gf_sfdoll }
+		from = { has_trait = trait_gf_sfdoll }	
+	}
+}
+
+sfoll_heavy_army = {
+	damage = 5
+	has_morale = no
+	morale_damage = 5
+	collateral_damage = 3.5
+	war_exhaustion = 1.00
+	health = 8
+	time = 480
+	icon = GFX_army_type_assault
+	prerequisites = {	tech_sfdoll_heavy_army }
+
+	resources = {
+		category = armies
+		cost = { minerals = 1000 }
+
+		upkeep = { energy = 8 }
+	}
+	potential = {
+		owner = { has_country_flag = sfdoll_empire }
+		from = { has_trait = trait_gf_sfdoll }	
+	}
+}
+
+#ELID
+SFDOLL_eild_army_1 = {
+	defensive = yes
+	damage = 2
+	morale_damage = 1.0
+	health = 10.0
+	war_exhaustion = 4.50
+	has_morale = no
+	icon = GFX_army_type_xenomorph
+	has_species = no
+	potential = { always = no }
+}

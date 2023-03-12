@@ -295,4 +295,8 @@ country_event = {
 	}	
 	is_triggered_only = yes
 	option = { name = "OK"  }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> e4432606d1ca316657d62325559e225d97bbb06c

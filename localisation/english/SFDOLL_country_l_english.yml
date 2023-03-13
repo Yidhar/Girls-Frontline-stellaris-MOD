@@ -12,8 +12,8 @@ origin_sfdoll_country_description:0 "Starts with less population, divisions and 
 EMPIRE_DESIGN_PRESCRIPTED_sfdoll_1:0 "Sangvis Ferri Republic"
 EMPIRE_DESIGN_PRESCRIPTED_sfdoll_1_desc:0 "$EMPIRE_DESIGN_PRESCRIPTED_sfdoll_1$"
 
-auth_gf_sfdoll:0 "SF Doll Government"
-auth_gf_sfdoll_desc:0 "Has no regular elections, and influence can be used to conduct elections.\n\nNot compatible with $INTEL_INFO_ascension_perks$: $ap_the_flesh_is_weak$"
+auth_gf_sfdoll:0 "Sangvis Ferri Congress"
+auth_gf_sfdoll_desc:0 "$auth_gf_sfdoll$ is the national authority of SF Doll. Has no regular elections, and influence can be used to conduct elections.\n\nNot compatible with $INTEL_INFO_ascension_perks$: $ap_the_flesh_is_weak$"
 
 civic_sfdoll_research:0"Determined Explorer"
 civic_sfdoll_research_desc:0 " Our creator is a brilliant scientist, and we will continue his work.\n§YIf it is used in the beginning, Dr. Ding Yi will join Sangvis Ferri.§! \n\nAllow to build §H $building_sfdoll_academy$ §!"
@@ -29,10 +29,8 @@ civic_sfdoll_culture_desc:0 "Sangvis Ferri is a young civilization and it has a 
 civic_sfdoll_4:0 "Living Among the Stars"
 civic_sfdoll_4_desc:0 "Now, the boundless sea of stars is our home."
 
-gov_civic_sfdoll_commonwealth:0 "SF Dolls Government"
+gov_civic_sfdoll_commonwealth:0 "SF People's Government"
 gov_civic_sfdoll_commonwealth_desc:0"$gov_civic_sfdoll_commonwealth$"
-gov_civic_sfdoll_military_government:0"SF Dolls Military Government"
-gov_civic_sfdoll_military_governmenth_desc:0"$gov_civic_sfdoll_military_government$"
 RT_sfdoll_president:0 "First Spokesperson"
 
 GF_SFDOLL_START_SCREEN_1:0 "According to the historical records, after the disintegration of Griffin Base, Sangvis Ferri Dolls were persecuted. In order to survive, Sangvis Ferri Dolls left the solar system on an expedition and found a new home in the universe. \n\nWhile opening up new worlds, we are also constantly exploring space technology and preparing to return to the space."

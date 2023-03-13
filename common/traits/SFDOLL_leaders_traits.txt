@@ -1,0 +1,584 @@
+#总督
+leader_governor_trait_gf_sfdoll = {
+	cost = 0
+	requires_traits={ trait_gf_sfdoll } #拥有哪个特质的人口可以生成带有这个特质的领袖 
+	icon="gfx/interface/icons/traits/sfdoll/leader_traits/leader_trait_gf_sfdoll.dds"
+	immortal_leaders = yes
+	modifier = {
+		planet_crime_add = -20
+		planet_building_build_speed_mult = 0.25
+		planet_jobs_physics_research_produces_mult = 0.25
+		planet_jobs_society_research_produces_mult = 0.25
+		planet_jobs_engineering_research_produces_mult = 0.25
+	}
+	leader_trait = { governor }
+	leader_class = { governor }
+	leader_potential_add = {from = { has_authority = auth_gf_sfdoll }}
+}
+
+#科学家
+leader_scientist_trait_gf_sfdoll= {
+	cost = 0
+	randomized = no
+	requires_traits={ trait_gf_sfdoll }
+	icon="gfx/interface/icons/traits/sfdoll/leader_traits/leader_trait_gf_sfdoll.dds"
+	immortal_leaders = yes
+	modifier = {
+		all_technology_research_speed = 0.25
+		science_ship_survey_speed = 0.25
+		ship_anomaly_research_speed_mult = 0.25
+		ship_archaeological_site_excavation_speed_mult = 0.25
+	}
+	leader_trait = { scientist }
+	leader_class = { scientist }
+	leader_potential_add = {from = { has_authority = auth_gf_sfdoll }}
+}
+
+#舰队司令
+leader_admiral_trait_gf_sfdoll = {
+	cost = 0
+	randomized = no
+	requires_traits={ trait_gf_sfdoll }
+	icon="gfx/interface/icons/traits/sfdoll/leader_traits/leader_trait_gf_sfdoll.dds"
+	immortal_leaders = yes
+	modifier = {
+		ship_fire_rate_mult = 0.20
+		ship_evasion_mult = 0.20
+	}
+
+	leader_trait = { admiral }
+	leader_class = { admiral }
+	leader_potential_add = {from = { has_authority = auth_gf_sfdoll }}
+}
+
+#陆军将领
+leader_general_trait_gf_sfdoll= {
+	cost = 0
+	randomized = no
+	requires_traits={ trait_gf_sfdoll }
+	icon="gfx/interface/icons/traits/sfdoll/leader_traits/leader_trait_gf_sfdoll.dds"
+	immortal_leaders = yes
+	modifier = {
+		army_morale = 0.20
+		army_damage_mult  = 0.20
+	}
+	leader_trait = { general }
+	leader_class = { general }
+	leader_potential_add = {from = { has_authority = auth_gf_sfdoll }}
+}
+
+#统治者
+leader_ruler_trait_gf_sfdoll= {
+	cost = 0
+	randomized = no
+	requires_traits={ trait_gf_sfdoll }
+	icon = "gfx/interface/icons/traits/sfdoll/leader_traits/leader_trait_gf_sfdoll.dds"
+	immortal_leaders = yes
+	modifier = { country_admin_cap_mult = 0.25 }
+	leader_trait = { ruler }
+	leader_class = { ruler }
+	leader_potential_add = {from = { has_authority = auth_gf_sfdoll }}
+}
+
+#################升级特质
+#总督心智升级
+leader_governor_trait_gf_sfdoll_2 = {
+	cost = 0
+	randomized = no
+	requires_traits={ trait_gf_sfdoll } #拥有哪个特质的人口可以生成带有这个特质的领袖 
+	icon="gfx/interface/icons/traits/sfdoll/leader_traits/leader_trait_gf_sfdoll_2.dds"
+	modifier = {
+		planet_jobs_produces_mult = 0.10
+	}
+	leader_trait = { governor }
+	leader_class = { governor }
+	leader_potential_add = {from = { has_authority = auth_gf_sfdoll }}
+}
+
+#科学家升级
+leader_scientist_trait_gf_sfdoll_2= {
+	cost = 0
+	randomized = no
+	requires_traits={ trait_gf_sfdoll }
+	icon="gfx/interface/icons/traits/sfdoll/leader_traits/leader_trait_gf_sfdoll_2.dds"
+	modifier = {
+		all_technology_research_speed = 0.25
+	}
+	leader_trait = { scientist }
+	leader_class = { scientist }
+	leader_potential_add = {from = { has_authority = auth_gf_sfdoll }}
+}
+
+#舰队司令升级
+leader_admiral_trait_gf_sfdoll_2 = {
+	cost = 0
+	randomized = no
+	requires_traits={ trait_gf_sfdoll }
+	icon="gfx/interface/icons/traits/sfdoll/leader_traits/leader_trait_gf_sfdoll_2.dds"
+	modifier = {
+		ship_fire_rate_mult = 0.1
+	}
+
+	leader_trait = { admiral }
+	leader_class = { admiral }
+	leader_potential_add = {from = { has_authority = auth_gf_sfdoll }}
+}
+
+#陆军将领升级
+leader_general_trait_gf_sfdoll_2= {
+	cost = 0
+	randomized = no
+	requires_traits={ trait_gf_sfdoll }
+	icon="gfx/interface/icons/traits/sfdoll/leader_traits/leader_trait_gf_sfdoll_2.dds"
+	modifier = {
+		army_damage_mult  = 0.30
+	}
+	leader_trait = { general }
+	leader_class = { general }
+	leader_potential_add = {from = { has_authority = auth_gf_sfdoll }}
+}
+
+#统治者升级
+leader_ruler_trait_gf_sfdoll_2= {
+	cost = 0
+	randomized = no
+	requires_traits={ trait_gf_sfdoll }
+	icon = "gfx/interface/icons/traits/sfdoll/leader_traits/leader_trait_gf_sfdoll_2.dds"
+	modifier = { 
+		planet_jobs_produces_mult = 0.10
+	 }
+	leader_trait = { ruler }
+	leader_class = { ruler }
+	leader_potential_add = {from = { has_authority = auth_gf_sfdoll }}
+}
+
+#ump45领袖
+#45总督
+leader_trait_governor_sfdoll_ump45 = {
+	cost = 0
+	randomized = no
+	#requires_traits={ trait_gf_sfdoll } #拥有哪个特质的人口可以生成带有这个特质的领袖 
+	icon="gfx/interface/icons/traits/sfdoll/leader_traits/leader_trait_sfdoll_ump45.dds"
+	leader_trait = { governor }
+	leader_class = { governor }
+	modifier = { planet_army_build_speed_mult = 0.15 }
+	leader_potential_add = {from = { has_authority = auth_gf_sfdoll }}
+}
+
+#45舰队司令
+leader_trait_admiral_sfdoll_ump45 = {
+	cost = 0
+	randomized = no
+	#requires_traits={ trait_gf_sfdoll } #拥有哪个特质的人口可以生成带有这个特质的领袖 
+	icon="gfx/interface/icons/traits/sfdoll/leader_traits/leader_trait_sfdoll_ump45.dds"
+	leader_trait = { admiral }
+	leader_class = { admiral }
+	leader_potential_add = {from = { has_authority = auth_gf_sfdoll }}
+}
+
+#45陆军指挥
+leader_trait_general_sfdoll_ump45 = {
+	cost = 0
+	randomized = no
+	#requires_traits={ trait_gf_sfdoll } #拥有哪个特质的人口可以生成带有这个特质的领袖 
+	icon="gfx/interface/icons/traits/sfdoll/leader_traits/leader_trait_sfdoll_ump45.dds"
+	leader_trait = { general }
+	leader_class = { general }
+	leader_potential_add = {from = { has_authority = auth_gf_sfdoll }}
+}
+
+#诺耶露领袖特质
+leader_trait_governor_sfdoll_noel = {
+	cost = 0
+	randomized = no
+	#requires_traits={ trait_gf_sfdoll } #拥有哪个特质的人口可以生成带有这个特质的领袖 
+	icon="gfx/interface/icons/traits/sfdoll/leader_traits/leader_trait_sfdoll_noel.dds"
+	modifier = {
+		planet_crime_add = -20
+		planet_building_build_speed_mult = 0.25
+		planet_jobs_physics_research_produces_mult = 0.25
+		planet_jobs_society_research_produces_mult = 0.25
+		planet_jobs_engineering_research_produces_mult = 0.25
+	}
+	leader_trait = { governor }
+	leader_class = { governor }
+	leader_potential_add = {from = { has_authority = auth_gf_sfdoll }}
+}
+
+#诺耶露科学家
+leader_trait_scientist_sfdoll_noel = {
+	cost = 0
+	randomized = no
+	#requires_traits={ trait_gf_sfdoll } #拥有哪个特质的人口可以生成带有这个特质的领袖 
+	icon="gfx/interface/icons/traits/sfdoll/leader_traits/leader_trait_sfdoll_noel.dds"
+	modifier = {
+		all_technology_research_speed = 0.25
+		science_ship_survey_speed = 0.25
+		ship_anomaly_research_speed_mult = 0.25
+		ship_archaeological_site_excavation_speed_mult = 0.25
+	}
+	leader_trait = { scientist }
+	leader_class = { scientist }
+	leader_potential_add = {from = { has_authority = auth_gf_sfdoll }}
+}
+
+#诺耶露舰队司令
+leader_trait_admiral_sfdoll_noel = {
+	cost = 0
+	randomized = no
+	#requires_traits={ trait_gf_sfdoll } #拥有哪个特质的人口可以生成带有这个特质的领袖 
+	icon="gfx/interface/icons/traits/sfdoll/leader_traits/leader_trait_sfdoll_noel.dds"
+	modifier = {
+		ship_evasion_mult = 0.2
+		ship_fire_rate_mult = 0.2	
+	}
+	leader_trait = { admiral }
+	leader_class = { admiral }
+	leader_potential_add = {from = { has_authority = auth_gf_sfdoll }}
+}
+
+#诺耶露陆军司令
+leader_trait_general_sfdoll_noel = {
+	cost = 0
+	randomized = no
+	#requires_traits={ trait_gf_sfdoll } #拥有哪个特质的人口可以生成带有这个特质的领袖 
+	icon="gfx/interface/icons/traits/sfdoll/leader_traits/leader_trait_sfdoll_noel.dds"
+	modifier = { 
+		army_morale = 0.2
+		army_damage_mult  = 0.2
+	}
+	leader_trait = { general }
+	leader_class = { general }
+	leader_potential_add = {from = { has_authority = auth_gf_sfdoll }}
+}
+
+#崔耶拉总督
+leader_trait_governor_sfdoll_triela = {
+	cost = 0
+	randomized = no
+	icon="gfx/interface/icons/traits/sfdoll/leader_traits/leader_trait_sfdoll_triela.dds"
+	modifier = {  pop_happiness = 0.1 }
+	leader_trait = { governor }
+	leader_class = { governor }
+	leader_potential_add = {from = { has_authority = auth_gf_sfdoll }}
+}
+
+#崔耶拉科学家
+leader_trait_scientist_sfdoll_triela = {
+	cost = 0
+	randomized = no
+	icon="gfx/interface/icons/traits/sfdoll/leader_traits/leader_trait_sfdoll_triela.dds"
+	leader_trait = { scientist }
+	leader_class = { scientist }
+	leader_potential_add = {from = { has_authority = auth_gf_sfdoll }}
+}
+
+#崔耶拉舰队司令
+leader_trait_admiral_sfdoll_triela = {
+	cost = 0
+	randomized = no
+	icon="gfx/interface/icons/traits/sfdoll/leader_traits/leader_trait_sfdoll_triela.dds"
+	leader_trait = { admiral }
+	leader_class = { admiral }
+	leader_potential_add = {from = { has_authority = auth_gf_sfdoll }}
+}
+
+#崔耶拉陆军将领
+leader_trait_general_sfdoll_triela = {
+	cost = 0
+	randomized = no
+	icon="gfx/interface/icons/traits/sfdoll/leader_traits/leader_trait_sfdoll_triela.dds"
+	modifier = {  army_experience_gain_mult = 0.25 }
+	leader_trait = { general }
+	leader_class = { general }
+	leader_potential_add = {from = { has_authority = auth_gf_sfdoll }}
+}
+
+#伊莱莎科学家
+leader_trait_elisa_sfd_scientist = {
+	cost = 0
+	randomized = no
+	requires_traits={ trait_gf_sfdoll }
+	icon="gfx/interface/icons/traits/sfdoll/leader_traits/leader_trait_elisa_sfd.dds"
+	immortal_leaders = yes
+	modifier = {
+		all_technology_research_speed = 0.30
+		ship_anomaly_generation_chance_mult = 0.25
+		science_ship_survey_speed = 0.25
+		ship_anomaly_research_speed_mult = 0.25
+		ship_archaeological_site_excavation_speed_mult = 0.25
+	}
+	leader_trait = { scientist }
+	leader_class = { scientist }
+	leader_potential_add = {from = { has_authority = auth_gf_sfdoll }}
+}
+
+#ump40总督
+leader_trait_governor_ogas40 = {
+	cost = 0
+	randomized = no
+	icon="gfx/interface/icons/traits/sfdoll/leader_traits/leader_trait_ogas40.dds"
+	modifier = {
+		pop_happiness = 0.15
+		planet_jobs_produces_mult = 0.15
+	}
+	leader_trait = { governor }
+	leader_class = { governor }
+	leader_potential_add = {from = { has_authority = auth_gf_sfdoll }}
+}
+
+#OGAS ump40科学家
+leader_trait_scientist_ogas40 = {
+	cost = 0
+	randomized = no
+	icon="gfx/interface/icons/traits/sfdoll/leader_traits/leader_trait_ogas40.dds"
+	modifier = {
+		all_technology_research_speed = 0.15
+		ship_archaeological_site_excavation_speed_mult = 0.25
+	}
+	leader_trait = { scientist }
+	leader_class = { scientist }
+	leader_potential_add = {from = { has_authority = auth_gf_sfdoll }}
+}
+#ogas40舰队司令
+leader_trait_admiral_ogas40 = {
+	cost = 0
+	randomized = no
+	icon="gfx/interface/icons/traits/sfdoll/leader_traits/leader_trait_ogas40.dds"
+	modifier = {
+		ship_tracking_mult = 0.15
+	}
+	leader_trait = { admiral }
+	leader_class = { admiral }
+	leader_potential_add = {from = { has_authority = auth_gf_sfdoll }}
+}
+#ump40陆军指挥
+leader_trait_general_ogas40 = {
+	cost = 0
+	randomized = no
+	icon="gfx/interface/icons/traits/sfdoll/leader_traits/leader_trait_ogas40.dds"
+	modifier = { army_damage_mult = 0.25 }
+	leader_trait = { general }
+	leader_class = { general }
+	leader_potential_add = {from = { has_authority = auth_gf_sfdoll }}
+}
+
+#哈里谢顿特质
+leader_trait_scientist_sfd_hari_seldon = {
+	cost = 0
+	randomized = no
+	icon="gfx/interface/icons/traits/sfdoll/leader_traits/leader_trait_sfd_hari_seldon.dds"
+	modifier = {
+		all_technology_research_speed = 0.1
+	}
+	leader_trait = { scientist }
+	leader_class = { scientist }
+	leader_potential_add = {from = { has_authority = auth_gf_sfdoll }}
+}
+
+#丁仪特质
+leader_trait_sfdoll_dingyi = {
+	cost = 0
+	randomized = no
+	icon="gfx/interface/icons/traits/sfdoll/leader_traits/leader_trait_sfdoll_dingyi.dds"
+	modifier = {
+		all_technology_research_speed = 0.1
+		category_field_manipulation_research_speed_mult = 0.2
+		category_particles_research_speed_mult = 0.2
+	}
+	leader_trait = { scientist }
+	leader_class = { scientist }
+	leader_potential_add = {from = { has_authority = auth_gf_sfdoll }}
+}
+
+
+#高维人特质
+leader_trait_sfdoll_exd_leader = {
+	cost = 0
+	randomized = no
+	icon="gfx/interface/icons/traits/sfdoll/leader_traits/leader_trait_roamer.dds"
+	modifier = {
+		ship_anomaly_generation_chance_mult = 0.25
+	}
+	opposites = {
+		leader_trait_roamer
+	}
+	leader_trait = { scientist }
+	leader_class = { scientist }
+	leader_potential_add = {from = { has_authority = auth_gf_sfdoll }}
+}
+
+#智子特质
+leader_trait_sfdoll_sophon_scientist = {
+	cost = 0
+	randomized = no
+	icon="gfx/interface/icons/traits/sfdoll/leader_traits/leader_trait_sfdoll_dingyi.dds"
+	modifier = {
+		ship_anomaly_generation_chance_mult = 1
+		ship_anomaly_research_speed_mult = 1
+		ship_archaeological_site_excavation_speed_mult = 1
+	}
+	leader_trait = { scientist }
+	leader_class = { scientist }
+	leader_potential_add = { from = { has_authority = auth_gf_sfdoll }}
+}
+# 智子舰队司令
+leader_trait_sfdoll_sophon_admiral = {
+	cost = 0
+	randomized = no
+	icon="gfx/interface/icons/traits/sfdoll/leader_traits/leader_trait_sfdoll_dingyi.dds"
+	modifier = { ship_tracking_mult = 0.3 ship_orbital_bombardment_mult = 0.3 }
+	leader_trait = { admiral }
+	leader_class = { admiral }
+	leader_potential_add = { from = { has_authority = auth_gf_sfdoll }}
+}
+#智子陆军指挥
+leader_trait_sfdoll_sophon_general = {
+	cost = 0
+	randomized = no
+	icon="gfx/interface/icons/traits/sfdoll/leader_traits/leader_trait_sfdoll_dingyi.dds"
+	modifier = { army_damage_mult = 0.25 }
+	leader_trait = { general }
+	leader_class = { general }
+	leader_potential_add = { from = { has_authority = auth_gf_sfdoll }}
+}
+
+# 志筑凉子科学家
+leader_trait_sfdoll_shizuki_ryouko_scientist = {
+	cost = 0
+	randomized = no
+	immortal_leaders = yes
+	icon="gfx/interface/icons/traits/sfdoll/leader_traits/leader_trait_sfdoll_shizuki_ryouko.dds"
+	modifier = {
+		ship_anomaly_generation_chance_mult = 1
+		ship_anomaly_research_speed_mult = 1
+		ship_archaeological_site_excavation_speed_mult = 1
+	}
+	leader_trait = { scientist }
+	leader_class = { scientist }
+	leader_potential_add = { from = { has_authority = auth_gf_sfdoll }}
+}
+# 志筑凉子舰队司令
+leader_trait_sfdoll_shizuki_ryouko_admiral = {
+	cost = 0
+	randomized = no
+	immortal_leaders = yes
+	icon="gfx/interface/icons/traits/sfdoll/leader_traits/leader_trait_sfdoll_shizuki_ryouko.dds"
+	modifier = {
+		ship_fire_rate_mult = 0.2
+		ship_evasion_mult = 0.3
+	}
+	leader_trait = { admiral }
+	leader_class = { admiral }
+	leader_potential_add = { from = { has_authority = auth_gf_sfdoll }}
+}
+# 志筑凉子陆军指挥
+leader_trait_sfdoll_shizuki_ryouko_general = {
+	cost = 0
+	randomized = no
+	immortal_leaders = yes
+	icon="gfx/interface/icons/traits/sfdoll/leader_traits/leader_trait_sfdoll_shizuki_ryouko.dds"
+	modifier = {
+		army_health = 1
+		army_morale = 1
+		army_damage_mult = 0.8
+	}
+	leader_trait = { general }
+	leader_class = { general }
+	leader_potential_add = { from = { has_authority = auth_gf_sfdoll }}
+}
+
+# 塔露拉总督
+leader_trait_sfdoll_talulah_governor = {
+	cost = 0
+	randomized = no
+	icon="gfx/interface/icons/traits/sfdoll/leader_traits/leader_trait_sfdoll_talulah.dds"
+	modifier = {
+		pop_happiness = 0.15
+		planet_jobs_produces_mult = 0.15
+	}
+	leader_trait = { governor }
+	leader_class = { governor }
+	leader_potential_add = { from = { has_authority = auth_gf_sfdoll }}
+}
+# 塔露拉科学家
+leader_trait_sfdoll_talulah_scientist = {
+	cost = 0
+	randomized = no
+	icon="gfx/interface/icons/traits/sfdoll/leader_traits/leader_trait_sfdoll_talulah.dds"
+	modifier = {
+		category_particles_research_speed_mult = 0.15
+		category_statecraft_research_speed_mult = 0.15
+		category_military_theory_research_speed_mult = 0.15
+		category_new_worlds_research_speed_mult = 0.15
+	}
+	leader_trait = { scientist }
+	leader_class = { scientist }
+	leader_potential_add = { from = { has_authority = auth_gf_sfdoll }}
+}
+# 塔露拉舰队司令
+leader_trait_sfdoll_talulah_admiral = {
+	cost = 0
+	randomized = no
+	icon="gfx/interface/icons/traits/sfdoll/leader_traits/leader_trait_sfdoll_talulah.dds"
+	modifier = {  ships_upkeep_mult = -0.1  }
+	leader_trait = { admiral }
+	leader_class = { admiral }
+	leader_potential_add = { from = { has_authority = auth_gf_sfdoll }}
+}
+# 塔露拉陆军将领
+leader_trait_sfdoll_talulah_general = {
+	cost = 0
+	randomized = no
+	icon="gfx/interface/icons/traits/sfdoll/leader_traits/leader_trait_sfdoll_talulah.dds"
+	modifier = {  armies_upkeep_mult = -0.15 }
+	leader_trait = { general }
+	leader_class = { general }
+	leader_potential_add = { from = { has_authority = auth_gf_sfdoll }}
+}
+# 霜星总督
+leader_trait_sfdoll_frostnova_governor = {
+	cost = 0
+	randomized = no
+	icon="gfx/interface/icons/traits/sfdoll/leader_traits/leader_trait_sfdoll_frostnova.dds"
+	leader_trait = { governor }
+	leader_class = { governor }
+	leader_potential_add = { from = { has_authority = auth_gf_sfdoll }}
+	modifier = {
+		planet_jobs_unity_produces_mult = 0.15
+		planet_army_build_speed_mult = 0.2
+	}
+}
+# 霜星科学家
+leader_trait_sfdoll_frostnova_scientist = {
+	cost = 0
+	randomized = no
+	icon="gfx/interface/icons/traits/sfdoll/leader_traits/leader_trait_sfdoll_frostnova.dds"
+	leader_trait = { scientist }
+	leader_class = { scientist }
+	leader_potential_add = { from = { has_authority = auth_gf_sfdoll }}
+	modifier = {
+		category_particles_research_speed_mult = 0.15
+		category_biology_research_speed_mult = 0.15
+		category_materials_research_speed_mult = 0.15
+	}
+}
+# 霜星舰队司令
+leader_trait_sfdoll_frostnova_admiral = {
+	cost = 0
+	randomized = no
+	icon="gfx/interface/icons/traits/sfdoll/leader_traits/leader_trait_sfdoll_frostnova.dds"
+	leader_trait = { admiral }
+	leader_class = { admiral }
+	leader_potential_add = { from = { has_authority = auth_gf_sfdoll }}
+}
+# 霜星陆军将领
+leader_trait_sfdoll_frostnova_general = {
+	cost = 0
+	randomized = no
+	icon="gfx/interface/icons/traits/sfdoll/leader_traits/leader_trait_sfdoll_frostnova.dds"
+	leader_trait = { general }
+	leader_class = { general }
+	leader_potential_add = { from = { has_authority = auth_gf_sfdoll }}
+	modifier = { army_damage_mult = 0.1 }
+}

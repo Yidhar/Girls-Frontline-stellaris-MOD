@@ -1,0 +1,6 @@
+#铁血
+gov_civic_sfdoll_commonwealth = {
+	ruler_title = RT_sfdoll_president
+	possible = { has_authority = auth_gf_sfdoll }
+	weight = {base = 5}
+}

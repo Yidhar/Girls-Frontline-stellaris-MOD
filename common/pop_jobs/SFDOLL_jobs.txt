@@ -280,8 +280,8 @@ sfdoll_energy_maker = {
 	possible_precalc = can_fill_specialist_job
 	resources = {
 		category = planet_technician
-		produces = { energy = 50 }
-		upkeep = { sr_dark_matter = 2 }
+		produces = { energy = 8 }
+		upkeep = { sr_dark_matter = 1 }
 	}
 	weight = {	weight = 20	}
 }
@@ -304,8 +304,8 @@ sfdoll_mineral_maker = {
 	possible_precalc = can_fill_specialist_job
 	resources = {
 		category = planet_sfdoll_sp_industry
-		produces = {	minerals = 50  }
-		upkeep = { energy = 50 }
+		produces = {	minerals = 8  }
+		upkeep = { energy = 8 }
 	}
 	weight = {	weight = 20	}
 }

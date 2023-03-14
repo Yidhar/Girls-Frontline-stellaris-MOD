@@ -72,10 +72,10 @@ GF_nyto_new_fire_control_unit= {
 # 	max = 100
 # }
 #暗星内核
-GF_nyto_dark_star_core= {
-	tradable = no
-	max = 10000
-}
+# GF_nyto_dark_star_core= {
+# 	tradable = no
+# 	max = 10000
+# }
 #超星内核
 # GF_nyto_superstar_core= {
 # 	tradable = no

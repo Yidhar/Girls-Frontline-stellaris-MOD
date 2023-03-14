@@ -113,17 +113,17 @@ GF_engery_expenditure_ship_upkeep = {
 
 # 决议
 #内核
-GF_nyto_dark_star_core_expenditure_decisions= {
-	resource = GF_nyto_dark_star_core
-	type = expenditure
-	category = decisions
-	potential = {
-		always = yes
-	}
-	weight = {
-		weight = 1
-	}
-}
+# GF_nyto_dark_star_core_expenditure_decisions= {
+# 	resource = GF_nyto_dark_star_core
+# 	type = expenditure
+# 	category = decisions
+# 	potential = {
+# 		always = yes
+# 	}
+# 	weight = {
+# 		weight = 1
+# 	}
+# }
 #食物
 GF_cg_food_expenditure_decisions = {
 	resource = food

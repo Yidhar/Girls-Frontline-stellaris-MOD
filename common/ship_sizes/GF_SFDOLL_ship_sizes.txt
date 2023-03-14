@@ -64,10 +64,10 @@ sfdoll_warship_1 = {
 		category = ships
 		cost = {
 			alloys = 300
-			GF_nyto_collapse_liquid = 40	
+			GF_nyto_collapse_liquid = 30	
 		}
 		upkeep = {
-			energy = 4
+			energy = 3
 			alloys = 2
 		}
 	}
@@ -117,11 +117,11 @@ sfdoll_warship_2 = {
 		category = ships
 		cost = {
 			alloys = 500
-			GF_nyto_collapse_liquid = 70	
+			GF_nyto_collapse_liquid = 50	
 		}
 		upkeep = {
-			energy = 8
-			alloys = 4
+			energy = 5
+			alloys = 3
 		}
 	}
 }
@@ -170,11 +170,11 @@ sfdoll_warship_3 = {
 		category = ships
 		cost = {
 			alloys = 1000
-			GF_nyto_collapse_liquid = 150	
+			GF_nyto_collapse_liquid = 100	
 		}
 		upkeep = {
-			energy = 15
-			alloys = 8
+			energy = 10
+			alloys = 5
 		}
 	}
 }
@@ -223,11 +223,11 @@ sfdoll_warship_4 = {
 		category = ships
 		cost = {
 			alloys = 2000
-			GF_nyto_collapse_liquid = 250	
+			GF_nyto_collapse_liquid = 200	
 		}
 		upkeep = {
-			energy = 30
-			alloys = 15
+			energy = 20
+			alloys = 10
 		}
 	}
 }
@@ -280,11 +280,11 @@ sfdoll_warship_5 = {
 		category = ships
 		cost = {
 			alloys = 4000
-			GF_nyto_collapse_liquid = 500	
+			GF_nyto_collapse_liquid = 400	
 		}
 		upkeep = {
-			energy = 60
-			alloys = 30
+			energy = 40
+			alloys = 20
 		}
 	}
 }
@@ -340,12 +340,12 @@ sfdoll_warship_6 = {
 	resources = {
 		category = ships
 		cost = {
-			alloys = 8000
-			GF_nyto_collapse_liquid = 1000
+			alloys = 6000
+			GF_nyto_collapse_liquid = 600
 		}
 		upkeep = {
-			energy = 90
-			alloys = 45
+			energy = 60
+			alloys = 30
 		}
 	}
 	min_upgrade_cost = {

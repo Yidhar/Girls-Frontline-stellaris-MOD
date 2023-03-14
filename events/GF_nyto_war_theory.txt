@@ -172,12 +172,6 @@ planet_event = {
 		}
 		if = { limit = { from = {  has_civic = civic_GF_nyto_Vengeance_Crusade  } }
 		#planet
-			from = {
-				add_resource = {
-					GF_nyto_dark_star_core = 1
-					mult = prev.trigger:num_pops
-				}
-			}
 			every_owned_pop = {
 				change_species = event_target:GFnyto_ELID_infected
 				random = {

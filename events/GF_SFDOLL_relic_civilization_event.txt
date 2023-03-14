@@ -1,0 +1,291 @@
+namespace = sfdoll_relic_civilization_event
+#id标准写法为namespace的值加上编号
+
+#谜之信号，事件开始
+country_event = {
+	id = sfdoll_relic_civilization_event.0
+	title = "sfdoll_relic_civilization_event_0"
+	desc = "sfdoll_relic_civilization_event_0_desc"
+	is_triggered_only = yes
+	fire_only_once = yes
+	hide_window = no
+	picture = GFX_evt_mysterious_signal
+	trigger = { is_ai = no has_authority = auth_gf_sfdoll }
+
+	#添加分析谜之信号项目
+	immediate = {
+		capital_scope = {
+			enable_special_project = {
+				name = SF_SEARCH_ZION_PROJECT
+			}
+		}
+	}
+}
+
+#谜之信号项目完成
+country_event = {
+	id = sfdoll_relic_civilization_event.1
+	title = "sfdoll_relic_civilization_event_1"
+	desc = "sfdoll_relic_civilization_event_1_desc"
+	is_triggered_only = yes
+	hide_window = no
+	picture = GFX_evt_federation_fleet
+	after = {
+		hidden_effect = {
+			country_event = {
+				id = sfdoll_relic_civilization_event.2
+			}
+		}
+	}
+
+}
+
+#传送试验
+country_event = {
+	id = sfdoll_relic_civilization_event.2
+	title = "sfdoll_relic_civilization_event_2"
+	desc = "sfdoll_relic_civilization_event_2_desc"
+	is_triggered_only = yes
+	hide_window = no
+	picture = GFX_evt_archaeological_dig
+
+	after = {
+		capital_scope ={
+			spawn_system = {
+				initializer = sfdoll_system_search_zion
+				hyperlane = no
+				is_discovered = yes
+				min_distance >= 25
+				max_distance <= 35
+				effect = {
+					set_surveyed = {
+						surveyed = yes
+					}
+					solar_system = {
+						add_hyperlane = {
+							from = THIS
+							to = root.capital_scope.solar_system
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+#诺耶露坟头 stage1
+fleet_event = {
+	id = sfdoll_relic_civilization_event.5
+	title = "sfdoll_relic_civilization_event.5"
+	desc = "sfdoll_relic_civilization_event.5_desc"
+	is_triggered_only = yes
+	hide_window = no
+	archaeology = yes
+	picture = "GFX_evt_toxic"
+	immediate = { from = { set_site_progress_locked = yes } }
+
+	after = {
+		from = { set_site_progress_locked = no  }
+		hidden_effect = {
+			# 神枪少女，事件开始
+			owner = {  country_event = {  id = sfdoll_gunslinger_girl_event.2  }  }
+		}
+	}
+	
+	option = {
+		name = sfdoll_relic_civilization_event.5_option
+		small_artifact_reward = yes
+	}
+}
+#诺耶露坟头 stage2
+fleet_event = {
+	id = sfdoll_relic_civilization_event.6
+	title = "sfdoll_relic_civilization_event.6"
+	desc = "sfdoll_relic_civilization_event.6_desc"
+	is_triggered_only = yes
+	hide_window = no
+	archaeology = yes
+	picture = "GFX_evt_toxic"
+	immediate = { from = { set_site_progress_locked = yes } }
+	after = {  from = { set_site_progress_locked = no }  }
+	
+	option = {
+		name = sfdoll_relic_civilization_event.6_option
+		small_artifact_reward = yes
+	}
+}
+#诺耶露坟头 stage3
+fleet_event = {
+	id = sfdoll_relic_civilization_event.7
+	title = "sfdoll_relic_civilization_event.7"
+	desc = "sfdoll_relic_civilization_event.7_desc"
+	is_triggered_only = yes
+	hide_window = no
+	archaeology = yes
+	picture = "GFX_evp_sfdoll_noel_awake"
+	immediate = { from = { set_site_progress_locked = yes } }
+	after = { from = { set_site_progress_locked = no } }
+	
+	#保护诺耶露
+	option = {
+		name = "sfdoll_relic_civilization_event.7_option_a"
+		small_artifact_reward = yes
+		hidden_effect = { owner = { country_event = { id = sfdoll_relic_civilization_event.9 } } }
+	}
+}
+
+#诺耶露坟头 stage4
+fleet_event = {
+	id = sfdoll_relic_civilization_event.8
+	title = "sfdoll_relic_civilization_event.8"
+	desc = "sfdoll_relic_civilization_event.8_desc"
+	is_triggered_only = yes
+	hide_window = no
+	archaeology = yes
+	picture = GFX_evp_sfdoll_ruin
+	immediate = { from = { set_site_progress_locked = yes } }
+	after = {  from = { set_site_progress_locked = no } }
+	option = {
+		name = OK
+		owner = {
+			add_resource = {
+				physics_research = 4000
+				society_research = 4000
+				engineering_research = 4000
+			}
+		}
+		small_artifact_reward = yes
+	}
+}
+
+#保护诺耶露，事件提示
+country_event = {
+	id = sfdoll_relic_civilization_event.9
+	title = "sfdoll_relic_civilization_event.9"
+	desc = "sfdoll_relic_civilization_event.9_desc"
+	is_triggered_only = yes
+	hide_window = no
+	picture = GFX_evp_sfdoll_noel_sleep
+	after = {  hidden_effect = { country_event = {  id = sfdoll_noel_event.2  days = 3600  } } }
+}
+
+#生成ELID
+# planet_event = {
+# 	id = sfdoll_relic_civilization_event.10
+# 	is_triggered_only = yes
+# 	hide_window = no
+# 	immediate = {
+# 		create_country = {
+# 			name = "NAME_SFDOLL_ELID "
+# 			type = SFDOLL_elid_country
+# 			effect = {
+# 				establish_communications_no_message = from
+# 				establish_contact = { who = from location = root.solar_system }
+# 				save_global_event_target_as = sfdoll_elid_country
+# 			}
+# 			flag = {
+# 				icon = {
+# 					category = "SidesFlag"
+# 					file = "Unknown.dds"
+# 				}
+# 				background = {
+# 					category = "backgrounds"
+# 					file = "sinus.dds"
+# 				}
+# 				colors = {
+# 					"black"
+# 					"black"
+# 					"null"
+# 					"null"
+# 				}
+# 			}
+# 		}
+# 		create_species = {
+# 			name = "NAME_SFDOLL_ELID"
+# 			class = eild
+# 			portrait = random
+# 			effect = { save_global_event_target_as = sfdoll_elid_species }
+# 		}
+# 		while = {
+# 			count = 10
+# 			create_army = {
+# 				name = "NAME_SFDOLL_ELID"
+# 				owner = event_target:sfdoll_elid_country
+# 				species = event_target:sfdoll_elid_species
+# 				type = "SFDOLL_eild_army_1"
+# 			}
+# 		}
+# 	}
+# }
+
+#次元巡礼，事件开始
+country_event = {
+	id = sfdoll_relic_civilization_event.50
+	title = "sfdoll_relic_civilization_event.50"
+	desc = "sfdoll_relic_civilization_event.50.desc"
+	is_triggered_only = yes
+	hide_window = no
+	picture = GFX_evp_sfdoll_unknown_civilization
+	option = {
+		name = "sfdoll_relic_civilization_event.50.a"
+		hidden_effect = {  capital_scope = { enable_special_project = {	name = SFDOLL_TO_ZION_PROJECT	}	}  }
+	}
+}
+
+#到达锡安
+country_event = {
+	id = sfdoll_relic_civilization_event.51
+	title = "sfdoll_relic_civilization_event.51"
+	desc = "sfdoll_relic_civilization_event.51.desc"
+	is_triggered_only = yes
+	hide_window = no
+	picture = "GFX_evt_physics_research"
+	option = {  name = "sfdoll_relic_civilization_event.51.a"  }
+	after = {  hidden_effect = { country_event = {  id = sfdoll_relic_civilization_event.52  } } }
+}
+
+#进入母舰
+country_event = {
+	id = sfdoll_relic_civilization_event.52
+	title = "sfdoll_relic_civilization_event.52"
+	desc = "sfdoll_relic_civilization_event.52.desc"
+	is_triggered_only = yes
+	hide_window = no
+	picture = "GFX_evt_sapient_AI"
+	option = {  name = "sfdoll_relic_civilization_event.52.a"  }
+	after = {  hidden_effect = { country_event = {  id = sfdoll_relic_civilization_event.53  }  }  }
+}
+
+# 获取母舰中的信息
+country_event = {
+	id = sfdoll_relic_civilization_event.53
+	title = "sfdoll_relic_civilization_event.53"
+	desc = "sfdoll_relic_civilization_event.53.desc"
+	is_triggered_only = yes
+	hide_window = no
+	picture = "GFX_evt_intelligence_report"
+	option = {	name = "sfdoll_relic_civilization_event.53.a"	}
+	after = {
+		hidden_effect = {
+			country_event = {
+				id = sfdoll_relic_civilization_event.54
+			}
+		}
+	}
+}
+
+# 结局
+country_event = {
+	id = sfdoll_relic_civilization_event.54
+	title = "sfdoll_relic_civilization_event.54"
+	desc = "sfdoll_relic_civilization_event.54.desc"
+	is_triggered_only = yes
+	hide_window = no
+	picture = "GFX_evt_intelligence_report"
+	option = {
+		name = "sfdoll_relic_civilization_event.54.a"
+		# add_research_option = tech_sfdoll_ap_phy
+		# add_research_option = tech_sfdoll_ap_soc
+		add_research_option = tech_sfdoll_ap_eng
+	}
+}

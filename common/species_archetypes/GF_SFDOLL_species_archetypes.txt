@@ -1,0 +1,6 @@
+#物种大类 girls frontline android
+SFDOLL={
+	species_trait_points = 1
+	species_max_traits = 6
+	robotic = yes
+}

@@ -1,0 +1,102 @@
+#星系清空
+weapon_component_template = {
+	key = "planet_killer_sfdoll_1"
+	size = planet_killer
+	type = planet_killer
+	use_ship_kill_target = no
+	can_destroy_stars = yes
+	icon = GFX_planet_killer_sfdoll_1
+	icon_frame = 1
+	windup = {
+		min = 10
+		max = 10
+	}
+    total_fire_time = 10
+    range = 500
+	prerequisites = {	tech_planet_killer_sfdoll_1	}
+	size_restriction = { sfdoll_mobile_starbase  ship_sfdoll_noel  }
+	component_set = "planet_killer_sfdoll_1"
+	planet_destruction_gfx = "star_destroyer_effect_gfx"
+}
+
+#针对性地摧毁行星和恒星
+weapon_component_template = {
+	key = "planet_killer_sfdoll_2"
+	size = planet_killer
+	type = planet_killer
+	use_ship_kill_target = no
+	can_destroy_stars = yes
+	icon = GFX_planet_killer_sfdoll_2
+	icon_frame = 1
+	windup = {
+		min = 5
+		max = 5
+	}
+    total_fire_time = 5
+    range = 500
+	size_restriction = { ship_sfdoll_noel  }
+	component_set = "planet_killer_sfdoll_2"
+	planet_destruction_gfx = "star_destroyer_effect_gfx"	
+}
+
+#转化为黑洞
+weapon_component_template = {
+	key = "planet_killer_sfdoll_3"
+	size = planet_killer
+	type = planet_killer
+	use_ship_kill_target = no
+	can_destroy_stars = yes
+	icon = GFX_planet_killer_sfdoll_3
+	icon_frame = 1
+	windup = { min = 10 max = 10 }
+    total_fire_time = 10
+    range = 300
+	accuracy = 1
+	damage = { min = 0 max = 0 }
+  
+	prerequisites = {	tech_planet_killer_sfdoll_3	}
+	size_restriction = { sfdoll_mobile_starbase sfdoll_star_eater  }
+	component_set = "planet_killer_sfdoll_3"
+	planet_destruction_gfx = "star_destroyer_effect_gfx"	
+}
+
+#黑洞转化为恒星
+weapon_component_template = {
+	key = "planet_killer_sfdoll_4"
+	size = planet_killer
+	type = planet_killer
+	use_ship_kill_target = no
+	can_destroy_stars = yes
+	icon = GFX_planet_killer_sfdoll_4
+	icon_frame = 1
+	windup = { min = 20 max = 20 }
+    total_fire_time = 20
+    range = 300
+	accuracy = 1
+	damage = { min = 0 max = 0 }
+  
+	prerequisites = {	tech_planet_killer_sfdoll_4	}
+	size_restriction = { sfdoll_mobile_starbase }
+	component_set = "planet_killer_sfdoll_4"
+	planet_destruction_gfx = "star_destroyer_effect_gfx"	
+}
+
+#殖民
+weapon_component_template = {
+	key = "planet_killer_sfdoll_colonizer"
+	size = planet_killer
+	type = planet_killer
+	use_ship_kill_target = no
+	can_destroy_stars = yes
+	icon = GFX_planet_killer_sfdoll_colonizer
+	icon_frame = 1
+	windup = {
+		min = 60
+		max = 60
+	}
+    total_fire_time = 5
+    range = 0
+	size_restriction = {  sfdoll_constructor sfdoll_mobile_starbase   }
+	component_set = "planet_killer_sfdoll_colonizer"
+	planet_destruction_gfx = "star_destroyer_effect_gfx"	
+}

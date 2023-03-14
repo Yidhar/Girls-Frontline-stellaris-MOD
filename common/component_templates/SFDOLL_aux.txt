@@ -1,0 +1,96 @@
+#损害管理
+utility_component_template = {
+	key = "sfdoll_aux_repair_ship"
+	size = aux
+	icon = "GFX_sfdoll_aux_repair_ship"
+	icon_frame = 1
+	power = -10
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 20
+		}
+	}
+	modifier = {
+		ship_shield_regen_add_perc = 0.2
+		ship_armor_regen_add_perc = 0.2
+		ship_hull_regen_add_perc = 0.2
+		#逃离概率写在modifier里
+		# ship_disengage_chance_mult = 0.20 
+		ship_emergency_ftl_mult = -0.20
+	}
+	prerequisites = { "tech_sfdoll_aux_repair_ship" }
+	component_set = "component_set_sfdoll_aux_repair_ship"
+
+	ai_weight = {
+		weight = 20
+		modifier = {
+			factor = -1
+			NOT = {		has_authority = auth_gf_sfdoll	}
+		}		
+	}
+}
+
+utility_component_template = {
+	key = "sfdoll_aux_fire_range"
+	size = aux
+	icon = "GFX_sfdoll_aux_fire_range"
+	icon_frame = 1
+	power = -20
+	resources = {
+		category = ship_components
+		cost = { alloys = 20 nanites = 2 }
+	}
+	modifier = {
+		ship_weapon_range_mult = 0.1
+		ship_accuracy_mult = 0.1
+		ship_tracking_mult = 0.1
+	}
+	prerequisites = { "tech_sfdoll_aux_fire_range" }
+	component_set = "sfdoll_aux_fire_range"
+
+	ai_weight = {
+		weight = 20
+		modifier = {
+			factor = -1
+			NOT = {		has_authority = auth_gf_sfdoll	}
+		}		
+	}
+}
+
+#质量再生系统
+utility_component_template = {
+	key = "sfdoll_aux_quality_rebuilding"
+	size = aux
+	icon = "GFX_sfdoll_aux_quality_rebuilding"
+	icon_frame = 1
+	power = -10
+	resources = {
+		category = ship_components
+		cost = {
+			sr_dark_matter = 40
+			GF_nyto_collapse_liquid = 40
+		}
+	}
+	#这个能显示但没用
+	modifier = {
+		ships_upkeep_mult = -1
+	}
+	#这个有用但不显示
+	ship_modifier = {
+		ships_upkeep_mult = -1
+	}
+	prerequisites = { "tech_sfdoll_aux_quality_rebuilding" }
+	component_set = "sfdoll_aux_quality_rebuilding"
+
+	size_restriction = {
+	   corvette  destroyer cruiser battleship titan  colossus juggernaut
+	}
+	ai_weight = {
+		weight = 20
+		modifier = {
+			factor = -1
+			NOT = {		has_authority = auth_gf_sfdoll	}
+		}		
+	}
+}

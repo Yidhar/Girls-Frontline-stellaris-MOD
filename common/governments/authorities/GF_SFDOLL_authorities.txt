@@ -1,0 +1,41 @@
+auth_gf_sfdoll = {
+	has_heir = no
+    has_factions = no
+	can_reform = no
+	election_type = oligarchic
+	election_term_years = 2000
+	election_term_variance = 20
+	can_have_emergency_elections = yes
+	emergency_election_cost = 50
+
+	valid_for_released_vassal = no
+	localization_postfix = auth_gf_sfdoll
+	has_agendas = yes
+	possible = {
+		ethics = {
+			NOR = {
+				value = ethic_gestalt_consciousness
+				value = ethic_spiritualist
+				value = ethic_fanatic_spiritualist
+			}
+		}
+		species_class = {	value = gf_sfdoll }
+	}	
+	icon = "gfx/interface/icons/governments/authorities/auth_gf_sfdoll.dds"
+	random_weight = {
+		modifier = {
+			factor = 0
+		}
+	}
+	traits = {
+		trait = trait_gf_sfdoll
+	}
+	country_modifier = {
+	    country_base_influence_produces_add = 1
+		empire_size_mult = -0.1
+		envoys_add = 2
+		planet_army_build_speed_mult = 0.50
+		intel_decryption_add = 4
+		intel_encryption_add = 4
+	}
+}

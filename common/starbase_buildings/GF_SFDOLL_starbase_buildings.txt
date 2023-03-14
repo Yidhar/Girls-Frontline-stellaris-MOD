@@ -32,6 +32,26 @@ starbase_building_sfdoll_assembly = {
 	}
 }
 
+sfdoll_starbase_darkmatter = {
+	icon = "GFX_sm_sfdoll_starbase_darkmatter"
+	construction_days = 360
+	initial = no
+	potential = {
+		exists = owner
+		owner = { has_technology = tech_sfdoll_dark_matter_plant }
+	}
+	show_in_tech = tech_sfdoll_dark_matter_plant
+	resources = {
+		category = starbase_buildings
+		cost = { alloys = 600 }
+		produces = { sr_dark_matter = 12 }
+		upkeep = { energy = 2 }
+	}
+	ai_build_at_chokepoint = yes
+	ai_build_outside_chokepoint = yes
+	ai_weight = { weight = 0 }
+}
+
 # sfdoll_starbase_building_chemical = {
 # 	icon = "GFX_exotic_gases_sfdoll_homeless"
 # 	construction_days = 180

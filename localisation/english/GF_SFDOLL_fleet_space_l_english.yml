@@ -416,17 +416,18 @@ tech_sfdoll_mining_station_desc:0 "$sfdoll_mining_station_02_DESC$"
 
 
 sfdoll_blackhole_mining_01:0 "SF Black-Hole Decompressor Site"
-sfdoll_blackhole_mining_01_DESC:0 "$sfdoll_blackhole_mining_03_DESC$"
-sfdoll_blackhole_mining_01_MEGASTRUCTURE_DETAILS:0 "$sfdoll_blackhole_mining_03_DESC$"
-
+sfdoll_blackhole_mining_01_DESC:0 "$sfdoll_blackhole_mining_04_DESC$"
+sfdoll_blackhole_mining_01_MEGASTRUCTURE_DETAILS:0 "$sfdoll_blackhole_mining_04_DESC$"
 sfdoll_blackhole_mining_02:0 "SF Black-Hole Decompressor Stage 2"
-sfdoll_blackhole_mining_02_DESC:0 "$sfdoll_blackhole_mining_03_DESC$"
+sfdoll_blackhole_mining_02_DESC:0 "$sfdoll_blackhole_mining_04_DESC$"
+sfdoll_blackhole_mining_03:0 "SF Black-Hole Decompressor Stage 3"
+sfdoll_blackhole_mining_03_DESC:0 "$sfdoll_blackhole_mining_04_DESC$"
 
-sfdoll_blackhole_mining_03:0 "SF Black-Hole Decompressor"
-sfdoll_blackhole_mining_03_DESC:0 "Black-Hole Decompressor controls the gravity of the black hole to mining the matter inside"
+sfdoll_blackhole_mining_04:0 "SF Black-Hole Decompressor"
+sfdoll_blackhole_mining_04_DESC:0 "Black-Hole Decompressor controls the gravity of the black hole to mining the matter inside."
 
-tech_sfdoll_blackhole_mining:0 "$sfdoll_blackhole_mining_03$"
-tech_sfdoll_blackhole_mining_desc:0 "$sfdoll_blackhole_mining_03_DESC$"
+tech_sfdoll_blackhole_mining:0 "$sfdoll_blackhole_mining_04$"
+tech_sfdoll_blackhole_mining_desc:0 "$sfdoll_blackhole_mining_04_DESC$"
 
 sfdoll_mobile_gateway_01:0 "SF Mobile Gateway"
 sfdoll_mobile_gateway_01_DESC:0 "A Mobile Gateway can upgrade to a Gateway Ship. \n\nHow to use Gateway Ship: \nClick on §Y'disband fleet'§! to turn a Gateway Ship to a Mobile Gateway. Click on §Y'disband ship'§! will not generate a Mobile Gateway."

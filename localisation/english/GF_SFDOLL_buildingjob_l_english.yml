@@ -14,6 +14,9 @@ job_sfdoll_dark_matter_maker_desc:0"$job_sfdoll_dark_matter_maker$"
 job_sfdoll_dark_matter_maker_effect_desc:0 "$job_sfdoll_dark_matter_maker$ consumes §Y$energy$§! producees §Y$sr_dark_matter$§!"
 mod_job_sfdoll_dark_matter_maker_add:0"$job_sfdoll_dark_matter_maker$ jobs"
 
+sm_sfdoll_starbase_darkmatter:0 "SF Dark Matter Collection Device"
+sm_sfdoll_starbase_darkmatter_desc:0 "These large devices can efficiently collect dark matter."
+
 tech_sfdoll_nanites:0 "Super Micro AI"
 tech_sfdoll_nanites_desc:0 "Tiny structures can also run complex programs"
 
@@ -92,13 +95,13 @@ mod_job_sfdoll_goods_maker_add:0 "$job_sfdoll_goods_maker$ jobs"
 # mod_job_sfdoll_goods_producer_2_add:0 "$job_sfdoll_goods_producer_2$ jobs"
 
 
-tech_sfdoll_energy_plant:0 "Class-4 Singularity"
-tech_sfdoll_energy_plant_desc:0 "Imitating the technology of the fallen empire, SF Doll built the Class-4 Singularity."
-building_sfdoll_energy_plant:0 "SF Class-4 Singularity"
+tech_sfdoll_energy_plant:0 "SF Dark Matter Power Plant"
+tech_sfdoll_energy_plant_desc:0 "Imitating the Class-4 Singularity in the fallen empire, SF Doll built the efficient new power plant."
+building_sfdoll_energy_plant:0 "SF Dark Matter Power Plant"
 building_sfdoll_energy_plant_desc:0 "$tech_sfdoll_energy_plant_desc$"
 
-job_sfdoll_energy_maker:0 "Singularity Technician"
-job_sfdoll_energy_maker_plural:0 "Singularity Technicians"
+job_sfdoll_energy_maker:0 "Dark Matter Technician"
+job_sfdoll_energy_maker_plural:0 "Dark Matter Technicians"
 job_sfdoll_energy_maker_desc:0 "$job_sfdoll_energy_maker$"
 job_sfdoll_energy_maker_effect_desc:0 "$job_sfdoll_energy_maker$ consumes §Y$sr_dark_matter$§!, produces §Y$energy$§! "
 mod_job_sfdoll_energy_maker_add:0"$job_sfdoll_energy_maker$ jobs"

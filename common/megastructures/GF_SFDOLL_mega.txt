@@ -11,10 +11,7 @@ sfdoll_blackhole_mining_01 = {
 	potential = { is_ai = no	has_authority = auth_gf_sfdoll	}
 	resources = {
 		category = megastructures
-		cost = {
-			alloys = 1000
-			unity = 200
-		}
+		cost = { alloys = 5000 }
 		upkeep = {
 			energy = 2
 		}
@@ -81,7 +78,7 @@ sfdoll_blackhole_mining_01 = {
 		create_message = {
 			type = MEGASTRUCTURE_BUILT
 			localization = sfdoll_blackhole_mining_01
-			days = 90
+			days = 30
 			target = this
 		}
 	}
@@ -99,14 +96,10 @@ sfdoll_blackhole_mining_02 = {
 	resources = {
 		category = megastructures
 		cost = {
-			alloys = 5000
+			alloys = 10000
 			GF_nyto_collapse_liquid = 1000
-			unity = 1000
 		}
-		produces = {
-			minerals = 600
-		}
-		upkeep = { energy = 20 GF_nyto_collapse_liquid = 2 }
+		upkeep = { energy = 5 }
 	}
 	upgrade_from = { sfdoll_blackhole_mining_01 	}
 	on_build_complete = {
@@ -118,29 +111,27 @@ sfdoll_blackhole_mining_02 = {
 		}
 	}
 }
-
-# 黑洞开采器完成
+#黑洞开采阶段3
 sfdoll_blackhole_mining_03 = {
 	entity = "nova_ring_entity"
 	construction_entity = "nova_ring_entity"
 	portrait = "GFX_megastructure_sfdoll_star_collapse"
-	build_time = 1800
+	build_time = 3600
 	show_galactic_map_icon = no
-	show_in_outliner = no
+	show_in_outliner = yes
 	prerequisites = { 	tech_sfdoll_blackhole_mining	}
-	potential = {	has_authority = auth_gf_sfdoll	}
 	resources = {
 		category = megastructures
 		cost = {
-			alloys = 30000
-			GF_nyto_collapse_liquid = 7000
-			unity = 6000
+			alloys = 10000
+			GF_nyto_collapse_liquid = 1000
+			unity = 1000
 		}
 		produces = {
-			minerals = 3000
-			sr_dark_matter = 60
+			minerals = 1200
+			sr_dark_matter = 20
 		}
-		upkeep = { energy = 100 GF_nyto_collapse_liquid = 10 }
+		upkeep = { energy = 20 }
 	}
 	upgrade_from = { sfdoll_blackhole_mining_02 	}
 	on_build_complete = {
@@ -172,6 +163,39 @@ sfdoll_blackhole_mining_03 = {
 		create_message = {
 			type = MEGASTRUCTURE_BUILT
 			localization = sfdoll_blackhole_mining_03
+			days = 30
+			target = this
+		}
+	}
+}
+# 黑洞开采完成
+sfdoll_blackhole_mining_04 = {
+	entity = "nova_ring_entity"
+	construction_entity = "nova_ring_entity"
+	portrait = "GFX_megastructure_sfdoll_star_collapse"
+	build_time = 3600
+	show_galactic_map_icon = no
+	show_in_outliner = no
+	prerequisites = { 	tech_sfdoll_blackhole_mining	}
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 20000
+			GF_nyto_collapse_liquid = 2000
+			unity = 2000
+		}
+		produces = {
+			minerals = 3000
+			sr_dark_matter = 50
+		}
+		upkeep = { energy = 80 }
+	}
+	upgrade_from = { sfdoll_blackhole_mining_03 	}
+	on_build_complete = {
+		from = { set_country_flag = has_built_or_repaired_megastructure }
+		create_message = {
+			type = MEGASTRUCTURE_BUILT
+			localization = sfdoll_blackhole_mining_04
 			days = 30
 			target = this
 		}

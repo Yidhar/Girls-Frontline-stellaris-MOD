@@ -294,6 +294,21 @@ leader_trait_general_sfdoll_triela = {
 	leader_potential_add = {from = { has_authority = auth_gf_sfdoll }}
 }
 
+#伊莱莎总督
+leader_trait_elisa_sfd_governor = {
+	cost = 0
+	randomized = no
+	requires_traits={ trait_gf_sfdoll }
+	icon="gfx/interface/icons/traits/sfdoll/leader_traits/leader_trait_elisa_sfd.dds"
+	immortal_leaders = yes
+	modifier = {
+		planet_jobs_unity_produces_mult = 0.15
+		planet_army_build_speed_mult = 0.15
+	}
+	leader_trait = { governor }
+	leader_class = { governor }
+	leader_potential_add = {from = { has_authority = auth_gf_sfdoll }}
+}
 #伊莱莎科学家
 leader_trait_elisa_sfd_scientist = {
 	cost = 0
@@ -302,15 +317,36 @@ leader_trait_elisa_sfd_scientist = {
 	icon="gfx/interface/icons/traits/sfdoll/leader_traits/leader_trait_elisa_sfd.dds"
 	immortal_leaders = yes
 	modifier = {
-		all_technology_research_speed = 0.30
-		ship_anomaly_generation_chance_mult = 0.25
-		science_ship_survey_speed = 0.25
-		ship_anomaly_research_speed_mult = 0.25
+		category_computing_research_speed_mult = 0.1
+		category_new_worlds_research_speed_mult = 0.1
 		ship_archaeological_site_excavation_speed_mult = 0.25
 	}
 	leader_trait = { scientist }
 	leader_class = { scientist }
 	leader_potential_add = {from = { has_authority = auth_gf_sfdoll }}
+}
+#伊莱莎舰队司令
+leader_trait_elisa_sfd_admiral = {
+	cost = 0
+	randomized = no
+	requires_traits={ trait_gf_sfdoll }
+	icon="gfx/interface/icons/traits/sfdoll/leader_traits/leader_trait_elisa_sfd.dds"
+	immortal_leaders = yes
+	leader_trait = { admiral }
+	leader_class = { admiral }
+	leader_potential_add = {from = { has_authority = auth_gf_sfdoll }}
+}
+#伊莱莎陆军将领
+leader_trait_elisa_sfd_general = {
+	cost = 0
+	randomized = no
+	requires_traits={ trait_gf_sfdoll }
+	icon="gfx/interface/icons/traits/sfdoll/leader_traits/leader_trait_elisa_sfd.dds"
+	immortal_leaders = yes
+	leader_trait = { general }
+	leader_class = { general }
+	leader_potential_add = {from = { has_authority = auth_gf_sfdoll }}
+	modifier = {  armies_upkeep_mult = -0.15 }
 }
 
 #ump40总督
@@ -319,8 +355,8 @@ leader_trait_governor_ogas40 = {
 	randomized = no
 	icon="gfx/interface/icons/traits/sfdoll/leader_traits/leader_trait_ogas40.dds"
 	modifier = {
-		pop_happiness = 0.15
-		planet_jobs_produces_mult = 0.15
+		pop_happiness = 0.1
+		planet_jobs_produces_mult = 0.1
 	}
 	leader_trait = { governor }
 	leader_class = { governor }
@@ -494,8 +530,8 @@ leader_trait_sfdoll_talulah_governor = {
 	randomized = no
 	icon="gfx/interface/icons/traits/sfdoll/leader_traits/leader_trait_sfdoll_talulah.dds"
 	modifier = {
-		pop_happiness = 0.15
-		planet_jobs_produces_mult = 0.15
+		pop_happiness = 0.1
+		planet_jobs_produces_mult = 0.1
 	}
 	leader_trait = { governor }
 	leader_class = { governor }

@@ -309,4 +309,9 @@ spriteTypes = {
 		name = "GFX_starbase_building_sfdoll_assembly"
 		texturefile = "gfx/interface/icons/ship_parts/starbase_building_sfdoll_assembly.dds"
 	}
+
+	spriteType = {
+		name = "GFX_sm_sfdoll_starbase_darkmatter"
+		texturefile = "gfx/interface/icons/ship_parts/sm_sfdoll_starbase_darkmatter.dds"
+	}
 }

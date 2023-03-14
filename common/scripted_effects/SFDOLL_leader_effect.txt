@@ -113,47 +113,6 @@ triela_become_general_sfdoll_effect = {
 	}
 }
 
-#伊莱莎切换形态
-elisa_to_scientist_sfd_effect = {
-	optimize_memory
-	hidden_effect = {
-		# every_owned_leader = {
-		# 	limit = {
-		# 		has_leader_flag = sfdoll_leader_elisa
-		# 	}
-		# 	kill_leader = {
-		# 		show_notification = no
-		# 		fire = yes
-		# 	}
-		# }
-		event_target:sfdoll_leader_elisa = {
-			kill_leader = {
-				show_notification = no
-				fire = yes
-			}
-		}
-		create_leader = {
-			class = scientist
-			species = owner_species
-			name = name_elisa_sfdoll
-			skill = 1
-			set_age = 20
-			immortal = yes
-			event_leader = yes	# prevents this leader from leading factions and winning elections
-			traits = {
-				# trait = leader_trait_elisa_sfd_scientist
-				trait = leader_trait_archaeologist_ancrel
-			}
-			effect = {
-				change_leader_portrait = GFX_sfdoll_elisa
-				set_leader_flag = sfdoll_leader_elisa
-				save_global_event_target_as = sfdoll_leader_elisa
-			}
-		}
-	}
-}
-
-
 #ump40成为总督
 ogas40_become_governor_effect = {
 	optimize_memory

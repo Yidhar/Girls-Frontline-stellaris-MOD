@@ -96,8 +96,8 @@ ap_sfdoll_4= {
 		NOT = { has_ascension_perk = ap_sfdoll_4 }
 	}
 	possible = {
-		has_technology = tech_sfdoll_ap_phy
-		has_technology = tech_sfdoll_ap_soc
+		# has_technology = tech_sfdoll_ap_phy
+		# has_technology = tech_sfdoll_ap_soc
 		has_technology = tech_sfdoll_ap_eng
 		has_megastructure = sfdoll_mega_lab_4
 		# has_technology = tech_sfdoll_singularity
@@ -105,8 +105,8 @@ ap_sfdoll_4= {
 	}
 	modifier = {
 		planet_decision_enact_speed_mult = 0.25
-		megastructure_build_speed_add = 2
-		country_resource_max_add = 80000
+		megastructure_build_speed_add = 1
+		country_resource_max_add = 40000
 	}
 	on_enabled = {
 		hidden_effect = {  country_event = {  id = sfdoll_event.9  } }

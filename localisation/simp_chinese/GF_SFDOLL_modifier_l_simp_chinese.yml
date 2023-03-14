@@ -1,0 +1,14 @@
+﻿l_simp_chinese:
+ GIRLF:0 "少女前线"
+############
+mod_SFDOLL_species_trait_points_add:0"铁血人形物种改造点数"
+
+mod_shipclass_military_build_speed_mult:0"军事舰船建造速度"
+
+mod_planet_pops_robotics_energy_upkeep_mult:0 "机械人口$energy$ £energy£ 维护费 "
+
+mod_planet_jobs_sr_dark_matter_produces_mult:0 "岗位产出的 §Y$sr_dark_matter$§! £sr_dark_matter£ "
+
+mod_planet_jobs_nanites_produces_mult:0 "岗位产出的 £nanites£ $nanites$"
+
+mod_planet_jobs_GF_nyto_collapse_liquid_produces_mult:0 "岗位产出的 §Y$GF_nyto_collapse_liquid$§! £GF_nyto_collapse_liquid£ "

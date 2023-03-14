@@ -70,11 +70,11 @@ PR_D_JOB_sfdoll_dark_matter_maker = {
 	resources = { category = planet_sfdoll_sp_industry	# 行业类型,直接同步岗位的
 		produces = {
 			multiplier = value:PR_prmt_sv_plnt_JOB_FACTOR|JOB|sfdoll_dark_matter_maker|EFFICIENCY|general|
-			sr_dark_matter = 3
+			sr_dark_matter = 2
 		}
 		upkeep = {
 			multiplier = value:PR_prmt_sv_plnt_JOB_FACTOR|JOB|sfdoll_dark_matter_makert|EFFICIENCY|general|
-			energy = 15
+			energy = 20
 		}
 	}
 
@@ -254,7 +254,7 @@ PR_D_JOB_sfdoll_energy_maker = {
 		}
 		upkeep = {
 			multiplier = value:PR_prmt_sv_plnt_JOB_FACTOR|JOB|sfdoll_energy_maker|EFFICIENCY|general|	# 只改动"death_priest"这一栏,其他照抄
-			sr_dark_matter = 1
+			sr_dark_matter = 2
 		}
 	}
 
@@ -282,7 +282,7 @@ PR_D_JOB_sfdoll_mineral_maker = {
 	resources = { category = planet_sfdoll_sp_industry	# 行业类型,直接同步岗位的
 		produces = {
 			multiplier = value:PR_prmt_sv_plnt_JOB_FACTOR|JOB|sfdoll_mineral_maker|EFFICIENCY|general|
-			minerals = 8
+			minerals = 4
 		}
 		upkeep = {
 			multiplier = value:PR_prmt_sv_plnt_JOB_FACTOR|JOB|sfdoll_mineral_maker|EFFICIENCY|general|

@@ -1,0 +1,611 @@
+#铁血环世界
+#居住区划
+district_rw_city_sfdoll = {
+	base_buildtime = 360
+	is_capped_by_modifier = no
+
+	show_on_uncolonized = {
+		exists = from
+		from = { is_regular_empire = yes }
+		uses_district_set = rw_sfdoll
+	}
+
+	potential = {
+		exists = owner
+		owner = { is_regular_empire = yes }
+		uses_district_set = rw_sfdoll
+	}
+
+	conversion_ratio = 0.5
+	convert_to = {
+		district_rw_nexus
+		district_rw_hive
+	}
+
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = 1000
+			GF_nyto_collapse_liquid = 100
+		}
+		upkeep = {
+			energy = 5
+			GF_nyto_collapse_liquid = 2
+		}
+	}
+
+	planet_modifier = {
+		planet_housing_add = 25
+		job_sfdoll_educator_add = 5
+		job_sfdoll_artist_add = 10
+	}
+}
+
+#铁血环科研区划
+district_rw_science_sfdoll = {
+	base_buildtime = 360
+	is_capped_by_modifier = no
+
+	show_on_uncolonized = { uses_district_set = rw_sfdoll }
+
+	potential = { uses_district_set = rw_sfdoll }
+
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = 1000
+			GF_nyto_collapse_liquid = 100
+		}
+		upkeep = {
+			energy = 5
+			GF_nyto_collapse_liquid = 2
+		}
+	}
+
+	triggered_planet_modifier = {
+		planet_housing_add = 15
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_authority = auth_gf_sfdoll }
+		}
+		modifier = {
+			job_sfdoll_researcher_add = 15
+		}
+	}
+}
+
+#铁血环世界工业区划
+district_rw_industrial_sfdoll = {
+	base_buildtime = 360
+	is_capped_by_modifier = no
+
+	show_on_uncolonized = { uses_district_set = rw_sfdoll }
+
+	potential = {
+		uses_district_set = rw_sfdoll
+	}
+
+	resources = {
+		category = planet_districts
+		category = planet_districts
+		cost = {
+			minerals = 1000
+			GF_nyto_collapse_liquid = 100
+		}
+		upkeep = {
+			energy = 5
+			GF_nyto_collapse_liquid = 2
+		}
+	}
+
+	triggered_planet_modifier = {
+		planet_housing_add = 15
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_authority = auth_gf_sfdoll
+			}
+		}
+		modifier = {
+			job_sfdoll_alloys_maker_add = 13
+			job_sfdoll_goods_maker_add = 2
+		}
+	}
+	ai_resource_production = {
+		alloys = 60
+		consumer_goods = 30
+		trigger = {
+			owner = {
+				has_authority = auth_gf_sfdoll
+			}
+		}
+	}
+}
+
+#稀有资源区划
+district_rw_rare_sfdoll = {
+	base_buildtime = 360
+	is_capped_by_modifier = no
+
+	show_on_uncolonized = { uses_district_set = rw_sfdoll }
+	potential = {
+		uses_district_set = rw_sfdoll
+	}
+
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = 1000
+			GF_nyto_collapse_liquid = 100
+		}
+		upkeep = {
+			energy = 5
+			GF_nyto_collapse_liquid = 2
+		}
+	}
+
+	triggered_planet_modifier = {
+		planet_housing_add = 15
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_authority = auth_gf_sfdoll
+			}
+		}
+		modifier = {
+			job_sfdoll_collapse_liquid_maker_add = 14
+			job_sfdoll_nanites_maker_add= 1
+		}
+	}
+	ai_resource_production = {
+		alloys = 60
+		consumer_goods = 30
+		trigger = {
+			owner = {
+				has_authority = auth_gf_sfdoll
+			}
+		}
+	}
+}
+
+
+#能源和矿物区划
+district_rw_generator_sfdoll = {
+	base_buildtime = 360
+	is_capped_by_modifier = no
+	show_on_uncolonized = {
+		uses_district_set = rw_sfdoll
+		exists = from
+		from = {
+			has_authority = auth_gf_sfdoll
+			has_technology = tech_sfdoll_energy_plant
+			has_technology = tech_building_sfdoll_mineral
+		}
+	}
+	potential = {
+		uses_district_set = rw_sfdoll
+		exists = owner
+		owner = {
+			has_authority = auth_gf_sfdoll
+			has_technology = tech_sfdoll_energy_plant
+			has_technology = tech_building_sfdoll_mineral
+		}
+	}
+
+	convert_to = { district_rw_commercial }
+
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = 1000
+			GF_nyto_collapse_liquid = 100
+		}
+		upkeep = {
+			energy = 5
+			GF_nyto_collapse_liquid = 2
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_authority = auth_gf_sfdoll
+			}
+		}
+		modifier = {
+			planet_housing_add = 15
+			job_sfdoll_energy_maker_add = 7
+			job_sfdoll_mineral_maker_add = 8
+		}
+	}
+	ai_resource_production = {
+		energy = 30
+		minerals = 30
+		trigger = {
+			owner = {
+				has_authority = auth_gf_sfdoll
+			}
+		}
+	}
+}
+
+
+#铁血星球和太空城
+#居住区划
+district_sfdoll_house = {
+	base_buildtime = 600
+	is_capped_by_modifier = no
+
+	show_on_uncolonized = {
+		exists = from
+		uses_district_set = sfdoll_world
+	}
+
+	potential = {
+		exists = owner
+		uses_district_set = sfdoll_world
+	}
+
+	allow = {
+		NOT = { has_modifier = resort_colony }
+		NOT = { has_modifier = slave_colony }
+	}
+
+	conversion_ratio = 1
+	convert_to = {
+		district_arcology_housing
+		district_rw_city
+		district_nexus
+		district_hive
+	}
+
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = 1000
+			GF_nyto_collapse_liquid = 100
+		}
+		upkeep = {
+			energy = 5
+			GF_nyto_collapse_liquid = 2
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_authority = auth_gf_sfdoll
+			}
+		}
+		modifier = {
+			planet_max_buildings_add = 1
+			planet_housing_add = 15
+			job_sfdoll_educator_add = 3
+			job_sfdoll_artist_add = 6
+		}
+	}
+}
+
+#消费品区划
+# district_sfdoll_goods = {
+# 	base_buildtime = 600
+# 	is_capped_by_modifier = no
+
+# 	prerequisites = {
+# 		tech_basic_industry
+# 	}
+
+# 	show_on_uncolonized = {
+# 		exists = from
+# 		uses_district_set = sfdoll_world
+# 	}
+
+# 	potential = {
+# 		exists = owner
+# 		uses_district_set = sfdoll_world
+# 	}
+
+# 	allow = {
+# 		NOT = { has_modifier = resort_colony }
+# 		NOT = { has_modifier = slave_colony }
+# 	}
+
+# 	conversion_ratio = 1
+# 	convert_to = {
+# 		district_arcology_arms_industry
+# 		district_rw_industrial
+# 	}
+
+# 	triggered_planet_modifier = {
+# 		potential = {
+# 			exists = owner
+# 			owner = {
+# 				has_authority = auth_gf_sfdoll
+# 			}
+# 		}
+# 		modifier = {
+# 			planet_housing_add = 10
+# 			job_sfdoll_nanites_goods_maker_add = 8
+# 		}
+# 	}
+
+# 	resources = {
+# 		category = planet_districts
+# 		cost = {
+# 			minerals = 1000
+# 			GF_nyto_collapse_liquid = 50
+# 		}
+# 		upkeep = {
+# 			energy = 5
+# 		}
+# 	}
+
+# 	ai_resource_production = {
+# 		consumer_goods = 10
+# 		trigger = {
+# 			owner = {
+# 				has_authority = auth_gf_sfdoll
+# 			}
+# 		}
+# 	}
+# }
+#稀有资源区划
+district_sfdoll_rare = {
+	base_buildtime = 600
+	is_capped_by_modifier = no
+
+	prerequisites = {
+		tech_basic_industry
+	}
+
+	show_on_uncolonized = {
+		exists = from
+		uses_district_set = sfdoll_world
+	}
+
+	potential = {
+		exists = owner
+		uses_district_set = sfdoll_world
+	}
+
+	allow = {
+		NOT = { has_modifier = resort_colony }
+		NOT = { has_modifier = slave_colony }
+	}
+
+	conversion_ratio = 1
+	convert_to = {
+		district_arcology_arms_industry
+		district_rw_industrial
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_authority = auth_gf_sfdoll
+			}
+		}
+		modifier = {
+			planet_housing_add = 10
+			job_sfdoll_collapse_liquid_maker_add = 9
+			job_sfdoll_nanites_maker_add = 1
+		}
+	}
+
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = 1000
+			GF_nyto_collapse_liquid = 100
+		}
+		upkeep = {
+			energy = 5
+			GF_nyto_collapse_liquid = 2
+		}
+	}
+
+	ai_resource_production = {
+		consumer_goods = 10
+		trigger = {
+			owner = {
+				has_authority = auth_gf_sfdoll
+			}
+		}
+	}
+}
+
+#合金区划
+district_sfdoll_alloys = {
+	base_buildtime = 600
+	is_capped_by_modifier = no
+
+	prerequisites = {
+		tech_basic_industry
+	}
+
+	show_on_uncolonized = {
+		exists = from
+		uses_district_set = sfdoll_world
+	}
+
+	potential = {
+		exists = owner
+		uses_district_set = sfdoll_world
+	}
+
+	allow = {
+		NOT = { has_modifier = resort_colony }
+		NOT = { has_modifier = slave_colony }
+	}
+
+	conversion_ratio = 1
+	convert_to = {
+		district_arcology_arms_industry
+		district_rw_industrial
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_authority = auth_gf_sfdoll
+			}
+		}
+		modifier = {
+			planet_housing_add = 10
+			job_sfdoll_alloys_maker_add = 9
+			job_sfdoll_goods_maker_add = 1
+		}
+	}
+
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = 1000
+			GF_nyto_collapse_liquid = 100
+		}
+		upkeep = {
+			energy = 5
+			GF_nyto_collapse_liquid = 2
+		}
+	}
+
+	ai_resource_production = {
+		alloys = 10
+		trigger = {
+			owner = {
+				has_authority = auth_gf_sfdoll
+			}
+		}
+	}
+}
+
+#科研区划
+district_sfdoll_science = {
+	base_buildtime = 600
+	is_capped_by_modifier = no
+
+	show_on_uncolonized = {
+		exists = from
+		uses_district_set = sfdoll_world
+	}
+
+	potential = {
+		exists = owner
+		uses_district_set = sfdoll_world
+	}
+
+	allow = {
+		NOT = { has_modifier = resort_colony }
+		NOT = { has_modifier = slave_colony }
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_authority = auth_gf_sfdoll
+			}
+		}
+		modifier = {
+			planet_housing_add = 10
+			job_sfdoll_researcher_add = 10
+		}
+	}
+
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = 1000
+			GF_nyto_collapse_liquid = 100
+		}
+		upkeep = {
+			energy = 5
+			GF_nyto_collapse_liquid = 2
+		}
+	}
+
+	ai_resource_production = {
+		physics_research = 20
+		society_research = 20
+		engineering_research = 20
+		trigger = {
+			owner = {
+				has_authority = auth_gf_sfdoll
+			}
+		}
+	}
+}
+
+#基础资源区划
+district_generator_sfdoll_city  = {
+	base_buildtime = 600
+	is_capped_by_modifier = no
+
+	show_on_uncolonized = {
+		uses_district_set = sfdoll_world
+		exists = from
+		from = {
+			has_authority = auth_gf_sfdoll
+			has_technology = tech_sfdoll_energy_plant
+			has_technology = tech_building_sfdoll_mineral
+		}
+	}
+
+	potential = {
+		uses_district_set = sfdoll_world
+		exists = owner
+		owner = {
+			has_authority = auth_gf_sfdoll
+			has_technology = tech_sfdoll_energy_plant
+			has_technology = tech_building_sfdoll_mineral
+		}
+	}
+
+	conversion_ratio = 1
+	convert_to = {
+		district_arcology_organic_housing
+		district_city
+		district_nexus
+		district_hive
+		district_arcology_housing
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_authority = auth_gf_sfdoll
+			}
+		}
+		modifier = {
+			planet_housing_add = 10
+			job_sfdoll_energy_maker_add = 5
+			job_sfdoll_mineral_maker_add = 5
+		}
+	}
+
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = 1000
+			GF_nyto_collapse_liquid = 100
+		}
+		upkeep = {
+			energy = 5
+			GF_nyto_collapse_liquid = 2
+		}
+	}
+}

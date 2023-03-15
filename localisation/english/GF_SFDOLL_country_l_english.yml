@@ -29,7 +29,7 @@ civic_sfdoll_culture_desc:0 "Sangvis Ferri is a young civilization and it has a 
 civic_sfdoll_4:0 "Living Among the Stars"
 civic_sfdoll_4_desc:0 "Now, the boundless sea of stars is our home."
 
-gov_civic_sfdoll_commonwealth:0 "SF People's Government"
+gov_civic_sfdoll_commonwealth:0 "Sangvis Ferri Government"
 gov_civic_sfdoll_commonwealth_desc:0"$gov_civic_sfdoll_commonwealth$"
 RT_sfdoll_president:0 "First Spokesperson"
 

@@ -297,69 +297,6 @@ district_sfdoll_house = {
 	}
 }
 
-#消费品区划
-# district_sfdoll_goods = {
-# 	base_buildtime = 600
-# 	is_capped_by_modifier = no
-
-# 	prerequisites = {
-# 		tech_basic_industry
-# 	}
-
-# 	show_on_uncolonized = {
-# 		exists = from
-# 		uses_district_set = sfdoll_world
-# 	}
-
-# 	potential = {
-# 		exists = owner
-# 		uses_district_set = sfdoll_world
-# 	}
-
-# 	allow = {
-# 		NOT = { has_modifier = resort_colony }
-# 		NOT = { has_modifier = slave_colony }
-# 	}
-
-# 	conversion_ratio = 1
-# 	convert_to = {
-# 		district_arcology_arms_industry
-# 		district_rw_industrial
-# 	}
-
-# 	triggered_planet_modifier = {
-# 		potential = {
-# 			exists = owner
-# 			owner = {
-# 				has_authority = auth_gf_sfdoll
-# 			}
-# 		}
-# 		modifier = {
-# 			planet_housing_add = 10
-# 			job_sfdoll_nanites_goods_maker_add = 8
-# 		}
-# 	}
-
-# 	resources = {
-# 		category = planet_districts
-# 		cost = {
-# 			minerals = 1000
-# 			GF_nyto_collapse_liquid = 50
-# 		}
-# 		upkeep = {
-# 			energy = 5
-# 		}
-# 	}
-
-# 	ai_resource_production = {
-# 		consumer_goods = 10
-# 		trigger = {
-# 			owner = {
-# 				has_authority = auth_gf_sfdoll
-# 			}
-# 		}
-# 	}
-# }
 #稀有资源区划
 district_sfdoll_rare = {
 	base_buildtime = 600

@@ -253,10 +253,7 @@ country_event = {
 	# }
 
 	#退出
-	option = {
-		name =  "QUIT"
-		country_event = { id = sfdoll_elisa_event.3 }
-	}
+	option = { name =  "QUIT" hidden_effect = { country_event = { id = sfdoll_elisa_event.3 } } }
 }
 
 #诺耶露加入

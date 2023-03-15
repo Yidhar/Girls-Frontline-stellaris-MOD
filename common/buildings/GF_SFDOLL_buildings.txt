@@ -341,7 +341,7 @@ building_sfdoll_gases_plant = {
 	}
 }
 
-#奇点发电厂
+#发电厂
 building_sfdoll_energy_plant = {
 	base_buildtime =   @b2_time
 	category = manufacturing
@@ -370,11 +370,12 @@ building_sfdoll_energy_plant = {
 		category = planet_buildings
 		cost = {
 			minerals = @b3_minerals
-			sr_dark_matter = @b3_rare_cost
+			GF_nyto_collapse_liquid = @b3_rare_cost
+			sr_dark_matter = @b2_rare_cost
 		}
 		upkeep = {
 			energy = @b3_upkeep
-			sr_dark_matter = @b3_rare_upkeep
+			GF_nyto_collapse_liquid = @b3_rare_upkeep
 		}
 	}
 

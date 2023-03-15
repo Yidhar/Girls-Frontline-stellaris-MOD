@@ -67,7 +67,6 @@ ap_sfdoll_3 = {
 		}
 	}
 	possible = {
-		has_technology = tech_sfdoll_dark_matter_plant
 		has_technology = tech_sfdoll_nanites
 		has_technology = tech_sfdoll_lab
 		has_technology = tech_sfdoll_alloys_produce
@@ -75,9 +74,7 @@ ap_sfdoll_3 = {
 		has_ascension_perk= ap_sfdoll_reverse_collapse
 	}
 	on_enabled = {
-		country_event = {
-			id = sfdoll_relic_civilization_event.50
-		}
+		country_event = { id = sfdoll_relic_civilization_event.50 }
 		add_research_option = tech_sfdoll_mega_lab
 		add_research_option = tech_gateway_construction
 		add_research_option = tech_gateway_activation

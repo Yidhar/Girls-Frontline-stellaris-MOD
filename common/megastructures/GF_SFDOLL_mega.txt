@@ -99,10 +99,12 @@ sfdoll_blackhole_mining_02 = {
 			alloys = 10000
 			GF_nyto_collapse_liquid = 1000
 		}
+		produces = { sr_dark_matter = 5 }
 		upkeep = { energy = 5 }
 	}
 	upgrade_from = { sfdoll_blackhole_mining_01 	}
 	on_build_complete = {
+		owner = { country_event = { id = sfdoll_event.11 } }
 		create_message = {
 			type = MEGASTRUCTURE_BUILT
 			localization = sfdoll_blackhole_mining_02
@@ -186,7 +188,7 @@ sfdoll_blackhole_mining_04 = {
 		}
 		produces = {
 			minerals = 3000
-			sr_dark_matter = 50
+			sr_dark_matter = 60
 		}
 		upkeep = { energy = 80 }
 	}

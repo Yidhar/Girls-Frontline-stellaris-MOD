@@ -262,7 +262,7 @@ sfdoll_goods_maker = {
 	weight = { weight = 20 }
 }
 
-#奇点能源岗位
+#能源岗位
 sfdoll_energy_maker = {
 	category = specialist
 	#用于检测工作是否可用的一系列逻辑
@@ -280,8 +280,8 @@ sfdoll_energy_maker = {
 	possible_precalc = can_fill_specialist_job
 	resources = {
 		category = planet_technician
-		produces = { energy = 8 }
-		upkeep = { sr_dark_matter = 2 }
+		produces = { energy = 16 }
+		upkeep = { sr_dark_matter = 4 }
 	}
 	weight = {	weight = 20	}
 }

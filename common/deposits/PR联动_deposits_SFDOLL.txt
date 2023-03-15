@@ -250,11 +250,11 @@ PR_D_JOB_sfdoll_energy_maker = {
 	resources = { category = planet_technician	# 行业类型,直接同步岗位的
 		produces = {
 			multiplier = value:PR_prmt_sv_plnt_JOB_FACTOR|JOB|sfdoll_energy_maker|EFFICIENCY|general|	# 只改动"death_priest"这一栏,其他照抄
-			energy = 8
+			energy = 16
 		}
 		upkeep = {
 			multiplier = value:PR_prmt_sv_plnt_JOB_FACTOR|JOB|sfdoll_energy_maker|EFFICIENCY|general|	# 只改动"death_priest"这一栏,其他照抄
-			sr_dark_matter = 2
+			sr_dark_matter = 4
 		}
 	}
 

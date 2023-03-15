@@ -68,7 +68,7 @@ tech_sfdoll_ap_soc = {
 	potential = {
 		has_authority = auth_gf_sfdoll
 	}
-	weight = 1000
+	weight = 0
 }
 
 tech_sfdoll_ap_eng = {
@@ -77,7 +77,6 @@ tech_sfdoll_ap_eng = {
 	area = engineering
 	category = { materials }
 	is_rare = yes
-	is_dangerous = yes
 	icon = tech_repeatable_sfdoll_eng
 	potential = { has_authority = auth_gf_sfdoll }
 	modifier = { megastructure_build_speed_add = 1 }
@@ -123,8 +122,8 @@ tech_sfdoll_dark_matter_plant = {
 	category = { particles }
 	#需要铁血政体
 	prerequisites = {	 tech_sfdoll_collapse_liquid_produce	}
-	potential = { has_authority = auth_gf_sfdoll }
-	weight = 500
+	potential = { always = no has_authority = auth_gf_sfdoll }
+	weight = 0
 }
 #解锁铁血纳米生产
 tech_sfdoll_nanites = {
@@ -372,13 +371,10 @@ tech_sfdoll_star_collapse = {
 	is_rare = yes
 	icon = tech_sfdoll_star_exploit
 	potential = {	always = no has_authority = auth_gf_sfdoll }
-	prerequisites = {
-		tech_sfdoll_dark_matter_plant
-	}
 	feature_flags = {	megaengineering	}
 	weight = 0
 }
-#黑洞解压器
+#黑洞开采
 tech_sfdoll_blackhole_mining  = {
 	area = physics
 	start_tech = no
@@ -390,8 +386,7 @@ tech_sfdoll_blackhole_mining  = {
 	potential = { has_authority = auth_gf_sfdoll }
 	prerequisites = {	tech_sfdoll_collapse_liquid_produce	}
 	feature_flags = {	megaengineering	}
-	# modifier = { country_resource_max_add = 40000 }
-	weight = @tier4weight1
+	weight = 500
 }
 tech_sfdoll_mobile_gateway = {
 	area = physics
@@ -480,7 +475,7 @@ tech_sfdoll_weapon_S_1 = {
 	is_reverse_engineerable = no
 	icon = tech_sfdoll_weapon_S_1
 	potential = { has_authority = auth_gf_sfdoll }
-	prerequisites = { tech_sfdoll_collapse_liquid_produce tech_sfdoll_dark_matter_plant tech_cruisers }
+	prerequisites = { tech_sfdoll_collapse_liquid_produce tech_cruisers }
 	weight = @tier4weight1
 }
 

@@ -82,7 +82,7 @@ sfdoll_warship_rebuild = {
 						}
 					}
 				}
-				set_mia = yes
+				set_mia = mia_return_home
 			}
 		}
 	}

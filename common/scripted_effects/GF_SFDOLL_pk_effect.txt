@@ -333,7 +333,7 @@ effect_sfdoll_destroy_star_system = {
 				exists = event_target:crisis_country #i.e. not final destruction of all matter
 				is_mobile = yes
 			}
-			set_mia = yes
+			set_mia = mia_return_home
 		}
 		else = {
 			destroy_fleet = this

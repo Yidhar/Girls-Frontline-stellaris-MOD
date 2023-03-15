@@ -38,7 +38,7 @@ ship_section_template = {
 		locatorname = "small_gun_01"
 	}
 	small_utility_slots = 3
-	aux_utility_slots = 1
+	aux_utility_slots = 2
 	
 }
 ship_section_template = {

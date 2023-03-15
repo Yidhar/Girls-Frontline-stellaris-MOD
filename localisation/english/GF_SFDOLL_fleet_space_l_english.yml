@@ -407,6 +407,7 @@ sfdoll_event.2_desc:0 "With the launch of the sublight speed navigation system, 
 sfdoll_mining_station_01:0 "SF Asteroid Mining Station Site"
 sfdoll_mining_station_01_DESC:0 "$sfdoll_mining_station_02_DESC$"
 sfdoll_mining_station_01_MEGASTRUCTURE_DETAILS:0 "$sfdoll_mining_station_02_DESC$"
+requires_only_one_sfdoll_mining_station_in_system:0 "Only one $sfdoll_mining_station_02$ can be built in a system."
 
 sfdoll_mining_station_02:0 "SF Asteroid Mining Station"
 sfdoll_mining_station_02_DESC:0 "These mining stations can extract minerals from the asteroid belt"

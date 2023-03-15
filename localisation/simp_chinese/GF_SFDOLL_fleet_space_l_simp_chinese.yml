@@ -419,6 +419,7 @@ sfdoll_star_exploit_01_MEGASTRUCTURE_DETAILS:0 "$sfdoll_star_exploit_02_DESC$"
 sfdoll_mining_station_01:0 "铁血小行星开采站基址"
 sfdoll_mining_station_01_DESC:0 "$sfdoll_mining_station_02_DESC$"
 sfdoll_mining_station_01_MEGASTRUCTURE_DETAILS:0 "$sfdoll_mining_station_02_DESC$"
+requires_only_one_sfdoll_mining_station_in_system:0 "一个星系只能建造一个$sfdoll_mining_station_02$"
 
 sfdoll_mining_station_02:0 "铁血小行星开采站"
 sfdoll_mining_station_02_DESC:0 "这些开采站可以开采小行星带的矿物"

@@ -334,7 +334,7 @@ sfdoll_habitat_02 ={
 	place_entity_on_planet_plane = no
 	build_time = 1080
 	construction_blocks_and_blocked_by = multi_stage_type
-	potential = { has_authority = auth_gf_sfdoll }
+	prerequisites = { tech_sfdoll_habitat_01 }
 	upgrade_from = { sfdoll_habitat_01 }
 	# ship_modifier = { ship_starting_experience_add = 600 }
 	# station_modifier = {
@@ -432,6 +432,10 @@ sfdoll_mining_station_01 = {
 				}
 			}
 		}
+		custom_tooltip = {
+			fail_text = "requires_only_one_sfdoll_mining_station_in_system"
+			NOT = { has_star_flag = sfdoll_mining_station_built }
+		}
 	}
 	placement_rules = {
 		planet_possible = {
@@ -447,10 +451,6 @@ sfdoll_mining_station_01 = {
 					}
 				}
 			}
-			# custom_tooltip = {
-			# 	fail_text = "requires_asteroid"
-			# 	is_asteroid = yes
-			# }
 			is_asteroid = yes		
 		}
 	}
@@ -462,6 +462,7 @@ sfdoll_mining_station_01 = {
 	}
 
 	on_build_complete = {
+		set_star_flag = sfdoll_mining_station_built
 		create_message = {
 			type = MEGASTRUCTURE_BUILT
 			localization = sfdoll_mining_station_01
@@ -470,7 +471,6 @@ sfdoll_mining_station_01 = {
 		}
 	}
 }
-
 #小行星采矿站完成
 sfdoll_mining_station_02 = {
 	entity = "sfdoll_mining_station_section_entity"
@@ -481,7 +481,6 @@ sfdoll_mining_station_02 = {
 	show_galactic_map_icon = no
 	show_in_outliner = no
 	prerequisites = { tech_sfdoll_mining_station }
-	potential = { has_authority = auth_gf_sfdoll }
 	resources = {
 		category = megastructures
 		cost = { alloys = 2000 unity = 50 }
@@ -788,9 +787,9 @@ mega_sfdoll_ring_world_1 = {
 	resources = {
 		category = megastructures
 		cost = {
-			alloys = 20000
-			unity = 2000
-			GF_nyto_collapse_liquid = 1000
+			alloys = 5000
+			unity = 1000
+			GF_nyto_collapse_liquid = 500
 		}
 		upkeep = {	energy = 5	}
 	}
@@ -811,9 +810,9 @@ mega_sfdoll_ring_world_2 = {
 	resources = {
 		category = megastructures
 		cost = {
-			alloys = 20000
-			unity = 1000
-			GF_nyto_collapse_liquid = 3000
+			alloys = 10000
+			unity = 2000
+			GF_nyto_collapse_liquid = 1000
 		}
 	}
 	prerequisites = { tech_sfdoll_ring_world }
@@ -908,9 +907,9 @@ mega_sfdoll_ring_world_4 = {
 	resources = {
 		category = megastructures
 		cost = {
-			alloys = 20000
+			alloys = 10000
 			unity = 1000
-			GF_nyto_collapse_liquid = 2000
+			GF_nyto_collapse_liquid = 1000
 		}
 	}
 
@@ -1097,8 +1096,8 @@ mega_sfdoll_sophon_3 = {
 	resources = {
 		category = megastructures
 		cost = {
-			energy = 60000
-			GF_nyto_collapse_liquid = 7000
+			energy = 30000
+			GF_nyto_collapse_liquid = 1000
 		}
 		upkeep = {  energy = 50 }
 	}
@@ -1130,7 +1129,7 @@ mega_sfdoll_sophon_4 = {
 
 	resources = {
 		category = megastructures
-		cost = { energy = 60000 GF_nyto_collapse_liquid = 6000 }
+		cost = { energy = 50000 GF_nyto_collapse_liquid = 5000 }
 	}
 	on_build_complete = {
 		if = {

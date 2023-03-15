@@ -18,7 +18,7 @@ sfdoll_elisa_event.3:0 "Contact some leaders"
 sfdoll_elisa_event_3_a_desc:0 "Who to look for?"
 
 sfdoll_elisa_event.6:0 "Communication with Elisa"
-sfdoll_elisa_event.6.desc:0 "Ok, what do I need to do?"
+sfdoll_elisa_event.6.desc:0 "Well, what do I need to do?"
 
 sfdoll_elisa_event.6.a:0 "Please serve as governor"
 sfdoll_elisa_event.6.a.response:0 "I'm on my way at once."

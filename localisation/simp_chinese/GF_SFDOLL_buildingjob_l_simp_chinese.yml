@@ -103,7 +103,7 @@ mod_job_sfdoll_goods_maker_add:0 "$job_sfdoll_goods_maker$岗位"
 # mod_job_sfdoll_goods_producer_2_add:0 "$job_sfdoll_goods_producer_2$岗位"
 
 tech_sfdoll_energy_plant:0 "铁血暗物质电厂"
-tech_sfdoll_energy_plant_desc:0 "模仿堕落帝国的四级奇点，铁血人形们建造了高效的新式发电厂。"
+tech_sfdoll_energy_plant_desc:0 "这种新式电厂使用高效的暗物质能源。"
 building_sfdoll_energy_plant:0 "铁血暗物质电厂"
 building_sfdoll_energy_plant_desc:0 "$tech_sfdoll_energy_plant_desc$"
 

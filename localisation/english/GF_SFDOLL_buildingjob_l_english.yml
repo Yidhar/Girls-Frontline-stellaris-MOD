@@ -1,5 +1,4 @@
 ﻿l_english:
-#职业本地化包括，职业名称，职业复数形式，职业描述，职业效果（用于显示在提供职业的建筑中），相关修正(mod_XX)的本地化
 planet_sfdoll_sp_industry:0 "SF Special Industry"
 
 #produce
@@ -88,15 +87,9 @@ job_sfdoll_goods_maker_desc:0 "$job_sfdoll_goods_maker$"
 job_sfdoll_goods_maker_effect_desc:0 "$job_sfdoll_goods_maker$ consumes §Y$minerals$§!, produces §Y$consumer_goods$§!,§Y$engineering_research$§!"
 mod_job_sfdoll_goods_maker_add:0 "$job_sfdoll_goods_maker$ jobs"
 
-# job_sfdoll_goods_producer_2:0"SF Senior Artisan"
-# job_sfdoll_goods_producer_2_plural:0"SF Senior Artisan"
-# job_sfdoll_goods_producer_2_desc:0 "$job_sfdoll_goods_producer_2$"
-# # job_sfdoll_goods_producer_2_effect_desc:0 "生产消费品"
-# mod_job_sfdoll_goods_producer_2_add:0 "$job_sfdoll_goods_producer_2$ jobs"
-
 
 tech_sfdoll_energy_plant:0 "SF Dark Matter Power Plant"
-tech_sfdoll_energy_plant_desc:0 "Imitating the Class-4 Singularity in the fallen empire, SF Doll built the efficient new power plant."
+tech_sfdoll_energy_plant_desc:0 "This new power plant uses efficient dark matter energy."
 building_sfdoll_energy_plant:0 "SF Dark Matter Power Plant"
 building_sfdoll_energy_plant_desc:0 "$tech_sfdoll_energy_plant_desc$"
 

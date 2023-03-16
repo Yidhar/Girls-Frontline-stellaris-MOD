@@ -704,8 +704,7 @@ mega_sfdoll_mobile_starbase_4 = {
 		category = megastructures
 		cost = {
 			alloys = 40000
-			sr_dark_matter = 1000
-			GF_nyto_collapse_liquid = 3000
+			GF_nyto_collapse_liquid = 4000
 		}
 	}
 	#Solar System scope, FROM = builder empire, FROMFROM = the megastructure

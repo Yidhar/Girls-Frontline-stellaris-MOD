@@ -1539,9 +1539,9 @@ sfdoll_mega_shipyard_2 = {
 	resources = {
 		category = megastructures
 		cost = {
-			alloys = 30000
-			unity = 3000
-			GF_nyto_collapse_liquid = 3000
+			alloys = 20000
+			unity = 2000
+			GF_nyto_collapse_liquid = 2000
 		}
 	}
 	prerequisites = { tech_sfdoll_mega_shipyard }

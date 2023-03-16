@@ -1490,7 +1490,7 @@ sfdoll_mega_shipyard_1 = {
 	show_galactic_map_icon = yes
 	place_entity_on_planet_plane = no
 	build_outside_gravity_well = yes
-	build_time = 720
+	build_time = 360
 	construction_blocks_and_blocked_by = multi_stage_type
 	potential = {	is_ai = no	 has_authority = auth_gf_sfdoll}
 	show_prereqs = yes
@@ -1535,7 +1535,7 @@ sfdoll_mega_shipyard_2 = {
 	entity = ""
 	construction_entity = ""
 	portrait = "GFX_megastructure_construction_background"
-	build_time = 1800
+	build_time = 1080
 	resources = {
 		category = megastructures
 		cost = {
@@ -1644,9 +1644,9 @@ sfdoll_mega_shipyard_5 = {
 	country_modifier = { 	country_naval_cap_add = 3000 }
 	
 	station_modifier = {
-		starbase_shipyard_capacity_add = 100
+		starbase_shipyard_capacity_add = 80
 		starbase_shipyard_build_cost_mult = -0.1
-		starbase_shipyard_build_speed_mult = 2
+		starbase_shipyard_build_speed_mult = 3
 	}
 	resources = {
 		category = megastructures

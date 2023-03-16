@@ -471,7 +471,7 @@ mega_sfdoll_university_2:0 "SF Galactic University"
 mega_sfdoll_university_2_DESC:0 "$mega_sfdoll_university_2$ is open to all intelligent creatures. Great minds from all over the galaxy gather here."
 
 tech_mega_sfdoll_university:0 "$mega_sfdoll_university_2$"
-tech_mega_sfdoll_university_desc:0 "The body will be destroyed, and the mind will be eternal."
+tech_mega_sfdoll_university_desc:0 "The body will eventually be destroyed, and the mind will last."
 requires_only_one_mega_sfdoll_university:0 "We can only have one $mega_sfdoll_university_2$."
 sfdoll_event.5:0 "$mega_sfdoll_university_2$ Construction Complete"
 sfdoll_event.5_desc:0 "We have built $mega_sfdoll_university_2$. Its light will illuminate the road of development of the Galaxy civilization."

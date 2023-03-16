@@ -486,7 +486,7 @@ mega_sfdoll_university_2:0 "铁血银河大学"
 mega_sfdoll_university_2_DESC:0 "$mega_sfdoll_university_2$向所有智慧生物开放。这里汇聚的是来自全银河的优秀头脑。"
 
 tech_mega_sfdoll_university:0 "$mega_sfdoll_university_2$"
-tech_mega_sfdoll_university_desc:0 "机体终会毁灭，思想才能永恒。"
+tech_mega_sfdoll_university_desc:0 "机体终会毁灭，思想才能长存。"
 requires_only_one_mega_sfdoll_university:0 "我们只能拥有一座$mega_sfdoll_university_2$。"
 sfdoll_event.5:0 "$mega_sfdoll_university_2$建造完成"
 sfdoll_event.5_desc:0 "我们已经建成了$mega_sfdoll_university_2$。它的光明，将照亮银河文明的发展之路。"

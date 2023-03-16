@@ -298,7 +298,7 @@ NAME_sfdoll_dingyi:0 "Ding Yi"
 
 
 tech_sfdoll_sophon:0 "SF Project Sophon"
-tech_sfdoll_sophon_desc:0 "It is the goal of Project Sophon to transform a micro particle into a superintelligent computer."
+tech_sfdoll_sophon_desc:0 "It is the goal of Project Sophon to transform a microscopic particle into a superintelligent computer. \nWe plan to transform many kinds of particles, such as protons."
 
 mega_sfdoll_sophon:0 "Project Sophon"
 mega_sfdoll_sophon_1:0 "SF Project Sophon Site"
@@ -308,8 +308,8 @@ mega_sfdoll_sophon_1_MEGASTRUCTURE_DETAILS:0 "$sfdoll_mega_should_outside_gravit
 mega_sfdoll_sophon_2:0 "Project Sophon Frame"
 mega_sfdoll_sophon_2_DESC:0 "It takes maximum energy to process the smallest things. We need to build a new engineering platform to carry out a huge transformation project for micro particles as raw materials."
 
-mega_sfdoll_sophon_3:0 "$mega_sfdoll_sophon$ Unfolding Stage"
-mega_sfdoll_sophon_3_DESC:0 "SF Dolls use superphysics to change the dimensions of a microscopic particle, to make it unfold in three dimensions, and then to modify its structure, turning it into a computer. There are many phenomena that go against common sense in such ultramicro scale engineering."
+mega_sfdoll_sophon_3:0 "$mega_sfdoll_sophon$ Transformation Stage"
+mega_sfdoll_sophon_3_DESC:0 "This mega structure can transform a microscopic particle into an intelligent computer."
 
 mega_sfdoll_sophon_4:0 "$mega_sfdoll_sophon$ Final Stage"
 mega_sfdoll_sophon_4_DESC:0 "After successfully building the first Sophon, SF Dolls have gained enough experience, which enables them to build more sophons and establish hypercomms networks among them."

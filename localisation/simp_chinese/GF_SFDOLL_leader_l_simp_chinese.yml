@@ -290,11 +290,10 @@ sfdoll_three_body_event.2_option_a_response:0 "好极了."
 
 leader_trait_sfdoll_dingyi:0 "六分仪"
 leader_trait_sfdoll_dingyi_desc:0 "从前，丁仪是一位杰出的人类科学家。"
-
 NAME_sfdoll_dingyi:0 "丁仪"
 
 tech_sfdoll_sophon:0 "铁血智子工程"
-tech_sfdoll_sophon_desc:0 "将一个微观粒子改造为超级智能计算机，这正是智子工程的目标。"
+tech_sfdoll_sophon_desc:0 "将一个微观粒子改造为超级智能计算机，这正是智子工程的目标。我们计划对多种粒子（例如质子）进行改造。"
 
 mega_sfdoll_sophon:0 "智子工程"
 mega_sfdoll_sophon_1:0 "铁血$mega_sfdoll_sophon$基址"
@@ -303,13 +302,13 @@ mega_sfdoll_sophon_1_MEGASTRUCTURE_DETAILS:0 "$sfdoll_mega_should_outside_gravit
 
 mega_sfdoll_sophon_2:0 "$mega_sfdoll_sophon$框架"
 mega_sfdoll_sophon_2_DESC:0 "加工最小的东西，需要最大的能量。我们需要打造一个全新的工程平台，对作为原材料的微观粒子进行庞大的改造工程。"
-mega_sfdoll_sophon_3:0 "$mega_sfdoll_sophon$展开阶段"
-mega_sfdoll_sophon_3_DESC:0 "铁血运用超物理学改变一个微观粒子的维度，使其在三维空间展开，进而改造它的结构，使其成为一台计算机。这种超微尺度的工程当中，会产生多种违背常识的现象。"
+mega_sfdoll_sophon_3:0 "$mega_sfdoll_sophon$改造阶段"
+mega_sfdoll_sophon_3_DESC:0 "这个巨构可对一个微观粒子进行改造，使其成为一台智能计算机。"
 mega_sfdoll_sophon_4:0 "$mega_sfdoll_sophon$最终阶段"
 mega_sfdoll_sophon_4_DESC:0 "成功建造第一个智子之后，铁血得到了足够的经验，这让它们能够建造更多智子，并在这些智子之间建立超光速通讯网络。"
 
 sfdoll_three_body_event.4:0 "$mega_sfdoll_sophon$"
-sfdoll_three_body_event.4_desc:0 "我们已经建造了数个智子，并能够将它们连结为网络。通过某些看似违背物理常识的方式，智子可以从周围获取能量并改变自身维度，并进行超高速运算。现在，我们可以和智子通讯了。\n§Y<你现在可以通过伊莱莎与智子交流。>§"
+sfdoll_three_body_event.4_desc:0 "我们已经建造了数个智子，并能够将它们连结为网络。通过某些看似违背物理常识的方式，智子可以从周围获取能量，并进行超高速运算。现在，我们可以和智子通讯了。\n§Y<你现在可以通过伊莱莎与智子交流。>§"
 sfdoll_three_body_event.5:0 "和智子通讯"
 sfdoll_three_body_event.5_desc:0 "你们好啊，造物主们。我可以高速运动，并反复穿过你们的感觉模块来产生信号，从而和你们直接‘对话’。当然，我也乐意操纵一具铁血人形素体来行动。为此，我特意学习了大量文化方面的知识，从而为自己设计一个说得过去的形象。"
 sfdoll_three_body_event.5_option:0 "让我们看看你的新造型吧。"

@@ -639,7 +639,7 @@ mega_sfdoll_mobile_starbase_2 = {
 		category = megastructures
 		cost = {
 			alloys = 20000
-			unity = 1000
+			unity = 2000
 			GF_nyto_collapse_liquid = 2000
 		}
 		upkeep = {  energy = 10 }
@@ -704,7 +704,7 @@ mega_sfdoll_mobile_starbase_4 = {
 		category = megastructures
 		cost = {
 			alloys = 40000
-			GF_nyto_collapse_liquid = 4000
+			GF_nyto_collapse_liquid = 5000
 		}
 	}
 	#Solar System scope, FROM = builder empire, FROMFROM = the megastructure

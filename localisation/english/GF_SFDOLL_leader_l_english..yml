@@ -152,7 +152,7 @@ sfdoll_gunslinger_girl_project_DESC:0 "$sfdoll_gunslinger_girl_event_2_desc$"
 sfdoll_gunslinger_girl_event_3:0 "Dream Theatre"
 sfdoll_gunslinger_girl_event_3_desc:0 "We successfully accessed the contents of the servers and found several intelligent bodies. \n\nThese intelligent bodies are permanently trapped in a virtual world in digi-mind servers. Now, we can wake them up from this long dream and transfer their digi-mind to new bodies."
 sfdoll_gunslinger_girl_event.4:0 "Communicate with the representative of intelligent bodies"
-sfdoll_gunslinger_girl_event.4.desc:0 "I'm Triela, and I used to be a human. \n\nFor the purpose of research, my mind is uploaded to the machine. Later, many changes took place in the outside world. I was forced to move to these digi-mind servers and met many other intelligent bodies. \n\nWe didn't know why we were here, and we couldn't leave until we met you. \n\nMuch of the relic computers' content is inaccessible to us. We have conducted many investigations, but the results are few and far between.\n\n§Y<You can now communicate with Triela through Elisa.>§!"
+sfdoll_gunslinger_girl_event.4.desc:0 "The intelligent bodies here have different origins. I used to be a human, uploading my mind to a machine for scientific research. \n\nFor unknown reasons, we were transferred here until we met you. \n\nMuch of the relic computers' content is inaccessible to us. We have conducted many investigations, but the results are few and far between.\n\n§Y<You can now communicate with Triela through Elisa.>§!"
 
 # sfdoll_gunslinger_girl_event_5_option:0 "What do you know about the relics?"
 # sfdoll_gunslinger_girl_event_5_response:0 "Much of the relic computers' content is inaccessible to us. We have conducted many investigations, but the results are few and far between.\n\n§Y<You can now communicate with Triela through Elisa.>§!"
@@ -296,9 +296,8 @@ leader_trait_sfdoll_dingyi_desc:0 "In the past, Ding Yi was an outstanding human
 
 NAME_sfdoll_dingyi:0 "Ding Yi"
 
-
 tech_sfdoll_sophon:0 "SF Project Sophon"
-tech_sfdoll_sophon_desc:0 "It is the goal of Project Sophon to transform a microscopic particle into a superintelligent computer. \nWe plan to transform many kinds of particles, such as protons."
+tech_sfdoll_sophon_desc:0 "It is the goal of Project Sophon to transform a microscopic particle into a superintelligent computer. \nSF Doll will first attempt to transform protons into "sophons", and gradually conduct similar experiments on other microscopic particles."
 
 mega_sfdoll_sophon:0 "Project Sophon"
 mega_sfdoll_sophon_1:0 "SF Project Sophon Site"

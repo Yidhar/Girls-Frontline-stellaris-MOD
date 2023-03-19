@@ -35,7 +35,7 @@ country_event = {
 	}
 }
 
-# 和智能体通讯 - 新
+# 和智能体通讯
 country_event = {
 	id = sfdoll_gunslinger_girl_event.4
 	title = "sfdoll_gunslinger_girl_event.4"
@@ -44,7 +44,10 @@ country_event = {
 	is_triggered_only = yes
 	picture_event_data = {
 		portrait = GFX_sfdoll_triela
-		room = sfdoll_garden_room
+		room = this
+		graphical_culture = this
+		planet_background = this
+		city_level = this
 	}
 	immediate = {
 		save_global_event_target_as = sfdoll_triela_owner
@@ -54,25 +57,6 @@ country_event = {
 		name = "OK"
 		# 触发粥事件
 		hidden_effect = { country_event = { id = sfdoll_ark_event.5 days = 360 } }
-	}
-}
-
-
-#和智能体通讯
-country_event = {
-	id = sfdoll_gunslinger_girl_event.5
-	title = "sfdoll_gunslinger_girl_event_5"
-	desc = "sfdoll_gunslinger_girl_event_5_desc"	
-	diplomatic = yes
-	is_triggered_only = yes
-
-	picture_event_data = {
-		portrait = GFX_sfdoll_triela
-		room = sfdoll_garden_room
-	}
-	option = {
-		name = sfdoll_gunslinger_girl_event_5_option
-		response_text = sfdoll_gunslinger_girl_event_5_response
 	}
 }
 
@@ -94,25 +78,6 @@ country_event = {
 		city_level = this
 	}	
 	is_triggered_only = yes
-
-	# trigger = {
-	# 	AND = {
-	# 		from = {  NOT = {has_country_flag = gray_country }	}
-	# 		from = {
-	# 			is_country_type = country_type_sfdoll_event_leader
-	# 			has_country_flag = sfdoll_triela_country
-	# 		}
-	# 		has_country_flag = sfdoll_triela_owner
-	# 		NOT = { has_country_flag = contract_diplomacy_engaged }
-	# 	}
-	# }
-
-	immediate = {
-		set_country_flag = contract_diplomacy_engaged
-	}
-	after = {
-		hidden_effect = { remove_country_flag = contract_diplomacy_engaged }
-	}
 
 	#选项，总督
 	option = {

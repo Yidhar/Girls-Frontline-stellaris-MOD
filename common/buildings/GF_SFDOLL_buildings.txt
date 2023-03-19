@@ -708,14 +708,14 @@ building_sfdoll_net = {
 			owner = { has_country_flag = sfdoll_empire }
 		}
 		modifier = {	
-			planet_crime_add = -20
-			planet_amenities_add = 25
+			planet_crime_add = -10
+			planet_amenities_add = 10
 			planet_decision_enact_speed_mult = 0.5
 			planet_jobs_produces_mult = 0.1
 		}
 	}
 	country_modifier = {
-		country_admin_cap_add = 20
+		country_admin_cap_add = 10
 	}
 	# triggered_desc = {
 	# 	text = job_sfdoll_it_doll_effect_desc

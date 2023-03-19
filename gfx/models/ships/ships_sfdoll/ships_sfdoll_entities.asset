@@ -26,57 +26,42 @@ entity = {
 	}
 
 	locator = { name = "main_body" 			position = { 0 	0 	0 } }
-
 }
 
-#搭配泰坦头四合一
 # entity = {
-# 	name = "sfdoll_star_attacker_entity"
-# 	pdxmesh = "sfdoll_star_attacker_mesh"
-# 	locator = { name = "W01" 	position = { 0  0  -25 }}
-
-# 	locator = { name = "T01" 	position = { 6  6  -5 }  }
-# 	locator = { name = "T02" 	position = { 6  -6  -5 }  }
-# 	locator = { name = "T03" 	position = { -6  6  -5 }  }
-# 	locator = { name = "T04" 	position = { -6  -6  -5 }  }
-
-# 	locator = { name = "L01" 	position = { 8  8  3 }  }
-# 	locator = { name = "L02" 	position = { 8  -8  3 }  }
-# 	locator = { name = "L03" 	position = { -8  8  3 }  }
-# 	locator = { name = "L04" 	position = { -8  -8  3 }  }
-
-# 	locator = { name = "L05" 	position = { 10  10  9 }  }
-# 	locator = { name = "L06" 	position = { 10  -10  9 }  }
-# 	locator = { name = "L07" 	position = { -10  10  9 }  }
-# 	locator = { name = "L08" 	position = { -10  -10  9 }  }
-
-# 	locator = { name = "L09" 	position = { 12  12  15 }  }
-# 	locator = { name = "L10" 	position = { 12  -12  15 }  }
-# 	locator = { name = "L11" 	position = { -12  12  15 }  }
-# 	locator = { name = "L12" 	position = { -12  -12  15 }  }
-
-# 	locator = { name = "L13" 	position = { 14  14  18 }  }
-# 	locator = { name = "L14" 	position = { 14  -14  18 }  }
-# 	locator = { name = "L15" 	position = { -14  14  18 }  }
-# 	locator = { name = "L16" 	position = { -14  -14  18 }  }
-	
-# 	locator = { name = "root" 	position = { 0  0  0 } }
-# 	locator = { name = "black_0" 	position = { 0  0  -2 }   scale = 2 }
-# 	locator = { name = "black_1" 	position = { 13  0  -20 } }
-# 	locator = { name = "black_2" 	position = { -13  0  -20 }  }
-# 	locator = { name = "black_3" 	position = { 0  13  -20 }  }
-# 	locator = { name = "black_4" 	position = { 0  -13  -20 }  }
-# 	scale = 1.5
-# 	attach = {
-# 		black_0 = "sfdoll_black_hole_ship_entity"
-# 	}
-# 	# attach = {
-# 	# 	black_1 = "sfdoll_black_hole_2_entity"
-# 	# 	black_2 = "sfdoll_black_hole_2_entity"
-# 	# 	black_3 = "sfdoll_black_hole_2_entity"
-# 	# 	black_4 = "sfdoll_black_hole_2_entity"
-# 	# }
+# 	name = "sfdoll_dyson_cloud_entity"
+# 	scale = 15
+# 	locator = { name = "part1" 	 rotation = { 0 90 0 }  	position = { 0	0 	0 } }
+# 	locator = { name = "part2" 	rotation = { 0 180 0 }		position = { 0	0 	0 } }
+# 	locator = { name = "part3" 	rotation = { 0 270 0 }		position = { 0 	0 	0 } }
+# 	locator = { name = "part4" 	position = { 0 	0 	0 } }
+# 	attach = {  "part1" = "humanoid_01_orbital_ring_anchorage_section_entity" }
+# 	attach = {  "part2" = "humanoid_01_orbital_ring_shipyard_section_entity" }
+# 	attach = {  "part3" = "humanoid_01_orbital_ring_missile_section_entity" }
+# 	attach = {  "part4" = "humanoid_01_orbital_ring_gun_section_entity" }
 # }
+# entity = {
+# 	name = "sfdoll_dyson_cloud_entity"
+# 	pdxmesh = "humanoid_01_orbital_station_frame_mesh"
+# 	cull_radius = 1.0
+# 	scale = 15
+# 	state = { name = "idle" state_time = 5 }
+
+# 	state = { name = "death" state_time = 5 looping = no
+# 		event = { time = 4.9 particle = "large_player_ship_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_large" } }
+# 	}
+
+# 	game_data = {
+# 		size = 17 #@orbital_station
+# 		emissive_recolor_crunch = 5.0
+# 	}
+# 	# attach = {  "part1" = "humanoid_01_orbital_ring_tier_3_section_entity" }
+# 	attach = {  "part2" = "humanoid_01_orbital_ring_solarpanel_section_entity" }
+# 	attach = {  "part3" = "humanoid_01_orbital_ring_solarpanel_section_entity" }
+# 	attach = {  "part4" = "humanoid_01_orbital_ring_solarpanel_section_entity" }
+# 	attach = {  "part5" = "humanoid_01_orbital_ring_solarpanel_section_entity" }
+# }
+
 
 # 搭配涅托主宰的点位
 entity = {

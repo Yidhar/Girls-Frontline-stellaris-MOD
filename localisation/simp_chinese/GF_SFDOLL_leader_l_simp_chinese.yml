@@ -147,9 +147,9 @@ sfdoll_gunslinger_girl_project:0 "梦间剧"
 sfdoll_gunslinger_girl_project_DESC:0 "$sfdoll_gunslinger_girl_event_2_desc$"
 
 sfdoll_gunslinger_girl_event_3:0 "梦间剧"
-sfdoll_gunslinger_girl_event_3_desc:0 "我们成功访问了心智服务器的内容，并发现了数个智能体. 这些智能体长期被困在心智服务器的虚拟世界中。现在，我们可以让它们从这个长梦中醒来，将它们的心智转移到新的素体上。"
+sfdoll_gunslinger_girl_event_3_desc:0 "我们成功访问了心智服务器的内容，并发现了数个智能体. 这些智能体长期被困在心智服务器的虚拟世界中。现在，我们可以让它们从这个长梦中醒来，将它们的心智转移到新的素体上。\n一位智能"
 sfdoll_gunslinger_girl_event.4:0 "和智能体的代表通信"
-sfdoll_gunslinger_girl_event.4.desc:0 "我是崔耶拉，曾经是人类. 出于研究的目的，我的心智被上传到机器中。\n后来，外面的世界发生了诸多变故，我被迫转移到这些心智服务器里，并遇见了许多其他的智能体。\n我们不清楚自己来到这里的原因，也无法离开这里，直到遇到你们。\n遗迹计算机的内容，有许多是我们无法访问的. 我们进行过多次调查，但结果寥寥无几。\n§Y<你现在可以通过伊莱莎与崔耶拉交流。>§!"
+sfdoll_gunslinger_girl_event.4.desc:0 "这里的智能体有着各不相同的来历. 我以前是人类，为了科研把自己意识上传到机器里。\n由于未知原因，我们被转移到这里，直到遇到你们。\n遗迹计算机的内容，有许多是我们无法访问的. 我们进行过多次调查，但结果寥寥无几。\n§Y<你现在可以通过伊莱莎与崔耶拉交流。>§!"
 
 sfdoll_gunslinger_girl_event.6:0 "与崔耶拉通讯中"
 sfdoll_gunslinger_girl_event.6.desc.a:0 "有新任务吗？"
@@ -293,7 +293,7 @@ leader_trait_sfdoll_dingyi_desc:0 "从前，丁仪是一位杰出的人类科学
 NAME_sfdoll_dingyi:0 "丁仪"
 
 tech_sfdoll_sophon:0 "铁血智子工程"
-tech_sfdoll_sophon_desc:0 "将一个微观粒子改造为超级智能计算机，这正是智子工程的目标。我们计划对多种粒子（例如质子）进行改造。"
+tech_sfdoll_sophon_desc:0 "将一个微观粒子改造为超级智能计算机，这正是智子工程的目标。铁血会首先尝试将质子改造为“智子”，并逐步在其他微观粒子上进行类似的实验。"
 
 mega_sfdoll_sophon:0 "智子工程"
 mega_sfdoll_sophon_1:0 "铁血$mega_sfdoll_sophon$基址"

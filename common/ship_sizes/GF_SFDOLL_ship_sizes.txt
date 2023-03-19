@@ -27,16 +27,13 @@ sfdoll_warship_1 = {
 	acceleration = 0.35
 	rotation_speed = 0.1
 	collision_radius = @corvette_collision_radius
-	max_hitpoints = 5000
-	base_buildtime = 240
+	max_hitpoints = 2500
+	base_buildtime = 120
 	modifier = {
 		ship_evasion_add = 50
-		ship_armor_add = 2000
-		ship_shield_add = 2000
+		ship_armor_add = 1000
+		ship_shield_add = 1000
 		ship_piracy_suppression_add = 10
-	}
-	ship_modifier = {
-		ships_upkeep_mult = -1
 	}
 	size_multiplier = 1
 	fleet_slot_size = 1
@@ -63,14 +60,15 @@ sfdoll_warship_1 = {
 	resources = {
 		category = ships
 		cost = {
-			alloys = 300
-			GF_nyto_collapse_liquid = 30	
+			alloys = 130
+			GF_nyto_collapse_liquid = 20	
 		}
 		upkeep = {
-			energy = 3
-			alloys = 2
+			energy = 2
+			alloys = 1
 		}
 	}
+	min_upgrade_cost = { alloys = 1 }
 }
 
 sfdoll_warship_2 = {
@@ -80,16 +78,13 @@ sfdoll_warship_2 = {
 	acceleration = 0.35
 	rotation_speed = 0.1
 	collision_radius = @destroyer_collision_radius
-	max_hitpoints = 10000
-	base_buildtime = 300
+	max_hitpoints = 5000
+	base_buildtime = 240
 	modifier = {
 		ship_evasion_add = 45
-		ship_armor_add = 5000
-		ship_shield_add = 5000
+		ship_armor_add = 2000
+		ship_shield_add = 2000
 		ship_piracy_suppression_add = 10
-	}
-	ship_modifier = {
-		ships_upkeep_mult = -1
 	}
 	size_multiplier = 2
 	fleet_slot_size = 2
@@ -116,14 +111,15 @@ sfdoll_warship_2 = {
 	resources = {
 		category = ships
 		cost = {
-			alloys = 500
-			GF_nyto_collapse_liquid = 50	
+			alloys = 250
+			GF_nyto_collapse_liquid = 25	
 		}
 		upkeep = {
-			energy = 5
-			alloys = 3
+			energy = 3
+			alloys = 2
 		}
 	}
+	min_upgrade_cost = { alloys = 2 }
 }
 
 sfdoll_warship_3 = {
@@ -133,16 +129,13 @@ sfdoll_warship_3 = {
 	acceleration = 0.35
 	rotation_speed = 0.1
 	collision_radius = @cruiser_collision_radius
-	max_hitpoints = 18000
+	max_hitpoints = 10000
 	base_buildtime = 360
 	modifier = {
 		ship_evasion_add = 40
-		ship_armor_add = 9000
-		ship_shield_add = 9000
+		ship_armor_add = 4000
+		ship_shield_add = 4000
 		ship_piracy_suppression_add = 10
-	}
-	ship_modifier = {
-		ships_upkeep_mult = -1
 	}
 	size_multiplier = 4
 	fleet_slot_size = 3
@@ -169,14 +162,15 @@ sfdoll_warship_3 = {
 	resources = {
 		category = ships
 		cost = {
-			alloys = 1000
-			GF_nyto_collapse_liquid = 100	
+			alloys = 500
+			GF_nyto_collapse_liquid = 50	
 		}
 		upkeep = {
-			energy = 10
-			alloys = 5
+			energy = 5
+			alloys = 3
 		}
 	}
+	min_upgrade_cost = { alloys = 4 }
 }
 
 sfdoll_warship_4 = {
@@ -186,16 +180,13 @@ sfdoll_warship_4 = {
 	acceleration = 0.3
 	rotation_speed = 0.2
 	collision_radius = @battleship_collision_radius
-	max_hitpoints = 35000
-	base_buildtime = 600
+	max_hitpoints = 20000
+	base_buildtime = 480
 	modifier = {
 		ship_evasion_add = 30
-		ship_armor_add = 18000
-		ship_shield_add = 18000
+		ship_armor_add = 8000
+		ship_shield_add = 8000
 		ship_piracy_suppression_add = 10
-	}
-	ship_modifier = {
-		ships_upkeep_mult = -1
 	}
 	size_multiplier = 8
 	fleet_slot_size = 4
@@ -222,14 +213,15 @@ sfdoll_warship_4 = {
 	resources = {
 		category = ships
 		cost = {
-			alloys = 2000
-			GF_nyto_collapse_liquid = 200	
+			alloys = 1000
+			GF_nyto_collapse_liquid = 100	
 		}
 		upkeep = {
-			energy = 20
-			alloys = 10
+			energy = 10
+			alloys = 5
 		}
 	}
+	min_upgrade_cost = { alloys = 8 }
 }
 
 sfdoll_warship_5 = {
@@ -239,16 +231,15 @@ sfdoll_warship_5 = {
 	acceleration = 0.3
 	rotation_speed = 0.2
 	collision_radius = @titan_collision_radius
-	max_hitpoints = 70000
+	max_hitpoints = 40000
 	modifier = {
 		ship_evasion_add = 20
-		ship_armor_add = 35000
-		ship_shield_add = 35000
+		ship_armor_add = 16000
+		ship_shield_add = 16000
 		ship_piracy_suppression_add = 10
 	}
-	ship_modifier = {	ships_upkeep_mult = -1	}
 	components_add_to_cost = no
-	base_buildtime = 660
+	base_buildtime = 600
 	size_multiplier = 16
 	fleet_slot_size = 8
 	section_slots = {
@@ -279,16 +270,16 @@ sfdoll_warship_5 = {
 	resources = {
 		category = ships
 		cost = {
-			alloys = 4000
-			GF_nyto_collapse_liquid = 400	
+			alloys = 2000
+			GF_nyto_collapse_liquid = 200	
 		}
 		upkeep = {
-			energy = 40
-			alloys = 20
+			energy = 20
+			alloys = 10
 		}
 	}
+	min_upgrade_cost = { alloys = 16 }
 }
-
 #重型驱逐舰
 sfdoll_warship_6 = {
 	graphical_culture = no
@@ -297,14 +288,13 @@ sfdoll_warship_6 = {
 	acceleration = 0.3
 	rotation_speed = 0.2
 	collision_radius = @titan_collision_radius
-	max_hitpoints = 100000
+	max_hitpoints = 60000
 	modifier = {
 		ship_evasion_add = 20
-		ship_armor_add = 50000
-		ship_shield_add = 50000
+		ship_armor_add = 24000
+		ship_shield_add = 24000
 		ship_piracy_suppression_add = 10
 	}
-	ship_modifier = {	ships_upkeep_mult = -1	}
 	combat_disengage_chance = 2
 	section_slots = {
 		"bow" = { locator = part2 }
@@ -336,21 +326,18 @@ sfdoll_warship_6 = {
 	required_component_set = "combat_computers"
 	required_component_set = "component_aura_sfdoll_2"
 
-
 	resources = {
 		category = ships
 		cost = {
-			alloys = 6000
-			GF_nyto_collapse_liquid = 600
+			alloys = 3000
+			GF_nyto_collapse_liquid = 300
 		}
 		upkeep = {
-			energy = 60
-			alloys = 30
+			energy = 30
+			alloys = 15
 		}
 	}
-	min_upgrade_cost = {
-		alloys = 10
-	}
+	min_upgrade_cost = { alloys = 24 }
 }
 #移动船坞
 sfdoll_mobile_starbase = {
@@ -376,11 +363,11 @@ sfdoll_mobile_starbase = {
 	combat_disengage_chance = 2
 	resources = {
 		category = ships
-		upkeep = { energy = 400 alloys = 200 }
+		upkeep = { energy = 200 alloys = 100 }
 	}
 	components_add_to_cost = no
 	combat_size_multiplier = 3
-	size_multiplier = 256
+	size_multiplier = 128
 	fleet_slot_size = 8
 	num_target_locators = 8
 	section_slots = {

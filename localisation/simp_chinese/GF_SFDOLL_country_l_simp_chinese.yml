@@ -3,7 +3,7 @@
 #旗帜
 FLAG_CATEGORY_sfdoll_flags:0"铁血人形"
 gf_sfdoll:0 "铁血人形"
-GF_new_type:0 "新人类"
+NAME_SFDOLL_new_type:0 "新人类"
 
 origin_sfdoll_country:0 "人偶黎明"
 origin_sfdoll_country_desc:0 "这个文明的创建者是一种机械生物.它们离开自己的母星,并在宇宙中建立了新家园。"

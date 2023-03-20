@@ -519,11 +519,7 @@ country_event = {
 		# 		message = no
 		# 	}
 		# }		
-		#添加ump45
-		country_event = {
-			id = sfdoll_ump45_event.0
-			days = 6
-		}
+
 		#添加伊莱莎
 		country_event = {
 			id = sfdoll_elisa_event.1

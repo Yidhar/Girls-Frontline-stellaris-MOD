@@ -198,33 +198,33 @@ country_event = {
 	}
 
 	#诺耶露变船
-	option = {
-		name = option_noel_become_ship
-		allow = {
-			custom_tooltip = {
-				fail_text =  "sfdoll_the_leader_is_doing_this_job"
-				NOT = {
-					exists = event_target:fleet_sfdoll_noel
-				}
-			}
-			custom_tooltip = {
-				fail_text =  "sfdoll_noel_is_destroyed"
-				NOT = {	has_country_flag = sfdoll_noel_is_destroyed }
-			}
-			custom_tooltip = {
-				fail_text =  "timed_flag_noel_become_ship"
-				NOT = {	has_country_flag = timed_flag_noel_become_ship }
-			}
-		}
-		hidden_effect = {
-			set_timed_country_flag = {
-				flag = timed_flag_noel_become_ship
-				days = 360
-			}
-			capital_scope = { solar_system = { effect_create_fleet_sfdoll_noel = yes } }
-		}
-		response_text = response_option_noel_become_ship
-	}
+	# option = {
+	# 	name = option_noel_become_ship
+	# 	allow = {
+	# 		custom_tooltip = {
+	# 			fail_text =  "sfdoll_the_leader_is_doing_this_job"
+	# 			NOT = {
+	# 				exists = event_target:fleet_sfdoll_noel
+	# 			}
+	# 		}
+	# 		custom_tooltip = {
+	# 			fail_text =  "sfdoll_noel_is_destroyed"
+	# 			NOT = {	has_country_flag = sfdoll_noel_is_destroyed }
+	# 		}
+	# 		custom_tooltip = {
+	# 			fail_text =  "timed_flag_noel_become_ship"
+	# 			NOT = {	has_country_flag = timed_flag_noel_become_ship }
+	# 		}
+	# 	}
+	# 	hidden_effect = {
+	# 		set_timed_country_flag = {
+	# 			flag = timed_flag_noel_become_ship
+	# 			days = 360
+	# 		}
+	# 		capital_scope = { solar_system = { effect_create_fleet_sfdoll_noel = yes } }
+	# 	}
+	# 	response_text = response_option_noel_become_ship
+	# }
 
 	#诺耶露跨星系攻击
 	# option = {

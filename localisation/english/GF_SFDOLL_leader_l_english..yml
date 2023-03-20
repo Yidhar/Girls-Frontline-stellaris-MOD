@@ -186,13 +186,12 @@ leader_trait_admiral_sfdoll_triela_desc:0 "$leader_trait_governor_sfdoll_triela_
 leader_trait_general_sfdoll_triela:0 "$leader_trait_governor_sfdoll_triela$"
 leader_trait_general_sfdoll_triela_desc:0 "$leader_trait_governor_sfdoll_triela_desc$"
 
-
 #诺耶露
 sfdoll_noel_event.1:0 "In communication with Noel"
 sfdoll_noel_event.1.desc.a:0 "I can transform my shape freely.Why I became this image? Because I want to commemorate certain days..."
-sfdoll_noel_event.1.desc.b:0 "Is there anything I can do for you?"
+sfdoll_noel_event.1.desc.b:0 "I want to help..."
 sfdoll_noel_event.1.desc.c:0 "One day, I'll find my sister."
-sfdoll_noel_event.1.desc.d:0 "I have to be stronger..."
+sfdoll_noel_event.1.desc.d:0 "I have to be stronger."
 
 sfdoll_noel_is_destroyed:0 "Noel can't do this work now."
 noel_become_governor:0 "Please serve as governor"
@@ -212,38 +211,9 @@ response_option_noel_become_ship:0 "Please note that from now on, after 360 days
 sfdoll_noel_event.2:0 "Noel's Recent Status"
 sfdoll_noel_event.2.desc:0 "The girl Noel, who was found by us in the relic site, seems to be healthy at the moment. Over the years, Noel has brought many inspirations to our relic research, and we help her control her spirit and power, and teach her knowledge. Now, she seems to have the qualifications to be a leader.\n\n§Y<You can now communicate with Noel through Elisa.>§!"
 
-# sfdoll_noel_event_2_title:0 "Noel's recent status"
-# sfdoll_noel_event_2_desc:0 "The girl Noel, who was found by us in the relic site, seems to be healthy at the moment, but seems to have lost the memory before meeting us. In the past few years, she has lived in our world, growing up like an ordinary human girl. \n\nNoel has brought many inspirations to our relic research, and we help her control her spirit and power, and teach her knowledge."
-
-# sfdoll_noel_event.3:0 "§RNoel is missing§!"
-# sfdoll_noel_event.3_desc:0 "The project to research Noel has an accident! While Noel was out with her guardians, she hijacked a space ship and disappeared without a trace. \n\nAll our searches have failed. "
-# sfdoll_noel_event.3_option:0 "We underestimated the growth of her ability"
-
-# sfdoll_noel_event.4:0 "Noel?"
-# sfdoll_noel_event.4_desc:0 "Above our planet, rifts to other dimensions have appeared, pouring out massive streams of matter that put our planet in danger. \n\nAt the same time, Noel appeared in the nearby space. Noyelu asked us to send the most elite fleet to follow her to the other side of the crack to help her close the dimensional crack."
-# sfdoll_noel_event.4_option:0 "Is she going to help us?"
-
-# sfdoll_noel_event.5:0 "Emergency Meeting"
-# sfdoll_noel_event.5_desc:0 "As you can see, Noel is suspicious now, and there is a risk in cooperating with her. What do you think?"
-# # sfdoll_noel_event.5_option:0 "We think the same as yours."
-
-# sfdoll_noel_event.7:0 "Assist Noel"
-# sfdoll_noel_event.7_desc:0 "SF Dolls' opinions converge on the OGAS network. Soon, they made a decision and followed Noel to start the disaster relief work. \n\nAfter a hard, the reaction of the dimensional crack gradually weakened, and the planet returned to safety."
-
-
-# sfdoll_noel_event.8:0 "In communication with Noel"
-# sfdoll_noel_event.8_desc:0 "Sorry, I left without saying goodbye before."
-# sfdoll_noel_event.8_option:0 "Where did you go?"
-
-# sfdoll_noel_event.9:0 "In communication with Noel"
-# sfdoll_noel_event.9_desc:0 "Long story. I'm trying to find some people and solve some problems myself. Some regrets are removed, but new ones are left behind."
-# sfdoll_noel_event.9_option:0 "Anyway, welcome back."
-# response_sfdoll_noel_event.9_option:0 "Thanks, I'm back."
-
-
 #noel trait
-leader_trait_governor_sfdoll_noel:0 "Relic Site Girl"
-leader_trait_governor_sfdoll_noel_desc:0 "Noel is an artificial life that SF Dolls found in a relic site. \n\nShe has the characteristics of human beings and an unknown species."
+leader_trait_governor_sfdoll_noel:0 "Noel"
+leader_trait_governor_sfdoll_noel_desc:0 "This leader is an artificial life."
 
 leader_trait_scientist_sfdoll_noel:0 "$leader_trait_governor_sfdoll_noel$"
 leader_trait_scientist_sfdoll_noel_desc:0 "$leader_trait_governor_sfdoll_noel_desc$"
@@ -432,7 +402,7 @@ leader_trait_scientist_sfd_hari_seldon_desc:0 "$Name_sfd_hari_seldon$"
 Name_sfdoll_talulah:0 "Talulah"
 sfdoll_ark_event.1:0 "Communication with Talulah"
 sfdoll_ark_event.1.desc.a:0 "If you encounter too difficult problems, you must tell me in time."
-sfdoll_ark_event.1.desc.b:0 "When I see these rings, I will think of some old friends."
+sfdoll_ark_event.1.desc.b:0 "I always encounter snakes. Look, Miss Ouroboros is also a snake, right?"
 sfdoll_ark_event.1.desc.c:0 "History is made not by one or two leaders, but by the people."
 sfdoll_ark_event.1.desc.d:0 "Please don't forget why we fight."
 sfdoll_ark_event.1.desc.e:0 "Dr. Ding Yi, do you need me to light a fire for you? Wait, is the alcohol ignited?"
@@ -447,7 +417,7 @@ sfdoll_ark_event.1.d.response:0 "Give me the information. We can't start a war w
 sfdoll_ark_event.2.desc:0 "Hello, I am Tarulah."
 
 leader_trait_sfdoll_talulah_governor:0 "Flame"
-leader_trait_sfdoll_talulah_governor_desc:0 "The leader is an aboriginal."
+leader_trait_sfdoll_talulah_governor_desc:0 "The leader is a half dragon."
 leader_trait_sfdoll_talulah_scientist:0 "$leader_trait_sfdoll_talulah_governor$"
 leader_trait_sfdoll_talulah_scientist_desc:0 "$leader_trait_sfdoll_talulah_governor_desc$"
 leader_trait_sfdoll_talulah_admiral:0 "$leader_trait_sfdoll_talulah_governor$"
@@ -480,7 +450,7 @@ leader_trait_sfdoll_frostnova_admiral_desc:0 "$leader_trait_sfdoll_frostnova_gov
 leader_trait_sfdoll_frostnova_general:0 "$leader_trait_sfdoll_frostnova_governor$"
 leader_trait_sfdoll_frostnova_general_desc:0 "$leader_trait_sfdoll_frostnova_governor_desc$"
 
-NAME_Terra:0 "Terra"
+NAME_SFDOLL_Terra:0 "Terra"
 sfdoll_ark_event.5:0 "Next Station"
 sfdoll_ark_event.5.desc:0 "When analyzing the data in the relics, we found some information about hyperlanes and planets. Exploring these places, we may have new discoveries."
 

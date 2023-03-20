@@ -1,50 +1,5 @@
 namespace = sfdoll_ump45_event
 #id标准写法为namespace的值加上编号
-
-#创建45特殊国家，现在不创建只加flag
-country_event = {
-	id = sfdoll_ump45_event.0
-	hide_window = yes
-	is_triggered_only = yes
-	trigger = {
-		has_authority = auth_gf_sfdoll
-		is_ai = no
-	}
-	
-	immediate = {
-		# create_country = {
-		# 	name = "name_ump45_country"
-		# 	type = country_type_sfdoll_event_leader 
-		# 	flag = {
-		# 		icon= {
-		# 			category = "sfdoll_flags"
-		# 			file = "sfdoll_flag.dds"
-		# 		}
-		# 		background= {
-		# 			category = "backgrounds"
-		# 			file = "sinus.dds"
-		# 		}
-		# 		colors={
-		# 			"black"
-		# 			"black"
-		# 			"null"
-		# 			"null"
-		# 		}
-		# 	}
-		# 	effect = {
-		# 		#设置target和flag
-		# 		save_global_event_target_as = sfdoll_ump45_country
-		# 		set_country_flag = sfdoll_ump45_country
-		# 	}
-		# }
-		# event_target:sfdoll_ump45_country = {
-		# 	establish_communications_no_message = root
-		# }
-		save_global_event_target_as = sfdoll_ump45_owner
-		set_country_flag = sfdoll_ump45_owner
-	}
-}
-
 #和45的通讯界面
 country_event = {
 	id = sfdoll_ump45_event.1
@@ -224,7 +179,7 @@ country_event = {
 				event_leader = yes	# prevents this leader from leading factions and winning elections
 				traits = { trait = leader_trait_admiral_sfdoll_ump45 }
 				effect = {
-					change_leader_portrait = GFX_sfdoll_ump45_03
+					change_leader_portrait = GFX_sfdoll_ump45
 					set_leader_flag = sfdoll_leader_ump45
 					save_global_event_target_as = sfdoll_leader_ump45
 				}
@@ -269,7 +224,7 @@ country_event = {
 				event_leader = yes	# prevents this leader from leading factions and winning elections
 				traits = { trait = leader_trait_general_sfdoll_ump45 }
 				effect = {
-					change_leader_portrait = GFX_sfdoll_ump45_03
+					change_leader_portrait = GFX_sfdoll_ump45
 					set_leader_flag = sfdoll_leader_ump45
 					save_global_event_target_as = sfdoll_leader_ump45
 				}

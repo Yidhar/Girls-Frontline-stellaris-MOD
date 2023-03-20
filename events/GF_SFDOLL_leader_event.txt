@@ -14,7 +14,7 @@ country_event = {
 		if = {
 			limit = { exists = event_target:sfdoll_leader_ump45 }
 			event_target:sfdoll_leader_ump45 = {
-				change_leader_portrait = GFX_sfdoll_ump45_03
+				change_leader_portrait = GFX_sfdoll_ump45
 			}
 		}
 		if = {

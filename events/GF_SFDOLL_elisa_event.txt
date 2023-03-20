@@ -134,7 +134,7 @@ country_event = {
 		name =  "Name_sfdoll_Ouroboros"
 		hidden_effect = { country_event = { id = sfdoll_leader_event.2 } }
 	}
-	#找ump45
+	# 找ump45
 	# option = {
 	# 	name =  "NAME_sfdoll_ump45"
 	# 	hidden_effect = {  country_event = {  id = sfdoll_ump45_event.1  }  }

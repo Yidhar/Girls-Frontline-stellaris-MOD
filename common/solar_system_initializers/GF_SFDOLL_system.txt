@@ -22,14 +22,14 @@ sfdoll_system_search_zion = {
 		init_effect = {
 			create_archaeological_site = site_noel_sfdoll
 			save_global_event_target_as = planet_sfdoll_embers_gloomy_1
-			set_name = "GF_new_type"
+			set_name = "NAME_SFDOLL_new_type"
 		}
 	}
 }
 
 # 粥
 sfdoll_system_ark = {
-	name = "NAME_Terra"
+	name = "NAME_SFDOLL_Terra"
 	class = sc_k
 	#usage = sfdoll_system_init
 	planet = {
@@ -44,7 +44,10 @@ sfdoll_system_ark = {
 		orbit_distance = 25
 		size = 25
 		flags = { }
-		init_effect = {  enable_special_project = {  name = "SFDOLL_ARK_PROJECT"  } }
+		init_effect = {
+			set_name = "NAME_SFDOLL_Terra"
+			enable_special_project = {  name = "SFDOLL_ARK_PROJECT"  }
+		}
 	}
 }
 

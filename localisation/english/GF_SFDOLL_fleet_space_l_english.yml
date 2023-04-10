@@ -384,8 +384,7 @@ mega_sfdoll_mobile_starbase_4:0 "$sfdoll_mobile_starbase$ Final Stage"
 mega_sfdoll_mobile_starbase_4_DESC:0 "$sfdoll_mobile_starbase$ will get full functionality."
 
 sfdoll_event.2:0 "$sfdoll_mobile_starbase$ Sailing"
-sfdoll_event.2_desc:0 "With the launch of the sublight speed navigation system, $sfdoll_mobile_starbase$ has taken the first step towards the universe. Under the action of inertial interference device, this huge object is as light as a butterfly. The huge mass and energy of $sfdoll_mobile_starbase$ are hidden, which makes it integrate with the background radiation of the universe."
-
+sfdoll_event.2_desc:0 "With the launch of the sublight speed navigation system, $sfdoll_mobile_starbase$ has taken the first step towards the universe. $sfdoll_mobile_starbase$ carries a huge mass, but under the action of inertial interference devices, this huge object moves freely."
 
 sfdoll_mining_station_01:0 "SF Asteroid Mining Station"
 sfdoll_mining_station_01_DESC:0 "These mining stations can extract minerals from the asteroid belt."
@@ -395,11 +394,11 @@ requires_only_one_sfdoll_mining_station_in_system:0 "Only one $sfdoll_mining_sta
 tech_sfdoll_mining_station:0 "$sfdoll_mining_station_01$"
 tech_sfdoll_mining_station_desc:0 "$sfdoll_mining_station_01_DESC$"
 
-sfdoll_dyson_cloud:0 "SF Dyson Ring"
+sfdoll_dyson_cloud:0 "SF Dyson Cloud"
 sfdoll_dyson_cloud_DESC:0 "$sfdoll_dyson_cloud$ is mainly used to collect solar energy."
 sfdoll_dyson_cloud_MEGASTRUCTURE_DETAILS:0 "$sfdoll_dyson_cloud_DESC$"
 tech_sfdoll_dyson_cloud:0 "$sfdoll_dyson_cloud$"
-tech_sfdoll_dyson_cloud_desc:0 "Compared to Dyson Spheres, Dyson Rings have lower construction and maintenance costs."
+tech_sfdoll_dyson_cloud_desc:0 "Compared to Dyson Spheres, Dyson Clouds have lower construction and maintenance costs."
 
 requires_no_black_hole_neutron_star_pulsar_sfdoll:0 "$TRIGGER_FAIL$Cannot build it around Black Holes, Neutron Stars or Pulsars."
 

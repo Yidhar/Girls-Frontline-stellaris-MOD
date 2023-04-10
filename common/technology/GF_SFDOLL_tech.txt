@@ -1,8 +1,8 @@
 #逆向坍塌
 tech_sfdoll_reverse_collapse_1 = {
-	cost = @tier4cost1
+	cost = @tier3cost1
 	area = physics
-	tier = 4
+	tier = 3
 	is_rare = yes
 	category = { field_manipulation }
 	icon = tech_sfdoll_reverse_collapse_1
@@ -12,7 +12,7 @@ tech_sfdoll_reverse_collapse_1 = {
 	weight = 0
 }
 tech_sfdoll_reverse_collapse_2 = {
-	cost = @tier3cost3
+	cost = @tier3cost2
 	area = society
 	tier = 3
 	is_rare = yes
@@ -26,7 +26,7 @@ tech_sfdoll_reverse_collapse_2 = {
 tech_sfdoll_reverse_collapse_3 = {
 	cost = @tier3cost3
 	area = engineering
-	tier = 4
+	tier = 3
 	is_rare = yes
 	category = { voidcraft }
 	icon = tech_sfdoll_reverse_collapse_3
@@ -359,20 +359,20 @@ tech_sfdoll_mining_station = {
 	}
 	weight = 0
 }
-# 戴森环
-# tech_sfdoll_dyson_cloud = {
-# 	area = engineering
-# 	start_tech = no
-# 	tier = 4
-# 	cost = @tier4cost3
-# 	category = { voidcraft }
-# 	is_rare = yes
-# 	icon = tech_sfdoll_star_exploit
-# 	potential = { always = no has_authority = auth_gf_sfdoll }
-# 	prerequisites = { tech_sfdoll_alloys_produce }
-# 	feature_flags = { megaengineering }
-# 	weight = 0
-# }
+# 戴森云
+tech_sfdoll_dyson_cloud = {
+	area = engineering
+	start_tech = no
+	tier = 4
+	cost = @tier4cost3
+	category = { voidcraft }
+	is_rare = yes
+	icon = tech_sfdoll_star_exploit
+	potential = { has_authority = auth_gf_sfdoll }
+	prerequisites = { tech_sfdoll_alloys_produce }
+	feature_flags = { megaengineering }
+	weight = 500
+}
 # 零素开采
 tech_sfdoll_neutron_mining_station = {
 	area = engineering

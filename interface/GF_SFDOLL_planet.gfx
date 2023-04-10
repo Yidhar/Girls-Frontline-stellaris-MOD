@@ -31,4 +31,8 @@ spriteTypes = {
 		name = "GFX_background_sfdoll_mega_lab"
 		texturefile = "gfx/interface/planetview/sfdoll_mega_lab.dds"
 	}
+	spriteType = {
+		name = "GFX_background_sfdoll_dyson_cloud"
+		texturefile = "gfx/interface/planetview/sfdoll_dyson_cloud.dds"
+	}
 }

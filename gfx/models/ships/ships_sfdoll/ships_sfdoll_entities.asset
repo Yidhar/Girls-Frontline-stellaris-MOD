@@ -28,41 +28,6 @@ entity = {
 	locator = { name = "main_body" 			position = { 0 	0 	0 } }
 }
 
-# entity = {
-# 	name = "sfdoll_dyson_cloud_entity"
-# 	scale = 15
-# 	locator = { name = "part1" 	 rotation = { 0 90 0 }  	position = { 0	0 	0 } }
-# 	locator = { name = "part2" 	rotation = { 0 180 0 }		position = { 0	0 	0 } }
-# 	locator = { name = "part3" 	rotation = { 0 270 0 }		position = { 0 	0 	0 } }
-# 	locator = { name = "part4" 	position = { 0 	0 	0 } }
-# 	attach = {  "part1" = "humanoid_01_orbital_ring_anchorage_section_entity" }
-# 	attach = {  "part2" = "humanoid_01_orbital_ring_shipyard_section_entity" }
-# 	attach = {  "part3" = "humanoid_01_orbital_ring_missile_section_entity" }
-# 	attach = {  "part4" = "humanoid_01_orbital_ring_gun_section_entity" }
-# }
-# entity = {
-# 	name = "sfdoll_dyson_cloud_entity"
-# 	pdxmesh = "humanoid_01_orbital_station_frame_mesh"
-# 	cull_radius = 1.0
-# 	scale = 15
-# 	state = { name = "idle" state_time = 5 }
-
-# 	state = { name = "death" state_time = 5 looping = no
-# 		event = { time = 4.9 particle = "large_player_ship_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_large" } }
-# 	}
-
-# 	game_data = {
-# 		size = 17 #@orbital_station
-# 		emissive_recolor_crunch = 5.0
-# 	}
-# 	# attach = {  "part1" = "humanoid_01_orbital_ring_tier_3_section_entity" }
-# 	attach = {  "part2" = "humanoid_01_orbital_ring_solarpanel_section_entity" }
-# 	attach = {  "part3" = "humanoid_01_orbital_ring_solarpanel_section_entity" }
-# 	attach = {  "part4" = "humanoid_01_orbital_ring_solarpanel_section_entity" }
-# 	attach = {  "part5" = "humanoid_01_orbital_ring_solarpanel_section_entity" }
-# }
-
-
 # 搭配涅托主宰的点位
 entity = {
 	name = "sfdoll_carrier_entity"

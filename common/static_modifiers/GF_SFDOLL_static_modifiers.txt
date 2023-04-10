@@ -66,7 +66,7 @@ sfdoll_sophon_intel_mod = {
 	intel_decryption_add = 10
 	ship_cloaking_detection_add = 4
 }
-sfdoll_sophon_research_mod = { all_technology_research_speed = 0.15 }
+
 # sfdoll_sophon_engineering_mod
 
 # Ä¸½¢

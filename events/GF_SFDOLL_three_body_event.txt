@@ -86,7 +86,7 @@ country_event = {
 
 	# 智子提供情报加成
 	option = {
-		name = "sfdoll_three_body_event.3_a"
+		name = "sfdoll_three_body_event.3.a"
 		allow = {
 			custom_tooltip = { fail_text = "sfdoll_task_is_in_progress"
 				NOT = { has_modifier = sfdoll_sophon_intel_mod }
@@ -98,50 +98,19 @@ country_event = {
 				limit = { has_modifier = sfdoll_sophon_intel_mod }
 				remove_modifier = sfdoll_sophon_intel_mod
 			}
-			else_if = {
-				limit = { has_modifier = sfdoll_sophon_research_mod }
-				remove_modifier = sfdoll_sophon_research_mod
-			}
 		}
 		add_modifier = { modifier = sfdoll_sophon_intel_mod days = -1 }
 		hidden_effect = { country_event = { id = sfdoll_three_body_event.3 } }
 	}
-	# 智子提供科研加成
-	option = {
-		name = "sfdoll_three_body_event.3_b"
-		allow = {
-			custom_tooltip = {
-				fail_text = "sfdoll_task_is_in_progress"
-				NOT = { has_modifier = sfdoll_sophon_research_mod }
-			}
-		}
-		hidden_effect = {
-			# 移除旧的修正，但不会删除领袖
-			if = {
-				limit = { has_modifier = sfdoll_sophon_intel_mod }
-				remove_modifier = sfdoll_sophon_intel_mod
-			}
-			else_if = {
-				limit = { has_modifier = sfdoll_sophon_research_mod }
-				remove_modifier = sfdoll_sophon_research_mod
-			}
-		}
-		add_modifier = { modifier = sfdoll_sophon_research_mod days = -1 }
-		hidden_effect = { country_event = { id = sfdoll_three_body_event.3 } }
-	}
 
-	# 终止任务
+	# 终止探测
 	option = {
-		name = "sfdoll_task_termination"
+		name = "sfdoll_three_body_event.3.b"
 		hidden_effect = {
 			# 移除旧的修正，但不会删除领袖
 			if = {
 				limit = { has_modifier = sfdoll_sophon_intel_mod }
 				remove_modifier = sfdoll_sophon_intel_mod
-			}
-			else_if = {
-				limit = { has_modifier = sfdoll_sophon_research_mod }
-				remove_modifier = sfdoll_sophon_research_mod
 			}
 			country_event = { id = sfdoll_three_body_event.3 }
 		}
@@ -250,7 +219,7 @@ country_event = {
 				class = scientist
 				species = owner_species
 				name = "NAME_SFDOLL_SOPHON"
-				skill = 1
+				skill = 10
 				set_age = 1
 				immortal = yes
 				event_leader = yes	# prevents this leader from leading factions and winning elections
@@ -293,7 +262,7 @@ country_event = {
 				class = admiral
 				species = owner_species
 				name = "NAME_SFDOLL_SOPHON"
-				skill = 1
+				skill = 10
 				set_age = 1
 				immortal = yes
 				event_leader = yes	# prevents this leader from leading factions and winning elections
@@ -337,7 +306,7 @@ country_event = {
 				class = general
 				species = owner_species
 				name = "NAME_SFDOLL_SOPHON"
-				skill = 1
+				skill = 10
 				set_age = 1
 				immortal = yes
 				event_leader = yes	# prevents this leader from leading factions and winning elections

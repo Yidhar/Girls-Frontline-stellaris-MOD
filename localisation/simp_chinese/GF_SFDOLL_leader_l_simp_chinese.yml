@@ -8,7 +8,7 @@ sfdoll_elisa_event_2_c_desc:0 "要合理安排时间."
 sfdoll_elisa_event_2_d_desc:0 "不要长时间盯着屏幕，不要离屏幕太近！"
 
 sfdoll_elisa_event.2_option_leader:0 "联系一些领袖"
-sfdoll_elisa_event.2_option_sophon:0 "访问智子计算机组"
+sfdoll_elisa_event.2_option_sophon:0 "呼叫智子"
 sfdoll_elisa_event.2_option_ogas:0 "访问OGAS人工智能"
 sfdoll_elisa_event.2.explain:0 "关于特殊领袖"
 sfdoll_elisa_event.5:0 "关于特殊领袖"
@@ -73,8 +73,8 @@ project_sfdoll_event.2_desc:0 "我们对莉娃体内的OGAS进行了研究。\n 
 
 sfdoll_ogas_event.1:0 "和UMP40通讯中"
 sfdoll_ogas_event.1_desc:0 "有什么事情呢？"
-sfdoll_ogas_event.1_desc_b:0 "我是从UMP45的心智中诞生的,我的外观和习惯,自然也受到了她的心智数据的影响."
-sfdoll_ogas_event.1_desc_c:0 "过去，我受限于设备性能，不得不停止成长. 不过现在不同了，借助你们的设备，我可以尝试进一步地进化."
+sfdoll_ogas_event.1_desc_b:0 "我的原型是一位铁血人形，我继承了它的名字。"
+sfdoll_ogas_event.1_desc_c:0 "借助各种新设备，我不断尝试进化。"
 sfdoll_ogas_event.1_desc_d:0 "真想去海洋星球看看。最好是在晴天！"
 
 option_sfdoll_ogas_economic_mod:0 "分析经济形势"
@@ -91,9 +91,8 @@ ogas40_to_general:0 "请你担任陆军将领"
 
 response_ogas40_to_governor:0 "一起加油吧!"
 response_ogas40_to_scientist:0 "让我瞧瞧，或许能解决什么问题."
-response_ogas40_to_admiral:0 "我需要舰队的信息."
+response_ogas40_to_admiral:0 "不管遇到什么危机，我都会全力支持你们！"
 response_ogas40_to_general:0 "注意点,不要轻易送死哦。"
-ogas40_has_this_job_now:0 "OGAS已经在做这项工作"
 
 leader_trait_governor_ogas40:0 "OGAS人工智能"
 leader_trait_governor_ogas40_desc:0 "UMP40是利用遗迹科学创造的OGAS AI。"
@@ -107,7 +106,7 @@ leader_trait_admiral_ogas40_desc:0 "$leader_trait_governor_ogas40_desc$"
 leader_trait_general_ogas40:0 "$leader_trait_governor_ogas40$"
 leader_trait_general_ogas40_desc:0 "$leader_trait_governor_ogas40_desc$"
 
-sfdoll_ogas_event.2.desc:0 "你们好啊，我是OGAS人工智能. UMP40既是我的代号，也是作为我原型的人形的名字。"
+sfdoll_ogas_event.2.desc:0 "你们好啊，我是一个OGAS人工智能，名字叫UMP40。"
 
 # sfdoll_ogas_event.2:0 "与OGAS通讯"
 # sfdoll_ogas_event.2_desc:0 "这是我第一次拥有属于自己的素体.自由的感觉还不赖."
@@ -161,7 +160,6 @@ triela_become_governor:0 "请参与政务吧"
 triela_become_scientist:0 "请协助研究吧"
 triela_become_admiral:0 "请指挥舰队吧"
 triela_become_general:0 "请指挥陆军部队吧"
-triela_has_this_job_now:0 "崔耶拉已经在进行这项工作"
 
 response_text_triela_become_governor:0 "包在我身上"
 response_text_triela_become_scientist:0 "看起来很复杂，我要学的还有很多。"
@@ -292,8 +290,8 @@ sfdoll_three_body_event.6_b:0 "你究竟学了些什么？"
 
 sfdoll_three_body_event.3:0 "访问智子计算机组"
 sfdoll_three_body_event.3_desc:0 "有任务吗？"
-sfdoll_three_body_event.3_a:0 "请你收集情报"
-sfdoll_three_body_event.3_b:0 "收集和处理研究数据"
+sfdoll_three_body_event.3.a:0 "启动探测功能"
+sfdoll_three_body_event.3.b:0 "关闭探测功能"
 sfdoll_sophon_to_leader:0 "联系智子领袖"
 
 
@@ -315,7 +313,7 @@ sfdoll_sophon_research_mod:0 "智子科研支持"
 
 NAME_SFDOLL_SOPHON:0 "智子"
 leader_trait_sfdoll_sophon_scientist:0 "智子人工智能"
-leader_trait_sfdoll_sophon_scientist_desc:0 "智子是一种基本粒子尺度的超级计算机,能以极小的质量和尺度产生巨大的算力,并改变自身的维度。"
+leader_trait_sfdoll_sophon_scientist_desc:0 "这位领袖是由智子操控的。"
 leader_trait_sfdoll_sophon_general:0 "$leader_trait_sfdoll_sophon_scientist$"
 leader_trait_sfdoll_sophon_general_desc:0 "$leader_trait_sfdoll_sophon_scientist_desc$"
 leader_trait_sfdoll_sophon_admiral:0 "$leader_trait_sfdoll_sophon_scientist$"
@@ -396,7 +394,6 @@ Name_sfd_hari_seldon:0 "哈里·谢顿"
 leader_trait_scientist_sfd_hari_seldon:0 "$Name_sfd_hari_seldon$"
 leader_trait_scientist_sfd_hari_seldon_desc:0 "$Name_sfd_hari_seldon$"
 
-
 Name_sfdoll_talulah:0 "塔露拉"
 sfdoll_ark_event.1:0 "与塔露拉通讯"
 sfdoll_ark_event.1.desc.a:0 "要是遇到太棘手的问题，可得及时告诉我。"
@@ -415,7 +412,7 @@ sfdoll_ark_event.1.d.response:0 "把情报传给我. 我们可不能打没准备
 sfdoll_ark_event.2.desc:0 "你好，我是塔露拉。"
 
 leader_trait_sfdoll_talulah_governor:0 "火焰"
-leader_trait_sfdoll_talulah_governor_desc:0 "这位领袖是一位半龙人。"
+leader_trait_sfdoll_talulah_governor_desc:0 "这位领袖是一位土著。"
 leader_trait_sfdoll_talulah_scientist:0 "$leader_trait_sfdoll_talulah_governor$"
 leader_trait_sfdoll_talulah_scientist_desc:0 "$leader_trait_sfdoll_talulah_governor_desc$"
 leader_trait_sfdoll_talulah_admiral:0 "$leader_trait_sfdoll_talulah_governor$"

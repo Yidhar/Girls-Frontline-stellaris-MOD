@@ -395,7 +395,7 @@ mega_sfdoll_mobile_starbase_4:0 "$sfdoll_mobile_starbase$ 最终阶段"
 mega_sfdoll_mobile_starbase_4_DESC:0 "$sfdoll_mobile_starbase$将获得完整的功能。"
 
 sfdoll_event.2:0 "$sfdoll_mobile_starbase$启航"
-sfdoll_event.2_desc:0 "随着亚光速航行系统的启动，$sfdoll_mobile_starbase$向宇宙迈出了第一步。在惯性干涉装置的作用下，这一庞然巨物如同蝴蝶般轻盈。$sfdoll_mobile_starbase$的巨大质量和能量被隐藏起来，这让它和宇宙的背景辐射融为一体。"
+sfdoll_event.2_desc:0 "随着亚光速航行系统的启动，$sfdoll_mobile_starbase$向宇宙迈出了第一步。$sfdoll_mobile_starbase$携带了庞大的质量，但在惯性干涉装置的作用下，这一庞然巨物行动自如。"
 
 sfdoll_star_exploit_01:0 "铁血戴森云基址"
 sfdoll_star_exploit_01_DESC:0 "$sfdoll_star_exploit_02_DESC$"
@@ -410,11 +410,11 @@ requires_only_one_sfdoll_mining_station_in_system:0 "一个星系只能建造一
 tech_sfdoll_mining_station:0 "$sfdoll_mining_station_01$"
 tech_sfdoll_mining_station_desc:0 "$sfdoll_mining_station_01_DESC$"
 
-sfdoll_dyson_cloud:0 "铁血戴森环"
+sfdoll_dyson_cloud:0 "铁血戴森云"
 sfdoll_dyson_cloud_DESC:0 "$sfdoll_dyson_cloud$主要用于收集太阳能。"
 sfdoll_dyson_cloud_MEGASTRUCTURE_DETAILS:0 "$sfdoll_dyson_cloud_DESC$"
 tech_sfdoll_dyson_cloud:0 "$sfdoll_dyson_cloud$"
-tech_sfdoll_dyson_cloud_desc:0 "和戴森球相比，戴森环的建造和维护成本更低。"
+tech_sfdoll_dyson_cloud_desc:0 "和戴森球相比，戴森云的建造和维护成本更低。"
 
 requires_no_black_hole_neutron_star_pulsar_sfdoll:0 "$TRIGGER_FAIL$不能在黑洞，中子星或者脉冲星周围建造"
 

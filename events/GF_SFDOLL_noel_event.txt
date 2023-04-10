@@ -65,7 +65,6 @@ country_event = {
 
 	picture_event_data = {
 		portrait = GFX_sfdoll_noel_02
-		# room = sfdoll_snow_room
 		room = this
 		graphical_culture = this
 		planet_background = this
